@@ -21,7 +21,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 ## Suggested order
 
-1. Karl reviews the button pilot (DEC-07); Apps team answers MISSING-ASSETS 5.5
+1. Apps team answers MISSING-ASSETS 5.5 (button pilot approved 2026-10-26)
 2. Typography: text styles as tokens, Figma text styles and code (foundation/type)
 3. Spacing, radius and size scales (foundation/spacing, radius, size), which unblock the layout rules
 4. App chrome components whose colors already exist: Breaking-news banner (DSC-15/19 ASAP), Top bar, Bottom tab bar, Section tabs
