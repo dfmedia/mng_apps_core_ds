@@ -82,7 +82,7 @@ Legacy-template markets (iOS radius 5 + border): BS, DP, HC, MC, OS, SS, VP.
 | TDH | Daily Herald | `#0072b4` · 0, 114, 180 | 5.16:1 ✅ | 4 | `#0072b4` · 0, 114, 180 | 5.16:1 ✅ |
 | TDLW | Daily Local Weschester | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ | 4 | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ |
 | TDP | The Denver Post | `#f7a430` · 247, 164, 48 | 2.04:1 ❌ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TDPS | Denver Post Sports | `#c75d14` · 199, 93, 20 | 4.2:1 ❌ | 4 | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ |
+| TDPS | Denver Post Sports | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ | 4 | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ |
 | TEBT | The East Bay Times | `#6bd1e6` · 107, 209, 230 | 1.77:1 ❌ | 4 | `#5480ba` · 84, 128, 186 | 4.06:1 ❌ |
 | TEPTG | Estes Park Trail Gazette | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 4 | `#33408f` · 51, 64, 143 | 9.25:1 ✅ |
 | TETS | Eureka Times Standard | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 4 | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |

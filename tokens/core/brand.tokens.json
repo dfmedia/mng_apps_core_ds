@@ -2072,23 +2072,23 @@
    },
    "sgvt": {
     "navbar": {
-     "$value": "#b11e35",
+     "$value": "#b01f36",
      "$type": "color",
      "$description": "Top bar background",
      "$extensions": {
       "mng": {
        "rgb": [
-        177,
-        30,
-        53
+        176,
+        31,
+        54
        ],
        "market": "San Gabriel Valley Tribune",
-       "evidence": "drift-rule",
+       "evidence": "ios-close",
        "shipped": {
         "ios": "#b01f36",
         "android": "#b11e35"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -2116,15 +2116,15 @@
      }
     },
     "tabbar": {
-     "$value": "#b11e35",
+     "$value": "#b01f36",
      "$type": "color",
      "$description": "Bottom tab bar background",
      "$extensions": {
       "mng": {
        "rgb": [
-        177,
-        30,
-        53
+        176,
+        31,
+        54
        ],
        "market": "San Gabriel Valley Tribune",
        "evidence": "follows-navbar",
@@ -2132,7 +2132,7 @@
         "ios": "#b01f36",
         "android": "#b11e35"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -5832,23 +5832,23 @@
    },
    "tdps": {
     "navbar": {
-     "$value": "#c75d14",
+     "$value": "#c75c14",
      "$type": "color",
      "$description": "Top bar background",
      "$extensions": {
       "mng": {
        "rgb": [
         199,
-        93,
+        92,
         20
        ],
        "market": "Denver Post Sports",
-       "evidence": "drift-rule",
+       "evidence": "ios-close",
        "shipped": {
         "ios": "#c75c14",
         "android": "#c75d14"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -5876,14 +5876,14 @@
      }
     },
     "tabbar": {
-     "$value": "#c75d14",
+     "$value": "#c75c14",
      "$type": "color",
      "$description": "Bottom tab bar background",
      "$extensions": {
       "mng": {
        "rgb": [
         199,
-        93,
+        92,
         20
        ],
        "market": "Denver Post Sports",
@@ -5892,7 +5892,7 @@
         "ios": "#c75c14",
         "android": "#c75d14"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -5942,23 +5942,23 @@
      }
     },
     "action": {
-     "$value": "#c75d14",
+     "$value": "#c75c14",
      "$type": "color",
      "$description": "Primary button fill (white label); buy and continue alias this",
      "$extensions": {
       "mng": {
        "rgb": [
         199,
-        93,
+        92,
         20
        ],
        "market": "Denver Post Sports",
-       "evidence": "drift-rule",
+       "evidence": "ios-close",
        "shipped": {
         "ios": "#c75c14",
         "android": "#c75d14"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -6020,23 +6020,23 @@
    },
    "tebt": {
     "navbar": {
-     "$value": "#557fba",
+     "$value": "#5480ba",
      "$type": "color",
      "$description": "Top bar background",
      "$extensions": {
       "mng": {
        "rgb": [
-        85,
-        127,
+        84,
+        128,
         186
        ],
        "market": "The East Bay Times",
-       "evidence": "drift-rule",
+       "evidence": "ios-close",
        "shipped": {
         "ios": "#5480ba",
         "android": "#557fba"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }
@@ -6064,14 +6064,14 @@
      }
     },
     "tabbar": {
-     "$value": "#557fba",
+     "$value": "#5480ba",
      "$type": "color",
      "$description": "Bottom tab bar background",
      "$extensions": {
       "mng": {
        "rgb": [
-        85,
-        127,
+        84,
+        128,
         186
        ],
        "market": "The East Bay Times",
@@ -6080,7 +6080,7 @@
         "ios": "#5480ba",
         "android": "#557fba"
        },
-       "fix": "ios",
+       "fix": "android",
        "provisional": false
       }
      }

@@ -39,7 +39,7 @@ Item-level to-do list (every element and component from the iOS and Android styl
 | Icons: who uses each purpose | ⏸ | Figma Icons page → **04 · Platform ownership**: 32 Core, 2 Core + variant, 25 iOS only, 2 Android only |
 | Colors: iOS vs Android per market | ⏸ | Figma Color page → **05 · iOS vs Android**: 7 Core roles, 2 aliases, 1 iOS-only, 2 Android-only; 43 markets aligned, 34 differ |
 | Decisions PLAT-01 … PLAT-10 | ⏸ | docs/PLATFORM-OWNERSHIP.md |
-| Palette cleanup by brand | ✅ | DEC-01 sheet + drift, DEC-02 Cluster Audit when close, DEC-03 iOS default: all 77 brands have all 7 Core roles. Team to confirm (MISSING-ASSETS 3.3) |
+| Palette cleanup by brand | ✅ | DEC-01 sheet + drift, DEC-02 Cluster Audit when close, DEC-03 iOS default: all 77 brands have all 7 Core roles. Final: iOS default confirmed by Karl (DEC-08, 2026-10-26) |
 | Figma color variables | ✅ | Core file: Brand colors (624 vars, 78 markets) + Brand theme (20 modes); page Color · Brand Theme (DEC-06) |
 | Design tokens | ✅ v1 | DEC-04: tokens/ (DTCG) → Style Dictionary → Swift (iOS repo), Kotlin + 77 flavor XML (Android repo); hex + RGB in docs/BRAND-COLORS.md | (Figma Color page **06 · Brand color source of truth**; MISSING-ASSETS 3.3) |
 | Discrepancy tracker | ✅ | docs/DISCREPANCIES.md: DSC-01…31 |
@@ -58,11 +58,12 @@ Item-level to-do list (every element and component from the iOS and Android styl
 ## Next session (handoff 2026-10-26)
 
 1. **Push.** Sessions without the repos attached can't push; Karl pushes (done for the 2026-10-26 work up to the backlog).
-2. **Button pilot reviewed by Karl (2026-10-26).** Questions sent to the Apps team: MISSING-ASSETS 5.5, 3.3, DSC-19, DSC-15, Kotlin package name.
+2. **Button pilot reviewed by Karl (2026-10-26).** Email to Jess and Patrick: button values only (MISSING-ASSETS 5.5). Kotlin package name asked separately on Slack.
 3. **Platform Figma files done** (libraries published and enabled 2026-10-26): iOS and Android each have page Components · Button. iOS text link color is a separate collection, Text link · iOS (20 modes matching Brand theme): set the same market in both. Tip: library imports and font loads hang when a file's tab is in the background; bring the file to the front.
 4. **Ask the Apps team** (MISSING-ASSETS 5.5): iOS button height (pilot uses 44), Android label weight/size, iOS link font, pressed states. Code is not compiled yet (no Xcode or Android SDK here).
-5. **Still waiting from 2026-10-21:** DEC-03 confirmation (MISSING-ASSETS 3.3), DSC-19 Android banner text, Kotlin package name, clusters for TBAN, TBE, TB, TBCP, TBHS, TCHW, TDPS. DSC-15/19 still ASAP.
-6. **Next work after the pilot:** type, spacing and radius tokens; then the remaining components.
+5. **Waiting:** Kotlin package name (Slack), clusters for TBAN, TBE, TB, TBCP, TBHS, TCHW, TDPS.
+6. **Parked, pick up later** (Karl, 2026-10-26; not raised with the Apps team yet): DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS, and confirm Android banner text is white.
+7. **Next work after the pilot:** type, spacing and radius tokens; then the remaining components.
 
 ## Log
 
@@ -81,3 +82,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-10-26** — Core library published and enabled in the iOS and Android files. Built Button/Primary and Button/Text link in both platform files (mng_apps_ios_ds, mng_apps_android_ds).
 - **2026-10-26** — Added docs/BACKLOG.md (scripts/build_backlog.py, status in data/backlog-status.json): 107 items with Figma, tokens and code status.
 - **2026-10-26** — Karl reviewed the button pilot (DEC-07): approved. Drafted Apps team questions (MISSING-ASSETS 5.5, 3.3; DSC-15, DSC-19; Kotlin package).
+- **2026-10-26** — DEC-08: iOS is the default for every unconfirmed brand-color mismatch, close ones included; DEC-03 final (MISSING-ASSETS 3.3 closed, PLAT-06/07 resolved). SGVT, TDPS, TEBT bar colors moved to iOS (tokens, Swift, Kotlin, flavor XML, Figma). DSC-15/19 parked. Platform code regenerated in mng_apps_ios_ds and mng_apps_android_ds.

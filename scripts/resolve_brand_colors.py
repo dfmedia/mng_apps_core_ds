@@ -4,7 +4,7 @@ Usage: python3 scripts/resolve_brand_colors.py data/source/markets.json data/sou
 Evidence, strongest first:
   sheet        the migration sheet's Primary / Secondary color matches one app exactly
   sheet+drift  the sheet matches one app, and the other app's value is the sheet value after iOS 2-decimal rounding
-  drift-rule   no sheet value; iOS = Android after 2-decimal rounding, so Android is the authored value
+  ios-close    no sheet value; iOS = Android after 2-decimal rounding. DEC-08: iOS value (was drift-rule -> Android under DEC-01)
   agree        both apps already ship the same value
   unresolved   none of the above; needs the Apps team
 iOS drift: TroncKit stores each RGB channel as a 2-decimal fraction (0x22 = 0.133 -> 0.13 -> 0x21).
@@ -41,7 +41,8 @@ for im in sorted(ios['markets'], key=lambda m: m['name']):
         elif a == i:
             r.update(value=a, evidence='agree', fix=None)
         elif drift(a) == i:
-            r.update(value=a, evidence='drift-rule', fix='ios')
+            # DEC-08 (2026-10-26): a close mismatch the sheet can't confirm takes the iOS value (was Android under DEC-01)
+            r.update(value=i, evidence='ios-close', fix='android', previous={'value': a, 'evidence': 'drift-rule'})
         else:
             r.update(value=None, evidence='unresolved', fix='ask')
         row['roles'][role] = r; stats[r['evidence']] = stats.get(r['evidence'], 0) + 1

@@ -870,15 +870,15 @@
   {
    "code": "TDPS",
    "market": "Denver Post Sports",
-   "action": "#c75d14",
+   "action": "#c75c14",
    "action_rgb": [
     199,
-    93,
+    92,
     20
    ],
-   "label_contrast": 4.2,
+   "label_contrast": 4.23,
    "label_pass": false,
-   "suggested_action": "#c15708",
+   "suggested_action": "#c25709",
    "ios_link": "#c75c14",
    "ios_link_rgb": [
     199,

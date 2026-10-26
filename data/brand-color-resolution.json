@@ -3,7 +3,7 @@
   "Evidence, strongest first:",
   "  sheet        the migration sheet's Primary / Secondary color matches one app exactly",
   "  sheet+drift  the sheet matches one app, and the other app's value is the sheet value after iOS 2-decimal rounding",
-  "  drift-rule   no sheet value; iOS = Android after 2-decimal rounding, so Android is the authored value",
+  "  ios-close    no sheet value; iOS = Android after 2-decimal rounding. DEC-08: iOS value (was drift-rule -> Android under DEC-01)",
   "  agree        both apps already ship the same value",
   "  unresolved   none of the above; needs the Apps team",
   "iOS drift: TroncKit stores each RGB channel as a 2-decimal fraction (0x22 = 0.133 -> 0.13 -> 0x21).",
@@ -18,7 +18,7 @@
   "web-close": 52,
   "sheet+drift": 35,
   "sheet": 11,
-  "drift-rule": 4
+  "ios-close": 4
  },
  "markets": [
   {
@@ -3675,12 +3675,16 @@
      "ios": "#c75c14",
      "android": "#c75d14",
      "sheet": null,
-     "value": "#c75d14",
-     "evidence": "drift-rule",
-     "fix": "ios",
+     "value": "#c75c14",
+     "evidence": "ios-close",
+     "fix": "android",
+     "previous": {
+      "value": "#c75d14",
+      "evidence": "drift-rule"
+     },
      "value_rgb": [
       199,
-      93,
+      92,
       20
      ],
      "ios_rgb": [
@@ -3699,12 +3703,16 @@
      "ios": "#c75c14",
      "android": "#c75d14",
      "sheet": null,
-     "value": "#c75d14",
-     "evidence": "drift-rule",
-     "fix": "ios",
+     "value": "#c75c14",
+     "evidence": "ios-close",
+     "fix": "android",
+     "previous": {
+      "value": "#c75d14",
+      "evidence": "drift-rule"
+     },
      "value_rgb": [
       199,
-      93,
+      92,
       20
      ],
      "ios_rgb": [
@@ -3747,12 +3755,12 @@
      "ios": "#c75c14",
      "android": "#c75d14",
      "sheet": null,
-     "value": "#c75d14",
+     "value": "#c75c14",
      "evidence": "follows-navbar",
-     "fix": "ios",
+     "fix": "android",
      "value_rgb": [
       199,
-      93,
+      92,
       20
      ],
      "ios_rgb": [
@@ -9863,13 +9871,17 @@
      "ios": "#b01f36",
      "android": "#b11e35",
      "sheet": null,
-     "value": "#b11e35",
-     "evidence": "drift-rule",
-     "fix": "ios",
+     "value": "#b01f36",
+     "evidence": "ios-close",
+     "fix": "android",
+     "previous": {
+      "value": "#b11e35",
+      "evidence": "drift-rule"
+     },
      "value_rgb": [
-      177,
-      30,
-      53
+      176,
+      31,
+      54
      ],
      "ios_rgb": [
       176,
@@ -9943,13 +9955,13 @@
      "ios": "#b01f36",
      "android": "#b11e35",
      "sheet": null,
-     "value": "#b11e35",
+     "value": "#b01f36",
      "evidence": "follows-navbar",
-     "fix": "ios",
+     "fix": "android",
      "value_rgb": [
-      177,
-      30,
-      53
+      176,
+      31,
+      54
      ],
      "ios_rgb": [
       176,
@@ -12383,12 +12395,16 @@
      "ios": "#5480ba",
      "android": "#557fba",
      "sheet": null,
-     "value": "#557fba",
-     "evidence": "drift-rule",
-     "fix": "ios",
+     "value": "#5480ba",
+     "evidence": "ios-close",
+     "fix": "android",
+     "previous": {
+      "value": "#557fba",
+      "evidence": "drift-rule"
+     },
      "value_rgb": [
-      85,
-      127,
+      84,
+      128,
       186
      ],
      "ios_rgb": [
@@ -12459,12 +12475,12 @@
      "ios": "#5480ba",
      "android": "#557fba",
      "sheet": null,
-     "value": "#557fba",
+     "value": "#5480ba",
      "evidence": "follows-navbar",
-     "fix": "ios",
+     "fix": "android",
      "value_rgb": [
-      85,
-      127,
+      84,
+      128,
       186
      ],
      "ios_rgb": [
@@ -18044,14 +18060,6 @@
     "applied": false
    },
    {
-    "code": "SGVT",
-    "role": "navbar",
-    "web": "#b93611",
-    "before": "#b11e35",
-    "dE": 0.058,
-    "applied": false
-   },
-   {
     "code": "TSCS",
     "role": "navbar",
     "web": "#32408f",
@@ -18105,14 +18113,6 @@
     "web": "#7d161e",
     "before": null,
     "dE": 0.393,
-    "applied": false
-   },
-   {
-    "code": "TEBT",
-    "role": "navbar",
-    "web": "#006394",
-    "before": "#557fba",
-    "dE": 0.119,
     "applied": false
    },
    {

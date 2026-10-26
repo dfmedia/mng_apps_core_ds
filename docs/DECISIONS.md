@@ -10,12 +10,14 @@ Design-system decisions with the rule, the date, who made it and what changed. P
 | DEC-04 | Colors are managed as design tokens: one DTCG source in Core, Style Dictionary generates Swift and Kotlin; every color is documented as hex and RGB | 2026-10-21 | Karl |
 | DEC-05 | One breaking-news red for every market and both apps: `#cf000e` with white text (5.74:1, WCAG AA). Fix on iOS ASAP | 2026-10-21 | Karl |
 | DEC-06 | Figma color variables: a **Brand colors** collection with every market as plain variables (no modes), plus a **Brand theme** collection with 20 modes (the plan limit) for the required markets, one per cluster and the most different ones. Daily Herald added as a provisional market | 2026-10-21 | Karl |
+| DEC-08 | Brand colors: iOS is the default for every iOS/Android mismatch that no source confirms, including close ones (the drift rule no longer picks Android on its own). DEC-03 is final: no Apps team confirmation needed | 2026-10-26 | Karl |
 | DEC-07 | Button pilot: one Core Button component that keeps each app's shipped values. Colors, radius and height stay as shipped (as per-platform tokens); the label font stays per platform. Contrast failures are required app fixes; height and label font are future changes | 2026-10-26 | Karl |
 
 ## DEC-01 · Migration sheet + iOS drift rule
 
 - **Source:** "Tribpub-MNG App Migrations" → Production → Primary / Secondary color (`data/source/migration-sheet-brand-colors.json`; project reference `references/migration-sheet-brand-colors.md`).
 - **Rule:** 1) If the sheet's color matches either app, it is the value. 2) If iOS equals Android after rounding each channel to 2 decimals (`0x22` → 0.13 → `0x21`), Android holds the authored value. 3) Otherwise open.
+- **Amended by DEC-08 (2026-10-26):** step 2 now applies only where the sheet confirms the value. Without the sheet, the iOS value is used.
 - **Why:** the sheet matched Android in every near-identical pair it covered; the rounding explains 32 of the 34 pairs it could check.
 - **Applied by:** `scripts/resolve_brand_colors.py` → `data/brand-color-resolution.json`. Replaces proposal PLAT-02.
 
@@ -233,3 +235,17 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Scope of the pilot:** Primary (enabled, pressed, disabled) and Text link. Disabled uses Android's shipped `#c1c8cb` / `#767676` on both apps (new on iOS). Secondary, in-button loading and folding Continue into Primary are later (CTRL-02, DSC-24).
 - **Provisional values** (iOS height, Android label weight and size, iOS link font, pressed state) are asked for in `docs/MISSING-ASSETS.md` 5.5.
 - **Applied by:** `scripts/build_button_tokens.py` (after `build_tokens.py`) → `tokens/{core,ios,android}/button.tokens.json`, `data/button-spec.json`, `docs/components/BUTTON.md`; then `npm run build` → `MNGButtonTokens.swift` (iOS repo) and `tokens/res/values/mng_button.xml` (Android repo).
+
+## DEC-08 · iOS is the default for unconfirmed mismatches
+
+- **Rule (Karl, 2026-10-26):** wherever iOS and Android ship different brand colors and no source confirms one of them (migration sheet, Cluster Audit within ΔE 0.05), use the **iOS** value. This includes close mismatches (off by 1 in a channel). DEC-03 is final; the Apps team is not asked to confirm it (MISSING-ASSETS 3.3 closed).
+- **What changed:** the 4 roles DEC-01's drift rule had set to Android without sheet confirmation now take iOS (`scripts/resolve_brand_colors.py`, evidence `ios-close`). Tab bars that follow the bar color follow along.
+
+| Code | Market | Role | Was (Android) | Now (iOS) |
+|---|---|---|---|---|
+| SGVT | San Gabriel Valley Tribune | navbar, tabbar | `#b11e35` · 177, 30, 53 | `#b01f36` · 176, 31, 54 |
+| TDPS | Denver Post Sports | navbar, tabbar, action | `#c75d14` · 199, 93, 20 | `#c75c14` · 199, 92, 20 |
+| TEBT | The East Bay Times | navbar, tabbar | `#557fba` · 85, 127, 186 | `#5480ba` · 84, 128, 186 |
+
+- **Unchanged:** values the migration sheet confirms (DEC-01 steps 1–2 with the sheet), values moved to the web color (DEC-02), and the Core breaking-news red (DEC-05).
+- **Applied in:** tokens, Swift, Kotlin, the 3 flavor XML files, docs/BRAND-COLORS.md and the Figma Brand colors variables.
