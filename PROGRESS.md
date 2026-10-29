@@ -58,10 +58,10 @@ Item-level to-do list (every element and component from the iOS and Android styl
 ## Next session (handoff 2026-10-26)
 
 1. **Push.** Sessions without the repos attached can't push; Karl pushes (done for the 2026-10-26 work up to the backlog).
-2. **Button pilot reviewed by Karl (2026-10-26).** Email to Jess and Patrick: button values only (MISSING-ASSETS 5.5). Kotlin package name asked separately on Slack.
+2. **Button pilot reviewed by Karl (2026-10-26).** Email to Jess and Patrick: button values only (MISSING-ASSETS 5.5). Kotlin package `com.mng.designsystem.tokens` confirmed (2026-10-29).
 3. **Platform Figma files done** (libraries published and enabled 2026-10-26): iOS and Android each have page Components · Button. iOS text link color is a separate collection, Text link · iOS (20 modes matching Brand theme): set the same market in both. Tip: library imports and font loads hang when a file's tab is in the background; bring the file to the front.
 4. **Ask the Apps team** (MISSING-ASSETS 5.5): iOS button height (pilot uses 44), Android label weight/size, iOS link font, pressed states. Code is not compiled yet (no Xcode or Android SDK here).
-5. **Waiting:** Kotlin package name (Slack), clusters for TBAN, TBE, TB, TBCP, TBHS, TCHW, TDPS.
+5. **Waiting:** clusters for TBAN, TBE, TB, TBCP, TBHS, TCHW, TDPS.
 6. **Parked, pick up later** (Karl, 2026-10-26; not raised with the Apps team yet): DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS, and confirm Android banner text is white.
 7. **Next work after the pilot:** type, spacing and radius tokens; then the remaining components.
 
@@ -83,3 +83,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-10-26** — Added docs/BACKLOG.md (scripts/build_backlog.py, status in data/backlog-status.json): 107 items with Figma, tokens and code status.
 - **2026-10-26** — Karl reviewed the button pilot (DEC-07): approved. Drafted Apps team questions (MISSING-ASSETS 5.5, 3.3; DSC-15, DSC-19; Kotlin package).
 - **2026-10-26** — DEC-08: iOS is the default for every unconfirmed brand-color mismatch, close ones included; DEC-03 final (MISSING-ASSETS 3.3 closed, PLAT-06/07 resolved). SGVT, TDPS, TEBT bar colors moved to iOS (tokens, Swift, Kotlin, flavor XML, Figma). DSC-15/19 parked. Platform code regenerated in mng_apps_ios_ds and mng_apps_android_ds.
+- **2026-10-29** — Kotlin package `com.mng.designsystem.tokens` confirmed (DEC-04); placeholder notes removed in Core and mng_apps_android_ds.

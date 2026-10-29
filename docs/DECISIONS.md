@@ -181,7 +181,7 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - iOS: `mng_apps_ios_ds/Tokens/MNGBrandColors.swift`: `MNGBrandPalette` (UIKit `UIColor`, SwiftUI via `color(\.navbar)`), `MNGBrandPalettes.<code>`, `forMarket("TDP")`.
   - Android: `mng_apps_android_ds/tokens/MngBrandColors.kt` (Jetpack Compose `Color`, `MngBrandPalettes.<CODE>`, `forMarket("tdp")`) and `tokens/flavors/<flavor>/res/values/mng_brand_colors.xml` (one per Gradle flavor, `@color/mng_brand_navbar` …).
 - **Exact colors:** platform code is written from the hex bytes (`0xRRGGBB`), never from rounded decimals, which removes the cause of the iOS drift (DSC-01).
-- **Open:** Kotlin package name `com.mng.designsystem.tokens` is a placeholder; confirm with the Apps team. Generated code is not compiled in an app yet. Figma variables will be built from the same tokens (ARCHITECTURE §3).
+- **Kotlin package:** `com.mng.designsystem.tokens`, confirmed by Karl 2026-10-29. Generated code is not compiled in an app yet. Figma variables will be built from the same tokens (ARCHITECTURE §3).
 
 ## DEC-05 · One breaking-news red (`#cf000e`), WCAG AA
 
