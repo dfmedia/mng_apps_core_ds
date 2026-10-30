@@ -119,6 +119,7 @@ python3 scripts/build_tokens.py     # tokens/*.tokens.json + docs/BRAND-COLORS.m
 python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json, docs/components/BUTTON.md, IMPROVEMENTS CLR-04 (DEC-07)
 python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06)
 npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/Tokens, ../mng_apps_android_ds/tokens
+python3 scripts/compare_type.py     # typography step 1: data/type-comparison.json + docs/TYPE-COMPARISON.md
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```

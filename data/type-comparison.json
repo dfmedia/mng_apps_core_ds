@@ -1,0 +1,1612 @@
+{
+ "generated_by": "scripts/compare_type.py",
+ "counts": {
+  "differs": 11,
+  "ios-only": 48,
+  "unknown": 6,
+  "android-only": 8,
+  "close": 1,
+  "same": 1
+ },
+ "families": {
+  "ios": [
+   "Open Sans",
+   "PT Serif",
+   "Spectral"
+  ],
+  "android": [
+   "Open Sans",
+   "Open Sans Condensed",
+   "PT Serif",
+   "Playfair Display",
+   "Roboto",
+   "Spectral"
+  ]
+ },
+ "styles": {
+  "ios": 63,
+  "android": 26
+ },
+ "legacy_markets": "BS, DP, HC, MC, OS, SS, VP",
+ "roles": [
+  {
+   "role": "Article headline",
+   "group": "Article",
+   "ios": {
+    "style": "page-title",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 31.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-title`. OpenSans-Bold 31 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "article-headline",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 21.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Article headline: `ArticleText_Headline_Regular` at 21sp (ArticleText.Headline.Wapo, styles_article.xml:294). PT Serif in 71 markets; Open Sans in DP, SIT, TOD, TTT, VP; Open Sans Condensed Light in NYDN.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Article headline, tablet",
+   "group": "Article",
+   "ios": {
+    "style": "page-title-tablet",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 42.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article body",
+   "group": "Article",
+   "ios": {
+    "style": "page-body",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 400,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-body`. Spectral-Regular 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "article-body",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 15.0,
+    "lineHeight": 1.2,
+    "letterSpacing": null,
+    "usage": "Article body: `Article_Text_Regular` at 15sp, line spacing x1.2 (ArticleText.Wapo, styles_article.xml:67). PT Serif in 72 markets; Open Sans in DP, SIT, TOD, TTT, VP. Readers can change it: Small / Medium / Large / Extra Large.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Article body bold",
+   "group": "Article",
+   "ios": {
+    "style": "page-body-bold",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android uses the article bold font only for headings"
+  },
+  {
+   "role": "Article body italic",
+   "group": "Article",
+   "ios": {
+    "style": "page-body-italic",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 400,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article body bold italic",
+   "group": "Article",
+   "ios": {
+    "style": "page-body-bolditalic",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article body light italic",
+   "group": "Article",
+   "ios": {
+    "style": "page-body-lightitalic",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 400,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 18 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article subhead",
+   "group": "Article",
+   "ios": {
+    "style": "page-subhead",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "article-subhead",
+    "group": "Article",
+    "family": null,
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Article subhead: 14sp (ArticleText.Subhead.Wapo).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": ""
+  },
+  {
+   "role": "Article heading h1",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-h1",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 21.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "h1: `Article_Text_Bold` at Article_Header_size1 21sp (articles dimens.xml:106). PT Serif Bold; Open Sans Bold in DP, SIT, TOD, TTT, VP.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": "h2 20, h3 19, h4 18, h5 17, h6 16 follow the same font"
+  },
+  {
+   "role": "Article heading h2",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-h2",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 20.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "h2: 20sp (Article_Header_size2). Same fonts as article-h1.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Article heading h3",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-h3",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 19.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "h3: 19sp (Article_Header_size3). Same fonts as article-h1.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Article heading h4",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-h4",
+    "group": "Article",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "h4: 18sp. h5 is 17sp, h6 16sp.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Article deck",
+   "group": "Article",
+   "ios": {
+    "style": "page-deck",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-deck`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article kicker",
+   "group": "Article",
+   "ios": {
+    "style": "page-kicker",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article byline",
+   "group": "Article",
+   "ios": {
+    "style": "page-byline",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-byline`. OpenSans-Light 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "article-byline",
+    "group": "Article",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Byline: `Article_Byline_Bold` OpenSans-Bold 13sp, #323232 (CT: OpenSans-SemiBold).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Article dateline",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-dateline",
+    "group": "Article",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": "0.05em",
+    "usage": "Dateline: `Article_Dateline_Bold` OpenSans-Bold 13sp, letter spacing 0.05, #993C3C43 (CT: SemiBold).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Image caption",
+   "group": "Article",
+   "ios": {
+    "style": "page-caption",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 12.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "article-caption",
+    "group": "Article",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Image caption: `Article_ImageCaption_Regular` OpenSans-Regular 14sp, #787878. Photo credit 13sp.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "close",
+   "note": ""
+  },
+  {
+   "role": "Image credit",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-image-credit",
+    "group": "Article",
+    "family": "Open Sans Condensed",
+    "weight": 300,
+    "size": 11.0,
+    "lineHeight": null,
+    "letterSpacing": "0.05em",
+    "usage": "Image credit: Open Sans Condensed Light (file OpenSans-Regular-Condensed.ttf) 11sp, all caps, letter spacing 0.05, #AFAFAF.",
+    "legacy": false,
+    "uppercase": true
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Pull quote",
+   "group": "Article",
+   "ios": null,
+   "android": {
+    "style": "article-pullquote",
+    "group": "Article",
+    "family": "Open Sans Condensed",
+    "weight": 300,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Pull quote: Open Sans Condensed Light 16sp.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Author bio",
+   "group": "Article",
+   "ios": {
+    "style": "page-bio",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-bio`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Gallery title",
+   "group": "Article",
+   "ios": {
+    "style": "page-gallery",
+    "group": "Article page",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Slogan",
+   "group": "Article",
+   "ios": {
+    "style": "page-slogan",
+    "group": "Article page",
+    "family": "Spectral",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 16 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Section-front headline",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline",
+    "group": "Section-front cells",
+    "family": "Spectral",
+    "weight": 500,
+    "size": 25.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-headline",
+    "group": "Section front",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Normal headline base size 16sp (page_headline_normal_size_base); PageBuilder \"normal\" = x1.18, about 19sp on phone. `Headline_Font_Normal`, same fonts as sf-headline-highlight.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": "Android: base size; PageBuilder multiplies it (normal x1.18, about 19sp on phones)"
+  },
+  {
+   "role": "Section-front headline, highlight",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-highlight",
+    "group": "Section-front cells",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 22.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-headline-highlight",
+    "group": "Section front",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 21.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Highlight headline base size 21sp (page_headline_highlight_size_base). PageBuilder size multiplies it. `Headline_Font_Highlight`: PT Serif Bold in 71 markets; Open Sans Bold in DP, SIT, TOD, TTT, VP; Open Sans Condensed Bold in NYDN.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": "Android: base size x PageBuilder size"
+  },
+  {
+   "role": "Section-front headline, thin",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-thin",
+    "group": "Section-front cells",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-headline-thin",
+    "group": "Section front",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 15.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Thin headline base size 15sp. `Headline_Font_Thin`: PT Serif Regular; Open Sans Regular in DP, NYDN, SIT, TOD, TTT, VP.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Section-front blurb",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-body",
+    "group": "Section-front cells",
+    "family": "Spectral",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-body`. Spectral-Regular 16 in 69 of 70 standard-template markets. Other values: PTSerif-Regular 13 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-blurb",
+    "group": "Section front",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 15.0,
+    "lineHeight": 1.2,
+    "letterSpacing": null,
+    "usage": "Story blurb: `Blurb_Font` PT Serif Regular 15sp (homepagestory_blurb_size), line spacing x1.2. All markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Section-front byline / timestamp",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-timestamp",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 600,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-byline",
+    "group": "Section front",
+    "family": "Open Sans Condensed",
+    "weight": 700,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Byline / section / timestamp: `Byline_Font` Open Sans Condensed Bold 13sp, all caps (HomePage_Story_Byline). All markets.",
+    "legacy": false,
+    "uppercase": true
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Section-front label (kicker)",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-label-bold-large",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "sf-label",
+    "group": "Section front",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Story label (kicker): `Label_Font_Normal` OpenSans-Bold 14sp (homepagestory_label_size).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "same",
+   "note": ""
+  },
+  {
+   "role": "Section-front caption",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-caption",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 12.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Section-front deck",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-deck",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Headline, media above",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-media-above",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 21.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Headline, media bottom",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-media-bottom",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 17.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Headline, media left",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-media-left",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Headline, media left (regular)",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-media-left-normalfont",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Headline, bullets",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-bullets",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 15.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 69 of 70 standard-template markets. Other values: OpenSans-Light 15 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Label, light large",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-label-light-large",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Label, bold small",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-label-bold-small",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 10.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Label, light small",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-label-light-small",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 10.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Named light, ships Bold"
+  },
+  {
+   "role": "Score",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-score",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 36.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Tertiary headline",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-tertiary",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Tertiary header text",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-tertiary-headertext",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Tertiary timestamp",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-timestamp-tertiary",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 600,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "AR headline",
+   "group": "Section front",
+   "ios": {
+    "style": "ar-headline",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 20.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: headline default",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-headline-default",
+    "group": "Section-front cells",
+    "family": "Spectral",
+    "weight": 500,
+    "size": 20.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-headline-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). Spectral-Medium 20 in 6 of 7. Other values: OpenSans-Regular 20 (1).",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: blurb",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-blurb",
+    "group": "Section-front cells",
+    "family": "PT Serif",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-blurb`, legacy template only (BS, DP, HC, MC, OS, SS, VP). PTSerif-Regular 16 in 4 of 7. Other values: Spectral-Regular 16 (3).",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: card text",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-card-text-default",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-card-text-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 13 in 7 of 7.",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: label default",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-label-default",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-label-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Regular 16 in 7 of 7.",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: signature",
+   "group": "Section front",
+   "ios": {
+    "style": "cell-signature",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 12.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `cell-signature`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 12 in 7 of 7.",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: kicker left",
+   "group": "Section front",
+   "ios": {
+    "style": "label-kicker-left",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 12.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `label-kicker-left`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 12 in 7 of 7.",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Legacy: label small left",
+   "group": "Section front",
+   "ios": {
+    "style": "label-normal-small-left",
+    "group": "Section-front cells",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 10.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `label-normal-small-left`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 10 in 7 of 7.",
+    "legacy": true,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Top bar title",
+   "group": "App",
+   "ios": {
+    "style": "nav-title",
+    "group": "Navigation & menus",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": "?",
+   "match": "unknown",
+   "note": ""
+  },
+  {
+   "role": "Bottom tab label",
+   "group": "App",
+   "ios": {
+    "style": "tab-item",
+    "group": "Navigation & menus",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 10.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "nav-label",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 400,
+    "size": 10.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Bottom-nav tab label: 10sp (NavigationPanelTextAppearance). No font file set, so the system font.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Section tabs",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "section-tab",
+    "group": "App",
+    "family": "Open Sans",
+    "weight": 600,
+    "size": 12.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Section tabs under the top bar: OpenSans SemiBold (Toolbar.Tab). Size is `tabs_text_size`, defined as 12sp in articles and 14sp in notifications.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": "Android size: 12sp in articles, 14sp in notifications"
+  },
+  {
+   "role": "Sections list header",
+   "group": "App",
+   "ios": {
+    "style": "section-list-header",
+    "group": "Navigation & menus",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Menu header",
+   "group": "App",
+   "ios": {
+    "style": "menu-header",
+    "group": "Navigation & menus",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Menu item",
+   "group": "App",
+   "ios": {
+    "style": "menu-text",
+    "group": "Navigation & menus",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `menu-text`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Settings row",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "settings-item",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Settings row: `Settings_Item_Font` Roboto Regular 14sp in 75 markets; Open Sans in CT, NYDN.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": ""
+  },
+  {
+   "role": "Settings header",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "settings-category",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Settings header: `Settings_Category_Font` Roboto Regular 16sp. CT, NYDN and OS use 14sp; CT uses Open Sans Condensed Bold and NYDN Open Sans Condensed Light.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": ""
+  },
+  {
+   "role": "Search result headline",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "search-headline",
+    "group": "App",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 24.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Search result headline: `Search_Results_Headline` Spectral Bold 24sp in 71 markets; Open Sans Condensed Bold in DP, NYDN, SIT, TOD, TTT; Open Sans Condensed Light in VP.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": ""
+  },
+  {
+   "role": "Shared headline (TroncAppThemeable)",
+   "group": "App",
+   "ios": {
+    "style": "headline",
+    "group": "Shared app styles",
+    "family": "Spectral",
+    "weight": 500,
+    "size": 31.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 75 of 77 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "iOS generic fonts every market defines"
+  },
+  {
+   "role": "Shared body",
+   "group": "App",
+   "ios": {
+    "style": "body",
+    "group": "Shared app styles",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 77 of 77 markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Shared body bold",
+   "group": "App",
+   "ios": {
+    "style": "body-bold",
+    "group": "Shared app styles",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 77 of 77 markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Shared caption",
+   "group": "App",
+   "ios": {
+    "style": "caption",
+    "group": "Shared app styles",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 11.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 75 of 77 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Shared caption bold",
+   "group": "App",
+   "ios": {
+    "style": "caption-bold",
+    "group": "Shared app styles",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 11.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 75 of 77 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall heading",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-header",
+    "group": "Paywall",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 35.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 35 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "paywall-heading",
+    "group": "App",
+    "family": "Playfair Display",
+    "weight": 400,
+    "size": 24.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Buy-subscription heading: Playfair Display 24 (PaywallHeadingText).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Paywall heading, large",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-header-regular",
+    "group": "Paywall",
+    "family": "Spectral",
+    "weight": 700,
+    "size": 60.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 60 (1).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall body",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-description",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": {
+    "style": "paywall-text",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 400,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Paywall body text: system sans-serif 16sp (PaywallText, maincontroller styles.xml).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Paywall buy text",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-buy",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall buy text, large",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-buy-regular",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall store policy header",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-store-policy-header",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall log-in text",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-login",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall log-in text, large",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-login-regular",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall price",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-price",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 24.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Paywall plan name",
+   "group": "Paywall",
+   "ios": {
+    "style": "blocker-name",
+    "group": "Paywall",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Continue button label",
+   "group": "Paywall",
+   "ios": null,
+   "android": {
+    "style": "continue-label",
+    "group": "App",
+    "family": "Open Sans",
+    "weight": 600,
+    "size": 15.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Your News Continue label: OpenSans SemiBold 15sp (17sp at width 400dp+), white.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "android-only",
+   "note": "iOS draws Continue as PNG images (DSC-24)"
+  }
+ ]
+}

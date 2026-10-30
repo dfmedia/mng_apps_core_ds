@@ -1,0 +1,745 @@
+{
+ "$description": "Type styles as shipped, copied from the style-guide artifact on 2026-10-30. Source data: do not edit.",
+ "source": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ e30ad2585, project/tokens.json → type",
+ "families": {
+  "sans": "\"Open Sans\", system-ui, sans-serif",
+  "condensed": "\"Open Sans Condensed\", \"Open Sans\", sans-serif",
+  "serif": "\"PT Serif\", Georgia, serif",
+  "display": "\"Spectral\", Georgia, serif"
+ },
+ "fonts": [
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-ExtraBold.ttf",
+   "weight": "800",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-ExtraBoldItalic.ttf",
+   "weight": "800",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Light.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-LightItalic.ttf",
+   "weight": "300",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-SemiBold.ttf",
+   "weight": "600",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-SemiBoldItalic.ttf",
+   "weight": "600",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSansCondensed-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSansCondensed-Light.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSansCondensed-LightItalic.ttf",
+   "weight": "300",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSans_Condensed-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraBold.ttf",
+   "weight": "800",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraBoldItalic.ttf",
+   "weight": "800",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraLight.ttf",
+   "weight": "200",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraLightItalic.ttf",
+   "weight": "200",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Light.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-LightItalic.ttf",
+   "weight": "300",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Medium.ttf",
+   "weight": "500",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-MediumItalic.ttf",
+   "weight": "500",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-SemiBold.ttf",
+   "weight": "600",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-SemiBoldItalic.ttf",
+   "weight": "600",
+   "style": "italic"
+  }
+ ],
+ "groups": [
+  {
+   "name": "Shared app styles",
+   "family": "sans",
+   "note": "The five fonts every market defines in <Market>+TroncAppThemeable.swift (or <Market>+Font.swift). The closest thing the app has to global Header / Body / Caption styles.",
+   "styles": [
+    {
+     "name": "headline",
+     "family": "display",
+     "fontSize": "31px",
+     "fontWeight": 500,
+     "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 75 of 77 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
+     "sample": "Storm closes mountain passes"
+    },
+    {
+     "name": "body",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 400,
+     "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 77 of 77 markets.",
+     "sample": "Crews worked through the night to reopen the highway."
+    },
+    {
+     "name": "body-bold",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 77 of 77 markets.",
+     "sample": "Read the full story"
+    },
+    {
+     "name": "caption",
+     "family": "sans",
+     "fontSize": "11px",
+     "fontWeight": 400,
+     "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 75 of 77 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
+     "sample": "Updated 6:42 a.m."
+    },
+    {
+     "name": "caption-bold",
+     "family": "sans",
+     "fontSize": "11px",
+     "fontWeight": 700,
+     "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 75 of 77 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
+     "sample": "BREAKING"
+    }
+   ]
+  },
+  {
+   "name": "Navigation & menus",
+   "family": "sans",
+   "styles": [
+    {
+     "name": "nav-title",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14.",
+     "sample": "Sections"
+    },
+    {
+     "name": "tab-item",
+     "family": "sans",
+     "fontSize": "10px",
+     "fontWeight": 700,
+     "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 70 of 70 standard-template markets.",
+     "sample": "Home"
+    },
+    {
+     "name": "section-list-header",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
+     "sample": "NEWS"
+    },
+    {
+     "name": "menu-header",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+     "sample": "Local News"
+    },
+    {
+     "name": "menu-text",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 300,
+     "usage": "Style.json `menu-text`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+     "sample": "Local News"
+    }
+   ]
+  },
+  {
+   "name": "Paywall",
+   "family": "sans",
+   "styles": [
+    {
+     "name": "blocker-buy",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-buy-regular",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-description",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 300,
+     "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-store-policy-header",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 300,
+     "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-header",
+     "family": "display",
+     "fontSize": "35px",
+     "fontWeight": 700,
+     "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 35 (1).",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-header-regular",
+     "family": "display",
+     "fontSize": "60px",
+     "fontWeight": 700,
+     "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 60 (1).",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-login",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 300,
+     "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-login-regular",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 300,
+     "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-price",
+     "family": "sans",
+     "fontSize": "24px",
+     "fontWeight": 300,
+     "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    },
+    {
+     "name": "blocker-name",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+     "sample": "Subscribe for unlimited access"
+    }
+   ]
+  },
+  {
+   "name": "Section-front cells",
+   "family": "sans",
+   "styles": [
+    {
+     "name": "cell-body",
+     "family": "display",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-body`. Spectral-Regular 16 in 69 of 70 standard-template markets. Other values: PTSerif-Regular 13 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-caption",
+     "family": "sans",
+     "fontSize": "12px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-deck",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline",
+     "family": "display",
+     "fontSize": "25px",
+     "fontWeight": 500,
+     "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-highlight",
+     "family": "display",
+     "fontSize": "22px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-thin",
+     "family": "display",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-media-above",
+     "family": "serif",
+     "fontSize": "21px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-media-bottom",
+     "family": "sans",
+     "fontSize": "17px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-media-left",
+     "family": "serif",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-media-left-normalfont",
+     "family": "serif",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-headline-bullets",
+     "family": "serif",
+     "fontSize": "15px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 69 of 70 standard-template markets. Other values: OpenSans-Light 15 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-label-bold-large",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-label-light-large",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 300,
+     "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-label-bold-small",
+     "family": "sans",
+     "fontSize": "10px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-label-light-small",
+     "family": "sans",
+     "fontSize": "10px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-score",
+     "family": "sans",
+     "fontSize": "36px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-tertiary",
+     "family": "serif",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-tertiary-headertext",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-timestamp",
+     "family": "sans",
+     "fontSize": "13px",
+     "fontWeight": 600,
+     "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-timestamp-tertiary",
+     "family": "sans",
+     "fontSize": "13px",
+     "fontWeight": 600,
+     "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "ar-headline",
+     "family": "sans",
+     "fontSize": "20px",
+     "fontWeight": 700,
+     "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 70 of 70 standard-template markets.",
+     "sample": "Augmented reality story"
+    },
+    {
+     "name": "cell-headline-default",
+     "family": "display",
+     "fontSize": "20px",
+     "fontWeight": 500,
+     "usage": "Style.json `cell-headline-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). Spectral-Medium 20 in 6 of 7. Other values: OpenSans-Regular 20 (1).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-blurb",
+     "family": "serif",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-blurb`, legacy template only (BS, DP, HC, MC, OS, SS, VP). PTSerif-Regular 16 in 4 of 7. Other values: Spectral-Regular 16 (3).",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-card-text-default",
+     "family": "sans",
+     "fontSize": "13px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-card-text-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 13 in 7 of 7.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-label-default",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Style.json `cell-label-default`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Regular 16 in 7 of 7.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "cell-signature",
+     "family": "sans",
+     "fontSize": "12px",
+     "fontWeight": 700,
+     "usage": "Style.json `cell-signature`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 12 in 7 of 7.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "label-kicker-left",
+     "family": "sans",
+     "fontSize": "12px",
+     "fontWeight": 700,
+     "usage": "Style.json `label-kicker-left`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 12 in 7 of 7.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "label-normal-small-left",
+     "family": "sans",
+     "fontSize": "10px",
+     "fontWeight": 700,
+     "usage": "Style.json `label-normal-small-left`, legacy template only (BS, DP, HC, MC, OS, SS, VP). OpenSans-Bold 10 in 7 of 7.",
+     "sample": "City council approves new transit plan"
+    }
+   ]
+  },
+  {
+   "name": "Article page",
+   "family": "display",
+   "styles": [
+    {
+     "name": "page-bio",
+     "family": "sans",
+     "fontSize": "18px",
+     "fontWeight": 300,
+     "usage": "Style.json `page-bio`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-body",
+     "family": "display",
+     "fontSize": "18px",
+     "fontWeight": 400,
+     "usage": "Style.json `page-body`. Spectral-Regular 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-body-bold",
+     "family": "display",
+     "fontSize": "18px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-body-bolditalic",
+     "family": "display",
+     "fontSize": "18px",
+     "fontWeight": 700,
+     "fontStyle": "italic",
+     "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-body-italic",
+     "family": "display",
+     "fontSize": "18px",
+     "fontWeight": 400,
+     "fontStyle": "italic",
+     "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-body-lightitalic",
+     "family": "display",
+     "fontSize": "18px",
+     "fontWeight": 400,
+     "fontStyle": "italic",
+     "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 18 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-byline",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 300,
+     "usage": "Style.json `page-byline`. OpenSans-Light 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-caption",
+     "family": "sans",
+     "fontSize": "12px",
+     "fontWeight": 400,
+     "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-deck",
+     "family": "sans",
+     "fontSize": "18px",
+     "fontWeight": 300,
+     "usage": "Style.json `page-deck`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-kicker",
+     "family": "sans",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-gallery",
+     "family": "sans",
+     "fontSize": "18px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-subhead",
+     "family": "sans",
+     "fontSize": "18px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-title",
+     "family": "sans",
+     "fontSize": "31px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-title`. OpenSans-Bold 31 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-title-tablet",
+     "family": "display",
+     "fontSize": "42px",
+     "fontWeight": 700,
+     "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    },
+    {
+     "name": "page-slogan",
+     "family": "display",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "fontStyle": "italic",
+     "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 16 (1).",
+     "sample": "The plan adds 40 miles of bus lanes by 2028."
+    }
+   ]
+  }
+ ]
+}

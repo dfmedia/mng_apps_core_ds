@@ -1,0 +1,384 @@
+{
+ "$description": "Type styles as shipped, copied from the style-guide artifact on 2026-10-30. Source data: do not edit.",
+ "source": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6, project/tokens.json → type",
+ "families": {
+  "serif": "\"PT Serif\", Georgia, serif",
+  "sans": "\"Open Sans\", Roboto, sans-serif",
+  "condensed": "\"Open Sans Condensed\", \"Open Sans\", sans-serif",
+  "spectral": "Spectral, Georgia, serif",
+  "roboto": "Roboto, sans-serif",
+  "playfair": "\"Playfair Display\", Georgia, serif"
+ },
+ "fonts": [
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Light.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-SemiBold.ttf",
+   "weight": "600",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans",
+   "file": "fonts/OpenSans-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSans-Regular-Condensed.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Open Sans Condensed",
+   "file": "fonts/OpenSansCondensed-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "PT Serif",
+   "file": "fonts/PT_Serif-Web-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "Roboto",
+   "file": "fonts/Roboto-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Roboto",
+   "file": "fonts/Roboto-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Playfair Display",
+   "file": "fonts/PlayfairDisplay-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraLight.ttf",
+   "weight": "200",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraLightItalic.ttf",
+   "weight": "200",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Light.ttf",
+   "weight": "300",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-LightItalic.ttf",
+   "weight": "300",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Regular.ttf",
+   "weight": "400",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Italic.ttf",
+   "weight": "400",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Medium.ttf",
+   "weight": "500",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-MediumItalic.ttf",
+   "weight": "500",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-SemiBold.ttf",
+   "weight": "600",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-SemiBoldItalic.ttf",
+   "weight": "600",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-Bold.ttf",
+   "weight": "700",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-BoldItalic.ttf",
+   "weight": "700",
+   "style": "italic"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraBold.ttf",
+   "weight": "800",
+   "style": "normal"
+  },
+  {
+   "family": "Spectral",
+   "file": "fonts/Spectral-ExtraBoldItalic.ttf",
+   "weight": "800",
+   "style": "italic"
+  }
+ ],
+ "groups": [
+  {
+   "name": "Article",
+   "family": "serif",
+   "styles": [
+    {
+     "name": "article-headline",
+     "fontSize": "21px",
+     "fontWeight": 400,
+     "usage": "Article headline: `ArticleText_Headline_Regular` at 21sp (ArticleText.Headline.Wapo, styles_article.xml:294). PT Serif in 71 markets; Open Sans in DP, SIT, TOD, TTT, VP; Open Sans Condensed Light in NYDN.",
+     "sample": "City council approves new transit plan"
+    },
+    {
+     "name": "article-h1",
+     "fontSize": "21px",
+     "fontWeight": 700,
+     "usage": "h1: `Article_Text_Bold` at Article_Header_size1 21sp (articles dimens.xml:106). PT Serif Bold; Open Sans Bold in DP, SIT, TOD, TTT, VP."
+    },
+    {
+     "name": "article-h2",
+     "fontSize": "20px",
+     "fontWeight": 700,
+     "usage": "h2: 20sp (Article_Header_size2). Same fonts as article-h1."
+    },
+    {
+     "name": "article-h3",
+     "fontSize": "19px",
+     "fontWeight": 700,
+     "usage": "h3: 19sp (Article_Header_size3). Same fonts as article-h1."
+    },
+    {
+     "name": "article-h4",
+     "fontSize": "18px",
+     "fontWeight": 700,
+     "usage": "h4: 18sp. h5 is 17sp, h6 16sp."
+    },
+    {
+     "name": "article-body",
+     "fontSize": "15px",
+     "fontWeight": 400,
+     "lineHeight": 1.2,
+     "usage": "Article body: `Article_Text_Regular` at 15sp, line spacing x1.2 (ArticleText.Wapo, styles_article.xml:67). PT Serif in 72 markets; Open Sans in DP, SIT, TOD, TTT, VP. Readers can change it: Small / Medium / Large / Extra Large.",
+     "sample": "Crews worked through the night to reopen the highway after the storm."
+    },
+    {
+     "name": "article-subhead",
+     "fontSize": "14px",
+     "fontWeight": 400,
+     "usage": "Article subhead: 14sp (ArticleText.Subhead.Wapo)."
+    },
+    {
+     "name": "article-byline",
+     "family": "sans",
+     "fontSize": "13px",
+     "fontWeight": 700,
+     "usage": "Byline: `Article_Byline_Bold` OpenSans-Bold 13sp, #323232 (CT: OpenSans-SemiBold)."
+    },
+    {
+     "name": "article-dateline",
+     "family": "sans",
+     "fontSize": "13px",
+     "fontWeight": 700,
+     "letterSpacing": "0.05em",
+     "usage": "Dateline: `Article_Dateline_Bold` OpenSans-Bold 13sp, letter spacing 0.05, #993C3C43 (CT: SemiBold)."
+    },
+    {
+     "name": "article-caption",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 400,
+     "usage": "Image caption: `Article_ImageCaption_Regular` OpenSans-Regular 14sp, #787878. Photo credit 13sp."
+    },
+    {
+     "name": "article-image-credit",
+     "family": "condensed",
+     "fontSize": "11px",
+     "fontWeight": 300,
+     "letterSpacing": "0.05em",
+     "usage": "Image credit: Open Sans Condensed Light (file OpenSans-Regular-Condensed.ttf) 11sp, all caps, letter spacing 0.05, #AFAFAF."
+    },
+    {
+     "name": "article-pullquote",
+     "family": "condensed",
+     "fontSize": "16px",
+     "fontWeight": 300,
+     "usage": "Pull quote: Open Sans Condensed Light 16sp."
+    }
+   ]
+  },
+  {
+   "name": "Section front",
+   "family": "serif",
+   "styles": [
+    {
+     "name": "sf-headline-highlight",
+     "fontSize": "21px",
+     "fontWeight": 700,
+     "usage": "Highlight headline base size 21sp (page_headline_highlight_size_base). PageBuilder size multiplies it. `Headline_Font_Highlight`: PT Serif Bold in 71 markets; Open Sans Bold in DP, SIT, TOD, TTT, VP; Open Sans Condensed Bold in NYDN."
+    },
+    {
+     "name": "sf-headline",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Normal headline base size 16sp (page_headline_normal_size_base); PageBuilder \"normal\" = x1.18, about 19sp on phone. `Headline_Font_Normal`, same fonts as sf-headline-highlight.",
+     "sample": "Storm closes mountain passes"
+    },
+    {
+     "name": "sf-headline-thin",
+     "fontSize": "15px",
+     "fontWeight": 400,
+     "usage": "Thin headline base size 15sp. `Headline_Font_Thin`: PT Serif Regular; Open Sans Regular in DP, NYDN, SIT, TOD, TTT, VP."
+    },
+    {
+     "name": "sf-blurb",
+     "fontSize": "15px",
+     "fontWeight": 400,
+     "lineHeight": 1.2,
+     "usage": "Story blurb: `Blurb_Font` PT Serif Regular 15sp (homepagestory_blurb_size), line spacing x1.2. All markets."
+    },
+    {
+     "name": "sf-byline",
+     "family": "condensed",
+     "fontSize": "13px",
+     "fontWeight": 700,
+     "usage": "Byline / section / timestamp: `Byline_Font` Open Sans Condensed Bold 13sp, all caps (HomePage_Story_Byline). All markets."
+    },
+    {
+     "name": "sf-label",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Story label (kicker): `Label_Font_Normal` OpenSans-Bold 14sp (homepagestory_label_size)."
+    }
+   ]
+  },
+  {
+   "name": "App",
+   "family": "sans",
+   "styles": [
+    {
+     "name": "nav-label",
+     "family": "roboto",
+     "fontSize": "10px",
+     "fontWeight": 400,
+     "usage": "Bottom-nav tab label: 10sp (NavigationPanelTextAppearance). No font file set, so the system font."
+    },
+    {
+     "name": "section-tab",
+     "fontSize": "12px",
+     "fontWeight": 600,
+     "usage": "Section tabs under the top bar: OpenSans SemiBold (Toolbar.Tab). Size is `tabs_text_size`, defined as 12sp in articles and 14sp in notifications."
+    },
+    {
+     "name": "settings-item",
+     "family": "roboto",
+     "fontSize": "14px",
+     "fontWeight": 400,
+     "usage": "Settings row: `Settings_Item_Font` Roboto Regular 14sp in 75 markets; Open Sans in CT, NYDN."
+    },
+    {
+     "name": "settings-category",
+     "family": "roboto",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Settings header: `Settings_Category_Font` Roboto Regular 16sp. CT, NYDN and OS use 14sp; CT uses Open Sans Condensed Bold and NYDN Open Sans Condensed Light."
+    },
+    {
+     "name": "search-headline",
+     "family": "spectral",
+     "fontSize": "24px",
+     "fontWeight": 700,
+     "usage": "Search result headline: `Search_Results_Headline` Spectral Bold 24sp in 71 markets; Open Sans Condensed Bold in DP, NYDN, SIT, TOD, TTT; Open Sans Condensed Light in VP."
+    },
+    {
+     "name": "paywall-heading",
+     "family": "playfair",
+     "fontSize": "24px",
+     "fontWeight": 400,
+     "usage": "Buy-subscription heading: Playfair Display 24 (PaywallHeadingText)."
+    },
+    {
+     "name": "paywall-text",
+     "family": "roboto",
+     "fontSize": "16px",
+     "fontWeight": 400,
+     "usage": "Paywall body text: system sans-serif 16sp (PaywallText, maincontroller styles.xml)."
+    },
+    {
+     "name": "continue-label",
+     "fontSize": "15px",
+     "fontWeight": 600,
+     "usage": "Your News Continue label: OpenSans SemiBold 15sp (17sp at width 400dp+), white."
+    }
+   ]
+  }
+ ]
+}

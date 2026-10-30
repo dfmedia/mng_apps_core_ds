@@ -36,7 +36,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Open Sans Light/ExtraBold files (MISSING-ASSETS 4.3), partly · PROGRESS 1.5 + Type comparison. Button labels already exist as platform text styles (DEC-07) |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Open Sans Light/ExtraBold files (MISSING-ASSETS 4.3), partly · PROGRESS 1.5. Step 1 done 2026-10-30: docs/TYPE-COMPARISON.md (75 roles: 1 same, 1 close, 11 differ, 48 iOS only, 8 Android only, 6 unknown). Button labels exist as platform text styles (DEC-07) |
 
 ### Scales
 
