@@ -23,8 +23,9 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | CTRL-02 | Buttons | Add Secondary, Text, Disabled and Loading button states | All markets | PROPOSED (pilot adds Disabled and Text link, DEC-07) |
 | BTN-01 | Buttons | One primary button height for both apps (iOS 44 provisional, Android 60) | All markets | FUTURE (DEC-07) |
 | BTN-02 | Buttons | One button label style for both apps (iOS Open Sans Bold 14, Android system font) | All markets | FUTURE (DEC-07) |
-| TYPE-03 | Type | One serif for headlines and article text (iOS Spectral, Android PT Serif) | All markets | FUTURE (DEC-09) |
-| TYPE-04 | Type | One shared type scale (e.g. article body iOS 18 pt, Android 15 sp) | All markets | FUTURE (DEC-09) |
+| TYPE-03 | Type | One serif for both apps | — | REJECTED (Karl 2026-10-30: fonts stay per platform) |
+| TYPE-04 | Type | Shared type scale: one set of sizes for both apps, each in its own fonts | All markets | FUTURE (DEC-09) |
+| TYPE-05 | Type | Remove per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | ~13 markets | FUTURE (DEC-09) |
 | LAY-01 | Layout | Reconcile the two breakpoint sets (668/835/1113 vs 668/769/1025) | iPad section fronts | PROPOSED |
 | TYPE-01 | Type | Retire the legacy Style.json template (7 markets) | BS, DP, HC, MC, OS, SS, VP | PROPOSED |
 | TYPE-02 | Type | Remove font fallbacks that change size (e.g. 12 → 10) | `AppThemeable.swift:630` | PROPOSED |
@@ -210,8 +211,11 @@ Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font 
 ### TYPE-02 · Size-changing font fallbacks — `PROPOSED`
 `UIFont(name:size:) ?? .systemFont(ofSize:)` fallbacks sometimes change size (12 → 10, `AppThemeable.swift:630`). Fallbacks should keep the size.
 
-### TYPE-03 · One serif — `FUTURE`
-Decided 2026-10-30 (DEC-09): keep each app's serif for now (iOS Spectral, Android PT Serif; both apps bundle both). Comparison: docs/TYPE-COMPARISON.md.
+### TYPE-03 · One serif — `REJECTED`
+Karl, 2026-10-30: the fonts can't be unified across iOS and Android and stay separate (iOS Spectral, Android PT Serif for headlines and article text).
 
-### TYPE-04 · One type scale — `FUTURE`
-Decided 2026-10-30 (DEC-09): keep each app's shipped sizes. Only 1 of 19 shared roles matches today (Section-front label, Open Sans Bold 14).
+### TYPE-04 · Shared type scale — `FUTURE`
+One set of sizes for both apps, each app keeping its own fonts. Until then (DEC-09) each app keeps its shipped sizes. Only 1 of 19 shared roles matches today (Section-front label, Open Sans Bold 14).
+
+### TYPE-05 · Remove per-market font exceptions — `FUTURE`
+Some markets override the standard fonts: iOS NYDN (Open Sans Condensed) and VP (Open Sans), plus single-market values in a few cell and paywall styles; Android DP, SIT, TOD, TTT, VP (Open Sans for headlines and article text), NYDN, CT, MC, HC, OS, SS (byline, settings, search). Every market should use its platform's standard styles. Today they are tracked as notes on each type token (docs/TYPE-STYLES.md source notes).

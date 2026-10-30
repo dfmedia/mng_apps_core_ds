@@ -36,8 +36,8 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ⬜ to do | ✅ done | 📝 written, not compiled | ⛔ Open Sans Light / ExtraBold installed in Figma (MISSING-ASSETS 4.3) · DEC-09: production values per app. 63 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma text styles next (108 incl. 26 legacy). Comparison: docs/TYPE-COMPARISON.md |
-| Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Kept as notes on each type token (DEC-09) |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-09: production values per app. 63 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma: Android 25 text styles done (Subhead font unknown); iOS 82 next. Comparison: docs/TYPE-COMPARISON.md |
+| Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Kept as notes on each type token (DEC-09). Future: remove them (IMPROVEMENTS TYPE-05) |
 
 ### Scales
 

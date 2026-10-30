@@ -47,7 +47,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 | # | Ask | Detail | Status |
 |---|-----|--------|--------|
 | 4.1 | Open Sans Condensed source/licence | Used only by NYDN. Confirm the bundled files and whether Figma's Google Fonts version matches. | OPEN |
-| 4.4 | Type styles missing from the exports | iOS: section tabs, settings rows and headers, search result headline. Android: top bar title, article subhead font (size 14 known). Found in the type comparison (docs/TYPE-COMPARISON.md). | OPEN |
+| 4.4 | Type styles missing from the exports | iOS: section tabs, settings rows and headers, search result headline. Android: top bar title, article subhead font (style `ArticleText.Subhead.Wapo`, size 14sp known; asked 2026-10-30). Found in the type comparison (docs/TYPE-COMPARISON.md). | OPEN |
 | 4.3 | Open Sans Light & ExtraBold in Figma | Figma's Open Sans only offers Regular, Italic, SemiBold, Bold (+ italics). iOS bundles Light, LightItalic, ExtraBold, ExtraBoldItalic too. Need the app's font files installed locally (or confirm which styles are actually used) so text styles render correctly. | OPEN |
 | 4.2 | Dynamic Type mapping | Article text has 6 sizes (15% steps) or follows iOS text size; other screens are fixed. Need the intended scale if we want it as tokens. | OPEN |
 
