@@ -10,6 +10,7 @@ Design-system decisions with the rule, the date, who made it and what changed. P
 | DEC-04 | Colors are managed as design tokens: one DTCG source in Core, Style Dictionary generates Swift and Kotlin; every color is documented as hex and RGB | 2026-10-21 | Karl |
 | DEC-05 | One breaking-news red for every market and both apps: `#cf000e` with white text (5.74:1, WCAG AA). Fix on iOS ASAP | 2026-10-21 | Karl |
 | DEC-06 | Figma color variables: a **Brand colors** collection with every market as plain variables (no modes), plus a **Brand theme** collection with 20 modes (the plan limit) for the required markets, one per cluster and the most different ones. Daily Herald added as a provisional market | 2026-10-21 | Karl |
+| DEC-09 | Typography and components match production: each app keeps its own fonts and sizes; every shipped style is built, one-app styles and the iOS legacy template included; raw production values where no token exists yet | 2026-10-30 | Karl |
 | DEC-08 | Brand colors: iOS is the default for every iOS/Android mismatch that no source confirms, including close ones (the drift rule no longer picks Android on its own). DEC-03 is final: no Apps team confirmation needed | 2026-10-26 | Karl |
 | DEC-07 | Button pilot: one Core Button component that keeps each app's shipped values. Colors, radius and height stay as shipped (as per-platform tokens); the label font stays per platform. Contrast failures are required app fixes; height and label font are future changes | 2026-10-26 | Karl |
 
@@ -249,3 +250,14 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 
 - **Unchanged:** values the migration sheet confirms (DEC-01 steps 1–2 with the sheet), values moved to the web color (DEC-02), and the Core breaking-news red (DEC-05).
 - **Applied in:** tokens, Swift, Kotlin, the 3 flavor XML files, docs/BRAND-COLORS.md and the Figma Brand colors variables.
+
+## DEC-09 · Typography (and components) match production
+
+- **Rule (Karl, 2026-10-30):** what we build in Figma, and so what Claude builds from, must match what is in production. If that means rebuilding something exactly as it ships (an eyebrow, a cell), we rebuild it. Where there is no spacing, size or other token for a value yet, use the raw production value.
+- **Serif:** each app keeps its own: iOS Spectral, Android PT Serif. Unifying is a future change (IMPROVEMENTS TYPE-03).
+- **Sizes:** each app keeps its shipped sizes (pt / sp). A shared type scale is a future change (TYPE-04).
+- **All styles:** all 63 iOS and 26 Android styles become tokens, code and Figma text styles, including the 56 that only one app has.
+- **iOS legacy template** (BS, DP, HC, MC, OS, SS, VP): built too, as a `Legacy/` group of text styles (19 legacy values + 7 legacy-only styles) and `legacySpec` in code. Retiring the template stays a future change (TYPE-01).
+- **Naming:** Core owns the role names (`Article/Headline`, `Section front/Blurb` …). The same name exists in the iOS and Android files wherever both apps have the role, so mockups can swap libraries.
+- **Not yet covered:** per-market font exceptions (e.g. NYDN, VP on iOS; the Open Sans group DP, SIT, TOD, TTT, VP on Android). They are kept as notes on each token; backlog item foundation/type-markets.
+- **Applied by:** `scripts/build_type_tokens.py` → `tokens/ios/type.tokens.json`, `tokens/android/type.tokens.json`, `data/type-styles.json`, `docs/TYPE-STYLES.md`; `npm run build` → `MNGTypeStyles.swift` (iOS repo), `MngTypeStyles.kt` (Android repo).

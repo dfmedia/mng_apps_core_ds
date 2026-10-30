@@ -12,17 +12,17 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 7 | 0 | 1 | 2 | 4 | 0 |
+| Foundations | 8 | 0 | 1 | 3 | 4 | 0 |
 | Color roles | 12 | 0 | 9 | 2 | 0 | 1 |
 | Components | 20 | 0 | 2 | 6 | 12 | 0 |
 | Layout | 6 | 0 | 0 | 0 | 6 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **106** | **0** | **12** | **10** | **22** | **62** |
+| **Total** | **107** | **0** | **12** | **11** | **22** | **62** |
 
 ## Suggested order
 
 1. Apps team answers MISSING-ASSETS 5.5 (button pilot approved 2026-10-26)
-2. Typography: text styles as tokens, Figma text styles and code (foundation/type)
+2. Typography: Figma text styles in the iOS and Android files (needs Open Sans Light installed), then per-market font exceptions
 3. Spacing, radius and size scales (foundation/spacing, radius, size), which unblock the layout rules
 4. App chrome components whose colors already exist: Breaking-news banner (DSC-15/19 ASAP), Top bar, Bottom tab bar, Section tabs
 5. Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in
@@ -36,7 +36,8 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Open Sans Light/ExtraBold files (MISSING-ASSETS 4.3), partly · PROGRESS 1.5. Step 1 done 2026-10-30: docs/TYPE-COMPARISON.md (75 roles: 1 same, 1 close, 11 differ, 48 iOS only, 8 Android only, 6 unknown). Button labels exist as platform text styles (DEC-07) |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ⬜ to do | ✅ done | 📝 written, not compiled | ⛔ Open Sans Light / ExtraBold installed in Figma (MISSING-ASSETS 4.3) · DEC-09: production values per app. 63 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma text styles next (108 incl. 26 legacy). Comparison: docs/TYPE-COMPARISON.md |
+| Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Kept as notes on each type token (DEC-09) |
 
 ### Scales
 

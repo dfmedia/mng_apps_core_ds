@@ -8,10 +8,23 @@
    "name": "Text styles (63 iOS styles; Android font maps per market)",
    "owner": "core+variant",
    "figma": "todo",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "Open Sans Light / ExtraBold installed in Figma (MISSING-ASSETS 4.3)",
+   "note": "DEC-09: production values per app. 63 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma text styles next (108 incl. 26 legacy). Comparison: docs/TYPE-COMPARISON.md",
+   "overall": "in progress"
+  },
+  {
+   "id": "foundation/type-markets",
+   "area": "Foundations",
+   "group": "Typography",
+   "name": "Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…)",
+   "owner": "core+variant",
+   "figma": "todo",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "Open Sans Light/ExtraBold files (MISSING-ASSETS 4.3), partly",
-   "note": "PROGRESS 1.5. Step 1 done 2026-10-30: docs/TYPE-COMPARISON.md (75 roles: 1 same, 1 close, 11 differ, 48 iOS only, 8 Android only, 6 unknown). Button labels exist as platform text styles (DEC-07)",
+   "blocked_by": "",
+   "note": "Kept as notes on each type token (DEC-09)",
    "overall": "todo"
   },
   {

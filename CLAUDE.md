@@ -73,7 +73,8 @@ Thresholds: same < 0.012 ΔE · close < 0.05 · differs ≥ 0.05. Contrast targe
 5. **Tokens are the delivery format.** Colors (and later type, spacing, radius) live as DTCG tokens in `tokens/`; Swift and Kotlin are generated, never hand-written. Always document colors as hex and RGB.
 6. **Data first, then Figma.** Every Figma table comes from a JSON in `data/` that a script in `scripts/` regenerates. Never type values by hand.
 7. **Don't invent.** If the source doesn't say, write "unknown, ask Apps team" and add it to `docs/MISSING-ASSETS.md`.
-8. **Moving items to the platform files** happens only after Karl approves the ownership page for that area.
+8. **Match production (DEC-09).** Components and text styles are built exactly as they ship. Where no token exists for a value yet, use the raw production value; proposed changes go in IMPROVEMENTS.
+9. **Moving items to the platform files** happens only after Karl approves the ownership page for that area.
 
 ## Figma page style (match the existing pages)
 
@@ -120,6 +121,7 @@ python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json,
 python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06)
 npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/Tokens, ../mng_apps_android_ds/tokens
 python3 scripts/compare_type.py     # typography step 1: data/type-comparison.json + docs/TYPE-COMPARISON.md
+python3 scripts/build_type_tokens.py   # DEC-09: tokens/*/type.tokens.json, data/type-styles.json, docs/TYPE-STYLES.md (before npm run build)
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```

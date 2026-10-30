@@ -23,6 +23,8 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | CTRL-02 | Buttons | Add Secondary, Text, Disabled and Loading button states | All markets | PROPOSED (pilot adds Disabled and Text link, DEC-07) |
 | BTN-01 | Buttons | One primary button height for both apps (iOS 44 provisional, Android 60) | All markets | FUTURE (DEC-07) |
 | BTN-02 | Buttons | One button label style for both apps (iOS Open Sans Bold 14, Android system font) | All markets | FUTURE (DEC-07) |
+| TYPE-03 | Type | One serif for headlines and article text (iOS Spectral, Android PT Serif) | All markets | FUTURE (DEC-09) |
+| TYPE-04 | Type | One shared type scale (e.g. article body iOS 18 pt, Android 15 sp) | All markets | FUTURE (DEC-09) |
 | LAY-01 | Layout | Reconcile the two breakpoint sets (668/835/1113 vs 668/769/1025) | iPad section fronts | PROPOSED |
 | TYPE-01 | Type | Retire the legacy Style.json template (7 markets) | BS, DP, HC, MC, OS, SS, VP | PROPOSED |
 | TYPE-02 | Type | Remove font fallbacks that change size (e.g. 12 → 10) | `AppThemeable.swift:630` | PROPOSED |
@@ -207,3 +209,9 @@ Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font 
 
 ### TYPE-02 · Size-changing font fallbacks — `PROPOSED`
 `UIFont(name:size:) ?? .systemFont(ofSize:)` fallbacks sometimes change size (12 → 10, `AppThemeable.swift:630`). Fallbacks should keep the size.
+
+### TYPE-03 · One serif — `FUTURE`
+Decided 2026-10-30 (DEC-09): keep each app's serif for now (iOS Spectral, Android PT Serif; both apps bundle both). Comparison: docs/TYPE-COMPARISON.md.
+
+### TYPE-04 · One type scale — `FUTURE`
+Decided 2026-10-30 (DEC-09): keep each app's shipped sizes. Only 1 of 19 shared roles matches today (Section-front label, Open Sans Bold 14).

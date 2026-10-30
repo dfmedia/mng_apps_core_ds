@@ -25,7 +25,7 @@ Item-level to-do list (every element and component from the iOS and Android styl
 | 1.2 Pick merges and mode strategy | ⏸ later | Merges: keep shipped as-is for now. Modes: revisit later. Tab-label contrast (4.5:1): revisit later |
 | 1.3 Build color variables (Primitives → Brand → System) | ⬜ | After 1.2 |
 | 1.4 The other 117 themed colors per market | ⬜ | 62 are identical in every market → System collection |
-| 1.5 Typography: font variables + 63 text styles | 🔄 step 1 ⏸ review | Blocked partly by MISSING-ASSETS 4.3 (Open Sans Light/ExtraBold) |
+| 1.5 Typography: font variables + 63 text styles | 🔄 DEC-09: tokens + code done; Figma styles next | Blocked partly by MISSING-ASSETS 4.3 (Open Sans Light/ExtraBold) |
 | 1.6 Spacing, radius, size, breakpoint variables | ⬜ | 6 / 4 / 4 / 5 + 12-col grid |
 | 1.7 Icons page: system comparison grid | ✅ | Figma page **Icons · System Comparison**: 59 purposes × SF Symbols / Material Symbols / Font Awesome 5.15.1, gaps flagged. SF Symbols column filled from PNG export (scripts/export_sf_symbols.swift → assets/sf-symbols/) |
 | 1.8 Icons: decide semantic icon list + build Icon component | ⬜ | After Apps team answers MISSING-ASSETS §1 |
@@ -86,3 +86,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-10-29** — Kotlin package `com.mng.designsystem.tokens` confirmed (DEC-04); placeholder notes removed in Core and mng_apps_android_ds.
 - **2026-10-30** — Typography step 1: data/source/ios-type.json + android-type.json (from the style guides), scripts/compare_type.py → data/type-comparison.json, docs/TYPE-COMPARISON.md. 75 roles: 1 same, 1 close, 11 differ, 48 iOS only, 8 Android only, 6 unknown (MISSING-ASSETS 4.4). Main finding: iOS headlines/body in Spectral, Android in PT Serif. Figma review page waiting on the Desktop Bridge.
 - **2026-10-30** — Figma Core: new page **Type · iOS vs Android** (01 summary, 02 the 19 roles both apps have drawn side by side in the shipped fonts, 03 the 56 one-app styles), from data/type-comparison.json. Waiting on Karl's step-2 decisions.
+- **2026-10-30** — DEC-09: typography and components match production. Type tokens for all 63 iOS + 26 Android styles (scripts/build_type_tokens.py), docs/TYPE-STYLES.md, MNGTypeStyles.swift (mng_apps_ios_ds), MngTypeStyles.kt (mng_apps_android_ds). Open Sans Light/LightItalic/ExtraBold/ExtraBoldItalic added to assets/fonts for Figma. TYPE-03/04 FUTURE.
