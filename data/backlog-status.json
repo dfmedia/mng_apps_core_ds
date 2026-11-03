@@ -193,10 +193,10 @@
    "note": "Android-only role: tokens/android, not yet in the Android Figma file"
   },
   "color/accent": {
-   "figma": "blocked",
-   "tokens": "blocked",
-   "code": "blocked",
-   "blocked_by": "PLAT-10: switch-on color"
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority"
   },
   "component/button-primary": {
    "figma": "done",
@@ -218,7 +218,10 @@
    "note": "Disabled done (DEC-07); Secondary and Loading not shipped by either app"
   },
   "component/button-continue": {
-   "note": "DSC-24: recommend folding into Primary button"
+   "figma": "blocked",
+   "tokens": "todo",
+   "code": "todo",
+   "blocked_by": "Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24)"
   },
   "component/breaking-banner": {
    "tokens": "partial",
@@ -294,13 +297,77 @@
    "code": "partial",
    "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
    "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)"
+  },
+  "component/subscription-option": {
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again"
+  },
+  "component/permission-prompt": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height)",
+   "note": "Colors and radius 5 are tokens (DEC-14)"
+  },
+  "component/button-account": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height, colors)",
+   "note": "Radius is a token (DEC-12)"
+  },
+  "component/savings-badge": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, padding)",
+   "note": "Text #004e87 and radius 15 are tokens"
+  },
+  "component/social-signin": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors)",
+   "note": "Google radius and icon size are tokens"
+  },
+  "component/switch": {
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: native look, on = action. Android built (Components · Controls); iOS waits on the iOS Figma plugin session"
+  },
+  "component/checkbox": {
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended)"
+  },
+  "component/text-size": {
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: iOS slider (track/ticks #999999, thumb = action) waits on the iOS Figma plugin session; Android dialog has no custom colors"
+  },
+  "component/segmented": {
+   "figma": "blocked",
+   "tokens": "todo",
+   "code": "todo",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
+  },
+  "component/loading": {
+   "figma": "blocked",
+   "tokens": "todo",
+   "code": "todo",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
   }
  },
  "next": [
-  "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), icons (§1)",
-  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes from the Apps team (5.6)",
-  "Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in",
-  "Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator",
+  "Karl: Continue button decision; publish the Core library again (Subscription option wrappers)",
+  "iOS controls in Figma (Switch, Text size slider) once the iOS plugin session responds",
+  "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)",
+  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)",
   "System colors (the other 117 themed colors); breakpoints after LAY-01",
   "Icons, once the Apps team answers MISSING-ASSETS §1"
  ]

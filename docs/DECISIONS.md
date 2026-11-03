@@ -302,3 +302,16 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - **Android section tabs and tab labels** (`sectiontab*`, `tablabelactive`, `tablabelinactive`): Android ships the section tabs in the top-bar colors and the tab labels in the tab-icon colors, so these roles **follow the Core roles** (navbar, navtext, tabactive, tabinactive) and inherit every Core color decision. Where production breaks that pattern the shipped value is kept: CT section tabs (white bar, #2c2d2d text, #004e87 selected); tab labels in DP, MC, NYDN, OS, TSAR. Figma Android file: **Shell colors · Android** (aliases of the Core library's Brand colors) + **Shell theme · Android** (20 modes).
   - Already Core: top bar navbar/navtext, tab bar tabbar/tabactive/tabinactive, banner alert/alerttext, iOS header band `header`, Android `statusbar`.
 - **Icons:** swappable icon slots, sized with the icon tokens, until the icon set exists (MISSING-ASSETS §1).
+
+
+## DEC-14 · Remaining buttons and controls: majority values, native look
+
+- **Majority rule (Karl, 2026-11-03):** build each color for the majority of markets and only note the markets that are exceptions. **Exceptions are not built.** Listed in `docs/CONTROL-EXCEPTIONS.md` (`scripts/build_control_tokens.py` → `tokens/*/controls.tokens.json`, `data/control-colors.json`).
+- **Tints follow Core `action`** in most markets, so they need no new per-market tokens: iOS subscription option 74/77, notification Yes 74, settings switch 77, alert switch 77, offline switch 71, slider thumb 75, enable notifications 68; Android Buy 74/77, Continue 70, alerts enable 58, `MainStyle_Accent` 52 (closes PLAT-10 for the majority).
+- **Fixed colors become platform tokens** (hex · RGB): iOS unselected option #f1f1f1 · 241, 241, 241; labels #ffffff · 255, 255, 255; notification No #333333 · 51, 51, 51; slider track and ticks #999999 · 153, 153, 153; system switch off-track #e9e9ea · 233, 233, 234 and thumb #ffffff. Android switch off thumb #e5e5e5 · 229, 229, 229 and track #b9b9b9 · 185, 185, 185; unchecked checkbox #757575 · 117, 117, 117; savings label text #004e87 · 0, 78, 135.
+- **Built now (fully specified):** Subscription option (Core component, iOS/Android modes in the **Subscription option** collection: radius 8/0, inset 16/14, Open Sans Bold 16 / Roboto 16 with a bold first line); Android Switch and Checkbox (Components · Controls); iOS Switch and Text size slider (pending in Figma, tokens done).
+- **Native controls** are drawn to the system look and tinted by tokens (Karl), not redesigned.
+- **Asked of the Apps team (MISSING-ASSETS 5.7):** fonts and heights for the notification prompt, account buttons, savings label, social sign-in, Android alerts enable and What's New buttons; colors of the segmented control and loading indicator.
+- **Continue button:** waiting on Karl (as shipped per platform / Core drawn component / fold into Primary, DSC-24). Comparison image sent 2026-11-03.
+- **Code:** `MNGControlTokens.swift` (iOS repo), `tokens/res/values/mng_controls.xml` (Android repo).
+- **Open question:** DEC-13 kept app shell exceptions (CT section tabs, 5 tab-label markets) as built tokens, which differs from this rule.

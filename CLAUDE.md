@@ -119,6 +119,7 @@ python3 scripts/apply_core_alert.py data/brand-color-resolution.json data/source
 python3 scripts/apply_new_markets.py data/brand-color-resolution.json data/source/new-markets.json   # provisional markets (TDH)
 python3 scripts/build_tokens.py     # tokens/*.tokens.json + docs/BRAND-COLORS.md
 python3 scripts/build_shell_colors.py   # DEC-13: app shell colors (tokens/*/shell.tokens.json, data/shell-colors.json)
+python3 scripts/build_control_tokens.py   # DEC-14: control colors, majority values (tokens/*/controls.tokens.json, docs/CONTROL-EXCEPTIONS.md)
 python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json, docs/components/BUTTON.md, IMPROVEMENTS CLR-04 (DEC-07)
 python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06)
 npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/Tokens, ../mng_apps_android_ds/tokens

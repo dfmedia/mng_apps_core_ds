@@ -60,6 +60,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 | 5.3 | Motion / animation specs | None extracted. | OPEN |
 | 5.5 | Button values not in the source | iOS primary button height (pilot uses 44 pt); Android button label weight and size (pilot uses Roboto Medium 14sp, the Material default); iOS paywall Log In link font (pilot uses Open Sans Regular 14); pressed state on both apps. | OPEN |
 | 5.6 | App shell sizes | Production heights, paddings and title/label sizes for the top bar, section tabs, bottom tab bar, breaking-news banner and (iOS) section header band, on both apps. The style guides only have illustrative values. Blocks the app shell components (DEC-13). | OPEN |
+| 5.7 | Remaining buttons and controls | Font, size and height for: iOS notification prompt Yes/No, Manage subscription / delete account buttons, savings label, social sign-in buttons (Apple, Google, Facebook), Android alerts Enable and What's New buttons. Colors for the segmented control and the loading indicator on both apps. Colors are otherwise done (DEC-14). | OPEN |
 | 5.4 | Current screenshots | Reference screenshots of key screens for a handful of markets (nav, section front, article, paywall, settings) to check the build against. | OPEN |
 
 ## 6. Platform — `OPEN`

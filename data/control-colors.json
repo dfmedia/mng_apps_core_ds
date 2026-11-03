@@ -1,0 +1,298 @@
+{
+ "generated_by": "scripts/build_control_tokens.py",
+ "follow": [
+  {
+   "platform": "ios",
+   "key": "subscriptionTintColor",
+   "what": "Subscription option fill",
+   "follows": "action",
+   "majority": 74,
+   "of": 77,
+   "exceptions": {
+    "OCR": "#000000",
+    "TBH": "#004e87",
+    "TDF": "#004e87"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "pushNotificationPromptYesButtonBackgroundColor",
+   "what": "Notification prompt Yes fill",
+   "follows": "action",
+   "majority": 74,
+   "of": 77,
+   "exceptions": {
+    "TDCD": "#000000",
+    "TIVDB": "#807c7c",
+    "TSAR": "#ffffff"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "settingsSwitchTintColor",
+   "what": "Settings switch (on)",
+   "follows": "action",
+   "majority": 77,
+   "of": 77,
+   "exceptions": {}
+  },
+  {
+   "platform": "ios",
+   "key": "alertTopicCellSwitchTint",
+   "what": "Alert topic switch (on)",
+   "follows": "action",
+   "majority": 77,
+   "of": 77,
+   "exceptions": {}
+  },
+  {
+   "platform": "ios",
+   "key": "offlineViewSwitchTintColor",
+   "what": "Offline mode switch (on)",
+   "follows": "action",
+   "majority": 71,
+   "of": 77,
+   "exceptions": {
+    "NYDN": null,
+    "OS": null,
+    "TDCD": "#000000",
+    "TDLW": "#000000",
+    "TIVDB": "#807c7c",
+    "TSAR": "#ffffff"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "settingsSliderThumbTintColor",
+   "what": "Text size slider thumb",
+   "follows": "action",
+   "majority": 75,
+   "of": 77,
+   "exceptions": {
+    "TDCD": "#000000",
+    "TIVDB": "#807c7c"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "enableNotificationViewButtonBackgroundColor",
+   "what": "Enable notifications button fill",
+   "follows": "action",
+   "majority": 68,
+   "of": 77,
+   "exceptions": {
+    "BS": "#000000",
+    "DP": "#000000",
+    "HC": "#000000",
+    "MC": "#000000",
+    "SS": "#000000",
+    "TDCD": "#000000",
+    "TIVDB": "#807c7c",
+    "TMI": "#ffffff",
+    "VP": "#000000"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "Paywall_BuyButton_Background",
+   "what": "Subscription option fill",
+   "follows": "action",
+   "majority": 74,
+   "of": 77,
+   "exceptions": {
+    "CT": "#004e87",
+    "OS": "#15919d",
+    "TSAR": "#15919d"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "btn_continue",
+   "what": "Your News Continue fill, checked topic checkbox",
+   "follows": "action",
+   "majority": 70,
+   "of": 77,
+   "exceptions": {
+    "BS": "#779dcf",
+    "CT": "#1e4d82",
+    "DP": "#4fa8d1",
+    "OS": "#15919d",
+    "TDP": "#000000",
+    "TPD": "#000000",
+    "TSAR": "#000000"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "Alerts_Enable_Button_Background",
+   "what": "Alerts enable button fill",
+   "follows": "action",
+   "majority": 58,
+   "of": 77,
+   "exceptions": {
+    "DP": "#4fa8d1",
+    "OCR": "#daa520",
+    "OS": "#ff6859",
+    "PSN": "#daa520",
+    "SGVT": "#daa520",
+    "TBAN": "#daa520",
+    "TDB": "#daa520",
+    "TDF": "#daa520",
+    "TEBT": "#daa520",
+    "TLBPT": "#daa520",
+    "TMN": "#daa520",
+    "TPD": "#000000",
+    "TRDF": "#daa520",
+    "TSAR": "#ff6859",
+    "TSBS": "#daa520",
+    "TSPPP": "#daa520",
+    "TSV": "#daa520",
+    "TT": "#daa520",
+    "TWDN": "#daa520"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "MainStyle_Accent",
+   "what": "Alert topic switch (on), accent (PLAT-10)",
+   "follows": "action",
+   "majority": 52,
+   "of": 77,
+   "exceptions": {
+    "DP": "#4fa8d1",
+    "OCR": "#daa520",
+    "OS": "#ffffff",
+    "PAC": "#ffea00",
+    "PSN": "#daa520",
+    "SGVT": "#daa520",
+    "TBAN": "#daa520",
+    "TBH": "#000000",
+    "TBHS": "#000000",
+    "TCE": "#daa520",
+    "TDB": "#daa520",
+    "TDCD": "#000000",
+    "TDF": "#daa520",
+    "TDPS": "#daa520",
+    "TEBT": "#daa520",
+    "TLBPT": "#daa520",
+    "TMN": "#daa520",
+    "TPE": "#da4725",
+    "TRDF": "#daa520",
+    "TSAR": "#f5f5f5",
+    "TSBS": "#daa520",
+    "TSPPP": "#daa520",
+    "TSV": "#daa520",
+    "TT": "#daa520",
+    "TWDN": "#daa520"
+   }
+  }
+ ],
+ "const": [
+  {
+   "platform": "ios",
+   "key": "subscriptionInactiveColor",
+   "what": "Subscription option, unselected background",
+   "value": "#f1f1f1",
+   "majority": 69,
+   "of": 77,
+   "exceptions": {
+    "BS": "#ffffff",
+    "DP": "#ffffff",
+    "HC": "#ffffff",
+    "MC": "#ffffff",
+    "NYDN": "#ffffff",
+    "OS": "#ffffff",
+    "SS": "#ffffff",
+    "VP": "#ffffff"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "paywallPrimaryTextColor",
+   "what": "Subscription option and primary button text",
+   "value": "#ffffff",
+   "majority": 77,
+   "of": 77,
+   "exceptions": {}
+  },
+  {
+   "platform": "ios",
+   "key": "pushNotificationPromptYesButtonTextColor",
+   "what": "Notification prompt Yes text",
+   "value": "#ffffff",
+   "majority": 76,
+   "of": 77,
+   "exceptions": {
+    "TDPS": "#c75c14"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "pushNotificationPromptNoButtonTextColor",
+   "what": "Notification prompt No text",
+   "value": "#333333",
+   "majority": 77,
+   "of": 77,
+   "exceptions": {}
+  },
+  {
+   "platform": "ios",
+   "key": "settingsSliderMinimumTrackTintColor",
+   "what": "Text size slider track",
+   "value": "#999999",
+   "majority": 70,
+   "of": 77,
+   "exceptions": {
+    "BS": "#cccccc",
+    "DP": "#cccccc",
+    "HC": "#cccccc",
+    "MC": "#cccccc",
+    "OS": "#cccccc",
+    "SS": "#cccccc",
+    "VP": "#cccccc"
+   }
+  },
+  {
+   "platform": "ios",
+   "key": "settingsSliderTickMarkTint",
+   "what": "Text size slider tick marks",
+   "value": "#999999",
+   "majority": 70,
+   "of": 77,
+   "exceptions": {
+    "BS": "#cccccc",
+    "DP": "#cccccc",
+    "HC": "#cccccc",
+    "MC": "#cccccc",
+    "OS": "#787878",
+    "SS": "#cccccc",
+    "VP": "#cccccc"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "Paywall_Button_TextColor",
+   "what": "Subscription option and primary button text",
+   "value": "#ffffff",
+   "majority": 71,
+   "of": 77,
+   "exceptions": {
+    "CT": "#sabled",
+    "HC": "#sabled",
+    "NYDN": "#sabled",
+    "OS": "#sabled",
+    "SS": "#sabled",
+    "TSAR": "#sabled"
+   }
+  },
+  {
+   "platform": "android",
+   "key": "Alerts_Enable_Button_Text",
+   "what": "Alerts enable button text",
+   "value": "#ffffff",
+   "majority": 77,
+   "of": 77,
+   "exceptions": {}
+  }
+ ]
+}

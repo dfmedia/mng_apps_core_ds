@@ -267,12 +267,12 @@
    "group": "Color",
    "name": "accent",
    "owner": "android",
-   "figma": "blocked",
-   "tokens": "blocked",
-   "code": "blocked",
-   "blocked_by": "PLAT-10: switch-on color",
-   "note": "Switch color open (PLAT-10)",
-   "overall": "blocked"
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "",
+   "note": "DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority",
+   "overall": "built"
   },
   {
    "id": "icon/search",
@@ -1164,12 +1164,12 @@
    "group": "Buttons",
    "name": "Continue button",
    "owner": "core",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "",
-   "note": "DSC-24: recommend folding into Primary button",
-   "overall": "todo"
+   "blocked_by": "Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24)",
+   "note": "Same job as Primary button; recommend it becomes Primary button, not its own component.",
+   "overall": "blocked"
   },
   {
    "id": "component/subscription-option",
@@ -1177,12 +1177,12 @@
    "group": "Buttons",
    "name": "Subscription option",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "Fill = action on both (PLAT-04). Differences: radius, font.",
-   "overall": "todo"
+   "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again",
+   "overall": "in progress"
   },
   {
    "id": "component/button-text",
@@ -1203,12 +1203,12 @@
    "group": "Buttons",
    "name": "Notification prompt buttons",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "",
-   "note": "Same job; iOS has a Yes/No pair.",
-   "overall": "todo"
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height)",
+   "note": "Colors and radius 5 are tokens (DEC-14)",
+   "overall": "in progress"
   },
   {
    "id": "component/button-account",
@@ -1216,12 +1216,12 @@
    "group": "Buttons",
    "name": "Manage subscription / delete account",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "",
-   "note": "Only place Android has an outlined (secondary) button.",
-   "overall": "todo"
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height, colors)",
+   "note": "Radius is a token (DEC-12)",
+   "overall": "in progress"
   },
   {
    "id": "component/savings-badge",
@@ -1229,12 +1229,12 @@
    "group": "Buttons",
    "name": "Savings label",
    "owner": "android",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "",
-   "note": "Not on iOS paywall.",
-   "overall": "todo"
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, padding)",
+   "note": "Text #004e87 and radius 15 are tokens",
+   "overall": "in progress"
   },
   {
    "id": "component/social-signin",
@@ -1242,12 +1242,12 @@
    "group": "Buttons",
    "name": "Social sign-in buttons",
    "owner": "ios",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "",
-   "note": "Android shows them only on the Auth0 web page.",
-   "overall": "todo"
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors)",
+   "note": "Google radius and icon size are tokens",
+   "overall": "in progress"
   },
   {
    "id": "component/button-states",
@@ -1268,12 +1268,12 @@
    "group": "Controls",
    "name": "Switch",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "One Core on-color token (PLAT-10); native control per platform.",
-   "overall": "todo"
+   "note": "DEC-14: native look, on = action. Android built (Components · Controls); iOS waits on the iOS Figma plugin session",
+   "overall": "in progress"
   },
   {
    "id": "component/checkbox",
@@ -1281,12 +1281,12 @@
    "group": "Controls",
    "name": "Checkbox (Your News topics)",
    "owner": "core",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "One Core checkbox tinted by token; removes iOS image sets.",
-   "overall": "todo"
+   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended)",
+   "overall": "in progress"
   },
   {
    "id": "component/text-size",
@@ -1294,12 +1294,12 @@
    "group": "Controls",
    "name": "Text size setting",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "Same job, different control. Core: the scale steps; platform: the control.",
-   "overall": "todo"
+   "note": "DEC-14: iOS slider (track/ticks #999999, thumb = action) waits on the iOS Figma plugin session; Android dialog has no custom colors",
+   "overall": "in progress"
   },
   {
    "id": "component/segmented",
@@ -1307,12 +1307,12 @@
    "group": "Controls",
    "name": "Segmented control",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)",
    "note": "Native control per platform; Core sets colors.",
-   "overall": "todo"
+   "overall": "blocked"
   },
   {
    "id": "component/loading",
@@ -1320,12 +1320,12 @@
    "group": "Controls",
    "name": "Loading indicator",
    "owner": "core",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)",
    "note": "Same pattern on both; no in-button spinner.",
-   "overall": "todo"
+   "overall": "blocked"
   },
   {
    "id": "layout/grid",

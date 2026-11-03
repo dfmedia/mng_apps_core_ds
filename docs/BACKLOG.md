@@ -13,18 +13,18 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
-| Color roles | 12 | 0 | 9 | 2 | 0 | 1 |
-| Components | 20 | 0 | 2 | 7 | 11 | 0 |
+| Color roles | 12 | 0 | 10 | 2 | 0 | 0 |
+| Components | 20 | 0 | 2 | 15 | 0 | 3 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **22** | **9** | **14** | **62** |
+| **Total** | **107** | **0** | **23** | **17** | **3** | **64** |
 
 ## Suggested order
 
-1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), icons (§1)
-2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes from the Apps team (5.6)
-3. Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in
-4. Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator
+1. Karl: Continue button decision; publish the Core library again (Subscription option wrappers)
+2. iOS controls in Figma (Switch, Text size slider) once the iOS plugin session responds
+3. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
+4. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
 5. System colors (the other 117 themed colors); breakpoints after LAY-01
 6. Icons, once the Apps team answers MISSING-ASSETS §1
 
@@ -71,7 +71,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 | continue | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
 | header | iOS | ⬜ to do | ✅ done | 📝 written, not compiled | iOS-only role: tokens/ios, not yet in the iOS Figma file |
 | statusbar | Android | ⬜ to do | ✅ done | 📝 written, not compiled | Android-only role: tokens/android, not yet in the Android Figma file |
-| accent | Android | ⛔ blocked | ⛔ blocked | ⛔ blocked | ⛔ PLAT-10: switch-on color · Switch color open (PLAT-10) |
+| accent | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority |
 
 ## Components
 
@@ -91,24 +91,24 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot; provisional values in MISSING-ASSETS 5.5 |
-| Continue button | Core | ⬜ to do | ⬜ to do | ⬜ to do | DSC-24: recommend folding into Primary button |
-| Subscription option | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Fill = action on both (PLAT-04). Differences: radius, font. |
+| Continue button | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24) · Same job as Primary button; recommend it becomes Primary button, not its own component. |
+| Subscription option | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot |
-| Notification prompt buttons | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Same job; iOS has a Yes/No pair. |
-| Manage subscription / delete account | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Only place Android has an outlined (secondary) button. |
-| Savings label | Android | ⬜ to do | ⬜ to do | ⬜ to do | Not on iOS paywall. |
-| Social sign-in buttons | iOS | ⬜ to do | ⬜ to do | ⬜ to do | Android shows them only on the Auth0 web page. |
+| Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height) · Colors and radius 5 are tokens (DEC-14) |
+| Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height, colors) · Radius is a token (DEC-12) |
+| Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, padding) · Text #004e87 and radius 15 are tokens |
+| Social sign-in buttons | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors) · Google radius and icon size are tokens |
 | Secondary, disabled, loading states | Core | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ CTRL-02 / MISSING-ASSETS 5.1: design Secondary and in-button Loading? · Disabled done (DEC-07); Secondary and Loading not shipped by either app |
 
 ### Controls
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Switch | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | One Core on-color token (PLAT-10); native control per platform. |
-| Checkbox (Your News topics) | Core | ⬜ to do | ⬜ to do | ⬜ to do | One Core checkbox tinted by token; removes iOS image sets. |
-| Text size setting | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Same job, different control. Core: the scale steps; platform: the control. |
-| Segmented control | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Native control per platform; Core sets colors. |
-| Loading indicator | Core | ⬜ to do | ⬜ to do | ⬜ to do | Same pattern on both; no in-button spinner. |
+| Switch | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: native look, on = action. Android built (Components · Controls); iOS waits on the iOS Figma plugin session |
+| Checkbox (Your News topics) | Core | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended) |
+| Text size setting | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: iOS slider (track/ticks #999999, thumb = action) waits on the iOS Figma plugin session; Android dialog has no custom colors |
+| Segmented control | Core + iOS + Android | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Native control per platform; Core sets colors. |
+| Loading indicator | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Same pattern on both; no in-button spinner. |
 
 ## Layout
 
