@@ -1,0 +1,222 @@
+{
+ "generated_by": "scripts/build_type_tokens.py",
+ "markets": [
+  "BS",
+  "DP",
+  "HC",
+  "MC",
+  "OS",
+  "SS",
+  "VP"
+ ],
+ "type": [
+  {
+   "role": "Top bar title",
+   "group": "App",
+   "style": "nav-title",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 16",
+   "legacy": "OpenSans-Bold 14"
+  },
+  {
+   "role": "Sections list header",
+   "group": "App",
+   "style": "section-list-header",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 14",
+   "legacy": "OpenSans-SemiBold 14"
+  },
+  {
+   "role": "Section-front headline, highlight",
+   "group": "Section front",
+   "style": "cell-headline-highlight",
+   "legacyOnly": false,
+   "standard": "Spectral-Bold 22",
+   "legacy": "Spectral-Bold 24"
+  },
+  {
+   "role": "Section-front headline, thin",
+   "group": "Section front",
+   "style": "cell-headline-thin",
+   "legacyOnly": false,
+   "standard": "Spectral-Bold 14",
+   "legacy": "Spectral-Bold 16"
+  },
+  {
+   "role": "Section-front label (kicker)",
+   "group": "Section front",
+   "style": "cell-label-bold-large",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 14",
+   "legacy": "PTSerif-Bold 16"
+  },
+  {
+   "role": "Label, light large",
+   "group": "Section front",
+   "style": "cell-label-light-large",
+   "legacyOnly": false,
+   "standard": "OpenSans-Light 16",
+   "legacy": "PTSerif-Regular 16"
+  },
+  {
+   "role": "Label, bold small",
+   "group": "Section front",
+   "style": "cell-label-bold-small",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 10",
+   "legacy": "PTSerif-Bold 14"
+  },
+  {
+   "role": "Label, light small",
+   "group": "Section front",
+   "style": "cell-label-light-small",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 10",
+   "legacy": "PTSerif-Regular 14"
+  },
+  {
+   "role": "Score",
+   "group": "Section front",
+   "style": "cell-score",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 36",
+   "legacy": "PTSerif-Bold 36"
+  },
+  {
+   "role": "Legacy: headline default",
+   "group": "Section front",
+   "style": "cell-headline-default",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "Spectral-Medium 20"
+  },
+  {
+   "role": "Legacy: blurb",
+   "group": "Section front",
+   "style": "cell-blurb",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "PTSerif-Regular 16"
+  },
+  {
+   "role": "Legacy: card text",
+   "group": "Section front",
+   "style": "cell-card-text-default",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "OpenSans-Bold 13"
+  },
+  {
+   "role": "Legacy: label default",
+   "group": "Section front",
+   "style": "cell-label-default",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "OpenSans-Regular 16"
+  },
+  {
+   "role": "Legacy: signature",
+   "group": "Section front",
+   "style": "cell-signature",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "OpenSans-Bold 12"
+  },
+  {
+   "role": "Legacy: kicker left",
+   "group": "Section front",
+   "style": "label-kicker-left",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "OpenSans-Bold 12"
+  },
+  {
+   "role": "Legacy: label small left",
+   "group": "Section front",
+   "style": "label-normal-small-left",
+   "legacyOnly": true,
+   "standard": null,
+   "legacy": "OpenSans-Bold 10"
+  },
+  {
+   "role": "Author bio",
+   "group": "Article",
+   "style": "page-bio",
+   "legacyOnly": false,
+   "standard": "OpenSans-Light 18",
+   "legacy": "OpenSans-SemiBold 18"
+  },
+  {
+   "role": "Article body",
+   "group": "Article",
+   "style": "page-body",
+   "legacyOnly": false,
+   "standard": "Spectral-Regular 18",
+   "legacy": "PTSerif-Regular 18"
+  },
+  {
+   "role": "Article body bold",
+   "group": "Article",
+   "style": "page-body-bold",
+   "legacyOnly": false,
+   "standard": "Spectral-Bold 18",
+   "legacy": "Spectral-Regular 31"
+  },
+  {
+   "role": "Article body bold italic",
+   "group": "Article",
+   "style": "page-body-bolditalic",
+   "legacyOnly": false,
+   "standard": "Spectral-BoldItalic 18",
+   "legacy": "PTSerif-BoldItalic 18"
+  },
+  {
+   "role": "Article body italic",
+   "group": "Article",
+   "style": "page-body-italic",
+   "legacyOnly": false,
+   "standard": "Spectral-Italic 18",
+   "legacy": "OpenSans-SemiBoldItalic 18"
+  },
+  {
+   "role": "Article byline",
+   "group": "Article",
+   "style": "page-byline",
+   "legacyOnly": false,
+   "standard": "OpenSans-Light 14",
+   "legacy": "OpenSans-Regular 14"
+  },
+  {
+   "role": "Image caption",
+   "group": "Article",
+   "style": "page-caption",
+   "legacyOnly": false,
+   "standard": "OpenSans-Regular 12",
+   "legacy": "OpenSans-Regular 14"
+  },
+  {
+   "role": "Article deck",
+   "group": "Article",
+   "style": "page-deck",
+   "legacyOnly": false,
+   "standard": "OpenSans-Light 18",
+   "legacy": "OpenSans-Regular 18"
+  },
+  {
+   "role": "Article headline",
+   "group": "Article",
+   "style": "page-title",
+   "legacyOnly": false,
+   "standard": "OpenSans-Bold 31",
+   "legacy": "Spectral-Regular 25"
+  },
+  {
+   "role": "Article headline, tablet",
+   "group": "Article",
+   "style": "page-title-tablet",
+   "legacyOnly": false,
+   "standard": "Spectral-Bold 42",
+   "legacy": "PTSerif-Bold 42"
+  }
+ ]
+}

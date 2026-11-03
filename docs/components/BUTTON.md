@@ -16,7 +16,7 @@ Core component with platform differences. Core holds the anatomy, states, shared
 
 - Container (fill = Brand theme action; disabled = button/disabled/fill)
 - Label (uppercase; color = button/primary/label; disabled = button/disabled/label)
-- iOS legacy markets only: 1 pt border in the fill color
+- (iOS legacy-template markets ship a 1 pt border; acknowledged only, DEC-10)
 
 ## Tokens
 
@@ -26,12 +26,12 @@ Core component with platform differences. Core holds the anatomy, states, shared
 | `button.primary.label` | `#ffffff` · 255, 255, 255 | `#ffffff` · 255, 255, 255 | Fails 4.5:1 in 15 markets (CLR-04, required change) |
 | `button.disabled.fill` | `#c1c8cb` · 193, 200, 203 | `#c1c8cb` · 193, 200, 203 | Android shipped; new on iOS |
 | `button.disabled.label` | `#767676` · 118, 118, 118 | `#767676` · 118, 118, 118 | 2.68:1 on the disabled fill (disabled controls are exempt) |
-| Radius | 4 pt (`button.ios.primary.radius`); legacy 5 pt + 1 pt border | 0 dp (`button.android.primary.radius`) | Kept per platform (DEC-07). DSC-20 |
+| Radius | 4 pt (`button.ios.primary.radius`) | 0 dp (`button.android.primary.radius`) | Kept per platform (DEC-07). DSC-20 |
 | Height | 44 pt **provisional** (`button.ios.primary.height`) | 60 dp (`button.android.primary.height`) | Future: one height, IMPROVEMENTS BTN-01 |
 | Label | Open Sans Bold 14, uppercase | Roboto Medium 14sp, uppercase (**weight and size provisional**) | Future: one label style, IMPROVEMENTS BTN-02 |
 | Text link | `paywallLinkColor` per market (`button.ios.link.color.<code>`), Open Sans Regular 14 **provisional** | `#000000` · 0, 0, 0, 16sp, underlined | iOS link fails 4.5:1 on white in 9 markets |
 
-Legacy-template markets (iOS radius 5 + border): BS, DP, HC, MC, OS, SS, VP.
+Legacy-template markets (BS, DP, HC, MC, OS, SS, VP) ship radius 5 pt + 1 pt border on iOS. Acknowledged only, not built (DEC-10, docs/LEGACY-TEMPLATE.md).
 
 ## States
 
@@ -51,20 +51,20 @@ Legacy-template markets (iOS radius 5 + border): BS, DP, HC, MC, OS, SS, VP.
 
 | Code | Market | action (fill) | White label | iOS radius | iOS link | Link on white |
 |---|---|---|---|---|---|---|
-| BS | Baltimore Sun | `#daa520` · 218, 165, 32 | 2.24:1 ❌ | 5 + border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
+| BS | Baltimore Sun | `#daa520` · 218, 165, 32 | 2.24:1 ❌ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
 | CT | Chicago Tribune | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 5 + border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| HC | Hartford Courant | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | 5 + border | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
-| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 5 + border | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ |
+| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
+| HC | Hartford Courant | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | 4 | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
+| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 4 | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ |
 | NYDN | New York Daily News | `#4492e0` · 68, 146, 224 | 3.26:1 ❌ | 4 | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ |
 | OCR | Orange County Register | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | 4 | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ |
-| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 5 + border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
+| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
 | PAC | Petaluma Argus-Courier | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | 4 | `#a06318` · 160, 99, 24 | 4.89:1 ✅ |
 | PSN | Pasadena Star News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 4 | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
 | SDUT | The San Diego Union-Tribune | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 4 | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
 | SGVT | San Gabriel Valley Tribune | `#ff6900` · 255, 105, 0 | 2.89:1 ❌ | 4 | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
 | SIT | Sonoma Index Tribune | `#0f73a9` · 15, 115, 169 | 5.19:1 ✅ | 4 | `#0f73a8` · 15, 115, 168 | 5.2:1 ✅ |
-| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 5 + border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
+| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
 | TB | Buffzone | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 4 | `#4252b0` · 66, 82, 176 | 6.85:1 ✅ |
 | TBAN | Bay Area News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 4 | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
 | TBCP | Boulder County Preps | `#3f51b5` · 63, 81, 181 | 6.87:1 ✅ | 4 | `#4052b5` · 64, 82, 181 | 6.79:1 ✅ |
@@ -128,4 +128,4 @@ Legacy-template markets (iOS radius 5 + border): BS, DP, HC, MC, OS, SS, VP.
 | TVTH | Vallejo Times Herald News | `#8d092d` · 141, 9, 45 | 9.5:1 ✅ | 4 | `#8c0a2e` · 140, 10, 46 | 9.55:1 ✅ |
 | TWDD | Woodland Daily Democrat | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 4 | `#007739` · 0, 119, 57 | 5.68:1 ✅ |
 | TWDN | Whittier Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 4 | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 5 + border | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ |
+| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 4 | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ |

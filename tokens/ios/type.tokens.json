@@ -18,8 +18,6 @@
       "style": "headline",
       "postscript": "Spectral-Medium",
       "code": "sharedHeadlineTroncAppThemeable",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -41,8 +39,6 @@
       "style": "body",
       "postscript": "OpenSans-Regular",
       "code": "sharedBody",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -64,8 +60,6 @@
       "style": "body-bold",
       "postscript": "OpenSans-Bold",
       "code": "sharedBodyBold",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -87,8 +81,6 @@
       "style": "caption",
       "postscript": "OpenSans-Regular",
       "code": "sharedCaption",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Exceptions: OpenSans-Regular 12 (NYDN, VP)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -110,8 +102,6 @@
       "style": "caption-bold",
       "postscript": "OpenSans-Bold",
       "code": "sharedCaptionBold",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Exceptions: OpenSans-Bold 12 (NYDN, VP)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -133,23 +123,6 @@
       "style": "nav-title",
       "postscript": "OpenSans-Bold",
       "code": "topBarTitle",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-Bold",
-       "fontFamily": "Open Sans",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -171,8 +144,6 @@
       "style": "tab-item",
       "postscript": "OpenSans-Bold",
       "code": "bottomTabLabel",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -194,23 +165,6 @@
       "style": "section-list-header",
       "postscript": "OpenSans-Bold",
       "code": "sectionsListHeader",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-SemiBold",
-       "fontFamily": "Open Sans",
-       "fontWeight": 600,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -232,8 +186,6 @@
       "style": "menu-header",
       "postscript": "OpenSans-Bold",
       "code": "menuHeader",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -255,8 +207,6 @@
       "style": "menu-text",
       "postscript": "OpenSans-Light",
       "code": "menuItem",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -278,8 +228,6 @@
       "style": "blocker-buy",
       "postscript": "OpenSans-Bold",
       "code": "paywallBuyText",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -301,8 +249,6 @@
       "style": "blocker-buy-regular",
       "postscript": "OpenSans-Bold",
       "code": "paywallBuyTextLarge",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -324,8 +270,6 @@
       "style": "blocker-description",
       "postscript": "OpenSans-Light",
       "code": "paywallBody",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -347,8 +291,6 @@
       "style": "blocker-store-policy-header",
       "postscript": "OpenSans-Light",
       "code": "paywallStorePolicyHeader",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -370,8 +312,6 @@
       "style": "blocker-header",
       "postscript": "Spectral-Bold",
       "code": "paywallHeading",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: PTSerif-Bold 35 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -393,8 +333,6 @@
       "style": "blocker-header-regular",
       "postscript": "Spectral-Bold",
       "code": "paywallHeadingLarge",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: PTSerif-Bold 60 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -416,8 +354,6 @@
       "style": "blocker-login",
       "postscript": "OpenSans-Light",
       "code": "paywallLogInText",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -439,8 +375,6 @@
       "style": "blocker-login-regular",
       "postscript": "OpenSans-Light",
       "code": "paywallLogInTextLarge",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -462,8 +396,6 @@
       "style": "blocker-price",
       "postscript": "OpenSans-Light",
       "code": "paywallPrice",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -485,8 +417,6 @@
       "style": "blocker-name",
       "postscript": "OpenSans-Bold",
       "code": "paywallPlanName",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -508,8 +438,6 @@
       "style": "cell-body",
       "postscript": "Spectral-Regular",
       "code": "sectionFrontBlurb",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: PTSerif-Regular 13 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -531,8 +459,6 @@
       "style": "cell-caption",
       "postscript": "OpenSans-Regular",
       "code": "sectionFrontCaption",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -554,8 +480,6 @@
       "style": "cell-deck",
       "postscript": "OpenSans-Bold",
       "code": "sectionFrontDeck",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -577,8 +501,6 @@
       "style": "cell-headline",
       "postscript": "Spectral-Medium",
       "code": "sectionFrontHeadline",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSansCondensed-Bold 21 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -600,23 +522,6 @@
       "style": "cell-headline-highlight",
       "postscript": "Spectral-Bold",
       "code": "sectionFrontHeadlineHighlight",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "Spectral-Bold",
-       "fontFamily": "Spectral",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 24.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: OpenSansCondensed-Bold 16 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -638,23 +543,6 @@
       "style": "cell-headline-thin",
       "postscript": "Spectral-Bold",
       "code": "sectionFrontHeadlineThin",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "Spectral-Bold",
-       "fontFamily": "Spectral",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 16.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: OpenSans-Bold 14 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -676,8 +564,6 @@
       "style": "cell-headline-media-above",
       "postscript": "PTSerif-Bold",
       "code": "headlineMediaAbove",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSansCondensed-Bold 21 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -699,8 +585,6 @@
       "style": "cell-headline-media-bottom",
       "postscript": "Open Sans",
       "code": "headlineMediaBottom",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -722,8 +606,6 @@
       "style": "cell-headline-media-left",
       "postscript": "PTSerif-Bold",
       "code": "headlineMediaLeft",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSansCondensed-Bold 16 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -745,8 +627,6 @@
       "style": "cell-headline-media-left-normalfont",
       "postscript": "PTSerif-Regular",
       "code": "headlineMediaLeftRegular",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSansCondensed-Regular 16 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -768,8 +648,6 @@
       "style": "cell-headline-bullets",
       "postscript": "PTSerif-Regular",
       "code": "headlineBullets",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSans-Light 15 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -791,23 +669,6 @@
       "style": "cell-label-bold-large",
       "postscript": "OpenSans-Bold",
       "code": "sectionFrontLabelKicker",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Bold",
-       "fontFamily": "PT Serif",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 16.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -829,23 +690,6 @@
       "style": "cell-label-light-large",
       "postscript": "OpenSans-Light",
       "code": "labelLightLarge",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Regular",
-       "fontFamily": "PT Serif",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 16.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -867,23 +711,6 @@
       "style": "cell-label-bold-small",
       "postscript": "OpenSans-Bold",
       "code": "labelBoldSmall",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Bold",
-       "fontFamily": "PT Serif",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -905,23 +732,6 @@
       "style": "cell-label-light-small",
       "postscript": "OpenSans-Bold",
       "code": "labelLightSmall",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Regular",
-       "fontFamily": "PT Serif",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -943,23 +753,6 @@
       "style": "cell-score",
       "postscript": "OpenSans-Bold",
       "code": "score",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Bold",
-       "fontFamily": "PT Serif",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 36.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -981,8 +774,6 @@
       "style": "cell-tertiary",
       "postscript": "PTSerif-Bold",
       "code": "tertiaryHeadline",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: OpenSansCondensed-Bold 16 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1004,8 +795,6 @@
       "style": "cell-tertiary-headertext",
       "postscript": "OpenSans-Bold",
       "code": "tertiaryHeaderText",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1027,8 +816,6 @@
       "style": "cell-timestamp",
       "postscript": "OpenSans-SemiBold",
       "code": "sectionFrontBylineTimestamp",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1050,8 +837,6 @@
       "style": "cell-timestamp-tertiary",
       "postscript": "OpenSans-SemiBold",
       "code": "tertiaryTimestamp",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1073,169 +858,6 @@
       "style": "ar-headline",
       "postscript": "OpenSans-Bold",
       "code": "arHeadline",
-      "legacyOnly": false,
-      "legacy": null,
-      "exceptions": "",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-headline-default": {
-    "$value": {
-     "fontFamily": "Spectral",
-     "fontWeight": 500,
-     "fontSize": "20px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: headline default (iOS `cell-headline-default`): Spectral-Medium 20 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: headline default",
-      "group": "Section front",
-      "style": "cell-headline-default",
-      "postscript": "Spectral-Medium",
-      "code": "legacyHeadlineDefault",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "Other values: OpenSans-Regular 20 (1)",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-blurb": {
-    "$value": {
-     "fontFamily": "PT Serif",
-     "fontWeight": 400,
-     "fontSize": "16px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: blurb (iOS `cell-blurb`): PTSerif-Regular 16 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: blurb",
-      "group": "Section front",
-      "style": "cell-blurb",
-      "postscript": "PTSerif-Regular",
-      "code": "legacyBlurb",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "Other values: Spectral-Regular 16 (3)",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-card-text": {
-    "$value": {
-     "fontFamily": "Open Sans",
-     "fontWeight": 700,
-     "fontSize": "13px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: card text (iOS `cell-card-text-default`): OpenSans-Bold 13 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: card text",
-      "group": "Section front",
-      "style": "cell-card-text-default",
-      "postscript": "OpenSans-Bold",
-      "code": "legacyCardText",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-label-default": {
-    "$value": {
-     "fontFamily": "Open Sans",
-     "fontWeight": 400,
-     "fontSize": "16px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: label default (iOS `cell-label-default`): OpenSans-Regular 16 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: label default",
-      "group": "Section front",
-      "style": "cell-label-default",
-      "postscript": "OpenSans-Regular",
-      "code": "legacyLabelDefault",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-signature": {
-    "$value": {
-     "fontFamily": "Open Sans",
-     "fontWeight": 700,
-     "fontSize": "12px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: signature (iOS `cell-signature`): OpenSans-Bold 12 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: signature",
-      "group": "Section front",
-      "style": "cell-signature",
-      "postscript": "OpenSans-Bold",
-      "code": "legacySignature",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-kicker-left": {
-    "$value": {
-     "fontFamily": "Open Sans",
-     "fontWeight": 700,
-     "fontSize": "12px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: kicker left (iOS `label-kicker-left`): OpenSans-Bold 12 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: kicker left",
-      "group": "Section front",
-      "style": "label-kicker-left",
-      "postscript": "OpenSans-Bold",
-      "code": "legacyKickerLeft",
-      "legacyOnly": true,
-      "legacy": null,
-      "exceptions": "",
-      "source": "TroncKit Style.json / TroncAppThemeable"
-     }
-    }
-   },
-   "legacy-label-small-left": {
-    "$value": {
-     "fontFamily": "Open Sans",
-     "fontWeight": 700,
-     "fontSize": "10px",
-     "fontStyle": "normal"
-    },
-    "$type": "typography",
-    "$description": "Legacy: label small left (iOS `label-normal-small-left`): OpenSans-Bold 10 pt — legacy-template markets only",
-    "$extensions": {
-     "mng": {
-      "role": "Legacy: label small left",
-      "group": "Section front",
-      "style": "label-normal-small-left",
-      "postscript": "OpenSans-Bold",
-      "code": "legacyLabelSmallLeft",
-      "legacyOnly": true,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1257,23 +879,6 @@
       "style": "page-bio",
       "postscript": "OpenSans-Light",
       "code": "authorBio",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-SemiBold",
-       "fontFamily": "Open Sans",
-       "fontWeight": 600,
-       "italic": false,
-       "fontSize": 18.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1295,23 +900,6 @@
       "style": "page-body",
       "postscript": "Spectral-Regular",
       "code": "articleBody",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Regular",
-       "fontFamily": "PT Serif",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 18.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: PTSerif-Regular 18 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1333,23 +921,6 @@
       "style": "page-body-bold",
       "postscript": "Spectral-Bold",
       "code": "articleBodyBold",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "Spectral-Regular",
-       "fontFamily": "Spectral",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 31.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: PTSerif-Bold 18 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1371,23 +942,6 @@
       "style": "page-body-bolditalic",
       "postscript": "Spectral-BoldItalic",
       "code": "articleBodyBoldItalic",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-BoldItalic",
-       "fontFamily": "PT Serif",
-       "fontWeight": 700,
-       "italic": true,
-       "fontSize": 18.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: PTSerif-BoldItalic 18 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1409,23 +963,6 @@
       "style": "page-body-italic",
       "postscript": "Spectral-Italic",
       "code": "articleBodyItalic",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-SemiBoldItalic",
-       "fontFamily": "Open Sans",
-       "fontWeight": 600,
-       "italic": true,
-       "fontSize": 18.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: PTSerif-Italic 18 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1447,8 +984,6 @@
       "style": "page-body-lightitalic",
       "postscript": "Spectral-Italic",
       "code": "articleBodyLightItalic",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: PTSerif-Italic 18 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1470,23 +1005,6 @@
       "style": "page-byline",
       "postscript": "OpenSans-Light",
       "code": "articleByline",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-Regular",
-       "fontFamily": "Open Sans",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1508,23 +1026,6 @@
       "style": "page-caption",
       "postscript": "OpenSans-Regular",
       "code": "imageCaption",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-Regular",
-       "fontFamily": "Open Sans",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 14.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1546,23 +1047,6 @@
       "style": "page-deck",
       "postscript": "OpenSans-Light",
       "code": "articleDeck",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "OpenSans-Regular",
-       "fontFamily": "Open Sans",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 18.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1584,8 +1068,6 @@
       "style": "page-kicker",
       "postscript": "OpenSans-Bold",
       "code": "articleKicker",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1607,8 +1089,6 @@
       "style": "page-gallery",
       "postscript": "OpenSans-Bold",
       "code": "galleryTitle",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1630,8 +1110,6 @@
       "style": "page-subhead",
       "postscript": "OpenSans-Bold",
       "code": "articleSubhead",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1653,23 +1131,6 @@
       "style": "page-title",
       "postscript": "OpenSans-Bold",
       "code": "articleHeadline",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "Spectral-Regular",
-       "fontFamily": "Spectral",
-       "fontWeight": 400,
-       "italic": false,
-       "fontSize": 25.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: OpenSansCondensed-Bold 31 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1691,23 +1152,6 @@
       "style": "page-title-tablet",
       "postscript": "Spectral-Bold",
       "code": "articleHeadlineTablet",
-      "legacyOnly": false,
-      "legacy": {
-       "postscript": "PTSerif-Bold",
-       "fontFamily": "PT Serif",
-       "fontWeight": 700,
-       "italic": false,
-       "fontSize": 42.0,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      },
       "exceptions": "Other values: PTSerif-Bold 42 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }
@@ -1729,8 +1173,6 @@
       "style": "page-slogan",
       "postscript": "Spectral-Italic",
       "code": "slogan",
-      "legacyOnly": false,
-      "legacy": null,
       "exceptions": "Other values: PTSerif-Italic 16 (1)",
       "source": "TroncKit Style.json / TroncAppThemeable"
      }

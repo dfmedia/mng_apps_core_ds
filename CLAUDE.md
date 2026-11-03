@@ -96,6 +96,7 @@ docs/BACKLOG.md                   generated: what is left to build in Figma and 
 docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/MISSING-ASSETS.md            what we need from the Apps team
 docs/components/                  component specs (generated, e.g. BUTTON.md)
+docs/LEGACY-TEMPLATE.md           generated: iOS legacy-template values, acknowledged only (DEC-10)
 tokens/                           DTCG design tokens (generated; the source for Swift, Kotlin and Figma)
 style-dictionary.config.mjs       builds Swift / Kotlin / Android XML from tokens/
 docs/BRAND-COLORS.md              every brand color as hex and RGB (generated)
@@ -122,6 +123,7 @@ python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06
 npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/Tokens, ../mng_apps_android_ds/tokens
 python3 scripts/compare_type.py     # typography step 1: data/type-comparison.json + docs/TYPE-COMPARISON.md
 python3 scripts/build_type_tokens.py   # DEC-09: tokens/*/type.tokens.json, data/type-styles.json, docs/TYPE-STYLES.md (before npm run build)
+python3 scripts/build_legacy_doc.py    # DEC-10: docs/LEGACY-TEMPLATE.md (run after build_type_tokens.py)
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```

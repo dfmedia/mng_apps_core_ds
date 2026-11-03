@@ -13,44 +13,6 @@
       }
      }
     },
-    "radius-legacy": {
-     "$value": "5px",
-     "$type": "dimension",
-     "$description": "Corner radius, legacy template markets.",
-     "$extensions": {
-      "mng": {
-       "shipped": true,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      }
-     }
-    },
-    "border-legacy": {
-     "$value": "1px",
-     "$type": "dimension",
-     "$description": "Border in the fill color, legacy template markets.",
-     "$extensions": {
-      "mng": {
-       "shipped": true,
-       "markets": [
-        "BS",
-        "DP",
-        "HC",
-        "MC",
-        "OS",
-        "SS",
-        "VP"
-       ]
-      }
-     }
-    },
     "height": {
      "$value": "44px",
      "$type": "dimension",

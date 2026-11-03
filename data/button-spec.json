@@ -32,7 +32,7 @@
  "anatomy": [
   "Container (fill = Brand theme action; disabled = button/disabled/fill)",
   "Label (uppercase; color = button/primary/label; disabled = button/disabled/label)",
-  "iOS legacy markets only: 1 pt border in the fill color"
+  "(iOS legacy-template markets ship a 1 pt border; acknowledged only, DEC-10)"
  ],
  "platform": {
   "ios": {
@@ -82,8 +82,8 @@
    "ios_link_contrast": 8.61,
    "ios_link_pass": true,
    "suggested_link": null,
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -134,8 +134,8 @@
    "ios_link_contrast": 8.61,
    "ios_link_pass": true,
    "suggested_link": null,
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -160,8 +160,8 @@
    "ios_link_contrast": 2.67,
    "ios_link_pass": false,
    "suggested_link": "#1e7fa6",
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -186,8 +186,8 @@
    "ios_link_contrast": 3.03,
    "ios_link_pass": false,
    "suggested_link": "#337ea5",
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -264,8 +264,8 @@
    "ios_link_contrast": 8.61,
    "ios_link_pass": true,
    "suggested_link": null,
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -420,8 +420,8 @@
    "ios_link_contrast": 8.61,
    "ios_link_pass": true,
    "suggested_link": null,
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   },
@@ -2084,8 +2084,8 @@
    "ios_link_contrast": 7.15,
    "ios_link_pass": true,
    "suggested_link": null,
-   "ios_radius": 5,
-   "ios_border": 1,
+   "ios_radius": 4,
+   "ios_border": 0,
    "legacy_template": true,
    "provisional_market": false
   }

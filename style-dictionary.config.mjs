@@ -94,21 +94,17 @@ StyleDictionary.registerFormat({
   name: 'mng/swift-button',
   format: ({ dictionary }) => {
     const A = dictionary.allTokens, g = (p) => find(A, p);
-    const r = g('button.ios.primary.radius'), rl = g('button.ios.primary.radius-legacy'), bl = g('button.ios.primary.border-legacy'), h = g('button.ios.primary.height');
+    const r = g('button.ios.primary.radius'), h = g('button.ios.primary.height');
     const lab = g('button.ios.primary.label'), link = g('button.ios.link.label');
-    const legacy = rl.$extensions.mng.markets.map(c => `"${c.toLowerCase()}"`).join(', ');
     const links = A.filter(t => t.path[0] === 'button' && t.path[1] === 'ios' && t.path[2] === 'link' && t.path[3] === 'color').sort((a, b) => a.path[4].localeCompare(b.path[4]));
     const col = (p) => { const t = g(p); return `UIColor(mngHex: 0x${hex6(t)})  /* ${t.$value} · ${rgbc(t)} */`; };
     let s = BTN_HEADER + 'import UIKit\n\n/// Button tokens (Core + iOS). Spec: mng_apps_core_ds/docs/components/BUTTON.md\npublic enum MNGButtonTokens {\n';
     s += `    /// Primary label color. Core \`button.primary.label\`. Fails 4.5:1 in some markets (IMPROVEMENTS CLR-04).\n    public static let primaryLabel = ${col('button.primary.label')}\n`;
     s += `    /// Disabled fill. Core \`button.disabled.fill\`.\n    public static let disabledFill = ${col('button.disabled.fill')}\n`;
     s += `    /// Disabled label. Core \`button.disabled.label\`.\n    public static let disabledLabel = ${col('button.disabled.label')}\n\n`;
-    s += `    /// Corner radius, standard template.\n    public static let cornerRadius: CGFloat = ${px(r)}\n    /// Corner radius, legacy template markets.\n    public static let cornerRadiusLegacy: CGFloat = ${px(rl)}\n    /// Border in the fill color, legacy template markets.\n    public static let borderWidthLegacy: CGFloat = ${px(bl)}\n`;
+    s += `    /// Corner radius.\n    public static let cornerRadius: CGFloat = ${px(r)}\n`;
     s += `    /// Height. PROVISIONAL: not in the source (MISSING-ASSETS 5.5). Future: BTN-01.\n    public static let height: CGFloat = ${px(h)}\n\n`;
-    s += `    /// Legacy-template markets (radius ${px(rl)} + ${px(bl)} pt border).\n    public static let legacyMarkets: Set<String> = [${legacy}]\n`;
-    s += '    public static func isLegacy(_ market: String) -> Bool { legacyMarkets.contains(market.lowercased()) }\n';
-    s += '    public static func cornerRadius(forMarket market: String) -> CGFloat { isLegacy(market) ? cornerRadiusLegacy : cornerRadius }\n';
-    s += '    public static func borderWidth(forMarket market: String) -> CGFloat { isLegacy(market) ? borderWidthLegacy : 0 }\n\n';
+    s += '\n';
     s += `    /// Label font: ${lab.$extensions.mng.postscript} ${px({ $value: lab.$value.fontSize })}, uppercase. Falls back to the bold system font at the same size.\n`;
     s += `    public static var labelFont: UIFont { UIFont(name: "${lab.$extensions.mng.postscript}", size: ${px({ $value: lab.$value.fontSize })}) ?? .boldSystemFont(ofSize: ${px({ $value: lab.$value.fontSize })}) }\n`;
     s += `    /// Text link font. PROVISIONAL (MISSING-ASSETS 5.5).\n    public static var linkFont: UIFont { UIFont(name: "${link.$extensions.mng.postscript}", size: ${px({ $value: link.$value.fontSize })}) ?? .systemFont(ofSize: ${px({ $value: link.$value.fontSize })}) }\n\n`;

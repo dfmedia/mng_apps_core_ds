@@ -205,7 +205,7 @@ Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font 
 ### LAY-01 · One breakpoint set — `PROPOSED`
 `FrontWidth.swift` uses 668 / 835 / 1113; `PageItem.swift` uses 668 / 769 / 1025. Pick one.
 
-### TYPE-01 · Retire the legacy Style.json template — `PROPOSED`
+### TYPE-01 · Retire the legacy Style.json template — `PROPOSED` (DEC-10: the design system no longer builds it; values in docs/LEGACY-TEMPLATE.md)
 7 markets (BS, DP, HC, MC, OS, SS, VP) run an older 60–61-key template with different label fonts. Moving them to the standard 51-key template removes a whole set of type styles.
 
 ### TYPE-02 · Size-changing font fallbacks — `PROPOSED`

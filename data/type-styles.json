@@ -87,20 +87,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.top-bar-title",
-   "family": "Open Sans",
-   "figmaStyle": "Bold",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "nav-title",
-   "postscript": "OpenSans-Bold",
-   "name": "Legacy/App/Top bar title",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.bottom-tab-label",
    "family": "Open Sans",
    "figmaStyle": "Bold",
@@ -126,20 +112,6 @@
    "postscript": "OpenSans-Bold",
    "name": "App/Sections list header",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.sections-list-header",
-   "family": "Open Sans",
-   "figmaStyle": "SemiBold",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "section-list-header",
-   "postscript": "OpenSans-SemiBold",
-   "name": "Legacy/App/Sections list header",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -381,20 +353,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.section-front-headline-highlight",
-   "family": "Spectral",
-   "figmaStyle": "Bold",
-   "size": 24.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-headline-highlight",
-   "postscript": "Spectral-Bold",
-   "name": "Legacy/Section front/Headline, highlight",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.section-front-headline-thin",
    "family": "Spectral",
    "figmaStyle": "Bold",
@@ -406,20 +364,6 @@
    "postscript": "Spectral-Bold",
    "name": "Section front/Headline, thin",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.section-front-headline-thin",
-   "family": "Spectral",
-   "figmaStyle": "Bold",
-   "size": 16.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-headline-thin",
-   "postscript": "Spectral-Bold",
-   "name": "Legacy/Section front/Headline, thin",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -507,20 +451,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.section-front-label-kicker",
-   "family": "PT Serif",
-   "figmaStyle": "Bold",
-   "size": 16.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-label-bold-large",
-   "postscript": "PTSerif-Bold",
-   "name": "Legacy/Section front/Label (kicker)",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.label-light-large",
    "family": "Open Sans",
    "figmaStyle": "Light",
@@ -532,20 +462,6 @@
    "postscript": "OpenSans-Light",
    "name": "Section front/Label, light large",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.label-light-large",
-   "family": "PT Serif",
-   "figmaStyle": "Regular",
-   "size": 16.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-label-light-large",
-   "postscript": "PTSerif-Regular",
-   "name": "Legacy/Section front/Label, light large",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -563,20 +479,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.label-bold-small",
-   "family": "PT Serif",
-   "figmaStyle": "Bold",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-label-bold-small",
-   "postscript": "PTSerif-Bold",
-   "name": "Legacy/Section front/Label, bold small",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.label-light-small",
    "family": "Open Sans",
    "figmaStyle": "Bold",
@@ -591,20 +493,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.label-light-small",
-   "family": "PT Serif",
-   "figmaStyle": "Regular",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-label-light-small",
-   "postscript": "PTSerif-Regular",
-   "name": "Legacy/Section front/Label, light small",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.score",
    "family": "Open Sans",
    "figmaStyle": "Bold",
@@ -616,20 +504,6 @@
    "postscript": "OpenSans-Bold",
    "name": "Section front/Score",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.score",
-   "family": "PT Serif",
-   "figmaStyle": "Bold",
-   "size": 36.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-score",
-   "postscript": "PTSerif-Bold",
-   "name": "Legacy/Section front/Score",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -703,104 +577,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.legacy-headline-default",
-   "family": "Spectral",
-   "figmaStyle": "Medium",
-   "size": 20.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-headline-default",
-   "postscript": "Spectral-Medium",
-   "name": "Legacy/Section front/Headline default",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-blurb",
-   "family": "PT Serif",
-   "figmaStyle": "Regular",
-   "size": 16.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-blurb",
-   "postscript": "PTSerif-Regular",
-   "name": "Legacy/Section front/Blurb",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-card-text",
-   "family": "Open Sans",
-   "figmaStyle": "Bold",
-   "size": 13.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-card-text-default",
-   "postscript": "OpenSans-Bold",
-   "name": "Legacy/Section front/Card text",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-label-default",
-   "family": "Open Sans",
-   "figmaStyle": "Regular",
-   "size": 16.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-label-default",
-   "postscript": "OpenSans-Regular",
-   "name": "Legacy/Section front/Label default",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-signature",
-   "family": "Open Sans",
-   "figmaStyle": "Bold",
-   "size": 12.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "cell-signature",
-   "postscript": "OpenSans-Bold",
-   "name": "Legacy/Section front/Signature",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-kicker-left",
-   "family": "Open Sans",
-   "figmaStyle": "Bold",
-   "size": 12.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "label-kicker-left",
-   "postscript": "OpenSans-Bold",
-   "name": "Legacy/Section front/Kicker left",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.legacy-label-small-left",
-   "family": "Open Sans",
-   "figmaStyle": "Bold",
-   "size": 10.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "label-normal-small-left",
-   "postscript": "OpenSans-Bold",
-   "name": "Legacy/Section front/Label small left",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.author-bio",
    "family": "Open Sans",
    "figmaStyle": "Light",
@@ -812,20 +588,6 @@
    "postscript": "OpenSans-Light",
    "name": "Article/Author bio",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.author-bio",
-   "family": "Open Sans",
-   "figmaStyle": "SemiBold",
-   "size": 18.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-bio",
-   "postscript": "OpenSans-SemiBold",
-   "name": "Legacy/Article/Author bio",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -843,20 +605,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.article-body",
-   "family": "PT Serif",
-   "figmaStyle": "Regular",
-   "size": 18.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-body",
-   "postscript": "PTSerif-Regular",
-   "name": "Legacy/Article/Body",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.article-body-bold",
    "family": "Spectral",
    "figmaStyle": "Bold",
@@ -868,20 +616,6 @@
    "postscript": "Spectral-Bold",
    "name": "Article/Body bold",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.article-body-bold",
-   "family": "Spectral",
-   "figmaStyle": "Regular",
-   "size": 31.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-body-bold",
-   "postscript": "Spectral-Regular",
-   "name": "Legacy/Article/Body bold",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -899,20 +633,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.article-body-bold-italic",
-   "family": "PT Serif",
-   "figmaStyle": "Bold Italic",
-   "size": 18.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-body-bolditalic",
-   "postscript": "PTSerif-BoldItalic",
-   "name": "Legacy/Article/Body bold italic",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.article-body-italic",
    "family": "Spectral",
    "figmaStyle": "Italic",
@@ -924,20 +644,6 @@
    "postscript": "Spectral-Italic",
    "name": "Article/Body italic",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.article-body-italic",
-   "family": "Open Sans",
-   "figmaStyle": "SemiBold Italic",
-   "size": 18.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-body-italic",
-   "postscript": "OpenSans-SemiBoldItalic",
-   "name": "Legacy/Article/Body italic",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -969,20 +675,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.article-byline",
-   "family": "Open Sans",
-   "figmaStyle": "Regular",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-byline",
-   "postscript": "OpenSans-Regular",
-   "name": "Legacy/Article/Byline",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.image-caption",
    "family": "Open Sans",
    "figmaStyle": "Regular",
@@ -997,20 +689,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.image-caption",
-   "family": "Open Sans",
-   "figmaStyle": "Regular",
-   "size": 14.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-caption",
-   "postscript": "OpenSans-Regular",
-   "name": "Legacy/Article/Image caption",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.article-deck",
    "family": "Open Sans",
    "figmaStyle": "Light",
@@ -1022,20 +700,6 @@
    "postscript": "OpenSans-Light",
    "name": "Article/Deck",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.article-deck",
-   "family": "Open Sans",
-   "figmaStyle": "Regular",
-   "size": 18.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-deck",
-   "postscript": "OpenSans-Regular",
-   "name": "Legacy/Article/Deck",
-   "legacy": true
   },
   {
    "platform": "ios",
@@ -1095,20 +759,6 @@
   },
   {
    "platform": "ios",
-   "token": "type.ios.article-headline",
-   "family": "Spectral",
-   "figmaStyle": "Regular",
-   "size": 25.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-title",
-   "postscript": "Spectral-Regular",
-   "name": "Legacy/Article/Headline",
-   "legacy": true
-  },
-  {
-   "platform": "ios",
    "token": "type.ios.article-headline-tablet",
    "family": "Spectral",
    "figmaStyle": "Bold",
@@ -1120,20 +770,6 @@
    "postscript": "Spectral-Bold",
    "name": "Article/Headline, tablet",
    "legacy": false
-  },
-  {
-   "platform": "ios",
-   "token": "type.ios.article-headline-tablet",
-   "family": "PT Serif",
-   "figmaStyle": "Bold",
-   "size": 42.0,
-   "lineHeight": null,
-   "letterSpacingEm": null,
-   "uppercase": false,
-   "style": "page-title-tablet",
-   "postscript": "PTSerif-Bold",
-   "name": "Legacy/Article/Headline, tablet",
-   "legacy": true
   },
   {
    "platform": "ios",

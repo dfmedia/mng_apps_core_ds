@@ -11,7 +11,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-09: production values per app. 63 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma: Android 25 text styles done (Subhead font unknown); iOS 82 next. Comparison: docs/TYPE-COMPARISON.md",
+   "note": "DEC-09: production values per app (fonts stay per platform). 56 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma: Android 25 done (Subhead font unknown); iOS 56 next. iOS legacy template documented only (DEC-10)",
    "overall": "in progress"
   },
   {
