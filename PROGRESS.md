@@ -25,8 +25,8 @@ Item-level to-do list (every element and component from the iOS and Android styl
 | 1.2 Pick merges and mode strategy | ⏸ later | Merges: keep shipped as-is for now. Modes: revisit later. Tab-label contrast (4.5:1): revisit later |
 | 1.3 Build color variables (Primitives → Brand → System) | ⬜ | After 1.2 |
 | 1.4 The other 117 themed colors per market | ⬜ | 62 are identical in every market → System collection |
-| 1.5 Typography: font variables + 63 text styles | 🔄 DEC-09: tokens + code done; Figma styles next | Blocked partly by MISSING-ASSETS 4.3 (Open Sans Light/ExtraBold) |
-| 1.6 Spacing, radius, size, breakpoint variables | ⬜ | 6 / 4 / 4 / 5 + 12-col grid |
+| 1.5 Typography: text styles | ✅ DEC-09/10: tokens, code, Figma (iOS 56, Android 25) | Open Sans Light installed (assets/fonts). Android subhead font asked (MISSING-ASSETS 4.4) |
+| 1.6 Spacing, radius, size, breakpoint variables | 🔄 DEC-11: spacing + touch targets done; breakpoints wait on LAY-01 | docs/SCALES-COMPARISON.md |
 | 1.7 Icons page: system comparison grid | ✅ | Figma page **Icons · System Comparison**: 59 purposes × SF Symbols / Material Symbols / Font Awesome 5.15.1, gaps flagged. SF Symbols column filled from PNG export (scripts/export_sf_symbols.swift → assets/sf-symbols/) |
 | 1.8 Icons: decide semantic icon list + build Icon component | ⬜ | After Apps team answers MISSING-ASSETS §1 |
 
@@ -89,3 +89,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-10-30** — DEC-09: typography and components match production. Type tokens for all 63 iOS + 26 Android styles (scripts/build_type_tokens.py), docs/TYPE-STYLES.md, MNGTypeStyles.swift (mng_apps_ios_ds), MngTypeStyles.kt (mng_apps_android_ds). Open Sans Light/LightItalic/ExtraBold/ExtraBoldItalic added to assets/fonts for Figma. TYPE-03/04 FUTURE.
 - **2026-10-30** — Karl: fonts stay per platform permanently (TYPE-03 rejected); TYPE-04 shared scale kept (renamed); TYPE-05 added (remove per-market font exceptions). Open Sans Light installed. Android Figma file: 25 text styles + page Type · Text styles (mng_apps_android_ds). iOS text styles waiting (font loading hangs while the iOS tab is in the background). Asked the Apps team for the Android article subhead font (`ArticleText.Subhead.Wapo`).
 - **2026-11-03** — DEC-10: iOS legacy template acknowledged only (docs/LEGACY-TEMPLATE.md); removed from tokens and code (MNGTypeStyles.swift, MNGButtonTokens.swift, MNGButton.swift in mng_apps_ios_ds). Figma cleanup (iOS Button/Primary legacy variants, legacy variables, Core page notes) waits for the MNG files to be open.
+- **2026-11-03** — Figma: legacy button variants/variables removed (iOS), legacy notes removed (Core Button and Type pages); duplicate iOS Button/Primary + Text link from the Oct 26 timeout deleted. iOS: 56 text styles + page Type · Text styles. DEC-11: docs/SCALES-COMPARISON.md, spacing/touch tokens (Core Spacing collection; Spacing · iOS / · Android), MNGScaleTokens.swift (mng_apps_ios_ds), mng_scale.xml (mng_apps_android_ds).

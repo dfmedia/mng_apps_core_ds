@@ -1,0 +1,504 @@
+{
+ "generated_by": "scripts/compare_scales.py",
+ "counts": {
+  "same": 4,
+  "android-only": 14,
+  "ios-only": 10,
+  "differs": 5,
+  "close": 1
+ },
+ "roles": [
+  {
+   "role": "Section-front cell margin",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-cell-margin",
+    "kind": "spacing",
+    "value": "16px",
+    "usage": "Section-front cell margins on all four sides (SectionFrontCell.swift:46)."
+   },
+   "android": {
+    "name": "space-cell-padding",
+    "kind": "spacing",
+    "value": "16px",
+    "usage": "Section-front cell padding, phone and tablet (sections dimens.xml:22, cell_padding)."
+   },
+   "match": "same",
+   "note": "Outer margin/padding of a section-front cell"
+  },
+  {
+   "role": "Section-front cell gap",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-cell-padding",
+    "kind": "spacing",
+    "value": "8px",
+    "usage": "Spacing between elements inside a section-front cell (SectionFrontCell.swift:47)."
+   },
+   "android": {
+    "name": "space-cell-spacing",
+    "kind": "spacing",
+    "value": "8px",
+    "usage": "Spacing between elements in a section-front cell (sections dimens.xml:23, cell_spacing)."
+   },
+   "match": "same",
+   "note": "Space between elements inside a cell"
+  },
+  {
+   "role": "Article side margin, phone",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-article-margin-min",
+    "kind": "spacing",
+    "value": "16px",
+    "usage": "Minimum article side margin. The margin grows with width: 0.3125 x width - 160 (NativeArticleScrollView.swift:104)."
+   },
+   "android": {
+    "name": "space-article-side",
+    "kind": "spacing",
+    "value": "16px",
+    "usage": "Article side padding, phone portrait (articles values/dimens.xml:44, native_article_side_padding)."
+   },
+   "match": "same",
+   "note": "iOS: minimum; grows with width (0.3125 x width − 160)"
+  },
+  {
+   "role": "Article side margin, landscape",
+   "kind": "spacing",
+   "ios": null,
+   "android": {
+    "name": "space-article-side-land",
+    "kind": "spacing",
+    "value": "30px",
+    "usage": "Article side padding in landscape (values-land)."
+   },
+   "match": "android-only",
+   "note": "iOS uses the width formula instead"
+  },
+  {
+   "role": "Article side margin, tablet",
+   "kind": "spacing",
+   "ios": null,
+   "android": {
+    "name": "space-article-side-tablet",
+    "kind": "spacing",
+    "value": "75px",
+    "usage": "Article side padding at sw600dp and up (values-sw600dp, -sw720dp)."
+   },
+   "match": "android-only",
+   "note": "iOS uses the width formula instead"
+  },
+  {
+   "role": "Article top margin, phone",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-article-top-phone",
+    "kind": "spacing",
+    "value": "20px",
+    "usage": "Article card top margin on iPhone (ArticleCardCell.swift:30)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Article top margin, tablet",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-article-top-pad",
+    "kind": "spacing",
+    "value": "40px",
+    "usage": "Article card top margin on iPad (ArticleCardCell.swift:30)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Subscription option inset",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-subscription-inset",
+    "kind": "spacing",
+    "value": "16px",
+    "usage": "Inner padding of a subscription option button (SubscriptionOptionButton.xib)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android subscription options use 14dp padding (controls notes), not a token"
+  },
+  {
+   "role": "Paywall login button side margin",
+   "kind": "spacing",
+   "ios": null,
+   "android": {
+    "name": "space-login-margin",
+    "kind": "spacing",
+    "value": "24px",
+    "usage": "Side margins of paywall login buttons (LoginButtonStyle)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Primary button radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-button",
+    "kind": "radius",
+    "value": "4px",
+    "usage": "Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
+   },
+   "android": {
+    "name": "radius-paywall",
+    "kind": "radius",
+    "value": "0px",
+    "usage": "Paywall Subscribe button and subscription options have no corner radius (plain color background)."
+   },
+   "match": "differs",
+   "note": "Kept per platform (DEC-07)"
+  },
+  {
+   "role": "Primary button radius, legacy template",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-button-legacy",
+    "kind": "radius",
+    "value": "5px",
+    "usage": "Paywall buttons in BS, DP, HC, MC, OS, SS, VP and TroncKit defaults; push-prompt Yes / No buttons (PushNotificationOptInView.xib)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "iOS legacy template: documented only (DEC-10). Also the push-prompt Yes/No buttons"
+  },
+  {
+   "role": "Subscription option radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-subscription",
+    "kind": "radius",
+    "value": "8px",
+    "usage": "Subscription option buttons (SubscriptionOptionButton.xib)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android subscription options are square (radius-paywall)"
+  },
+  {
+   "role": "Google sign-in radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-google",
+    "kind": "radius",
+    "value": "2px",
+    "usage": "Sign in with Google button (TroncKit default)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "What's New Continue / outlined sheet button radius",
+   "kind": "radius",
+   "ios": null,
+   "android": {
+    "name": "radius-whatsnew",
+    "kind": "radius",
+    "value": "6px",
+    "usage": "What's New Continue button (btn_rounded_corner.xml); outlined sheet buttons (btn_outlined_bg)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Your News Continue radius",
+   "kind": "radius",
+   "ios": null,
+   "android": {
+    "name": "radius-continue",
+    "kind": "radius",
+    "value": "9px",
+    "usage": "Your News Continue button (bg_continue.xml)."
+   },
+   "match": "android-only",
+   "note": "iOS draws Continue as PNG images (DSC-24)"
+  },
+  {
+   "role": "Manage subscription / delete account radius",
+   "kind": "radius",
+   "ios": null,
+   "android": {
+    "name": "radius-sheet-button",
+    "kind": "radius",
+    "value": "10px",
+    "usage": "Manage subscription and delete account buttons (manage_app_sub_button_corner_radius, delete_account_buttons_corner)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Savings label radius",
+   "kind": "radius",
+   "ios": null,
+   "android": {
+    "name": "radius-discount",
+    "kind": "radius",
+    "value": "15px",
+    "usage": "Savings label on the subscription screen (paywall_discount_rounded_label.xml)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Minimum touch target",
+   "kind": "size",
+   "ios": {
+    "name": "size-touch-min",
+    "kind": "size",
+    "value": "44px",
+    "usage": "Apple's minimum touch target. Not enforced app-wide; set by hand in about 6 places."
+   },
+   "android": {
+    "name": "size-touch-min",
+    "kind": "size",
+    "value": "48px",
+    "usage": "Android's recommended minimum touch target. Not enforced app-wide; only the settings button uses 48dp (action_button_min_width)."
+   },
+   "match": "differs",
+   "note": "Platform convention: Apple 44 pt, Android 48 dp. Not enforced in either app"
+  },
+  {
+   "role": "Your News checkbox",
+   "kind": "size",
+   "ios": {
+    "name": "size-checkbox",
+    "kind": "size",
+    "value": "30px",
+    "usage": "Your News topic checkbox, 30 x 30 (CollapsibleTableViewCell.swift:21). Below size-touch-min."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Below the touch minimum"
+  },
+  {
+   "role": "Social sign-in icon",
+   "kind": "size",
+   "ios": {
+    "name": "size-social-icon",
+    "kind": "size",
+    "value": "24px",
+    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Tab bar icon",
+   "kind": "size",
+   "ios": {
+    "name": "size-tab-icon",
+    "kind": "size",
+    "value": "26px 23px",
+    "usage": "Font Awesome tab bar icons are drawn at 26 x 23 pt (CoreKit+FontAwesome.swift:16)."
+   },
+   "android": {
+    "name": "size-nav-icon",
+    "kind": "size",
+    "value": "24px",
+    "usage": "Bottom-nav icon height (bottom_navigation_icon_height)."
+   },
+   "match": "close",
+   "note": "iOS 26 x 23 pt (Font Awesome); Android 24 dp tall"
+  },
+  {
+   "role": "Audio player control",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-player-control",
+    "kind": "size",
+    "value": "20px",
+    "usage": "Persistent audio player play/pause and close (activity_articles.xml). Below size-touch-min."
+   },
+   "match": "android-only",
+   "note": "Below the touch minimum"
+  },
+  {
+   "role": "Author contact icon",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-author-icon",
+    "kind": "size",
+    "value": "22px",
+    "usage": "Author contact icons (fragment_author.xml). Below size-touch-min."
+   },
+   "match": "android-only",
+   "note": "Below the touch minimum"
+  },
+  {
+   "role": "Overlay close button",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-overlay-close",
+    "kind": "size",
+    "value": "40px",
+    "usage": "Breaking-news and live-video overlay close buttons. Below size-touch-min."
+   },
+   "match": "android-only",
+   "note": "Breaking news and live video; below the touch minimum"
+  },
+  {
+   "role": "Paywall primary button height",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-paywall-button",
+    "kind": "size",
+    "value": "60px",
+    "usage": "Paywall Subscribe button height (paywall_button_height)."
+   },
+   "match": "android-only",
+   "note": "iOS height not in the source (44 provisional, DEC-07)"
+  },
+  {
+   "role": "Section-front grid columns",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "grid-columns",
+    "kind": "breakpoint",
+    "value": "12",
+    "usage": "Section-front items are sized in twelfths of their parent (PageItem.swift:73)."
+   },
+   "android": {
+    "name": "grid-columns",
+    "kind": "breakpoint",
+    "value": "12",
+    "usage": "Section-front items take widths out of 12 per width class (ModelHelper.kt:15)."
+   },
+   "match": "same",
+   "note": ""
+  },
+  {
+   "role": "Width class: small",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "bp-front-small",
+    "kind": "breakpoint",
+    "value": "668px",
+    "usage": "Section front switches from x-small to small at this window width (FrontWidth.swift:26)."
+   },
+   "android": {
+    "name": "bp-small",
+    "kind": "breakpoint",
+    "value": "6.1in",
+    "usage": "SMALL below 6.1 inches."
+   },
+   "match": "differs",
+   "note": "iOS: window width in pt; Android: physical screen width in inches"
+  },
+  {
+   "role": "Width class: medium",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "bp-front-medium",
+    "kind": "breakpoint",
+    "value": "835px",
+    "usage": "Small to medium (FrontWidth.swift:27)."
+   },
+   "android": {
+    "name": "bp-medium",
+    "kind": "breakpoint",
+    "value": "7.8in",
+    "usage": "MEDIUM below 7.8 inches."
+   },
+   "match": "differs",
+   "note": "iOS also has a second set for items (769 / 1025, LAY-01)"
+  },
+  {
+   "role": "Width class: large",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "bp-front-large",
+    "kind": "breakpoint",
+    "value": "1113px",
+    "usage": "Medium to large, 12.9-inch iPad landscape (FrontWidth.swift:28)."
+   },
+   "android": {
+    "name": "bp-large",
+    "kind": "breakpoint",
+    "value": "10.4in",
+    "usage": "LARGE below 10.4 inches; XLARGE above."
+   },
+   "match": "differs",
+   "note": ""
+  },
+  {
+   "role": "Width class: x-small",
+   "kind": "breakpoint",
+   "ios": null,
+   "android": {
+    "name": "bp-xsmall",
+    "kind": "breakpoint",
+    "value": "4.1in",
+    "usage": "XSMALL below 4.1 inches wide (config.json screenSizeConfigs)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Item width class: medium",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "bp-item-medium",
+    "kind": "breakpoint",
+    "value": "769px",
+    "usage": "Item width classes use a different medium step (PageItem.swift:85). Disagrees with bp-front-medium."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Disagrees with bp-front-medium (LAY-01)"
+  },
+  {
+   "role": "Item width class: large",
+   "kind": "breakpoint",
+   "ios": {
+    "name": "bp-item-large",
+    "kind": "breakpoint",
+    "value": "1025px",
+    "usage": "Item width classes use a different large step (PageItem.swift:86). Disagrees with bp-front-large."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Disagrees with bp-front-large (LAY-01)"
+  },
+  {
+   "role": "Tablet remote config",
+   "kind": "breakpoint",
+   "ios": null,
+   "android": {
+    "name": "bp-tablet-config",
+    "kind": "breakpoint",
+    "value": "500dp",
+    "usage": "sw500dp loads the tablet remote config and is_phone=false (ads: 728x90 first slot)."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Tablet resources (article padding, type)",
+   "kind": "breakpoint",
+   "ios": null,
+   "android": {
+    "name": "bp-tablet-res",
+    "kind": "breakpoint",
+    "value": "600dp",
+    "usage": "sw600dp switches article padding to 75dp and larger article type."
+   },
+   "match": "android-only",
+   "note": ""
+  }
+ ]
+}

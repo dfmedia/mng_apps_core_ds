@@ -7,12 +7,12 @@
    "group": "Typography",
    "name": "Text styles (63 iOS styles; Android font maps per market)",
    "owner": "core+variant",
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-09: production values per app (fonts stay per platform). 56 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma: Android 25 done (Subhead font unknown); iOS 56 next. iOS legacy template documented only (DEC-10)",
-   "overall": "in progress"
+   "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt",
+   "overall": "built"
   },
   {
    "id": "foundation/type-markets",
@@ -33,12 +33,12 @@
    "group": "Scales",
    "name": "Spacing scale (6 values in use, no shared scale in code)",
    "owner": "core",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "PROGRESS 1.6",
-   "overall": "todo"
+   "note": "DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins",
+   "overall": "built"
   },
   {
    "id": "foundation/radius",
@@ -50,7 +50,7 @@
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Button radius only so far (DEC-07)",
+   "note": "Button radius (DEC-07). Other radii are per component: raw production values when built (DEC-09)",
    "overall": "in progress"
   },
   {
@@ -63,7 +63,7 @@
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Button height only so far (DEC-07)",
+   "note": "DEC-11: touch-min per platform + button height (DEC-07). Component sizes stay raw values (DEC-09)",
    "overall": "in progress"
   },
   {
@@ -75,7 +75,7 @@
    "figma": "todo",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "LAY-01: two iOS breakpoint sets to reconcile",
+   "blocked_by": "LAY-01: iOS has two breakpoint sets; Android uses physical inches",
    "note": "PROGRESS 1.6",
    "overall": "todo"
   },
@@ -1333,12 +1333,12 @@
    "group": "Layout",
    "name": "Section-front grid",
    "owner": "core",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "Identical.",
-   "overall": "todo"
+   "note": "DEC-11 grid.columns 12; width classes wait on LAY-01",
+   "overall": "in progress"
   },
   {
    "id": "layout/cell-spacing",
@@ -1346,12 +1346,12 @@
    "group": "Layout",
    "name": "Cell spacing",
    "owner": "core",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "Same values, different names. Core: 16 / 8.",
-   "overall": "todo"
+   "note": "DEC-11 space.cell.margin 16, space.cell.gap 8",
+   "overall": "built"
   },
   {
    "id": "layout/breakpoints",
@@ -1359,12 +1359,12 @@
    "group": "Layout",
    "name": "Breakpoints",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Spacing, radius and size scales (foundations below)",
+   "figma": "blocked",
+   "tokens": "blocked",
+   "code": "blocked",
+   "blocked_by": "LAY-01",
    "note": "Same job, different units. Core names the classes; platforms set thresholds (LAY-01).",
-   "overall": "todo"
+   "overall": "blocked"
   },
   {
    "id": "layout/article-margin",
@@ -1372,12 +1372,12 @@
    "group": "Layout",
    "name": "Article side margin",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "Both 16 on phones.",
-   "overall": "todo"
+   "note": "DEC-11 Core 16; iOS width formula not tokenised; Android 30/75",
+   "overall": "built"
   },
   {
    "id": "layout/touch-target",
@@ -1385,12 +1385,12 @@
    "group": "Layout",
    "name": "Minimum touch target",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "Core rule; platform value.",
-   "overall": "todo"
+   "note": "DEC-11 iOS 44, Android 48 (not enforced in the apps)",
+   "overall": "built"
   },
   {
    "id": "layout/orientation",

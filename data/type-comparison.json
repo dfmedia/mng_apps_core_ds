@@ -984,7 +984,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: blurb",
@@ -1003,7 +1003,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: card text",
@@ -1022,7 +1022,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: label default",
@@ -1041,7 +1041,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: signature",
@@ -1060,7 +1060,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: kicker left",
@@ -1079,7 +1079,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Legacy: label small left",
@@ -1098,7 +1098,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": ""
+   "note": "Legacy template: documented only (DEC-10)"
   },
   {
    "role": "Top bar title",

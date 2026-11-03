@@ -12,23 +12,21 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 8 | 0 | 1 | 3 | 4 | 0 |
+| Foundations | 8 | 0 | 3 | 2 | 3 | 0 |
 | Color roles | 12 | 0 | 9 | 2 | 0 | 1 |
 | Components | 20 | 0 | 2 | 6 | 12 | 0 |
-| Layout | 6 | 0 | 0 | 0 | 6 | 0 |
+| Layout | 6 | 0 | 3 | 1 | 1 | 1 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **12** | **11** | **22** | **62** |
+| **Total** | **107** | **0** | **17** | **11** | **16** | **63** |
 
 ## Suggested order
 
-1. Apps team answers MISSING-ASSETS 5.5 (button pilot approved 2026-10-26)
-2. Typography: Figma text styles in the iOS and Android files (needs Open Sans Light installed), then per-market font exceptions
-3. Spacing, radius and size scales (foundation/spacing, radius, size), which unblock the layout rules
-4. App chrome components whose colors already exist: Breaking-news banner (DSC-15/19 ASAP), Top bar, Bottom tab bar, Section tabs
-5. Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in
-6. Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator
-7. System colors (the other 117 themed colors) and breakpoints (after LAY-01)
-8. Icons, once the Apps team answers MISSING-ASSETS §1
+1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), icons (§1)
+2. App chrome components whose colors exist: Breaking-news banner, Top bar, Bottom tab bar, Section tabs
+3. Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in
+4. Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator
+5. System colors (the other 117 themed colors); breakpoints after LAY-01
+6. Icons, once the Apps team answers MISSING-ASSETS §1
 
 ## Foundations
 
@@ -36,17 +34,17 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-09: production values per app (fonts stay per platform). 56 iOS + 26 Android tokens, MNGTypeStyles.swift, MngTypeStyles.kt. Figma: Android 25 done (Subhead font unknown); iOS 56 next. iOS legacy template documented only (DEC-10) |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
 | Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Kept as notes on each type token (DEC-09). Future: remove them (IMPROVEMENTS TYPE-05) |
 
 ### Scales
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Spacing scale (6 values in use, no shared scale in code) | Core | ⬜ to do | ⬜ to do | ⬜ to do | PROGRESS 1.6 |
-| Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | Button radius only so far (DEC-07) |
-| Size scale (touch target, checkbox, icon sizes) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | Button height only so far (DEC-07) |
-| Breakpoints + 12-column grid | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ LAY-01: two iOS breakpoint sets to reconcile · PROGRESS 1.6 |
+| Spacing scale (6 values in use, no shared scale in code) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins |
+| Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | Button radius (DEC-07). Other radii are per component: raw production values when built (DEC-09) |
+| Size scale (touch target, checkbox, icon sizes) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | DEC-11: touch-min per platform + button height (DEC-07). Component sizes stay raw values (DEC-09) |
+| Breakpoints + 12-column grid | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ LAY-01: iOS has two breakpoint sets; Android uses physical inches · PROGRESS 1.6 |
 
 ### Color
 
@@ -116,11 +114,11 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Section-front grid | Core | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Spacing, radius and size scales (foundations below) · Identical. |
-| Cell spacing | Core | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Spacing, radius and size scales (foundations below) · Same values, different names. Core: 16 / 8. |
-| Breakpoints | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Spacing, radius and size scales (foundations below) · Same job, different units. Core names the classes; platforms set thresholds (LAY-01). |
-| Article side margin | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Spacing, radius and size scales (foundations below) · Both 16 on phones. |
-| Minimum touch target | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ Spacing, radius and size scales (foundations below) · Core rule; platform value. |
+| Section-front grid | Core | 🟡 partial | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 grid.columns 12; width classes wait on LAY-01 |
+| Cell spacing | Core | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 space.cell.margin 16, space.cell.gap 8 |
+| Breakpoints | Core + iOS + Android | ⛔ blocked | ⛔ blocked | ⛔ blocked | ⛔ LAY-01 · Same job, different units. Core names the classes; platforms set thresholds (LAY-01). |
+| Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
+| Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ⬜ to do | — n/a | — n/a | Identical. |
 
 ## Icons

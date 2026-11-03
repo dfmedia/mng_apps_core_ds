@@ -74,13 +74,13 @@ iOS ships 63 styles (TroncKit Style.json + TroncAppThemeable); Android ships 26 
 | Tertiary header text | Open Sans Bold 14 (`cell-tertiary-headertext`) | — | iOS only |  |
 | Tertiary timestamp | Open Sans SemiBold 13 (`cell-timestamp-tertiary`) | — | iOS only |  |
 | AR headline | Open Sans Bold 20 (`ar-headline`) | — | iOS only |  |
-| Legacy: headline default | Spectral Medium 20 (`cell-headline-default`) | — | iOS only |  |
-| Legacy: blurb | PT Serif Regular 16 (`cell-blurb`) | — | iOS only |  |
-| Legacy: card text | Open Sans Bold 13 (`cell-card-text-default`) | — | iOS only |  |
-| Legacy: label default | Open Sans Regular 16 (`cell-label-default`) | — | iOS only |  |
-| Legacy: signature | Open Sans Bold 12 (`cell-signature`) | — | iOS only |  |
-| Legacy: kicker left | Open Sans Bold 12 (`label-kicker-left`) | — | iOS only |  |
-| Legacy: label small left | Open Sans Bold 10 (`label-normal-small-left`) | — | iOS only |  |
+| Legacy: headline default | Spectral Medium 20 (`cell-headline-default`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: blurb | PT Serif Regular 16 (`cell-blurb`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: card text | Open Sans Bold 13 (`cell-card-text-default`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: label default | Open Sans Regular 16 (`cell-label-default`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: signature | Open Sans Bold 12 (`cell-signature`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: kicker left | Open Sans Bold 12 (`label-kicker-left`) | — | iOS only | Legacy template: documented only (DEC-10) |
+| Legacy: label small left | Open Sans Bold 10 (`label-normal-small-left`) | — | iOS only | Legacy template: documented only (DEC-10) |
 
 ## App
 

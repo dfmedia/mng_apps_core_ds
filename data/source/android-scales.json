@@ -1,0 +1,142 @@
+{
+ "$description": "Spacing, radius, size and breakpoint values as shipped, copied from the style-guide artifact on 2026-11-03. Source data: do not edit.",
+ "source": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6, project/tokens.json",
+ "spacing": {
+  "note": "No shared spacing scale exists. These are the values the code uses, each with its source.",
+  "tokens": [
+   {
+    "name": "space-cell-padding",
+    "value": "16px",
+    "usage": "Section-front cell padding, phone and tablet (sections dimens.xml:22, cell_padding)."
+   },
+   {
+    "name": "space-cell-spacing",
+    "value": "8px",
+    "usage": "Spacing between elements in a section-front cell (sections dimens.xml:23, cell_spacing)."
+   },
+   {
+    "name": "space-article-side",
+    "value": "16px",
+    "usage": "Article side padding, phone portrait (articles values/dimens.xml:44, native_article_side_padding)."
+   },
+   {
+    "name": "space-article-side-land",
+    "value": "30px",
+    "usage": "Article side padding in landscape (values-land)."
+   },
+   {
+    "name": "space-article-side-tablet",
+    "value": "75px",
+    "usage": "Article side padding at sw600dp and up (values-sw600dp, -sw720dp)."
+   },
+   {
+    "name": "space-login-margin",
+    "value": "24px",
+    "usage": "Side margins of paywall login buttons (LoginButtonStyle)."
+   }
+  ]
+ },
+ "radius": {
+  "tokens": [
+   {
+    "name": "radius-paywall",
+    "value": "0px",
+    "usage": "Paywall Subscribe button and subscription options have no corner radius (plain color background)."
+   },
+   {
+    "name": "radius-whatsnew",
+    "value": "6px",
+    "usage": "What's New Continue button (btn_rounded_corner.xml); outlined sheet buttons (btn_outlined_bg)."
+   },
+   {
+    "name": "radius-continue",
+    "value": "9px",
+    "usage": "Your News Continue button (bg_continue.xml)."
+   },
+   {
+    "name": "radius-sheet-button",
+    "value": "10px",
+    "usage": "Manage subscription and delete account buttons (manage_app_sub_button_corner_radius, delete_account_buttons_corner)."
+   },
+   {
+    "name": "radius-discount",
+    "value": "15px",
+    "usage": "Savings label on the subscription screen (paywall_discount_rounded_label.xml)."
+   }
+  ]
+ },
+ "size": {
+  "tokens": [
+   {
+    "name": "size-touch-min",
+    "value": "48px",
+    "usage": "Android's recommended minimum touch target. Not enforced app-wide; only the settings button uses 48dp (action_button_min_width)."
+   },
+   {
+    "name": "size-nav-icon",
+    "value": "24px",
+    "usage": "Bottom-nav icon height (bottom_navigation_icon_height)."
+   },
+   {
+    "name": "size-player-control",
+    "value": "20px",
+    "usage": "Persistent audio player play/pause and close (activity_articles.xml). Below size-touch-min."
+   },
+   {
+    "name": "size-author-icon",
+    "value": "22px",
+    "usage": "Author contact icons (fragment_author.xml). Below size-touch-min."
+   },
+   {
+    "name": "size-overlay-close",
+    "value": "40px",
+    "usage": "Breaking-news and live-video overlay close buttons. Below size-touch-min."
+   },
+   {
+    "name": "size-paywall-button",
+    "value": "60px",
+    "usage": "Paywall Subscribe button height (paywall_button_height)."
+   }
+  ]
+ },
+ "breakpoint": {
+  "note": "Section fronts pick a width class from the physical screen width in inches (AppConfig.kt:116-138), not dp. Resource qualifiers use dp.",
+  "tokens": [
+   {
+    "name": "bp-xsmall",
+    "value": "4.1in",
+    "usage": "XSMALL below 4.1 inches wide (config.json screenSizeConfigs)."
+   },
+   {
+    "name": "bp-small",
+    "value": "6.1in",
+    "usage": "SMALL below 6.1 inches."
+   },
+   {
+    "name": "bp-medium",
+    "value": "7.8in",
+    "usage": "MEDIUM below 7.8 inches."
+   },
+   {
+    "name": "bp-large",
+    "value": "10.4in",
+    "usage": "LARGE below 10.4 inches; XLARGE above."
+   },
+   {
+    "name": "bp-tablet-config",
+    "value": "500dp",
+    "usage": "sw500dp loads the tablet remote config and is_phone=false (ads: 728x90 first slot)."
+   },
+   {
+    "name": "bp-tablet-res",
+    "value": "600dp",
+    "usage": "sw600dp switches article padding to 75dp and larger article type."
+   },
+   {
+    "name": "grid-columns",
+    "value": "12",
+    "usage": "Section-front items take widths out of 12 per width class (ModelHelper.kt:15)."
+   }
+  ]
+ }
+}
