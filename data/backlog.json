@@ -1073,11 +1073,11 @@
    "group": "App chrome",
    "name": "Top bar",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "",
-   "note": "Colors done (navbar, navtext)",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13)",
    "overall": "in progress"
   },
   {
@@ -1086,12 +1086,12 @@
    "group": "App chrome",
    "name": "Section tabs",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "",
-   "note": "Same job; native tab strip per platform.",
-   "overall": "todo"
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)",
+   "overall": "in progress"
   },
   {
    "id": "component/tab-bar",
@@ -1099,11 +1099,11 @@
    "group": "App chrome",
    "name": "Bottom tab bar",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "",
-   "note": "Colors done (tabbar, tabactive, tabinactive)",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6)",
    "overall": "in progress"
   },
   {
@@ -1112,11 +1112,11 @@
    "group": "App chrome",
    "name": "Breaking-news banner",
    "owner": "core",
-   "figma": "todo",
+   "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "",
-   "note": "Colors done (alert, alerttext); component not built. DSC-15/19 ASAP",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked",
    "overall": "in progress"
   },
   {

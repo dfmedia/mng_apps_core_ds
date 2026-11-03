@@ -10,6 +10,7 @@ Design-system decisions with the rule, the date, who made it and what changed. P
 | DEC-04 | Colors are managed as design tokens: one DTCG source in Core, Style Dictionary generates Swift and Kotlin; every color is documented as hex and RGB | 2026-10-21 | Karl |
 | DEC-05 | One breaking-news red for every market and both apps: `#cf000e` with white text (5.74:1, WCAG AA). Fix on iOS ASAP | 2026-10-21 | Karl |
 | DEC-06 | Figma color variables: a **Brand colors** collection with every market as plain variables (no modes), plus a **Brand theme** collection with 20 modes (the plan limit) for the required markets, one per cluster and the most different ones. Daily Herald added as a provisional market | 2026-10-21 | Karl |
+| DEC-13 | App shell: build waits for the Apps team's production sizes; colors are each platform's production values (new roles for section tabs and Android tab labels; navicon = navtext); icons are swappable slots until the icon set exists | 2026-11-03 | Karl |
 | DEC-12 | Everything is linked to tokens: breakpoints as shipped per platform, every component metric as a platform token, and every component property in Figma bound to a variable | 2026-11-03 | Karl |
 | DEC-11 | Layout spacing: the values both apps ship the same become Core tokens (cell margin 16, cell gap 8, article side 16, 12-column grid); platform-only layout values and touch targets become platform tokens; component-specific radii and sizes stay raw production values (DEC-09) | 2026-11-03 | Claude, under DEC-09 (Karl to confirm) |
 | DEC-10 | The iOS legacy theme template (BS, DP, HC, MC, OS, SS, VP) is acknowledged only: documented, but not built in Figma, tokens or code | 2026-11-03 | Karl |
@@ -289,3 +290,15 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Core Button** now has an **iOS** and an **Android** mode in the Button collection (height 44 / 60, radius 4 / 0, label Open Sans Bold / Roboto Medium 14, tracking 0 / 1.25 px); every property of the component is bound. The invented 16 px side padding was removed (no production value).
 - **Text links** in both platform files are bound to the platform touch target; code uses `MNGScale.sizeTouchMin` / `@dimen/mng_size_touch_min`.
 - **Not tokens:** the iOS legacy template (DEC-10).
+
+## DEC-13 · App shell (top bar, section tabs, bottom tab bar, banner, header band, status bar)
+
+"App shell" is this project's name for what the registry and older docs call "App chrome" (Karl, 2026-11-03).
+
+- **Sizes:** the style guides say bar heights, paddings and fonts in their previews are illustrative, so production sizes are not in the exports. Karl: **wait for the Apps team** (MISSING-ASSETS 5.6) before building the app shell components. Known already: top bar title (iOS Open Sans Bold 16), tab labels (iOS Open Sans Bold 10, Android Roboto 10), Android section tabs (Open Sans SemiBold 12), tab icon sizes (DEC-12).
+- **Colors: each platform's production values** (`scripts/build_shell_colors.py` → `tokens/*/shell.tokens.json`, `data/shell-colors.json`):
+  - **Core `navicon`** (top bar icon tint) = alias of `navtext`: both apps ship them equal in all 77 markets.
+  - **iOS section bar** (`sectiontabbar`, `sectiontabtext`, `sectiontabselected`, `sectiontabindicator`): white bar, #333333 text and underline in 74 markets; BS, DP, NYDN use #2c2d2d / #000000. Figma iOS file: **Shell colors · iOS** (per market) + **Shell theme · iOS** (20 modes).
+  - **Android section tabs and tab labels** (`sectiontab*`, `tablabelactive`, `tablabelinactive`): Android ships the section tabs in the top-bar colors and the tab labels in the tab-icon colors, so these roles **follow the Core roles** (navbar, navtext, tabactive, tabinactive) and inherit every Core color decision. Where production breaks that pattern the shipped value is kept: CT section tabs (white bar, #2c2d2d text, #004e87 selected); tab labels in DP, MC, NYDN, OS, TSAR. Figma Android file: **Shell colors · Android** (aliases of the Core library's Brand colors) + **Shell theme · Android** (20 modes).
+  - Already Core: top bar navbar/navtext, tab bar tabbar/tabactive/tabinactive, banner alert/alerttext, iOS header band `header`, Android `statusbar`.
+- **Icons:** swappable icon slots, sized with the icon tokens, until the icon set exists (MISSING-ASSETS §1).

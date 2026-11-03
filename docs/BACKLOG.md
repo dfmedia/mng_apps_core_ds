@@ -14,15 +14,15 @@ Built = done everywhere except the code is not compiled in an app yet.
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
 | Color roles | 12 | 0 | 9 | 2 | 0 | 1 |
-| Components | 20 | 0 | 2 | 6 | 12 | 0 |
+| Components | 20 | 0 | 2 | 7 | 11 | 0 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **22** | **8** | **15** | **62** |
+| **Total** | **107** | **0** | **22** | **9** | **14** | **62** |
 
 ## Suggested order
 
 1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), icons (§1)
-2. App chrome components whose colors exist: Breaking-news banner, Top bar, Bottom tab bar, Section tabs
+2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes from the Apps team (5.6)
 3. Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in
 4. Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator
 5. System colors (the other 117 themed colors); breakpoints after LAY-01
@@ -79,10 +79,10 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Top bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (navbar, navtext) |
-| Section tabs | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Same job; native tab strip per platform. |
-| Bottom tab bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (tabbar, tabactive, tabinactive) |
-| Breaking-news banner | Core | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (alert, alerttext); component not built. DSC-15/19 ASAP |
+| Top bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13) |
+| Section tabs | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6) |
+| Bottom tab bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6) |
+| Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked |
 | Section header band | iOS | ⬜ to do | ✅ done | 📝 written, not compiled | Color only (header role) |
 | Status bar color | Android | ⬜ to do | ✅ done | 📝 written, not compiled | Color only (statusbar role) |
 

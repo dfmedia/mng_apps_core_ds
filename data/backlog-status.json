@@ -223,17 +223,23 @@
   "component/breaking-banner": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (alert, alerttext); component not built. DSC-15/19 ASAP"
+   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked",
+   "figma": "blocked",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
   },
   "component/nav-bar": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (navbar, navtext)"
+   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13)",
+   "figma": "blocked",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
   },
   "component/tab-bar": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (tabbar, tabactive, tabinactive)"
+   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6)",
+   "figma": "blocked",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
   },
   "component/status-bar": {
    "tokens": "done",
@@ -281,11 +287,18 @@
    "tokens": "done",
    "code": "written",
    "note": "DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set"
+  },
+  "component/section-tabs": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)"
   }
  },
  "next": [
   "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), icons (§1)",
-  "App chrome components whose colors exist: Breaking-news banner, Top bar, Bottom tab bar, Section tabs",
+  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes from the Apps team (5.6)",
   "Remaining buttons: Continue (fold into Primary, DSC-24), Subscription option, Notification prompt, Manage subscription, Savings label, Social sign-in",
   "Controls: Switch (needs PLAT-10), Checkbox, Segmented control, Text size, Loading indicator",
   "System colors (the other 117 themed colors); breakpoints after LAY-01",

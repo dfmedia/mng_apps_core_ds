@@ -1,0 +1,1971 @@
+{
+ "generated_by": "scripts/build_shell_colors.py",
+ "roles": {
+  "ios": [
+   "sectiontabbar",
+   "sectiontabtext",
+   "sectiontabselected",
+   "sectiontabindicator"
+  ],
+  "android": [
+   "sectiontabbar",
+   "sectiontabtext",
+   "sectiontabselected",
+   "sectiontabindicator",
+   "tablabelactive",
+   "tablabelinactive"
+  ]
+ },
+ "markets": {
+  "bs": {
+   "market": "Baltimore Sun",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#2c2d2d",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#daa520",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "ct": {
+   "market": "Chicago Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#2c2d2d",
+    "sectiontabselected": "#004e87",
+    "sectiontabindicator": "#004e87",
+    "tablabelactive": "#9dd1f5",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": false,
+    "sectiontabtext": false,
+    "sectiontabselected": false,
+    "sectiontabindicator": false,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "dp": {
+   "market": "Daily Press",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#2c2d2d",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#000000",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#000000",
+    "tablabelactive": "#3674a9",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": false,
+    "tablabelinactive": true
+   }
+  },
+  "hc": {
+   "market": "Hartford Courant",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#4fa8d1",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "mc": {
+   "market": "Morning Call",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#000000",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#000000",
+    "tablabelactive": "#539cc4",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": false,
+    "tablabelinactive": true
+   }
+  },
+  "nydn": {
+   "market": "New York Daily News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#2c2d2d",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333",
+    "tablabelactive": "#4492e0",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": false,
+    "tablabelinactive": false
+   }
+  },
+  "ocr": {
+   "market": "Orange County Register",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b04f0f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "os": {
+   "market": "Orlando Sentinel",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333",
+    "tablabelactive": "#15919d",
+    "tablabelinactive": "#333333"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": false,
+    "tablabelinactive": true
+   }
+  },
+  "pac": {
+   "market": "Petaluma Argus-Courier",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#a06318",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ffea00",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "psn": {
+   "market": "Pasadena Star News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ff6900",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "sdut": {
+   "market": "The San Diego Union-Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ffffff",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "sgvt": {
+   "market": "San Gabriel Valley Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b01f36",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ff6900",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "sit": {
+   "market": "Sonoma Index Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#0f73a9",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ffea00",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "ss": {
+   "market": "Sun Sentinel",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#000000",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#000000",
+    "tablabelactive": "#761113",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tb": {
+   "market": "Buffzone",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#4351af",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tban": {
+   "market": "Bay Area News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tbcp": {
+   "market": "Boulder County Preps",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#3f51b5",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tbe": {
+   "market": "Broomfield Enterprise News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#4351af",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tbh": {
+   "market": "Boston Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#00538a",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#9dd1f5",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tbhs": {
+   "market": "Boston Herald Sports",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b01f36",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#004e87",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tccdr": {
+   "market": "Canon City Daily Record",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tce": {
+   "market": "Chico Enterprise Record",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tchw": {
+   "market": "Colorado Hometown Weekly",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#353f8a",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tcv": {
+   "market": "The Citizens' Voice",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#434953",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdb": {
+   "market": "Daily Breeze",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#9dd1f5",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdc": {
+   "market": "The Daily Camera",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#007639",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdcd": {
+   "market": "Delaware County Daily Times",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#5b9bc8",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdf": {
+   "market": "Daily Freeman",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#9dd1f5",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdh": {
+   "market": "Daily Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#0072b4",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdlw": {
+   "market": "Daily Local Weschester",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#1591b7",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdp": {
+   "market": "The Denver Post",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#f7a430",
+    "tablabelinactive": "#999999"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tdps": {
+   "market": "Denver Post Sports",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#c75c14",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tebt": {
+   "market": "The East Bay Times",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#5480ba",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#6bd1e6",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "teptg": {
+   "market": "Estes Park Trail Gazette",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tets": {
+   "market": "Eureka Times Standard",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tfmt": {
+   "market": "Fort Morgan Times",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tgt": {
+   "market": "Greeley Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#44687f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tivdb": {
+   "market": "Inland Valley Daily Bulletin",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#cccccc",
+    "sectiontabselected": "#cccccc",
+    "sectiontabindicator": "#cccccc",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#cccccc"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tja": {
+   "market": "Journal Advocate",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tladn": {
+   "market": "Los Angeles Daily News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tlbpt": {
+   "market": "Long Beach Press-Telegram",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tlr": {
+   "market": "Loveland Reporter Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#4e5dca",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tls": {
+   "market": "Lowell Sun News for Mobile",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tltc": {
+   "market": "Longmont Times-Call for Mobile",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#007cba",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tmch": {
+   "market": "Monterey County Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#3c6292",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tmd": {
+   "market": "Macomb Daily",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#3a527a",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tmi": {
+   "market": "Marin Independent Journal News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tmj": {
+   "market": "The Morning Journal",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tmn": {
+   "market": "The Mercury News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tms": {
+   "market": "The Morning Sun",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#3a527a",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tnh": {
+   "market": "The News Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tod": {
+   "market": "Oneida Daily Dispatch",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "top": {
+   "market": "The Oakland Press",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#0b151e",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#004e87",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tpd": {
+   "market": "The Press Democrat",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#999999",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tpe": {
+   "market": "The Press-Enterprise",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ff6900",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tpm": {
+   "market": "The Pottstown Mercury",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tr": {
+   "market": "The Reporter for Mobile",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#007cba",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "trdf": {
+   "market": "Redlands Daily Facts",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#9dd1f5",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tre": {
+   "market": "Reading Eagle",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#004e87",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "trh": {
+   "market": "Republican-Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#434953",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "trot": {
+   "market": "Royal Oak Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#013a67",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "trr": {
+   "market": "The Troy Record",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tsar": {
+   "market": "Saratogian",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#f5f5f5",
+    "sectiontabtext": "#000000",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#000000",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": false,
+    "tablabelinactive": true
+   }
+  },
+  "tsbs": {
+   "market": "The San Bernardino Sun",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ff6900",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tscs": {
+   "market": "Santa Cruz Sentinel",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tseb": {
+   "market": "Sentinel and Enterprise",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tsppp": {
+   "market": "St. Paul Pioneer Press",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tss": {
+   "market": "The Standard-Speaker",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#434953",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tsv": {
+   "market": "Silicon Valley",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#000000",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#004e87",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tt": {
+   "market": "The Trentonian",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#004e87",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tth": {
+   "market": "The Times Herald",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "ttt": {
+   "market": "Times-Tribune",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#434953",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tudj": {
+   "market": "Ukiah Daily Journal",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#32408f",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tvr": {
+   "market": "Vacaville Reporter",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#408fcb",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "tvth": {
+   "market": "Vallejo Times Herald News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#8d092d",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "twdd": {
+   "market": "Woodland Daily Democrat",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#007639",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#000000",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "twdn": {
+   "market": "Whittier Daily News",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#b93611",
+    "sectiontabtext": "#ffffff",
+    "sectiontabselected": "#ffffff",
+    "sectiontabindicator": "#ffffff",
+    "tablabelactive": "#ff6900",
+    "tablabelinactive": "#ffffff"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  },
+  "vp": {
+   "market": "Virginian Pilot",
+   "ios": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#333333",
+    "sectiontabselected": "#333333",
+    "sectiontabindicator": "#333333"
+   },
+   "android": {
+    "sectiontabbar": "#ffffff",
+    "sectiontabtext": "#000000",
+    "sectiontabselected": "#000000",
+    "sectiontabindicator": "#000000",
+    "tablabelactive": "#005f7e",
+    "tablabelinactive": "#000000"
+   },
+   "android_follows": {
+    "sectiontabbar": true,
+    "sectiontabtext": true,
+    "sectiontabselected": true,
+    "sectiontabindicator": true,
+    "tablabelactive": true,
+    "tablabelinactive": true
+   }
+  }
+ }
+}
