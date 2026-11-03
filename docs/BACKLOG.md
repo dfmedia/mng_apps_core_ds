@@ -12,12 +12,12 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 8 | 0 | 3 | 2 | 3 | 0 |
+| Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
 | Color roles | 12 | 0 | 9 | 2 | 0 | 1 |
 | Components | 20 | 0 | 2 | 6 | 12 | 0 |
-| Layout | 6 | 0 | 3 | 1 | 1 | 1 |
+| Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **17** | **11** | **16** | **63** |
+| **Total** | **107** | **0** | **22** | **8** | **15** | **62** |
 
 ## Suggested order
 
@@ -42,9 +42,9 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Spacing scale (6 values in use, no shared scale in code) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins |
-| Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | Button radius (DEC-07). Other radii are per component: raw production values when built (DEC-09) |
-| Size scale (touch target, checkbox, icon sizes) | Core + iOS + Android | 🟡 partial | 🟡 partial | 🟡 partial | DEC-11: touch-min per platform + button height (DEC-07). Component sizes stay raw values (DEC-09) |
-| Breakpoints + 12-column grid | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | ⛔ LAY-01: iOS has two breakpoint sets; Android uses physical inches · PROGRESS 1.6 |
+| Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-12: every component radius/size as a platform token (Components · iOS / Android) |
+| Size scale (touch target, checkbox, icon sizes) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-12: every component radius/size as a platform token (Components · iOS / Android) |
+| Breakpoints + 12-column grid | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-12: as shipped per platform (iOS two sets until LAY-01; Android inches + sw500/600dp) |
 
 ### Color
 
@@ -114,9 +114,9 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Section-front grid | Core | 🟡 partial | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 grid.columns 12; width classes wait on LAY-01 |
+| Section-front grid | Core | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set |
 | Cell spacing | Core | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 space.cell.margin 16, space.cell.gap 8 |
-| Breakpoints | Core + iOS + Android | ⛔ blocked | ⛔ blocked | ⛔ blocked | ⛔ LAY-01 · Same job, different units. Core names the classes; platforms set thresholds (LAY-01). |
+| Breakpoints | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set |
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ⬜ to do | — n/a | — n/a | Identical. |

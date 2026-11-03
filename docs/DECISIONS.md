@@ -10,6 +10,7 @@ Design-system decisions with the rule, the date, who made it and what changed. P
 | DEC-04 | Colors are managed as design tokens: one DTCG source in Core, Style Dictionary generates Swift and Kotlin; every color is documented as hex and RGB | 2026-10-21 | Karl |
 | DEC-05 | One breaking-news red for every market and both apps: `#cf000e` with white text (5.74:1, WCAG AA). Fix on iOS ASAP | 2026-10-21 | Karl |
 | DEC-06 | Figma color variables: a **Brand colors** collection with every market as plain variables (no modes), plus a **Brand theme** collection with 20 modes (the plan limit) for the required markets, one per cluster and the most different ones. Daily Herald added as a provisional market | 2026-10-21 | Karl |
+| DEC-12 | Everything is linked to tokens: breakpoints as shipped per platform, every component metric as a platform token, and every component property in Figma bound to a variable | 2026-11-03 | Karl |
 | DEC-11 | Layout spacing: the values both apps ship the same become Core tokens (cell margin 16, cell gap 8, article side 16, 12-column grid); platform-only layout values and touch targets become platform tokens; component-specific radii and sizes stay raw production values (DEC-09) | 2026-11-03 | Claude, under DEC-09 (Karl to confirm) |
 | DEC-10 | The iOS legacy theme template (BS, DP, HC, MC, OS, SS, VP) is acknowledged only: documented, but not built in Figma, tokens or code | 2026-11-03 | Karl |
 | DEC-09 | Typography and components match production: each app keeps its own fonts (permanently) and sizes; every shipped style is built, one-app styles and the iOS legacy template included; raw production values where no token exists yet | 2026-10-30 | Karl |
@@ -279,3 +280,12 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Not tokens:** radii and sizes that belong to one component (Continue 9, savings label 15, player controls 20, overlay close 40 …). Per DEC-09 they are used as raw production values when that component is built; they stay listed in the comparison.
 - **Breakpoints:** not built yet. iOS has two disagreeing sets (LAY-01) and Android picks width classes by physical inches.
 - **Code:** `MNGScaleTokens.swift` (`MNGScale`, iOS repo), `tokens/res/values/mng_scale.xml` (Android repo). Applied by `scripts/build_scale_tokens.py`.
+
+## DEC-12 · Everything linked to tokens
+
+- **Rule (Karl, 2026-11-03):** build breakpoints and tokens for each design system and its components, so that everything is linked to tokens. Replaces the "component values stay raw" part of DEC-11.
+- **Breakpoints, as shipped** (`breakpoint.ios.*`, `breakpoint.android.*`; Figma collections **Breakpoints · iOS** / **Breakpoints · Android**): iOS front 668 / 835 / 1113 pt and item 769 / 1025 pt (both sets kept until LAY-01 is decided); Android width classes 4.1 / 6.1 / 7.8 / 10.4 inches (physical screen) and sw500dp / sw600dp.
+- **Component metrics** (`component.ios.*`, `component.android.*`; Figma **Components · iOS** / **Components · Android**): every component-specific radius, size and inset from the style guides, e.g. Continue radius 9, savings label 15, checkbox 30, tab icons 26 × 23 / 24.
+- **Core Button** now has an **iOS** and an **Android** mode in the Button collection (height 44 / 60, radius 4 / 0, label Open Sans Bold / Roboto Medium 14, tracking 0 / 1.25 px); every property of the component is bound. The invented 16 px side padding was removed (no production value).
+- **Text links** in both platform files are bound to the platform touch target; code uses `MNGScale.sizeTouchMin` / `@dimen/mng_size_touch_min`.
+- **Not tokens:** the iOS legacy template (DEC-10).

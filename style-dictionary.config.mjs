@@ -148,7 +148,7 @@ const sd = new StyleDictionary({
       files: [
         { destination: 'MNGBrandColors.swift', format: 'mng/swift-palettes', filter: (t) => t.path[1] !== 'android' },
         { destination: 'MNGButtonTokens.swift', format: 'mng/swift-button', filter: (t) => t.path[0] === 'button' && t.path[1] !== 'android' },
-        { destination: 'MNGScaleTokens.swift', format: 'mng/swift-scale', filter: (t) => ['space', 'size', 'grid'].includes(t.path[0]) && t.path[1] !== 'android' },
+        { destination: 'MNGScaleTokens.swift', format: 'mng/swift-scale', filter: (t) => ['space', 'size', 'grid', 'breakpoint', 'component'].includes(t.path[0]) && t.path[1] !== 'android' },
         { destination: 'MNGTypeStyles.swift', format: 'mng/swift-type', filter: (t) => t.path[0] === 'type' && t.path[1] === 'ios' },
       ],
     },
@@ -156,7 +156,7 @@ const sd = new StyleDictionary({
       buildPath: '../mng_apps_android_ds/tokens/',
       files: [
         { destination: 'res/values/mng_button.xml', format: 'mng/android-button-xml', filter: (t) => t.path[0] === 'button' && t.path[1] !== 'ios' },
-        { destination: 'res/values/mng_scale.xml', format: 'mng/android-scale-xml', filter: (t) => ['space', 'size', 'grid'].includes(t.path[0]) && t.path[1] !== 'ios' },
+        { destination: 'res/values/mng_scale.xml', format: 'mng/android-scale-xml', filter: (t) => ['space', 'size', 'grid', 'breakpoint', 'component'].includes(t.path[0]) && t.path[1] !== 'ios' },
         { destination: 'MngTypeStyles.kt', format: 'mng/kotlin-type', options: { packageName: 'com.mng.designsystem.tokens' }, filter: (t) => t.path[0] === 'type' && t.path[1] === 'android' },
         { destination: 'MngBrandColors.kt', format: 'mng/kotlin-palettes', options: { packageName: 'com.mng.designsystem.tokens' }, filter: (t) => t.path[1] !== 'ios' },
         ...markets.map(m => ({ destination: `flavors/${m}/res/values/mng_brand_colors.xml`, format: 'mng/android-flavor-xml', options: { market: m }, filter: (t) => t.path[1] !== 'ios' })),

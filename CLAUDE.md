@@ -135,6 +135,10 @@ python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from d
 - Karl: design system owner. Approves every phase.
 - Apps team contacts: Jess Navaro, Patrick Carr.
 
+## Vocabulary
+
+- **App shell** = what the registry and older docs call "App chrome" (top bar, section tabs, bottom tab bar, breaking-news banner, section header band, status bar). Use "app shell" in conversation to avoid confusion with the Chrome browser; existing docs keep their wording.
+
 ## Working style
 
 - Keep replies short. Lead with what changed and what needs a decision.
