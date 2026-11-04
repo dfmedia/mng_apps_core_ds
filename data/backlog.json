@@ -1164,12 +1164,12 @@
    "group": "Buttons",
    "name": "Continue button",
    "owner": "core",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: as shipped per platform (iOS image 159x55, Android 152x54 r9). Not Core. Figma: platform files. Future BTN-03",
-   "overall": "in progress"
+   "note": "DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03",
+   "overall": "built"
   },
   {
    "id": "component/subscription-option",
@@ -1268,12 +1268,12 @@
    "group": "Controls",
    "name": "Switch",
    "owner": "core+variant",
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: native look, on = action. Android built (Components · Controls); iOS waits on the iOS Figma plugin session",
-   "overall": "in progress"
+   "note": "DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls)",
+   "overall": "built"
   },
   {
    "id": "component/checkbox",
@@ -1294,12 +1294,12 @@
    "group": "Controls",
    "name": "Text size setting",
    "owner": "core+variant",
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: iOS slider (track/ticks #999999, thumb = action) waits on the iOS Figma plugin session; Android dialog has no custom colors",
-   "overall": "in progress"
+   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)",
+   "overall": "built"
   },
   {
    "id": "component/segmented",

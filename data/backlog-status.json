@@ -218,10 +218,10 @@
    "note": "Disabled done (DEC-07); Secondary and Loading not shipped by either app"
   },
   "component/button-continue": {
-   "figma": "todo",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-14: as shipped per platform (iOS image 159x55, Android 152x54 r9). Not Core. Figma: platform files. Future BTN-03"
+   "note": "DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03"
   },
   "component/breaking-banner": {
    "tokens": "partial",
@@ -333,10 +333,10 @@
    "note": "Google radius and icon size are tokens"
   },
   "component/switch": {
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-14: native look, on = action. Android built (Components · Controls); iOS waits on the iOS Figma plugin session"
+   "note": "DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls)"
   },
   "component/checkbox": {
    "figma": "partial",
@@ -345,10 +345,10 @@
    "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended)"
   },
   "component/text-size": {
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-14: iOS slider (track/ticks #999999, thumb = action) waits on the iOS Figma plugin session; Android dialog has no custom colors"
+   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
   },
   "component/segmented": {
    "figma": "blocked",
@@ -364,7 +364,7 @@
   }
  },
  "next": [
-  "Figma (bridge needed in the 3 MNG files): Continue per platform; Subscription option wrappers; shell exceptions cleared in Shell colors · iOS / · Android; iOS Switch + Text size slider",
+  "Figma, needs each file in front: Android Shell colors exceptions → aliases; Subscription option wrappers in the iOS and Android files",
   "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)",
   "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)",
   "System colors (the other 117 themed colors); breakpoints after LAY-01",
