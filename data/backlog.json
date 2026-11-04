@@ -1164,12 +1164,12 @@
    "group": "Buttons",
    "name": "Continue button",
    "owner": "core",
-   "figma": "blocked",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24)",
-   "note": "Same job as Primary button; recommend it becomes Primary button, not its own component.",
-   "overall": "blocked"
+   "figma": "todo",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "",
+   "note": "DEC-14: as shipped per platform (iOS image 159x55, Android 152x54 r9). Not Core. Figma: platform files. Future BTN-03",
+   "overall": "in progress"
   },
   {
    "id": "component/subscription-option",

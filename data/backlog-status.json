@@ -218,10 +218,10 @@
    "note": "Disabled done (DEC-07); Secondary and Loading not shipped by either app"
   },
   "component/button-continue": {
-   "figma": "blocked",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24)"
+   "figma": "todo",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: as shipped per platform (iOS image 159x55, Android 152x54 r9). Not Core. Figma: platform files. Future BTN-03"
   },
   "component/breaking-banner": {
    "tokens": "partial",
@@ -364,8 +364,7 @@
   }
  },
  "next": [
-  "Karl: Continue button decision; publish the Core library again (Subscription option wrappers)",
-  "iOS controls in Figma (Switch, Text size slider) once the iOS plugin session responds",
+  "Figma (bridge needed in the 3 MNG files): Continue per platform; Subscription option wrappers; shell exceptions cleared in Shell colors · iOS / · Android; iOS Switch + Text size slider",
   "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)",
   "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)",
   "System colors (the other 117 themed colors); breakpoints after LAY-01",

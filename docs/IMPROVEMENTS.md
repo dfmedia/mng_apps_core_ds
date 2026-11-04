@@ -23,6 +23,8 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | CTRL-02 | Buttons | Add Secondary, Text, Disabled and Loading button states | All markets | PROPOSED (pilot adds Disabled and Text link, DEC-07) |
 | BTN-01 | Buttons | One primary button height for both apps (iOS 44 provisional, Android 60) | All markets | FUTURE (DEC-07) |
 | BTN-02 | Buttons | One button label style for both apps (iOS Open Sans Bold 14, Android system font) | All markets | FUTURE (DEC-07) |
+| BTN-03 | Buttons | Continue button: replace the iOS PNG images with a drawn button, then fold Continue into the Primary button (DSC-24) | 10 iOS image copies; both apps | FUTURE (DEC-14) |
+| CLR-08 | Color | Bring the exception markets in line with the majority (controls and app shell; docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md) | ~25 markets | FUTURE (DEC-14) |
 | TYPE-03 | Type | One serif for both apps | — | REJECTED (Karl 2026-10-30: fonts stay per platform) |
 | TYPE-04 | Type | Shared type scale: one set of sizes for both apps, each in its own fonts | All markets | FUTURE (DEC-09) |
 | TYPE-05 | Type | Remove per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | ~13 markets | FUTURE (DEC-09) |
@@ -201,6 +203,12 @@ Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `but
 
 ### BTN-02 · One button label style — `FUTURE`
 Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font stays per platform for now: iOS Open Sans Bold 14 uppercase, Android system font uppercase (Roboto Medium 14sp, provisional). Future change: one label style in Core so the platform files no longer need their own label.
+
+### BTN-03 · Continue button — `FUTURE`
+Karl, 2026-11-04 (DEC-14): keep Continue as shipped on each platform. iOS draws it as PNG images (Continue-*, 159 x 55 pt, background and chevron only, 10 market copies); Android draws it (bg_continue.xml, 152 x 54 dp, radius 9, Open Sans SemiBold 15, fill `btn_continue` = action in 70 of 77 markets). Future change: replace the iOS images with a drawn, token-tinted button, then fold Continue into the Primary button (DSC-24).
+
+### CLR-08 · Exception markets — `FUTURE`
+Karl, 2026-11-04 (DEC-14): every color is built with the majority value; markets that ship something else are documented only (docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md). Future change: bring those markets in line, or confirm them as a market-specific design and add them back as tokens.
 
 ### LAY-01 · One breakpoint set — `PROPOSED`
 `FrontWidth.swift` uses 668 / 835 / 1113; `PageItem.swift` uses 668 / 769 / 1025. Pick one.

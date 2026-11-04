@@ -239,6 +239,32 @@
       }
      }
     }
+   },
+   "continue": {
+    "width": {
+     "$value": "159px",
+     "$type": "dimension",
+     "$description": "Your News Continue button width (Continue-* PNG image, 159 x 55 pt)",
+     "$extensions": {
+      "mng": {
+       "source": "Continue-* PNGs",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "height": {
+     "$value": "55px",
+     "$type": "dimension",
+     "$description": "Your News Continue button height (Continue-* PNG image, 159 x 55 pt)",
+     "$extensions": {
+      "mng": {
+       "source": "Continue-* PNGs",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
    }
   }
  }

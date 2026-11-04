@@ -14,19 +14,18 @@ Built = done everywhere except the code is not compiled in an app yet.
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
 | Color roles | 12 | 0 | 10 | 2 | 0 | 0 |
-| Components | 20 | 0 | 2 | 15 | 0 | 3 |
+| Components | 20 | 0 | 2 | 16 | 0 | 2 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **23** | **17** | **3** | **64** |
+| **Total** | **107** | **0** | **23** | **18** | **3** | **63** |
 
 ## Suggested order
 
-1. Karl: Continue button decision; publish the Core library again (Subscription option wrappers)
-2. iOS controls in Figma (Switch, Text size slider) once the iOS plugin session responds
-3. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
-4. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
-5. System colors (the other 117 themed colors); breakpoints after LAY-01
-6. Icons, once the Apps team answers MISSING-ASSETS §1
+1. Figma (bridge needed in the 3 MNG files): Continue per platform; Subscription option wrappers; shell exceptions cleared in Shell colors · iOS / · Android; iOS Switch + Text size slider
+2. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
+3. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
+4. System colors (the other 117 themed colors); breakpoints after LAY-01
+5. Icons, once the Apps team answers MISSING-ASSETS §1
 
 ## Foundations
 
@@ -91,7 +90,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot; provisional values in MISSING-ASSETS 5.5 |
-| Continue button | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Karl: Continue decision (as shipped / Core drawn / fold into Primary, DSC-24) · Same job as Primary button; recommend it becomes Primary button, not its own component. |
+| Continue button | Core | ⬜ to do | ✅ done | 📝 written, not compiled | DEC-14: as shipped per platform (iOS image 159x55, Android 152x54 r9). Not Core. Figma: platform files. Future BTN-03 |
 | Subscription option | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height) · Colors and radius 5 are tokens (DEC-14) |

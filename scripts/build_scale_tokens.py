@@ -81,6 +81,12 @@ for role, path, desc, unit in AND:
     t = side(role, 'android')
     put(andr, path, tok(t, desc, 'android', unit=unit) if unit == 'px' else
         {**tok(t, desc, 'android', typ='number', value=num(t)), '$extensions': {'mng': {'source': t['name'], 'usage': t['usage'], 'platform': 'android', 'unit': 'in'}}})
+# Continue button, as shipped per platform (Karl, 2026-11-04; DEC-14)
+SRC = lambda s, u, p: {'$extensions': {'mng': {'source': s, 'platform': p, 'unit': u}}}
+put(ios, 'component.ios.continue.width', {'$value': '159px', '$type': 'dimension', '$description': 'Your News Continue button width (Continue-* PNG image, 159 x 55 pt)', **SRC('Continue-* PNGs', 'px', 'ios')})
+put(ios, 'component.ios.continue.height', {'$value': '55px', '$type': 'dimension', '$description': 'Your News Continue button height (Continue-* PNG image, 159 x 55 pt)', **SRC('Continue-* PNGs', 'px', 'ios')})
+put(andr, 'component.android.continue.width', {'$value': '152px', '$type': 'dimension', '$description': 'Your News Continue button width (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
+put(andr, 'component.android.continue.height', {'$value': '54px', '$type': 'dimension', '$description': 'Your News Continue button height (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
 put(andr, 'component.android.subscription-option.inset', {'$value': '14px', '$type': 'dimension',
     '$description': 'Subscription option inner padding (controls notes: 14dp padding)', '$extensions': {'mng': {'source': 'paywall subscription option (5-controls.md)', 'platform': 'android', 'unit': 'px'}}})
 

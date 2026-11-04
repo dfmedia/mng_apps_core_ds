@@ -178,6 +178,30 @@
        "unit": "px"
       }
      }
+    },
+    "width": {
+     "$value": "152px",
+     "$type": "dimension",
+     "$description": "Your News Continue button width (bg_continue.xml, 152 x 54 dp)",
+     "$extensions": {
+      "mng": {
+       "source": "bg_continue.xml",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "height": {
+     "$value": "54px",
+     "$type": "dimension",
+     "$description": "Your News Continue button height (bg_continue.xml, 152 x 54 dp)",
+     "$extensions": {
+      "mng": {
+       "source": "bg_continue.xml",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
     }
    },
    "account-button": {
