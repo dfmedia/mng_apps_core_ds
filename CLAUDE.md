@@ -103,6 +103,7 @@ docs/BRAND-COLORS.md              every brand color as hex and RGB (generated)
 data/source/                      raw exports from each app (don't edit)
 data/*.json                       generated analysis
 scripts/                          regenerate data/*.json
+scripts/figma/                    Figma builders run through the Desktop Bridge (figma_execute), fed by data/*.json
 ```
 
 Regenerate:
@@ -118,7 +119,7 @@ python3 scripts/apply_ios_default.py data/brand-color-resolution.json data/color
 python3 scripts/apply_core_alert.py data/brand-color-resolution.json data/source/markets.json   # DEC-05 (fails if below WCAG AA)
 python3 scripts/apply_new_markets.py data/brand-color-resolution.json data/source/new-markets.json   # provisional markets (TDH)
 python3 scripts/build_tokens.py     # tokens/*.tokens.json + docs/BRAND-COLORS.md
-python3 scripts/build_shell_colors.py   # DEC-13: app shell colors (tokens/*/shell.tokens.json, data/shell-colors.json)
+python3 scripts/build_shell_colors.py   # DEC-13/15: app shell colors (tokens/*/shell.tokens.json, data/shell-colors.json incl. header/statusbar exceptions)
 python3 scripts/build_control_tokens.py   # DEC-14: control colors, majority values (tokens/*/controls.tokens.json, docs/CONTROL-EXCEPTIONS.md)
 python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json, docs/components/BUTTON.md, IMPROVEMENTS CLR-04 (DEC-07)
 python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06)
@@ -128,6 +129,7 @@ python3 scripts/build_type_tokens.py   # DEC-09: tokens/*/type.tokens.json, data
 python3 scripts/build_legacy_doc.py    # DEC-10: docs/LEGACY-TEMPLATE.md (run after build_type_tokens.py)
 python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison: docs/SCALES-COMPARISON.md
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
+python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```

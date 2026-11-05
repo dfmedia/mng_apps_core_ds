@@ -300,7 +300,7 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - **Core `navicon`** (top bar icon tint) = alias of `navtext`: both apps ship them equal in all 77 markets.
   - **iOS section bar** (`sectiontabbar`, `sectiontabtext`, `sectiontabselected`, `sectiontabindicator`): white bar, #333333 text and underline in 74 markets; BS, DP, NYDN use #2c2d2d / #000000. Figma iOS file: **Shell colors · iOS** (per market) + **Shell theme · iOS** (20 modes).
   - **Android section tabs and tab labels** (`sectiontab*`, `tablabelactive`, `tablabelinactive`): Android ships the section tabs in the top-bar colors and the tab labels in the tab-icon colors, so these roles **follow the Core roles** (navbar, navtext, tabactive, tabinactive) and inherit every Core color decision. Where production breaks that pattern the shipped value is kept: CT section tabs (white bar, #2c2d2d text, #004e87 selected); tab labels in DP, MC, NYDN, OS, TSAR. Figma Android file: **Shell colors · Android** (aliases of the Core library's Brand colors) + **Shell theme · Android** (20 modes).
-  - Already Core: top bar navbar/navtext, tab bar tabbar/tabactive/tabinactive, banner alert/alerttext, iOS header band `header`, Android `statusbar`.
+  - Already Core: top bar navbar/navtext, tab bar tabbar/tabactive/tabinactive, banner alert/alerttext, iOS header band `header`, Android `statusbar` (both aliases of navbar since DEC-15).
 - **Icons:** swappable icon slots, sized with the icon tokens, until the icon set exists (MISSING-ASSETS §1).
 
 
@@ -315,3 +315,13 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Continue button (Karl, 2026-11-04): as shipped on each platform.** iOS: image button 159 x 55 pt (`component.ios.continue.*`), drawn in Figma as the image (action fill, chevron slot). Android: 152 x 54 dp, radius 9 (`component.android.continue.*`), Open Sans SemiBold 15 (`continue-label`), fill = action. Not a Core component. Future: IMPROVEMENTS BTN-03.
 - **Code:** `MNGControlTokens.swift` (iOS repo), `tokens/res/values/mng_controls.xml` (Android repo).
 - **App shell too (Karl, 2026-11-04):** the DEC-13 exceptions are no longer built. iOS section bar uses the majority values in every market; Android section tabs and tab labels follow the Core roles in every market. The 14 shipped exceptions (iOS BS, DP, NYDN; Android CT, DP, NYDN, TSAR) are in `docs/SHELL-EXCEPTIONS.md`. Future: IMPROVEMENTS CLR-08.
+
+
+## DEC-15 · Header band (iOS) and status bar (Android) follow the top bar
+
+- **Rule (Karl, 2026-11-05):** iOS `header` (section-front header band) and Android `statusbar` are **aliases of Core `navbar`** in every market (DEC-14 majority rule). Closes PLAT-05.
+- **Why:** each app ships them equal to its own top bar in most markets: iOS header = nav bar in 69 of 77 (66 exact + TCHW, SIT, TEBT near-identical), Android status bar = top bar in 70 of 77. The tokens used to hold the raw shipped hex, which no longer matched the decided Core `navbar` in 54 iOS and 47 Android markets.
+- **Exceptions (documented, not built):** markets whose app ships them different from its own top bar, mostly white-top-bar markets. iOS: DP, MC, NYDN, OS, SS, TSAR, TPD, VP. Android: DP, MC, NYDN, OS, SS, TSAR, VP. Each has a **suggested override** (the shipped color, which passes contrast) in `docs/SHELL-EXCEPTIONS.md`, and is drawn majority vs override side by side in Figma (iOS: Components · App shell › 01 · Header band exceptions; Android: › 01 · Status bar exceptions) so they read as open items, not just notes. On the majority build, 14 of the 15 fail contrast (white header text or light status-bar icons on a white bar). Future: IMPROVEMENTS CLR-08.
+- **Changed:** `scripts/build_tokens.py` (alias tokens, shipped value kept in `$extensions.mng.shipped`), `scripts/build_shell_colors.py` (exceptions, `data/shell-colors.json` `role_exceptions`), Style Dictionary: `MNGBrandPalette.header` is now `navbar` (mng_apps_ios_ds), `MngBrandPalette.statusbar` and `@color/mng_brand_statusbar` → `navbar` (mng_apps_android_ds). Figma Android: `<M>/statusbar` (78, aliases of Core `<M>/navbar`) in Shell colors · Android and `statusbar` in Shell theme · Android. Figma iOS: `header` variables wait for the Core library import (it stalls in the iOS file).
+- **Open:** Android status-bar icon color (`windowLightStatusBar`) is not in the export; the samples assume light icons (MISSING-ASSETS 5.6).
+

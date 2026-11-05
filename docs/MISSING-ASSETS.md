@@ -39,6 +39,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 | # | Ask | Detail | Status |
 |---|-----|--------|--------|
 | 3.1 | "Not set" theme colors | Some of the 124 themed colors are `null` in some markets (UIKit falls back to its system default). Confirm whether system default is intended or a value is missing. | OPEN |
+| 3.4 | Confirm the iOS ↔ Android system-color pairs | `data/system-color-pairs.json` pairs 16 themed colors by name and screen (sections menu, settings, alert topics, ad slot, offline header). 7 pairs never match in any market (docs/SYSTEM-COLORS.md): either the pairing is wrong or the apps are designed differently. Which colors on each app draw the same element? Everything unpaired is treated as platform-only until confirmed. | OPEN |
 | 3.2 | Dark mode | Every app is light-only. Confirm there are no plans/specs for dark mode before we decide the variable mode structure. | OPEN |
 | 3.3 | Confirm the iOS-default brand colors | DEC-03 set every remaining difference to the iOS value (list in docs/DECISIONS.md → DEC-03). Ask the Apps team only to confirm, especially TDP (iOS `#f7a430` vs Android `#daa520`), TPD (sheet says `#9e0b0f`, both apps black), SGVT and the SCNG selected tabs (iOS orange `#ff6900`), and the breaking-news red (PLAT-03). | CLOSED 2026-10-26: Karl confirmed iOS as the default (DEC-08); not asking the Apps team |
 
@@ -59,7 +60,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 | 5.2 | Elevation / shadow values | None extracted from code. | OPEN |
 | 5.3 | Motion / animation specs | None extracted. | OPEN |
 | 5.5 | Button values not in the source | iOS primary button height (pilot uses 44 pt); Android button label weight and size (pilot uses Roboto Medium 14sp, the Material default); iOS paywall Log In link font (pilot uses Open Sans Regular 14); pressed state on both apps. | ASKED 2026-11-05 (#pd-mobile-public, thread with Jess) |
-| 5.6 | App shell sizes | Production heights, paddings and title/label sizes for the top bar, section tabs, bottom tab bar, breaking-news banner and (iOS) section header band, on both apps. The style guides only have illustrative values. Blocks the app shell components (DEC-13). | OPEN |
+| 5.6 | App shell sizes | Production heights, paddings and title/label sizes for the top bar, section tabs, bottom tab bar, breaking-news banner and (iOS) section header band, on both apps. The style guides only have illustrative values. Blocks the app shell components (DEC-13). Also: does Android set `windowLightStatusBar` (dark status-bar icons) anywhere, e.g. in the white-top-bar markets DP, MC, NYDN, OS, SS, TSAR, VP? Not in the export; the DEC-15 samples assume light icons. | OPEN |
 | 5.7 | Remaining buttons and controls | Font, size and height for: iOS notification prompt Yes/No, Manage subscription / delete account buttons, savings label, social sign-in buttons (Apple, Google, Facebook), Android alerts Enable and What's New buttons. Colors for the segmented control and the loading indicator on both apps. Colors are otherwise done (DEC-14). | ASKED 2026-11-05 (#pd-mobile-public, thread with Jess) |
 | 5.4 | Current screenshots | Reference screenshots of key screens for a handful of markets (nav, section front, article, paywall, settings) to check the build against. | OPEN |
 

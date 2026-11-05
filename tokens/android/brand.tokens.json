@@ -4,1326 +4,1092 @@
   "android": {
    "bs": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.bs.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "ct": {
     "statusbar": {
-     "$value": "#004e87",
+     "$value": "{color.brand.ct.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "dp": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.dp.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "hc": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.hc.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "mc": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.mc.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "nydn": {
     "statusbar": {
-     "$value": "#333333",
+     "$value": "{color.brand.nydn.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        51,
-        51,
-        51
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#333333"
       }
      }
     }
    },
    "ocr": {
     "statusbar": {
-     "$value": "#ac4e0f",
+     "$value": "{color.brand.ocr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        172,
-        78,
-        15
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#ac4e0f"
       }
      }
     }
    },
    "os": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.os.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "pac": {
     "statusbar": {
-     "$value": "#a06318",
+     "$value": "{color.brand.pac.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        160,
-        99,
-        24
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#a06318"
       }
      }
     }
    },
    "psn": {
     "statusbar": {
-     "$value": "#a6371e",
+     "$value": "{color.brand.psn.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        166,
-        55,
-        30
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#a6371e"
       }
      }
     }
    },
    "sdut": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.sdut.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "sgvt": {
     "statusbar": {
-     "$value": "#b11e35",
+     "$value": "{color.brand.sgvt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        177,
-        30,
-        53
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#b11e35"
       }
      }
     }
    },
    "sit": {
     "statusbar": {
-     "$value": "#0f73a9",
+     "$value": "{color.brand.sit.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        15,
-        115,
-        169
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#0f73a9"
       }
      }
     }
    },
    "ss": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.ss.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tb": {
     "statusbar": {
-     "$value": "#4351af",
+     "$value": "{color.brand.tb.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        81,
-        175
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#4351af"
       }
      }
     }
    },
    "tban": {
     "statusbar": {
-     "$value": "#152c4f",
+     "$value": "{color.brand.tban.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        21,
-        44,
-        79
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#152c4f"
       }
      }
     }
    },
    "tbcp": {
     "statusbar": {
-     "$value": "#3f51b5",
+     "$value": "{color.brand.tbcp.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        63,
-        81,
-        181
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#3f51b5"
       }
      }
     }
    },
    "tbe": {
     "statusbar": {
-     "$value": "#4351af",
+     "$value": "{color.brand.tbe.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        81,
-        175
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#4351af"
       }
      }
     }
    },
    "tbh": {
     "statusbar": {
-     "$value": "#255e97",
+     "$value": "{color.brand.tbh.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        37,
-        94,
-        151
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#255e97"
       }
      }
     }
    },
    "tbhs": {
     "statusbar": {
-     "$value": "#c00030",
+     "$value": "{color.brand.tbhs.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        192,
-        0,
-        48
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#c00030"
       }
      }
     }
    },
    "tccdr": {
     "statusbar": {
-     "$value": "#353f8a",
+     "$value": "{color.brand.tccdr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        63,
-        138
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#353f8a"
       }
      }
     }
    },
    "tce": {
     "statusbar": {
-     "$value": "#1f4d83",
+     "$value": "{color.brand.tce.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        31,
-        77,
-        131
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#1f4d83"
       }
      }
     }
    },
    "tchw": {
     "statusbar": {
-     "$value": "#353f8a",
+     "$value": "{color.brand.tchw.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        63,
-        138
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#353f8a"
       }
      }
     }
    },
    "tcv": {
     "statusbar": {
-     "$value": "#434953",
+     "$value": "{color.brand.tcv.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        73,
-        83
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#434953"
       }
      }
     }
    },
    "tdb": {
     "statusbar": {
-     "$value": "#2e6c90",
+     "$value": "{color.brand.tdb.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        46,
-        108,
-        144
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#2e6c90"
       }
      }
     }
    },
    "tdc": {
     "statusbar": {
-     "$value": "#007639",
+     "$value": "{color.brand.tdc.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        118,
-        57
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#007639"
       }
      }
     }
    },
    "tdcd": {
     "statusbar": {
-     "$value": "#4891b3",
+     "$value": "{color.brand.tdcd.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        72,
-        145,
-        179
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#4891b3"
       }
      }
     }
    },
    "tdf": {
     "statusbar": {
-     "$value": "#1b6bad",
+     "$value": "{color.brand.tdf.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        27,
-        107,
-        173
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#1b6bad"
       }
      }
     }
    },
    "tdh": {
     "statusbar": {
-     "$value": "#0072b4",
+     "$value": "{color.brand.tdh.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        114,
-        180
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#0072b4"
       }
      }
     }
    },
    "tdlw": {
     "statusbar": {
-     "$value": "#1591b5",
+     "$value": "{color.brand.tdlw.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        21,
-        145,
-        181
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#1591b5"
       }
      }
     }
    },
    "tdp": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.tdp.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tdps": {
     "statusbar": {
-     "$value": "#c75d14",
+     "$value": "{color.brand.tdps.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        199,
-        93,
-        20
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#c75d14"
       }
      }
     }
    },
    "tebt": {
     "statusbar": {
-     "$value": "#557fba",
+     "$value": "{color.brand.tebt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        85,
-        127,
-        186
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#557fba"
       }
      }
     }
    },
    "teptg": {
     "statusbar": {
-     "$value": "#3e8e75",
+     "$value": "{color.brand.teptg.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        62,
-        142,
-        117
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#3e8e75"
       }
      }
     }
    },
    "tets": {
     "statusbar": {
-     "$value": "#353f8a",
+     "$value": "{color.brand.tets.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        63,
-        138
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#353f8a"
       }
      }
     }
    },
    "tfmt": {
     "statusbar": {
-     "$value": "#32408f",
+     "$value": "{color.brand.tfmt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        50,
-        64,
-        143
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#32408f"
       }
      }
     }
    },
    "tgt": {
     "statusbar": {
-     "$value": "#536e7f",
+     "$value": "{color.brand.tgt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        83,
-        110,
-        127
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#536e7f"
       }
      }
     }
    },
    "tivdb": {
     "statusbar": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tivdb.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tja": {
     "statusbar": {
-     "$value": "#353f8a",
+     "$value": "{color.brand.tja.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        63,
-        138
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#353f8a"
       }
      }
     }
    },
    "tladn": {
     "statusbar": {
-     "$value": "#ab4022",
+     "$value": "{color.brand.tladn.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        34
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#ab4022"
       }
      }
     }
    },
    "tlbpt": {
     "statusbar": {
-     "$value": "#2c47a0",
+     "$value": "{color.brand.tlbpt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        44,
-        71,
-        160
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#2c47a0"
       }
      }
     }
    },
    "tlr": {
     "statusbar": {
-     "$value": "#4e5dca",
+     "$value": "{color.brand.tlr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        78,
-        93,
-        202
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#4e5dca"
       }
      }
     }
    },
    "tls": {
     "statusbar": {
-     "$value": "#ab4022",
+     "$value": "{color.brand.tls.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        34
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#ab4022"
       }
      }
     }
    },
    "tltc": {
     "statusbar": {
-     "$value": "#007cba",
+     "$value": "{color.brand.tltc.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        124,
-        186
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#007cba"
       }
      }
     }
    },
    "tmch": {
     "statusbar": {
-     "$value": "#3c6292",
+     "$value": "{color.brand.tmch.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        60,
-        98,
-        146
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#3c6292"
       }
      }
     }
    },
    "tmd": {
     "statusbar": {
-     "$value": "#3f5177",
+     "$value": "{color.brand.tmd.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        63,
-        81,
-        119
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#3f5177"
       }
      }
     }
    },
    "tmi": {
     "statusbar": {
-     "$value": "#1f4d83",
+     "$value": "{color.brand.tmi.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        31,
-        77,
-        131
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#1f4d83"
       }
      }
     }
    },
    "tmj": {
     "statusbar": {
-     "$value": "#bc3b10",
+     "$value": "{color.brand.tmj.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        188,
-        59,
-        16
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#bc3b10"
       }
      }
     }
    },
    "tmn": {
     "statusbar": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tmn.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tms": {
     "statusbar": {
-     "$value": "#3f5177",
+     "$value": "{color.brand.tms.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        63,
-        81,
-        119
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#3f5177"
       }
      }
     }
    },
    "tnh": {
     "statusbar": {
-     "$value": "#ab4022",
+     "$value": "{color.brand.tnh.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        34
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#ab4022"
       }
      }
     }
    },
    "tod": {
     "statusbar": {
-     "$value": "#b92111",
+     "$value": "{color.brand.tod.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        185,
-        33,
-        17
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#b92111"
       }
      }
     }
    },
    "top": {
     "statusbar": {
-     "$value": "#0b151d",
+     "$value": "{color.brand.top.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        11,
-        21,
-        29
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#0b151d"
       }
      }
     }
    },
    "tpd": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.tpd.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tpe": {
     "statusbar": {
-     "$value": "#a6371e",
+     "$value": "{color.brand.tpe.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        166,
-        55,
-        30
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#a6371e"
       }
      }
     }
    },
    "tpm": {
     "statusbar": {
-     "$value": "#bc3b10",
+     "$value": "{color.brand.tpm.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        188,
-        59,
-        16
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#bc3b10"
       }
      }
     }
    },
    "tr": {
     "statusbar": {
-     "$value": "#007cba",
+     "$value": "{color.brand.tr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        124,
-        186
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#007cba"
       }
      }
     }
    },
    "trdf": {
     "statusbar": {
-     "$value": "#2c47a0",
+     "$value": "{color.brand.trdf.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        44,
-        71,
-        160
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#2c47a0"
       }
      }
     }
    },
    "tre": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.tre.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "trh": {
     "statusbar": {
-     "$value": "#434953",
+     "$value": "{color.brand.trh.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        73,
-        83
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#434953"
       }
      }
     }
    },
    "trot": {
     "statusbar": {
-     "$value": "#013a67",
+     "$value": "{color.brand.trot.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        1,
-        58,
-        103
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#013a67"
       }
      }
     }
    },
    "trr": {
     "statusbar": {
-     "$value": "#bc3b10",
+     "$value": "{color.brand.trr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        188,
-        59,
-        16
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#bc3b10"
       }
      }
     }
    },
    "tsar": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.tsar.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tsbs": {
     "statusbar": {
-     "$value": "#a6371e",
+     "$value": "{color.brand.tsbs.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        166,
-        55,
-        30
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#a6371e"
       }
      }
     }
    },
    "tscs": {
     "statusbar": {
-     "$value": "#353f8a",
+     "$value": "{color.brand.tscs.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        63,
-        138
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#353f8a"
       }
      }
     }
    },
    "tseb": {
     "statusbar": {
-     "$value": "#bc3b10",
+     "$value": "{color.brand.tseb.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        188,
-        59,
-        16
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#bc3b10"
       }
      }
     }
    },
    "tsppp": {
     "statusbar": {
-     "$value": "#557fba",
+     "$value": "{color.brand.tsppp.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        85,
-        127,
-        186
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#557fba"
       }
      }
     }
    },
    "tss": {
     "statusbar": {
-     "$value": "#434953",
+     "$value": "{color.brand.tss.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        73,
-        83
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#434953"
       }
      }
     }
    },
    "tsv": {
     "statusbar": {
-     "$value": "#557fba",
+     "$value": "{color.brand.tsv.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        85,
-        127,
-        186
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#557fba"
       }
      }
     }
    },
    "tt": {
     "statusbar": {
-     "$value": "#357dad",
+     "$value": "{color.brand.tt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        53,
-        125,
-        173
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#357dad"
       }
      }
     }
    },
    "tth": {
     "statusbar": {
-     "$value": "#bc3b10",
+     "$value": "{color.brand.tth.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        188,
-        59,
-        16
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#bc3b10"
       }
      }
     }
    },
    "ttt": {
     "statusbar": {
-     "$value": "#434953",
+     "$value": "{color.brand.ttt.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        67,
-        73,
-        83
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#434953"
       }
      }
     }
    },
    "tudj": {
     "statusbar": {
-     "$value": "#32408f",
+     "$value": "{color.brand.tudj.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        50,
-        64,
-        143
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#32408f"
       }
      }
     }
    },
    "tvr": {
     "statusbar": {
-     "$value": "#408fcb",
+     "$value": "{color.brand.tvr.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        143,
-        203
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#408fcb"
       }
      }
     }
    },
    "tvth": {
     "statusbar": {
-     "$value": "#8d092d",
+     "$value": "{color.brand.tvth.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        141,
-        9,
-        45
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#8d092d"
       }
      }
     }
    },
    "twdd": {
     "statusbar": {
-     "$value": "#007639",
+     "$value": "{color.brand.twdd.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        118,
-        57
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#007639"
       }
      }
     }
    },
    "twdn": {
     "statusbar": {
-     "$value": "#a6371e",
+     "$value": "{color.brand.twdn.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        166,
-        55,
-        30
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#a6371e"
       }
      }
     }
    },
    "vp": {
     "statusbar": {
-     "$value": "#000000",
+     "$value": "{color.brand.vp.navbar}",
      "$type": "color",
-     "$description": "Status bar (Android only)",
+     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "android"
+       "owner": "android",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }

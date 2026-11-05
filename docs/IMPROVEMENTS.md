@@ -152,6 +152,8 @@ iOS text link (`paywallLinkColor`) on the white paywall, target 4.5:1. 9 markets
 
 ### CLR-05 · White text on section header band (target 4.5:1) — darken `header`
 
+DEC-15 (2026-11-05): `header` now follows `navbar`, so these markets are covered by CLR-02 (nav bar contrast) going forward; the table below is the shipped header values.
+
 6 markets fail.
 
 | Shipped (fg on bg) | Ratio | Suggested | New ratio | Markets |
@@ -209,6 +211,7 @@ Karl, 2026-11-04 (DEC-14): keep Continue as shipped on each platform. iOS draws 
 
 ### CLR-08 · Exception markets — `FUTURE`
 Karl, 2026-11-04 (DEC-14): every color is built with the majority value; markets that ship something else are documented only (docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md). Future change: bring those markets in line, or confirm them as a market-specific design and add them back as tokens.
+DEC-15 (2026-11-05) adds the iOS header band and Android status bar: 15 exceptions, each with a suggested override (the shipped color) in docs/SHELL-EXCEPTIONS.md and drawn majority vs override in the platform Figma files.
 
 ### LAY-01 · One breakpoint set — `PROPOSED`
 `FrontWidth.swift` uses 668 / 835 / 1113; `PageItem.swift` uses 668 / 769 / 1025. Pick one.

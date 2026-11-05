@@ -1,0 +1,22 @@
+{
+ "$description": "Proposed iOS <-> Android pairs for the system colors (the themed colors that are not brand, shell, control or button tokens yet). Matched by name and screen by Claude on 2026-11-05; scripts/compare_system_colors.py checks each pair's values market by market. NOT confirmed by the Apps team (MISSING-ASSETS 3.4). Edit this file to add, remove or correct pairs, then re-run the script.",
+ "status": "proposed",
+ "pairs": [
+  {"ios": "alertTopicCellEnabledBackgroundColor", "android": "Alerts_Background_Enabled", "what": "Alert topic row, enabled: background"},
+  {"ios": "alertTopicCellDisabledBackgroundColor", "android": "Alerts_Background_Disabled", "what": "Alert topic row, disabled: background"},
+  {"ios": "alertTopicCellEnabledTextColor", "android": "Alerts_Text_Enabled", "what": "Alert topic row, enabled: text"},
+  {"ios": "alertTopicCellDisabledTextColor", "android": "Alerts_String_Text_Disabled", "what": "Alert topic row, disabled: text"},
+  {"ios": "sectionListCellBackgroundColor", "android": "SectionsMenu_Background", "what": "Sections menu: background"},
+  {"ios": "sectionListCellTitleColor", "android": "SectionsMenu_Text", "what": "Sections menu: section name"},
+  {"ios": "sectionListHeaderFontColor", "android": "SectionMenu_Header_Text", "what": "Sections menu: group header text"},
+  {"ios": "sectionListSectionSeparatorColor", "android": "SectionMenu_Item_Divider", "what": "Sections menu: divider"},
+  {"ios": "settingsCellBackgroundColor", "android": "Settings_Background", "what": "Settings: background"},
+  {"ios": "settingsCellTitleColor", "android": "Settings_Item", "what": "Settings: item title"},
+  {"ios": "settingsHeaderTextColor", "android": "Settings_Category_Item", "what": "Settings: category header"},
+  {"ios": "settingsFooterColor", "android": "Settings_Summary_Item", "what": "Settings: summary / footer text"},
+  {"ios": "newsPageBackgroundColor", "android": "SectionFront_Background", "what": "Section front: background"},
+  {"ios": "cellAdBackgroundColor", "android": "ad_background", "what": "Ad slot: background"},
+  {"ios": "adLabelTextColor", "android": "advertisement_title", "what": "Ad slot: 'Advertisement' label"},
+  {"ios": "offlineViewHeaderBackgroundColor", "android": "offline_header", "what": "Offline / downloads: header background"}
+ ]
+}

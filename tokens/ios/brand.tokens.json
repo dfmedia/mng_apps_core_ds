@@ -4,1326 +4,1092 @@
   "ios": {
    "bs": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.bs.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "ct": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.ct.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "dp": {
     "header": {
-     "$value": "#4050b6",
+     "$value": "{color.brand.dp.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        80,
-        182
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#4050b6"
       }
      }
     }
    },
    "hc": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.hc.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "mc": {
     "header": {
-     "$value": "#5c5b59",
+     "$value": "{color.brand.mc.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        92,
-        91,
-        89
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#5c5b59"
       }
      }
     }
    },
    "nydn": {
     "header": {
-     "$value": "#4050b6",
+     "$value": "{color.brand.nydn.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        80,
-        182
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#4050b6"
       }
      }
     }
    },
    "ocr": {
     "header": {
-     "$value": "#b04f0f",
+     "$value": "{color.brand.ocr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        79,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b04f0f"
       }
      }
     }
    },
    "os": {
     "header": {
-     "$value": "#1875be",
+     "$value": "{color.brand.os.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        24,
-        117,
-        190
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#1875be"
       }
      }
     }
    },
    "pac": {
     "header": {
-     "$value": "#a06318",
+     "$value": "{color.brand.pac.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        160,
-        99,
-        24
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#a06318"
       }
      }
     }
    },
    "psn": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.psn.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "sdut": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.sdut.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "sgvt": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.sgvt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "sit": {
     "header": {
-     "$value": "#0f73a9",
+     "$value": "{color.brand.sit.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        15,
-        115,
-        169
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#0f73a9"
       }
      }
     }
    },
    "ss": {
     "header": {
-     "$value": "#136283",
+     "$value": "{color.brand.ss.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        19,
-        98,
-        131
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#136283"
       }
      }
     }
    },
    "tb": {
     "header": {
-     "$value": "#4252b0",
+     "$value": "{color.brand.tb.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        66,
-        82,
-        176
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#4252b0"
       }
      }
     }
    },
    "tban": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tban.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tbcp": {
     "header": {
-     "$value": "#4052b5",
+     "$value": "{color.brand.tbcp.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        82,
-        181
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#4052b5"
       }
      }
     }
    },
    "tbe": {
     "header": {
-     "$value": "#0070b8",
+     "$value": "{color.brand.tbe.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        112,
-        184
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#0070b8"
       }
      }
     }
    },
    "tbh": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tbh.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tbhs": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.tbhs.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "tccdr": {
     "header": {
-     "$value": "#36408a",
+     "$value": "{color.brand.tccdr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        54,
-        64,
-        138
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#36408a"
       }
      }
     }
    },
    "tce": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tce.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tchw": {
     "header": {
-     "$value": "#363e8a",
+     "$value": "{color.brand.tchw.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        54,
-        62,
-        138
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#363e8a"
       }
      }
     }
    },
    "tcv": {
     "header": {
-     "$value": "#424a54",
+     "$value": "{color.brand.tcv.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        66,
-        74,
-        84
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#424a54"
       }
      }
     }
    },
    "tdb": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tdb.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tdc": {
     "header": {
-     "$value": "#007538",
+     "$value": "{color.brand.tdc.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        117,
-        56
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#007538"
       }
      }
     }
    },
    "tdcd": {
     "header": {
-     "$value": "#5b9bc8",
+     "$value": "{color.brand.tdcd.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        91,
-        155,
-        200
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#5b9bc8"
       }
      }
     }
    },
    "tdf": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tdf.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tdh": {
     "header": {
-     "$value": "#0072b4",
+     "$value": "{color.brand.tdh.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        114,
-        180
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#0072b4"
       }
      }
     }
    },
    "tdlw": {
     "header": {
-     "$value": "#1591b7",
+     "$value": "{color.brand.tdlw.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        21,
-        145,
-        183
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#1591b7"
       }
      }
     }
    },
    "tdp": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.tdp.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tdps": {
     "header": {
-     "$value": "#c75c14",
+     "$value": "{color.brand.tdps.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        199,
-        92,
-        20
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#c75c14"
       }
      }
     }
    },
    "tebt": {
     "header": {
-     "$value": "#547fba",
+     "$value": "{color.brand.tebt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        84,
-        127,
-        186
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#547fba"
       }
      }
     }
    },
    "teptg": {
     "header": {
-     "$value": "#33408f",
+     "$value": "{color.brand.teptg.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        51,
-        64,
-        143
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#33408f"
       }
      }
     }
    },
    "tets": {
     "header": {
-     "$value": "#36408a",
+     "$value": "{color.brand.tets.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        54,
-        64,
-        138
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#36408a"
       }
      }
     }
    },
    "tfmt": {
     "header": {
-     "$value": "#33408f",
+     "$value": "{color.brand.tfmt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        51,
-        64,
-        143
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#33408f"
       }
      }
     }
    },
    "tgt": {
     "header": {
-     "$value": "#546e80",
+     "$value": "{color.brand.tgt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        84,
-        110,
-        128
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#546e80"
       }
      }
     }
    },
    "tivdb": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tivdb.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tja": {
     "header": {
-     "$value": "#36408a",
+     "$value": "{color.brand.tja.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        54,
-        64,
-        138
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#36408a"
       }
      }
     }
    },
    "tladn": {
     "header": {
-     "$value": "#ab4021",
+     "$value": "{color.brand.tladn.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        33
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#ab4021"
       }
      }
     }
    },
    "tlbpt": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tlbpt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tlr": {
     "header": {
-     "$value": "#ab4021",
+     "$value": "{color.brand.tlr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        33
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#ab4021"
       }
      }
     }
    },
    "tls": {
     "header": {
-     "$value": "#ab4021",
+     "$value": "{color.brand.tls.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        33
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#ab4021"
       }
      }
     }
    },
    "tltc": {
     "header": {
-     "$value": "#007dba",
+     "$value": "{color.brand.tltc.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        125,
-        186
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#007dba"
       }
      }
     }
    },
    "tmch": {
     "header": {
-     "$value": "#3d6191",
+     "$value": "{color.brand.tmch.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        61,
-        97,
-        145
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#3d6191"
       }
      }
     }
    },
    "tmd": {
     "header": {
-     "$value": "#405278",
+     "$value": "{color.brand.tmd.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        82,
-        120
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#405278"
       }
      }
     }
    },
    "tmi": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tmi.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tmj": {
     "header": {
-     "$value": "#bd3b0f",
+     "$value": "{color.brand.tmj.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        189,
-        59,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#bd3b0f"
       }
      }
     }
    },
    "tmn": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tmn.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tms": {
     "header": {
-     "$value": "#405278",
+     "$value": "{color.brand.tms.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        82,
-        120
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#405278"
       }
      }
     }
    },
    "tnh": {
     "header": {
-     "$value": "#ab4021",
+     "$value": "{color.brand.tnh.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        171,
-        64,
-        33
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#ab4021"
       }
      }
     }
    },
    "tod": {
     "header": {
-     "$value": "#ba2112",
+     "$value": "{color.brand.tod.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        186,
-        33,
-        18
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#ba2112"
       }
      }
     }
    },
    "top": {
     "header": {
-     "$value": "#0b151e",
+     "$value": "{color.brand.top.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        11,
-        21,
-        30
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#0b151e"
       }
      }
     }
    },
    "tpd": {
     "header": {
-     "$value": "#9e0b0f",
+     "$value": "{color.brand.tpd.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        158,
-        11,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#9e0b0f"
       }
      }
     }
    },
    "tpe": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.tpe.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "tpm": {
     "header": {
-     "$value": "#bd3b0f",
+     "$value": "{color.brand.tpm.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        189,
-        59,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#bd3b0f"
       }
      }
     }
    },
    "tr": {
     "header": {
-     "$value": "#007dba",
+     "$value": "{color.brand.tr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        125,
-        186
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#007dba"
       }
      }
     }
    },
    "trdf": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.trdf.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tre": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.tre.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "trh": {
     "header": {
-     "$value": "#424a54",
+     "$value": "{color.brand.trh.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        66,
-        74,
-        84
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#424a54"
       }
      }
     }
    },
    "trot": {
     "header": {
-     "$value": "#003b66",
+     "$value": "{color.brand.trot.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        59,
-        102
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#003b66"
       }
      }
     }
    },
    "trr": {
     "header": {
-     "$value": "#bd3b0f",
+     "$value": "{color.brand.trr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        189,
-        59,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#bd3b0f"
       }
      }
     }
    },
    "tsar": {
     "header": {
-     "$value": "#5d5b59",
+     "$value": "{color.brand.tsar.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        93,
-        91,
-        89
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#5d5b59"
       }
      }
     }
    },
    "tsbs": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.tsbs.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "tscs": {
     "header": {
-     "$value": "#36408a",
+     "$value": "{color.brand.tscs.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        54,
-        64,
-        138
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#36408a"
       }
      }
     }
    },
    "tseb": {
     "header": {
-     "$value": "#bd3b0f",
+     "$value": "{color.brand.tseb.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        189,
-        59,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#bd3b0f"
       }
      }
     }
    },
    "tsppp": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tsppp.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tss": {
     "header": {
-     "$value": "#424a54",
+     "$value": "{color.brand.tss.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        66,
-        74,
-        84
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#424a54"
       }
      }
     }
    },
    "tsv": {
     "header": {
-     "$value": "#000000",
+     "$value": "{color.brand.tsv.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#000000"
       }
      }
     }
    },
    "tt": {
     "header": {
-     "$value": "#004e87",
+     "$value": "{color.brand.tt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        78,
-        135
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#004e87"
       }
      }
     }
    },
    "tth": {
     "header": {
-     "$value": "#bd3b0f",
+     "$value": "{color.brand.tth.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        189,
-        59,
-        15
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#bd3b0f"
       }
      }
     }
    },
    "ttt": {
     "header": {
-     "$value": "#424a54",
+     "$value": "{color.brand.ttt.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        66,
-        74,
-        84
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#424a54"
       }
      }
     }
    },
    "tudj": {
     "header": {
-     "$value": "#408fcc",
+     "$value": "{color.brand.tudj.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        143,
-        204
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#408fcc"
       }
      }
     }
    },
    "tvr": {
     "header": {
-     "$value": "#408fcc",
+     "$value": "{color.brand.tvr.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        64,
-        143,
-        204
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#408fcc"
       }
      }
     }
    },
    "tvth": {
     "header": {
-     "$value": "#8c0a2e",
+     "$value": "{color.brand.tvth.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        140,
-        10,
-        46
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#8c0a2e"
       }
      }
     }
    },
    "twdd": {
     "header": {
-     "$value": "#007739",
+     "$value": "{color.brand.twdd.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        0,
-        119,
-        57
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#007739"
       }
      }
     }
    },
    "twdn": {
     "header": {
-     "$value": "#b01f36",
+     "$value": "{color.brand.twdn.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        176,
-        31,
-        54
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#b01f36"
       }
      }
     }
    },
    "vp": {
     "header": {
-     "$value": "#3f50b6",
+     "$value": "{color.brand.vp.navbar}",
      "$type": "color",
-     "$description": "Section-front header band (iOS only)",
+     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
      "$extensions": {
       "mng": {
-       "rgb": [
-        63,
-        80,
-        182
-       ],
-       "owner": "ios"
+       "owner": "ios",
+       "follows": "navbar",
+       "shipped": "#3f50b6"
       }
      }
     }

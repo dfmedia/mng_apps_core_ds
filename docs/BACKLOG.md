@@ -12,18 +12,18 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
-| Color roles | 12 | 0 | 10 | 2 | 0 | 0 |
+| Foundations | 8 | 0 | 6 | 1 | 1 | 0 |
+| Color roles | 12 | 0 | 11 | 1 | 0 | 0 |
 | Components | 20 | 0 | 6 | 12 | 0 | 2 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **27** | **14** | **3** | **63** |
+| **Total** | **107** | **0** | **28** | **14** | **2** | **63** |
 
 ## Suggested order
 
 1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
 2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
-3. System colors (the other 117 themed colors); breakpoints after LAY-01
+3. System colors: step 1 waiting on Karl's review (docs/SYSTEM-COLORS.md, Core page Color · System colors); step 2 = tokens for every market. Breakpoints after LAY-01
 4. Icons, once the Apps team answers MISSING-ASSETS §1
 
 ## Foundations
@@ -48,7 +48,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| The other 117 themed colors per market (62 are the same in every market → System collection) | Core | ⬜ to do | ⬜ to do | ⬜ to do | PROGRESS 1.4 |
+| The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | 🟡 partial | ⬜ to do | ⬜ to do | Step 1 (review): docs/SYSTEM-COLORS.md, Figma Core page Color · System colors (every color, 16 proposed iOS↔Android pairs, market palettes: iOS 19, Android 29). Step 2 after Karl's review: tokens per market, System collection, Swift/Kotlin. Pairs: MISSING-ASSETS 3.4 |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
 | Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only; confirm no plans (MISSING-ASSETS 3.2) |
 
@@ -67,8 +67,8 @@ Built = done everywhere except the code is not compiled in an app yet.
 | alert | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-05; alerttext added |
 | buy | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
 | continue | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
-| header | iOS | ⬜ to do | ✅ done | 📝 written, not compiled | iOS-only role: tokens/ios, not yet in the iOS Figma file |
-| statusbar | Android | ⬜ to do | ✅ done | 📝 written, not compiled | Android-only role: tokens/android, not yet in the Android Figma file |
+| header | iOS | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 8 exceptions with suggested overrides (docs/SHELL-EXCEPTIONS.md). Figma iOS: exception samples drawn (Components · App shell); header variables wait on the Core library import in the iOS file |
+| statusbar | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar (Shell colors · Android, Shell theme · Android); 7 exceptions with suggested overrides drawn in Components · App shell |
 | accent | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority |
 
 ## Components
@@ -81,8 +81,8 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Section tabs | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6) |
 | Bottom tab bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6) |
 | Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked |
-| Section header band | iOS | ⬜ to do | ✅ done | 📝 written, not compiled | Color only (header role) |
-| Status bar color | Android | ⬜ to do | ✅ done | 📝 written, not compiled | Color only (statusbar role) |
+| Section header band | iOS | 🟡 partial | ✅ done | 📝 written, not compiled | Color only (header = navbar, DEC-15). Exception samples in Components · App shell (raw colors until the iOS import works) |
+| Status bar color | Android | 🟡 partial | ✅ done | 📝 written, not compiled | Color only (statusbar = navbar, DEC-15). Exception samples in Components · App shell; status-bar icon color unknown (MISSING-ASSETS 5.6) |
 
 ### Buttons
 

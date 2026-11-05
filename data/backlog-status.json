@@ -103,12 +103,12 @@
   {
    "id": "foundation/system-colors",
    "group": "Color",
-   "name": "The other 117 themed colors per market (62 are the same in every market → System collection)",
+   "name": "The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection)",
    "owner": "core",
-   "figma": "todo",
+   "figma": "partial",
    "tokens": "todo",
    "code": "todo",
-   "note": "PROGRESS 1.4"
+   "note": "Step 1 (review): docs/SYSTEM-COLORS.md, Figma Core page Color · System colors (every color, 16 proposed iOS↔Android pairs, market palettes: iOS 19, Android 29). Step 2 after Karl's review: tokens per market, System collection, Swift/Kotlin. Pairs: MISSING-ASSETS 3.4"
   },
   {
    "id": "foundation/brand-colors",
@@ -181,16 +181,16 @@
    "note": "Alias of action"
   },
   "color/header": {
-   "figma": "todo",
+   "figma": "partial",
    "tokens": "done",
    "code": "written",
-   "note": "iOS-only role: tokens/ios, not yet in the iOS Figma file"
+   "note": "DEC-15: alias of Core navbar; 8 exceptions with suggested overrides (docs/SHELL-EXCEPTIONS.md). Figma iOS: exception samples drawn (Components · App shell); header variables wait on the Core library import in the iOS file"
   },
   "color/statusbar": {
-   "figma": "todo",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "Android-only role: tokens/android, not yet in the Android Figma file"
+   "note": "DEC-15: alias of Core navbar (Shell colors · Android, Shell theme · Android); 7 exceptions with suggested overrides drawn in Components · App shell"
   },
   "color/accent": {
    "figma": "done",
@@ -247,14 +247,14 @@
   "component/status-bar": {
    "tokens": "done",
    "code": "written",
-   "figma": "todo",
-   "note": "Color only (statusbar role)"
+   "figma": "partial",
+   "note": "Color only (statusbar = navbar, DEC-15). Exception samples in Components · App shell; status-bar icon color unknown (MISSING-ASSETS 5.6)"
   },
   "component/section-header": {
    "tokens": "done",
    "code": "written",
-   "figma": "todo",
-   "note": "Color only (header role)"
+   "figma": "partial",
+   "note": "Color only (header = navbar, DEC-15). Exception samples in Components · App shell (raw colors until the iOS import works)"
   },
   "layout/orientation": {
    "tokens": "na",
@@ -366,7 +366,7 @@
  "next": [
   "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)",
   "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)",
-  "System colors (the other 117 themed colors); breakpoints after LAY-01",
+  "System colors: step 1 waiting on Karl's review (docs/SYSTEM-COLORS.md, Core page Color · System colors); step 2 = tokens for every market. Breakpoints after LAY-01",
   "Icons, once the Apps team answers MISSING-ASSETS §1"
  ]
 }
