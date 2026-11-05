@@ -211,7 +211,7 @@ Karl, 2026-11-04 (DEC-14): keep Continue as shipped on each platform. iOS draws 
 
 ### CLR-08 · Exception markets — `FUTURE`
 Karl, 2026-11-04 (DEC-14): every color is built with the majority value; markets that ship something else are documented only (docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md). Future change: bring those markets in line, or confirm them as a market-specific design and add them back as tokens.
-DEC-15 (2026-11-05) adds the iOS header band and Android status bar: 15 exceptions, each with a suggested override (the shipped color) in docs/SHELL-EXCEPTIONS.md and drawn majority vs override in the platform Figma files.
+DEC-15 (2026-11-05): the 15 iOS header band and Android status bar exceptions were accepted as market overrides (the shipped color), so they are built and closed here. The Android ones can be dropped if the apps use dark status-bar icons (MISSING-ASSETS 5.6).
 
 ### LAY-01 · One breakpoint set — `PROPOSED`
 `FrontWidth.swift` uses 668 / 835 / 1113; `PageItem.swift` uses 668 / 769 / 1025. Pick one.

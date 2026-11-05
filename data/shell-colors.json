@@ -1977,8 +1977,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#4050b6",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#4050b6",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#4050b6",
@@ -1989,7 +1991,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 6.91
   },
   {
@@ -2000,8 +2002,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#5c5b59",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#5c5b59",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#5c5b59",
@@ -2012,7 +2016,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 6.78
   },
   {
@@ -2023,8 +2027,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#4050b6",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#4050b6",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#333333",
    "override": {
     "value": "#4050b6",
@@ -2035,7 +2041,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 6.91
   },
   {
@@ -2046,8 +2052,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#1875be",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#1875be",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#333333",
    "override": {
     "value": "#1875be",
@@ -2058,7 +2066,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 4.85
   },
   {
@@ -2069,8 +2077,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#5d5b59",
    "shipped_topbar": "#ffffff",
-   "built": "#f5f5f5",
-   "built_alias": "navbar",
+   "majority": "#f5f5f5",
+   "built": "#5d5b59",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#5d5b59",
@@ -2081,7 +2091,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.09,
+   "contrast_majority": 1.09,
    "contrast_override": 6.76
   },
   {
@@ -2092,8 +2102,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#136283",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#136283",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#136283",
@@ -2104,7 +2116,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 6.77
   },
   {
@@ -2115,8 +2127,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#9e0b0f",
    "shipped_topbar": "#000000",
-   "built": "#000000",
-   "built_alias": "navbar",
+   "majority": "#000000",
+   "built": "#9e0b0f",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#ffffff",
    "override": {
     "value": "#9e0b0f",
@@ -2127,7 +2141,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 21.0,
+   "contrast_majority": 21.0,
    "contrast_override": 8.37
   },
   {
@@ -2138,8 +2152,10 @@
    "source": "Style.json cell-tertiary-headerBg",
    "shipped": "#3f50b6",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#3f50b6",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#3f50b6",
@@ -2150,7 +2166,7 @@
    "foreground_source": "Style.json cell-tertiary-headertext",
    "foreground_is": "section title text",
    "target": 4.5,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 6.92
   },
   {
@@ -2161,8 +2177,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#000000",
@@ -2176,7 +2194,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 21.0
   },
   {
@@ -2187,8 +2205,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#000000",
@@ -2202,7 +2222,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 21.0
   },
   {
@@ -2213,8 +2233,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#333333",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#333333",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#333333",
    "override": {
     "value": "#333333",
@@ -2228,7 +2250,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 12.63
   },
   {
@@ -2239,8 +2261,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#000000",
@@ -2254,7 +2278,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 21.0
   },
   {
@@ -2265,8 +2289,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#333333",
    "override": {
     "value": "#000000",
@@ -2277,7 +2303,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 21.0
   },
   {
@@ -2288,8 +2314,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#ffffff",
-   "built": "#ffffff",
-   "built_alias": "navbar",
+   "majority": "#ffffff",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#000000",
@@ -2303,7 +2331,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.0,
+   "contrast_majority": 1.0,
    "contrast_override": 21.0
   },
   {
@@ -2314,8 +2342,10 @@
    "source": "MainStyle_Primary_Dark",
    "shipped": "#000000",
    "shipped_topbar": "#f5f5f5",
-   "built": "#f5f5f5",
-   "built_alias": "navbar",
+   "majority": "#f5f5f5",
+   "built": "#000000",
+   "accepted": true,
+   "built_alias": null,
    "navtext": "#000000",
    "override": {
     "value": "#000000",
@@ -2329,7 +2359,7 @@
    "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
-   "contrast_built": 1.09,
+   "contrast_majority": 1.09,
    "contrast_override": 21.0
   }
  ],
@@ -2459,141 +2489,6 @@
    "source": "bottom_nav_selected_text_color",
    "shipped": "#000000",
    "built": "#00919e"
-  },
-  {
-   "platform": "iOS",
-   "code": "dp",
-   "market": "Daily Press",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#4050b6",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "iOS",
-   "code": "mc",
-   "market": "Morning Call",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#5c5b59",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "iOS",
-   "code": "nydn",
-   "market": "New York Daily News",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#4050b6",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "iOS",
-   "code": "os",
-   "market": "Orlando Sentinel",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#1875be",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "iOS",
-   "code": "tsar",
-   "market": "Saratogian",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#5d5b59",
-   "built": "#f5f5f5"
-  },
-  {
-   "platform": "iOS",
-   "code": "ss",
-   "market": "Sun Sentinel",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#136283",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "iOS",
-   "code": "tpd",
-   "market": "The Press Democrat",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#9e0b0f",
-   "built": "#000000"
-  },
-  {
-   "platform": "iOS",
-   "code": "vp",
-   "market": "Virginian Pilot",
-   "role": "header",
-   "source": "Style.json cell-tertiary-headerBg",
-   "shipped": "#3f50b6",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "dp",
-   "market": "Daily Press",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "mc",
-   "market": "Morning Call",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "nydn",
-   "market": "New York Daily News",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#333333",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "vp",
-   "market": "Virginian Pilot",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "os",
-   "market": "Orlando Sentinel",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "ss",
-   "market": "Sun Sentinel",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#ffffff"
-  },
-  {
-   "platform": "Android",
-   "code": "tsar",
-   "market": "Saratogian",
-   "role": "statusbar",
-   "source": "MainStyle_Primary_Dark",
-   "shipped": "#000000",
-   "built": "#f5f5f5"
   }
  ]
 }

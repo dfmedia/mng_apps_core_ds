@@ -1,0 +1,27 @@
+{
+ "$description": "Accepted market overrides for the iOS header band and Android status bar (DEC-15). Karl accepted every suggested override on 2026-11-05: these markets keep the color their app ships instead of following navbar. Read by scripts/build_tokens.py (override tokens) and scripts/build_shell_colors.py (docs). The value always comes from the shipped data, never from this file.",
+ "decision": "DEC-15",
+ "approved": "2026-11-05 (Karl: accept everything)",
+ "header": [
+  "dp",
+  "mc",
+  "nydn",
+  "os",
+  "ss",
+  "tpd",
+  "tsar",
+  "vp"
+ ],
+ "statusbar": [
+  "dp",
+  "mc",
+  "nydn",
+  "os",
+  "ss",
+  "tsar",
+  "vp"
+ ],
+ "notes": {
+  "statusbar": "Android status-bar icon color is unknown (MISSING-ASSETS 5.6, asked 2026-11-05). If the apps turn on dark icons (windowLightStatusBar) in these markets, the overrides can be dropped and the markets follow navbar."
+ }
+}

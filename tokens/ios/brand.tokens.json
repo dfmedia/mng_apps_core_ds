@@ -32,13 +32,18 @@
    },
    "dp": {
     "header": {
-     "$value": "{color.brand.dp.navbar}",
+     "$value": "#4050b6",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        64,
+        80,
+        182
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#4050b6"
       }
      }
@@ -60,13 +65,18 @@
    },
    "mc": {
     "header": {
-     "$value": "{color.brand.mc.navbar}",
+     "$value": "#5c5b59",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        92,
+        91,
+        89
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#5c5b59"
       }
      }
@@ -74,13 +84,18 @@
    },
    "nydn": {
     "header": {
-     "$value": "{color.brand.nydn.navbar}",
+     "$value": "#4050b6",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        64,
+        80,
+        182
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#4050b6"
       }
      }
@@ -102,13 +117,18 @@
    },
    "os": {
     "header": {
-     "$value": "{color.brand.os.navbar}",
+     "$value": "#1875be",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        24,
+        117,
+        190
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#1875be"
       }
      }
@@ -186,13 +206,18 @@
    },
    "ss": {
     "header": {
-     "$value": "{color.brand.ss.navbar}",
+     "$value": "#136283",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        19,
+        98,
+        131
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#136283"
       }
      }
@@ -746,13 +771,18 @@
    },
    "tpd": {
     "header": {
-     "$value": "{color.brand.tpd.navbar}",
+     "$value": "#9e0b0f",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        158,
+        11,
+        15
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#9e0b0f"
       }
      }
@@ -872,13 +902,18 @@
    },
    "tsar": {
     "header": {
-     "$value": "{color.brand.tsar.navbar}",
+     "$value": "#5d5b59",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        93,
+        91,
+        89
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#5d5b59"
       }
      }
@@ -1082,13 +1117,18 @@
    },
    "vp": {
     "header": {
-     "$value": "{color.brand.vp.navbar}",
+     "$value": "#3f50b6",
      "$type": "color",
-     "$description": "Section-front header band (iOS only): alias of navbar (DEC-15)",
+     "$description": "Section-front header band (iOS only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        63,
+        80,
+        182
+       ],
        "owner": "ios",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#3f50b6"
       }
      }

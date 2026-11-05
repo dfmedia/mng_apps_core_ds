@@ -20,42 +20,27 @@ DEC-14 (Karl, 2026-11-04): the app shell is built with the majority value for ev
 | Android | New York Daily News (NYDN) | tablabelactive | `bottom_nav_selected_text_color` | `#4492e0` · 68, 146, 224 | `#4591e0` · 69, 145, 224 |
 | Android | New York Daily News (NYDN) | tablabelinactive | `bottom_nav_deselected_text_color` | `#000000` · 0, 0, 0 | `#333333` · 51, 51, 51 |
 | Android | Saratogian (TSAR) | tablabelactive | `bottom_nav_selected_text_color` | `#000000` · 0, 0, 0 | `#00919e` · 0, 145, 158 |
-| iOS | Daily Press (DP) | header | `Style.json cell-tertiary-headerBg` | `#4050b6` · 64, 80, 182 | `#ffffff` · 255, 255, 255 |
-| iOS | Morning Call (MC) | header | `Style.json cell-tertiary-headerBg` | `#5c5b59` · 92, 91, 89 | `#ffffff` · 255, 255, 255 |
-| iOS | New York Daily News (NYDN) | header | `Style.json cell-tertiary-headerBg` | `#4050b6` · 64, 80, 182 | `#ffffff` · 255, 255, 255 |
-| iOS | Orlando Sentinel (OS) | header | `Style.json cell-tertiary-headerBg` | `#1875be` · 24, 117, 190 | `#ffffff` · 255, 255, 255 |
-| iOS | Saratogian (TSAR) | header | `Style.json cell-tertiary-headerBg` | `#5d5b59` · 93, 91, 89 | `#f5f5f5` · 245, 245, 245 |
-| iOS | Sun Sentinel (SS) | header | `Style.json cell-tertiary-headerBg` | `#136283` · 19, 98, 131 | `#ffffff` · 255, 255, 255 |
-| iOS | The Press Democrat (TPD) | header | `Style.json cell-tertiary-headerBg` | `#9e0b0f` · 158, 11, 15 | `#000000` · 0, 0, 0 |
-| iOS | Virginian Pilot (VP) | header | `Style.json cell-tertiary-headerBg` | `#3f50b6` · 63, 80, 182 | `#ffffff` · 255, 255, 255 |
-| Android | Daily Press (DP) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 |
-| Android | Morning Call (MC) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 |
-| Android | New York Daily News (NYDN) | statusbar | `MainStyle_Primary_Dark` | `#333333` · 51, 51, 51 | `#ffffff` · 255, 255, 255 |
-| Android | Virginian Pilot (VP) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 |
-| Android | Orlando Sentinel (OS) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 |
-| Android | Sun Sentinel (SS) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 |
-| Android | Saratogian (TSAR) | statusbar | `MainStyle_Primary_Dark` | `#000000` · 0, 0, 0 | `#f5f5f5` · 245, 245, 245 |
 
-## Header band (iOS) and status bar (Android): suggested overrides
+## Header band (iOS) and status bar (Android): market overrides
 
-DEC-15 (Karl, 2026-11-05): `header` and `statusbar` follow the top bar (`navbar`). In these markets the app ships them different from its own top bar, mostly because the top bar is white. The majority build is shown next to a suggested override: a market-specific override token holding the shipped color (it already passes contrast in every case). Same comparison drawn in Figma (iOS file: Components · App shell › Header band exceptions; Android file: Status bar exceptions).
+DEC-15 (Karl, 2026-11-05): `header` and `statusbar` follow the top bar (`navbar`). In these markets the app ships them different from its own top bar, mostly because the top bar is white, so the majority build fails contrast. **Karl accepted every suggested override on 2026-11-05** (data/shell-overrides.json): these markets get an override token with the shipped color (`color.ios.<m>.header` / `color.android.<m>.statusbar`), built in tokens, Swift, Kotlin and Figma. Drawn majority vs override in Figma (iOS file: Components · App shell › 01 · Header band exceptions; Android file: › 01 · Status bar exceptions).
 
-| Platform | Market | Role | Shipped | Built (majority = navbar) | On it | Suggested override | On it | Target |
+| Platform | Market | Role | Majority (navbar) | On it | Override (shipped) | On it | Status | Target |
 |---|---|---|---|---|---|---|---|---|
-| iOS | Daily Press (DP) | header | `#4050b6` · 64, 80, 182 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#4050b6` · 64, 80, 182 | 6.91:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | Morning Call (MC) | header | `#5c5b59` · 92, 91, 89 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#5c5b59` · 92, 91, 89 | 6.78:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | New York Daily News (NYDN) | header | `#4050b6` · 64, 80, 182 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#4050b6` · 64, 80, 182 | 6.91:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | Orlando Sentinel (OS) | header | `#1875be` · 24, 117, 190 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#1875be` · 24, 117, 190 | 4.85:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | Saratogian (TSAR) | header | `#5d5b59` · 93, 91, 89 | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ | `#5d5b59` · 93, 91, 89 | 6.76:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | Sun Sentinel (SS) | header | `#136283` · 19, 98, 131 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#136283` · 19, 98, 131 | 6.77:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | The Press Democrat (TPD) | header | `#9e0b0f` · 158, 11, 15 | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#9e0b0f` · 158, 11, 15 | 8.37:1 ✅ | 4.5:1 (section title text #ffffff) |
-| iOS | Virginian Pilot (VP) | header | `#3f50b6` · 63, 80, 182 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#3f50b6` · 63, 80, 182 | 6.92:1 ✅ | 4.5:1 (section title text #ffffff) |
-| Android | Daily Press (DP) | statusbar | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | Morning Call (MC) | statusbar | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | New York Daily News (NYDN) | statusbar | `#333333` · 51, 51, 51 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#333333` · 51, 51, 51 (same hex as `navtext`, `tabinactive`) | 12.63:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | Virginian Pilot (VP) | statusbar | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | Orlando Sentinel (OS) | statusbar | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | Sun Sentinel (SS) | statusbar | `#000000` · 0, 0, 0 | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
-| Android | Saratogian (TSAR) | statusbar | `#000000` · 0, 0, 0 | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | 3.0:1 (status-bar icons #ffffff) |
+| iOS | Daily Press (DP) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#4050b6` · 64, 80, 182 | 6.91:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | Morning Call (MC) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#5c5b59` · 92, 91, 89 | 6.78:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | New York Daily News (NYDN) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#4050b6` · 64, 80, 182 | 6.91:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | Orlando Sentinel (OS) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#1875be` · 24, 117, 190 | 4.85:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | Saratogian (TSAR) | header | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ | `#5d5b59` · 93, 91, 89 | 6.76:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | Sun Sentinel (SS) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#136283` · 19, 98, 131 | 6.77:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | The Press Democrat (TPD) | header | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#9e0b0f` · 158, 11, 15 | 8.37:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| iOS | Virginian Pilot (VP) | header | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#3f50b6` · 63, 80, 182 | 6.92:1 ✅ | accepted, built | 4.5:1 (section title text #ffffff) |
+| Android | Daily Press (DP) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | Morning Call (MC) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | New York Daily News (NYDN) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#333333` · 51, 51, 51 (same hex as `navtext`, `tabinactive`) | 12.63:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | Virginian Pilot (VP) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | Orlando Sentinel (OS) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | Sun Sentinel (SS) | statusbar | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
+| Android | Saratogian (TSAR) | statusbar | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) |
 
-Foreground: iOS header text is `Style.json cell-tertiary-headertext` (#ffffff in all 77 markets). Android status-bar icons are assumed light (system default); the export has no `windowLightStatusBar`, so this is asked in MISSING-ASSETS 5.6.
+Foreground: iOS header text is `Style.json cell-tertiary-headertext` (#ffffff in all 77 markets). Android status-bar icons are assumed light (system default); the export has no `windowLightStatusBar`, so this is asked in MISSING-ASSETS 5.6. If the Apps team says dark icons are on in these markets, the Android overrides can be dropped and the markets follow navbar.

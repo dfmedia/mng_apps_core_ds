@@ -184,13 +184,13 @@
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-15: alias of Core navbar (Shell colors · iOS, Shell theme · iOS); 8 exceptions with suggested overrides drawn in Components · App shell (docs/SHELL-EXCEPTIONS.md)"
+   "note": "DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell"
   },
   "color/statusbar": {
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-15: alias of Core navbar (Shell colors · Android, Shell theme · Android); 7 exceptions with suggested overrides drawn in Components · App shell"
+   "note": "DEC-15: alias of Core navbar; 7 accepted market overrides (dark status bar, data/shell-overrides.json). Samples: Components · App shell. Icon color asked (MISSING-ASSETS 5.6)"
   },
   "color/accent": {
    "figma": "done",

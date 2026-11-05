@@ -67,8 +67,8 @@ Built = done everywhere except the code is not compiled in an app yet.
 | alert | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-05; alerttext added |
 | buy | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
 | continue | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
-| header | iOS | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar (Shell colors · iOS, Shell theme · iOS); 8 exceptions with suggested overrides drawn in Components · App shell (docs/SHELL-EXCEPTIONS.md) |
-| statusbar | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar (Shell colors · Android, Shell theme · Android); 7 exceptions with suggested overrides drawn in Components · App shell |
+| header | iOS | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell |
+| statusbar | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 7 accepted market overrides (dark status bar, data/shell-overrides.json). Samples: Components · App shell. Icon color asked (MISSING-ASSETS 5.6) |
 | accent | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority |
 
 ## Components

@@ -32,13 +32,18 @@
    },
    "dp": {
     "statusbar": {
-     "$value": "{color.brand.dp.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }
@@ -60,13 +65,18 @@
    },
    "mc": {
     "statusbar": {
-     "$value": "{color.brand.mc.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }
@@ -74,13 +84,18 @@
    },
    "nydn": {
     "statusbar": {
-     "$value": "{color.brand.nydn.navbar}",
+     "$value": "#333333",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        51,
+        51,
+        51
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#333333"
       }
      }
@@ -102,13 +117,18 @@
    },
    "os": {
     "statusbar": {
-     "$value": "{color.brand.os.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }
@@ -186,13 +206,18 @@
    },
    "ss": {
     "statusbar": {
-     "$value": "{color.brand.ss.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }
@@ -872,13 +897,18 @@
    },
    "tsar": {
     "statusbar": {
-     "$value": "{color.brand.tsar.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }
@@ -1082,13 +1112,18 @@
    },
    "vp": {
     "statusbar": {
-     "$value": "{color.brand.vp.navbar}",
+     "$value": "#000000",
      "$type": "color",
-     "$description": "Status bar (Android only): alias of navbar (DEC-15)",
+     "$description": "Status bar (Android only): market override, shipped value (DEC-15, accepted 2026-11-05)",
      "$extensions": {
       "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
        "owner": "android",
-       "follows": "navbar",
+       "override": true,
        "shipped": "#000000"
       }
      }

@@ -1,10 +1,12 @@
 // Figma build: header band (iOS) / status bar (Android) exception samples, DEC-15.
 // Data: data/shell-colors.json `role_exceptions` (scripts/build_shell_colors.py). Run through the Desktop Bridge
 // (figma_execute) in the platform file, with PLATFORM and DATA prepended:
-//   const PLATFORM = 'Android'; const DATA = [...role_exceptions for that platform...];
+//   const PLATFORM = 'Android'; const DATA = [...role_exceptions for that platform, mapped to
+//     {code, market, built: majority, navbar: majority, navtext, override: override.value, accepted, foreground, target,
+//      contrast_built: contrast_majority, contrast_override}];
 // Re-running replaces only the section this script created (CLAUDE.md rule 4).
-// Each exception market gets two mock-ups side by side: the majority build (role = navbar, bound to the live
-// variables) and the suggested override (the shipped color; a raw value because no override token exists yet).
+// Each exception market gets two mock-ups side by side: the majority build (bound to Core navbar) and the override
+// (bound to the <market>/<role> variable, which holds the shipped color once Karl accepted it; DEC-15, 2026-11-05).
 // Sizes are illustrative: production app shell sizes wait on the Apps team (MISSING-ASSETS 5.6).
 
 const ROLE = PLATFORM === 'iOS' ? 'header' : 'statusbar';
@@ -92,12 +94,12 @@ for (const e of DATA) {
   const row = frame('Compare', 'HORIZONTAL', 24, 0);
   const pass = (c) => c >= e.target;
   const cols = [
-    { title: 'Majority · built', sub: `${ROLE} = navbar ${e.built} · ${rgbTxt(e.built)}`, hexv: e.built, v: roleVar, c: e.contrast_built },
-    { title: 'Suggested override', sub: `${ROLE} = ${e.override} · ${rgbTxt(e.override)} (shipped)`, hexv: e.override, v: null, c: e.contrast_override },
+    { title: 'Majority · built', sub: `majority: navbar ${e.built} · ${rgbTxt(e.built)}`, hexv: e.built, v: navVar, c: e.contrast_built },
+    { title: 'Suggested override', sub: `${ROLE} = ${e.override} · ${rgbTxt(e.override)} (shipped${e.accepted ? ', accepted' : ''})`, hexv: e.override, v: e.accepted ? roleVar : null, c: e.contrast_override },
   ];
   for (const [i, col] of cols.entries()) {
     const cf = frame(col.title, 'VERTICAL', 8, 0);
-    cf.appendChild(i === 0 ? (pass(col.c) ? chip('Majority · passes', '#e6f4ea', '#14532d') : chip('Majority · fails', '#fde8e8', '#8a1c1c')) : chip('Suggested override', '#fff4d6', '#6b4500'));
+    cf.appendChild(i === 0 ? (pass(col.c) ? chip('Majority · passes', '#e6f4ea', '#14532d') : chip('Majority · fails', '#fde8e8', '#8a1c1c')) : chip(e.accepted ? 'Override accepted' : 'Suggested override', '#fff4d6', '#6b4500'));
     cf.appendChild(text(col.sub, 11, 'Regular', '#333333'));
     cf.appendChild(mock(e, col.hexv, col.v, e.navbar, navVar, navtextHex, navtextVar));
     cf.appendChild(text(`${e.foreground} on ${col.hexv}: ${col.c}:1 ${pass(col.c) ? 'passes' : 'FAILS'} ${e.target}:1`, 12, 'SemiBold', pass(col.c) ? '#14532d' : '#8a1c1c'));
