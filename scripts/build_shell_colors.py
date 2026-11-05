@@ -136,8 +136,9 @@ for e in ROLE_EXC:
     ovs = fx(e['override']['value']) + (f" (same hex as `{'`, `'.join(e['override']['same_as'])}`)" if e['override']['same_as'] else '')
     L.append(f"| {e['platform']} | {e['market']} ({e['code'].upper()}) | {e['role']} | {fx(e['majority'])} | {ok(e['contrast_majority'])} | {ovs} | {ok(e['contrast_override'])} | {'accepted, built' if e['accepted'] else 'suggested'} | {e['target']}:1 ({e['foreground_is']} {e['foreground']}) |")
 L += ['', 'Foreground: iOS header text is `Style.json cell-tertiary-headertext` (#ffffff in all 77 markets). Android status-bar icons are '
-      'assumed light (system default); the export has no `windowLightStatusBar`, so this is asked in MISSING-ASSETS 5.6. '
-      'If the Apps team says dark icons are on in these markets, the Android overrides can be dropped and the markets follow navbar.']
+      'light by default; the main theme never sets `windowLightStatusBar` (MISSING-ASSETS 5.6). '
+      'Apps team (Jess, 2026-11-05, from code, device check pending): on Android 14 and below the icons are white, so the dark overrides are needed; '
+      'on Android 15+ these markets show a white status bar with dark icons (= navbar). The overrides describe Android 14 and below.']
 open('docs/SHELL-EXCEPTIONS.md', 'w').write('\n'.join(L) + '\n')
 print(len(EXC), 'exceptions documented;', len(ROLE_EXC), 'header/statusbar exceptions,', sum(e['accepted'] for e in ROLE_EXC), 'accepted overrides')
 print(len(data), 'markets; iOS roles', len(IOS_ROLES), 'Android roles', len(AND_ROLES))
