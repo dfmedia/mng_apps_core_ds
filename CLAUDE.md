@@ -146,3 +146,6 @@ python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from d
 - Keep replies short. Lead with what changed and what needs a decision.
 - Put long findings in `docs/`, not in chat.
 - Say which commit and which file a number came from.
+
+### Figma library imports stall (2026-11-05)
+If `importVariableByKeyAsync` / `importComponentByKeyAsync` hang in a platform file while library listing works, the file has unaccepted Core library updates: ask Karl to accept them (Assets → Libraries → Update all). For a component the file has never used, Karl can drag one instance in from Assets; the build script then wraps that instance.

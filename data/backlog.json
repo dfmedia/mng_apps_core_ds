@@ -1177,12 +1177,12 @@
    "group": "Buttons",
    "name": "Subscription option",
    "owner": "core+variant",
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again",
-   "overall": "in progress"
+   "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button)",
+   "overall": "built"
   },
   {
    "id": "component/button-text",

@@ -14,18 +14,17 @@ Built = done everywhere except the code is not compiled in an app yet.
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 0 | 6 | 0 | 2 | 0 |
 | Color roles | 12 | 0 | 10 | 2 | 0 | 0 |
-| Components | 20 | 0 | 5 | 13 | 0 | 2 |
+| Components | 20 | 0 | 6 | 12 | 0 | 2 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **26** | **15** | **3** | **63** |
+| **Total** | **107** | **0** | **27** | **14** | **3** | **63** |
 
 ## Suggested order
 
-1. Figma, needs each file in front: Android Shell colors exceptions → aliases; Subscription option wrappers in the iOS and Android files
-2. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
-3. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
-4. System colors (the other 117 themed colors); breakpoints after LAY-01
-5. Icons, once the Apps team answers MISSING-ASSETS §1
+1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
+2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
+3. System colors (the other 117 themed colors); breakpoints after LAY-01
+4. Icons, once the Apps team answers MISSING-ASSETS §1
 
 ## Foundations
 
@@ -91,7 +90,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 |---|---|---|---|---|---|
 | Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot; provisional values in MISSING-ASSETS 5.5 |
 | Continue button | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03 |
-| Subscription option | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts). Platform wrappers wait for the Core library to be published again |
+| Subscription option | Core + iOS + Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button) |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height) · Colors and radius 5 are tokens (DEC-14) |
 | Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height, colors) · Radius is a token (DEC-12) |
