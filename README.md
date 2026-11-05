@@ -1,6 +1,6 @@
 # MNG Apps Core Design System
 
-The design system for MNG's native news apps. One **Core** system (tokens, icons, platform-neutral atoms) that feeds two platform systems, **iOS** and **Android**. Project instructions: [CLAUDE.md](CLAUDE.md). Platform repos: [mng_apps_ios_ds](https://github.com/kuscholdMNG/mng_apps_ios_ds), [mng_apps_android_ds](https://github.com/kuscholdMNG/mng_apps_android_ds).
+The design system for MNG's native news apps. One **Core** system (tokens, icons, platform-neutral atoms) that feeds two platform systems, **iOS** and **Android**. Project instructions: [CLAUDE.md](CLAUDE.md). Platform repos: [mng_apps_ios_ds](https://github.com/dfmedia/mng_apps_ios_ds), [mng_apps_android_ds](https://github.com/dfmedia/mng_apps_android_ds).
 
 This project is **completely separate from the MNG Web Design System**. It does not use the web IcoMoon icon set, web tokens or web components.
 

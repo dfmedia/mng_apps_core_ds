@@ -31,9 +31,9 @@ Each library has one Figma file and one GitHub repo. This repo (Core) is the sou
 
 | Library | Figma key | GitHub | Local folder |
 |---------|-----------|--------|--------------|
-| MNG Apps Core Design System | `qgL4Pj306km9NbIBIAubFg` | [kuscholdMNG/mng_apps_core_ds](https://github.com/kuscholdMNG/mng_apps_core_ds) | `~/Github/mng_apps_core_ds` |
-| MNG iOS Design System | `uNxwBNoP4ODDUFGByi73mZ` | [kuscholdMNG/mng_apps_ios_ds](https://github.com/kuscholdMNG/mng_apps_ios_ds) | `~/Github/mng_apps_ios_ds` |
-| MNG Android Design System | `FGUeuRYhGudxo0VQdToZT9` | [kuscholdMNG/mng_apps_android_ds](https://github.com/kuscholdMNG/mng_apps_android_ds) | `~/Github/mng_apps_android_ds` |
+| MNG Apps Core Design System | `qgL4Pj306km9NbIBIAubFg` | [dfmedia/mng_apps_core_ds](https://github.com/dfmedia/mng_apps_core_ds) | `~/Github/mng_apps_core_ds` |
+| MNG iOS Design System | `uNxwBNoP4ODDUFGByi73mZ` | [dfmedia/mng_apps_ios_ds](https://github.com/dfmedia/mng_apps_ios_ds) | `~/Github/mng_apps_ios_ds` |
+| MNG Android Design System | `FGUeuRYhGudxo0VQdToZT9` | [dfmedia/mng_apps_android_ds](https://github.com/dfmedia/mng_apps_android_ds) | `~/Github/mng_apps_android_ds` |
 
 Sync rule: when a session changes a repo, Claude commits with a clear message and pushes. (Karl asked Claude to do all pushing through the color work.) Start every session by pulling all three. A change that touches Core and a platform goes in both repos in the same session, and each PROGRESS.md log line names the other repo.
 
