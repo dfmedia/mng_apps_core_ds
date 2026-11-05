@@ -181,10 +181,10 @@
    "note": "Alias of action"
   },
   "color/header": {
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-15: alias of Core navbar; 8 exceptions with suggested overrides (docs/SHELL-EXCEPTIONS.md). Figma iOS: exception samples drawn (Components · App shell); header variables wait on the Core library import in the iOS file"
+   "note": "DEC-15: alias of Core navbar (Shell colors · iOS, Shell theme · iOS); 8 exceptions with suggested overrides drawn in Components · App shell (docs/SHELL-EXCEPTIONS.md)"
   },
   "color/statusbar": {
    "figma": "done",
@@ -254,7 +254,7 @@
    "tokens": "done",
    "code": "written",
    "figma": "partial",
-   "note": "Color only (header = navbar, DEC-15). Exception samples in Components · App shell (raw colors until the iOS import works)"
+   "note": "Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables"
   },
   "layout/orientation": {
    "tokens": "na",
