@@ -190,7 +190,7 @@
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-15: alias of Core navbar; 7 accepted market overrides (dark status bar, data/shell-overrides.json). Samples: Components · App shell. Icon color asked (MISSING-ASSETS 5.6)"
+   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Next: Android 15+ version (navbar + dark icons) once the Apps team confirms on a device (MISSING-ASSETS 5.6)"
   },
   "color/accent": {
    "figma": "done",
@@ -248,7 +248,7 @@
    "tokens": "done",
    "code": "written",
    "figma": "partial",
-   "note": "Color only (statusbar = navbar, DEC-15). Exception samples in Components · App shell; status-bar icon color unknown (MISSING-ASSETS 5.6)"
+   "note": "Color only (DEC-15). Planned: Android 14 vs 15+ versions (icon style token + 15+ mock-up), waiting on the Apps team device check"
   },
   "component/section-header": {
    "tokens": "done",
