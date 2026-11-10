@@ -377,7 +377,7 @@
       "tokens": "partial",
       "code": "partial",
       "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.9",
-      "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android slots drawn from component.android.ad.* (Android Layout · Ads, widget, eEdition › 01). Colors Core ad/background, ad/label"
+      "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label"
     },
     "component/widget": {
       "figma": "partial",

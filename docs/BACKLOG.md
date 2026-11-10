@@ -126,7 +126,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
-| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.9 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android slots drawn from component.android.ad.* (Android Layout · Ads, widget, eEdition › 01). Colors Core ad/background, ad/label |
+| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.9 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
 
 ## Icons
 
