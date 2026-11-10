@@ -22,6 +22,6 @@
   "vp"
  ],
  "notes": {
-  "statusbar": "Apps team (Jess, 2026-11-05, from code, device check pending): on Android 14 and below the status-bar icons are white (main theme never sets windowLightStatusBar), so these dark overrides are needed; on Android 15+ the app shows a white status bar with dark icons in these markets (= navbar, the majority)."
+  "statusbar": "Apps team (Ameer M., 2026-11-05 from code; confirmed on device 2026-11-10): on Android 14 and below the status-bar icons are white (main theme never sets windowLightStatusBar), so these dark overrides are needed; on Android 15+ the app shows a white status bar with dark icons in these markets (= navbar, the majority)."
  }
 }

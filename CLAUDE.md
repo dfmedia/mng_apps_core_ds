@@ -138,7 +138,7 @@ python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from d
 ## People
 
 - Karl: design system owner. Approves every phase.
-- Apps team contacts: Jess Navaro, Patrick Carr.
+- Apps team contacts: Jess Navaro, Patrick Carr, Ameer M. (Android).
 
 ## Vocabulary
 
