@@ -28,7 +28,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | TYPE-03 | Type | One serif for both apps | — | REJECTED (Karl 2026-10-30: fonts stay per platform) |
 | TYPE-04 | Type | Shared type scale: one set of sizes for both apps, each in its own fonts | All markets | FUTURE (DEC-09) |
 | TYPE-05 | Type | Remove per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | ~13 markets | FUTURE (DEC-09) |
-| LAY-01 | Layout | Reconcile the two breakpoint sets (668/835/1113 vs 668/769/1025) | iPad section fronts | PROPOSED |
+| LAY-01 | Layout | Reconcile the two breakpoint sets (668/835/1113 vs 668/769/1025) | iPad section fronts | NOT PURSUED (2026-11-10: both documented as shipped) |
 | TYPE-01 | Type | Retire the legacy Style.json template (7 markets) | BS, DP, HC, MC, OS, SS, VP | PROPOSED |
 | TYPE-02 | Type | Remove font fallbacks that change size (e.g. 12 → 10) | `AppThemeable.swift:630` | PROPOSED |
 
@@ -213,8 +213,15 @@ Karl, 2026-11-04 (DEC-14): keep Continue as shipped on each platform. iOS draws 
 Karl, 2026-11-04 (DEC-14): every color is built with the majority value; markets that ship something else are documented only (docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md). Future change: bring those markets in line, or confirm them as a market-specific design and add them back as tokens.
 DEC-15 (2026-11-05): the 15 iOS header band and Android status bar exceptions were accepted as market overrides (the shipped color), so they are built and closed here. The Android ones can be dropped if the apps use dark status-bar icons (MISSING-ASSETS 5.6).
 
-### LAY-01 · One breakpoint set — `PROPOSED`
-`FrontWidth.swift` uses 668 / 835 / 1113; `PageItem.swift` uses 668 / 769 / 1025. Pick one.
+### LAY-01 · One breakpoint set — `NOT PURSUED` (Karl, 2026-11-10: document what exists, design nothing new)
+What ships (TroncKit @ e30ad2585, `data/source/ios-tokens.json`): the iPad section front uses **two sets of width steps**.
+
+| Set | Code | Steps (pt) | What it decides |
+|---|---|---|---|
+| Front width | `FrontWidth.swift:26–28` | 668 / 835 / 1113 | Which layout the whole section front uses (x-small, small, medium, large); 1113 = 12.9-inch iPad landscape |
+| Item width | `PageItem.swift:85–86` | 668 / 769 / 1025 | How wide each story card is, in twelfths of its row (`PageItem.swift:73`) |
+
+The first step (668) is the same. The medium and large steps differ, so a window 769–834 pt wide (or 1025–1112 pt) falls in one class for the page and the next class up for its cards. The source does not say whether `PageItem` measures the window or the card's container, or whether the difference is intended. Both sets are documented and built as shipped (DEC-12: `breakpoint.ios.front.*`, `breakpoint.ios.item.*`; Figma **Breakpoints · iOS**). If it ever matters, ask the Apps team whether the difference is intended; nothing to decide in the design system.
 
 ### TYPE-01 · Retire the legacy Style.json template — `PROPOSED` (DEC-10: the design system no longer builds it; values in docs/LEGACY-TEMPLATE.md)
 7 markets (BS, DP, HC, MC, OS, SS, VP) run an older 60–61-key template with different label fonts. Moving them to the standard 51-key template removes a whole set of type styles.

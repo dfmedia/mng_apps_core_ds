@@ -287,7 +287,7 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 ## DEC-12 · Everything linked to tokens
 
 - **Rule (Karl, 2026-11-03):** build breakpoints and tokens for each design system and its components, so that everything is linked to tokens. Replaces the "component values stay raw" part of DEC-11.
-- **Breakpoints, as shipped** (`breakpoint.ios.*`, `breakpoint.android.*`; Figma collections **Breakpoints · iOS** / **Breakpoints · Android**): iOS front 668 / 835 / 1113 pt and item 769 / 1025 pt (both sets kept until LAY-01 is decided); Android width classes 4.1 / 6.1 / 7.8 / 10.4 inches (physical screen) and sw500dp / sw600dp.
+- **Breakpoints, as shipped** (`breakpoint.ios.*`, `breakpoint.android.*`; Figma collections **Breakpoints · iOS** / **Breakpoints · Android**): iOS front 668 / 835 / 1113 pt and item 769 / 1025 pt (both sets kept as shipped; **Karl, 2026-11-10: LAY-01 not pursued, document what exists**); Android width classes 4.1 / 6.1 / 7.8 / 10.4 inches (physical screen) and sw500dp / sw600dp.
 - **Component metrics** (`component.ios.*`, `component.android.*`; Figma **Components · iOS** / **Components · Android**): every component-specific radius, size and inset from the style guides, e.g. Continue radius 9, savings label 15, checkbox 30, tab icons 26 × 23 / 24.
 - **Core Button** now has an **iOS** and an **Android** mode in the Button collection (height 44 / 60, radius 4 / 0, label Open Sans Bold / Roboto Medium 14, tracking 0 / 1.25 px); every property of the component is bound. The invented 16 px side padding was removed (no production value).
 - **Text links** in both platform files are bound to the platform touch target; code uses `MNGScale.sizeTouchMin` / `@dimen/mng_size_touch_min`.

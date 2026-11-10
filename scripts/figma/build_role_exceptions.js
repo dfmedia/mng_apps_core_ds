@@ -26,6 +26,19 @@ for (const v of locals) {
     const a = await figma.variables.getVariableByIdAsync(val.id); if (a && a.remote) byName['core:' + a.name] = a;
   }
 }
+// Override markets have no local alias of Core navbar/navtext: import them from the Core library (Brand colors).
+// Imports stall when the file has unaccepted Core library updates (CLAUDE.md), so each import is capped at 8 s.
+const need = DATA.flatMap(e => ['navbar', 'navtext'].map(r => `${e.code.toUpperCase()}/${r}`)).filter(n => !byName['core:' + n]);
+if (need.length) {
+  const withTimeout = (p) => Promise.race([p, new Promise(r => setTimeout(() => r(null), 8000))]);
+  const cols = (await withTimeout(figma.teamLibrary.getAvailableLibraryVariableCollectionsAsync())) || [];
+  const brand = cols.find(c => c.name === 'Brand colors');
+  const libVars = brand ? (await withTimeout(figma.teamLibrary.getVariablesInLibraryCollectionAsync(brand.key))) || [] : [];
+  for (const n of need) {
+    const lv = libVars.find(v => v.name === n); if (!lv) continue;
+    const v = await withTimeout(figma.variables.importVariableByKeyAsync(lv.key)); if (v) byName['core:' + n] = v;
+  }
+}
 const paintFor = (h, v) => v ? figma.variables.setBoundVariableForPaint(solid(h), 'color', v) : solid(h);
 
 function text(chars, size, style = 'Regular', color = '#1a1a1a', lh) {

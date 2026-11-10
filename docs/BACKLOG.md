@@ -21,10 +21,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 ## Suggested order
 
-1. Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)
-2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)
-3. System colors: step 1 waiting on Karl's review (docs/SYSTEM-COLORS.md, Core page Color · System colors); step 2 = tokens for every market. Breakpoints after LAY-01
-4. Icons, once the Apps team answers MISSING-ASSETS §1
+1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)
+2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)
+3. Icons: combined icon name list as shipped (DEC-17) now; glyphs and the Icon component after MISSING-ASSETS §1
+4. Karl: publish the Core library (System colors collection); Secondary and Loading button states (CTRL-02)
 
 ## Foundations
 
@@ -42,7 +42,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Spacing scale (6 values in use, no shared scale in code) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins |
 | Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-12: every component radius/size as a platform token (Components · iOS / Android) |
 | Size scale (touch target, checkbox, icon sizes) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-12: every component radius/size as a platform token (Components · iOS / Android) |
-| Breakpoints + 12-column grid | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-12: as shipped per platform (iOS two sets until LAY-01; Android inches + sw500/600dp) |
+| Breakpoints + 12-column grid | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-12: as shipped per platform (iOS two sets, as shipped, LAY-01 not pursued; Android inches + sw500/600dp) |
 
 ### Color
 
@@ -112,9 +112,9 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Section-front grid | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set |
+| Section-front grid | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
 | Cell spacing | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 space.cell.margin 16, space.cell.gap 8 |
-| Breakpoints | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set |
+| Breakpoints | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ⬜ to do | — n/a | — n/a | Identical. |

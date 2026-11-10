@@ -76,7 +76,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-12: as shipped per platform (iOS two sets until LAY-01; Android inches + sw500/600dp)",
+   "note": "DEC-12: as shipped per platform (iOS two sets, as shipped, LAY-01 not pursued; Android inches + sw500/600dp)",
    "overall": "built"
   },
   {
@@ -1337,7 +1337,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set",
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)",
    "overall": "built"
   },
   {
@@ -1363,7 +1363,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "Spacing, radius and size scales (foundations below)",
-   "note": "DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set",
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)",
    "overall": "built"
   },
   {

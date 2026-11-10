@@ -98,7 +98,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-12: as shipped per platform (iOS two sets until LAY-01; Android inches + sw500/600dp)"
+   "note": "DEC-12: as shipped per platform (iOS two sets, as shipped, LAY-01 not pursued; Android inches + sw500/600dp)"
   },
   {
    "id": "foundation/system-colors",
@@ -283,13 +283,13 @@
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set"
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
   },
   "layout/breakpoints": {
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-12: breakpoints as shipped per platform; LAY-01 still proposes one iOS set"
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
   },
   "component/section-tabs": {
    "figma": "blocked",
@@ -364,9 +364,9 @@
   }
  },
  "next": [
-  "Apps team answers: Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes (5.6), remaining buttons and controls (5.7), icons (§1)",
-  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13); waiting on sizes (5.6)",
-  "System colors: step 1 waiting on Karl's review (docs/SYSTEM-COLORS.md, Core page Color · System colors); step 2 = tokens for every market. Breakpoints after LAY-01",
-  "Icons, once the Apps team answers MISSING-ASSETS §1"
+  "Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)",
+  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)",
+  "Icons: combined icon name list as shipped (DEC-17) now; glyphs and the Icon component after MISSING-ASSETS §1",
+  "Karl: publish the Core library (System colors collection); Secondary and Loading button states (CTRL-02)"
  ]
 }
