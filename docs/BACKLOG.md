@@ -24,7 +24,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)
 2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)
 3. Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names for Karl to review; glyphs and the Icon component after MISSING-ASSETS §1
-4. Karl: publish the Core library (System colors collection); Secondary and Loading button states (CTRL-02)
+4. Karl: Secondary and Loading button states (CTRL-02). Core, iOS and Android libraries published and accepted 2026-11-10
 
 ## Foundations
 
