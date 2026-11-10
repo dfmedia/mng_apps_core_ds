@@ -167,3 +167,88 @@ Each cell: hex · R, G, B (0–255). Tokens: `tokens/core/brand.tokens.json` (`c
 | TWDD | migration sheet | same on both | follows navbar | same on both + sheet | same on both | migration sheet | Core red (DEC-05) | Core red (DEC-05) |
 | TWDN | Cluster Audit (DEC-02) | same on both | follows navbar | iOS (DEC-03) | same on both | Cluster Audit (DEC-02) | Core red (DEC-05) | Core red (DEC-05) |
 | VP | same on both | same on both | follows navbar | same on both | same on both | same on both + sheet | Core red (DEC-05) | Core red (DEC-05) |
+
+## Android app icon background (market brand asset)
+
+DEC-16 (Karl, 2026-11-10): `ic_launcher_background` is the background layer of the Android adaptive app icon (the home-screen icon), behind the logo layer. It is documented here as part of each market's brand, **not** as a system color or token. Source: android-tribpub @ 1cfb069a6. 8-digit values carry alpha (`#00000000` = transparent). iOS app icons are complete images, so iOS has no equivalent.
+
+| Code | Market | App icon background (Android) |
+|---|---|---|
+| BS | Baltimore Sun | `#00000000` · transparent |
+| CT | Chicago Tribune | `#004e87` · 0, 78, 135 |
+| DP | Daily Press | `#00000000` · transparent |
+| HC | Hartford Courant | `#00000000` · transparent |
+| MC | Morning Call | `#ffffff` · 255, 255, 255 |
+| NYDN | New York Daily News | `#00000000` · transparent |
+| OCR | Orange County Register | `#e4853b` · 228, 133, 59 |
+| OS | Orlando Sentinel | `#00000000` · transparent |
+| PAC | Petaluma Argus-Courier | `#00000000` · transparent |
+| PSN | Pasadena Star News | `#ff6a3c` · 255, 106, 60 |
+| SDUT | The San Diego Union-Tribune | `#ffffff` · 255, 255, 255 |
+| SGVT | San Gabriel Valley Tribune | `#ff6a3c` · 255, 106, 60 |
+| SIT | Sonoma Index Tribune | `#076494` · 7, 100, 148 |
+| SS | Sun Sentinel | `#000000` · 0, 0, 0 |
+| TB | Buffzone | `#ffffff` · 255, 255, 255 |
+| TBAN | Bay Area News | `#ff6a3c` · 255, 106, 60 |
+| TBCP | Boulder County Preps | `#ffffff` · 255, 255, 255 |
+| TBE | Broomfield Enterprise News | `#ffffff` · 255, 255, 255 |
+| TBH | Boston Herald | `#275d97` · 39, 93, 151 |
+| TBHS | Boston Herald Sports | `#b1022d` · 177, 2, 45 |
+| TCCDR | Canon City Daily Record | `#ffffff` · 255, 255, 255 |
+| TCE | Chico Enterprise Record | `#4b4a4a` · 75, 74, 74 |
+| TCHW | Colorado Hometown Weekly | `#ffffff` · 255, 255, 255 |
+| TCV | The Citizens' Voice | `#ffffff` · 255, 255, 255 |
+| TDB | Daily Breeze | `#1f9caa` · 31, 156, 170 |
+| TDC | The Daily Camera | `#ffffff` · 255, 255, 255 |
+| TDCD | Delaware County Daily Times | `#2289ad` · 34, 137, 173 |
+| TDF | Daily Freeman | `#1b6bad` · 27, 107, 173 |
+| TDH | Daily Herald | not in the Android export |
+| TDLW | Daily Local Weschester | `#3ddc84` · 61, 220, 132 |
+| TDP | The Denver Post | `#00000000` · transparent |
+| TDPS | Denver Post Sports | `#ff7345` · 255, 115, 69 |
+| TEBT | The East Bay Times | `#ffffff` · 255, 255, 255 |
+| TEPTG | Estes Park Trail Gazette | `#ffffff` · 255, 255, 255 |
+| TETS | Eureka Times Standard | `#ffffff` · 255, 255, 255 |
+| TFMT | Fort Morgan Times | `#ffffff` · 255, 255, 255 |
+| TGT | Greeley Tribune | `#ffffff` · 255, 255, 255 |
+| TIVDB | Inland Valley Daily Bulletin | `#004e87` · 0, 78, 135 |
+| TJA | Journal Advocate | `#000000` · 0, 0, 0 |
+| TLADN | Los Angeles Daily News | `#ffffff` · 255, 255, 255 |
+| TLBPT | Long Beach Press-Telegram | `#ff6a3c` · 255, 106, 60 |
+| TLR | Loveland Reporter Herald | `#e1d7c3` · 225, 215, 195 |
+| TLS | Lowell Sun News for Mobile | `#ffffff` · 255, 255, 255 |
+| TLTC | Longmont Times-Call for Mobile | `#ffffff` · 255, 255, 255 |
+| TMCH | Monterey County Herald | `#31689a` · 49, 104, 154 |
+| TMD | Macomb Daily | `#ffffff` · 255, 255, 255 |
+| TMI | Marin Independent Journal News | `#232326` · 35, 35, 38 |
+| TMJ | The Morning Journal | `#000000` · 0, 0, 0 |
+| TMN | The Mercury News | `#ffffff` · 255, 255, 255 |
+| TMS | The Morning Sun | `#ffffff` · 255, 255, 255 |
+| TNH | The News Herald | `#000000` · 0, 0, 0 |
+| TOD | Oneida Daily Dispatch | `#ffffff` · 255, 255, 255 |
+| TOP | The Oakland Press | `#0b151d` · 11, 21, 29 |
+| TPD | The Press Democrat | `#00000000` · transparent |
+| TPE | The Press-Enterprise | `#da4d24` · 218, 77, 36 |
+| TPM | The Pottstown Mercury | `#ffffff` · 255, 255, 255 |
+| TR | The Reporter for Mobile | `#ffffff` · 255, 255, 255 |
+| TRDF | Redlands Daily Facts | `#ff6a3c` · 255, 106, 60 |
+| TRE | Reading Eagle | `#3ddc84` · 61, 220, 132 |
+| TRH | Republican-Herald | `#ffffff` · 255, 255, 255 |
+| TROT | Royal Oak Tribune | `#ffffff` · 255, 255, 255 |
+| TRR | The Troy Record | `#ffffff` · 255, 255, 255 |
+| TSAR | Saratogian | `#f1ebeb` · 241, 235, 235 |
+| TSBS | The San Bernardino Sun | `#ff6a3c` · 255, 106, 60 |
+| TSCS | Santa Cruz Sentinel | `#ffffff` · 255, 255, 255 |
+| TSEB | Sentinel and Enterprise | `#ffffff` · 255, 255, 255 |
+| TSPPP | St. Paul Pioneer Press | `#1763a1` · 23, 99, 161 |
+| TSS | The Standard-Speaker | `#00000000` · transparent |
+| TSV | Silicon Valley | `#ffffff` · 255, 255, 255 |
+| TT | The Trentonian | `#357dad` · 53, 125, 173 |
+| TTH | The Times Herald | `#ffffff` · 255, 255, 255 |
+| TTT | Times-Tribune | `#00000000` · transparent |
+| TUDJ | Ukiah Daily Journal | `#ffffff` · 255, 255, 255 |
+| TVR | Vacaville Reporter | `#ffffff` · 255, 255, 255 |
+| TVTH | Vallejo Times Herald News | `#ffffff` · 255, 255, 255 |
+| TWDD | Woodland Daily Democrat | `#ffffff` · 255, 255, 255 |
+| TWDN | Whittier Daily News | `#ff6a3c` · 255, 106, 60 |
+| VP | Virginian Pilot | `#ffffff` · 255, 255, 255 |

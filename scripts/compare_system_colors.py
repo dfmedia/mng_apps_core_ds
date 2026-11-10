@@ -62,7 +62,8 @@ COVERED = {
                 'Toolbar_Tabs_Background': 'shell sectiontabbar', 'Toolbar_Tabs_Text': 'shell sectiontabtext',
                 'Toolbar_Tabs_Text_Selected': 'shell sectiontabselected', 'Toolbar_Tabs_Indicator': 'shell sectiontabindicator',
                 'bottom_nav_selected_text_color': 'shell tablabelactive', 'bottom_nav_deselected_text_color': 'shell tablabelinactive',
-                'Text_Disabled_Font': 'button disabled label'}}
+                'Text_Disabled_Font': 'button disabled label',
+                'ic_launcher_background': 'not a system color: market brand asset, app icon background (DEC-16, docs/BRAND-COLORS.md)'}}
 for x in CTRL['follow'] + CTRL['const']:
     COVERED[x['platform']].setdefault(x['key'], 'control: ' + x['what'])
 
@@ -195,7 +196,7 @@ for plat, title in (('ios', 'iOS'), ('android', 'Android')):
           f"Each market's system colors (the {len([c for c in D['colors'] if not c['covered_by']])} colors above that are not tokens yet). "
           'The majority palette is the value in the "Value" column for every color; each group below lists only where its markets differ. '
           'Markets in the same group have identical system palettes (brand-following colors compared as the role, so they still take each market\'s brand color). '
-          f"{len(D['palettes'])} palettes for 77 markets." + (' Android `ic_launcher_background` (the app-icon backdrop, 23 values) is left out of the grouping; its value per market is in the color table above.' if plat == 'android' else ''), '']
+          f"{len(D['palettes'])} palettes for 77 markets." + (' Android `ic_launcher_background` (app icon background) is a market brand asset, not a system color (DEC-16): listed per market in docs/BRAND-COLORS.md.' if plat == 'android' else ''), '']
     for g in D['palettes']:
         tpl = D['templates'] or {}
         ms = ', '.join(f'{c} ({nm[c]}' + (', legacy template' if tpl.get(c) == 'legacy' else '') + ')' for c in g['markets'])

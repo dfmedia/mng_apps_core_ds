@@ -48154,7 +48154,7 @@
     {
      "key": "ic_launcher_background",
      "protocol": null,
-     "covered_by": null,
+     "covered_by": "not a system color: market brand asset, app icon background (DEC-16, docs/BRAND-COLORS.md)",
      "kind": "per-market",
      "majority": "#ffffff",
      "majority_markets": 35,
@@ -48435,7 +48435,7 @@
       "TWDN": "#ff6a3c",
       "VP": "#ffffff"
      },
-     "bucket": "Android only (until pairing confirmed)"
+     "bucket": null
     },
     {
      "key": "lat_action_bar_background",
@@ -57264,7 +57264,7 @@
    ],
    "summary": {
     "colors": 136,
-    "covered": 21,
+    "covered": 22,
     "fixed": 69,
     "majority": 26,
     "follows": 19,

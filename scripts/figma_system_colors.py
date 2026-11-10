@@ -23,7 +23,7 @@ def colors(plat):
             n = c['follows_markets'] if kind == 'follows' else c['majority_markets']
             rows.append([{'t': c['key'], 'b': True}, val, str(n), ex or '—', chip(c['bucket'])])
     cov = sorted([c for c in cs if c['covered_by']], key=lambda c: c['key'])
-    rows.append({'group': f'Already tokens: brand roles, app shell, controls, buttons ({len(cov)})'})
+    rows.append({'group': f'Already tokens or not system colors: brand roles, app shell, controls, buttons, brand assets ({len(cov)})'})
     for c in cov: rows.append([{'t': c['key'], 'b': True}, {'t': '= ' + c['follows'], 'sw': None} if c['kind'] == 'follows' else sw(c['majority']), str(c['follows_markets'] if c['kind'] == 'follows' else c['majority_markets']), '—', 'token: ' + c['covered_by']])
     return rows
 
@@ -41,7 +41,7 @@ SEC = {
  1: dict(name='01 · Summary', title='System colors · iOS vs Android (step 1, review)',
          intro='Every themed color both apps ship, in all 77 markets, from data/system-color-comparison.json (scripts/compare_system_colors.py; TroncKit @ e30ad2585, android-tribpub @ 1cfb069a6). Nothing here is a token yet. Step 2 after review: tokens for every market (fixed colors in one System collection, the rest per market, markets sharing a palette noted together). Full detail with hex and RGB: docs/SYSTEM-COLORS.md.',
          columns=[{'name': '', 'w': 560}, {'name': 'iOS', 'w': 200}, {'name': 'Android', 'w': 200}],
-         rows=[[lab, str(S[0].get(k, 0)), str(S[1].get(k, 0))] for k, lab in [('colors', 'Themed colors in the export'), ('covered', 'Already tokens (brand, app shell, controls, buttons)'), ('fixed', 'Fixed: same in all 77 markets'), ('follows', 'Follows a brand role (alias)'), ('majority', 'Majority value + exceptions'), ('per-market', 'Per market'), ('palettes', 'Distinct market palettes')]]
+         rows=[[lab, str(S[0].get(k, 0)), str(S[1].get(k, 0))] for k, lab in [('colors', 'Themed colors in the export'), ('covered', 'Already tokens, or brand assets (not system colors)'), ('fixed', 'Fixed: same in all 77 markets'), ('follows', 'Follows a brand role (alias)'), ('majority', 'Majority value + exceptions'), ('per-market', 'Per market'), ('palettes', 'Distinct market palettes')]]
               + [['Proposed iOS ↔ Android pairs (not confirmed, MISSING-ASSETS 3.4)', str(len(D['pairs'])), str(len(D['pairs']))]]),
  2: dict(name='02 · iOS ↔ Android pairs', title='iOS ↔ Android pairs (proposed)',
          intro='Matched by name and screen (data/system-color-pairs.json), then compared market by market (same < 0.012 ΔE, close < 0.05). Pairs whose values never match are flagged: either the pairing is wrong or the apps are designed differently. Everything not listed is platform-only until the Apps team confirms.',
@@ -54,7 +54,7 @@ SEC = {
          columns=[{'name': 'Color', 'w': 380}, {'name': 'Value', 'w': 280}, {'name': 'Markets', 'w': 90}, {'name': 'Exceptions', 'w': 560}, {'name': 'Bucket', 'w': 280}], rows=colors('android')),
  5: dict(name='05 · iOS market palettes', title='iOS · market palettes', intro=f"Every market is in exactly one palette. Markets in a palette ship identical system colors (brand-following colors compared as the role). The differences are listed in docs/SYSTEM-COLORS.md. {S[0]['palettes']} palettes for 77 markets.",
          columns=[{'name': 'Palette', 'w': 100}, {'name': 'Markets', 'w': 900}, {'name': 'Count', 'w': 80}, {'name': 'Differences from the majority palette', 'w': 600}], rows=palettes('ios')),
- 6: dict(name='06 · Android market palettes', title='Android · market palettes', intro=f"Every market is in exactly one palette. Markets in a palette ship identical system colors (brand-following colors compared as the role). The differences are listed in docs/SYSTEM-COLORS.md. {S[1]['palettes']} palettes for 77 markets. ic_launcher_background (app-icon backdrop) is left out of the grouping.",
+ 6: dict(name='06 · Android market palettes', title='Android · market palettes', intro=f"Every market is in exactly one palette. Markets in a palette ship identical system colors (brand-following colors compared as the role). The differences are listed in docs/SYSTEM-COLORS.md. {S[1]['palettes']} palettes for 77 markets. ic_launcher_background (app icon background) is a market brand asset, not a system color (DEC-16, docs/BRAND-COLORS.md).",
          columns=[{'name': 'Palette', 'w': 100}, {'name': 'Markets', 'w': 900}, {'name': 'Count', 'w': 80}, {'name': 'Differences from the majority palette', 'w': 600}], rows=palettes('android')),
 }
 n = int(sys.argv[1])

@@ -59,5 +59,21 @@ for m in sorted(R['markets'], key=lambda m: m['code']):
 L += ['', '## How each value was chosen', '', '| Code | ' + ' | '.join(ROLES) + ' |', '|' + '---|' * (len(ROLES) + 1)]
 for m in sorted(R['markets'], key=lambda m: m['code']):
     L.append(f"| {m['code']} | " + ' | '.join(EV.get(m['roles'][r]['evidence'], m['roles'][r]['evidence']) for r in ROLES) + ' |')
+# DEC-16: the Android launcher-icon backdrop is a market brand asset, documented here, not a system color or token
+_A = json.load(open('data/source/android-markets.json')); _i = _A['tokens'].index('ic_launcher_background')
+def _argb(v):
+    if not v: return None
+    v = v.lower()
+    return ('#' + v[3:] if v[1:3] == 'ff' else '#' + v[3:] + v[1:3]) if len(v) == 9 else v
+_LB = {m['code']: _argb(m['values'][_i]) for m in _A['markets']}
+L += ['', '## Android app icon background (market brand asset)', '',
+      'DEC-16 (Karl, 2026-11-10): `ic_launcher_background` is the background layer of the Android adaptive app icon (the home-screen icon), '
+      'behind the logo layer. It is documented here as part of each market\'s brand, **not** as a system color or token. '
+      'Source: android-tribpub @ 1cfb069a6. 8-digit values carry alpha (`#00000000` = transparent). iOS app icons are complete images, so iOS has no equivalent.', '',
+      '| Code | Market | App icon background (Android) |', '|---|---|---|']
+for m in sorted(R['markets'], key=lambda m: m['code']):
+    v = _LB.get(m['code'])
+    cell = 'not in the Android export' if v is None else (f'`{v}` · transparent' if v == '#00000000' else (f"`{v}` · " + ', '.join(str(int(v[i:i + 2], 16)) for i in (1, 3, 5)) + (f', alpha {round(int(v[7:], 16) / 255, 2)}' if len(v) == 9 else '')))
+    L.append(f"| {m['code']} | {m['name']} | {cell} |")
 open('docs/BRAND-COLORS.md', 'w').write('\n'.join(L) + '\n')
 print('wrote docs/BRAND-COLORS.md')
