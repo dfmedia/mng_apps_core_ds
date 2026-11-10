@@ -15,11 +15,11 @@ COLOR_ROLES = [
  ("color/tabinactive", "core", "tabBarUnselectedTintColor", "NavigationBar_Icon_InactiveTintColor", ""),
  ("color/action", "core", "paywallPrimaryActionColor", "Paywall_PurchaseButton_Background", ""),
  ("color/alert", "core", "breakingNewsBannerBackgroundColor", "br_news_red", "One value proposed (PLAT-03)"),
- ("color/buy", "core", "paywallViewPurchaseButtonColor", "Paywall_BuyButton_Background", "Alias of action proposed (PLAT-04)"),
- ("color/continue", "core", "—", "btn_continue", "Alias of action proposed (PLAT-04)"),
+ ("color/buy", "core", "paywallViewPurchaseButtonColor", "Paywall_BuyButton_Background", "Alias of action (PLAT-04, settled by DEC-14)"),
+ ("color/continue", "core", "—", "btn_continue", "Alias of action (PLAT-04, settled by DEC-14)"),
  ("color/header", "ios", "cell-tertiary-headerBg", "—", "Defaults to navbar (PLAT-05)"),
  ("color/statusbar", "android", "—", "MainStyle_Primary_Dark", "Defaults to navbar (PLAT-05)"),
- ("color/accent", "android", "alertTopicCellSwitchTint", "MainStyle_Accent", "Switch color open (PLAT-10)"),
+ ("color/accent", "android", "alertTopicCellSwitchTint", "MainStyle_Accent", "Follows Core action in 52 of 77 markets; exceptions documented (PLAT-10, settled by DEC-14)"),
 ]
 slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 reg = []

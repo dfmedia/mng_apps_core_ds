@@ -44,13 +44,13 @@ Most iOS-only items are **features** Android doesn't have, not icon disagreement
 
 | ID | Decision | Recommendation | Status |
 |----|----------|----------------|--------|
-| PLAT-01 | Adopt the four buckets above as the ownership rule | Yes | PROPOSED |
+| PLAT-01 | Adopt the ownership buckets as the rule | Yes. Note: this page lists four (Core, Core + platform variant, iOS only, Android only); CLAUDE.md uses five (adds Core alias, and calls the variant "Core, per-platform value"). Every decision since DEC-01 already follows the CLAUDE.md version | PROPOSED (waiting on Karl, 2026-11-10) |
 | PLAT-02 | Near-identical hexes: which value is official | Migration sheet wins when it matches an app; otherwise Android, because iOS rounds each channel to 2 decimals (explains 32 of 34 sheet-checked pairs). See DISCREPANCIES DSC-01 | APPROVED 2026-10-21 → DEC-01 in docs/DECISIONS.md |
 | PLAT-03 | One Core `alert` color for both apps and all markets | #cf000e: passes 4.5:1 with white (5.74:1); iOS #ff0000 fails (4.0:1). Covers CLR-01 | APPROVED 2026-10-21 → DEC-05 |
-| PLAT-04 | Fold `buy` and `continue` into `action` | Yes, as aliases (removes 2 roles × 77 markets) | PROPOSED |
+| PLAT-04 | Fold `buy` and `continue` into `action` | Yes, as aliases (removes 2 roles × 77 markets) | SETTLED 2026-11-10 by what's built (Karl): `buy` and `continue` colors are aliases of `action` in tokens, Swift, Kotlin and the Figma Brand theme (DEC-04, DEC-06); Android ships them = action in 74 and 70 of 77 markets, exceptions documented, not built (DEC-14). The Continue **button** itself stays as shipped per platform (DEC-14, IMPROVEMENTS BTN-03) |
 | PLAT-05 | `statusbar` (Android) and `header` (iOS) default to `navbar` | Platform files only store the exceptions (7 and 11 markets) | APPROVED 2026-11-05 → DEC-15 (aliases of navbar; 8 iOS + 7 Android exceptions documented with suggested overrides, not built) |
 | PLAT-06 | 10 markets where iOS shows template blue #004e87 and Android shows the market's own color (TBAN, TBH, TCE, TDB, TDF, TLBPT, TMI, TRDF, TSPPP, TT) | Ask Apps team which is intended. Likely Android | RESOLVED 2026-10-26: iOS value (DEC-03, DEC-08) |
 | PLAT-07 | Big brand differences: TLR (iOS rust vs Android blue), TEPTG (navy vs green), TSV (black vs blue), TUDJ, SGVT/PSN/TPE/TSBS/TWDN (orange action on iOS) | Ask brand owners for the correct color per market | RESOLVED 2026-10-26: migration sheet where it covers the market, otherwise iOS (DEC-01, DEC-03, DEC-08) |
-| PLAT-08 | Text size icons: one Core "text size" glyph; iOS keeps smaller/larger as a platform variant | Yes | PROPOSED |
-| PLAT-09 | Drop the Android special-section save star; use Core Saved | Yes | PROPOSED |
-| PLAT-10 | Android `accent`: decide the switch-on color (today the Material default in Settings, accent on alert topics) | Map to `action` or `tabactive` and retire gold #daa520 | PROPOSED |
+| PLAT-08 | Text size icons: one Core "text size" glyph; iOS keeps smaller/larger as a platform variant | Yes | PROPOSED (waiting on Karl, 2026-11-10; DSC-31) |
+| PLAT-09 | Drop the Android special-section save star; use Core Saved | Yes | PROPOSED (waiting on Karl, 2026-11-10; DSC-30) |
+| PLAT-10 | Android `accent`: decide the switch-on color (today the Material default in Settings, accent on alert topics) | Map to `action` or `tabactive` and retire gold #daa520 | SETTLED 2026-11-10 by what's built (Karl): `accent` follows Core `action`, the value 52 of 77 Android markets ship (DEC-14). The 25 exceptions, including template gold #daa520, are documented in docs/CONTROL-EXCEPTIONS.md, not built; the apps still ship them until the Apps team changes them |

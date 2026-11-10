@@ -1,6 +1,6 @@
 """Emit the Figma build for the Core page "Color · System colors" from data/system-color-comparison.json.
 Usage: python3 scripts/figma_system_colors.py <n>   ->  prints JS (PAGE + T + scripts/figma/build_table_section.js)
-       to run with figma_execute in the Core file. n = 1..6 (one section per call; sections stack in order).
+       to run with figma_execute in the Core file. n = 1..8 (one section per call; sections stack in order).
 """
 import json, sys
 D = json.load(open('data/system-color-comparison.json')); P = D['platforms']
@@ -36,6 +36,26 @@ def palettes(plat):
                      'majority palette' if not d else f"{len(d)}: " + ', '.join(list(d)[:5]) + (' …' if len(d) > 5 else '')])
     return rows
 
+BRAND = json.load(open('tokens/core/brand.tokens.json'))['color']['brand']
+def palette_values(plat):
+    """07/08: every exception palette's actual values next to the majority value (DEC-16; data/system-color-comparison.json)."""
+    nm = P[plat]['markets']; tpl = P[plat]['templates'] or {}; mp = P[plat]['majority_palette']
+    rows = []
+    for g in P[plat]['palettes'][1:]:
+        d = g['differences_from_majority']; ms = g['markets']
+        names = ', '.join(f"{c} {nm.get(c, '')}{' (legacy)' if tpl.get(c) == 'legacy' else ''}".strip() for c in ms)
+        rows.append({'group': f"{g['id']} · {len(ms)} market{'s' if len(ms) > 1 else ''}: {names} · {len(d)} color{'s differ' if len(d) != 1 else ' differs'}"})
+        for key in sorted(d):
+            maj = mp.get(key)
+            if isinstance(maj, str) and maj.startswith('='):
+                role = maj[1:]; tok = BRAND.get(ms[0].lower(), {}).get(role) if len(ms) == 1 else None
+                majc = ({'sw': tok['$value'], 't': f"= {role} → {sw(tok['$value'])['t']} ({ms[0]} brand token)"} if tok and str(tok.get('$value', '')).startswith('#')
+                        else {'sw': None, 't': f"= {role} (the market's brand color)"})
+            else:
+                majc = sw(maj)
+            rows.append([{'t': key, 'b': True}, majc, sw(d[key])])
+    return rows
+
 S = P['ios']['summary'], P['android']['summary']
 SEC = {
  1: dict(name='01 · Summary', title='System colors · iOS vs Android',
@@ -56,6 +76,25 @@ SEC = {
          columns=[{'name': 'Palette', 'w': 100}, {'name': 'Markets', 'w': 900}, {'name': 'Count', 'w': 80}, {'name': 'Differences from the majority palette', 'w': 600}], rows=palettes('ios')),
  6: dict(name='06 · Android market palettes', title='Android · market palettes', intro=f"Every market is in exactly one palette. Markets in a palette ship identical system colors (brand-following colors compared as the role). The differences are listed in docs/SYSTEM-COLORS.md. {S[1]['palettes']} palettes for 77 markets. ic_launcher_background (app icon background) is a market brand asset, not a system color (DEC-16, docs/BRAND-COLORS.md).",
          columns=[{'name': 'Palette', 'w': 100}, {'name': 'Markets', 'w': 900}, {'name': 'Count', 'w': 80}, {'name': 'Differences from the majority palette', 'w': 600}], rows=palettes('android')),
+ 7: dict(name='07 · iOS palette values', title='iOS · palette values (I02–I19)',
+         intro=f"Each exception palette's actual system colors, next to the majority value (palette I01, {len(P['ios']['palettes'][0]['markets'])} markets). Only the colors that differ are listed. Tokens hold the majority value; these are documented, not built (DEC-16). '= role' = the color follows a brand role; for a one-market palette the market's Core brand token is shown. Source: data/system-color-comparison.json (TroncKit @ e30ad2585) · docs/SYSTEM-COLORS.md.",
+         columns=[{'name': 'Color', 'w': 380}, {'name': 'Majority value', 'w': 420}, {'name': 'This palette ships', 'w': 300}], rows=palette_values('ios')),
+ 8: dict(name='08 · Android palette values', title='Android · palette values (A02–A29)',
+         intro=f"Each exception palette's actual system colors, next to the majority value (palette A01, {len(P['android']['palettes'][0]['markets'])} markets). Only the colors that differ are listed. Tokens hold the majority value; these are documented, not built (DEC-16). '= role' = the color follows a brand role; for a one-market palette the market's Core brand token is shown (accent: Android role, not resolved). Same hex on both sides (TPD) = the market ships a fixed color where the majority follows the role; today they match. 8-digit values carry alpha. Source: data/system-color-comparison.json (android-tribpub @ 1cfb069a6) · docs/SYSTEM-COLORS.md.",
+         columns=[{'name': 'Color', 'w': 380}, {'name': 'Majority value', 'w': 420}, {'name': 'This palette ships', 'w': 300}], rows=palette_values('android')),
 }
 n = int(sys.argv[1])
-print(f"const PAGE = {json.dumps(PAGE)}; const T = {json.dumps(SEC[n], ensure_ascii=False)};\n" + open('scripts/figma/build_table_section.js').read())
+if n in (7, 8):
+    # long tables: send a compact form (key, majority, palette value) and expand hex -> "hex · R, G, B" in Figma (EXPAND below)
+    def cc(c):
+        if c.get('sw') is None: return c['t']                                   # '= role (...)' text
+        return c['sw'] if '→' not in c['t'] else c['sw'] + '|' + c['t'].split(' → ')[0][2:] + '|' + c['t'].split('(')[-1].split(' ')[0]
+    C = dict(SEC[n], rows=[r['group'] if isinstance(r, dict) else [r[0]['t'], cc(r[1]), r[2]['sw']] for r in SEC[n]['rows']])
+    EXPAND = """const rgbT = (h) => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)).join(', ') + (h.length === 9 ? `, alpha ${Math.round(parseInt(h.slice(7), 16) / 255 * 100) / 100}` : '');
+const swT = (h) => ({ sw: h, t: `${h} · ${rgbT(h)}` });
+const majT = (m) => !m.startsWith('#') ? { sw: null, t: m } : m.includes('|') ? (([h, role, mk]) => ({ sw: h, t: `= ${role} → ${h} · ${rgbT(h)} (${mk} brand token)` }))(m.split('|')) : swT(m);
+const T = { ...C, rows: C.rows.map(r => typeof r === 'string' ? { group: r } : [{ t: r[0], b: true }, majT(r[1]), swT(r[2])]) };
+"""
+    print(f"const PAGE = {json.dumps(PAGE)}; const C = {json.dumps(C, ensure_ascii=False, separators=(',', ':'))};\n" + EXPAND + open('scripts/figma/build_table_section.js').read())
+else:
+    print(f"const PAGE = {json.dumps(PAGE)}; const T = {json.dumps(SEC[n], ensure_ascii=False)};\n" + open('scripts/figma/build_table_section.js').read())

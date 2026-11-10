@@ -162,7 +162,7 @@
    "android": {
     "source": "Paywall_BuyButton_Background"
    },
-   "note": "Alias of action proposed (PLAT-04)",
+   "note": "Alias of action (PLAT-04, settled by DEC-14)",
    "core": {
     "figma": null,
     "spec": null
@@ -180,7 +180,7 @@
    "android": {
     "source": "btn_continue"
    },
-   "note": "Alias of action proposed (PLAT-04)",
+   "note": "Alias of action (PLAT-04, settled by DEC-14)",
    "core": {
     "figma": null,
     "spec": null
@@ -234,7 +234,7 @@
    "android": {
     "source": "MainStyle_Accent"
    },
-   "note": "Switch color open (PLAT-10)",
+   "note": "Follows Core action in 52 of 77 markets; exceptions documented (PLAT-10, settled by DEC-14)",
    "core": {
     "figma": null,
     "spec": null
