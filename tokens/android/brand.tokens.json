@@ -1155,8 +1155,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1183,8 +1184,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1211,7 +1213,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1238,8 +1242,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1266,7 +1271,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1293,7 +1300,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1320,8 +1329,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1348,7 +1358,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1375,8 +1387,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1403,8 +1416,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1431,8 +1445,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1459,8 +1474,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1487,8 +1503,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1515,7 +1532,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1542,8 +1561,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1570,8 +1590,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1598,8 +1619,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1626,8 +1648,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1654,8 +1677,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1682,8 +1706,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1710,8 +1735,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1738,8 +1764,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1766,8 +1793,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1794,8 +1822,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1822,8 +1851,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1850,8 +1880,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1878,8 +1909,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1906,8 +1938,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1934,8 +1967,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1962,8 +1996,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -1990,8 +2025,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2018,8 +2054,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2046,8 +2083,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2074,8 +2112,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2102,8 +2141,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2130,8 +2170,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2158,8 +2199,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2186,8 +2228,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2214,8 +2257,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2242,8 +2286,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2270,8 +2315,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2298,8 +2344,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2326,8 +2373,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2354,8 +2402,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2382,8 +2431,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2410,8 +2460,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2438,8 +2489,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2466,8 +2518,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2494,8 +2547,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2522,8 +2576,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2550,8 +2605,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2578,8 +2634,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2606,8 +2663,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2634,8 +2692,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2662,8 +2721,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2690,8 +2750,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2718,8 +2779,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2746,8 +2808,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2774,8 +2837,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2802,8 +2866,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2830,8 +2895,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2858,8 +2924,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2878,7 +2945,7 @@
      }
     },
     "icons15": {
-     "$value": "dark",
+     "$value": "light",
      "$type": "string",
      "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
      "$extensions": {
@@ -2886,7 +2953,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2913,8 +2982,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2941,8 +3011,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2969,8 +3040,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -2997,8 +3069,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3025,8 +3098,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3053,8 +3127,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3081,8 +3156,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3109,8 +3185,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3137,8 +3214,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3165,8 +3243,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3193,8 +3272,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3221,8 +3301,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3249,8 +3330,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3277,8 +3359,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": null,
-       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }
@@ -3305,7 +3388,9 @@
        "owner": "android",
        "android": "15+",
        "statusbar": "navbar",
-       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+       "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+       "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
       }
      }
     }

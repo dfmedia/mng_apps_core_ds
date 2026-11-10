@@ -93,6 +93,11 @@ FOLLOW_ROLES = [
 ]
 ROLE_EXC = []
 OVR = json.load(open('data/shell-overrides.json'))     # accepted by Karl 2026-11-05: these are built as override tokens
+def android15_dark():
+    """DEC-15: markets with dark status-bar icons on Android 15+ (rule in data/shell-overrides.json, EdgeToEdgeUtil.java:30)."""
+    A = json.load(open('data/source/android-markets.json')); i = A['tokens'].index('NavigationBar_Background')
+    return {m['code'].lower() for m in A['markets'] if m['values'][i].upper() == '#FFFFFF'}
+DARK15 = android15_dark()
 for plat, role, src, g_role, g_bar, g_fg, fg_src, target, fg_what in FOLLOW_ROLES:
     srcd = IOS_SRC if plat == 'iOS' else AND_SRC
     for m in srcd['markets']:
@@ -108,9 +113,9 @@ for plat, role, src, g_role, g_bar, g_fg, fg_src, target, fg_what in FOLLOW_ROLE
                          'foreground': fg, 'foreground_source': fg_src, 'foreground_is': fg_what, 'target': target,
                          'contrast_majority': cr(fg, built), 'contrast_override': cr(fg, ov['value'])})
         if role == 'statusbar':   # DEC-15: Android 15+ version (Karl 2026-11-06; confirmed on device 2026-11-10)
-            dark = k in OVR['statusbar_icons']['android15']['dark']; ic = '#000000' if dark else '#ffffff'
+            dark = k in DARK15; ic = '#000000' if dark else '#ffffff'
             ROLE_EXC[-1]['android15'] = {'statusbar': built, 'statusbar_alias': 'navbar', 'icons': 'dark' if dark else 'light',
-                                         'icon_hex_for_contrast': ic, 'contrast': cr(ic, built), 'confirmed': dark,
+                                         'icon_hex_for_contrast': ic, 'contrast': cr(ic, built), 'confirmed': True,
                                          'note': 'Icon colors are drawn by the system; contrast shown for ' + ('black' if dark else 'white') + ' icons.'}
         if not accepted: EXC.append((plat, k, name, role, src, shipped, built))
 
@@ -135,7 +140,7 @@ L += ['', '## Header band (iOS) and status bar (Android): market overrides', '',
       'with the shipped color (`color.ios.<m>.header` / `color.android.<m>.statusbar`), built in tokens, Swift, Kotlin and Figma. '
       'Drawn majority vs override in Figma (iOS file: Components · App shell › 01 · Header band exceptions; Android file: › 01 · Status bar exceptions, '
       'with an Android 14 and below vs 15+ comparison). Android: the override is what Android 14 and below shows (white icons); on Android 15+ the status bar '
-      'is navbar with dark icons in these markets (Ameer M., confirmed on device 2026-11-10; tokens `statusbar.android.<m>.icons` / `icons15`).', '',
+      'is navbar, with dark icons only where the shipped bar is exactly #FFFFFF (EdgeToEdgeUtil.java:30; Ameer M., confirmed 2026-11-10; tokens `statusbar.android.<m>.icons` / `icons15`).', '',
       '| Platform | Market | Role | Majority (navbar) | On it | Override (shipped) | On it | Status | Target | Android 15+ |', '|---|---|---|---|---|---|---|---|---|---|']
 fx = lambda h: f'`{h}` · {", ".join(map(str, rgb(h)))}'
 a15 = lambda e: '—' if 'android15' not in e else f"navbar {fx(e['android15']['statusbar'])}, {e['android15']['icons']} icons: {e['android15']['contrast']}:1 {'✅' if e['android15']['contrast'] >= e['target'] else '❌'}"
@@ -146,8 +151,9 @@ for e in ROLE_EXC:
 L += ['', 'Foreground: iOS header text is `Style.json cell-tertiary-headertext` (#ffffff in all 77 markets). Android status-bar icons are '
       'light by default; the main theme never sets `windowLightStatusBar` (MISSING-ASSETS 5.6). '
       'Apps team (Ameer M., 2026-11-05 from code; confirmed on device 2026-11-10): on Android 14 and below the icons are white, so the dark overrides are needed; '
-      'on Android 15+ these markets show a white status bar with dark icons (= navbar). Both versions are built (DEC-15): `statusbar` + `icons` (14 and below), '
-      'navbar + `icons15` (15+). Every other market keeps navbar with light icons on Android 15+: inferred, not confirmed (MISSING-ASSETS 5.6). '
+      'on Android 15+ the status bar is navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30); every other color keeps white icons '
+      '(confirmed 2026-11-10, Android 16 emulator, Denver Post). So DP, MC, NYDN, OS, SS and VP get dark icons; TSAR (#F5F5F5) keeps white icons on a near-white bar (IMPROVEMENTS CLR-09). '
+      'Both versions are built (DEC-15): `statusbar` + `icons` (14 and below), navbar + `icons15` (15+). '
       'Dark and light icon colors are drawn by the system; the contrast above uses black and white.']
 open('docs/SHELL-EXCEPTIONS.md', 'w').write('\n'.join(L) + '\n')
 print(len(EXC), 'exceptions documented;', len(ROLE_EXC), 'header/statusbar exceptions,', sum(e['accepted'] for e in ROLE_EXC), 'accepted overrides')

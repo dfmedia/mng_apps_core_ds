@@ -31,19 +31,10 @@
    "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
   },
   "android15": {
-   "dark": [
-    "dp",
-    "mc",
-    "nydn",
-    "os",
-    "ss",
-    "tsar",
-    "vp"
-   ],
-   "dark_confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets",
-   "others": "light",
-   "others_confirmed": null,
-   "others_note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+   "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
+   "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
+   "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples.",
+   "applied_by": "scripts/build_tokens.py and scripts/build_shell_colors.py compute the dark list from data/source/android-markets.json with this rule (DP, MC, NYDN, OS, SS, VP at 1cfb069a6). TSAR (#F5F5F5) is not #FFFFFF, so it ships white icons on a near-white bar (IMPROVEMENTS CLR-09)."
   }
  }
 }
