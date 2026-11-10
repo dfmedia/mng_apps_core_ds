@@ -34,7 +34,17 @@
    "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
    "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
    "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples.",
-   "applied_by": "scripts/build_tokens.py and scripts/build_shell_colors.py compute the dark list from data/source/android-markets.json with this rule (DP, MC, NYDN, OS, SS, VP at 1cfb069a6). TSAR (#F5F5F5) is not #FFFFFF, so it ships white icons on a near-white bar (IMPROVEMENTS CLR-09)."
+   "applied_by": "scripts/build_tokens.py and scripts/build_shell_colors.py compute the dark list from data/source/android-markets.json with this rule (DP, MC, NYDN, OS, SS, VP at 1cfb069a6), then apply production_corrections (TSAR: #ffffff with dark icons, Karl 2026-11-10).",
+   "production_corrections": {
+    "$description": "Markets whose Android 15+ status bar differs from what the export and EdgeToEdgeUtil rule give, because the app was corrected after android-tribpub @ 1cfb069a6. Each entry wins over the rule.",
+    "tsar": {
+     "statusbar15": "#ffffff",
+     "icons15": "dark",
+     "decided": "Karl, 2026-11-10: Saratogian should show dark icons on a white status bar on Android 15+; assume this correction is in production.",
+     "was": "Export + rule: navbar #f5f5f5 with white icons (1.09:1), IMPROVEMENTS CLR-09",
+     "confirm": "Ameer M. to confirm what production shows (MISSING-ASSETS 5.6)"
+    }
+   }
   }
  }
 }

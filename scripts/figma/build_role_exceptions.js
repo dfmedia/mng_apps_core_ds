@@ -88,7 +88,7 @@ const others = page.children; const y0 = others.length ? Math.max(...others.map(
 const root = frame(SECTION, 'VERTICAL', 32, 64); root.fills = [solid('#ffffff')];
 const what = PLATFORM === 'iOS' ? 'section header band (`header`)' : 'status bar (`statusbar`)';
 const fgWhat = PLATFORM === 'iOS' ? 'White section title text (Style.json cell-tertiary-headertext, #ffffff in all 77 markets), target 4.5:1.'
-  : 'Status-bar icons: white on Android 14 and below (the main theme never sets windowLightStatusBar). On Android 15+ the status bar shows navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30): DP, MC, NYDN, OS, SS, VP. TSAR (#F5F5F5) keeps white icons on a near-white bar (IMPROVEMENTS CLR-09). Confirmed by the Apps team (Ameer M., 2026-11-10, MISSING-ASSETS 5.6). Icon colors are drawn by the system; contrast shown for white / black icons, target 3:1.';
+  : 'Status-bar icons: white on Android 14 and below (the main theme never sets windowLightStatusBar). On Android 15+ the status bar shows navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30): DP, MC, NYDN, OS, SS, VP. TSAR: the export gives white icons on its #F5F5F5 bar; Karl (2026-11-10) set Android 15+ to a white status bar with dark icons, assumed corrected in production (TSAR/statusbar15; Ameer to confirm, MISSING-ASSETS 5.6). Rule confirmed by the Apps team (Ameer M., 2026-11-10). Icon colors are drawn by the system; contrast shown for white / black icons, target 3:1.';
 root.appendChild(text(SECTION.replace('01 · ', '') + (PLATFORM === 'Android' ? ' · Android 14 and below vs 15+' : '') + ' · DEC-15', 32, 'Bold', '#1a1a1a', 44));
 const how = PLATFORM === 'iOS'
   ? 'Left: what the majority rule builds (Core navbar). Right: the accepted override, the color the app ships (<market>/header variable).'
@@ -109,11 +109,21 @@ for (const e of DATA) {
   const pass = (c) => c >= e.target;
   const ovChip = () => chip(e.accepted ? 'Override accepted' : 'Suggested override', '#fff4d6', '#6b4500');
   const a15 = e.android15;
+  // DEC-15 production correction (Karl, 2026-11-10): the Android 15+ status bar is not navbar -> its own variable <M>/statusbar15,
+  // created next to <M>/statusbar in the same collection (additive) and bound on the 15+ side.
+  let v15 = navVar;
+  if (PLATFORM === 'Android' && a15 && a15.correction && roleVar) {
+    const coll = await figma.variables.getVariableCollectionByIdAsync(roleVar.variableCollectionId);
+    v15 = byName[`${M}/statusbar15`] || figma.variables.createVariable(`${M}/statusbar15`, coll, 'COLOR');
+    v15.setValueForMode(coll.modes[0].modeId, { ...hex(a15.statusbar), a: 1 }); v15.scopes = ['FRAME_FILL', 'SHAPE_FILL'];
+    v15.description = `Status bar on Android 15+ (Android only): ${a15.statusbar}, production correction (DEC-15, ${a15.correction.decided}) ${a15.correction.confirm}. Token color.android.${e.code}.statusbar15.`;
+    byName[`${M}/statusbar15`] = v15;
+  }
   const cols = PLATFORM === 'Android' && a15 ? [
     { title: 'Android 14 and below', chip: () => chip('Android 14 and below · override', '#fff4d6', '#6b4500'),
       sub: `statusbar = ${e.override} · ${rgbTxt(e.override)} (shipped, accepted) · white icons`, hexv: e.override, v: e.accepted ? roleVar : null, c: e.contrast_override, fg: e.foreground, fgName: 'white icons' },
-    { title: 'Android 15+', chip: () => chip(`Android 15+ · navbar, ${a15.icons} icons`, '#efe7fb', '#43217a'),
-      sub: `statusbar = navbar ${a15.statusbar} · ${rgbTxt(a15.statusbar)} · ${a15.icons} icons (system)`, hexv: a15.statusbar, v: navVar, c: a15.contrast, fg: a15.icon_hex_for_contrast, fgName: `${a15.icons} icons` },
+    { title: 'Android 15+', chip: () => chip(`Android 15+ · ${a15.correction ? 'white bar (correction)' : 'navbar'}, ${a15.icons} icons`, '#efe7fb', '#43217a'),
+      sub: `statusbar = ${a15.correction ? 'statusbar15' : 'navbar'} ${a15.statusbar} · ${rgbTxt(a15.statusbar)} · ${a15.icons} icons (system)${a15.correction ? ' · production correction (Karl, 2026-11-10)' : ''}`, hexv: a15.statusbar, v: v15, c: a15.contrast, fg: a15.icon_hex_for_contrast, fgName: `${a15.icons} icons` },
   ] : [
     { title: 'Majority · built', chip: () => pass(e.contrast_built) ? chip('Majority · passes', '#e6f4ea', '#14532d') : chip('Majority · fails', '#fde8e8', '#8a1c1c'),
       sub: `majority: navbar ${e.built} · ${rgbTxt(e.built)}`, hexv: e.built, v: navVar, c: e.contrast_built, fg: e.foreground, fgName: e.foreground },

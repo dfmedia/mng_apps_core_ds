@@ -2416,13 +2416,20 @@
    "contrast_majority": 1.09,
    "contrast_override": 21.0,
    "android15": {
-    "statusbar": "#f5f5f5",
-    "statusbar_alias": "navbar",
-    "icons": "light",
-    "icon_hex_for_contrast": "#ffffff",
-    "contrast": 1.09,
-    "confirmed": true,
-    "note": "Icon colors are drawn by the system; contrast shown for white icons."
+    "statusbar": "#ffffff",
+    "statusbar_alias": null,
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": false,
+    "correction": {
+     "statusbar15": "#ffffff",
+     "icons15": "dark",
+     "decided": "Karl, 2026-11-10: Saratogian should show dark icons on a white status bar on Android 15+; assume this correction is in production.",
+     "was": "Export + rule: navbar #f5f5f5 with white icons (1.09:1), IMPROVEMENTS CLR-09",
+     "confirm": "Ameer M. to confirm what production shows (MISSING-ASSETS 5.6)"
+    },
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
    }
   }
  ],

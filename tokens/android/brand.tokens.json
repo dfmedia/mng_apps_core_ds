@@ -912,6 +912,25 @@
        "shipped": "#000000"
       }
      }
+    },
+    "statusbar15": {
+     "$value": "#ffffff",
+     "$type": "color",
+     "$description": "Status bar on Android 15+ (Android only): production correction, not navbar (DEC-15, Karl 2026-11-10)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        255,
+        255,
+        255
+       ],
+       "owner": "android",
+       "override": true,
+       "android": "15+",
+       "decided": "Karl, 2026-11-10: Saratogian should show dark icons on a white status bar on Android 15+; assume this correction is in production.",
+       "confirm": "Ameer M. to confirm what production shows (MISSING-ASSETS 5.6)"
+      }
+     }
     }
    },
    "tsbs": {
@@ -2945,7 +2964,7 @@
      }
     },
     "icons15": {
-     "$value": "light",
+     "$value": "dark",
      "$type": "string",
      "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
      "$extensions": {
@@ -2955,7 +2974,14 @@
        "statusbar": "navbar",
        "rule": "Dark icons when the market's shipped Android NavigationBar_Background is exactly #FFFFFF; every other color keeps the default white (light) icons. Not a per-market setting.",
        "rule_source": "android-tribpub EdgeToEdgeUtil.java:30 (Ameer M., Apps team, 2026-11-10). NavigationBar_Background is the color behind the status bar on Android 15+; it equals Toolbar_Background (navbar) in all 77 markets.",
-       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples."
+       "confirmed": "Ameer M. (Apps team), 2026-11-10: white-top-bar markets show dark icons (on device); dark and colored markets keep white icons (Android 16 emulator, Denver Post: white icons on a black bar). Chicago Tribune #004E87 and Denver Post #000000 named as examples.",
+       "correction": {
+        "statusbar15": "#ffffff",
+        "icons15": "dark",
+        "decided": "Karl, 2026-11-10: Saratogian should show dark icons on a white status bar on Android 15+; assume this correction is in production.",
+        "was": "Export + rule: navbar #f5f5f5 with white icons (1.09:1), IMPROVEMENTS CLR-09",
+        "confirm": "Ameer M. to confirm what production shows (MISSING-ASSETS 5.6)"
+       }
       }
      }
     }
