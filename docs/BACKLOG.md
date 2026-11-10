@@ -68,7 +68,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 | buy | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
 | continue | Core | ✅ done | ✅ done | 📝 written, not compiled | Alias of action |
 | header | iOS | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell |
-| statusbar | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Next: Android 15+ version (navbar + dark icons); confirmed on device 2026-11-10 (MISSING-ASSETS 5.6) |
+| statusbar | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6) |
 | accent | Android | ✅ done | ✅ done | 📝 written, not compiled | DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority |
 
 ## Components
@@ -82,7 +82,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 | Bottom tab bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6) |
 | Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked |
 | Section header band | iOS | 🟡 partial | ✅ done | 📝 written, not compiled | Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables |
-| Status bar color | Android | 🟡 partial | ✅ done | 📝 written, not compiled | Color only (DEC-15). Next: Android 14 vs 15+ versions (icon style token + 15+ mock-up); device check done 2026-11-10 |
+| Status bar color | Android | 🟡 partial | ✅ done | 📝 written, not compiled | Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6 |
 
 ### Buttons
 

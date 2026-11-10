@@ -258,7 +258,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Next: Android 15+ version (navbar + dark icons); confirmed on device 2026-11-10 (MISSING-ASSETS 5.6)",
+   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6)",
    "overall": "built"
   },
   {
@@ -1142,7 +1142,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "Color only (DEC-15). Next: Android 14 vs 15+ versions (icon style token + 15+ mock-up); device check done 2026-11-10",
+   "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6",
    "overall": "in progress"
   },
   {

@@ -2191,11 +2191,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2219,11 +2228,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2247,11 +2265,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 12.63
+   "contrast_override": 12.63,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2275,11 +2302,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2300,11 +2336,20 @@
     "same_as": []
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2328,11 +2373,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#ffffff",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 21.0,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   },
   {
    "platform": "Android",
@@ -2356,11 +2410,20 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "assumed: Android default light status-bar icons (windowLightStatusBar is not in the export, MISSING-ASSETS 5.6)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.6)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.09,
-   "contrast_override": 21.0
+   "contrast_override": 21.0,
+   "android15": {
+    "statusbar": "#f5f5f5",
+    "statusbar_alias": "navbar",
+    "icons": "dark",
+    "icon_hex_for_contrast": "#000000",
+    "contrast": 19.26,
+    "confirmed": true,
+    "note": "Icon colors are drawn by the system; contrast shown for black icons."
+   }
   }
  ],
  "exceptions": [

@@ -1,12 +1,11 @@
 // Figma build: header band (iOS) / status bar (Android) exception samples, DEC-15.
 // Data: data/shell-colors.json `role_exceptions` (scripts/build_shell_colors.py). Run through the Desktop Bridge
-// (figma_execute) in the platform file, with PLATFORM and DATA prepended:
-//   const PLATFORM = 'Android'; const DATA = [...role_exceptions for that platform, mapped to
-//     {code, market, built: majority, navbar: majority, navtext, override: override.value, accepted, foreground, target,
-//      contrast_built: contrast_majority, contrast_override}];
+// (figma_execute) in the platform file, with PLATFORM and DATA prepended by scripts/figma_role_exceptions.py ios|android.
 // Re-running replaces only the section this script created (CLAUDE.md rule 4).
 // Each exception market gets two mock-ups side by side: the majority build (bound to Core navbar) and the override
 // (bound to the <market>/<role> variable, which holds the shipped color once Karl accepted it; DEC-15, 2026-11-05).
+// Android (2026-11-10, confirmed on device): the cards compare Android 14 and below (override, white icons) with
+// Android 15+ (navbar, icon style from e.android15; bound to Core navbar).
 // Sizes are illustrative: production app shell sizes wait on the Apps team (MISSING-ASSETS 5.6).
 
 const ROLE = PLATFORM === 'iOS' ? 'header' : 'statusbar';
@@ -41,10 +40,10 @@ function frame(name, dir = 'VERTICAL', gap = 0, pad = 0) {
 function chip(label, bg, fg) { const c = frame('chip', 'HORIZONTAL', 0, 0); c.paddingLeft = c.paddingRight = 8; c.paddingTop = c.paddingBottom = 3; c.cornerRadius = 4; c.fills = [solid(bg)]; c.appendChild(text(label, 11, 'SemiBold', fg)); return c; }
 function bar(name, w, h, paint) { const f = figma.createFrame(); f.name = name; f.resize(w, h); f.fills = [paint]; f.clipsContent = true; return f; }
 
-function mock(e, roleHex, roleVar, navHex, navVar, navtextHex, navtextVar) {
+function mock(e, roleHex, roleVar, navHex, navVar, navtextHex, navtextVar, fgOverride) {
   const W = 260, m = frame('Mock-up', 'VERTICAL', 0, 0); m.cornerRadius = 12; m.clipsContent = true;
   m.strokes = [solid('#d0d0d0')]; m.strokeWeight = 1;
-  const fg = e.foreground;
+  const fg = fgOverride || e.foreground;
   if (PLATFORM === 'Android') {
     const sb = bar('Status bar · statusbar', W, 24, paintFor(roleHex, roleVar));
     const time = text('9:41', 11, 'SemiBold', fg); time.x = 12; time.y = 4; sb.appendChild(time);
@@ -76,11 +75,13 @@ const others = page.children; const y0 = others.length ? Math.max(...others.map(
 const root = frame(SECTION, 'VERTICAL', 32, 64); root.fills = [solid('#ffffff')];
 const what = PLATFORM === 'iOS' ? 'section header band (`header`)' : 'status bar (`statusbar`)';
 const fgWhat = PLATFORM === 'iOS' ? 'White section title text (Style.json cell-tertiary-headertext, #ffffff in all 77 markets), target 4.5:1.'
-  : 'Status-bar icons assumed light (#ffffff, Android default; windowLightStatusBar is not in the export, MISSING-ASSETS 5.6), target 3:1.';
-root.appendChild(text(SECTION.replace('01 · ', '') + ' · DEC-15', 32, 'Bold', '#1a1a1a', 44));
-const intro = text(`The ${what} follows the top bar (alias of Core navbar) in every market. These ${DATA.length} markets ship something else today. ` +
-  `Left: what the majority rule builds (live variables). Right: the suggested override, the color the app ships (raw value, no override token yet). ` +
-  `${fgWhat} Sizes are illustrative (MISSING-ASSETS 5.6). Source: data/shell-colors.json · docs/SHELL-EXCEPTIONS.md.`, 14, 'Regular', '#333333', 22);
+  : 'Status-bar icons: white on Android 14 and below (the main theme never sets windowLightStatusBar); on Android 15+ these markets show navbar with dark icons. Both confirmed on device by the Apps team (Ameer M., 2026-11-10, MISSING-ASSETS 5.6). Icon colors are drawn by the system; contrast shown for white / black icons, target 3:1.';
+root.appendChild(text(SECTION.replace('01 · ', '') + (PLATFORM === 'Android' ? ' · Android 14 and below vs 15+' : '') + ' · DEC-15', 32, 'Bold', '#1a1a1a', 44));
+const how = PLATFORM === 'iOS'
+  ? 'Left: what the majority rule builds (Core navbar). Right: the accepted override, the color the app ships (<market>/header variable).'
+  : 'Left: Android 14 and below, the accepted override (<market>/statusbar variable) with white icons. Right: Android 15+, the status bar shows the top bar (Core navbar) with dark icons. Tokens: statusbar.android.<m>.icons / icons15; Kotlin statusbarFor(sdkInt), XML values-v35.';
+const intro = text(`The ${what} follows the top bar (alias of Core navbar) in every market. These ${DATA.length} markets ship something else on ${PLATFORM === 'Android' ? 'Android 14 and below' : 'iOS'}. ` +
+  `${how} ${fgWhat} Sizes are illustrative (MISSING-ASSETS 5.6). Source: data/shell-colors.json · docs/SHELL-EXCEPTIONS.md.`, 14, 'Regular', '#333333', 22);
 intro.resize(1860, intro.height); intro.textAutoResize = 'HEIGHT'; root.appendChild(intro);
 
 const grid = frame('Exceptions', 'HORIZONTAL', 32, 0); grid.layoutWrap = 'WRAP'; grid.counterAxisSpacing = 32;
@@ -93,19 +94,28 @@ for (const e of DATA) {
   card.appendChild(text(`${e.market} (${M})`, 16, 'Bold'));
   const row = frame('Compare', 'HORIZONTAL', 24, 0);
   const pass = (c) => c >= e.target;
-  const cols = [
-    { title: 'Majority · built', sub: `majority: navbar ${e.built} · ${rgbTxt(e.built)}`, hexv: e.built, v: navVar, c: e.contrast_built },
-    { title: 'Suggested override', sub: `${ROLE} = ${e.override} · ${rgbTxt(e.override)} (shipped${e.accepted ? ', accepted' : ''})`, hexv: e.override, v: e.accepted ? roleVar : null, c: e.contrast_override },
+  const ovChip = () => chip(e.accepted ? 'Override accepted' : 'Suggested override', '#fff4d6', '#6b4500');
+  const a15 = e.android15;
+  const cols = PLATFORM === 'Android' && a15 ? [
+    { title: 'Android 14 and below', chip: () => chip('Android 14 and below · override', '#fff4d6', '#6b4500'),
+      sub: `statusbar = ${e.override} · ${rgbTxt(e.override)} (shipped, accepted) · white icons`, hexv: e.override, v: e.accepted ? roleVar : null, c: e.contrast_override, fg: e.foreground, fgName: 'white icons' },
+    { title: 'Android 15+', chip: () => chip(`Android 15+ · navbar, ${a15.icons} icons`, '#efe7fb', '#43217a'),
+      sub: `statusbar = navbar ${a15.statusbar} · ${rgbTxt(a15.statusbar)} · ${a15.icons} icons (system)`, hexv: a15.statusbar, v: navVar, c: a15.contrast, fg: a15.icon_hex_for_contrast, fgName: `${a15.icons} icons` },
+  ] : [
+    { title: 'Majority · built', chip: () => pass(e.contrast_built) ? chip('Majority · passes', '#e6f4ea', '#14532d') : chip('Majority · fails', '#fde8e8', '#8a1c1c'),
+      sub: `majority: navbar ${e.built} · ${rgbTxt(e.built)}`, hexv: e.built, v: navVar, c: e.contrast_built, fg: e.foreground, fgName: e.foreground },
+    { title: 'Suggested override', chip: ovChip, sub: `${ROLE} = ${e.override} · ${rgbTxt(e.override)} (shipped${e.accepted ? ', accepted' : ''})`, hexv: e.override, v: e.accepted ? roleVar : null, c: e.contrast_override, fg: e.foreground, fgName: e.foreground },
   ];
-  for (const [i, col] of cols.entries()) {
+  for (const col of cols) {
     const cf = frame(col.title, 'VERTICAL', 8, 0);
-    cf.appendChild(i === 0 ? (pass(col.c) ? chip('Majority · passes', '#e6f4ea', '#14532d') : chip('Majority · fails', '#fde8e8', '#8a1c1c')) : chip(e.accepted ? 'Override accepted' : 'Suggested override', '#fff4d6', '#6b4500'));
+    cf.appendChild(col.chip());
     cf.appendChild(text(col.sub, 11, 'Regular', '#333333'));
-    cf.appendChild(mock(e, col.hexv, col.v, e.navbar, navVar, navtextHex, navtextVar));
-    cf.appendChild(text(`${e.foreground} on ${col.hexv}: ${col.c}:1 ${pass(col.c) ? 'passes' : 'FAILS'} ${e.target}:1`, 12, 'SemiBold', pass(col.c) ? '#14532d' : '#8a1c1c'));
+    cf.appendChild(mock(e, col.hexv, col.v, e.navbar, navVar, navtextHex, navtextVar, col.fg));
+    cf.appendChild(text(`${col.fgName} on ${col.hexv}: ${col.c}:1 ${pass(col.c) ? 'passes' : 'FAILS'} ${e.target}:1`, 12, 'SemiBold', pass(col.c) ? '#14532d' : '#8a1c1c'));
     row.appendChild(cf);
   }
   card.appendChild(row);
+  if (PLATFORM === 'Android' && a15) card.appendChild(text(`Without the override, Android 14 and below would show white icons on navbar ${e.built}: ${e.contrast_built}:1 (fails 3:1).`, 11, 'Regular', '#555555'));
   if (!roleVar || !navVar) card.appendChild(text('Variables not linked yet (library import pending): colors drawn as raw values.', 11, 'Regular', '#8a1c1c'));
   grid.appendChild(card);
 }

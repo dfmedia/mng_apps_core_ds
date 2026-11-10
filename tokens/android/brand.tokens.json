@@ -1130,5 +1130,2186 @@
     }
    }
   }
+ },
+ "statusbar": {
+  "android": {
+   "bs": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "ct": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "dp": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "hc": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "mc": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "nydn": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "ocr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "os": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "pac": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "psn": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "sdut": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "sgvt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "sit": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "ss": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "tb": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tban": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tbcp": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tbe": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tbh": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tbhs": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tccdr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tce": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tchw": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tcv": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdb": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdc": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdcd": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdf": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdh": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdlw": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdp": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tdps": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tebt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "teptg": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tets": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tfmt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tgt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tivdb": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tja": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tladn": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tlbpt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tlr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tls": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tltc": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tmch": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tmd": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tmi": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tmj": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tmn": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tms": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tnh": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tod": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "top": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tpd": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tpe": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tpm": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "trdf": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tre": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "trh": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "trot": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "trr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tsar": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   },
+   "tsbs": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tscs": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tseb": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tsppp": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tss": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tsv": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tth": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "ttt": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tudj": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tvr": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "tvth": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "twdd": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "twdn": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": null,
+       "note": "Not confirmed: the Apps team only described the 7 white-top-bar markets. Inferred: every other market keeps navbar with light icons (its navbar passes 3:1 with white; lowest TDCD 3.01:1). Ask Apps team (MISSING-ASSETS 5.6)."
+      }
+     }
+    }
+   },
+   "vp": {
+    "icons": {
+     "$value": "light",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 14 and below (light = white icons). Status bar color: statusbar.",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "14 and below",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: the main theme never sets windowLightStatusBar (only splash and onboarding do)"
+      }
+     }
+    },
+    "icons15": {
+     "$value": "dark",
+     "$type": "string",
+     "$description": "Status-bar icon style on Android 15+ (API 35). Status bar color on 15+: navbar (DEC-15).",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "android": "15+",
+       "statusbar": "navbar",
+       "confirmed": "Ameer M. (Apps team), on device 2026-11-10: white status bar (= navbar) with dark icons in these markets"
+      }
+     }
+    }
+   }
+  }
  }
 }
