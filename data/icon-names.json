@@ -1,0 +1,638 @@
+{
+ "generated_by": "scripts/build_icon_names.py",
+ "source": {
+  "ios": "TroncKit @ e30ad2585",
+  "android": "android-tribpub @ 1cfb069a6"
+ },
+ "decision": "DEC-17",
+ "rule": "One name per icon purpose, glyphs as each app ships them. Lowercase, hyphens, named for the job. Prefixes tab-, enews-, brand-.",
+ "status": "names proposed 2026-11-10 (Karl to review); glyphs documented as shipped",
+ "summary": {
+  "purposes": 61,
+  "names": 60,
+  "shared_names": {
+   "saved": [
+    "Saved",
+    "Save star (special sections)"
+   ]
+  },
+  "by_bucket": {
+   "Core": 32,
+   "Core, per-platform value": 2,
+   "iOS only": 25,
+   "Android only": 2
+  }
+ },
+ "icons": [
+  {
+   "name": "search",
+   "purpose": "Search",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA search · nav-search (3 PNG) · ENewspaper search (2)",
+   "android": "mc_ic_search (+8 market copies)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "settings",
+   "purpose": "Settings",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "nav-settings (3 PNG)",
+   "android": "mc_ic_settings (+10 market copies)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "share",
+   "purpose": "Share",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "nav-share PNG",
+   "android": "ic_share (+9 market copies)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "save",
+   "purpose": "Save (not saved)",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA bookmark · nav-save-unfilled · Unsaved-Article · Saved-Unfilled-* (9)",
+   "android": "ic_bookmark_outline · ic_btn_unsave",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "saved",
+   "purpose": "Saved",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "nav-save-filled · Saved-Article · Saved-Filled-* (9) · Saved tab icons (11)",
+   "android": "ic_bookmark · ic_btn_save · mc_tab_icon_saved",
+   "note": "Android also shows a star in special sections (see below), same name (DEC-17).",
+   "apps_team": "1.3 (iOS \"saved\" SF Symbol renders nothing), 1.6 (per-market copies)"
+  },
+  {
+   "name": "tab-home",
+   "purpose": "Home tab",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA home · tab-home · 9 market home icons",
+   "android": "mc_tab_icon_latestnews (77 market copies)",
+   "note": "",
+   "apps_team": "1.4 (market tab-bar overrides)"
+  },
+  {
+   "name": "menu",
+   "purpose": "Sections / menu",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA bars · tab-sections · eNewspaper menu, menu-line",
+   "android": "mc_tab_icon_sections",
+   "note": "Sections tab and the eNewspaper menu.",
+   "apps_team": ""
+  },
+  {
+   "name": "tab-alerts",
+   "purpose": "Alerts tab",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA bell · tab-alerts · Alert/bell",
+   "android": "mc_tab_icon_alerts · mc_alert_bell (69 market copies)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "tab-for-you",
+   "purpose": "For You / Your News tab",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "tab-foryou · For You · YourNews-* (11)",
+   "android": "mc_tab_icon_for_you",
+   "note": "",
+   "apps_team": "1.6, 1.8 (no master vector)"
+  },
+  {
+   "name": "tab-enewspaper",
+   "purpose": "eNewspaper tab",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "tab-enews · tab-newspaper",
+   "android": "mc_tab_icon_newspaper · ic_newspaper",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "tab-games",
+   "purpose": "Games tab",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "tab-games · SF gamecontroller.fill",
+   "android": "mc_tab_icon_games · ic_games",
+   "note": "",
+   "apps_team": "1.5 (no clear source)"
+  },
+  {
+   "name": "tab-digital",
+   "purpose": "Digital tab",
+   "group": "Navigation & UI",
+   "bucket": "iOS only",
+   "ios": "tab-digital (purpose unclear)",
+   "android": null,
+   "note": "",
+   "apps_team": "1.9 (what does it open?)"
+  },
+  {
+   "name": "expand",
+   "purpose": "Expand / show more",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA chevronUp · Chevron - Up · chevron_up",
+   "android": "icon_uparrow",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "collapse",
+   "purpose": "Collapse / show less",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "FA chevronDown · Chevron - Down · chevron_down · button-downarrow",
+   "android": "icon_downarrow",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "back",
+   "purpose": "Back",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF chevron.left",
+   "android": "web_view_navigation_back · ic_arrow_back_black_24dp (from PDFViewCtrlTools)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "forward",
+   "purpose": "Forward / disclosure",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF chevron.right",
+   "android": "web_view_navigation_forward · ic_arrow · liveblog_arrow · game_open_arrow",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "close",
+   "purpose": "Close",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "CloseButton · overlay-close · BannerCloseLight · video-fullscreen-close · SF xmark",
+   "android": "ic_close_white_36dp · xbutton · ic_ad_close · close_player_button · ic_persistent_player_close",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "close-circle",
+   "purpose": "Close (circle)",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF xmark.circle.fill · button-miniplayer-close (2)",
+   "android": "ic_clear_search (search clear)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "account",
+   "purpose": "Account",
+   "group": "Navigation & UI",
+   "bucket": "iOS only",
+   "ios": "SF person.circle.fill",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "warning",
+   "purpose": "Warning",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF exclamationmark.triangle.fill · exclamation-icon",
+   "android": "stat_notify_error (Android framework, notifications only)",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "email",
+   "purpose": "Email",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF envelope.fill",
+   "android": "ic_email",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "refresh",
+   "purpose": "Refresh",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "SF arrow.clockwise",
+   "android": "ic_wc_refresh",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "filter",
+   "purpose": "Filter",
+   "group": "Navigation & UI",
+   "bucket": "Core",
+   "ios": "icon_filter",
+   "android": "ic_filter (+27 market copies)",
+   "note": "",
+   "apps_team": "1.5"
+  },
+  {
+   "name": "text-size-smaller",
+   "purpose": "Text size smaller",
+   "group": "Navigation & UI",
+   "bucket": "Core, per-platform value",
+   "ios": "textsizesmall",
+   "android": "ic_font_size · ic_textsize_change (one icon, opens a 4-step list)",
+   "note": "iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08).",
+   "apps_team": "1.5"
+  },
+  {
+   "name": "text-size-larger",
+   "purpose": "Text size larger",
+   "group": "Navigation & UI",
+   "bucket": "Core, per-platform value",
+   "ios": "textsizelarge",
+   "android": "(same single icon)",
+   "note": "iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08).",
+   "apps_team": "1.5"
+  },
+  {
+   "name": "follow-topic",
+   "purpose": "Follow topic",
+   "group": "Topics & selection",
+   "bucket": "iOS only",
+   "ios": "BTN_FollowTopic · FollowTopic · Plus-CT",
+   "android": "ic_follow_topic (file exists, not used)",
+   "note": "",
+   "apps_team": "1.5"
+  },
+  {
+   "name": "unfollow-topic",
+   "purpose": "Unfollow topic",
+   "group": "Topics & selection",
+   "bucket": "iOS only",
+   "ios": "BTN_UnFollowTopic · UnFollowTopic · Minus-CT",
+   "android": "ic_unfollow_topic (file exists, not used)",
+   "note": "",
+   "apps_team": "1.5"
+  },
+  {
+   "name": "checked",
+   "purpose": "Checked",
+   "group": "Topics & selection",
+   "bucket": "Core",
+   "ios": "Checked · Checkmark-* (7) · GreyCheckmark · WhiteCheckmark · ButtonWithCheckmark · TopicSelection-* (9)",
+   "android": "ic_check · ic_topic_selected · radio_button_on",
+   "note": "",
+   "apps_team": "1.6 (per-market copies)"
+  },
+  {
+   "name": "unchecked",
+   "purpose": "Unchecked",
+   "group": "Topics & selection",
+   "bucket": "Core",
+   "ios": "Unchecked · Uncheck-* (8)",
+   "android": "radio_button_off",
+   "note": "",
+   "apps_team": "1.6 (per-market copies)"
+  },
+  {
+   "name": "continue",
+   "purpose": "Continue",
+   "group": "Topics & selection",
+   "bucket": "Core",
+   "ios": "Continue-* (10)",
+   "android": "arrow_circle_right",
+   "note": "",
+   "apps_team": "1.6 (per-market copies)"
+  },
+  {
+   "name": "enews-expand-page",
+   "purpose": "Expand page",
+   "group": "eNewspaper",
+   "bucket": "iOS only",
+   "ios": "expand-paper (2)",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "enews-fit-to-screen",
+   "purpose": "Fit to screen",
+   "group": "eNewspaper",
+   "bucket": "iOS only",
+   "ios": "fit-to-screen (2)",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "enews-previous-page",
+   "purpose": "Previous page",
+   "group": "eNewspaper",
+   "bucket": "iOS only",
+   "ios": "left-arrow (2)",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "enews-next-page",
+   "purpose": "Next page",
+   "group": "eNewspaper",
+   "bucket": "iOS only",
+   "ios": "right-arrow (2)",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "play",
+   "purpose": "Play",
+   "group": "Media",
+   "bucket": "Core",
+   "ios": "button-play* (6) · embed-play · gif-play · button-miniplayer-play (2) · SF play.fill",
+   "android": "play_player_button · ic_persistent_player_play · ic_play_btn · btn_play_large",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "pause",
+   "purpose": "Pause",
+   "group": "Media",
+   "bucket": "Core",
+   "ios": "button-pause* (5) · button-miniplayer-pause (2) · SF pause.fill",
+   "android": "pause_player_button · ic_persistent_player_pause",
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "skip-back-15",
+   "purpose": "Skip back 15 s",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "SF gobackward.15",
+   "android": null,
+   "note": "",
+   "apps_team": "1.5, 1.11 (15 s on Android?)"
+  },
+  {
+   "name": "skip-forward-15",
+   "purpose": "Skip forward 15 s",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "SF goforward.15",
+   "android": null,
+   "note": "",
+   "apps_team": "1.5, 1.11 (15 s on Android?)"
+  },
+  {
+   "name": "rewind",
+   "purpose": "Rewind",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "button-rewind",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "fast-forward",
+   "purpose": "Fast forward",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "button-fastforward",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "embed-3d",
+   "purpose": "3D embed",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "embed-3d",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "tournament-sport",
+   "purpose": "Tournament sport symbols (6)",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "SF — six symbols, names not listed",
+   "android": null,
+   "note": "Six symbols; names unknown.",
+   "apps_team": "1.10 (symbol names)"
+  },
+  {
+   "name": "rating-star-empty",
+   "purpose": "Rating star (empty)",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "rating-star-empty",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "rating-star-half",
+   "purpose": "Rating star (half)",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "rating-star-half",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "rating-star-full",
+   "purpose": "Rating star (full)",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "rating-star-full",
+   "android": null,
+   "note": "",
+   "apps_team": ""
+  },
+  {
+   "name": "like",
+   "purpose": "Like / favorite",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "tweet-favorite",
+   "android": null,
+   "note": "Tweet embeds.",
+   "apps_team": ""
+  },
+  {
+   "name": "repost",
+   "purpose": "Repost",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "tweet-retweet",
+   "android": null,
+   "note": "Tweet embeds.",
+   "apps_team": ""
+  },
+  {
+   "name": "verified",
+   "purpose": "Verified",
+   "group": "Ratings & social",
+   "bucket": "iOS only",
+   "ios": "tweet-verified",
+   "android": null,
+   "note": "Tweet embeds.",
+   "apps_team": ""
+  },
+  {
+   "name": "brand-apple",
+   "purpose": "Apple",
+   "group": "Brands",
+   "bucket": "iOS only",
+   "ios": "AppleIcon (Sign in with Apple)",
+   "android": "apple_button (file exists, not used)",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-google",
+   "purpose": "Google",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "GoogleIcon",
+   "android": "google_button (only when Auth0 is off)",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-facebook",
+   "purpose": "Facebook",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "FacebookIcon · AuthorContactFacebook",
+   "android": "fb_button · ic_fb · author_contact_facebook",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-x",
+   "purpose": "X (Twitter)",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "TwitterIcon · AuthorContactX · tweet-logo · twitter-logo",
+   "android": "ic_twitter · author_contact_x",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-bluesky",
+   "purpose": "Bluesky",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "AuthorContactBluesky",
+   "android": "author_contact_bluesky",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-instagram",
+   "purpose": "Instagram",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "AuthorContactInstagram · instagram-logo (3)",
+   "android": "author_contact_instagram",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-youtube",
+   "purpose": "YouTube",
+   "group": "Brands",
+   "bucket": "iOS only",
+   "ios": "youtube-logo",
+   "android": null,
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-vimeo",
+   "purpose": "Vimeo",
+   "group": "Brands",
+   "bucket": "iOS only",
+   "ios": "vimeo-logo",
+   "android": null,
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-amazon",
+   "purpose": "Amazon (sign-in)",
+   "group": "Brands",
+   "bucket": "Core",
+   "ios": "TroncKit default button",
+   "android": "ic_amazon",
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-1password",
+   "purpose": "1Password",
+   "group": "Brands",
+   "bucket": "iOS only",
+   "ios": "paywall-1password",
+   "android": null,
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "brand-outbrain",
+   "purpose": "Outbrain",
+   "group": "Brands",
+   "bucket": "iOS only",
+   "ios": "outbrainLogo",
+   "android": null,
+   "note": "",
+   "apps_team": "1.12 (brand vectors)"
+  },
+  {
+   "name": "notification",
+   "purpose": "Notification small icon",
+   "group": "Navigation & UI",
+   "bucket": "Android only",
+   "ios": null,
+   "android": "per-market notification icons (monochrome)",
+   "note": "Android platform requirement (monochrome, per market).",
+   "apps_team": ""
+  },
+  {
+   "name": "saved",
+   "purpose": "Save star (special sections)",
+   "group": "Ratings & social",
+   "bucket": "Android only",
+   "ios": null,
+   "android": "card_star_default · star_on_card_saved_state",
+   "note": "Android's glyph for saved in special sections; iOS shows the bookmark. Both kept (DEC-17, PLAT-09 rejected).",
+   "apps_team": ""
+  }
+ ]
+}
