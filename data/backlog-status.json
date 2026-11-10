@@ -8,7 +8,7 @@
  "statuses": {
   "done": "✅ done",
   "partial": "🟡 partial",
-  "written": "📝 written, not compiled",
+  "written": "📝 written, compile-checked, not in an app yet",
   "todo": "⬜ to do",
   "blocked": "⛔ blocked",
   "na": "— n/a"
