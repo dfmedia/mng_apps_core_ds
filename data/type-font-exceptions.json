@@ -1,0 +1,2413 @@
+{
+ "generated_by": "scripts/build_font_exceptions.py",
+ "source": {
+  "ios": "TroncKit @ e30ad2585 (data/source/markets.json, AppThemeable fonts)",
+  "android": "android-tribpub @ 1cfb069a6 (data/source/android-markets.json, fontKeys)"
+ },
+ "rule": "DEC-09: text styles use the majority font per key; the markets below ship something else. Documented, not built (DEC-14 majority rule). Future: IMPROVEMENTS TYPE-05.",
+ "ios": {
+  "keys": 5,
+  "keys_with_exceptions": 3,
+  "by_key": [
+   {
+    "key": "headlineNormalFont",
+    "majority": "Spectral-Medium 31",
+    "majority_markets": 75,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular 30",
+      "markets": [
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Light 31",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "bodyNormalFont",
+    "majority": "OpenSans-Regular 14",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "bodyBoldFont",
+    "majority": "OpenSans-Bold 14",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "captionNormalFont",
+    "majority": "OpenSans-Regular 11",
+    "majority_markets": 75,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular 12",
+      "markets": [
+       "NYDN",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "captionBoldFont",
+    "majority": "OpenSans-Bold 11",
+    "majority_markets": 75,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold 12",
+      "markets": [
+       "NYDN",
+       "VP"
+      ]
+     }
+    ]
+   }
+  ],
+  "by_market": [
+   {
+    "market": "NYDN",
+    "name": "New York Daily News",
+    "keys": 3,
+    "swaps": [
+     {
+      "from": "Spectral-Medium 31",
+      "to": "OpenSansCondensed-Light 31",
+      "keys": [
+       "headlineNormalFont"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular 11",
+      "to": "OpenSans-Regular 12",
+      "keys": [
+       "captionNormalFont"
+      ]
+     },
+     {
+      "from": "OpenSans-Bold 11",
+      "to": "OpenSans-Bold 12",
+      "keys": [
+       "captionBoldFont"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "VP",
+    "name": "Virginian Pilot",
+    "keys": 3,
+    "swaps": [
+     {
+      "from": "Spectral-Medium 31",
+      "to": "OpenSans-Regular 30",
+      "keys": [
+       "headlineNormalFont"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular 11",
+      "to": "OpenSans-Regular 12",
+      "keys": [
+       "captionNormalFont"
+      ]
+     },
+     {
+      "from": "OpenSans-Bold 11",
+      "to": "OpenSans-Bold 12",
+      "keys": [
+       "captionBoldFont"
+      ]
+     }
+    ]
+   }
+  ],
+  "legacy_template": "BS, DP, HC, MC, OS, SS, VP also use the legacy Style.json template (label fonts differ): docs/LEGACY-TEMPLATE.md (DEC-10)"
+ },
+ "android": {
+  "keys": 125,
+  "keys_with_exceptions": 81,
+  "by_key": [
+   {
+    "key": "ArticleText_Headline_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ArticleText_Headline_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "DP",
+       "NYDN",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ArticleText_Headline_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "DP",
+       "NYDN",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ArticleText_Headline_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     },
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Byline_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-SemiBold.ttf",
+      "markets": [
+       "CT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Byline_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_Byline_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_Byline_Regular",
+    "majority": "OpenSans-SemiBold.ttf",
+    "majority_markets": 66,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "CT"
+      ]
+     },
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "HC",
+       "NYDN",
+       "OS",
+       "SIT",
+       "SS",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSans-Semibold.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Dateline_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-SemiBold.ttf",
+      "markets": [
+       "CT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Dateline_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_Dateline_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_Dateline_Regular",
+    "majority": "OpenSans-SemiBold.ttf",
+    "majority_markets": 66,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "CT"
+      ]
+     },
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "HC",
+       "NYDN",
+       "OS",
+       "SIT",
+       "SS",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSans-Semibold.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Deck_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Deck_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Deck_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Deck_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Footer_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Footer_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Footer_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Footer_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_ImageCaption_Bold",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 74,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "CT",
+       "MC",
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_ImageCaption_Bold_Italic",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 74,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "CT",
+       "MC",
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_ImageCaption_Italic",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 74,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "CT",
+       "MC",
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_ImageCaption_Prepend_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCaption_Prepend_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCaption_Prepend_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCaption_Prepend_Regular",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCaption_Regular",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCredit_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCredit_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCredit_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_ImageCredit_Regular",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_InlineHeader_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_InlineHeader_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_InlineHeader_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_InlineHeader_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Intro_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Intro_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Intro_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Intro_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_StoryType_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_StoryType_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_StoryType_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Kicker_StoryType_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Letter_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Letter_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Letter_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Letter_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Link_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Link_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Link_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Link_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_PullQuote_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Caption_Bold",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Caption_Bold_Italic",
+    "majority": "OpenSans-BoldItalic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Caption_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Caption_Regular",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Italic",
+    "majority": "OpenSans-Italic.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_PullQuote_Regular",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Article_Subhead_Text_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Subhead_Text_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Subhead_Text_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Subhead_Text_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Text_Bold",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 72,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Text_Bold_Italic",
+    "majority": "PT_Serif-Web-BoldItalic.ttf",
+    "majority_markets": 72,
+    "exceptions": [
+     {
+      "value": "OpenSans-BoldItalic.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Text_Italic",
+    "majority": "PT_Serif-Web-Italic.ttf",
+    "majority_markets": 72,
+    "exceptions": [
+     {
+      "value": "OpenSans-Italic.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Article_Text_Regular",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 72,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Blurb_Font",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Byline_Font",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Continue_button_Font_Additional_Whats_New",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Games_landing_page_title",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Headline_Font_Additional_Whats_New",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Headline_Font_Highlight",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Headline_Font_Normal",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Bold.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Headline_Font_Thin",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "NYDN",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "HomePageStory_Font_Media_Caption",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "HomePageStyle_Font_CellLabel_Light",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "HomePageStyle_Font_CellLabel_Light_Small",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "HomePageStyle_Font_CellLabel_Normal",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "ImageStreamModule_Font_Byline",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Regular.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ImageStreamModule_Font_Headline",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Bold.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ImageStreamModule_Font_Kicker",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Regular.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ImageStreamModule_Font_Time_And_Blurb",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Label_Font_Light",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Label_Font_Normal",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Label_Font_Secondary",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Label_Font_Secondary_Light",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "LiveBlog_Font_Headline",
+    "majority": "Spectral-ExtraBold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "LiveBlog_Font_Time",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "LiveImage_Font_Tab",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Media_Caption_Font",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Media_Overlay_Caption",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Message_Font_Additional_Whats_New",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Overlay_Secondary_Font_Default",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 72,
+    "exceptions": [
+     {
+      "value": "OpenSans-Light.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "SS",
+       "TOD",
+       "TTT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Paywall_Text_Font",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Author",
+    "majority": "OpenSans-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Blurb",
+    "majority": "Spectral-Regular.ttf",
+    "majority_markets": 68,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "DP",
+       "HC",
+       "MC",
+       "NYDN",
+       "OS",
+       "SIT",
+       "TOD",
+       "TTT",
+       "VP"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Bold",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Headline",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 71,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "VP"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "DP",
+       "NYDN",
+       "SIT",
+       "TOD",
+       "TTT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Light",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Search_Results_Time",
+    "majority": "OpenSans-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Card_Entry",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "SectionFront_Font_Card_Header",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "SectionFront_Font_Gathering_News",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Gathering_News_Bold",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Gathering_News_Bold_Italic",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Gathering_News_Italic",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "PT_Serif-Web-Regular.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Module_Stream_Label",
+    "majority": "Spectral-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "SectionFront_Font_Module_Stream_Time",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "Section_Menu_Font",
+    "majority": "OpenSans-Regular-Condensed.ttf",
+    "majority_markets": 73,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "DP",
+       "SIT",
+       "TOD",
+       "TTT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Settings_Category_Font",
+    "majority": "Roboto-Regular.ttf",
+    "majority_markets": 75,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "CT"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Settings_Category_Font_Bold",
+    "majority": "Roboto-Regular.ttf",
+    "majority_markets": 73,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular-Condensed.ttf",
+      "markets": [
+       "NYDN"
+      ]
+     },
+     {
+      "value": "OpenSansCondensed-Bold.ttf",
+      "markets": [
+       "CT"
+      ]
+     },
+     {
+      "value": "Roboto-Bold.ttf",
+      "markets": [
+       "MC",
+       "SS"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "Settings_Item_Font",
+    "majority": "Roboto-Regular.ttf",
+    "majority_markets": 75,
+    "exceptions": [
+     {
+      "value": "OpenSans-Regular.ttf",
+      "markets": [
+       "CT",
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "StreamModule_Font_Byline",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Regular.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "StreamModule_Font_Headline",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Bold.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "StreamModule_Font_Kicker",
+    "majority": "PT_Serif-Web-Regular.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "Spectral-Regular.ttf",
+      "markets": [
+       "MC"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "StreamModule_Font_Last_Updated",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "StreamModule_Font_Time_And_Blurb",
+    "majority": "OpenSansCondensed-Bold.ttf",
+    "majority_markets": 76,
+    "exceptions": [
+     {
+      "value": "OpenSansCondensed-Bold.ttff",
+      "markets": [
+       "NYDN"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "font_special_section_pin",
+    "majority": "PT_Serif-Web-Bold.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   },
+   {
+    "key": "font_special_title",
+    "majority": "Spectral-Regular.ttf",
+    "majority_markets": 77,
+    "exceptions": []
+   }
+  ],
+  "by_market": [
+   {
+    "market": "NYDN",
+    "name": "New York Daily News",
+    "keys": 67,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Deck_Bold_Italic",
+       "Article_Footer_Bold_Italic",
+       "Article_InlineHeader_Bold_Italic",
+       "Article_Intro_Bold_Italic",
+       "Article_Kicker_Bold_Italic",
+       "Article_Kicker_StoryType_Bold_Italic",
+       "Article_Letter_Bold_Italic",
+       "Article_Link_Bold_Italic",
+       "Article_Subhead_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Deck_Italic",
+       "Article_Footer_Italic",
+       "Article_InlineHeader_Italic",
+       "Article_Intro_Italic",
+       "Article_Kicker_Italic",
+       "Article_Kicker_StoryType_Italic",
+       "Article_Letter_Italic",
+       "Article_Link_Italic",
+       "Article_Subhead_Text_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "Article_Deck_Bold",
+       "Article_Footer_Bold",
+       "Article_InlineHeader_Bold",
+       "Article_Intro_Bold",
+       "Article_Kicker_Bold",
+       "Article_Kicker_StoryType_Bold",
+       "Article_Letter_Bold",
+       "Article_Link_Bold",
+       "Article_Subhead_Text_Bold"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Footer_Regular",
+       "Article_InlineHeader_Regular",
+       "Article_Intro_Regular",
+       "Article_Letter_Regular",
+       "Article_Link_Regular",
+       "Article_Subhead_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular-Condensed.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Deck_Regular",
+       "Article_Kicker_Regular",
+       "Article_Kicker_StoryType_Regular",
+       "Search_Results_Light"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "SectionFront_Font_Gathering_News",
+       "SectionFront_Font_Gathering_News_Bold",
+       "SectionFront_Font_Gathering_News_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "LiveImage_Font_Tab",
+       "SectionFront_Font_Gathering_News_Bold_Italic"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Headline",
+       "SectionFront_Font_Module_Stream_Label"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "OpenSans-Regular-Condensed.ttf",
+      "keys": [
+       "Settings_Category_Font",
+       "Settings_Category_Font_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "Article_ImageCaption_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular-Condensed.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "HomePageStyle_Font_CellLabel_Light"
+      ]
+     },
+     {
+      "from": "Spectral-ExtraBold.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "LiveBlog_Font_Headline"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Paywall_Text_Font"
+      ]
+     },
+     {
+      "from": "OpenSans-Bold.ttf",
+      "to": "PT_Serif-Web-Bold.ttf",
+      "keys": [
+       "Search_Results_Author"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Time"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Settings_Item_Font"
+      ]
+     },
+     {
+      "from": "OpenSansCondensed-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttff",
+      "keys": [
+       "StreamModule_Font_Time_And_Blurb"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "DP",
+    "name": "Daily Press",
+    "keys": 17,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Article_Text_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Text_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Light.ttf",
+      "keys": [
+       "Overlay_Secondary_Font_Default"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Headline"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular-Condensed.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Section_Menu_Font"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "SIT",
+    "name": "Sonoma Index Tribune",
+    "keys": 17,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Article_Text_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Text_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Light.ttf",
+      "keys": [
+       "Overlay_Secondary_Font_Default"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Headline"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular-Condensed.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Section_Menu_Font"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "TOD",
+    "name": "Oneida Dispatch",
+    "keys": 17,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Article_Text_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Text_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Light.ttf",
+      "keys": [
+       "Overlay_Secondary_Font_Default"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Headline"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular-Condensed.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Section_Menu_Font"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "TTT",
+    "name": "The Scranton Times-Tribune",
+    "keys": 17,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Article_Text_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Text_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Light.ttf",
+      "keys": [
+       "Overlay_Secondary_Font_Default"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Search_Results_Headline"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular-Condensed.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Section_Menu_Font"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "VP",
+    "name": "Virginian Pilot",
+    "keys": 15,
+    "swaps": [
+     {
+      "from": "PT_Serif-Web-Bold.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold",
+       "Article_Text_Bold",
+       "Headline_Font_Highlight",
+       "Headline_Font_Normal"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "ArticleText_Headline_Regular",
+       "Article_Text_Regular",
+       "Headline_Font_Thin"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-BoldItalic.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "ArticleText_Headline_Bold_Italic",
+       "Article_Text_Bold_Italic"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Italic.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "ArticleText_Headline_Italic",
+       "Article_Text_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Spectral-Bold.ttf",
+      "to": "OpenSans-Regular-Condensed.ttf",
+      "keys": [
+       "Search_Results_Headline"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "MC",
+    "name": "Morning Call",
+    "keys": 13,
+    "swaps": [
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Semibold.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSansCondensed-Bold.ttf",
+      "to": "Spectral-Regular.ttf",
+      "keys": [
+       "ImageStreamModule_Font_Byline",
+       "StreamModule_Font_Byline"
+      ]
+     },
+     {
+      "from": "OpenSansCondensed-Bold.ttf",
+      "to": "Spectral-Bold.ttf",
+      "keys": [
+       "ImageStreamModule_Font_Headline",
+       "StreamModule_Font_Headline"
+      ]
+     },
+     {
+      "from": "PT_Serif-Web-Regular.ttf",
+      "to": "Spectral-Regular.ttf",
+      "keys": [
+       "ImageStreamModule_Font_Kicker",
+       "StreamModule_Font_Kicker"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "Article_ImageCaption_Italic"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "Roboto-Bold.ttf",
+      "keys": [
+       "Settings_Category_Font_Bold"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "CT",
+    "name": "Chicago Tribune",
+    "keys": 10,
+    "swaps": [
+     {
+      "from": "OpenSans-Bold.ttf",
+      "to": "OpenSans-SemiBold.ttf",
+      "keys": [
+       "Article_Byline_Bold",
+       "Article_Dateline_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular-Condensed.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "OpenSansCondensed-Bold.ttf",
+      "keys": [
+       "Settings_Category_Font",
+       "Settings_Category_Font_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Bold.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-BoldItalic.ttf",
+      "keys": [
+       "Article_ImageCaption_Bold_Italic"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Italic.ttf",
+      "keys": [
+       "Article_ImageCaption_Italic"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Settings_Item_Font"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "SS",
+    "name": "Sun Sentinel",
+    "keys": 4,
+    "swaps": [
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "OpenSans-Regular.ttf",
+      "to": "OpenSans-Light.ttf",
+      "keys": [
+       "Overlay_Secondary_Font_Default"
+      ]
+     },
+     {
+      "from": "Roboto-Regular.ttf",
+      "to": "Roboto-Bold.ttf",
+      "keys": [
+       "Settings_Category_Font_Bold"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "HC",
+    "name": "Hartford Courant",
+    "keys": 3,
+    "swaps": [
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     }
+    ]
+   },
+   {
+    "market": "OS",
+    "name": "Orlando Sentinel",
+    "keys": 3,
+    "swaps": [
+     {
+      "from": "OpenSans-SemiBold.ttf",
+      "to": "OpenSans-Regular.ttf",
+      "keys": [
+       "Article_Byline_Regular",
+       "Article_Dateline_Regular"
+      ]
+     },
+     {
+      "from": "Spectral-Regular.ttf",
+      "to": "PT_Serif-Web-Regular.ttf",
+      "keys": [
+       "Search_Results_Blurb"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

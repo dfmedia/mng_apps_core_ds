@@ -361,6 +361,13 @@
    "tokens": "todo",
    "code": "todo",
    "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
+  },
+  "foundation/type-markets": {
+   "figma": "done",
+   "tokens": "na",
+   "code": "na",
+   "blocked_by": "",
+   "note": "Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05"
   }
  },
  "next": [

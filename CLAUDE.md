@@ -132,6 +132,8 @@ npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/To
 python3 scripts/compare_type.py     # typography step 1: data/type-comparison.json + docs/TYPE-COMPARISON.md
 python3 scripts/build_type_tokens.py   # DEC-09: tokens/*/type.tokens.json, data/type-styles.json, docs/TYPE-STYLES.md (before npm run build)
 python3 scripts/build_legacy_doc.py    # DEC-10: docs/LEGACY-TEMPLATE.md (run after build_type_tokens.py)
+python3 scripts/build_font_exceptions.py   # per-market fonts as shipped: data/type-font-exceptions.json, docs/TYPE-FONT-EXCEPTIONS.md
+python3 scripts/figma_font_exceptions.py 4|5   # prints JS for Core Type · iOS vs Android › 04 iOS / 05 Android per-market fonts
 python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison: docs/SCALES-COMPARISON.md
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)
