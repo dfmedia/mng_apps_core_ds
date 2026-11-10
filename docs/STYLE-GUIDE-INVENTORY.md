@@ -28,11 +28,7 @@ Brand colors (78 markets), app shell colors (incl. Android 14 vs 15+ status bar)
 
 ## Tracked, not blocked
 
-| Item | Library | Note |
-|---|---|---|
-| Per-market font exceptions | Core + iOS + Android | Documented only as notes on each text style; no table yet |
-| Checkbox, iOS | iOS | iOS ships images per market (Checked / Unchecked + 7 market sets); not drawn yet |
-| Orientation | Core | Same on both (phone portrait, tablet all); not on a Figma page yet |
+None left (2026-11-10). Built since this inventory was written: per-market font exceptions (Core Type · iOS vs Android › 04, 05; docs/TYPE-FONT-EXCEPTIONS.md), iOS checkbox as shipped (iOS file, Components · Controls › 02; docs/components/CHECKBOX-IOS.md), orientation (Core Layout · iOS vs Android › 01; docs/ORIENTATION.md).
 
 ## In the guides, not tracked anywhere yet
 
