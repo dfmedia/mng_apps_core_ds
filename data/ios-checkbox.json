@@ -1,0 +1,350 @@
+{
+ "generated_by": "scripts/build_ios_checkbox.py",
+ "source": "iOS style guide asset store (TroncKit @ e30ad2585, Assets.xcassets @3x), copied 2026-11-10",
+ "control_size_pt": 30,
+ "control_size_token": "Components \u00b7 iOS \u203a checkbox/size (component.ios checkbox size, DEC-12)",
+ "image_placement": "unknown, ask Apps team (MISSING-ASSETS 5.8): drawn centered at natural size (17 \u00d7 18 pt) inside the 30 \u00d7 30 control",
+ "sets": [
+  {
+   "set": "Generic",
+   "checked": {
+    "file": "Checked.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "735ba47543eb138325b583b078af4e327ba3d195c75406d19bc9361e2bb0ace4",
+    "bytes": 2391
+   },
+   "unchecked": {
+    "file": "Unchecked.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "e59b65abfb9e98deb57d598c1e36c56b3d5744d16813c0f0d799b6306c55bc77",
+    "bytes": 2628
+   },
+   "markets": [
+    "CT",
+    "OCR",
+    "PAC",
+    "PSN",
+    "SDUT",
+    "SGVT",
+    "SIT",
+    "TB",
+    "TBAN",
+    "TBCP",
+    "TBE",
+    "TBH",
+    "TBHS",
+    "TCCDR",
+    "TCE",
+    "TCHW",
+    "TCV",
+    "TDB",
+    "TDC",
+    "TDCD",
+    "TDF",
+    "TDLW",
+    "TDP",
+    "TDPS",
+    "TEBT",
+    "TEPTG",
+    "TETS",
+    "TFMT",
+    "TGT",
+    "TIVDB",
+    "TJA",
+    "TLADN",
+    "TLBPT",
+    "TLR",
+    "TLS",
+    "TLTC",
+    "TMCH",
+    "TMD",
+    "TMI",
+    "TMJ",
+    "TMN",
+    "TMS",
+    "TNH",
+    "TOD",
+    "TOP",
+    "TPD",
+    "TPE",
+    "TPM",
+    "TR",
+    "TRDF",
+    "TRE",
+    "TRH",
+    "TROT",
+    "TRR",
+    "TSAR",
+    "TSBS",
+    "TSCS",
+    "TSEB",
+    "TSPPP",
+    "TSS",
+    "TSV",
+    "TT",
+    "TTH",
+    "TTT",
+    "TUDJ",
+    "TVR",
+    "TVTH",
+    "TWDD",
+    "TWDN"
+   ]
+  },
+  {
+   "set": "BS",
+   "checked": {
+    "file": "Checkmark-BS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "2310e919f024da2fa0e24fbe225c18345346179e0ad730205fe546039f9aa11d",
+    "bytes": 2387
+   },
+   "unchecked": {
+    "file": "Uncheck-BS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "8d31ee46113cab0a8467beab57f4fe87697d4894b0296245f9d134e8ac097f42",
+    "bytes": 2579
+   },
+   "markets": [
+    "BS"
+   ]
+  },
+  {
+   "set": "HC",
+   "checked": {
+    "file": "Checkmark-Hart.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "a53461423bdb71bf347debc2474197757c3ecafceab6034d704585803661974a",
+    "bytes": 2384
+   },
+   "unchecked": {
+    "file": "Uncheck-Hart.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "8f9f2d3be5a64905414478f0c9bcc0dd2c8dc510222700d959d8d55babe6a040",
+    "bytes": 2594
+   },
+   "markets": [
+    "HC"
+   ]
+  },
+  {
+   "set": "MC",
+   "checked": {
+    "file": "Checkmark-MC.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "4c11cec0af3c0a54612a8a28d16c21402e390990ecb1cdfd793eca8b0586bd43",
+    "bytes": 2391
+   },
+   "unchecked": {
+    "file": "Uncheck-MC.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "0c14401eb84f3c33d878f1dfdd00c67bf3de8ac82d548f9adb24923d5d4483d8",
+    "bytes": 2603
+   },
+   "markets": [
+    "MC"
+   ]
+  },
+  {
+   "set": "NYDN",
+   "checked": {
+    "file": "Checkmark-NYDN.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "a9f6b4e36d5aeecd2fd0fe7acd7e1c6b842f52ebc248a40d2b823defb1950789",
+    "bytes": 2379
+   },
+   "unchecked": {
+    "file": "Uncheck-NYDN.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "ca019e1a762b7d431ad9c4110dfd8d2ed7087d10b57fe89398da6396d862d271",
+    "bytes": 2583
+   },
+   "markets": [
+    "NYDN"
+   ]
+  },
+  {
+   "set": "OS",
+   "checked": {
+    "file": "Checkmark-OS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "59aefb423114fa9b9171f39242be43df164c0c32b1ee05ba4c1de1bee1c2d9f1",
+    "bytes": 2390
+   },
+   "unchecked": {
+    "file": "Uncheck-OS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "a5a185532d7d949d55b4f256805a42bf96a81de5d9a87db5e12180d6e881e9d0",
+    "bytes": 2594
+   },
+   "markets": [
+    "OS"
+   ]
+  },
+  {
+   "set": "SS",
+   "checked": {
+    "file": "Checkmark-SS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "9c3818a4e054eb471451b1bac8e7a443d36258551256d014305316f90d5e1a1a",
+    "bytes": 2405
+   },
+   "unchecked": {
+    "file": "Uncheck-SS.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "6f172915ffb8d9ea74cee6e8581215efbd456f64e185f1258a7e44bb32206b2b",
+    "bytes": 2610
+   },
+   "markets": [
+    "SS"
+   ]
+  },
+  {
+   "set": "VP",
+   "checked": {
+    "file": "Checkmark-VP.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "9e283ea2d1f16770d6fc1aa2071fe3a799f51d89f7eb06f1730625fe4334b777",
+    "bytes": 2246
+   },
+   "unchecked": {
+    "file": "Uncheck-VP.png",
+    "px": [
+     51,
+     54
+    ],
+    "pt": [
+     17.0,
+     18.0
+    ],
+    "sha256": "87cae6a83cfbfc4a366f91c0f6398e4b8834348c2e4e6a75d470950318dd678b",
+    "bytes": 2418
+   },
+   "markets": [
+    "VP",
+    "DP"
+   ]
+  }
+ ],
+ "not_mapped": [
+  {
+   "file": "Uncheck-Grey.png",
+   "px": [
+    51,
+    54
+   ],
+   "pt": [
+    17.0,
+    18.0
+   ],
+   "sha256": "fe44a1de0b2caab543027e212858aec73940f145324842f1b99dceed7268dace",
+   "bytes": 2578,
+   "note": "in the asset catalog; which markets use it is not stated in the guide"
+  }
+ ]
+}
