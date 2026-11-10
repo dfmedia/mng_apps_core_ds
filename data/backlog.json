@@ -20,12 +20,12 @@
    "group": "Typography",
    "name": "Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…)",
    "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "na",
+   "code": "na",
    "blocked_by": "",
-   "note": "Kept as notes on each type token (DEC-09). Future: remove them (IMPROVEMENTS TYPE-05)",
-   "overall": "todo"
+   "note": "Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05",
+   "overall": "done"
   },
   {
    "id": "foundation/spacing",
@@ -1281,12 +1281,12 @@
    "group": "Controls",
    "name": "Checkbox (Your News topics)",
    "owner": "core",
-   "figma": "partial",
+   "figma": "done",
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended)",
-   "overall": "in progress"
+   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.8. Core checkbox still recommended",
+   "overall": "built"
   },
   {
    "id": "component/text-size",
@@ -1398,12 +1398,12 @@
    "group": "Layout",
    "name": "Orientation",
    "owner": "core",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "na",
    "code": "na",
    "blocked_by": "",
-   "note": "Identical.",
-   "overall": "todo"
+   "note": "Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps",
+   "overall": "done"
   }
  ]
 }

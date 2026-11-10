@@ -1,0 +1,57 @@
+{
+ "generated_by": "scripts/build_orientation.py",
+ "source": {
+  "ios": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ e30ad2585, project/4-layout.md",
+  "android": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6, project/4-layout.md"
+ },
+ "rule": "Documented as shipped. No tokens: orientation is app configuration, not a design value.",
+ "summary": "Both apps: phones portrait only, tablets every orientation, no foldable support. The only difference is how the phone lock is set (iOS app delegate, Android from code per screen).",
+ "rows": [
+  {
+   "device_class": "Phone",
+   "ios": {
+    "device": "iPhone",
+    "orientation": "Portrait only",
+    "how": "Locked in the app delegate",
+    "evidence": "CoreAppDelegate.swift:184"
+   },
+   "android": {
+    "device": "Phone (small and normal screen sizes)",
+    "orientation": "Portrait only",
+    "how": "Locked from code by Utils.disablePhoneLandscape() in MainActivity, articles, settings, gallery, paywall and web view; the manifest sets no orientation",
+    "evidence": "4-layout.md › Phone"
+   },
+   "bucket": "Core"
+  },
+  {
+   "device_class": "Tablet",
+   "ios": {
+    "device": "iPad",
+    "orientation": "All orientations",
+    "how": "Section fronts change layout by window width, not device (bp-front-small / medium / large)",
+    "evidence": "4-layout.md › Tablet; FrontWidth.swift"
+   },
+   "android": {
+    "device": "Tablet (smallest width 500 dp and up)",
+    "orientation": "All orientations",
+    "how": "values-sw500dp loads the tablet config (is_phone=false), but section fronts still render in phone mode (BaseMainActivity.isPhone() returns true)",
+    "evidence": "4-layout.md › Tablet; values-sw500dp, values-sw600dp"
+   },
+   "bucket": "Core"
+  },
+  {
+   "device_class": "Foldable",
+   "ios": {
+    "orientation": "Not supported",
+    "how": "No foldable or iPhone Duo handling",
+    "evidence": "DREAMT-4649 spike"
+   },
+   "android": {
+    "orientation": "Not supported",
+    "how": "No androidx.window, WindowSizeClass or fold handling; folding or unfolding recreates MainActivity",
+    "evidence": "DREAMT-4649 spike"
+   },
+   "bucket": "Core"
+  }
+ ]
+}

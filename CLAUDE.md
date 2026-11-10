@@ -97,7 +97,8 @@ docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
 docs/MISSING-ASSETS.md            what we need from the Apps team
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
-docs/components/                  component specs (generated, e.g. BUTTON.md)
+docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md)
+docs/ORIENTATION.md               generated: phone / tablet / foldable orientation as shipped
 docs/LEGACY-TEMPLATE.md           generated: iOS legacy-template values, acknowledged only (DEC-10)
 tokens/                           DTCG design tokens (generated; the source for Swift, Kotlin and Figma)
 style-dictionary.config.mjs       builds Swift / Kotlin / Android XML from tokens/
@@ -134,6 +135,10 @@ python3 scripts/build_type_tokens.py   # DEC-09: tokens/*/type.tokens.json, data
 python3 scripts/build_legacy_doc.py    # DEC-10: docs/LEGACY-TEMPLATE.md (run after build_type_tokens.py)
 python3 scripts/build_font_exceptions.py   # per-market fonts as shipped: data/type-font-exceptions.json, docs/TYPE-FONT-EXCEPTIONS.md
 python3 scripts/figma_font_exceptions.py 4|5   # prints JS for Core Type · iOS vs Android › 04 iOS / 05 Android per-market fonts
+python3 scripts/build_ios_checkbox.py      # iOS checkbox as shipped (image sets): data/ios-checkbox.json, docs/components/CHECKBOX-IOS.md
+python3 scripts/figma_ios_checkbox.py upload <file>|build   # iOS file Components · Controls › 02 · Checkbox: images one per call (length + hash checked), then the build
+python3 scripts/build_orientation.py      # orientation as shipped: data/orientation.json, docs/ORIENTATION.md (from data/source/orientation.json)
+python3 scripts/figma_orientation.py      # prints JS for Core Layout · iOS vs Android › 01 · Orientation
 python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison: docs/SCALES-COMPARISON.md
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)

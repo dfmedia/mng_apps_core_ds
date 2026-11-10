@@ -12,12 +12,12 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 8 | 0 | 7 | 0 | 1 | 0 |
+| Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
-| Components | 20 | 0 | 7 | 11 | 0 | 2 |
-| Layout | 6 | 0 | 5 | 0 | 1 | 0 |
+| Components | 20 | 0 | 8 | 10 | 0 | 2 |
+| Layout | 6 | 1 | 5 | 0 | 0 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **31** | **11** | **2** | **63** |
+| **Total** | **107** | **2** | **32** | **10** | **0** | **63** |
 
 ## Suggested order
 
@@ -32,7 +32,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
-| Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Kept as notes on each type token (DEC-09). Future: remove them (IMPROVEMENTS TYPE-05) |
+| Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ✅ done | — n/a | — n/a | Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05 |
 
 ### Scales
 
@@ -102,7 +102,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Switch | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls) |
-| Checkbox (Your News topics) | Core | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended) |
+| Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.8. Core checkbox still recommended |
 | Text size setting | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
 | Segmented control | Core + iOS + Android | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Native control per platform; Core sets colors. |
 | Loading indicator | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Same pattern on both; no in-button spinner. |
@@ -116,7 +116,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Breakpoints | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
-| Orientation | Core | ⬜ to do | — n/a | — n/a | Identical. |
+| Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
 
 ## Icons
 

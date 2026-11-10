@@ -1,378 +1,374 @@
 {
- "$description": "Build status of every registry item and foundation, kept by hand (update it when something is built). scripts/build_backlog.py turns it into docs/BACKLOG.md. Items not listed under items take the defaults for their type.",
- "columns": {
-  "figma": "Built in Figma (Core file, plus the platform file when the owner is Core + variant, iOS or Android)",
-  "tokens": "DTCG tokens in tokens/ (the source for Swift, Kotlin and Figma variables)",
-  "code": "Exported to GitHub as platform code: generated tokens in mng_apps_ios_ds / mng_apps_android_ds, plus component code or assets"
- },
- "statuses": {
-  "done": "✅ done",
-  "partial": "🟡 partial",
-  "written": "📝 written, compile-checked, not in an app yet",
-  "todo": "⬜ to do",
-  "blocked": "⛔ blocked",
-  "na": "— n/a"
- },
- "defaults": {
-  "color-role": {
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo"
+  "$description": "Build status of every registry item and foundation, kept by hand (update it when something is built). scripts/build_backlog.py turns it into docs/BACKLOG.md. Items not listed under items take the defaults for their type.",
+  "columns": {
+    "figma": "Built in Figma (Core file, plus the platform file when the owner is Core + variant, iOS or Android)",
+    "tokens": "DTCG tokens in tokens/ (the source for Swift, Kotlin and Figma variables)",
+    "code": "Exported to GitHub as platform code: generated tokens in mng_apps_ios_ds / mng_apps_android_ds, plus component code or assets"
   },
-  "icon": {
-   "figma": "blocked",
-   "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)"
+  "statuses": {
+    "done": "✅ done",
+    "partial": "🟡 partial",
+    "written": "📝 written, compile-checked, not in an app yet",
+    "todo": "⬜ to do",
+    "blocked": "⛔ blocked",
+    "na": "— n/a"
   },
-  "component": {
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo"
+  "defaults": {
+    "color-role": {
+      "figma": "todo",
+      "tokens": "todo",
+      "code": "todo"
+    },
+    "icon": {
+      "figma": "blocked",
+      "tokens": "na",
+      "code": "blocked",
+      "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)"
+    },
+    "component": {
+      "figma": "todo",
+      "tokens": "todo",
+      "code": "todo"
+    },
+    "layout": {
+      "figma": "todo",
+      "tokens": "todo",
+      "code": "todo",
+      "blocked_by": "Spacing, radius and size scales (foundations below)"
+    }
   },
-  "layout": {
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Spacing, radius and size scales (foundations below)"
-  }
- },
- "foundations": [
-  {
-   "id": "foundation/type",
-   "group": "Typography",
-   "name": "Text styles (63 iOS styles; Android font maps per market)",
-   "owner": "core+variant",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "blocked_by": "",
-   "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt"
+  "foundations": [
+    {
+      "id": "foundation/type",
+      "group": "Typography",
+      "name": "Text styles (63 iOS styles; Android font maps per market)",
+      "owner": "core+variant",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "blocked_by": "",
+      "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt"
+    },
+    {
+      "id": "foundation/type-markets",
+      "group": "Typography",
+      "name": "Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…)",
+      "owner": "core+variant",
+      "figma": "done",
+      "tokens": "na",
+      "code": "na",
+      "note": "Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05",
+      "blocked_by": ""
+    },
+    {
+      "id": "foundation/spacing",
+      "group": "Scales",
+      "name": "Spacing scale (6 values in use, no shared scale in code)",
+      "owner": "core",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins"
+    },
+    {
+      "id": "foundation/radius",
+      "group": "Scales",
+      "name": "Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15)",
+      "owner": "core+variant",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-12: every component radius/size as a platform token (Components · iOS / Android)"
+    },
+    {
+      "id": "foundation/size",
+      "group": "Scales",
+      "name": "Size scale (touch target, checkbox, icon sizes)",
+      "owner": "core+variant",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-12: every component radius/size as a platform token (Components · iOS / Android)"
+    },
+    {
+      "id": "foundation/breakpoints",
+      "group": "Scales",
+      "name": "Breakpoints + 12-column grid",
+      "owner": "core+variant",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "blocked_by": "",
+      "note": "DEC-12: as shipped per platform (iOS two sets, as shipped, LAY-01 not pursued; Android inches + sw500/600dp)"
+    },
+    {
+      "id": "foundation/system-colors",
+      "group": "Color",
+      "name": "The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection)",
+      "owner": "core",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections"
+    },
+    {
+      "id": "foundation/brand-colors",
+      "group": "Color",
+      "name": "Brand colors, 78 markets (Brand colors + Brand theme)",
+      "owner": "core",
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-01…06. Swift/Kotlin generated, not compiled in an app yet"
+    },
+    {
+      "id": "foundation/dark-mode",
+      "group": "Color",
+      "name": "Dark mode",
+      "owner": "core",
+      "figma": "na",
+      "tokens": "na",
+      "code": "na",
+      "note": "Every app is light-only; confirm no plans (MISSING-ASSETS 3.2)"
+    }
+  ],
+  "items": {
+    "color/navbar": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/navtext": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/tabbar": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/tabactive": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/tabinactive": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/action": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written"
+    },
+    "color/alert": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-05; alerttext added"
+    },
+    "color/buy": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "Alias of action"
+    },
+    "color/continue": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "Alias of action"
+    },
+    "color/header": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell"
+    },
+    "color/statusbar": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6)"
+    },
+    "color/accent": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority"
+    },
+    "component/button-primary": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-07 pilot; provisional values in MISSING-ASSETS 5.5"
+    },
+    "component/button-text": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-07 pilot"
+    },
+    "component/button-states": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "blocked_by": "",
+      "note": "Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10)"
+    },
+    "component/button-continue": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03"
+    },
+    "component/breaking-banner": {
+      "tokens": "partial",
+      "code": "partial",
+      "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked",
+      "figma": "blocked",
+      "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
+    },
+    "component/nav-bar": {
+      "tokens": "partial",
+      "code": "partial",
+      "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13)",
+      "figma": "blocked",
+      "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
+    },
+    "component/tab-bar": {
+      "tokens": "partial",
+      "code": "partial",
+      "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6)",
+      "figma": "blocked",
+      "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
+    },
+    "component/status-bar": {
+      "tokens": "done",
+      "code": "written",
+      "figma": "partial",
+      "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6"
+    },
+    "component/section-header": {
+      "tokens": "done",
+      "code": "written",
+      "figma": "partial",
+      "note": "Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables"
+    },
+    "layout/orientation": {
+      "tokens": "na",
+      "code": "na",
+      "blocked_by": "",
+      "figma": "done",
+      "note": "Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps"
+    },
+    "layout/cell-spacing": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-11 space.cell.margin 16, space.cell.gap 8"
+    },
+    "layout/article-margin": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-11 Core 16; iOS width formula not tokenised; Android 30/75"
+    },
+    "layout/touch-target": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-11 iOS 44, Android 48 (not enforced in the apps)"
+    },
+    "layout/grid": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
+    },
+    "layout/breakpoints": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
+    },
+    "component/section-tabs": {
+      "figma": "blocked",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
+      "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)"
+    },
+    "component/subscription-option": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button)"
+    },
+    "component/permission-prompt": {
+      "figma": "blocked",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height)",
+      "note": "Colors and radius 5 are tokens (DEC-14)"
+    },
+    "component/button-account": {
+      "figma": "blocked",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height, colors)",
+      "note": "Radius is a token (DEC-12)"
+    },
+    "component/savings-badge": {
+      "figma": "blocked",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, padding)",
+      "note": "Text #004e87 and radius 15 are tokens"
+    },
+    "component/social-signin": {
+      "figma": "blocked",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors)",
+      "note": "Google radius and icon size are tokens"
+    },
+    "component/switch": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls)"
+    },
+    "component/checkbox": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.8. Core checkbox still recommended"
+    },
+    "component/text-size": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
+    },
+    "component/segmented": {
+      "figma": "blocked",
+      "tokens": "todo",
+      "code": "todo",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
+    },
+    "component/loading": {
+      "figma": "blocked",
+      "tokens": "todo",
+      "code": "todo",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
+    }
   },
-  {
-   "id": "foundation/type-markets",
-   "group": "Typography",
-   "name": "Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…)",
-   "owner": "core+variant",
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
-   "note": "Kept as notes on each type token (DEC-09). Future: remove them (IMPROVEMENTS TYPE-05)"
-  },
-  {
-   "id": "foundation/spacing",
-   "group": "Scales",
-   "name": "Spacing scale (6 values in use, no shared scale in code)",
-   "owner": "core",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-11: Core space.cell.margin/gap, space.article.side; platform article margins"
-  },
-  {
-   "id": "foundation/radius",
-   "group": "Scales",
-   "name": "Radius scale (iOS 2/4/5/8, Android 0/6/9/10/15)",
-   "owner": "core+variant",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-12: every component radius/size as a platform token (Components · iOS / Android)"
-  },
-  {
-   "id": "foundation/size",
-   "group": "Scales",
-   "name": "Size scale (touch target, checkbox, icon sizes)",
-   "owner": "core+variant",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-12: every component radius/size as a platform token (Components · iOS / Android)"
-  },
-  {
-   "id": "foundation/breakpoints",
-   "group": "Scales",
-   "name": "Breakpoints + 12-column grid",
-   "owner": "core+variant",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "blocked_by": "",
-   "note": "DEC-12: as shipped per platform (iOS two sets, as shipped, LAY-01 not pursued; Android inches + sw500/600dp)"
-  },
-  {
-   "id": "foundation/system-colors",
-   "group": "Color",
-   "name": "The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection)",
-   "owner": "core",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections"
-  },
-  {
-   "id": "foundation/brand-colors",
-   "group": "Color",
-   "name": "Brand colors, 78 markets (Brand colors + Brand theme)",
-   "owner": "core",
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-01…06. Swift/Kotlin generated, not compiled in an app yet"
-  },
-  {
-   "id": "foundation/dark-mode",
-   "group": "Color",
-   "name": "Dark mode",
-   "owner": "core",
-   "figma": "na",
-   "tokens": "na",
-   "code": "na",
-   "note": "Every app is light-only; confirm no plans (MISSING-ASSETS 3.2)"
-  }
- ],
- "items": {
-  "color/navbar": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/navtext": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/tabbar": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/tabactive": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/tabinactive": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/action": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written"
-  },
-  "color/alert": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-05; alerttext added"
-  },
-  "color/buy": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "Alias of action"
-  },
-  "color/continue": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "Alias of action"
-  },
-  "color/header": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell"
-  },
-  "color/statusbar": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6)"
-  },
-  "color/accent": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority"
-  },
-  "component/button-primary": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-07 pilot; provisional values in MISSING-ASSETS 5.5"
-  },
-  "component/button-text": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-07 pilot"
-  },
-  "component/button-states": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "blocked_by": "",
-   "note": "Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10)"
-  },
-  "component/button-continue": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03"
-  },
-  "component/breaking-banner": {
-   "tokens": "partial",
-   "code": "partial",
-   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked",
-   "figma": "blocked",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
-  },
-  "component/nav-bar": {
-   "tokens": "partial",
-   "code": "partial",
-   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13)",
-   "figma": "blocked",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
-  },
-  "component/tab-bar": {
-   "tokens": "partial",
-   "code": "partial",
-   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6)",
-   "figma": "blocked",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)"
-  },
-  "component/status-bar": {
-   "tokens": "done",
-   "code": "written",
-   "figma": "partial",
-   "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6"
-  },
-  "component/section-header": {
-   "tokens": "done",
-   "code": "written",
-   "figma": "partial",
-   "note": "Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables"
-  },
-  "layout/orientation": {
-   "tokens": "na",
-   "code": "na",
-   "blocked_by": ""
-  },
-  "layout/cell-spacing": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-11 space.cell.margin 16, space.cell.gap 8"
-  },
-  "layout/article-margin": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-11 Core 16; iOS width formula not tokenised; Android 30/75"
-  },
-  "layout/touch-target": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-11 iOS 44, Android 48 (not enforced in the apps)"
-  },
-  "layout/grid": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
-  },
-  "layout/breakpoints": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
-  },
-  "component/section-tabs": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
-   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)"
-  },
-  "component/subscription-option": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button)"
-  },
-  "component/permission-prompt": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height)",
-   "note": "Colors and radius 5 are tokens (DEC-14)"
-  },
-  "component/button-account": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height, colors)",
-   "note": "Radius is a token (DEC-12)"
-  },
-  "component/savings-badge": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, padding)",
-   "note": "Text #004e87 and radius 15 are tokens"
-  },
-  "component/social-signin": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors)",
-   "note": "Google radius and icon size are tokens"
-  },
-  "component/switch": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls)"
-  },
-  "component/checkbox": {
-   "figma": "partial",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS ships image sets (Core checkbox still recommended)"
-  },
-  "component/text-size": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
-  },
-  "component/segmented": {
-   "figma": "blocked",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
-  },
-  "component/loading": {
-   "figma": "blocked",
-   "tokens": "todo",
-   "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
-  },
-  "foundation/type-markets": {
-   "figma": "done",
-   "tokens": "na",
-   "code": "na",
-   "blocked_by": "",
-   "note": "Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05"
-  }
- },
- "next": [
-  "Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)",
-  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)",
-  "Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names for Karl to review; glyphs and the Icon component after MISSING-ASSETS §1"
- ]
+  "next": [
+    "Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)",
+    "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)",
+    "Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names for Karl to review; glyphs and the Icon component after MISSING-ASSETS §1"
+  ]
 }
