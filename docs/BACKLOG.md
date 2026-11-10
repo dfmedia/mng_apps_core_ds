@@ -14,10 +14,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
-| Components | 20 | 0 | 8 | 10 | 0 | 2 |
-| Layout | 6 | 1 | 5 | 0 | 0 | 0 |
+| Components | 24 | 0 | 9 | 12 | 0 | 3 |
+| Layout | 7 | 1 | 5 | 1 | 0 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **2** | **32** | **10** | **0** | **63** |
+| **Total** | **112** | **2** | **33** | **13** | **0** | **64** |
 
 ## Suggested order
 
@@ -93,6 +93,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height) · Colors and radius 5 are tokens (DEC-14) |
 | Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height, colors) · Radius is a token (DEC-12) |
+| What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Apps team: MISSING-ASSETS 5.7 (height, label size, padding) · Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md |
 | Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, padding) · Text #004e87 and radius 15 are tokens |
 | Social sign-in buttons | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors) · Google radius and icon size are tokens |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
@@ -107,6 +108,14 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Segmented control | Core + iOS + Android | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Native control per platform; Core sets colors. |
 | Loading indicator | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Same pattern on both; no in-button spinner. |
 
+### Other
+
+| Item | Where | Figma | Tokens | Code | Blocked by / note |
+|---|---|---|---|---|---|
+| Home-screen widget | Android | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ Night colors and layout: MISSING-ASSETS 5.10 · Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02 |
+| eEdition (PageSuite) colors | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | color.android-system.eedition.* (4 fixed colors), Android Layout · Ads, widget, eEdition › 03; docs/GUIDE-EXTRAS.md |
+| Non-icon images (logos, onboarding, placeholders) | Core + iOS + Android | — n/a | — n/a | ⛔ blocked | ⛔ Vector masters: MISSING-ASSETS 2.1, 2.2 · Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma |
+
 ## Layout
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
@@ -117,6 +126,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
+| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.9 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android slots drawn from component.android.ad.* (Android Layout · Ads, widget, eEdition › 01). Colors Core ad/background, ad/label |
 
 ## Icons
 

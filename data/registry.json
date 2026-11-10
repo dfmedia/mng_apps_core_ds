@@ -13,14 +13,14 @@
    "android": 2
   },
   "component": {
-   "core+variant": 10,
+   "core+variant": 11,
    "core": 6,
    "ios": 2,
-   "android": 2
+   "android": 5
   },
   "layout": {
    "core": 3,
-   "core+variant": 3
+   "core+variant": 4
   }
  },
  "items": [
@@ -1677,6 +1677,24 @@
    }
   },
   {
+   "id": "component/button-whats-new",
+   "type": "component",
+   "group": "Buttons",
+   "name": "What's New Continue button",
+   "owner": "android",
+   "ios": {
+    "source": "\u2014"
+   },
+   "android": {
+    "source": "whats_new_button_color fill (CT, NYDN, VP: drawable color), white caps Open Sans Bold, radius 6"
+   },
+   "note": "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
    "id": "component/savings-badge",
    "type": "component",
    "group": "Buttons",
@@ -1923,6 +1941,78 @@
     "source": "Phone portrait, tablet all"
    },
    "note": "Identical.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "layout/ad-slots",
+   "type": "layout",
+   "group": "Layout",
+   "name": "Ad slots",
+   "owner": "core+variant",
+   "ios": {
+    "source": "Sizes not in the guide; offline placeholder image, adhesion banner background"
+   },
+   "android": {
+    "source": "320\u00d750 phone / 728\u00d790 tablet first slot and sticky footer, 300\u00d7250 others; hidden when the parent is narrower"
+   },
+   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.9). docs/GUIDE-EXTRAS.md.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "component/widget",
+   "type": "component",
+   "group": "Other",
+   "name": "Home-screen widget",
+   "owner": "android",
+   "ios": {
+    "source": "\u2014"
+   },
+   "android": {
+    "source": "widget_* colors (day), values-night colors, per-market ic_logo + night logo"
+   },
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.10).",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "component/eedition-colors",
+   "type": "component",
+   "group": "Other",
+   "name": "eEdition (PageSuite) colors",
+   "owner": "android",
+   "ios": {
+    "source": "Own eNewspaper viewer (no PageSuite colors)"
+   },
+   "android": {
+    "source": "Fixed SDK colors: tab container #ffffff, tab text #ffffff, inactive #999999, brand #0a1633"
+   },
+   "note": "Same in every market. docs/GUIDE-EXTRAS.md.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "component/images",
+   "type": "component",
+   "group": "Other",
+   "name": "Non-icon images (logos, onboarding, placeholders)",
+   "owner": "core+variant",
+   "ios": {
+    "source": "Onboarding art and logos, masthead, paywall logo, placeholders, topic button backgrounds (43 files)"
+   },
+   "android": {
+    "source": "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)"
+   },
+   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1, 2.2.",
    "core": {
     "figma": null,
     "spec": null

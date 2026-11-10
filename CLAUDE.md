@@ -97,6 +97,7 @@ docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
 docs/MISSING-ASSETS.md            what we need from the Apps team
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
+docs/GUIDE-EXTRAS.md              generated: style-guide items documented as shipped (ad slots, What's New button, widget, eEdition colors, images)
 docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md)
 docs/ORIENTATION.md               generated: phone / tablet / foldable orientation as shipped
 docs/LEGACY-TEMPLATE.md           generated: iOS legacy-template values, acknowledged only (DEC-10)
@@ -139,6 +140,8 @@ python3 scripts/build_ios_checkbox.py      # iOS checkbox as shipped (image sets
 python3 scripts/figma_ios_checkbox.py upload <file>|build   # iOS file Components · Controls › 02 · Checkbox: images one per call (length + hash checked), then the build
 python3 scripts/build_orientation.py      # orientation as shipped: data/orientation.json, docs/ORIENTATION.md (from data/source/orientation.json)
 python3 scripts/figma_orientation.py      # prints JS for Core Layout · iOS vs Android › 01 · Orientation
+python3 scripts/build_guide_extras.py     # DEC-18: style-guide extras as shipped: data/guide-extras.json, docs/GUIDE-EXTRAS.md, tokens/android/guide-extras.tokens.json (before npm run build)
+python3 scripts/figma_guide_extras.py vars|core-ads|android-ads <key>|android-widget|android-eedition|whats-new   # prints JS for the DEC-18 Figma sections
 python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison: docs/SCALES-COMPARISON.md
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)

@@ -20,6 +20,7 @@ ROWS = [
  ("Buttons", "button-text", "Text link button", "paywallLinkColor (Log In link)", "Paywall Log In link, system 16sp", "core", "Core text/link button."),
  ("Buttons", "permission-prompt", "Notification prompt buttons", "Push prompt Yes (filled) / No (text), radius 5", "Alerts enable button, square", "core+variant", "Same job; iOS has a Yes/No pair."),
  ("Buttons", "button-account", "Manage subscription / delete account", "Manage Subscription buttons, 44pt", "radius 10, filled or outlined (bottom sheets)", "core+variant", "Only place Android has an outlined (secondary) button."),
+ ("Buttons", "button-whats-new", "What's New Continue button", "—", "whats_new_button_color fill (CT, NYDN, VP: drawable color), white caps Open Sans Bold, radius 6", "android", "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md."),
  ("Buttons", "savings-badge", "Savings label", "—", "White, 2dp stroke in buy color, radius 15", "android", "Not on iOS paywall."),
  ("Buttons", "social-signin", "Social sign-in buttons", "Apple (black, 44pt), Facebook, Google, Amazon (TroncKit defaults)", "Native buttons exist but are hidden; login is Auth0's web page", "ios", "Android shows them only on the Auth0 web page."),
  ("Buttons", "button-states", "Secondary, disabled, loading states", "Missing (one disabled Continue)", "Missing (Continue disabled #c1c8cb, text #767676)", "core", "Gap on both. Define once in Core (CTRL-02)."),
@@ -34,6 +35,10 @@ ROWS = [
  ("Layout", "article-margin", "Article side margin", "0.3125 × width − 160, min 16", "16 phone, 30 landscape, 75 tablet", "core+variant", "Both 16 on phones."),
  ("Layout", "touch-target", "Minimum touch target", "44 pt (not enforced)", "48 dp (not enforced)", "core+variant", "Core rule; platform value."),
  ("Layout", "orientation", "Orientation", "iPhone portrait, iPad all", "Phone portrait, tablet all", "core", "Identical."),
+ ("Layout", "ad-slots", "Ad slots", "Sizes not in the guide; offline placeholder image, adhesion banner background", "320×50 phone / 728×90 tablet first slot and sticky footer, 300×250 others; hidden when the parent is narrower", "core+variant", "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.9). docs/GUIDE-EXTRAS.md."),
+ ("Other", "widget", "Home-screen widget", "—", "widget_* colors (day), values-night colors, per-market ic_logo + night logo", "android", "Day colors are System colors · Android tokens; night colors unknown (MISSING-ASSETS 5.10)."),
+ ("Other", "eedition-colors", "eEdition (PageSuite) colors", "Own eNewspaper viewer (no PageSuite colors)", "Fixed SDK colors: tab container #ffffff, tab text #ffffff, inactive #999999, brand #0a1633", "android", "Same in every market. docs/GUIDE-EXTRAS.md."),
+ ("Other", "images", "Non-icon images (logos, onboarding, placeholders)", "Onboarding art and logos, masthead, paywall logo, placeholders, topic button backgrounds (43 files)", "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)", "core+variant", "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1, 2.2."),
 ]
 out = sys.argv[1]
 items = [dict(zip(["group","id","name","ios_today","android_today","owner","note"], r)) for r in ROWS]

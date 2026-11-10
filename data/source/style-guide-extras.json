@@ -1,0 +1,103 @@
+{
+ "$description": "Items in the two Apps team style guides that were not tracked yet (docs/STYLE-GUIDE-INVENTORY.md), copied word for word from the guides on 2026-11-10. Source data: do not edit. Built by scripts/build_guide_extras.py.",
+ "sources": {
+  "ios": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc, version 1793034195-4b13), TroncKit @ e30ad2585",
+  "android": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ, version 1792536558-0b1c), android-tribpub @ 1cfb069a6"
+ },
+ "ad_slots": {
+  "android": {
+   "evidence": "project/4-layout.md › Ads; project/tokens.json breakpoint bp-sw500 usage",
+   "unit": "dp",
+   "sizes": {
+    "banner-phone": {"width": 320, "height": 50},
+    "banner-tablet": {"width": 728, "height": 90},
+    "box": {"width": 300, "height": 250}
+   },
+   "slots": [
+    {"id": "first", "name": "First ad slot", "phone": "banner-phone", "tablet": "banner-tablet"},
+    {"id": "other", "name": "Other ad slots", "phone": "box", "tablet": "box"},
+    {"id": "sticky-footer", "name": "Sticky footer banner", "phone": "banner-phone", "tablet": "banner-tablet", "where": "Section fronts"}
+   ],
+   "rules": [
+    "Sizes are set in code (AdsUtil.getAdSizesListOfAdPos); phone vs tablet comes from is_phone (values-sw500dp sets is_phone=false).",
+    "ads.sectionFrontsAdSizes / articlesAdSizes in the config JSON are not read by any code.",
+    "An ad is hidden when its parent is narrower than the ad."
+   ]
+  },
+  "ios": {
+   "evidence": "project/api/assets/Ads.md; project/README.md",
+   "sizes": null,
+   "known": [
+    "Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads)",
+    "Outbrain logo outbrainLogo.png (assets/Ads)",
+    "Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background)"
+   ],
+   "unknown": "Ad slot sizes are not in the iOS guide"
+  },
+  "colors_core": ["ad/background", "ad/label"]
+ },
+ "whats_new_continue": {
+  "platform": "android",
+  "evidence": "project/5-controls.md › Buttons; project/components/Buttons/README.md",
+  "fill": {"key": "whats_new_button_color", "note": "per market"},
+  "drawable_overrides": {"CT": "#9dd1f5", "NYDN": "#4591e0", "VP": "#005f7e"},
+  "label": {"color": "#ffffff", "case": "all caps", "font_key": "Continue_button_Font_Additional_Whats_New"},
+  "radius": {"value": 6, "guide_token": "radius-whatsnew"},
+  "unknown": ["height", "label size", "padding"],
+  "ios": "Not in the iOS guide"
+ },
+ "alerts_enable": {
+  "platform": "android",
+  "evidence": "project/5-controls.md › Buttons",
+  "fill": {"key": "Alerts_Enable_Button_Background"},
+  "label": {"color": "#ffffff"},
+  "shape": "Square",
+  "registry": "component/permission-prompt (Android side of Notification prompt buttons)"
+ },
+ "widget": {
+  "platform": "android",
+  "evidence": "project/6-dark-mode.md › Our app; project/3-icons.md (widgets module: 6 PNG drawables); project/assets/Other/README.md",
+  "day_keys": ["widget_bg", "widget_divider1", "widget_divider2", "widget_text_main"],
+  "night": "values-night changes only the home-screen widget colors. The night values are not in the guide.",
+  "logo": "All 77 flavors ship their own ic_logo plus a night ic_logo; it shows on the widget.",
+  "icons": "eNewspaper and Games icons used in dialogs and the widget (assets/Other).",
+  "unknown": ["night color values (values-night)", "widget layout and sizes"],
+  "ios": "Not in the iOS guide"
+ },
+ "eedition": {
+  "platform": "android",
+  "evidence": "project/6-dark-mode.md › PageSuite (eEdition)",
+  "sdk": "PageSuite psReaderSDKContainer 26.7.0",
+  "colors": [
+   {"id": "tab-container", "what": "Tab container", "value": "#ffffff"},
+   {"id": "tab-text", "what": "Tab text", "value": "#ffffff"},
+   {"id": "tab-text-inactive", "what": "Inactive tab text", "value": "#999999"},
+   {"id": "brand", "what": "Brand color", "value": "#0a1633", "shipped_as": "10,22,51"}
+  ],
+  "rules": ["Fixed colors, the same for every market.", "The app never sets the SDK's light / dark mode."],
+  "ios": "iOS has its own eNewspaper viewer (icons in assets/ENewspaper); no PageSuite colors in the iOS guide"
+ },
+ "images": {
+  "ios": {
+   "evidence": "project/api/assets/*.md (TroncKit Assets.xcassets, highest scale)",
+   "groups": [
+    {"group": "Onboarding", "what": "Onboarding art and logos for BS, CT, DP, HC, MC, NYDN, OS, SS, VP, plus the MNG top image", "files": ["BS.png", "CT.png", "ct-logo.png", "DP.png", "DP-logo-white.png", "HC.png", "HC-logo.png", "logo-bs-white.png", "MC.png", "MC-logo-white.png", "mng-top-image-view.png", "NYDN.png", "NYDN-logo.png", "OS.png", "OS-logo.png", "SS.png", "SS-logo.png", "VP.png", "VP-logo-white.png"]},
+    {"group": "General", "what": "Masthead and account deletion image", "files": ["Masthead.png", "AccountDeletionImage.png"]},
+    {"group": "Paywall", "what": "Paywall logo", "files": ["paywall-logo.png"]},
+    {"group": "ENewspaper", "what": "Cover placeholder and overlay", "files": ["cover-placeholder.png", "eNewspaper-overlay.png"]},
+    {"group": "PostKit", "what": "Player and recirculation placeholders, Washington Post slogan", "files": ["player-error-image.png", "player-offline-image.png", "player-placeholder-compact.png", "player-placeholder-regular.png", "recirculationPlaceholder.png", "twp-slogan-light.png", "twp-slogan-dark.png"]},
+    {"group": "Ads", "what": "Offline ad placeholder", "files": ["ad-bigbox-offline-250.jpg"]},
+    {"group": "yournews", "what": "Your News header image", "files": ["your_news_image.png"]},
+    {"group": "Topic Selection Button", "what": "Topic selection button backgrounds", "files": ["ButtonWithCheckmark.png", "TopicSelection-BS.png", "TopicSelection-Grey.png", "TopicSelection-Hart.png", "TopicSelection-MC.png", "TopicSelection-NYDN.png", "TopicSelection-OS.png", "TopicSelection-SS.png", "TopicSelection-TPD.png", "TopicSelection-VP.png"]}
+   ]
+  },
+  "android": {
+   "evidence": "project/3-icons.md › Per-market drawables; project/6-dark-mode.md",
+   "groups": [
+    {"group": "Logos", "what": "Per-market ic_logo (home-screen widget) plus a night ic_logo, all 77 flavors", "files": null},
+    {"group": "Launcher, splash, notification", "what": "Per-market launcher icons (background color ic_launcher_background in docs/BRAND-COLORS.md), splash and notification icons", "files": null}
+   ],
+   "note": "The Android guide's asset store does not carry these files."
+  }
+ }
+}

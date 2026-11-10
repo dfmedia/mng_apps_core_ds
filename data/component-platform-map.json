@@ -4,10 +4,10 @@
   "android": "android-tribpub @ 1cfb069a6"
  },
  "summary": {
-  "core+variant": 13,
+  "core+variant": 15,
   "core": 9,
   "ios": 2,
-  "android": 2
+  "android": 5
  },
  "items": [
   {
@@ -117,6 +117,15 @@
    "android_today": "radius 10, filled or outlined (bottom sheets)",
    "owner": "core+variant",
    "note": "Only place Android has an outlined (secondary) button."
+  },
+  {
+   "group": "Buttons",
+   "id": "button-whats-new",
+   "name": "What's New Continue button",
+   "ios_today": "\u2014",
+   "android_today": "whats_new_button_color fill (CT, NYDN, VP: drawable color), white caps Open Sans Bold, radius 6",
+   "owner": "android",
+   "note": "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md."
   },
   {
    "group": "Buttons",
@@ -243,6 +252,42 @@
    "android_today": "Phone portrait, tablet all",
    "owner": "core",
    "note": "Identical."
+  },
+  {
+   "group": "Layout",
+   "id": "ad-slots",
+   "name": "Ad slots",
+   "ios_today": "Sizes not in the guide; offline placeholder image, adhesion banner background",
+   "android_today": "320\u00d750 phone / 728\u00d790 tablet first slot and sticky footer, 300\u00d7250 others; hidden when the parent is narrower",
+   "owner": "core+variant",
+   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.9). docs/GUIDE-EXTRAS.md."
+  },
+  {
+   "group": "Other",
+   "id": "widget",
+   "name": "Home-screen widget",
+   "ios_today": "\u2014",
+   "android_today": "widget_* colors (day), values-night colors, per-market ic_logo + night logo",
+   "owner": "android",
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.10)."
+  },
+  {
+   "group": "Other",
+   "id": "eedition-colors",
+   "name": "eEdition (PageSuite) colors",
+   "ios_today": "Own eNewspaper viewer (no PageSuite colors)",
+   "android_today": "Fixed SDK colors: tab container #ffffff, tab text #ffffff, inactive #999999, brand #0a1633",
+   "owner": "android",
+   "note": "Same in every market. docs/GUIDE-EXTRAS.md."
+  },
+  {
+   "group": "Other",
+   "id": "images",
+   "name": "Non-icon images (logos, onboarding, placeholders)",
+   "ios_today": "Onboarding art and logos, masthead, paywall logo, placeholders, topic button backgrounds (43 files)",
+   "android_today": "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)",
+   "owner": "core+variant",
+   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1, 2.2."
   }
  ]
 }

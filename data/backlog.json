@@ -1224,6 +1224,19 @@
    "overall": "in progress"
   },
   {
+   "id": "component/button-whats-new",
+   "area": "Components",
+   "group": "Buttons",
+   "name": "What's New Continue button",
+   "owner": "android",
+   "figma": "partial",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (height, label size, padding)",
+   "note": "Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md",
+   "overall": "in progress"
+  },
+  {
    "id": "component/savings-badge",
    "area": "Components",
    "group": "Buttons",
@@ -1404,6 +1417,58 @@
    "blocked_by": "",
    "note": "Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps",
    "overall": "done"
+  },
+  {
+   "id": "layout/ad-slots",
+   "area": "Layout",
+   "group": "Layout",
+   "name": "Ad slots",
+   "owner": "core+variant",
+   "figma": "done",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.9",
+   "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android slots drawn from component.android.ad.* (Android Layout · Ads, widget, eEdition › 01). Colors Core ad/background, ad/label",
+   "overall": "in progress"
+  },
+  {
+   "id": "component/widget",
+   "area": "Components",
+   "group": "Other",
+   "name": "Home-screen widget",
+   "owner": "android",
+   "figma": "partial",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Night colors and layout: MISSING-ASSETS 5.10",
+   "note": "Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02",
+   "overall": "in progress"
+  },
+  {
+   "id": "component/eedition-colors",
+   "area": "Components",
+   "group": "Other",
+   "name": "eEdition (PageSuite) colors",
+   "owner": "android",
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "",
+   "note": "color.android-system.eedition.* (4 fixed colors), Android Layout · Ads, widget, eEdition › 03; docs/GUIDE-EXTRAS.md",
+   "overall": "built"
+  },
+  {
+   "id": "component/images",
+   "area": "Components",
+   "group": "Other",
+   "name": "Non-icon images (logos, onboarding, placeholders)",
+   "owner": "core+variant",
+   "figma": "na",
+   "tokens": "na",
+   "code": "blocked",
+   "blocked_by": "Vector masters: MISSING-ASSETS 2.1, 2.2",
+   "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma",
+   "overall": "blocked"
   }
  ]
 }

@@ -2,9 +2,10 @@
 // Prepend `const PAGE = '...'; const T = {...};` where T comes from a scripts/*.py emitter, e.g.
 //   python3 scripts/figma_system_colors.py <section-id>   (prints the JS for one section)
 // T = { name: 'NN · Title', title, intro, columns: [{name, w}], rows: [ [cell...] | {group: 'text'} ] }
-// cell: 'text' | {t: 'text', sw: '#rrggbb' | null, b: bold} | {chip: 'Core' | 'Core alias' | 'Core, per-platform value' | 'iOS only' | 'Android only' | 'Differs' | 'Token'}
+// cell: 'text' | {t: 'text', sw: '#rrggbb' | null, b: bold, v: 'Collection name::variable/name' | 'key:<library variable key>'} | {chip: 'Core' | 'Core alias' | 'Core, per-platform value' | 'iOS only' | 'Android only' | 'Differs' | 'Token'}
 //       | {clone: [sectionName, rowName, cellName, pageName?], alt: 'text'}  copies that cell from another section (this page, or pageName,
 //         which the emitter must load first), e.g. glyph previews; alt if missing
+//       v binds the swatch fill to that variable (DEC-12: linked to tokens); sw is only the fallback color shown before binding.
 // Re-running replaces only the section with the same name (rule 4). Sections stack downward in creation order.
 const CHIPS = { 'Core': ['#e6f4ea', '#14532d'], 'Core alias': ['#e6f4ea', '#14532d'], 'Core, per-platform value': ['#fff4d6', '#6b4500'],
   'iOS only': ['#e3eefc', '#0b3d7a'], 'Android only': ['#efe7fb', '#43217a'], 'Differs': ['#fde8e8', '#8a1c1c'], 'Token': ['#f1f1f1', '#333333'] };
@@ -37,11 +38,27 @@ function cellNode(c, w) {
     const s = figma.createRectangle(); s.name = 'swatch'; s.resize(20, 20); s.cornerRadius = 4;
     if (o.sw) { const h = o.sw.replace('#', ''); s.fills = [solid('#' + h.slice(0, 6), h.length === 8 ? parseInt(h.slice(6), 16) / 255 : 1)]; }
     else { s.fills = []; s.dashPattern = [3, 2]; }
+    if (o.v) { if (!s.fills.length) s.fills = [solid('#000000')]; s.fills = [figma.variables.setBoundVariableForPaint(s.fills[0], 'color', _vars[o.v])]; s.name = 'swatch · ' + _vars[o.v].name; }
     s.strokes = [solid('#cccccc')]; s.strokeWeight = 1; f.appendChild(s);
   }
   const t = text(o.t, 12, o.b ? 'SemiBold' : 'Regular', '#1a1a1a', 18); f.appendChild(t);
   t.layoutGrow = 1; t.textAutoResize = 'HEIGHT';
   return f;
+}
+const _vars = {};
+for (const r of T.rows) if (Array.isArray(r)) for (const c of r) if (c && typeof c === 'object' && c.v) _vars[c.v] = null;
+if (Object.keys(_vars).length) {
+  const cols = await figma.variables.getLocalVariableCollectionsAsync();
+  for (const k of Object.keys(_vars)) {
+    if (k.startsWith('key:')) {
+      _vars[k] = await Promise.race([figma.variables.importVariableByKeyAsync(k.slice(4)),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('Library variable import timed out: accept Core library updates in this file')), 15000))]);
+      continue;
+    }
+    const [cn, vn] = k.split('::'); const col = cols.find(c => c.name === cn);
+    if (col) for (const id of col.variableIds) { const v = await figma.variables.getVariableByIdAsync(id); if (v.name === vn) { _vars[k] = v; break; } }
+    if (!_vars[k]) throw new Error('Variable not found: ' + k);
+  }
 }
 let page = figma.root.children.find(p => p.name === PAGE);
 if (!page) { page = figma.createPage(); page.name = PAGE; }

@@ -364,6 +364,41 @@
       "tokens": "todo",
       "code": "todo",
       "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)"
+    },
+    "component/button-whats-new": {
+      "figma": "partial",
+      "tokens": "done",
+      "code": "written",
+      "blocked_by": "Apps team: MISSING-ASSETS 5.7 (height, label size, padding)",
+      "note": "Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md"
+    },
+    "layout/ad-slots": {
+      "figma": "done",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.9",
+      "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android slots drawn from component.android.ad.* (Android Layout · Ads, widget, eEdition › 01). Colors Core ad/background, ad/label"
+    },
+    "component/widget": {
+      "figma": "partial",
+      "tokens": "partial",
+      "code": "partial",
+      "blocked_by": "Night colors and layout: MISSING-ASSETS 5.10",
+      "note": "Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02"
+    },
+    "component/eedition-colors": {
+      "figma": "done",
+      "tokens": "done",
+      "code": "written",
+      "blocked_by": "",
+      "note": "color.android-system.eedition.* (4 fixed colors), Android Layout · Ads, widget, eEdition › 03; docs/GUIDE-EXTRAS.md"
+    },
+    "component/images": {
+      "figma": "na",
+      "tokens": "na",
+      "code": "blocked",
+      "blocked_by": "Vector masters: MISSING-ASSETS 2.1, 2.2",
+      "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma"
     }
   },
   "next": [

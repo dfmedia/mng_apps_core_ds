@@ -30,17 +30,18 @@ Brand colors (78 markets), app shell colors (incl. Android 14 vs 15+ status bar)
 
 None left (2026-11-10). Built since this inventory was written: per-market font exceptions (Core Type · iOS vs Android › 04, 05; docs/TYPE-FONT-EXCEPTIONS.md), iOS checkbox as shipped (iOS file, Components · Controls › 02; docs/components/CHECKBOX-IOS.md), orientation (Core Layout · iOS vs Android › 01; docs/ORIENTATION.md).
 
-## In the guides, not tracked anywhere yet
+## In the guides, not tracked before 2026-11-10 (now tracked)
 
-| Item | Platform | From the guide |
-|---|---|---|
-| What's New Continue button | Android | `whats_new_button_color` per market (CT, NYDN, VP override the drawable), white all caps, radius 6. Asked in 5.7, missing from the registry |
-| Alerts enable button | Android | `Alerts_Enable_Button_Background`, white text, square. Asked in 5.7, missing from the registry |
-| Non-icon images | iOS | Onboarding art and market logos (19), Masthead, paywall logo, account-deletion image, eNewspaper cover placeholder and overlay, player placeholders (error, offline, compact, regular), recirculation placeholder, offline ad placeholder, Washington Post slogan (light / dark), Your News header, topic selection button backgrounds (10) |
-| Non-icon images | Android | Per-market `ic_logo` (home-screen widget, plus a night version), launcher icons (background color already in BRAND-COLORS) |
-| Ad slots | Android (iOS: offline placeholder only) | 320×50 phone / 728×90 tablet first slot, 300×250 others, sticky footer banner; hidden when the parent is narrower |
-| Home-screen widget | Android | The only place with night colors (`values-night`) |
-| eEdition (PageSuite) colors | Android | Fixed for every market: tab container #ffffff, tab text #ffffff, inactive #999999, brand #0a1633 |
+Karl (2026-11-10): add them to the registry and document them as shipped; design nothing new. Built by `scripts/build_guide_extras.py` from `data/source/style-guide-extras.json` → `data/guide-extras.json`, `docs/GUIDE-EXTRAS.md`.
+
+| Item | Platform | Where it is now | Still unknown |
+|---|---|---|---|
+| What's New Continue button | Android | Registry `component/button-whats-new`. Fill token `whats-new-button-color` (52 of 77; CT, NYDN, VP ship a drawable color), radius `component.android.whats-new-continue.radius` (6). Android Figma Components · Button › 04 | Height, label size, padding (5.7) |
+| Alerts enable button | Android | Was already tracked: Android side of `component/permission-prompt` (Notification prompt buttons). Fill is a control token (58 of 77 follow action) | Font, height (5.7) |
+| Ad slots | Core (both apps) | Registry `layout/ad-slots`. Colors Core `ad/background`, `ad/label`; Android sizes `component.android.ad.*` (320 × 50, 728 × 90, 300 × 250). Core Figma Layout · iOS vs Android › 02; Android Figma Layout · Ads, widget, eEdition | iOS sizes (5.9) |
+| Home-screen widget | Android | Registry `component/widget`. Day colors are System colors · Android tokens (`widget-*`). Android Figma Layout · Ads, widget, eEdition › 02 | Night colors, layout and sizes (5.10) |
+| eEdition (PageSuite) colors | Android | Registry `component/eedition-colors`. Tokens `color.android-system.eedition.*` (4 fixed colors), Kotlin `MngSystemColors.eedition*`. Android Figma › 03 | — |
+| Non-icon images | iOS + Android | Registry `component/images`; file list in docs/GUIDE-EXTRAS.md. Not drawn in Figma (per-market artwork) | Vector masters (2.1, 2.2) |
 
 ## The asset files themselves
 
