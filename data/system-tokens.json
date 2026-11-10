@@ -746,7 +746,7 @@
   },
   {
    "collection": "ios",
-   "name": "progress-hudbackground",
+   "name": "progress-hud-background",
    "source": "progressHUDBackgroundColor",
    "kind": "fixed",
    "value": "#ffffff",
@@ -757,7 +757,7 @@
   },
   {
    "collection": "ios",
-   "name": "progress-hudforeground",
+   "name": "progress-hud-foreground",
    "source": "progressHUDForegroundColor",
    "kind": "majority",
    "value": "#004e87",

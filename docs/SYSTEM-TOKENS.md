@@ -79,8 +79,8 @@ Core: 11 · iOS: 85 · Android: 103
 | `paywall-view-meter-state-message` | `#000000` · 0, 0, 0 | majority | 68 | 9 | `paywallViewMeterStateMessageColor` |
 | `paywall-view-meter-subscription-message` | `#000000` · 0, 0, 0 | majority | 74 | 3 | `paywallViewMeterSubscriptionMessageColor` |
 | `paywall-view-purchase-button-font` | `#ffffff` · 255, 255, 255 | fixed | 77 | — | `paywallViewPurchaseButtonFontColor` |
-| `progress-hudbackground` | `#ffffff` · 255, 255, 255 | fixed | 77 | — | `progressHUDBackgroundColor` |
-| `progress-hudforeground` | `#004e87` · 0, 78, 135 | majority | 66 | 11 | `progressHUDForegroundColor` |
+| `progress-hud-background` | `#ffffff` · 255, 255, 255 | fixed | 77 | — | `progressHUDBackgroundColor` |
+| `progress-hud-foreground` | `#004e87` · 0, 78, 135 | majority | 66 | 11 | `progressHUDForegroundColor` |
 | `push-notification-prompt-bell-tint` | `#1955a5` · 25, 85, 165 | fixed | 77 | — | `pushNotificationPromptBellTint` |
 | `push-notification-prompt-message-text` | `#333333` · 51, 51, 51 | fixed | 77 | — | `pushNotificationPromptMessageTextColor` |
 | `push-notification-prompt-request-text` | `#333333` · 51, 51, 51 | fixed | 77 | — | `pushNotificationPromptRequestTextColor` |

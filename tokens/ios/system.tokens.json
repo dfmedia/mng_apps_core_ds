@@ -1297,7 +1297,7 @@
      }
     }
    },
-   "progress-hudbackground": {
+   "progress-hud-background": {
     "$type": "color",
     "$value": "#ffffff",
     "$description": "`progressHUDBackgroundColor` (iOS): same in all 77 markets",
@@ -1318,7 +1318,7 @@
      }
     }
    },
-   "progress-hudforeground": {
+   "progress-hud-foreground": {
     "$type": "color",
     "$value": "#004e87",
     "$description": "`progressHUDForegroundColor` (iOS): 66 of 77 markets; exceptions documented only (DEC-16)",

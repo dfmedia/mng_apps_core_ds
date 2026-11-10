@@ -139,7 +139,7 @@ for p in PAIRS['pairs']:
     if a['kind'] == b['kind'] == 'follows' and a['follows'] == b['follows']: bucket, why = 'Core alias', f"both follow {a['follows']}"
     elif len(same) >= MAJ and dE(a['majority'], b['majority']) < 0.012: bucket, why = 'Core', f'same value in {len(same)} of {len(common)} markets'
     else: bucket, why = 'Core, per-platform value', f'iOS {a["majority"]} ({a["kind"]}) vs Android {b["majority"]} ({b["kind"]})'
-    check = 'values never match: pairing or design differs, ask Apps team' if not same and not close else ''
+    check = 'differs in every market: Core token keeps a value per platform (DISCREPANCIES DSC-32/33)' if not same and not close else ''
     pairs.append({**p, 'check': check, 'markets_compared': len(common), 'same': len(same), 'close': len(close), 'differ': len(differ),
                   'differ_markets': differ, 'bucket': bucket, 'why': why,
                   'ios_majority': a['majority'], 'android_majority': b['majority'], 'ios_kind': a['kind'], 'android_kind': b['kind']})

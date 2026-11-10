@@ -29,6 +29,7 @@ ROLE = {'action': 'action', 'navbar': 'navbar', 'navtext': 'navtext', 'accent': 
 def kebab(key, plat):
     if plat == 'ios':
         key = re.sub(r'Color$', '', key)
+        key = re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '-', key)          # HUDBackground -> HUD-Background
         return re.sub(r'(?<=[a-z0-9])([A-Z])', r'-\1', key).lower()
     return key.replace('_', '-').lower()
 def rgb(h):

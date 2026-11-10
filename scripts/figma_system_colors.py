@@ -38,13 +38,13 @@ def palettes(plat):
 
 S = P['ios']['summary'], P['android']['summary']
 SEC = {
- 1: dict(name='01 · Summary', title='System colors · iOS vs Android (step 1, review)',
-         intro='Every themed color both apps ship, in all 77 markets, from data/system-color-comparison.json (scripts/compare_system_colors.py; TroncKit @ e30ad2585, android-tribpub @ 1cfb069a6). Nothing here is a token yet. Step 2 after review: tokens for every market (fixed colors in one System collection, the rest per market, markets sharing a palette noted together). Full detail with hex and RGB: docs/SYSTEM-COLORS.md.',
+ 1: dict(name='01 · Summary', title='System colors · iOS vs Android',
+         intro='Every themed color both apps ship, in all 77 markets, from data/system-color-comparison.json (scripts/compare_system_colors.py; TroncKit @ e30ad2585, android-tribpub @ 1cfb069a6). DEC-16 (2026-11-10): tokens hold the majority values (Core: System colors collection; iOS and Android: System colors · iOS / · Android; docs/SYSTEM-TOKENS.md). Every market palette is documented here and in docs/SYSTEM-COLORS.md; exceptions are not built.',
          columns=[{'name': '', 'w': 560}, {'name': 'iOS', 'w': 200}, {'name': 'Android', 'w': 200}],
          rows=[[lab, str(S[0].get(k, 0)), str(S[1].get(k, 0))] for k, lab in [('colors', 'Themed colors in the export'), ('covered', 'Already tokens, or brand assets (not system colors)'), ('fixed', 'Fixed: same in all 77 markets'), ('follows', 'Follows a brand role (alias)'), ('majority', 'Majority value + exceptions'), ('per-market', 'Per market'), ('palettes', 'Distinct market palettes')]]
               + [['iOS ↔ Android pairs (approved 2026-11-10)', str(len(D['pairs'])), str(len(D['pairs']))]]),
  2: dict(name='02 · iOS ↔ Android pairs', title='iOS ↔ Android pairs (approved)',
-         intro='Matched by name and screen (data/system-color-pairs.json), then compared market by market (same < 0.012 ΔE, close < 0.05). Pairs whose values never match are flagged: either the pairing is wrong or the apps are designed differently. Everything not listed is platform-only until the Apps team confirms.',
+         intro='Matched by name and screen (data/system-color-pairs.json), then compared market by market (same < 0.012 ΔE, close < 0.05). Approved by Karl 2026-11-10: each pair is one Core token. Not pairs (different designs, platform-only): alert topic rows ×4 and the offline header.',
          columns=[{'name': 'What', 'w': 280}, {'name': 'iOS', 'w': 320}, {'name': 'iOS value', 'w': 240}, {'name': 'Android', 'w': 260}, {'name': 'Android value', 'w': 240}, {'name': 'Same / close / differ', 'w': 150}, {'name': 'Bucket', 'w': 220}, {'name': 'Check', 'w': 280}],
          rows=[[p['what'], {'t': p['ios'], 'b': True}, sw(p['ios_majority']) if p['ios_kind'] != 'follows' else '= role', {'t': p['android'], 'b': True}, sw(p['android_majority']) if p['android_kind'] != 'follows' else '= role',
                 f"{p['same']} / {p['close']} / {p['differ']}", chip(p['bucket']), p['check'] or '—'] for p in D['pairs']]),

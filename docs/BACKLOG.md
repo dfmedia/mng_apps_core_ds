@@ -12,12 +12,12 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Area | Items | Done | Built | In progress | To do | Blocked |
 |---|---|---|---|---|---|---|
-| Foundations | 8 | 0 | 6 | 1 | 1 | 0 |
+| Foundations | 8 | 0 | 7 | 0 | 1 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 20 | 0 | 6 | 12 | 0 | 2 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **29** | **13** | **2** | **63** |
+| **Total** | **107** | **0** | **30** | **12** | **2** | **63** |
 
 ## Suggested order
 
@@ -48,7 +48,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
+| The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
 | Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only; confirm no plans (MISSING-ASSETS 3.2) |
 

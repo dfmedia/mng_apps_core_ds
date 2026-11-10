@@ -25,9 +25,9 @@ How to read a value: hex · R, G, B (0–255). `not set` = iOS leaves it to the 
 | What | iOS | Android | Same / close / differ (markets) | iOS value | Android value | Bucket | Check |
 |---|---|---|---|---|---|---|---|
 | Sections menu: background | `sectionListCellBackgroundColor` | `SectionsMenu_Background` | 77 / 0 / 0 | `#ffffff` · 255, 255, 255 | `#ffffff` · 255, 255, 255 | Core | — |
-| Sections menu: section name | `sectionListCellTitleColor` | `SectionsMenu_Text` | 0 / 0 / 77 | `#333333` · 51, 51, 51 | `#000000` · 0, 0, 0 | Core, per-platform value | values never match: pairing or design differs, ask Apps team |
+| Sections menu: section name | `sectionListCellTitleColor` | `SectionsMenu_Text` | 0 / 0 / 77 | `#333333` · 51, 51, 51 | `#000000` · 0, 0, 0 | Core, per-platform value | differs in every market: Core token keeps a value per platform (DISCREPANCIES DSC-32/33) |
 | Sections menu: group header text | `sectionListHeaderFontColor` | `SectionMenu_Header_Text` | 74 / 0 / 3 | `#ffffff` · 255, 255, 255 | `#ffffff` · 255, 255, 255 (majority) | Core | — |
-| Sections menu: divider | `sectionListSectionSeparatorColor` | `SectionMenu_Item_Divider` | 0 / 0 / 77 | `not set` (system default) | `#f1f1f1` · 241, 241, 241 (majority) | Core, per-platform value | values never match: pairing or design differs, ask Apps team |
+| Sections menu: divider | `sectionListSectionSeparatorColor` | `SectionMenu_Item_Divider` | 0 / 0 / 77 | `not set` (system default) | `#f1f1f1` · 241, 241, 241 (majority) | Core, per-platform value | differs in every market: Core token keeps a value per platform (DISCREPANCIES DSC-32/33) |
 | Settings: background | `settingsCellBackgroundColor` | `Settings_Background` | 7 / 0 / 70 | `#ffffff` · 255, 255, 255 | `#333333` · 51, 51, 51 (majority) | Core, per-platform value | — |
 | Settings: item title | `settingsCellTitleColor` | `Settings_Item` | 5 / 0 / 72 | `#333333` · 51, 51, 51 | `#000000` · 0, 0, 0 (majority) | Core, per-platform value | — |
 | Settings: category header | `settingsHeaderTextColor` | `Settings_Category_Item` | 4 / 0 / 73 | `#333333` · 51, 51, 51 | `#000000` · 0, 0, 0 (majority) | Core, per-platform value | — |
