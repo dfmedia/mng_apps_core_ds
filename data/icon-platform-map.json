@@ -62,7 +62,7 @@
    "sf_symbol": "bookmark.fill",
    "material": "bookmark",
    "bucket": "core",
-   "note": "Android special-section star (card_star_default) also means saved: fold into this.",
+   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -271,7 +271,7 @@
    "sf_symbol": "textformat.size.smaller",
    "material": "text_decrease",
    "bucket": "core-variant",
-   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs.",
+   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -678,7 +678,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "android-only",
-   "note": "Same meaning as Saved; recommend replacing with Core Saved and dropping.",
+   "note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected).",
    "ios_recommendation": null
   }
  ]

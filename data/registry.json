@@ -334,7 +334,7 @@
     "source": "ic_bookmark \u00b7 ic_btn_save \u00b7 mc_tab_icon_saved",
     "native": "bookmark"
    },
-   "note": "Android special-section star (card_star_default) also means saved: fold into this.",
+   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected).",
    "core": {
     "figma": null,
     "spec": null
@@ -714,7 +714,7 @@
     "source": "ic_font_size \u00b7 ic_textsize_change (one icon, opens a 4-step list)",
     "native": "text_decrease"
    },
-   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs.",
+   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).",
    "core": {
     "figma": null,
     "spec": null
@@ -1454,7 +1454,7 @@
     "source": "card_star_default \u00b7 star_on_card_saved_state",
     "native": null
    },
-   "note": "Same meaning as Saved; recommend replacing with Core Saved and dropping.",
+   "note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected).",
    "core": {
     "figma": null,
     "spec": null

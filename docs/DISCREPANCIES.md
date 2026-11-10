@@ -67,8 +67,8 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 
 | ID | What differs | Should be | Fix on | Evidence | Status |
 |----|--------------|-----------|--------|----------|--------|
-| DSC-30 | Saved in special sections: Android uses a star, iOS a bookmark | Bookmark (Core Saved) | Android | PLAT-09 | KNOWN |
-| DSC-31 | Text size: iOS smaller/larger glyphs, Android one glyph | One Core glyph + iOS variant | — | PLAT-08 | KNOWN |
+| DSC-30 | Saved in special sections: Android uses a star, iOS a bookmark | Keep both for now: platform-specific glyphs, one icon name (Karl, DEC-17) | — | PLAT-09 | ACCEPTED AS PLATFORM DIFFERENCE 2026-11-10 |
+| DSC-31 | Text size: iOS smaller/larger glyphs, Android one glyph | One Core glyph + iOS variant (DEC-17) | — | PLAT-08 | DECIDED 2026-11-10 |
 
 ## Log
 

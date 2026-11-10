@@ -129,7 +129,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Settings | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Share | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Glyph differs by platform convention; one semantic name. |
 | Save (not saved) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Saved | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android special-section star (card_star_default) also means saved: fold into this. |
+| Saved | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). |
 | Home tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Both apps ship per-market Home icons; one Core glyph removes ~86 files. |
 | Sections / menu | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Alerts tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
@@ -148,7 +148,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Email | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Refresh | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Filter | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Text size smaller | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Core: one "text size" icon. iOS adds smaller/larger glyphs. |
+| Text size smaller | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Core: one "text size" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08). |
 | Text size larger | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · See Text size smaller. |
 | Notification small icon | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android requires a monochrome status-bar icon; no iOS equivalent. |
 
@@ -194,7 +194,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Like / favorite | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
 | Repost | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
 | Verified | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
-| Save star (special sections) | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Same meaning as Saved; recommend replacing with Core Saved and dropping. |
+| Save star (special sections) | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected). |
 
 ### Icons · Brands
 

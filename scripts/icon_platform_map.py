@@ -16,7 +16,7 @@ ANDROID = {
  'Settings': ('mc_ic_settings (+10 market copies)', 'core', ''),
  'Share': ('ic_share (+9 market copies)', 'core', 'Glyph differs by platform convention; one semantic name.'),
  'Save (not saved)': ('ic_bookmark_outline · ic_btn_unsave', 'core', ''),
- 'Saved': ('ic_bookmark · ic_btn_save · mc_tab_icon_saved', 'core', 'Android special-section star (card_star_default) also means saved: fold into this.'),
+ 'Saved': ('ic_bookmark · ic_btn_save · mc_tab_icon_saved', 'core', 'Android special-section star (card_star_default) also means saved: kept as Android\'s glyph, same icon name (DEC-17, PLAT-09 rejected).'),
  'Home tab': ('mc_tab_icon_latestnews (77 market copies)', 'core', 'Both apps ship per-market Home icons; one Core glyph removes ~86 files.'),
  'Sections / menu': ('mc_tab_icon_sections', 'core', ''),
  'Alerts tab': ('mc_tab_icon_alerts · mc_alert_bell (69 market copies)', 'core', ''),
@@ -35,7 +35,7 @@ ANDROID = {
  'Email': ('ic_email', 'core', ''),
  'Refresh': ('ic_wc_refresh', 'core', ''),
  'Filter': ('ic_filter (+27 market copies)', 'core', ''),
- 'Text size smaller': ('ic_font_size · ic_textsize_change (one icon, opens a 4-step list)', 'core-variant', 'Core: one "text size" icon. iOS adds smaller/larger glyphs.'),
+ 'Text size smaller': ('ic_font_size · ic_textsize_change (one icon, opens a 4-step list)', 'core-variant', 'Core: one "text size" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).'),
  'Text size larger': ('(same single icon)', 'core-variant', 'See Text size smaller.'),
  'Follow topic': ('ic_follow_topic (file exists, not used)', 'ios-only', 'Android file is unreferenced.'),
  'Unfollow topic': ('ic_unfollow_topic (file exists, not used)', 'ios-only', 'Android file is unreferenced.'),
@@ -74,7 +74,7 @@ ANDROID = {
 }
 ANDROID_ONLY = [
  ('Navigation & UI', 'Notification small icon', 'per-market notification icons (monochrome)', 'android-only', 'Android requires a monochrome status-bar icon; no iOS equivalent.'),
- ('Ratings & social', 'Save star (special sections)', 'card_star_default · star_on_card_saved_state', 'android-only', 'Same meaning as Saved; recommend replacing with Core Saved and dropping.'),
+ ('Ratings & social', 'Save star (special sections)', 'card_star_default · star_on_card_saved_state', 'android-only', 'Same meaning as Saved; kept as Android\'s glyph for now, one icon name (DEC-17, PLAT-09 rejected).'),
 ]
 res = []
 for g, purpose, ios_today, sf, mat, fa, rec in rows:

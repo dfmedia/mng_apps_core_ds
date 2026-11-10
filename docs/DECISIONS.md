@@ -337,3 +337,11 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Pairs (Karl, 2026-11-10):** 11 approved iOS/Android pairs become Core tokens (5 same value, 6 with a value per platform: the 4 settings colors and the sections menu name and divider, the last two logged as DSC-32/33). The alert topic rows (×4) and the offline header are different designs on the two apps: platform-only. MISSING-ASSETS 3.4 closed.
 - **Built (step 2):** `scripts/build_system_tokens.py` → `tokens/core/system.tokens.json` (11), `tokens/ios/system.tokens.json` (77 + 8 that follow a brand role), `tokens/android/system.tokens.json` (84 + 19 that follow), `docs/SYSTEM-TOKENS.md`. Brand-following colors are not tokens of their own: the code reads the market palette (Android `accent` is built as `action`, DEC-14). iOS colors the app leaves unset use the UIKit default (`UIColor.separator`, `.systemGreen`). Code: `MNGSystemColors.swift` (mng_apps_ios_ds); `MngSystemColors.kt` and `res/values/mng_system_colors.xml` (mng_apps_android_ds). Figma: Core **System colors** collection (iOS/Android modes), **System colors · iOS** / **· Android** in the platform files (scripts/figma/build_system_variables.js).
 
+
+## DEC-17 · Ownership buckets and icon names (PLAT-01, PLAT-08, PLAT-09)
+
+- **PLAT-01 approved (Karl, 2026-11-10):** the ownership rule is the five buckets in CLAUDE.md: Core, Core per-platform value, Core alias, iOS only, Android only. The "Core + platform variant" rows in docs/PLATFORM-OWNERSHIP.md mean Core per-platform value.
+- **Icon principle (Karl):** ideally one set of icons, or at least **one set of icon names** across both apps; where a glyph differs by platform, the name stays the same.
+- **PLAT-08 approved:** one Core "text size" icon; iOS keeps its smaller/larger glyphs as a platform variant (DSC-31). Built with the icons, once the Apps team answers MISSING-ASSETS §1.
+- **PLAT-09 rejected:** the Android special-section save star and the iOS bookmark are platform-specific for now, so neither is dropped. Both stay under one icon name (Saved). DSC-30 is accepted as a platform difference, not an app fix.
+- **Changed:** docs/PLATFORM-OWNERSHIP.md (PLAT-01/08/09), docs/DISCREPANCIES.md (DSC-30/31), scripts/icon_platform_map.py notes → data/icon-platform-map.json, docs/REGISTRY.md.
