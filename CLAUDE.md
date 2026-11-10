@@ -96,6 +96,7 @@ docs/BACKLOG.md                   generated: what is left to build in Figma and 
 docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
 docs/MISSING-ASSETS.md            what we need from the Apps team
+docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
 docs/components/                  component specs (generated, e.g. BUTTON.md)
 docs/LEGACY-TEMPLATE.md           generated: iOS legacy-template values, acknowledged only (DEC-10)
 tokens/                           DTCG design tokens (generated; the source for Swift, Kotlin and Figma)

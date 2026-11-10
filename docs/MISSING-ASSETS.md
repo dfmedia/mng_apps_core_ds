@@ -20,7 +20,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 | 1.4 | **Market tab-bar overrides** | 9 markets ship their own Home tab icon and 2 override the Font Awesome tab icons. Need the list of which markets/which icons and the vector files. | OPEN |
 | 1.5 | **Icons with no clear source** | Text size small/large, Games tab, ±15 s skip (currently SF `gobackward.15` / `goforward.15`), the six tournament sport symbols, Your News tab, Filter (`icon_filter`), Follow / Unfollow topic. Need the intended design or approval to use platform-native symbols. | OPEN |
 | 1.6 | **Per-market icon variants — confirm intent** | `Saved-*`, `Checkmark-*`, `Uncheck-*`, `YourNews-*`, `Continue-*`, `TopicSelection-*` are the same glyph recolored per market. Confirm they can become one tinted icon (see IMPROVEMENTS.md → ICON-01). | OPEN |
-| 1.7 | **Android icon set** | Nothing extracted for Android yet. | OPEN |
+| 1.7 | **Android icon set** | Found 2026-11-10: the Android style guide (artifact 5MyLP13QSt52WGRgXW35ZJ) carries 138 shipped assets: 126 PNG (xxxhdpi) and 12 SVG converted from vector drawables (persistent player, author contact, search clear, game arrow…), incl. the 77 market Home tab icons. Exports, not masters: vector masters for the PNGs are still needed (see 1.1). | PARTLY ANSWERED |
 | 1.8 | **For You / Your News tab icon** | No equivalent in SF Symbols, Material Symbols or Font Awesome. Need the master vector or a new design. | OPEN |
 | 1.9 | **`tab-digital` purpose** | What does the Digital tab open? Needed to pick or draw its icon. | OPEN |
 | 1.10 | **Tournament sport symbols** | Names of the six SF Symbols used in tournament loading. | OPEN |
