@@ -1,0 +1,2233 @@
+{
+ "generated_by": "scripts/build_system_tokens.py",
+ "tokens": [
+  {
+   "collection": "core",
+   "name": "sections-menu/background",
+   "what": "Sections menu: background",
+   "values": {
+    "ios": "#ffffff",
+    "android": "#ffffff"
+   },
+   "same": true,
+   "sources": {
+    "ios": "sectionListCellBackgroundColor",
+    "android": "SectionsMenu_Background"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "sections-menu/section-name",
+   "what": "Sections menu: section name",
+   "values": {
+    "ios": "#333333",
+    "android": "#000000"
+   },
+   "same": false,
+   "uikit": null,
+   "sources": {
+    "ios": "sectionListCellTitleColor",
+    "android": "SectionsMenu_Text"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "sections-menu/header-text",
+   "what": "Sections menu: group header text",
+   "values": {
+    "ios": "#ffffff",
+    "android": "#ffffff"
+   },
+   "same": true,
+   "sources": {
+    "ios": "sectionListHeaderFontColor",
+    "android": "SectionMenu_Header_Text"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "sections-menu/divider",
+   "what": "Sections menu: divider",
+   "values": {
+    "ios": "#3c3c4349",
+    "android": "#f1f1f1"
+   },
+   "same": false,
+   "uikit": "separator",
+   "sources": {
+    "ios": "sectionListSectionSeparatorColor",
+    "android": "SectionMenu_Item_Divider"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "settings/background",
+   "what": "Settings: background",
+   "values": {
+    "ios": "#ffffff",
+    "android": "#333333"
+   },
+   "same": false,
+   "uikit": null,
+   "sources": {
+    "ios": "settingsCellBackgroundColor",
+    "android": "Settings_Background"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "settings/item-title",
+   "what": "Settings: item title",
+   "values": {
+    "ios": "#333333",
+    "android": "#000000"
+   },
+   "same": false,
+   "uikit": null,
+   "sources": {
+    "ios": "settingsCellTitleColor",
+    "android": "Settings_Item"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "settings/category-header",
+   "what": "Settings: category header",
+   "values": {
+    "ios": "#333333",
+    "android": "#000000"
+   },
+   "same": false,
+   "uikit": null,
+   "sources": {
+    "ios": "settingsHeaderTextColor",
+    "android": "Settings_Category_Item"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "settings/summary",
+   "what": "Settings: summary / footer text",
+   "values": {
+    "ios": "#cccccc",
+    "android": "#000000"
+   },
+   "same": false,
+   "uikit": null,
+   "sources": {
+    "ios": "settingsFooterColor",
+    "android": "Settings_Summary_Item"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "section-front/background",
+   "what": "Section front: background",
+   "values": {
+    "ios": "#ffffff",
+    "android": "#ffffff"
+   },
+   "same": true,
+   "sources": {
+    "ios": "newsPageBackgroundColor",
+    "android": "SectionFront_Background"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "ad/background",
+   "what": "Ad slot: background",
+   "values": {
+    "ios": "#ffffff",
+    "android": "#ffffff"
+   },
+   "same": true,
+   "sources": {
+    "ios": "cellAdBackgroundColor",
+    "android": "ad_background"
+   }
+  },
+  {
+   "collection": "core",
+   "name": "ad/label",
+   "what": "Ad slot: 'Advertisement' label",
+   "values": {
+    "ios": "#999999",
+    "android": "#999999"
+   },
+   "same": true,
+   "sources": {
+    "ios": "adLabelTextColor",
+    "android": "advertisement_title"
+   }
+  },
+  {
+   "collection": "ios",
+   "name": "adhesion-banner-background",
+   "source": "adhesionBannerBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-cell-unviewed-background",
+   "source": "alertCellUnviewedBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-cell-viewed-background",
+   "source": "alertCellViewedBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-detail-cell-background",
+   "source": "alertDetailCellBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-detail-cell-text",
+   "source": "alertDetailCellTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "alert-footer-background",
+   "source": "alertFooterBackgroundColor",
+   "kind": "majority",
+   "value": "#0000ff",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "alert-footer-text",
+   "source": "alertFooterTextColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-settings-table-view-background",
+   "source": "alertSettingsTableViewBackgroundColor",
+   "kind": "majority",
+   "value": "#f1f1f1",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "alert-settings-table-view-separator",
+   "source": "alertSettingsTableViewSeparatorColor",
+   "kind": "majority",
+   "value": "#f1f1f1",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "ios",
+   "name": "alert-topic-cell-disabled-background",
+   "source": "alertTopicCellDisabledBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-topic-cell-disabled-text",
+   "source": "alertTopicCellDisabledTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "ios",
+   "name": "alert-topic-cell-enabled-background",
+   "source": "alertTopicCellEnabledBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "alert-topic-cell-enabled-text",
+   "source": "alertTopicCellEnabledTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "breaking-news-button",
+   "source": "breakingNewsButtonColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "e-newspaper-primary-button",
+   "source": "eNewspaperPrimaryButtonColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "empty-list-view-button-title",
+   "source": "emptyListViewButtonTitleColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "empty-list-view-detail",
+   "source": "emptyListViewDetailColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "empty-list-view-title",
+   "source": "emptyListViewTitleColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "enable-notification-view-background",
+   "source": "enableNotificationViewBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "enable-notification-view-text",
+   "source": "enableNotificationViewTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "ios",
+   "name": "message-view-background",
+   "source": "messageViewBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "message-view-text",
+   "source": "messageViewTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "navigation-view",
+   "source": "navigationViewColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "navbar",
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "navigation-view-item-tint",
+   "source": "navigationViewItemTintColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "offline-banner-background",
+   "source": "offlineBannerBackgroundColor",
+   "kind": "fixed",
+   "value": "#555555",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-banner-text",
+   "source": "offlineBannerTextColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-downloading-text",
+   "source": "offlineDownloadingTextColor",
+   "kind": "fixed",
+   "value": "#ff0000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-cell-background",
+   "source": "offlineViewCellBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-cell-selected-background",
+   "source": "offlineViewCellSelectedBackgroundColor",
+   "kind": "fixed",
+   "value": "#555555",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-cell-text",
+   "source": "offlineViewCellTextColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-footer",
+   "source": "offlineViewFooterColor",
+   "kind": "fixed",
+   "value": "#aaaaaa",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-header-background",
+   "source": "offlineViewHeaderBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "offline-view-header-text",
+   "source": "offlineViewHeaderTextColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "page-body",
+   "source": "pageBodyColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "page-border",
+   "source": "pageBorderColor",
+   "kind": "fixed",
+   "value": "#b8b8b8",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "page-caption",
+   "source": "pageCaptionColor",
+   "kind": "fixed",
+   "value": "#838383",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "page-item",
+   "source": "pageItemColor",
+   "kind": "fixed",
+   "value": "#f2f2f2",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-authentication-text-field-background",
+   "source": "paywallAuthenticationTextFieldBackgroundColor",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-multiple-field-label",
+   "source": "paywallMultipleFieldLabelColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-safari-bar-tint",
+   "source": "paywallSafariBarTintColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 73,
+   "exceptions": 4
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-safari-control-tint",
+   "source": "paywallSafariControlTintColor",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-screen-background",
+   "source": "paywallScreenBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-secondary-action",
+   "source": "paywallSecondaryActionColor",
+   "kind": "majority",
+   "value": "#999999",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-secondary-text",
+   "source": "paywallSecondaryTextColor",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-subscription-options-legal-text",
+   "source": "paywallSubscriptionOptionsLegalTextColor",
+   "kind": "majority",
+   "value": "#999999",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-thank-you-branded-label",
+   "source": "paywallThankYouBrandedLabelColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-thank-you-message-label",
+   "source": "paywallThankYouMessageLabelColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 66,
+   "exceptions": 11
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-thank-you-next-steps-button-background",
+   "source": "paywallThankYouNextStepsButtonBackgroundColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-thank-you-next-steps-label",
+   "source": "paywallThankYouNextStepsLabelColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-view-login-text",
+   "source": "paywallViewLoginTextColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-view-meter-state-message",
+   "source": "paywallViewMeterStateMessageColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 68,
+   "exceptions": 9
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-view-meter-subscription-message",
+   "source": "paywallViewMeterSubscriptionMessageColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 74,
+   "exceptions": 3
+  },
+  {
+   "collection": "ios",
+   "name": "paywall-view-purchase-button-font",
+   "source": "paywallViewPurchaseButtonFontColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "progress-hudbackground",
+   "source": "progressHUDBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "progress-hudforeground",
+   "source": "progressHUDForegroundColor",
+   "kind": "majority",
+   "value": "#004e87",
+   "follows": null,
+   "uikit": null,
+   "markets": 66,
+   "exceptions": 11
+  },
+  {
+   "collection": "ios",
+   "name": "push-notification-prompt-bell-tint",
+   "source": "pushNotificationPromptBellTint",
+   "kind": "fixed",
+   "value": "#1955a5",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "push-notification-prompt-message-text",
+   "source": "pushNotificationPromptMessageTextColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "push-notification-prompt-request-text",
+   "source": "pushNotificationPromptRequestTextColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "rating-background",
+   "source": "ratingBackgroundColor",
+   "kind": "fixed",
+   "value": "#f2f2f2",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "safari-bar-tint",
+   "source": "safariBarTintColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 68,
+   "exceptions": 9
+  },
+  {
+   "collection": "ios",
+   "name": "safari-control-tint",
+   "source": "safariControlTintColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "ios",
+   "name": "saved-cell-background",
+   "source": "savedCellBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "search-accessory-tint",
+   "source": "searchAccessoryTintColor",
+   "kind": "majority",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "ios",
+   "name": "search-background",
+   "source": "searchBackgroundColor",
+   "kind": "fixed",
+   "value": "#f1f1f1",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "search-bar-text-field-tint",
+   "source": "searchBarTextFieldTintColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 66,
+   "exceptions": 11
+  },
+  {
+   "collection": "ios",
+   "name": "search-bar-tint",
+   "source": "searchBarTintColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 66,
+   "exceptions": 11
+  },
+  {
+   "collection": "ios",
+   "name": "search-caption",
+   "source": "searchCaptionColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "search-cell-background",
+   "source": "searchCellBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "search-cell-selected-background",
+   "source": "searchCellSelectedBackgroundColor",
+   "kind": "majority",
+   "value": "#555555",
+   "follows": null,
+   "uikit": null,
+   "markets": 71,
+   "exceptions": 6
+  },
+  {
+   "collection": "ios",
+   "name": "search-header",
+   "source": "searchHeaderColor",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 65,
+   "exceptions": 12
+  },
+  {
+   "collection": "ios",
+   "name": "search-text-field-background",
+   "source": "searchTextFieldBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "section-list-cell-selected-background",
+   "source": "sectionListCellSelectedBackgroundColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "ios",
+   "name": "section-list-cell-selected-title",
+   "source": "sectionListCellSelectedTitleColor",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "section-list-header-background",
+   "source": "sectionListHeaderBackgroundColor",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "settings-header-background",
+   "source": "settingsHeaderBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "settings-info-button-tint",
+   "source": "settingsInfoButtonTintColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 68,
+   "exceptions": 9
+  },
+  {
+   "collection": "ios",
+   "name": "settings-slider-background",
+   "source": "settingsSliderBackgroundColor",
+   "kind": "fixed",
+   "value": "#00000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "settings-table-view-separator",
+   "source": "settingsTableViewSeparatorColor",
+   "kind": "majority",
+   "value": "#cccccc",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "ios",
+   "name": "shared-table-view-background",
+   "source": "sharedTableViewBackgroundColor",
+   "kind": "majority",
+   "value": "#f1f1f1",
+   "follows": null,
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "ios",
+   "name": "subscription-active",
+   "source": "subscriptionActiveColor",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 65,
+   "exceptions": 12
+  },
+  {
+   "collection": "ios",
+   "name": "tracking-consent-continue-button-disabled-font",
+   "source": "trackingConsentContinueButtonDisabledFontColor",
+   "kind": "fixed",
+   "value": "#aaaaaa",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "tracking-consent-continue-button-enabled-font",
+   "source": "trackingConsentContinueButtonEnabledFontColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "tracking-consent-switch-on-tint",
+   "source": "trackingConsentSwitchOnTintColor",
+   "kind": "fixed",
+   "value": "#34c759",
+   "follows": null,
+   "uikit": "systemGreen",
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "tracking-consent-terms-and-privacy-policy-button-font",
+   "source": "trackingConsentTermsAndPrivacyPolicyButtonFontColor",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "ios",
+   "name": "your-news-cell-background",
+   "source": "yourNewsCellBackgroundColor",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "alerts-background-disabled",
+   "source": "Alerts_Background_Disabled",
+   "kind": "fixed",
+   "value": "#00000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "alerts-background-enabled",
+   "source": "Alerts_Background_Enabled",
+   "kind": "fixed",
+   "value": "#339933",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "alerts-string-text-disabled",
+   "source": "Alerts_String_Text_Disabled",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "alerts-text-enabled",
+   "source": "Alerts_Text_Enabled",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "app-primary",
+   "source": "App_Primary",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 63,
+   "exceptions": 14
+  },
+  {
+   "collection": "android",
+   "name": "app-primary-dark",
+   "source": "App_Primary_Dark",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "android",
+   "name": "article-fab-background",
+   "source": "Article_Fab_Background",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "android",
+   "name": "article-primary",
+   "source": "Article_Primary",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "article-primary-dark",
+   "source": "Article_Primary_Dark",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "android",
+   "name": "article-text",
+   "source": "Article_Text",
+   "kind": "fixed",
+   "value": "#2a2a2a",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "article-text-night-mode",
+   "source": "Article_Text_Night_Mode",
+   "kind": "fixed",
+   "value": "#dddddd",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "breakingnews-banner-background",
+   "source": "BreakingNews_Banner_Background",
+   "kind": "fixed",
+   "value": "#ed3337",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "gallery-primary",
+   "source": "Gallery_Primary",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "gallery-primary-dark",
+   "source": "Gallery_Primary_Dark",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "homepage-story-cell-label-text",
+   "source": "HomePage_Story_Cell_Label_Text",
+   "kind": "fixed",
+   "value": "#2a2a2a",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "login-register-tabs",
+   "source": "Login_Register_Tabs",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 61,
+   "exceptions": 16
+  },
+  {
+   "collection": "android",
+   "name": "mainstyle-control-activated",
+   "source": "MainStyle_Control_Activated",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 69,
+   "exceptions": 8
+  },
+  {
+   "collection": "android",
+   "name": "mainstyle-primary",
+   "source": "MainStyle_Primary",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "mainstyle-text-link-underline",
+   "source": "MainStyle_Text_Link_Underline",
+   "kind": "majority",
+   "value": "#004e87",
+   "follows": null,
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "android",
+   "name": "main-text",
+   "source": "Main_Text",
+   "kind": "fixed",
+   "value": "#191919",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "menu-ripple",
+   "source": "Menu_Ripple",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "paywall-loginbutton-text",
+   "source": "Paywall_LoginButton_Text",
+   "kind": "majority",
+   "value": "#56a1dd",
+   "follows": null,
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "android",
+   "name": "paywall-subscription-background",
+   "source": "Paywall_Subscription_Background",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "android",
+   "name": "paywall-text",
+   "source": "Paywall_Text",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-author-color",
+   "source": "Search_Results_Author_Color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-blurb-color",
+   "source": "Search_Results_Blurb_Color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-headline-color",
+   "source": "Search_Results_Headline_Color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-label-color",
+   "source": "Search_Results_Label_Color",
+   "kind": "fixed",
+   "value": "#ababab",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-metadata-color",
+   "source": "Search_Results_Metadata_Color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "search-results-timestamp-color",
+   "source": "Search_Results_Timestamp_Color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionfront-blurb",
+   "source": "SectionFront_Blurb",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionfront-byline",
+   "source": "SectionFront_Byline",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionfront-headline",
+   "source": "SectionFront_Headline",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionfront-timestamp",
+   "source": "SectionFront_Timestamp",
+   "kind": "fixed",
+   "value": "#999999",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionsbar-background",
+   "source": "SectionsBar_Background",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionsbar-text",
+   "source": "SectionsBar_Text",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sectionsmenu-item-separator-light",
+   "source": "SectionsMenu_Item_Separator_Light",
+   "kind": "majority",
+   "value": "#f1f1f1",
+   "follows": null,
+   "uikit": null,
+   "markets": 74,
+   "exceptions": 3
+  },
+  {
+   "collection": "android",
+   "name": "settings-control-activated",
+   "source": "Settings_Control_Activated",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "android",
+   "name": "settings-download-highlight",
+   "source": "Settings_Download_Highlight",
+   "kind": "majority",
+   "value": "#004e87",
+   "follows": null,
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "android",
+   "name": "settings-item-disabled",
+   "source": "Settings_Item_Disabled",
+   "kind": "fixed",
+   "value": "#969696",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "text-link-color-font",
+   "source": "Text_Link_Color_Font",
+   "kind": "majority",
+   "value": "#4591b8",
+   "follows": null,
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "android",
+   "name": "toolbar-accent",
+   "source": "Toolbar_Accent",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "toolbar-text-secondary",
+   "source": "Toolbar_Text_Secondary",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "weblink-underline",
+   "source": "WebLink_Underline",
+   "kind": "majority",
+   "value": "#4591b8",
+   "follows": null,
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "android",
+   "name": "webview-primary",
+   "source": "Webview_Primary",
+   "kind": "follows",
+   "value": null,
+   "follows": "navbar",
+   "uikit": null,
+   "markets": 61,
+   "exceptions": 16
+  },
+  {
+   "collection": "android",
+   "name": "webview-primary-dark",
+   "source": "Webview_Primary_Dark",
+   "kind": "follows",
+   "value": null,
+   "follows": "navbar",
+   "uikit": null,
+   "markets": 70,
+   "exceptions": 7
+  },
+  {
+   "collection": "android",
+   "name": "alert-btn-color",
+   "source": "alert_btn_color",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "android",
+   "name": "alert-header-background",
+   "source": "alert_header_background",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 62,
+   "exceptions": 15
+  },
+  {
+   "collection": "android",
+   "name": "alert-red",
+   "source": "alert_red",
+   "kind": "fixed",
+   "value": "#ed3337",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "background",
+   "source": "background",
+   "kind": "fixed",
+   "value": "#f9f9f8",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "bar-topic-txt-yournews",
+   "source": "bar_topic_txt_yournews",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "bar-topic-yournews",
+   "source": "bar_topic_yournews",
+   "kind": "follows",
+   "value": null,
+   "follows": "navbar",
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "black",
+   "source": "black",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "bottom-nav-background",
+   "source": "bottom_nav_background",
+   "kind": "fixed",
+   "value": "#1e1e1e",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "btn-blue",
+   "source": "btn_blue",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 71,
+   "exceptions": 6
+  },
+  {
+   "collection": "android",
+   "name": "btn-save-icon",
+   "source": "btn_save_icon",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 71,
+   "exceptions": 6
+  },
+  {
+   "collection": "android",
+   "name": "cell-homepagestory-headline",
+   "source": "cell_homepagestory_headline",
+   "kind": "majority",
+   "value": "#2a2a2a",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "cell-text-background",
+   "source": "cell_text_background",
+   "kind": "fixed",
+   "value": "#e6e6e6",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "color-tabs-normal",
+   "source": "color_tabs_normal",
+   "kind": "fixed",
+   "value": "#2c2d2d",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "filter-bg-color",
+   "source": "filter_bg_color",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "foreground",
+   "source": "foreground",
+   "kind": "fixed",
+   "value": "#da161f",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "lat-action-bar-background",
+   "source": "lat_action_bar_background",
+   "kind": "follows",
+   "value": null,
+   "follows": "navbar",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "lat-pink",
+   "source": "lat_pink",
+   "kind": "fixed",
+   "value": "#ff6859",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "lat-tabs-background",
+   "source": "lat_tabs_background",
+   "kind": "fixed",
+   "value": "#262626",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "lat-white",
+   "source": "lat_white",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "link",
+   "source": "link",
+   "kind": "majority",
+   "value": "#56a1dd",
+   "follows": null,
+   "uikit": null,
+   "markets": 73,
+   "exceptions": 4
+  },
+  {
+   "collection": "android",
+   "name": "list-label-bg",
+   "source": "list_label_bg",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 71,
+   "exceptions": 6
+  },
+  {
+   "collection": "android",
+   "name": "loading-spinner-end-color",
+   "source": "loading_spinner_end_color",
+   "kind": "fixed",
+   "value": "#2a5381",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "loading-spinner-start-color",
+   "source": "loading_spinner_start_color",
+   "kind": "fixed",
+   "value": "#e0e6ec",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "material-gray",
+   "source": "material_gray",
+   "kind": "fixed",
+   "value": "#828180",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "mc-toolbar-title-color",
+   "source": "mc_toolbar_title_color",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "ny-dark",
+   "source": "ny_dark",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "offline-header",
+   "source": "offline_header",
+   "kind": "fixed",
+   "value": "#ff7261",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "onboarding-btn-pressed",
+   "source": "onboarding_btn_pressed",
+   "kind": "fixed",
+   "value": "#808080",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "preference-download-highlight",
+   "source": "preference_download_highlight",
+   "kind": "majority",
+   "value": "#004e87",
+   "follows": null,
+   "uikit": null,
+   "markets": 75,
+   "exceptions": 2
+  },
+  {
+   "collection": "android",
+   "name": "pw-purchase-btn",
+   "source": "pw_purchase_btn",
+   "kind": "follows",
+   "value": null,
+   "follows": "action",
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "red",
+   "source": "red",
+   "kind": "fixed",
+   "value": "#ff0000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "section-front-background-alt",
+   "source": "section_front_background",
+   "kind": "fixed",
+   "value": "#f7f7f7",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sf-module-blurb",
+   "source": "sf_module_blurb",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sf-module-byline",
+   "source": "sf_module_byline",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sf-module-headline",
+   "source": "sf_module_headline",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "sf-module-timestamp",
+   "source": "sf_module_timestamp",
+   "kind": "fixed",
+   "value": "#999999",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-distance-color",
+   "source": "special_section_distance_color",
+   "kind": "fixed",
+   "value": "#4490b9",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-divider-color",
+   "source": "special_section_divider_color",
+   "kind": "fixed",
+   "value": "#979797",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-link-color",
+   "source": "special_section_link_color",
+   "kind": "fixed",
+   "value": "#4490b9",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-listbackground-color",
+   "source": "special_section_listbackground_color",
+   "kind": "fixed",
+   "value": "#d8d8d8",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-photo-caption-color",
+   "source": "special_section_photo_caption_color",
+   "kind": "fixed",
+   "value": "#4a4a4a",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-primary-color",
+   "source": "special_section_primary_color",
+   "kind": "fixed",
+   "value": "#cfb53c",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-subtitle-color",
+   "source": "special_section_subtitle_color",
+   "kind": "fixed",
+   "value": "#757575",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "special-section-title-color",
+   "source": "special_section_title_color",
+   "kind": "fixed",
+   "value": "#333333",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "tabs-indicator",
+   "source": "tabs_indicator",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "tabs-selected-text",
+   "source": "tabs_selected_text",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "text-article-not-followed",
+   "source": "text_article_not_followed",
+   "kind": "majority",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "toolbar-text",
+   "source": "toolbar_text",
+   "kind": "follows",
+   "value": null,
+   "follows": "navtext",
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "underline-paywall-login",
+   "source": "underline_paywall_login",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "unsaved-state-background",
+   "source": "unsaved_state_background",
+   "kind": "fixed",
+   "value": "#c7deea",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "web-link",
+   "source": "web_link",
+   "kind": "majority",
+   "value": "#4591b8",
+   "follows": null,
+   "uikit": null,
+   "markets": 72,
+   "exceptions": 5
+  },
+  {
+   "collection": "android",
+   "name": "whats-new-button-color",
+   "source": "whats_new_button_color",
+   "kind": "majority",
+   "value": "#daa520",
+   "follows": null,
+   "uikit": null,
+   "markets": 52,
+   "exceptions": 25
+  },
+  {
+   "collection": "android",
+   "name": "white",
+   "source": "white",
+   "kind": "majority",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 76,
+   "exceptions": 1
+  },
+  {
+   "collection": "android",
+   "name": "widget-bg",
+   "source": "widget_bg",
+   "kind": "fixed",
+   "value": "#ffffff",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "widget-divider1",
+   "source": "widget_divider1",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "widget-divider2",
+   "source": "widget_divider2",
+   "kind": "fixed",
+   "value": "#b8b8b8",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  },
+  {
+   "collection": "android",
+   "name": "widget-text-main",
+   "source": "widget_text_main",
+   "kind": "fixed",
+   "value": "#000000",
+   "follows": null,
+   "uikit": null,
+   "markets": 77,
+   "exceptions": 0
+  }
+ ]
+}

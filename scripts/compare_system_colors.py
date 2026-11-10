@@ -166,16 +166,21 @@ for k, label in [('colors', 'Themed colors in the export'), ('covered', 'Already
                  ('per-market', 'Per market (no value in 39+ markets)'), ('palettes', 'Distinct market palettes')]:
     L.append(f"| {label} | {P['ios']['summary'].get(k, 0)} | {P['android']['summary'].get(k, 0)} |")
 nb = Counter(p['bucket'] for p in pairs)
-L += ['', f"Proposed iOS ↔ Android pairs: {len(pairs)} ({', '.join(f'{v} {k}' for k, v in nb.items())}). The rest are platform-only until the Apps team confirms the pairing (MISSING-ASSETS 3.4).", '',
+L += ['', f"iOS ↔ Android pairs (approved by Karl, 2026-11-10): {len(pairs)} ({', '.join(f'{v} {k}' for k, v in nb.items())}). Everything else is platform-only, including 5 look-alike colors that are different designs on the two apps (alert topic rows ×4, offline header). Tokens: docs/SYSTEM-TOKENS.md.", '',
       'How to read a value: hex · R, G, B (0–255). `not set` = iOS leaves it to the UIKit system default (MISSING-ASSETS 3.1). '
       'Android colors with transparency show alpha. "Follows" means the color equals that market\'s own brand role as the app ships it.', '']
 
-L += ['## iOS ↔ Android pairs (proposed)', '',
+L += ['## iOS ↔ Android pairs (approved 2026-11-10)', '',
       '| What | iOS | Android | Same / close / differ (markets) | iOS value | Android value | Bucket | Check |', '|---|---|---|---|---|---|---|---|']
 for p in pairs:
     show = lambda kind, maj, fol: f'follows {fol}' if kind == 'follows' else fmt(maj) + ('' if kind == 'fixed' else f' ({kind})')
     L.append(f"| {p['what']} | `{p['ios']}` | `{p['android']}` | {p['same']} / {p['close']} / {p['differ']} | "
              f"{show(p['ios_kind'], p['ios_majority'], ci[p['ios']]['follows'])} | {show(p['android_kind'], p['android_majority'], ca[p['android']]['follows'])} | {p['bucket']} | {p['check'] or '—'} |")
+
+NP = json.load(open('data/system-color-pairs.json')).get('not_pairs', [])
+if NP:
+    L += ['', '### Not pairs: different designs (Karl, 2026-11-10)', '', '| What | iOS | Android | Why |', '|---|---|---|---|']
+    L += [f"| {p['what']} | `{p['ios']}` | `{p['android']}` | {p['why']} |" for p in NP]
 
 for plat, title in (('ios', 'iOS'), ('android', 'Android')):
     D = P[plat]; nm = D['markets']

@@ -130,6 +130,7 @@ python3 scripts/build_legacy_doc.py    # DEC-10: docs/LEGACY-TEMPLATE.md (run af
 python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison: docs/SCALES-COMPARISON.md
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)
+python3 scripts/build_system_tokens.py     # DEC-16: tokens/*/system.tokens.json, data/system-tokens.json, docs/SYSTEM-TOKENS.md (before npm run build)
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```

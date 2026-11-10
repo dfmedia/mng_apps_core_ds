@@ -48,7 +48,7 @@ Built = done everywhere except the code is not compiled in an app yet.
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | 🟡 partial | ⬜ to do | ⬜ to do | Step 1 (review): docs/SYSTEM-COLORS.md, Figma Core page Color · System colors (every color, 16 proposed iOS↔Android pairs, market palettes: iOS 19, Android 29). Step 2 after Karl's review: tokens per market, System collection, Swift/Kotlin. Pairs: MISSING-ASSETS 3.4 |
+| The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | 🟡 partial | ✅ done | 📝 written, not compiled | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, not compiled | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
 | Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only; confirm no plans (MISSING-ASSETS 3.2) |
 

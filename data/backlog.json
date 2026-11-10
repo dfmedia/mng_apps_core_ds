@@ -86,10 +86,10 @@
    "name": "The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection)",
    "owner": "core",
    "figma": "partial",
-   "tokens": "todo",
-   "code": "todo",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "Step 1 (review): docs/SYSTEM-COLORS.md, Figma Core page Color · System colors (every color, 16 proposed iOS↔Android pairs, market palettes: iOS 19, Android 29). Step 2 after Karl's review: tokens per market, System collection, Swift/Kotlin. Pairs: MISSING-ASSETS 3.4",
+   "note": "DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections",
    "overall": "in progress"
   },
   {

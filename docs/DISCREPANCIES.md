@@ -60,6 +60,8 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 | DSC-22 | Article text size: iOS 6 steps (slider), Android 4 steps (list) | Same number of steps | ? | The control can differ per platform; the scale should not. | OPEN |
 | DSC-23 | Your News checkbox: iOS uses 8 per-market image sets; Android tints one control | One tinted checkbox | iOS | | KNOWN |
 | DSC-24 | Continue button: iOS uses pre-colored PNGs (10 copies); Android a tinted button with radius 9 | Core primary button | iOS | | KNOWN |
+| DSC-32 | Sections menu section name: iOS `#333333` · 51, 51, 51, Android `#000000` · 0, 0, 0 | One value (suggest `#333333`, used for most iOS list text) | Android | Same text on both apps (`sectionListCellTitleColor` / `SectionsMenu_Text`), all 77 markets. Core token `sections-menu/section-name` keeps a value per platform (DEC-16) | KNOWN |
+| DSC-33 | Sections menu divider: iOS not set (UIKit default separator), Android `#f1f1f1` · 241, 241, 241 | One value | ? | Same line on both apps (`sectionListSectionSeparatorColor` / `SectionMenu_Item_Divider`). Core token `sections-menu/divider` keeps a value per platform (DEC-16) | KNOWN |
 
 ## Icons
 
@@ -69,6 +71,8 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 | DSC-31 | Text size: iOS smaller/larger glyphs, Android one glyph | One Core glyph + iOS variant | — | PLAT-08 | KNOWN |
 
 ## Log
+
+- **2026-11-10** — DEC-16 system colors: DSC-32 and DSC-33 (sections menu text and divider) logged; both kept as Core tokens with a value per platform until fixed.
 
 - **2026-10-26** — DEC-08: iOS is the default for unconfirmed mismatches, including close ones (SGVT, TDPS, TEBT now iOS). DSC-15 and DSC-19 parked: not raised with the Apps team yet.
 
