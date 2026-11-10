@@ -3,7 +3,8 @@
 //   python3 scripts/figma_system_colors.py <section-id>   (prints the JS for one section)
 // T = { name: 'NN · Title', title, intro, columns: [{name, w}], rows: [ [cell...] | {group: 'text'} ] }
 // cell: 'text' | {t: 'text', sw: '#rrggbb' | null, b: bold} | {chip: 'Core' | 'Core alias' | 'Core, per-platform value' | 'iOS only' | 'Android only' | 'Differs' | 'Token'}
-//       | {clone: [sectionName, rowName, cellName], alt: 'text'}  copies that cell from another section on the page (e.g. glyph previews); alt if missing
+//       | {clone: [sectionName, rowName, cellName, pageName?], alt: 'text'}  copies that cell from another section (this page, or pageName,
+//         which the emitter must load first), e.g. glyph previews; alt if missing
 // Re-running replaces only the section with the same name (rule 4). Sections stack downward in creation order.
 const CHIPS = { 'Core': ['#e6f4ea', '#14532d'], 'Core alias': ['#e6f4ea', '#14532d'], 'Core, per-platform value': ['#fff4d6', '#6b4500'],
   'iOS only': ['#e3eefc', '#0b3d7a'], 'Android only': ['#efe7fb', '#43217a'], 'Differs': ['#fde8e8', '#8a1c1c'], 'Token': ['#f1f1f1', '#333333'] };
@@ -19,8 +20,8 @@ function frame(name, dir = 'VERTICAL', gap = 0) {
   f.primaryAxisSizingMode = 'AUTO'; f.counterAxisSizingMode = 'AUTO'; f.fills = []; return f;
 }
 const _tables = {};
-function cloneSource([sec, row, cell]) {
-  if (!(sec in _tables)) { const s = page.children.find(n => n.name === sec); const t = s && ('children' in s) ? (s.type === 'SECTION' ? s.children[0] : s) : null; _tables[sec] = t; }
+function cloneSource([sec, row, cell, pg]) {
+  if (!(sec in _tables)) { const P = pg ? figma.root.children.find(p => p.name === pg) : page; const s = P && P.children.find(n => n.name === sec); const t = s && ('children' in s) ? (s.type === 'SECTION' ? s.children[0] : s) : null; _tables[sec] = t; }
   const t = _tables[sec]; const r = t && t.children.find(n => n.name === row); return r ? r.children.find(n => n.name === cell) || null : null;
 }
 function cellNode(c, w) {
