@@ -57,7 +57,7 @@ The iOS app has no vector icon masters. Everything below is needed before the Ic
 
 | # | Ask | Detail | Status |
 |---|-----|--------|--------|
-| 5.1 | Missing button states | No Secondary, Text, Disabled (except tracking-consent Continue) or Loading variants exist. Confirm whether these should be designed new. | OPEN |
+| 5.1 | Missing button states | No Secondary, Text, Disabled (except tracking-consent Continue) or Loading variants exist. Confirm whether these should be designed new. | CLOSED 2026-11-10 (Karl: not designed; CTRL-02 not pursued) |
 | 5.2 | Elevation / shadow values | None extracted from code. | OPEN |
 | 5.3 | Motion / animation specs | None extracted. | OPEN |
 | 5.5 | Button values not in the source | iOS primary button height (pilot uses 44 pt); Android button label weight and size (pilot uses Roboto Medium 14sp, the Material default); iOS paywall Log In link font (pilot uses Open Sans Regular 14); pressed state on both apps. | ASKED 2026-11-05 (#pd-mobile-public, thread with Jess) |

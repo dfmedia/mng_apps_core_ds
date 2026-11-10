@@ -20,7 +20,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | CLR-06 | Color | Merge near-duplicate brand hexes | 59 → ~45 unique values | PROPOSED |
 | CLR-07 | Color | Collapse identical market palettes into shared themes | 77 markets → 45 palettes | PROPOSED |
 | CTRL-01 | Controls | Bring touch targets to 44 pt | Checkbox (30), social icons (24) | PROPOSED |
-| CTRL-02 | Buttons | Add Secondary, Text, Disabled and Loading button states | All markets | PROPOSED (pilot adds Disabled and Text link, DEC-07) |
+| CTRL-02 | Buttons | Add Secondary, Text, Disabled and Loading button states | All markets | NOT PURSUED (2026-11-10; pilot built Disabled and Text link, DEC-07) |
 | BTN-01 | Buttons | One primary button height for both apps (iOS 44 provisional, Android 60) | All markets | FUTURE (DEC-07) |
 | BTN-02 | Buttons | One button label style for both apps (iOS Open Sans Bold 14, Android system font) | All markets | FUTURE (DEC-07) |
 | BTN-03 | Buttons | Continue button: replace the iOS PNG images with a drawn button, then fold Continue into the Primary button (DSC-24) | 10 iOS image copies; both apps | FUTURE (DEC-14) |
@@ -197,8 +197,8 @@ The 539 brand tokens use 59 unique hex values. Several are visually identical (�
 ### CTRL-01 · 44 pt touch targets — `PROPOSED`
 Your News checkbox is 30 × 30 and social login icons are 24 pt. Keep the visual size, extend the hit area to `size-touch-min` (44).
 
-### CTRL-02 · Missing button states — `PROPOSED`
-Only Primary exists. Disabled is styled only on tracking-consent Continue; loading is a full-screen overlay. Propose Secondary, Text, Disabled and inline Loading variants.
+### CTRL-02 · Missing button states — `NOT PURSUED` (Karl, 2026-11-10: document what exists, design nothing new)
+Only Primary exists. Disabled is styled only on tracking-consent Continue; loading is a full-screen overlay. Propose Secondary, Text, Disabled and inline Loading variants. Not pursued: neither app ships Secondary or an in-button Loading state, so the design system documents Primary, Disabled and Text link as built (DEC-07) and the full-screen loading overlay as shipped. If the Apps team adds these states, document them then.
 
 ### BTN-01 · One primary button height — `FUTURE`
 Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `button.ios.primary.height` 44 pt (provisional; not in the source, MISSING-ASSETS 5.5), Android `button.android.primary.height` 60 dp (`paywall_button_height`). Future change: one height for both, at least 48 so it meets both apps' touch minimums (44 pt / 48 dp).

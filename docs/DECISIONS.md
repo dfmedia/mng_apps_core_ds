@@ -237,7 +237,7 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Height:** keep each app's height, as tokens: iOS `button.ios.primary.height` 44 pt (**provisional**: not in the source), Android `button.android.primary.height` 60 dp. Future change: one height (IMPROVEMENTS BTN-01).
 - **Label font:** the Button is a Core component, but the label stays per platform: iOS Open Sans Bold 14 uppercase, Android system font uppercase (Roboto Medium 14sp, **provisional**). Future change: one label style (IMPROVEMENTS BTN-02).
 - **Android code** targets the View-based UI: XML resources and styles, not Compose.
-- **Scope of the pilot:** Primary (enabled, pressed, disabled) and Text link. Disabled uses Android's shipped `#c1c8cb` / `#767676` on both apps (new on iOS). Secondary, in-button loading and folding Continue into Primary are later (CTRL-02, DSC-24).
+- **Scope of the pilot:** Primary (enabled, pressed, disabled) and Text link. Disabled uses Android's shipped `#c1c8cb` / `#767676` on both apps (new on iOS). **Karl, 2026-11-10: Secondary and in-button Loading are not designed (CTRL-02 not pursued; neither app ships them).** Folding Continue into Primary is later (CTRL-02, DSC-24).
 - **Provisional values** (iOS height, Android label weight and size, iOS link font, pressed state) are asked for in `docs/MISSING-ASSETS.md` 5.5.
 - **Applied by:** `scripts/build_button_tokens.py` (after `build_tokens.py`) → `tokens/{core,ios,android}/button.tokens.json`, `data/button-spec.json`, `docs/components/BUTTON.md`; then `npm run build` → `MNGButtonTokens.swift` (iOS repo) and `tokens/res/values/mng_button.xml` (Android repo).
 

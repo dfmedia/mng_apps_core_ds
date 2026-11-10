@@ -14,17 +14,16 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 0 | 7 | 0 | 1 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
-| Components | 20 | 0 | 6 | 12 | 0 | 2 |
+| Components | 20 | 0 | 7 | 11 | 0 | 2 |
 | Layout | 6 | 0 | 5 | 0 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **107** | **0** | **30** | **12** | **2** | **63** |
+| **Total** | **107** | **0** | **31** | **11** | **2** | **63** |
 
 ## Suggested order
 
 1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)
 2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)
 3. Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names for Karl to review; glyphs and the Icon component after MISSING-ASSETS §1
-4. Karl: Secondary and Loading button states (CTRL-02). Core, iOS and Android libraries published and accepted 2026-11-10
 
 ## Foundations
 
@@ -96,7 +95,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height, colors) · Radius is a token (DEC-12) |
 | Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, padding) · Text #004e87 and radius 15 are tokens |
 | Social sign-in buttons | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors) · Google radius and icon size are tokens |
-| Secondary, disabled, loading states | Core | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ CTRL-02 / MISSING-ASSETS 5.1: design Secondary and in-button Loading? · Disabled done (DEC-07); Secondary and Loading not shipped by either app |
+| Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 
 ### Controls
 

@@ -1255,12 +1255,12 @@
    "group": "Buttons",
    "name": "Secondary, disabled, loading states",
    "owner": "core",
-   "figma": "partial",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "CTRL-02 / MISSING-ASSETS 5.1: design Secondary and in-button Loading?",
-   "note": "Disabled done (DEC-07); Secondary and Loading not shipped by either app",
-   "overall": "in progress"
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "",
+   "note": "Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10)",
+   "overall": "built"
   },
   {
    "id": "component/switch",
