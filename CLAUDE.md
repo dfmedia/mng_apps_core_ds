@@ -114,7 +114,7 @@ python3 scripts/analyze_palettes.py data/source/markets.json data/palette-analys
 python3 scripts/compare_platform_colors.py data/source/markets.json data/source/android-markets.json data/color-platform-comparison.json
 python3 scripts/icon_platform_map.py data/icon-comparison.json data/icon-platform-map.json
 python3 scripts/build_icon_names.py   # DEC-17: combined icon name list as shipped (data/icon-names.json, docs/ICON-NAMES.md); after icon_platform_map.py
-python3 scripts/figma_icon_names.py    # prints JS for Core Icons · System Comparison › 05 · Icon names
+python3 scripts/figma_icon_names.py    # prints JS for Core Icons · System Comparison › 05 · Icon list (combined: names, what ships, reference glyphs copied from 02)
 python3 scripts/component_platform_map.py data/component-platform-map.json
 python3 scripts/resolve_brand_colors.py data/source/markets.json data/source/android-markets.json data/source/migration-sheet-brand-colors.json data/brand-color-resolution.json
 python3 scripts/apply_web_alignment.py data/brand-color-resolution.json data/source/cluster-audit-web-colors.json   # DEC-02, right after resolve

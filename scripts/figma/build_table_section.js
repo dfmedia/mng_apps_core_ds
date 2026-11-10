@@ -3,6 +3,7 @@
 //   python3 scripts/figma_system_colors.py <section-id>   (prints the JS for one section)
 // T = { name: 'NN · Title', title, intro, columns: [{name, w}], rows: [ [cell...] | {group: 'text'} ] }
 // cell: 'text' | {t: 'text', sw: '#rrggbb' | null, b: bold} | {chip: 'Core' | 'Core alias' | 'Core, per-platform value' | 'iOS only' | 'Android only' | 'Differs' | 'Token'}
+//       | {clone: [sectionName, rowName, cellName], alt: 'text'}  copies that cell from another section on the page (e.g. glyph previews); alt if missing
 // Re-running replaces only the section with the same name (rule 4). Sections stack downward in creation order.
 const CHIPS = { 'Core': ['#e6f4ea', '#14532d'], 'Core alias': ['#e6f4ea', '#14532d'], 'Core, per-platform value': ['#fff4d6', '#6b4500'],
   'iOS only': ['#e3eefc', '#0b3d7a'], 'Android only': ['#efe7fb', '#43217a'], 'Differs': ['#fde8e8', '#8a1c1c'], 'Token': ['#f1f1f1', '#333333'] };
@@ -17,9 +18,15 @@ function frame(name, dir = 'VERTICAL', gap = 0) {
   const f = figma.createFrame(); f.name = name; f.layoutMode = dir; f.itemSpacing = gap;
   f.primaryAxisSizingMode = 'AUTO'; f.counterAxisSizingMode = 'AUTO'; f.fills = []; return f;
 }
+const _tables = {};
+function cloneSource([sec, row, cell]) {
+  if (!(sec in _tables)) { const s = page.children.find(n => n.name === sec); const t = s && ('children' in s) ? (s.type === 'SECTION' ? s.children[0] : s) : null; _tables[sec] = t; }
+  const t = _tables[sec]; const r = t && t.children.find(n => n.name === row); return r ? r.children.find(n => n.name === cell) || null : null;
+}
 function cellNode(c, w) {
   const f = frame('cell', 'HORIZONTAL', 8); f.counterAxisAlignItems = 'CENTER';
   f.primaryAxisSizingMode = 'FIXED'; f.resize(w, 10); f.counterAxisSizingMode = 'AUTO';
+  if (c && typeof c === 'object' && c.clone) { const src = cloneSource(c.clone); if (src) { f.appendChild(src.clone()); return f; } c = c.alt ?? '—'; }
   if (c && typeof c === 'object' && c.chip) {
     const [bg, fg] = CHIPS[c.chip] || CHIPS['Token']; const ch = frame('chip', 'HORIZONTAL'); ch.paddingLeft = ch.paddingRight = 8; ch.paddingTop = ch.paddingBottom = 3;
     ch.cornerRadius = 4; ch.fills = [solid(bg)]; ch.appendChild(text(c.chip, 11, 'SemiBold', fg)); f.appendChild(ch); return f;

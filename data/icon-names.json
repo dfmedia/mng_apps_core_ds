@@ -32,7 +32,14 @@
    "ios": "FA search · nav-search (3 PNG) · ENewspaper search (2)",
    "android": "mc_ic_search (+8 market copies)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "magnifyingglass",
+    "material": "search",
+    "font_awesome": "search",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "settings",
@@ -42,7 +49,14 @@
    "ios": "nav-settings (3 PNG)",
    "android": "mc_ic_settings (+10 market copies)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "gearshape",
+    "material": "settings",
+    "font_awesome": "cog",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "share",
@@ -52,7 +66,14 @@
    "ios": "nav-share PNG",
    "android": "ic_share (+9 market copies)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "square.and.arrow.up",
+    "material": "share",
+    "font_awesome": "share-alt",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Glyph differs by platform convention; one semantic name."
+   }
   },
   {
    "name": "save",
@@ -62,7 +83,14 @@
    "ios": "FA bookmark · nav-save-unfilled · Unsaved-Article · Saved-Unfilled-* (9)",
    "android": "ic_bookmark_outline · ic_btn_unsave",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "bookmark",
+    "material": "bookmark",
+    "font_awesome": "bookmark",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "saved",
@@ -72,7 +100,14 @@
    "ios": "nav-save-filled · Saved-Article · Saved-Filled-* (9) · Saved tab icons (11)",
    "android": "ic_bookmark · ic_btn_save · mc_tab_icon_saved",
    "note": "Android also shows a star in special sections (see below), same name (DEC-17).",
-   "apps_team": "1.3 (iOS \"saved\" SF Symbol renders nothing), 1.6 (per-market copies)"
+   "apps_team": "1.3 (iOS \"saved\" SF Symbol renders nothing), 1.6 (per-market copies)",
+   "reference": {
+    "sf_symbol": "bookmark.fill",
+    "material": "bookmark",
+    "font_awesome": "bookmark",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected)."
+   }
   },
   {
    "name": "tab-home",
@@ -82,7 +117,14 @@
    "ios": "FA home · tab-home · 9 market home icons",
    "android": "mc_tab_icon_latestnews (77 market copies)",
    "note": "",
-   "apps_team": "1.4 (market tab-bar overrides)"
+   "apps_team": "1.4 (market tab-bar overrides)",
+   "reference": {
+    "sf_symbol": "house",
+    "material": "home",
+    "font_awesome": "home",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files."
+   }
   },
   {
    "name": "menu",
@@ -92,7 +134,14 @@
    "ios": "FA bars · tab-sections · eNewspaper menu, menu-line",
    "android": "mc_tab_icon_sections",
    "note": "Sections tab and the eNewspaper menu.",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "line.3.horizontal",
+    "material": "menu",
+    "font_awesome": "bars",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "tab-alerts",
@@ -102,7 +151,14 @@
    "ios": "FA bell · tab-alerts · Alert/bell",
    "android": "mc_tab_icon_alerts · mc_alert_bell (69 market copies)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "bell",
+    "material": "notifications",
+    "font_awesome": "bell",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "tab-for-you",
@@ -112,7 +168,14 @@
    "ios": "tab-foryou · For You · YourNews-* (11)",
    "android": "mc_tab_icon_for_you",
    "note": "",
-   "apps_team": "1.6, 1.8 (no master vector)"
+   "apps_team": "1.6, 1.8 (no master vector)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Custom vector needed — see Missing Assets",
+    "ownership_note": "Gap on both: one custom Core vector."
+   }
   },
   {
    "name": "tab-enewspaper",
@@ -122,7 +185,14 @@
    "ios": "tab-enews · tab-newspaper",
    "android": "mc_tab_icon_newspaper · ic_newspaper",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "newspaper",
+    "material": "newspaper",
+    "font_awesome": "newspaper",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "tab-games",
@@ -132,7 +202,14 @@
    "ios": "tab-games · SF gamecontroller.fill",
    "android": "mc_tab_icon_games · ic_games",
    "note": "",
-   "apps_team": "1.5 (no clear source)"
+   "apps_team": "1.5 (no clear source)",
+   "reference": {
+    "sf_symbol": "gamecontroller.fill",
+    "material": "sports_esports",
+    "font_awesome": "gamepad",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "tab-digital",
@@ -142,7 +219,14 @@
    "ios": "tab-digital (purpose unclear)",
    "android": null,
    "note": "",
-   "apps_team": "1.9 (what does it open?)"
+   "apps_team": "1.9 (what does it open?)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Custom vector needed — see Missing Assets",
+    "ownership_note": "Not on Android. Ask Apps team whether to retire."
+   }
   },
   {
    "name": "expand",
@@ -152,7 +236,14 @@
    "ios": "FA chevronUp · Chevron - Up · chevron_up",
    "android": "icon_uparrow",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "chevron.up",
+    "material": "expand_less",
+    "font_awesome": "chevron-up",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "collapse",
@@ -162,7 +253,14 @@
    "ios": "FA chevronDown · Chevron - Down · chevron_down · button-downarrow",
    "android": "icon_downarrow",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "chevron.down",
+    "material": "expand_more",
+    "font_awesome": "chevron-down",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "back",
@@ -172,7 +270,14 @@
    "ios": "SF chevron.left",
    "android": "web_view_navigation_back · ic_arrow_back_black_24dp (from PDFViewCtrlTools)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "chevron.left",
+    "material": "arrow_back",
+    "font_awesome": "chevron-left",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "forward",
@@ -182,7 +287,14 @@
    "ios": "SF chevron.right",
    "android": "web_view_navigation_forward · ic_arrow · liveblog_arrow · game_open_arrow",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "chevron.right",
+    "material": "chevron_right",
+    "font_awesome": "chevron-right",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android has 4 arrows for this; consolidate."
+   }
   },
   {
    "name": "close",
@@ -192,7 +304,14 @@
    "ios": "CloseButton · overlay-close · BannerCloseLight · video-fullscreen-close · SF xmark",
    "android": "ic_close_white_36dp · xbutton · ic_ad_close · close_player_button · ic_persistent_player_close",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "xmark",
+    "material": "close",
+    "font_awesome": "times",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "close-circle",
@@ -202,7 +321,14 @@
    "ios": "SF xmark.circle.fill · button-miniplayer-close (2)",
    "android": "ic_clear_search (search clear)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "xmark.circle.fill",
+    "material": "cancel",
+    "font_awesome": "times-circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Confirm the Android glyph is a circled X."
+   }
   },
   {
    "name": "account",
@@ -212,7 +338,14 @@
    "ios": "SF person.circle.fill",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "person.circle.fill",
+    "material": "account_circle",
+    "font_awesome": "user-circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android has no account icon; login is Auth0 web."
+   }
   },
   {
    "name": "warning",
@@ -222,7 +355,14 @@
    "ios": "SF exclamationmark.triangle.fill · exclamation-icon",
    "android": "stat_notify_error (Android framework, notifications only)",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "exclamationmark.triangle.fill",
+    "material": "warning",
+    "font_awesome": "exclamation-triangle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android uses it only in notifications."
+   }
   },
   {
    "name": "email",
@@ -232,7 +372,14 @@
    "ios": "SF envelope.fill",
    "android": "ic_email",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "envelope.fill",
+    "material": "mail",
+    "font_awesome": "envelope",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "refresh",
@@ -242,7 +389,14 @@
    "ios": "SF arrow.clockwise",
    "android": "ic_wc_refresh",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.clockwise",
+    "material": "refresh",
+    "font_awesome": "redo",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "filter",
@@ -252,7 +406,14 @@
    "ios": "icon_filter",
    "android": "ic_filter (+27 market copies)",
    "note": "",
-   "apps_team": "1.5"
+   "apps_team": "1.5",
+   "reference": {
+    "sf_symbol": "line.3.horizontal.decrease",
+    "material": "filter_list",
+    "font_awesome": "filter",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "text-size-smaller",
@@ -262,7 +423,14 @@
    "ios": "textsizesmall",
    "android": "ic_font_size · ic_textsize_change (one icon, opens a 4-step list)",
    "note": "iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08).",
-   "apps_team": "1.5"
+   "apps_team": "1.5",
+   "reference": {
+    "sf_symbol": "textformat.size.smaller",
+    "material": "text_decrease",
+    "font_awesome": null,
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08)."
+   }
   },
   {
    "name": "text-size-larger",
@@ -272,7 +440,14 @@
    "ios": "textsizelarge",
    "android": "(same single icon)",
    "note": "iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08).",
-   "apps_team": "1.5"
+   "apps_team": "1.5",
+   "reference": {
+    "sf_symbol": "textformat.size.larger",
+    "material": "text_increase",
+    "font_awesome": null,
+    "recommendation": "Native on both platforms",
+    "ownership_note": "See Text size smaller."
+   }
   },
   {
    "name": "follow-topic",
@@ -282,7 +457,14 @@
    "ios": "BTN_FollowTopic · FollowTopic · Plus-CT",
    "android": "ic_follow_topic (file exists, not used)",
    "note": "",
-   "apps_team": "1.5"
+   "apps_team": "1.5",
+   "reference": {
+    "sf_symbol": "plus.circle",
+    "material": "add_circle",
+    "font_awesome": "plus-circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android file is unreferenced."
+   }
   },
   {
    "name": "unfollow-topic",
@@ -292,7 +474,14 @@
    "ios": "BTN_UnFollowTopic · UnFollowTopic · Minus-CT",
    "android": "ic_unfollow_topic (file exists, not used)",
    "note": "",
-   "apps_team": "1.5"
+   "apps_team": "1.5",
+   "reference": {
+    "sf_symbol": "minus.circle",
+    "material": "do_not_disturb_on",
+    "font_awesome": "minus-circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android file is unreferenced."
+   }
   },
   {
    "name": "checked",
@@ -302,7 +491,14 @@
    "ios": "Checked · Checkmark-* (7) · GreyCheckmark · WhiteCheckmark · ButtonWithCheckmark · TopicSelection-* (9)",
    "android": "ic_check · ic_topic_selected · radio_button_on",
    "note": "",
-   "apps_team": "1.6 (per-market copies)"
+   "apps_team": "1.6 (per-market copies)",
+   "reference": {
+    "sf_symbol": "checkmark.circle.fill",
+    "material": "check_circle",
+    "font_awesome": "check-circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "unchecked",
@@ -312,7 +508,14 @@
    "ios": "Unchecked · Uncheck-* (8)",
    "android": "radio_button_off",
    "note": "",
-   "apps_team": "1.6 (per-market copies)"
+   "apps_team": "1.6 (per-market copies)",
+   "reference": {
+    "sf_symbol": "circle",
+    "material": "radio_button_unchecked",
+    "font_awesome": "circle",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "continue",
@@ -322,7 +525,14 @@
    "ios": "Continue-* (10)",
    "android": "arrow_circle_right",
    "note": "",
-   "apps_team": "1.6 (per-market copies)"
+   "apps_team": "1.6 (per-market copies)",
+   "reference": {
+    "sf_symbol": "arrow.right.circle.fill",
+    "material": "arrow_circle_right",
+    "font_awesome": "arrow-circle-right",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "enews-expand-page",
@@ -332,7 +542,14 @@
    "ios": "expand-paper (2)",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.up.left.and.arrow.down.right",
+    "material": "open_in_full",
+    "font_awesome": "expand",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android eEdition is the PageSuite SDK; its icons ship inside the SDK."
+   }
   },
   {
    "name": "enews-fit-to-screen",
@@ -342,7 +559,14 @@
    "ios": "fit-to-screen (2)",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.down.right.and.arrow.up.left",
+    "material": "close_fullscreen",
+    "font_awesome": "compress",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "PageSuite SDK on Android."
+   }
   },
   {
    "name": "enews-previous-page",
@@ -352,7 +576,14 @@
    "ios": "left-arrow (2)",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.left",
+    "material": "arrow_back",
+    "font_awesome": "arrow-left",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "PageSuite SDK on Android."
+   }
   },
   {
    "name": "enews-next-page",
@@ -362,7 +593,14 @@
    "ios": "right-arrow (2)",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.right",
+    "material": "arrow_forward",
+    "font_awesome": "arrow-right",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "PageSuite SDK on Android."
+   }
   },
   {
    "name": "play",
@@ -372,7 +610,14 @@
    "ios": "button-play* (6) · embed-play · gif-play · button-miniplayer-play (2) · SF play.fill",
    "android": "play_player_button · ic_persistent_player_play · ic_play_btn · btn_play_large",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "play.fill",
+    "material": "play_arrow",
+    "font_awesome": "play",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "pause",
@@ -382,7 +627,14 @@
    "ios": "button-pause* (5) · button-miniplayer-pause (2) · SF pause.fill",
    "android": "pause_player_button · ic_persistent_player_pause",
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "pause.fill",
+    "material": "pause",
+    "font_awesome": "pause",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "skip-back-15",
@@ -392,7 +644,14 @@
    "ios": "SF gobackward.15",
    "android": null,
    "note": "",
-   "apps_team": "1.5, 1.11 (15 s on Android?)"
+   "apps_team": "1.5, 1.11 (15 s on Android?)",
+   "reference": {
+    "sf_symbol": "gobackward.15",
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "iOS native; Android needs custom vector",
+    "ownership_note": "Android player has no skip controls."
+   }
   },
   {
    "name": "skip-forward-15",
@@ -402,7 +661,14 @@
    "ios": "SF goforward.15",
    "android": null,
    "note": "",
-   "apps_team": "1.5, 1.11 (15 s on Android?)"
+   "apps_team": "1.5, 1.11 (15 s on Android?)",
+   "reference": {
+    "sf_symbol": "goforward.15",
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "iOS native; Android needs custom vector",
+    "ownership_note": "Android player has no skip controls."
+   }
   },
   {
    "name": "rewind",
@@ -412,7 +678,14 @@
    "ios": "button-rewind",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "backward.fill",
+    "material": "fast_rewind",
+    "font_awesome": "backward",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "fast-forward",
@@ -422,7 +695,14 @@
    "ios": "button-fastforward",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "forward.fill",
+    "material": "fast_forward",
+    "font_awesome": "forward",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "embed-3d",
@@ -432,7 +712,14 @@
    "ios": "embed-3d",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "cube",
+    "material": "view_in_ar",
+    "font_awesome": "cube",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "tournament-sport",
@@ -442,7 +729,14 @@
    "ios": "SF — six symbols, names not listed",
    "android": null,
    "note": "Six symbols; names unknown.",
-   "apps_team": "1.10 (symbol names)"
+   "apps_team": "1.10 (symbol names)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Custom vector needed — see Missing Assets",
+    "ownership_note": "Android World Cup tabs use text (Barlow Condensed), no icons."
+   }
   },
   {
    "name": "rating-star-empty",
@@ -452,7 +746,14 @@
    "ios": "rating-star-empty",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "star",
+    "material": "star",
+    "font_awesome": "star",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Android stars mean saved, not rating."
+   }
   },
   {
    "name": "rating-star-half",
@@ -462,7 +763,14 @@
    "ios": "rating-star-half",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "star.leadinghalf.filled",
+    "material": "star_half",
+    "font_awesome": "star-half-alt",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "rating-star-full",
@@ -472,7 +780,14 @@
    "ios": "rating-star-full",
    "android": null,
    "note": "",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "star.fill",
+    "material": "star",
+    "font_awesome": "star",
+    "recommendation": "Native on both platforms",
+    "ownership_note": null
+   }
   },
   {
    "name": "like",
@@ -482,7 +797,14 @@
    "ios": "tweet-favorite",
    "android": null,
    "note": "Tweet embeds.",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "heart",
+    "material": "favorite",
+    "font_awesome": "heart",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "iOS native tweet embeds only."
+   }
   },
   {
    "name": "repost",
@@ -492,7 +814,14 @@
    "ios": "tweet-retweet",
    "android": null,
    "note": "Tweet embeds.",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.2.squarepath",
+    "material": "repeat",
+    "font_awesome": "retweet",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "iOS native tweet embeds only."
+   }
   },
   {
    "name": "verified",
@@ -502,7 +831,14 @@
    "ios": "tweet-verified",
    "android": null,
    "note": "Tweet embeds.",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "checkmark.seal.fill",
+    "material": "verified",
+    "font_awesome": null,
+    "recommendation": "Native on both platforms",
+    "ownership_note": "iOS native tweet embeds only."
+   }
   },
   {
    "name": "brand-apple",
@@ -512,7 +848,14 @@
    "ios": "AppleIcon (Sign in with Apple)",
    "android": "apple_button (file exists, not used)",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": "apple.logo",
+    "material": null,
+    "font_awesome": "apple",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": "Sign in with Apple is iOS-only."
+   }
   },
   {
    "name": "brand-google",
@@ -522,7 +865,14 @@
    "ios": "GoogleIcon",
    "android": "google_button (only when Auth0 is off)",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "google",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": "Dormant on Android."
+   }
   },
   {
    "name": "brand-facebook",
@@ -532,7 +882,14 @@
    "ios": "FacebookIcon · AuthorContactFacebook",
    "android": "fb_button · ic_fb · author_contact_facebook",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "facebook",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-x",
@@ -542,7 +899,14 @@
    "ios": "TwitterIcon · AuthorContactX · tweet-logo · twitter-logo",
    "android": "ic_twitter · author_contact_x",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "twitter (old bird)",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-bluesky",
@@ -552,7 +916,14 @@
    "ios": "AuthorContactBluesky",
    "android": "author_contact_bluesky",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-instagram",
@@ -562,7 +933,14 @@
    "ios": "AuthorContactInstagram · instagram-logo (3)",
    "android": "author_contact_instagram",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "instagram",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-youtube",
@@ -572,7 +950,14 @@
    "ios": "youtube-logo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "youtube",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-vimeo",
@@ -582,7 +967,14 @@
    "ios": "vimeo-logo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "vimeo-v",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-amazon",
@@ -592,7 +984,14 @@
    "ios": "TroncKit default button",
    "android": "ic_amazon",
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": "amazon",
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": null
+   }
   },
   {
    "name": "brand-1password",
@@ -602,7 +1001,14 @@
    "ios": "paywall-1password",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": "iOS paywall password autofill."
+   }
   },
   {
    "name": "brand-outbrain",
@@ -612,7 +1018,14 @@
    "ios": "outbrainLogo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)"
+   "apps_team": "1.12 (brand vectors)",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": "Use official brand asset (custom Core vector)",
+    "ownership_note": "Not in Android drawables; confirm Android Outbrain widget has no logo."
+   }
   },
   {
    "name": "notification",
@@ -622,7 +1035,14 @@
    "ios": null,
    "android": "per-market notification icons (monochrome)",
    "note": "Android platform requirement (monochrome, per market).",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": null,
+    "ownership_note": "Android requires a monochrome status-bar icon; no iOS equivalent."
+   }
   },
   {
    "name": "saved",
@@ -632,7 +1052,14 @@
    "ios": null,
    "android": "card_star_default · star_on_card_saved_state",
    "note": "Android's glyph for saved in special sections; iOS shows the bookmark. Both kept (DEC-17, PLAT-09 rejected).",
-   "apps_team": ""
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "font_awesome": null,
+    "recommendation": null,
+    "ownership_note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected)."
+   }
   }
  ]
 }
