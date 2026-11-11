@@ -178,6 +178,7 @@ python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from d
 - `figma_execute` can't read files: run the emitter (`python3 scripts/figma_*.py …`), then paste the printed JS. Several table sections for the same file can go in one call if each builder run is wrapped in its own scope.
 - `figma_capture_screenshot` has no `fileKey`: lock the file first with `figma_navigate` (`lock: true`).
 - Check `figma_list_open_files` before building; all three DS files must have the Desktop Bridge plugin open.
+- A call that fails with "Connection replaced by same file reconnection" may still finish in the background. Write edits so running them twice is harmless (set the final value, or tag each node with `setPluginData` and skip tagged ones), never "shift by one" replacements, and re-read the result after a pause (2026-11-11: some MISSING-ASSETS references got renumbered twice and had to be reset).
 
 ### Figma library imports stall (2026-11-05)
 If `importVariableByKeyAsync` / `importComponentByKeyAsync` hang in a platform file while library listing works, the file has unaccepted Core library updates: ask Karl to accept them (Assets → Libraries → Update all). For a component the file has never used, Karl can drag one instance in from Assets; the build script then wraps that instance.
