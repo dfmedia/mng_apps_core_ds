@@ -10,7 +10,7 @@ Item-level to-do list (every element and component from the iOS and Android styl
 
 **State:** everything that can be built without the Apps team is built (backlog: 112 items; 35 done or built, 13 partly built, 64 blocked, all blocked on the Apps team). Nothing is waiting on Karl. Icon names approved (DEC-17). Style-guide extras done (DEC-18). All three Figma libraries published; compile checks green (Android e54e1d8).
 
-**Waiting on the Apps team:** every open question is in docs/MISSING-ASSETS.md, rewritten 2026-11-11 for the Apps team to read on GitHub (https://github.com/dfmedia/mng_apps_core_ds/blob/main/docs/MISSING-ASSETS.md). The Apps team (Jess Navaro, Patrick Carr, Ameer M.) answers in a Jira ticket, quoting its numbers: check that ticket at the start of each session (ticket key: ask Karl if not noted here).
+**Waiting on the Apps team:** every open question is in docs/MISSING-ASSETS.md, rewritten 2026-11-11 for the Apps team to read on GitHub (https://github.com/dfmedia/mng_apps_core_ds/blob/main/docs/MISSING-ASSETS.md). The Apps team (Jess Navaro, Patrick Carr, Ameer M.) answers in a Jira ticket, quoting its numbers: check that ticket at the start of each session (ticket key not known yet on 2026-11-11: the Apps team owns the ticket; ask Karl, or search Jira through the Atlassian connector).
 
 **When answers arrive, build in this order:**
 1. **5.6 app shell sizes:** top bar, section tabs, bottom tab bar, breaking-news banner (colors done, DEC-13/15), then the iOS header band and Android status bar sizes. TSAR Android 15+ production check: if production is not white with dark icons, undo the `production_corrections` entry in data/shell-overrides.json.

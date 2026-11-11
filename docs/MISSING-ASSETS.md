@@ -43,7 +43,7 @@ Then the icon questions (section 1).
 
 | # | Question | What we know |
 |---|---|---|
-| 3.1 | Some iOS theme colors are unset in some markets. Intended, or a missing value? | iOS then falls back to its system default. |
+| 3.1 | Some iOS theme colors are left unset, so iOS uses its system default. Intended, or a missing value? | Unset in every market: `sectionListSectionSeparatorColor` (Android uses #f1f1f1 here) and `trackingConsentSwitchOnTintColor`. Unset in NYDN and OS only: `offlineViewSwitchTintColor` (every other market sets it). |
 | 3.2 | Are there any plans for dark mode? | Both apps are light-only today. |
 | 3.5 | Where is Android `Settings_Background` used? | #333333 in 70 of 77 markets, with black text on it (`Settings_Item`, `Settings_Category_Item`, `Settings_Summary_Item`): 1.7:1 contrast. |
 
