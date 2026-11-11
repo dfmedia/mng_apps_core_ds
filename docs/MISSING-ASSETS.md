@@ -1,6 +1,6 @@
 # Questions for the Apps team
 
-What the MNG Apps design system still needs from the Apps team (Jess Navaro, Patrick Carr, Ameer M.). Each question has a number: reply in #pd-mobile-public with the number, for example "5.6: …". Partial answers help too.
+What the MNG Apps design system still needs from the Apps team (Jess Navaro, Patrick Carr, Ameer M.). Each question has a number. Please answer in the Jira ticket for this list, starting each answer with its number, for example "5.6: …". Partial answers help too.
 
 We work from the shipped code (iOS TroncKit @ `e30ad2585`, Android android-tribpub @ `1cfb069a6`) and the two Apps team style guides. Everything here is something those don't tell us.
 
