@@ -260,7 +260,7 @@
    "ios_today": "Sizes not in the guide; offline placeholder image, adhesion banner background",
    "android_today": "320\u00d750 phone / 728\u00d790 tablet first slot and sticky footer, 300\u00d7250 others; hidden when the parent is narrower",
    "owner": "core+variant",
-   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.9). docs/GUIDE-EXTRAS.md."
+   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.8). docs/GUIDE-EXTRAS.md."
   },
   {
    "group": "Other",
@@ -269,7 +269,7 @@
    "ios_today": "\u2014",
    "android_today": "widget_* colors (day), values-night colors, per-market ic_logo + night logo",
    "owner": "android",
-   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.10)."
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.9)."
   },
   {
    "group": "Other",

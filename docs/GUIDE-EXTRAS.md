@@ -22,11 +22,11 @@ Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad
 - ads.sectionFrontsAdSizes / articlesAdSizes in the config JSON are not read by any code.
 - An ad is hidden when its parent is narrower than the ad.
 
-**iOS:** Ad slot sizes are not in the iOS guide (unknown, ask Apps team: MISSING-ASSETS 5.9). What ships: Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background).
+**iOS:** Ad slot sizes are not in the iOS guide (unknown, ask Apps team: MISSING-ASSETS 5.8). What ships: Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background).
 
 ## What's New Continue button (Android only)
 
-Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Unknown: height, label size, padding (MISSING-ASSETS 5.7).
+Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Unknown: height, label size, padding (MISSING-ASSETS 5.6).
 
 Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 markets. CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). White-label contrast is shown as shipped; below 4.5:1 fails for text.
 
@@ -59,7 +59,7 @@ Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 marke
 
 ## Alerts enable button (Android)
 
-Already tracked: component/permission-prompt (Android side of Notification prompt buttons). Fill `Alerts_Enable_Button_Background` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label `#ffffff` · 255, 255, 255, square corners. Font and height: MISSING-ASSETS 5.7.
+Already tracked: component/permission-prompt (Android side of Notification prompt buttons). Fill `Alerts_Enable_Button_Background` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label `#ffffff` · 255, 255, 255, square corners. Font and height: MISSING-ASSETS 5.6.
 
 ## Home-screen widget (Android only)
 
@@ -67,15 +67,15 @@ Source: project/6-dark-mode.md › Our app; project/3-icons.md (widgets module: 
 
 | Color | Day value (token) | Night value |
 |---|---|---|
-| `widget_bg` | `#ffffff` · 255, 255, 255 (`widget-bg`, System colors · Android) | unknown, ask Apps team (5.10) |
-| `widget_divider1` | `#000000` · 0, 0, 0 (`widget-divider1`, System colors · Android) | unknown, ask Apps team (5.10) |
-| `widget_divider2` | `#b8b8b8` · 184, 184, 184 (`widget-divider2`, System colors · Android) | unknown, ask Apps team (5.10) |
-| `widget_text_main` | `#000000` · 0, 0, 0 (`widget-text-main`, System colors · Android) | unknown, ask Apps team (5.10) |
+| `widget_bg` | `#ffffff` · 255, 255, 255 (`widget-bg`, System colors · Android) | unknown, ask Apps team (5.9) |
+| `widget_divider1` | `#000000` · 0, 0, 0 (`widget-divider1`, System colors · Android) | unknown, ask Apps team (5.9) |
+| `widget_divider2` | `#b8b8b8` · 184, 184, 184 (`widget-divider2`, System colors · Android) | unknown, ask Apps team (5.9) |
+| `widget_text_main` | `#000000` · 0, 0, 0 (`widget-text-main`, System colors · Android) | unknown, ask Apps team (5.9) |
 
 - values-night changes only the home-screen widget colors. The night values are not in the guide.
 - All 77 flavors ship their own ic_logo plus a night ic_logo; it shows on the widget.
 - eNewspaper and Games icons used in dialogs and the widget (assets/Other).
-- Unknown: night color values (values-night), widget layout and sizes (MISSING-ASSETS 5.10).
+- Unknown: night color values (values-night), widget layout and sizes (MISSING-ASSETS 5.9).
 
 ## eEdition (PageSuite) colors (Android only)
 

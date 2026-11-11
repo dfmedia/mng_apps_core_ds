@@ -258,7 +258,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6)",
+   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.5)",
    "overall": "built"
   },
   {
@@ -1076,8 +1076,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
-   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13)",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
+   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.5, DEC-13)",
    "overall": "in progress"
   },
   {
@@ -1089,8 +1089,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
-   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6)",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
+   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.5)",
    "overall": "in progress"
   },
   {
@@ -1102,8 +1102,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
-   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6)",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
+   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.5)",
    "overall": "in progress"
   },
   {
@@ -1115,8 +1115,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.6)",
-   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked",
+   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
+   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.5). DSC-15/19 parked",
    "overall": "in progress"
   },
   {
@@ -1142,7 +1142,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6",
+   "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.5",
    "overall": "in progress"
   },
   {
@@ -1155,7 +1155,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-07 pilot; provisional values in MISSING-ASSETS 5.5",
+   "note": "DEC-07 pilot; provisional values in MISSING-ASSETS 5.4",
    "overall": "built"
   },
   {
@@ -1206,7 +1206,7 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, height)",
    "note": "Colors and radius 5 are tokens (DEC-14)",
    "overall": "in progress"
   },
@@ -1219,7 +1219,7 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, height, colors)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, height, colors)",
    "note": "Radius is a token (DEC-12)",
    "overall": "in progress"
   },
@@ -1232,7 +1232,7 @@
    "figma": "partial",
    "tokens": "done",
    "code": "written",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (height, label size, padding)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (height, label size, padding)",
    "note": "Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md",
    "overall": "in progress"
   },
@@ -1245,7 +1245,7 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (font, padding)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, padding)",
    "note": "Text #004e87 and radius 15 are tokens",
    "overall": "in progress"
   },
@@ -1258,7 +1258,7 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (fonts, heights, colors)",
    "note": "Google radius and icon size are tokens",
    "overall": "in progress"
   },
@@ -1298,7 +1298,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.8. Core checkbox still recommended",
+   "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended",
    "overall": "built"
   },
   {
@@ -1323,7 +1323,7 @@
    "figma": "blocked",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (colors)",
    "note": "Native control per platform; Core sets colors.",
    "overall": "blocked"
   },
@@ -1336,7 +1336,7 @@
    "figma": "blocked",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.7 (colors)",
+   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (colors)",
    "note": "Same pattern on both; no in-button spinner.",
    "overall": "blocked"
   },
@@ -1427,7 +1427,7 @@
    "figma": "done",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.9",
+   "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.8",
    "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label",
    "overall": "in progress"
   },
@@ -1440,7 +1440,7 @@
    "figma": "partial",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Night colors and layout: MISSING-ASSETS 5.10",
+   "blocked_by": "Night colors and layout: MISSING-ASSETS 5.9",
    "note": "Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02",
    "overall": "in progress"
   },

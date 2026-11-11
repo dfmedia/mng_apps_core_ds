@@ -16,7 +16,7 @@
     "height": {
      "$value": "44px",
      "$type": "dimension",
-     "$description": "Height. PROVISIONAL: Not in the source; Apple minimum touch target (size-touch-min). Confirm with Apps team (MISSING-ASSETS 5.5).",
+     "$description": "Height. PROVISIONAL: Not in the source; Apple minimum touch target (size-touch-min). Confirm with Apps team (MISSING-ASSETS 5.4).",
      "$extensions": {
       "mng": {
        "provisional": true
@@ -48,7 +48,7 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Text link label. PROVISIONAL: Not in the source; iOS bodyNormalFont. Confirm (MISSING-ASSETS 5.5).",
+     "$description": "Text link label. PROVISIONAL: Not in the source; iOS bodyNormalFont. Confirm (MISSING-ASSETS 5.4).",
      "$extensions": {
       "mng": {
        "postscript": "OpenSans-Regular",

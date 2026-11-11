@@ -359,3 +359,12 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Registry** (`scripts/component_platform_map.py`): What's New Continue button (Android), Ad slots (Core, per-platform value), Home-screen widget (Android), eEdition colors (Android), Non-icon images (Core + variant, tracked, not drawn). The Alerts enable button was already the Android side of Notification prompt buttons.
 - **Figma:** Core Layout · iOS vs Android › 02 · Ad slots; Android Components · Button › 04 · What's New Continue (as shipped); Android page Layout · Ads, widget, eEdition › 02 widget colors, 03 eEdition colors, 01 ad slots (drawn from the size variables; waits on the Core ad/background import in the Android file). Android variables: Components · Android `ad/*` (6), System colors · Android `eedition-*` (4).
 - **Asked of the Apps team:** iOS ad sizes (MISSING-ASSETS 5.9), widget night colors and layout (5.10); What's New height and label size stay in 5.7.
+
+
+## DEC-19 · Request list: open questions only, numbered with no gaps
+
+- **Rule (Karl, 2026-11-11):** docs/MISSING-ASSETS.md lists only open questions. Numbers stay consistent, not stable: when items are answered or dropped they are removed and the rest renumbered, and every reference follows.
+- **Removed:** old 1.7 (Android icon set: exports in the Android style guide; masters are in 1.1), 3.3 (iOS-default brand colors, DEC-08), 3.4 (system-color pairs, DEC-16), 5.1 (button states, CTRL-02 not pursued), 6.1 (Android source received), and the answered part of old 5.6 (Android status-bar icons, DEC-15).
+- **Old → new:** 1.8 → 1.7 · 1.9 → 1.8 · 1.10 → 1.9 · 1.11 → 1.10 · 1.12 → 1.11 · 3.5 → 3.3 · 5.2 → 5.1 · 5.3 → 5.2 · 5.4 → 5.3 · 5.5 → 5.4 · 5.6 → 5.5 · 5.7 → 5.6 · 5.8 → 5.7 · 5.9 → 5.8 · 5.10 → 5.9 · 6.2 → 6.1. Unchanged: 1.1–1.6, 2.1–2.2, 3.1–3.2, 4.1–4.5. Dated entries above this one and PROGRESS log lines before 2026-11-11 use the old numbers.
+- **Changed:** references in scripts, data, generated docs, tokens and generated / component code in all three repos (scripts renumbered, outputs regenerated); Figma text that cites the list; CLAUDE.md rule 7.
+

@@ -134,11 +134,11 @@ StyleDictionary.registerFormat({
     s += `    /// Disabled fill. Core \`button.disabled.fill\`.\n    public static let disabledFill = ${col('button.disabled.fill')}\n`;
     s += `    /// Disabled label. Core \`button.disabled.label\`.\n    public static let disabledLabel = ${col('button.disabled.label')}\n\n`;
     s += `    /// Corner radius.\n    public static let cornerRadius: CGFloat = ${px(r)}\n`;
-    s += `    /// Height. PROVISIONAL: not in the source (MISSING-ASSETS 5.5). Future: BTN-01.\n    public static let height: CGFloat = ${px(h)}\n\n`;
+    s += `    /// Height. PROVISIONAL: not in the source (MISSING-ASSETS 5.4). Future: BTN-01.\n    public static let height: CGFloat = ${px(h)}\n\n`;
     s += '\n';
     s += `    /// Label font: ${lab.$extensions.mng.postscript} ${px({ $value: lab.$value.fontSize })}, uppercase. Falls back to the bold system font at the same size.\n`;
     s += `    public static var labelFont: UIFont { UIFont(name: "${lab.$extensions.mng.postscript}", size: ${px({ $value: lab.$value.fontSize })}) ?? .boldSystemFont(ofSize: ${px({ $value: lab.$value.fontSize })}) }\n`;
-    s += `    /// Text link font. PROVISIONAL (MISSING-ASSETS 5.5).\n    public static var linkFont: UIFont { UIFont(name: "${link.$extensions.mng.postscript}", size: ${px({ $value: link.$value.fontSize })}) ?? .systemFont(ofSize: ${px({ $value: link.$value.fontSize })}) }\n\n`;
+    s += `    /// Text link font. PROVISIONAL (MISSING-ASSETS 5.4).\n    public static var linkFont: UIFont { UIFont(name: "${link.$extensions.mng.postscript}", size: ${px({ $value: link.$value.fontSize })}) ?? .systemFont(ofSize: ${px({ $value: link.$value.fontSize })}) }\n\n`;
     s += '    /// Text link color per market (iOS `paywallLinkColor`, shipped).\n    public static func linkColor(forMarket market: String) -> UIColor? {\n        switch market.lowercased() {\n';
     for (const t of links) s += `        case "${t.path[4]}": return UIColor(mngHex: 0x${hex6(t)})  // ${t.$value} · ${rgbc(t)}\n`;
     s += '        default: return nil\n        }\n    }\n}\n';
@@ -156,7 +156,7 @@ StyleDictionary.registerFormat({
     s += [c('mng_button_primary_label', 'button.primary.label'), c('mng_button_disabled_fill', 'button.disabled.fill'), c('mng_button_disabled_label', 'button.disabled.label'), c('mng_button_link', 'button.android.link.color')].join('\n') + '\n';
     s += `    <dimen name="mng_button_primary_height">${px(g('button.android.primary.height'))}dp</dimen>\n`;
     s += `    <dimen name="mng_button_primary_corner_radius">${px(g('button.android.primary.radius'))}dp</dimen>\n`;
-    s += `    <!-- Label size and weight PROVISIONAL (MISSING-ASSETS 5.5): Material Button default. Future: BTN-02. -->\n    <dimen name="mng_button_primary_text_size">${px({ $value: lab.$value.fontSize })}sp</dimen>\n`;
+    s += `    <!-- Label size and weight PROVISIONAL (MISSING-ASSETS 5.4): Material Button default. Future: BTN-02. -->\n    <dimen name="mng_button_primary_text_size">${px({ $value: lab.$value.fontSize })}sp</dimen>\n`;
     s += `    <item name="mng_button_primary_letter_spacing" format="float" type="dimen">${lab.$extensions.mng.letterSpacingEm}</item>\n`;
     s += `    <dimen name="mng_button_link_text_size">${px({ $value: link.$value.fontSize })}sp</dimen>\n</resources>\n`;
     return s;

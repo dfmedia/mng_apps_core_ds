@@ -6,7 +6,7 @@
 // (bound to the <market>/<role> variable, which holds the shipped color once Karl accepted it; DEC-15, 2026-11-05).
 // Android (2026-11-10, confirmed on device): the cards compare Android 14 and below (override, white icons) with
 // Android 15+ (navbar, icon style from e.android15; bound to Core navbar).
-// Sizes are illustrative: production app shell sizes wait on the Apps team (MISSING-ASSETS 5.6).
+// Sizes are illustrative: production app shell sizes wait on the Apps team (MISSING-ASSETS 5.5).
 
 const ROLE = PLATFORM === 'iOS' ? 'header' : 'statusbar';
 const PAGE = 'Components · App shell';
@@ -88,13 +88,13 @@ const others = page.children; const y0 = others.length ? Math.max(...others.map(
 const root = frame(SECTION, 'VERTICAL', 32, 64); root.fills = [solid('#ffffff')];
 const what = PLATFORM === 'iOS' ? 'section header band (`header`)' : 'status bar (`statusbar`)';
 const fgWhat = PLATFORM === 'iOS' ? 'White section title text (Style.json cell-tertiary-headertext, #ffffff in all 77 markets), target 4.5:1.'
-  : 'Status-bar icons: white on Android 14 and below (the main theme never sets windowLightStatusBar). On Android 15+ the status bar shows navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30): DP, MC, NYDN, OS, SS, VP. TSAR: the export gives white icons on its #F5F5F5 bar; Karl (2026-11-10) set Android 15+ to a white status bar with dark icons, assumed corrected in production (TSAR/statusbar15; Ameer to confirm, MISSING-ASSETS 5.6). Rule confirmed by the Apps team (Ameer M., 2026-11-10). Icon colors are drawn by the system; contrast shown for white / black icons, target 3:1.';
+  : 'Status-bar icons: white on Android 14 and below (the main theme never sets windowLightStatusBar). On Android 15+ the status bar shows navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30): DP, MC, NYDN, OS, SS, VP. TSAR: the export gives white icons on its #F5F5F5 bar; Karl (2026-11-10) set Android 15+ to a white status bar with dark icons, assumed corrected in production (TSAR/statusbar15; Ameer to confirm, MISSING-ASSETS 5.5). Rule confirmed by the Apps team (Ameer M., 2026-11-10). Icon colors are drawn by the system; contrast shown for white / black icons, target 3:1.';
 root.appendChild(text(SECTION.replace('01 · ', '') + (PLATFORM === 'Android' ? ' · Android 14 and below vs 15+' : '') + ' · DEC-15', 32, 'Bold', '#1a1a1a', 44));
 const how = PLATFORM === 'iOS'
   ? 'Left: what the majority rule builds (Core navbar). Right: the accepted override, the color the app ships (<market>/header variable).'
   : 'Left: Android 14 and below, the accepted override (<market>/statusbar variable) with white icons. Right: Android 15+, the status bar shows the top bar (Core navbar) with the icon style the app picks. Tokens: statusbar.android.<m>.icons / icons15; Kotlin statusbarFor(sdkInt), XML values-v35.';
 const intro = text(`The ${what} follows the top bar (alias of Core navbar) in every market. These ${DATA.length} markets ship something else on ${PLATFORM === 'Android' ? 'Android 14 and below' : 'iOS'}. ` +
-  `${how} ${fgWhat} Sizes are illustrative (MISSING-ASSETS 5.6). Source: data/shell-colors.json · docs/SHELL-EXCEPTIONS.md.`, 14, 'Regular', '#333333', 22);
+  `${how} ${fgWhat} Sizes are illustrative (MISSING-ASSETS 5.5). Source: data/shell-colors.json · docs/SHELL-EXCEPTIONS.md.`, 14, 'Regular', '#333333', 22);
 intro.resize(1860, intro.height); intro.textAutoResize = 'HEIGHT'; root.appendChild(intro);
 
 const grid = frame('Exceptions', 'HORIZONTAL', 32, 0); grid.layoutWrap = 'WRAP'; grid.counterAxisSpacing = 32;

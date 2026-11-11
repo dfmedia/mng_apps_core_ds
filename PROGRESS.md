@@ -12,12 +12,12 @@ Item-level to-do list (every element and component from the iOS and Android styl
 
 **Waiting on the Apps team:** every open question is in docs/MISSING-ASSETS.md, rewritten 2026-11-11 for the Apps team to read on GitHub (https://github.com/dfmedia/mng_apps_core_ds/blob/main/docs/MISSING-ASSETS.md). The Apps team (Jess Navaro, Patrick Carr, Ameer M.) answers in a Jira ticket, quoting its numbers: check that ticket at the start of each session (ticket key not known yet on 2026-11-11: the Apps team owns the ticket; ask Karl, or search Jira through the Atlassian connector).
 
-**When answers arrive, build in this order:**
-1. **5.6 app shell sizes:** top bar, section tabs, bottom tab bar, breaking-news banner (colors done, DEC-13/15), then the iOS header band and Android status bar sizes. TSAR Android 15+ production check: if production is not white with dark icons, undo the `production_corrections` entry in data/shell-overrides.json.
-2. **5.5 / 5.7 buttons and controls:** primary button values, then the notification prompt, Manage subscription, savings label, social sign-in, What's New button, segmented control, loading indicator (most colors and radii are tokens already).
-3. **5.8 iOS checkbox placement, 4.4 / 4.5 type, 3.5 Android settings colors:** small updates to existing builds.
-4. **§1 icons:** glyphs and the Icon component (PROGRESS 1.8), using the approved names in docs/ICON-NAMES.md.
-5. **5.9 iOS ad sizes, 5.10 widget night colors:** re-run scripts/build_guide_extras.py and figma_guide_extras.py.
+**When answers arrive, build in this order** (numbers as in docs/MISSING-ASSETS.md since 2026-11-11, DEC-19)**:**
+1. **5.5 app shell sizes:** top bar, section tabs, bottom tab bar, breaking-news banner (colors done, DEC-13/15), then the iOS header band and Android status bar sizes. TSAR Android 15+ production check: if production is not white with dark icons, undo the `production_corrections` entry in data/shell-overrides.json.
+2. **5.4 / 5.6 buttons and controls:** primary button values, then the notification prompt, Manage subscription, savings label, social sign-in, What's New button, segmented control, loading indicator (most colors and radii are tokens already).
+3. **5.7 iOS checkbox placement, 4.4 / 4.5 type, 3.3 Android settings colors:** small updates to existing builds.
+4. **Section 1 icons:** glyphs and the Icon component (PROGRESS 1.8), using the approved names in docs/ICON-NAMES.md.
+5. **5.8 iOS ad sizes, 5.9 widget night colors:** re-run scripts/build_guide_extras.py and figma_guide_extras.py.
 
 **Parked (Karl, 2026-10-26, not raised with the Apps team):** DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS.
 
@@ -138,3 +138,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-11-11** — Combined Apps team message sent (Karl, #pd-mobile-public): 28 questions covering every open item; MISSING-ASSETS rows marked ASKED 2026-11-11, with the key from message number to ID. CLAUDE.md start-of-session checklist expanded (attach repos with push, delete permission, work in cloud clones then pull locally, compile-check command, Figma build tips) so a session can start with "continue". New **Next session** handoff at the top of PROGRESS; stale phase rows (1.3, 1.4, 1.8, type comparison) updated.
 - **2026-11-11** — docs/MISSING-ASSETS.md rewritten for the Apps team (Karl): same item numbers, rows in number order, short question + "What we know", no internal IDs or dates on open items, "Most needed" list at the top, closed and answered items (1.7, 3.3, 3.4, 5.1, 5.6 status-bar part, 6.1) moved to "Answered and closed". The message-number key is gone; the Apps team message now links to the file and uses its numbers. CLAUDE.md rule 7 says how to keep the file tidy.
 - **2026-11-11** — The Apps team will answer in a Jira ticket, not Slack (Karl). MISSING-ASSETS intro, CLAUDE.md rule 7 and the handoff updated.
+- **2026-11-11** — DEC-19 (Karl): docs/MISSING-ASSETS.md now holds open questions only, numbered with no gaps. Answered and closed items removed (old 1.7, 3.3, 3.4, 5.1, 6.1; the answered status-bar part of 5.6) and the rest renumbered; every reference updated in all three repos (scripts, data, generated docs, tokens, code comments) and in the Figma files. Old-to-new key in DECISIONS.md › DEC-19; dated log lines before this one use the old numbers. CLAUDE.md rule 7 reworded (numbers consistent, not stable).

@@ -10,9 +10,9 @@
   "android_ui": "Android code targets the View-based UI (XML styles and resources)."
  },
  "provisional": {
-  "ios_height": {"value": 44, "why": "Not in the source; Apple minimum touch target (size-touch-min). Confirm with Apps team (MISSING-ASSETS 5.5)."},
-  "android_label_font": {"family": "Roboto", "weight": "Medium", "size": 14, "letter_spacing_em": 0.0892, "why": "Not in the source; Material Components Button default (TextAppearance.MaterialComponents.Button). Confirm (MISSING-ASSETS 5.5)."},
-  "ios_link_font": {"postscript": "OpenSans-Regular", "size": 14, "why": "Not in the source; iOS bodyNormalFont. Confirm (MISSING-ASSETS 5.5)."},
+  "ios_height": {"value": 44, "why": "Not in the source; Apple minimum touch target (size-touch-min). Confirm with Apps team (MISSING-ASSETS 5.4)."},
+  "android_label_font": {"family": "Roboto", "weight": "Medium", "size": 14, "letter_spacing_em": 0.0892, "why": "Not in the source; Material Components Button default (TextAppearance.MaterialComponents.Button). Confirm (MISSING-ASSETS 5.4)."},
+  "ios_link_font": {"postscript": "OpenSans-Regular", "size": 14, "why": "Not in the source; iOS bodyNormalFont. Confirm (MISSING-ASSETS 5.4)."},
   "disabled": {"fill": "#c1c8cb", "label": "#767676", "why": "Android ships these on Your News Continue; iOS has no disabled primary. Used for both apps (Core)."}
  },
  "scope": {

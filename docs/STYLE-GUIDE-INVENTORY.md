@@ -18,12 +18,12 @@ Brand colors (78 markets), app shell colors (incl. Android 14 vs 15+ status bar)
 
 | Item | Library | Waiting on |
 |---|---|---|
-| Top bar, section tabs, bottom tab bar, breaking-news banner (colors done) | Core + iOS + Android | Sizes, MISSING-ASSETS 5.6 |
-| Section header band (iOS) and status bar (Android) drawn as components (colors done) | iOS / Android | Sizes, 5.6 |
-| Notification prompt Yes / No, Manage subscription / delete account | Core + iOS + Android | 5.7 |
-| Savings label | Android | 5.7 |
-| Social sign-in buttons incl. Sign in with Apple | iOS | 5.7 |
-| Segmented control, loading indicator | Core | 5.7 (colors) |
+| Top bar, section tabs, bottom tab bar, breaking-news banner (colors done) | Core + iOS + Android | Sizes, MISSING-ASSETS 5.4 |
+| Section header band (iOS) and status bar (Android) drawn as components (colors done) | iOS / Android | Sizes, 5.5 |
+| Notification prompt Yes / No, Manage subscription / delete account | Core + iOS + Android | 5.6 |
+| Savings label | Android | 5.6 |
+| Social sign-in buttons incl. Sign in with Apple | iOS | 5.6 |
+| Segmented control, loading indicator | Core | 5.6 (colors) |
 | All 61 icon purposes as components | Core + iOS + Android | §1 (vector masters) |
 
 ## Tracked, not blocked
@@ -36,13 +36,13 @@ Karl (2026-11-10): add them to the registry and document them as shipped; design
 
 | Item | Platform | Where it is now | Still unknown |
 |---|---|---|---|
-| What's New Continue button | Android | Registry `component/button-whats-new`. Fill token `whats-new-button-color` (52 of 77; CT, NYDN, VP ship a drawable color), radius `component.android.whats-new-continue.radius` (6). Android Figma Components · Button › 04 | Height, label size, padding (5.7) |
-| Alerts enable button | Android | Was already tracked: Android side of `component/permission-prompt` (Notification prompt buttons). Fill is a control token (58 of 77 follow action) | Font, height (5.7) |
-| Ad slots | Core (both apps) | Registry `layout/ad-slots`. Colors Core `ad/background`, `ad/label`; Android sizes `component.android.ad.*` (320 × 50, 728 × 90, 300 × 250). Core Figma Layout · iOS vs Android › 02; Android Figma Layout · Ads, widget, eEdition | iOS sizes (5.9) |
-| Home-screen widget | Android | Registry `component/widget`. Day colors are System colors · Android tokens (`widget-*`). Android Figma Layout · Ads, widget, eEdition › 02 | Night colors, layout and sizes (5.10) |
+| What's New Continue button | Android | Registry `component/button-whats-new`. Fill token `whats-new-button-color` (52 of 77; CT, NYDN, VP ship a drawable color), radius `component.android.whats-new-continue.radius` (6). Android Figma Components · Button › 04 | Height, label size, padding (5.6) |
+| Alerts enable button | Android | Was already tracked: Android side of `component/permission-prompt` (Notification prompt buttons). Fill is a control token (58 of 77 follow action) | Font, height (5.6) |
+| Ad slots | Core (both apps) | Registry `layout/ad-slots`. Colors Core `ad/background`, `ad/label`; Android sizes `component.android.ad.*` (320 × 50, 728 × 90, 300 × 250). Core Figma Layout · iOS vs Android › 02; Android Figma Layout · Ads, widget, eEdition | iOS sizes (5.8) |
+| Home-screen widget | Android | Registry `component/widget`. Day colors are System colors · Android tokens (`widget-*`). Android Figma Layout · Ads, widget, eEdition › 02 | Night colors, layout and sizes (5.9) |
 | eEdition (PageSuite) colors | Android | Registry `component/eedition-colors`. Tokens `color.android-system.eedition.*` (4 fixed colors), Kotlin `MngSystemColors.eedition*`. Android Figma › 03 | — |
 | Non-icon images | iOS + Android | Registry `component/images`; file list in docs/GUIDE-EXTRAS.md. Not drawn in Figma (per-market artwork) | Vector masters (2.1, 2.2) |
 
 ## The asset files themselves
 
-Both guides carry the shipped image files, so "as shipped" icons and images can be placed in Figma now as reference: PNGs as image fills, the 16 SVGs as vectors. They are exports, not vector masters (except the 16 SVGs), so MISSING-ASSETS 1.1 (vector masters) still stands for building real icon components. MISSING-ASSETS 1.7 updated: the Android set is in the Android guide.
+Both guides carry the shipped image files, so "as shipped" icons and images can be placed in Figma now as reference: PNGs as image fills, the 16 SVGs as vectors. They are exports, not vector masters (except the 16 SVGs), so MISSING-ASSETS 1.1 (vector masters) still stands for building real icon components. The Android exports are in the Android guide.

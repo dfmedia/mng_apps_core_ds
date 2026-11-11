@@ -168,7 +168,7 @@
    "ios": "tab-foryou · For You · YourNews-* (11)",
    "android": "mc_tab_icon_for_you",
    "note": "",
-   "apps_team": "1.6, 1.8 (no master vector)",
+   "apps_team": "1.6, 1.7 (no master vector)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -219,7 +219,7 @@
    "ios": "tab-digital (purpose unclear)",
    "android": null,
    "note": "",
-   "apps_team": "1.9 (what does it open?)",
+   "apps_team": "1.8 (what does it open?)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -644,7 +644,7 @@
    "ios": "SF gobackward.15",
    "android": null,
    "note": "",
-   "apps_team": "1.5, 1.11 (15 s on Android?)",
+   "apps_team": "1.5, 1.10 (15 s on Android?)",
    "reference": {
     "sf_symbol": "gobackward.15",
     "material": null,
@@ -661,7 +661,7 @@
    "ios": "SF goforward.15",
    "android": null,
    "note": "",
-   "apps_team": "1.5, 1.11 (15 s on Android?)",
+   "apps_team": "1.5, 1.10 (15 s on Android?)",
    "reference": {
     "sf_symbol": "goforward.15",
     "material": null,
@@ -729,7 +729,7 @@
    "ios": "SF — six symbols, names not listed",
    "android": null,
    "note": "Six symbols; names unknown.",
-   "apps_team": "1.10 (symbol names)",
+   "apps_team": "1.9 (symbol names)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -848,7 +848,7 @@
    "ios": "AppleIcon (Sign in with Apple)",
    "android": "apple_button (file exists, not used)",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": "apple.logo",
     "material": null,
@@ -865,7 +865,7 @@
    "ios": "GoogleIcon",
    "android": "google_button (only when Auth0 is off)",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -882,7 +882,7 @@
    "ios": "FacebookIcon · AuthorContactFacebook",
    "android": "fb_button · ic_fb · author_contact_facebook",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -899,7 +899,7 @@
    "ios": "TwitterIcon · AuthorContactX · tweet-logo · twitter-logo",
    "android": "ic_twitter · author_contact_x",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -916,7 +916,7 @@
    "ios": "AuthorContactBluesky",
    "android": "author_contact_bluesky",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -933,7 +933,7 @@
    "ios": "AuthorContactInstagram · instagram-logo (3)",
    "android": "author_contact_instagram",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -950,7 +950,7 @@
    "ios": "youtube-logo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -967,7 +967,7 @@
    "ios": "vimeo-logo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -984,7 +984,7 @@
    "ios": "TroncKit default button",
    "android": "ic_amazon",
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -1001,7 +1001,7 @@
    "ios": "paywall-1password",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -1018,7 +1018,7 @@
    "ios": "outbrainLogo",
    "android": null,
    "note": "",
-   "apps_team": "1.12 (brand vectors)",
+   "apps_team": "1.11 (brand vectors)",
    "reference": {
     "sf_symbol": null,
     "material": null,

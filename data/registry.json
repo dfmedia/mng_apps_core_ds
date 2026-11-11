@@ -1958,7 +1958,7 @@
    "android": {
     "source": "320\u00d750 phone / 728\u00d790 tablet first slot and sticky footer, 300\u00d7250 others; hidden when the parent is narrower"
    },
-   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.9). docs/GUIDE-EXTRAS.md.",
+   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.8). docs/GUIDE-EXTRAS.md.",
    "core": {
     "figma": null,
     "spec": null
@@ -1976,7 +1976,7 @@
    "android": {
     "source": "widget_* colors (day), values-night colors, per-market ic_logo + night logo"
    },
-   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.10).",
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.9).",
    "core": {
     "figma": null,
     "spec": null

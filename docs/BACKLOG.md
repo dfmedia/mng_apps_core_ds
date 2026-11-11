@@ -21,8 +21,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 ## Suggested order
 
-1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.5), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.6), remaining buttons and controls (5.7), Android settings colors (3.5), icons (§1)
-2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.6)
+1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.4), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.5), remaining buttons and controls (5.6), Android settings colors (3.5), icons (§1)
+2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.5)
 3. Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names approved 2026-11-11; glyphs and the Icon component after MISSING-ASSETS §1
 
 ## Foundations
@@ -67,7 +67,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | buy | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Alias of action |
 | continue | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Alias of action |
 | header | iOS | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-15: alias of Core navbar; 8 accepted market overrides (data/shell-overrides.json) as override tokens and variables. Samples: Components · App shell |
-| statusbar | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.6) |
+| statusbar | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.5) |
 | accent | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: follows Core action (52 of 77 Android markets); exceptions in docs/CONTROL-EXCEPTIONS.md, not built. Closes PLAT-10 for the majority |
 
 ## Components
@@ -76,26 +76,26 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Top bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.6, DEC-13) |
-| Section tabs | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done per platform (DEC-13). Sizes wait on the Apps team (5.6) |
-| Bottom tab bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.6) |
-| Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.6) · Colors done (alert, alerttext). Sizes wait on the Apps team (5.6). DSC-15/19 parked |
+| Top bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.5) · Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.5, DEC-13) |
+| Section tabs | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.5) · Colors done per platform (DEC-13). Sizes wait on the Apps team (5.5) |
+| Bottom tab bar | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.5) · Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.5) |
+| Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ App shell sizes (MISSING-ASSETS 5.5) · Colors done (alert, alerttext). Sizes wait on the Apps team (5.5). DSC-15/19 parked |
 | Section header band | iOS | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables |
-| Status bar color | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.6 |
+| Status bar color | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.5 |
 
 ### Buttons
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot; provisional values in MISSING-ASSETS 5.5 |
+| Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot; provisional values in MISSING-ASSETS 5.4 |
 | Continue button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03 |
 | Subscription option | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button) |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
-| Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height) · Colors and radius 5 are tokens (DEC-14) |
-| Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, height, colors) · Radius is a token (DEC-12) |
-| What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Apps team: MISSING-ASSETS 5.7 (height, label size, padding) · Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md |
-| Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (font, padding) · Text #004e87 and radius 15 are tokens |
-| Social sign-in buttons | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.7 (fonts, heights, colors) · Google radius and icon size are tokens |
+| Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.6 (font, height) · Colors and radius 5 are tokens (DEC-14) |
+| Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.6 (font, height, colors) · Radius is a token (DEC-12) |
+| What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Apps team: MISSING-ASSETS 5.6 (height, label size, padding) · Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md |
+| Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.6 (font, padding) · Text #004e87 and radius 15 are tokens |
+| Social sign-in buttons | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Apps team: MISSING-ASSETS 5.6 (fonts, heights, colors) · Google radius and icon size are tokens |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 
 ### Controls
@@ -103,16 +103,16 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Switch | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls) |
-| Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.8. Core checkbox still recommended |
+| Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended |
 | Text size setting | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
-| Segmented control | Core + iOS + Android | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Native control per platform; Core sets colors. |
-| Loading indicator | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.7 (colors) · Same pattern on both; no in-button spinner. |
+| Segmented control | Core + iOS + Android | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.6 (colors) · Native control per platform; Core sets colors. |
+| Loading indicator | Core | ⛔ blocked | ⬜ to do | ⬜ to do | ⛔ Apps team: MISSING-ASSETS 5.6 (colors) · Same pattern on both; no in-button spinner. |
 
 ### Other
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Home-screen widget | Android | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ Night colors and layout: MISSING-ASSETS 5.10 · Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02 |
+| Home-screen widget | Android | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ Night colors and layout: MISSING-ASSETS 5.9 · Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02 |
 | eEdition (PageSuite) colors | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | color.android-system.eedition.* (4 fixed colors), Android Layout · Ads, widget, eEdition › 03; docs/GUIDE-EXTRAS.md |
 | Non-icon images (logos, onboarding, placeholders) | Core + iOS + Android | — n/a | — n/a | ⛔ blocked | ⛔ Vector masters: MISSING-ASSETS 2.1, 2.2 · Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma |
 
@@ -126,7 +126,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
-| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.9 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
+| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.8 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
 
 ## Icons
 

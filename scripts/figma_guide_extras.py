@@ -44,7 +44,7 @@ if MODE == 'vars':
 
 elif MODE == 'core-ads':
     I = D['ad_slots']['ios']; col = {c['name']: c for c in D['ad_slots']['colors_core']}
-    ios_unknown = 'Unknown, ask Apps team (MISSING-ASSETS 5.9)'
+    ios_unknown = 'Unknown, ask Apps team (MISSING-ASSETS 5.8)'
     rows = [{'group': 'Colors · Core tokens (DEC-16)'}]
     for n, what, si, sa in (('ad/background', 'Ad slot background', 'cellAdBackgroundColor', 'ad_background'), ('ad/label', "'Advertisement' label", 'adLabelTextColor', 'advertisement_title')):
         v = col[n]['value']
@@ -65,7 +65,7 @@ elif MODE == 'core-ads':
         rows.append(['iOS asset', k, '—', '—', {'chip': 'iOS only'}])
     T = {'name': '02 · Ad slots', 'title': 'Ad slots (as shipped)',
          'intro': ('Both apps show ads. The two ad colors are Core tokens. Android sets its slot sizes in code (first slot and sticky footer: banner, '
-                   'other slots: 300 × 250); the iOS guide has no sizes (MISSING-ASSETS 5.9). The Android slots are drawn from their tokens in the '
+                   'other slots: 300 × 250); the iOS guide has no sizes (MISSING-ASSETS 5.8). The Android slots are drawn from their tokens in the '
                    f'Android file ({AP} › 01). Documented as shipped, nothing new designed. ' + SRC),
          'columns': [{'name': 'Item', 'w': 220}, {'name': 'iOS', 'w': 380}, {'name': 'Android', 'w': 380}, {'name': 'Token', 'w': 280}, {'name': 'Ownership', 'w': 180}],
          'rows': rows}
@@ -81,12 +81,12 @@ elif MODE == 'android-ads':
 
 elif MODE == 'android-widget':
     W = D['widget']
-    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, 'Unknown, ask Apps team (MISSING-ASSETS 5.10)', t['name']]
+    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, 'Unknown, ask Apps team (MISSING-ASSETS 5.9)', t['name']]
             for t in W['day_tokens']]
     rows += [{'group': 'Also on the widget'}, ['Logo', W['logo'], '—', '—'], ['Icons', W['icons'], '—', '—']]
     T = {'name': '02 · Home-screen widget colors', 'title': 'Home-screen widget colors (as shipped)',
          'intro': (f"Android only. Day colors are System colors · Android tokens, the same in all 77 markets. {W['night']} "
-                   'The widget layout and sizes are not in the guide either (MISSING-ASSETS 5.10). ' + SRC),
+                   'The widget layout and sizes are not in the guide either (MISSING-ASSETS 5.9). ' + SRC),
          'columns': [{'name': 'Color', 'w': 200}, {'name': 'Day value', 'w': 460}, {'name': 'Night value (values-night)', 'w': 360}, {'name': 'Token', 'w': 220}],
          'rows': rows}
     print(table(AP, T))
@@ -112,7 +112,7 @@ elif MODE == 'whats-new':
     rows += [{'group': 'Shape and label'},
              [{'t': 'Radius', 'b': True}, f"{W['radius']['value']} dp", '—', f"{W['radius']['token']} (Components · Android whats-new-continue/radius)"],
              [{'t': 'Label', 'b': True}, f"{hx(W['label']['color'])}, {W['label']['case']}, {W['label']['font']} ({W['label']['font_key']}, {W['label']['font_markets']} of 77)", '—', 'Font size unknown'],
-             [{'t': 'Unknown', 'b': True}, ', '.join(W['unknown']).capitalize() + ': MISSING-ASSETS 5.7', '—', 'Not drawn as a component until then']]
+             [{'t': 'Unknown', 'b': True}, ', '.join(W['unknown']).capitalize() + ': MISSING-ASSETS 5.6', '—', 'Not drawn as a component until then']]
     T = {'name': "04 · What's New Continue (as shipped)", 'title': "What's New Continue button (as shipped)",
          'intro': ("Android only (not in the iOS guide). CT, NYDN and VP override the button drawable, so their drawable color ships, not the color resource. "
                    "White-label contrast below 4.5:1 fails for text; values are kept as shipped. Height, label size and padding are unknown, so the button "

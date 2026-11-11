@@ -117,11 +117,11 @@ sz = lambda k: f"{A['android']['sizes'][k]['width']} × {A['android']['sizes'][k
 for s in A['android']['slots']:
     L.append(f"| {s['name']}{' · ' + s['where'] if s.get('where') else ''} | {sz(s['phone'])} | {sz(s['tablet'])} |")
 L += [''] + [f'- {r}' for r in A['android']['rules']] + ['',
-      f"**iOS:** {A['ios']['unknown']} (unknown, ask Apps team: MISSING-ASSETS 5.9). What ships: " + '; '.join(A['ios']['known']) + '.', '',
+      f"**iOS:** {A['ios']['unknown']} (unknown, ask Apps team: MISSING-ASSETS 5.8). What ships: " + '; '.join(A['ios']['known']) + '.', '',
       "## What's New Continue button (Android only)", '',
       f"Source: {W['evidence']}. Not in the iOS guide. Label {hexrgb(W['label']['color'])}, {W['label']['case']}, "
       f"`{W['label']['font_key']}` = {whats_new['label']['font']} in {whats_new['label']['font_markets']} of 77 markets. "
-      f"Radius {W['radius']['value']} (`{whats_new['radius']['token']}`). Unknown: {', '.join(W['unknown'])} (MISSING-ASSETS 5.7).", '',
+      f"Radius {W['radius']['value']} (`{whats_new['radius']['token']}`). Unknown: {', '.join(W['unknown'])} (MISSING-ASSETS 5.6).", '',
       f"Fill: token `whats-new-button-color` {hexrgb(wn['majority'])} in {wn['majority_markets']} of 77 markets. "
       "CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). "
       "White-label contrast is shown as shipped; below 4.5:1 fails for text.", '',
@@ -133,13 +133,13 @@ for m, v in whats_new['color_resource_vs_drawable'].items():
     L.append(f"| {m} | {hexrgb(v['color_resource'])} | {hexrgb(v['drawable'])} |")
 AE = S['alerts_enable']
 L += ['', '## Alerts enable button (Android)', '',
-      f"Already tracked: {AE['registry']}. Fill `{AE['fill']['key']}` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label {hexrgb(AE['label']['color'])}, {AE['shape'].lower()} corners. Font and height: MISSING-ASSETS 5.7.", '',
+      f"Already tracked: {AE['registry']}. Fill `{AE['fill']['key']}` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label {hexrgb(AE['label']['color'])}, {AE['shape'].lower()} corners. Font and height: MISSING-ASSETS 5.6.", '',
       '## Home-screen widget (Android only)', '',
       f"Source: {WG['evidence']}. {WG['ios']}.", '',
       '| Color | Day value (token) | Night value |', '|---|---|---|']
 for t in widget['day_tokens']:
-    L.append(f"| `{t['source']}` | {hexrgb(t['value'])} (`{t['name']}`, System colors · Android) | unknown, ask Apps team (5.10) |")
-L += ['', f"- {WG['night']}", f"- {WG['logo']}", f"- {WG['icons']}", f"- Unknown: {', '.join(WG['unknown'])} (MISSING-ASSETS 5.10).", '',
+    L.append(f"| `{t['source']}` | {hexrgb(t['value'])} (`{t['name']}`, System colors · Android) | unknown, ask Apps team (5.9) |")
+L += ['', f"- {WG['night']}", f"- {WG['logo']}", f"- {WG['icons']}", f"- Unknown: {', '.join(WG['unknown'])} (MISSING-ASSETS 5.9).", '',
       '## eEdition (PageSuite) colors (Android only)', '',
       f"Source: {E['evidence']}. {E['sdk']}. {' '.join(E['rules'])} {E['ios']}.", '',
       '| Color | Value | Token |', '|---|---|---|']
