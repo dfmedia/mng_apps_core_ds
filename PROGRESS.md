@@ -6,6 +6,21 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 
 Item-level to-do list (every element and component from the iOS and Android style guides, with Figma / tokens / code status): **docs/BACKLOG.md**.
 
+## Next session (handoff 2026-11-11)
+
+**State:** everything that can be built without the Apps team is built (backlog: 112 items; 35 done or built, 13 partly built, 64 blocked, all blocked on the Apps team). Nothing is waiting on Karl. Icon names approved (DEC-17). Style-guide extras done (DEC-18). All three Figma libraries published; compile checks green (Android e54e1d8).
+
+**Waiting on the Apps team:** one combined message with 28 questions, sent 2026-11-11 in #pd-mobile-public (Jess Navaro, Patrick Carr, Ameer M.). docs/MISSING-ASSETS.md has every question marked ASKED, plus the key from message number to ID.
+
+**When answers arrive, build in this order:**
+1. **5.6 app shell sizes:** top bar, section tabs, bottom tab bar, breaking-news banner (colors done, DEC-13/15), then the iOS header band and Android status bar sizes. TSAR Android 15+ production check: if production is not white with dark icons, undo the `production_corrections` entry in data/shell-overrides.json.
+2. **5.5 / 5.7 buttons and controls:** primary button values, then the notification prompt, Manage subscription, savings label, social sign-in, What's New button, segmented control, loading indicator (most colors and radii are tokens already).
+3. **5.8 iOS checkbox placement, 4.4 / 4.5 type, 3.5 Android settings colors:** small updates to existing builds.
+4. **§1 icons:** glyphs and the Icon component (PROGRESS 1.8), using the approved names in docs/ICON-NAMES.md.
+5. **5.9 iOS ad sizes, 5.10 widget night colors:** re-run scripts/build_guide_extras.py and figma_guide_extras.py.
+
+**Parked (Karl, 2026-10-26, not raised with the Apps team):** DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS.
+
 ## Phase 0 — Structure & setup  ✅
 
 | Step | Status | Notes |
@@ -23,12 +38,12 @@ Item-level to-do list (every element and component from the iOS and Android styl
 |------|--------|-------|
 | 1.1 Visualize all market palettes | ✅ | Figma page **Color · Market Palettes**: overview, 45 unique palettes with shipped vs suggested previews, all 77 markets, 59 unique hexes + merge candidates |
 | 1.2 Pick merges and mode strategy | ⏸ later | Merges: keep shipped as-is for now. Modes: revisit later. Tab-label contrast (4.5:1): revisit later |
-| 1.3 Build color variables (Primitives → Brand → System) | ⬜ | After 1.2 |
-| 1.4 The other themed colors per market | ⏸ step 1 review | docs/SYSTEM-COLORS.md + Core page **Color · System colors**: iOS 124 / Android 136 colors, 58 / 69 fixed in every market, 16 proposed pairs, market palettes (iOS 19, Android 29). Step 2 (tokens for every market) after review |
+| 1.3 Build color variables (Primitives → Brand → System) | ✅ | Brand colors + Brand theme (DEC-06), System colors (DEC-16), shell and control collections |
+| 1.4 The other themed colors per market | ✅ DEC-16 | docs/SYSTEM-COLORS.md + Core page **Color · System colors**: iOS 124 / Android 136 colors, 58 / 69 fixed in every market, 16 proposed pairs, market palettes (iOS 19, Android 29). Step 2 (tokens for every market) after review |
 | 1.5 Typography: text styles | ✅ DEC-09/10: tokens, code, Figma (iOS 56, Android 25) | Open Sans Light installed (assets/fonts). Android subhead font asked (MISSING-ASSETS 4.4) |
 | 1.6 Spacing, radius, size, breakpoint variables | ✅ DEC-11/12: spacing, touch targets, breakpoints, component metrics | docs/SCALES-COMPARISON.md |
 | 1.7 Icons page: system comparison grid | ✅ | Figma page **Icons · System Comparison**: 59 purposes × SF Symbols / Material Symbols / Font Awesome 5.15.1, gaps flagged. SF Symbols column filled from PNG export (scripts/export_sf_symbols.swift → assets/sf-symbols/) |
-| 1.8 Icons: decide semantic icon list + build Icon component | ⬜ | After Apps team answers MISSING-ASSETS §1 |
+| 1.8 Icons: decide semantic icon list + build Icon component | 🔄 | Names approved (DEC-17, 2026-11-11, docs/ICON-NAMES.md); glyphs and the Icon component after MISSING-ASSETS §1 (asked 2026-11-11) |
 
 ## Phase 1A — Platform ownership (Core vs iOS vs Android)  ⏸ review
 
@@ -46,7 +61,7 @@ Item-level to-do list (every element and component from the iOS and Android styl
 | Architecture | ✅ | docs/ARCHITECTURE.md: registry, variables, wayfinding, rollout |
 | Registry | ✅ | data/registry.json + docs/REGISTRY.md: 99 items (12 color roles, 61 icons, 20 components, 6 layout rules) |
 | Components + layout: who owns what | ⏸ | New Figma page **Components · Platform Ownership**: 9 Core, 13 Core + variant, 2 iOS only, 2 Android only |
-| Type comparison | ⬜ | |
+| Type comparison | ✅ | docs/TYPE-COMPARISON.md → DEC-09/10 |
 | Pilot: button system end-to-end in all three files | ✅ reviewed 2026-10-26 | DEC-07. Tokens, docs/components/BUTTON.md, Swift + Android View code generated/written; Core Figma page **Components · Button** (01–04) + Button variable collection; iOS and Android files: page Components · Button with Button/Primary (instances of Core Button + platform overrides) and Button/Text link |
 
 ## Phase 2 — Core atoms  ⬜
@@ -54,16 +69,6 @@ Item-level to-do list (every element and component from the iOS and Android styl
 ## Phase 4 — Molecules / organisms  ⬜
 ## Phase 5 — QA & publish  ⬜
 ## Phase 6 — Move platform-only items into the iOS and Android files  ⬜
-
-## Next session (handoff 2026-10-26)
-
-1. **Push.** Sessions without the repos attached can't push; Karl pushes (done for the 2026-10-26 work up to the backlog).
-2. **Button pilot reviewed by Karl (2026-10-26).** Email to Jess and Patrick: button values only (MISSING-ASSETS 5.5). Kotlin package `com.mng.designsystem.tokens` confirmed (2026-10-29).
-3. **Platform Figma files done** (libraries published and enabled 2026-10-26): iOS and Android each have page Components · Button. iOS text link color is a separate collection, Text link · iOS (20 modes matching Brand theme): set the same market in both. Tip: library imports and font loads hang when a file's tab is in the background; bring the file to the front.
-4. **Ask the Apps team** (MISSING-ASSETS 5.5): iOS button height (pilot uses 44), Android label weight/size, iOS link font, pressed states. Code is not compiled yet (no Xcode or Android SDK here).
-5. **Waiting:** clusters for TBAN, TBE, TB, TBCP, TBHS, TCHW, TDPS.
-6. **Parked, pick up later** (Karl, 2026-10-26; not raised with the Apps team yet): DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS, and confirm Android banner text is white.
-7. **Next work after the pilot:** type, spacing and radius tokens; then the remaining components.
 
 ## Log
 
@@ -130,3 +135,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-11-10** — Android compile check for 5231d30 (statusbar15Override) passed (run 42907762361). DEC-18 (Karl): style-guide items not tracked before are now in the registry and documented as shipped: data/source/style-guide-extras.json → scripts/build_guide_extras.py → data/guide-extras.json, docs/GUIDE-EXTRAS.md, tokens/android/guide-extras.tokens.json (Android ad sizes component.android.ad.*, PageSuite eEdition colors color.android-system.eedition.*). Registry +5 (What's New Continue, Ad slots, Home-screen widget, eEdition colors, Non-icon images); Alerts enable was already the Android side of Notification prompt buttons. Figma Core: Layout · iOS vs Android › 02 · Ad slots. Figma Android: 10 new variables, Components · Button › 04 · What's New Continue, new page Layout · Ads, widget, eEdition › 02 widget, 03 eEdition; › 01 ad slot drawing waits on the Core ad/background import in the Android file (stalls, library updates). MISSING-ASSETS: new 5.9 (iOS ad sizes), 5.10 (widget night colors); 6.1 closed. table builder: swatches can bind to a variable (`v`). See mng_apps_android_ds PROGRESS.
 - **2026-11-10** — Karl accepted the Core library updates in the Android file and published. Android Figma Layout · Ads, widget, eEdition › 01 · Ad slots built: three slots sized by Components · Android ad/* and filled with Core ad/background (imported), sections ordered 01–03. DEC-18 Figma work complete. See mng_apps_android_ds PROGRESS.
 - **2026-11-11** — DEC-17 icon names approved by Karl: all 60 names in docs/ICON-NAMES.md are final as proposed (shared `saved`; prefixes tab-, enews-, brand-). Status text updated in scripts/build_icon_names.py, scripts/figma_icon_names.py → data/icon-names.json, docs/ICON-NAMES.md, backlog; Figma Core Icons · System Comparison › 05 · Icon list intro updated. Glyphs and the Icon component still wait on MISSING-ASSETS §1. Nothing left waiting on Karl; everything open waits on the Apps team.
+- **2026-11-11** — Combined Apps team message sent (Karl, #pd-mobile-public): 28 questions covering every open item; MISSING-ASSETS rows marked ASKED 2026-11-11, with the key from message number to ID. CLAUDE.md start-of-session checklist expanded (attach repos with push, delete permission, work in cloud clones then pull locally, compile-check command, Figma build tips) so a session can start with "continue". New **Next session** handoff at the top of PROGRESS; stale phase rows (1.3, 1.4, 1.8, type comparison) updated.

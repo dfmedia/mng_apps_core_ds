@@ -4,10 +4,19 @@ Read this file first in every session. **This is the only copy of the project in
 
 ## Start of every session
 
-1. Pull all three repos (`mng_apps_core_ds`, `mng_apps_ios_ds`, `mng_apps_android_ds`) and re-read this file if it changed.
-2. Read `PROGRESS.md` for the current phase and what is waiting on review. How the three libraries fit together: `docs/ARCHITECTURE.md`.
-3. Check `docs/PLATFORM-OWNERSHIP.md` for open `PLAT-` decisions before moving anything between libraries.
-4. End the session by updating `PROGRESS.md` (dated log line), committing and pushing.
+Karl can start a session with just "continue". Do these in order, without asking:
+
+1. **Repos.** Attach the three dfmedia repos with push access (`add_repo`, `access: "push"`), clone each into `/home/claude/<repo>` one at a time, then `register_repo_root`. Re-read this file if it changed.
+2. **Delete permission.** Ask once for delete permission on the three local folders (`device_request_delete_permission` on `~/Github/mng_apps_core_ds`, `_ios_ds`, `_android_ds`). Git deletes its own lock and temp files, and the permission resets every session. If a local pull already failed with "unable to unlink", get the permission, remove the leftover `.git/*.lock` and `.git/objects/**/tmp_obj_*`, check `git status` is clean, and pull again.
+3. **Pull** all three, both the cloud clones and Karl's local folders (`device_bash`: `git pull --ff-only`).
+4. **Read** the **Next session** handoff at the top of `PROGRESS.md` and the last ~10 log lines, the Summary of `docs/BACKLOG.md`, and `docs/MISSING-ASSETS.md` (look for new Apps team answers). How the libraries fit together: `docs/ARCHITECTURE.md`. Check `docs/PLATFORM-OWNERSHIP.md` for open `PLAT-` decisions before moving anything between libraries.
+5. **Report** in a few lines: what changed since last time, what is unblocked, what you propose next. Then wait for an OK before building (rule 3).
+
+**Where to work.** Edit, run scripts and commit in the cloud clones (`/home/claude/<repo>`), push, then `git pull --ff-only` in Karl's local folders so his copy stays current. Don't edit the local folders directly.
+
+**Compile check.** Every push to mng_apps_ios_ds / mng_apps_android_ds runs GitHub Actions (about 2–3 minutes). Check it with `gh api "repos/dfmedia/<repo>/actions/runs?head_sha=<sha>" --jq '.workflow_runs[] | [.name,.status,.conclusion,.html_url] | @tsv'`; use Claude in Chrome only if the API is blocked. Fix a red run before anything else.
+
+**End of session.** Add a dated log line to `PROGRESS.md` (and to the platform repo's when it changed), refresh the **Next session** handoff, commit, push, and pull into the local folders.
 
 To change these instructions, edit this file and push. No change in Claude is needed.
 
@@ -165,5 +174,11 @@ python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from d
 - Put long findings in `docs/`, not in chat.
 - Say which commit and which file a number came from.
 
+### Running Figma builds
+- `figma_execute` can't read files: run the emitter (`python3 scripts/figma_*.py …`), then paste the printed JS. Several table sections for the same file can go in one call if each builder run is wrapped in its own scope.
+- `figma_capture_screenshot` has no `fileKey`: lock the file first with `figma_navigate` (`lock: true`).
+- Check `figma_list_open_files` before building; all three DS files must have the Desktop Bridge plugin open.
+
 ### Figma library imports stall (2026-11-05)
 If `importVariableByKeyAsync` / `importComponentByKeyAsync` hang in a platform file while library listing works, the file has unaccepted Core library updates: ask Karl to accept them (Assets → Libraries → Update all). For a component the file has never used, Karl can drag one instance in from Assets; the build script then wraps that instance.
+If the import still stalls after Karl accepts, retry once (2026-11-10: the Android ad slot import worked right after Karl accepted and published).
