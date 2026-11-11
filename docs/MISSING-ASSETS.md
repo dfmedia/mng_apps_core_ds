@@ -1,6 +1,9 @@
 # Questions for the Apps team
 
-What the MNG Apps design system still needs from the Apps team (Jess Navaro, Patrick Carr, Ameer M.). Each question has a number. Please answer in the Jira ticket for this list, starting each answer with its number, for example "5.5: …". Partial answers help too.
+What the MNG Apps design system still needs from the Apps team (Jess Navaro, Patrick Carr, Ameer M.). Each question has a number. Please answer in the Jira ticket for the app the question is about, starting each answer with its number, for example "5.5: …". Questions about both apps can go in either ticket. Partial answers help too.
+
+- iOS: [DREAMT-4718](https://digital1stmedia.atlassian.net/browse/DREAMT-4718)
+- Android: [DREAMT-4719](https://digital1stmedia.atlassian.net/browse/DREAMT-4719)
 
 We work from the shipped code (iOS TroncKit @ `e30ad2585`, Android android-tribpub @ `1cfb069a6`) and the two Apps team style guides. Everything here is something those don't tell us.
 
@@ -54,7 +57,7 @@ Then the icon questions (section 1).
 | 4.1 | Which Open Sans Condensed files does NYDN bundle, and do they match the Google Fonts version? | Only NYDN uses it. |
 | 4.2 | What is the intended text-size scale for article text? | Article text has 6 sizes (15 % steps) or follows the iOS text size setting; other screens are fixed. |
 | 4.3 | Are Open Sans Light and ExtraBold used on iOS? If so, can you send the font files? | iOS bundles Light, Light Italic, ExtraBold and ExtraBold Italic; Figma's Open Sans doesn't have them. |
-| 4.4 | What are the font and size for these text styles? | iOS: section tabs, settings rows and headers, search result headline. Android: top bar title, and the font for `ArticleText.Subhead.Wapo` (size 14sp). |
+| 4.4 | What are the font and size for these text styles? | iOS: section tabs, settings rows and headers, search result headline. Android: top bar title. |
 | 4.5 | Do these two Android font files load, or fall back to the system font? | NYDN `StreamModule_Font_Time_And_Blurb` → `OpenSansCondensed-Bold.ttff` (double f). MC `Article_Byline_Regular` and `Article_Dateline_Regular` → `OpenSans-Semibold.ttf` (the bundled file is `OpenSans-SemiBold.ttf`). |
 
 ## 5. Components
