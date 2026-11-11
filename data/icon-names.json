@@ -6,7 +6,7 @@
  },
  "decision": "DEC-17",
  "rule": "One name per icon purpose, glyphs as each app ships them. Lowercase, hyphens, named for the job. Prefixes tab-, enews-, brand-.",
- "status": "names proposed 2026-11-10 (Karl to review); glyphs documented as shipped",
+ "status": "names approved by Karl 2026-11-11 (DEC-17); glyphs documented as shipped",
  "summary": {
   "purposes": 61,
   "names": 60,

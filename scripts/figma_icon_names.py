@@ -10,7 +10,7 @@ D = json.load(open('data/icon-names.json')); S = D['summary']
 GRID = '02 · Comparison grid'; GRID_PAGE = 'Icons · Archive'   # 02 and 04 archived 2026-11-10 (Karl), merged into 05
 C = {'name': '05 · Icon list', 'title': 'Icon list · one name per purpose, everything we know (DEC-17)',
      'intro': (f"One row per icon purpose ({S['purposes']} purposes → {S['names']} names). What ships: iOS {D['source']['ios']}, Android {D['source']['android']}. "
-               "Nothing is redesigned: each app keeps its own glyphs; the name is shared (proposals for Karl). Rule: lowercase words joined by hyphens, "
+               "Nothing is redesigned: each app keeps its own glyphs; the name is shared (names approved by Karl 2026-11-11, DEC-17). Rule: lowercase words joined by hyphens, "
                "named for what the icon does; prefixes tab-, enews-, brand-. Reference columns (Ref ·) are not what ships: the nearest SF Symbol, "
                "Material Symbol and Font Awesome 5.15.1 glyph (copied from 02 · Comparison grid, now on Icons · Archive) and the October recommendation, not decided. "
                "Source: data/icon-names.json (scripts/build_icon_names.py) · docs/ICON-NAMES.md · Apps team questions: docs/MISSING-ASSETS.md §1."),
