@@ -81,7 +81,7 @@ Thresholds: same < 0.012 ΔE · close < 0.05 · differs ≥ 0.05. Contrast targe
 4. **Figma edits are additive.** Add new sections (`NN · Title`) beside existing ones and never overwrite or delete Karl's content. Re-running a build replaces only the section it created. Screenshot each section after building it.
 5. **Tokens are the delivery format.** Colors (and later type, spacing, radius) live as DTCG tokens in `tokens/`; Swift and Kotlin are generated, never hand-written. Always document colors as hex and RGB.
 6. **Data first, then Figma.** Every Figma table comes from a JSON in `data/` that a script in `scripts/` regenerates. Never type values by hand.
-7. **Don't invent.** If the source doesn't say, write "unknown, ask Apps team" and add it to `docs/MISSING-ASSETS.md`.
+7. **Don't invent.** If the source doesn't say, write "unknown, ask Apps team" and add it to `docs/MISSING-ASSETS.md`. That file is written for the Apps team, who read it on GitHub (the repo is public): keep item numbers stable, rows in number order, one short question plus "What we know", no internal IDs, file paths or dates on open items. When an answer arrives, move the row to "Answered and closed" (who answered, date, outcome), put any values in `data/source/`, re-run the scripts and unblock the item in `data/backlog-status.json`. Messages to the Apps team link to the file and use its numbers.
 8. **Match production (DEC-09).** Components and text styles are built exactly as they ship. Fonts stay per platform. Where no token exists for a value yet, use the raw production value; proposed changes go in IMPROVEMENTS.
 9. **Moving items to the platform files** happens only after Karl approves the ownership page for that area.
 
@@ -104,7 +104,7 @@ docs/REGISTRY.md                  generated: every item and its owner (from data
 docs/BACKLOG.md                   generated: what is left to build in Figma and export to GitHub (status in data/backlog-status.json)
 docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
-docs/MISSING-ASSETS.md            what we need from the Apps team
+docs/MISSING-ASSETS.md            questions for the Apps team, written for them (numbered; answered items at the bottom)
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
 docs/GUIDE-EXTRAS.md              generated: style-guide items documented as shipped (ad slots, What's New button, widget, eEdition colors, images)
 docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md)
