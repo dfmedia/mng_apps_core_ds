@@ -43,6 +43,8 @@ ASK = {
     'eNewspaper tab': '1.8 (which name and icon ship now; Patrick Carr\'s newspaper icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
     'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
+# Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
+BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}
 missing = [p['purpose'] for p in M['purposes'] if p['purpose'] not in NAME]
 assert not missing, f'no name for: {missing}'
@@ -53,7 +55,11 @@ REF = {c[1]: {'sf_symbol': c[3] or None, 'material': (c[4] or [None])[0], 'font_
 rows = []
 for p in M['purposes']:
     name, note = NAME[p['purpose']]
-    ask = ASK.get(p['purpose'], '1.11 (brand vectors)' if p['group'] == 'Brands' else '')
+    ask = ASK.get(p['purpose'], '')
+    if p['group'] == 'Brands':   # Karl, 2026-11-18: brand marks are documented as shipped; missing vectors are marked, not sourced from the vendors
+        svg = p['purpose'] in BRAND_SVG_IOS
+        note = (note + ' ' if note else '') + ('Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. ' if svg else 'Vector: missing on iOS (PNG only). ') + \
+               'Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).'
     rows.append({'name': name, 'purpose': p['purpose'], 'group': p['group'], 'bucket': BUCKET[p['bucket']],
                  'ios': p['ios_today'] or None, 'android': p['android_today'] or None,
                  'note': note, 'apps_team': ask,

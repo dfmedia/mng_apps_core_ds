@@ -9,7 +9,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 
 **Numbers don't change.** When a question is answered we remove it and leave a gap, so the numbers you have quoted stay the same.
 
-**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. We are still reviewing your answer to 1.11: nothing more is needed on it for now. 1.3, 1.4, 1.8, 2.1, 4.1 and 6.1 have follow-up questions.
+**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. 1.3, 1.4, 1.8, 2.1, 4.1 and 6.1 have follow-up questions.
 
 ## Most needed
 
@@ -32,7 +32,6 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 | 1.4 | Which markets override which tab-bar icons, what are the image set names, and can you send the files? | Your answer: 9 markets (CT, BS, DP, MC, NYDN, SS, VP, HC, OS) have their own Home icon and their own selected For You icon; Sections and Alerts use Font Awesome `bars` and `bell` everywhere. The earlier iOS style guide said 2 markets override the Font Awesome tab icons: which 2 markets and which icons, or is that out of date? Please send the 18 Home and For You files (PNG is fine). |
 | 1.8 | iOS: what is the e-edition tab called and which icon does it use at `f79fe3339`, and is it in the export you're sending for 6.1? Could you also ask Patrick Carr for his newspaper icon (the vector source, and where it lives)? | Your answer: there's no Digital tab anymore; "Digital" was another name for the eNewspaper tab, and that code is commented out. Our `e30ad2585` export has two tab icons, `tab-enews` and `tab-newspaper`, and the e-edition was planned to move into the bottom navigation as "Newspaper". Patrick shared a newspaper icon as a PNG on Oct 21 (a newspaper with a folded edge, an image block and text lines): is that the one that ships, and is there a vector? Which markets show the tab, and does it open the native eNewspaper viewer? |
 | 1.10 | Android: is 15 s skip required, or would 10 / 30 s work? | Material Symbols only has 5 / 10 / 30 s; 15 s needs a custom icon. |
-| 1.11 | Can you send current official vectors for the brand marks? | Apple, Google, Facebook, X, Bluesky, Instagram, YouTube, Vimeo, Amazon, 1Password, Outbrain. |
 
 ## 2. Logos and artwork
 
