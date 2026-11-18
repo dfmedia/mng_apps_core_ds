@@ -368,3 +368,14 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Old → new:** 1.8 → 1.7 · 1.9 → 1.8 · 1.10 → 1.9 · 1.11 → 1.10 · 1.12 → 1.11 · 3.5 → 3.3 · 5.2 → 5.1 · 5.3 → 5.2 · 5.4 → 5.3 · 5.5 → 5.4 · 5.6 → 5.5 · 5.7 → 5.6 · 5.8 → 5.7 · 5.9 → 5.8 · 5.10 → 5.9 · 6.2 → 6.1. Unchanged: 1.1–1.6, 2.1–2.2, 3.1–3.2, 4.1–4.5. Dated entries above this one and PROGRESS log lines before 2026-11-11 use the old numbers.
 - **Changed:** references in scripts, data, generated docs, tokens and generated / component code in all three repos (scripts renumbered, outputs regenerated); Figma text that cites the list; CLAUDE.md rule 7.
 
+
+## DEC-20 · Question numbers kept with gaps; first iOS answers recorded
+
+- **Rule (Karl, 2026-11-18):** when a question in docs/MISSING-ASSETS.md is answered, remove it but do not renumber the rest, so the questions still being clarified keep the numbers the Apps team already quoted. This replaces the renumbering part of DEC-19 for now. CLAUDE.md rule 7 still describes renumbering; Karl to decide whether to change it.
+- **Source:** Ameer Moukadam's answers on DREAMT-4718 (2026-11-18, TroncKit `f79fe3339`, iOS style guide v21), copied to data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.md.
+- **Removed (answered, accepted by Karl):** 1.2 (ManageSubscriptionIcon is the blank 100 pt logo on the Manage Subscription modal → IMPROVEMENTS ICON-04), 1.5 (no separate designs; platform symbols are fine → ICON-NAMES notes), 3.1 (unset iOS colors are the system defaults → SYSTEM-COLORS), 4.2 (6 article sizes ×0.85–×1.60, or the iOS text size), 4.3 (Light used in 3 places; ExtraBold only measured, never drawn; italics unused).
+- **Narrowed to Android (iOS half answered):** 1.1, 4.4, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6.
+- **Follow-ups asked:** 1.3 (which Saved tab icon was intended), 1.4 (which 2 markets override Font Awesome tab icons, image set names, files), 2.1 (all logo files).
+- **Answered, waiting for Karl's review (left unchanged in the list):** 1.6, 1.7, 1.8, 1.9, 1.11, 2.2, 3.2, 4.1, 5.7, 5.8, 6.1.
+- **Also recorded:** DSC-34 (iOS Manage subscription button white on white in 7 markets); login is the Auth0 Universal Login page on both apps, so the native Log In / Register and social sign-in buttons are not shown in production (component map; the iOS primary-button spec from DEC-07 came from that unshown button); iOS 26 tab bar titles NEWS / YOU (component map).
+- **Not changed yet (Karl):** Figma, the style guides, tokens and type styles. The iOS answers for 4.4, 5.4, 5.5 and 5.6 are recorded but not built; they come from `f79fe3339`, newer than our iOS export.

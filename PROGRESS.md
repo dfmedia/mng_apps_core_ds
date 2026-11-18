@@ -6,20 +6,19 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 
 Item-level to-do list (every element and component from the iOS and Android style guides, with Figma / tokens / code status): **docs/BACKLOG.md**.
 
-## Next session (handoff 2026-11-11)
+## Next session (handoff 2026-11-18)
 
-**State:** everything that can be built without the Apps team is built (backlog: 112 items; 35 done or built, 13 partly built, 64 blocked, all blocked on the Apps team). Nothing is waiting on Karl. Icon names approved (DEC-17). Style-guide extras done (DEC-18). All three Figma libraries published; compile checks green (Android e54e1d8).
+**State:** the Apps team answered most iOS questions on DREAMT-4718 (2026-11-18; source copy in data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.md). DEC-20: MISSING-ASSETS keeps its numbers (gaps allowed). Android ticket DREAMT-4719: no new answers since the subhead font (Oct 30). Style guides read 2026-11-18: iOS `1795029427-a74c` (v21, at TroncKit `f79fe3339`), Android `1795019588-222e` (still android-tribpub `1cfb069a6`).
 
-**Waiting on the Apps team:** every open question is in docs/MISSING-ASSETS.md (public on GitHub: https://github.com/dfmedia/mng_apps_core_ds/blob/main/docs/MISSING-ASSETS.md). Answers come in two Jira tickets, one per app: iOS [DREAMT-4718](https://digital1stmedia.atlassian.net/browse/DREAMT-4718) (unassigned), Android [DREAMT-4719](https://digital1stmedia.atlassian.net/browse/DREAMT-4719) (Rajal Patel). Both were opened 2026-10-28 from Karl's 2026-10-26 Slack request, so their descriptions list only the button and control questions (now 5.4, 5.6) plus, on Android, the subhead font and two color questions; the rest of the list is not in them yet. Both ask the Apps team to put answers in their style guides, so also check the guides for a newer version (read 2026-11-10: iOS 1793034195-4b13, Android 1792536558-0b1c; Android unchanged on 2026-11-11).
+**Waiting on Karl:**
+- Review the answers to 1.6, 1.7, 1.8, 1.9, 1.11, 2.2, 3.2, 4.1, 5.7, 5.8, 6.1 (left unchanged in the list until he does). 1.7: Karl thinks Patrick has a For You icon; not found in Slack, Drive or Gmail. Lead: Kristen's Figma "MNG-Tribune Our Version" (`efsexM2XtaRJDudX8Zdj3l`, node 1-21) has the app icons used in current mockups; not reachable with this session's Figma token.
+- Whether to re-base the iOS primary button (DEC-07) on the meter paywall purchase button, since Log In / Register is never shown (Auth0 Universal Login).
+- CLAUDE.md rule 7 still says renumber; DEC-20 says keep numbers.
+- Still from 2026-11-11: OK to set the Android subhead text style to PT Serif Regular 14sp (tokens, MngTypeStyles.kt, Android Figma text style).
 
-**Answered in the tickets so far:** Android subhead (Rajal Patel, DREAMT-4719 comment, 2026-10-30): "PT_Serif. All for Article_Subhead_Text". Matches the export: `Article_Subhead_Text_*` are PT Serif in 76 of 77 markets, and the style's weight is 400, so `ArticleText.Subhead.Wapo` = PT Serif Regular 14sp. Removed from MISSING-ASSETS 4.4. **To build (needs Karl's OK):** set the Android subhead text style's font (tokens, MngTypeStyles.kt, Android Figma text style).
+**Waiting on the Apps team:** follow-ups 1.3, 1.4, 2.1 on DREAMT-4718; every Android question (1.1, 1.10, 3.3, 4.4, 4.5, 5.1–5.6, 5.9) on DREAMT-4719, not yet nudged.
 
-**When answers arrive, build in this order** (numbers as in docs/MISSING-ASSETS.md since 2026-11-11, DEC-19)**:**
-1. **5.5 app shell sizes:** top bar, section tabs, bottom tab bar, breaking-news banner (colors done, DEC-13/15), then the iOS header band and Android status bar sizes. TSAR Android 15+ production check: if production is not white with dark icons, undo the `production_corrections` entry in data/shell-overrides.json.
-2. **5.4 / 5.6 buttons and controls:** primary button values, then the notification prompt, Manage subscription, savings label, social sign-in, What's New button, segmented control, loading indicator (most colors and radii are tokens already).
-3. **5.7 iOS checkbox placement, 4.4 / 4.5 type, 3.3 Android settings colors:** small updates to existing builds.
-4. **Section 1 icons:** glyphs and the Icon component (PROGRESS 1.8), using the approved names in docs/ICON-NAMES.md.
-5. **5.8 iOS ad sizes, 5.9 widget night colors:** re-run scripts/build_guide_extras.py and figma_guide_extras.py.
+**Next:** get a new iOS export at `f79fe3339` (app shell, Settings and Onboarding changed since `e30ad2585`), then build the iOS answers (5.5 shell sizes, 5.4 / 5.6 buttons and controls, 4.4 type styles, 5.7 checkbox, 5.8 ads). The 17 iOS screenshots (5.3) are on DREAMT-4718 but not in the repo: Atlassian's file host is blocked from both shells, and Chrome could not capture the tabs.
 
 **Parked (Karl, 2026-10-26, not raised with the Apps team):** DSC-15 iOS breaking-news red `#ff0000` → `#cf000e`; DSC-19 TIVDB black banner text on iOS.
 
@@ -143,3 +142,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-11-11** — DEC-19 (Karl): docs/MISSING-ASSETS.md now holds open questions only, numbered with no gaps. Answered and closed items removed (old 1.7, 3.3, 3.4, 5.1, 6.1; the answered status-bar part of 5.6) and the rest renumbered; every reference updated in all three repos (scripts, data, generated docs, tokens, code comments) and in the Figma files. Old-to-new key in DECISIONS.md › DEC-19; dated log lines before this one use the old numbers. CLAUDE.md rule 7 reworded (numbers consistent, not stable).
 - **2026-11-11** — DEC-19 Figma: every MISSING-ASSETS reference in the three files checked against the new numbers (Core icon list 1.3–1.11, Button 5.4, Ad slots 5.8; iOS checkbox 5.7, app shell 5.5; Android What's New 5.6, app shell 5.5, widget 5.9). Plugin reconnects re-ran some edits; fixed with absolute values. CLAUDE.md: Figma edits must be safe to run twice.
 - **2026-11-11** — Apps team Jira tickets recorded: iOS DREAMT-4718, Android DREAMT-4719 (MISSING-ASSETS intro, CLAUDE.md start step 4 and People, handoff). Read both: opened 2026-10-28, cover only part of the list. DREAMT-4719 answers the Android subhead font (Rajal Patel: PT Serif; export: PT Serif Regular 14sp), removed from MISSING-ASSETS 4.4; text style update waits for Karl's OK.
+- **2026-11-18** — First Apps team answers (iOS, Ameer, DREAMT-4718, TroncKit `f79fe3339`, iOS style guide v21 `1795029427-a74c`; Android guide also updated to `1795019588-222e`, nothing new found for our questions; DREAMT-4719 unchanged). Recorded in data/source/apps-team-answers/. DEC-20: MISSING-ASSETS keeps its numbers (gaps allowed); removed 1.2, 1.5, 3.1, 4.2, 4.3; 1.1, 4.4, 5.1–5.6 narrowed to Android; follow-ups 1.3, 1.4, 2.1 posted on DREAMT-4718. DSC-34, IMPROVEMENTS ICON-04, Auth0 Universal Login and iOS 26 tab names in the component map; ICON-NAMES and SYSTEM-COLORS notes. No Figma, token or style-guide changes (Karl). No platform-repo changes.

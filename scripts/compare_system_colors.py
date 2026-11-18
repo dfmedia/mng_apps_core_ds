@@ -167,7 +167,7 @@ for k, label in [('colors', 'Themed colors in the export'), ('covered', 'Already
     L.append(f"| {label} | {P['ios']['summary'].get(k, 0)} | {P['android']['summary'].get(k, 0)} |")
 nb = Counter(p['bucket'] for p in pairs)
 L += ['', f"iOS ↔ Android pairs (approved by Karl, 2026-11-10): {len(pairs)} ({', '.join(f'{v} {k}' for k, v in nb.items())}). Everything else is platform-only, including 5 look-alike colors that are different designs on the two apps (alert topic rows ×4, offline header). Tokens: docs/SYSTEM-TOKENS.md.", '',
-      'How to read a value: hex · R, G, B (0–255). `not set` = iOS leaves it to the UIKit system default (MISSING-ASSETS 3.1). '
+      'How to read a value: hex · R, G, B (0–255). `not set` = iOS leaves it to the UIKit system default: confirmed by the Apps team (2026-11-18), e.g. the default separator and the default switch green #34C759. '
       'Android colors with transparency show alpha. "Follows" means the color equals that market\'s own brand role as the app ships it.', '']
 
 L += ['## iOS ↔ Android pairs (approved 2026-11-10)', '',

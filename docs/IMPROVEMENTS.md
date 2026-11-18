@@ -12,6 +12,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | ICON-01 | Icons | Consolidate three icon systems (Font Awesome, TroncKit PNGs, SF Symbols) into one semantic icon set | All 77 apps, ~250 icon files | PROPOSED |
 | ICON-02 | Icons | Replace per-market recolored icon copies with one tinted icon | ~60 duplicate PNGs | PROPOSED |
 | ICON-03 | Icons | Remove dead `"saved"` SF Symbol reference | 1 call site | PROPOSED |
+| ICON-04 | Icons | iOS Manage Subscription modal: the 100 pt logo (`ManageSubscriptionIcon`) has no image, so the area ships blank | All iOS markets | PROPOSED |
 | CLR-01 | Color | Breaking-news red fails 4.5:1 with white text | 70 markets | APPROVED (DEC-05) |
 | CLR-02 | Color | Nav bar title contrast | 6 markets | PROPOSED |
 | CLR-03 | Color | Selected tab icon contrast | 34 markets | PROPOSED |
@@ -59,6 +60,12 @@ Result: one icon list to design and review, native look on each platform, no ras
 ### ICON-03 · Dead `"saved"` SF Symbol — `PROPOSED`
 
 `CoreTabBarViewController.swift:140` asks for `"saved"`, which is not an SF Symbol. Point it at `bookmark` / `bookmark.fill` (see MISSING-ASSETS 1.3).
+
+Apps team (DREAMT-4718, 2026-11-18, TroncKit `f79fe3339`): still the case; `UIImage(systemName: "saved")` returns no image, so the Saved tab shows no icon. The intended icon is asked again in MISSING-ASSETS 1.3.
+
+### ICON-04 · Blank logo on the iOS Manage Subscription modal — `PROPOSED`
+
+Apps team (DREAMT-4718, 2026-11-18, TroncKit `f79fe3339`, answer to old MISSING-ASSETS 1.2): `ManageSubscriptionIcon` is the 100 pt logo at the top of the Manage Subscription modal. The image set has no image file, so the area is blank in every market. Fix on iOS: add the market logo (or remove the empty space). Source: data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.md.
 
 ---
 

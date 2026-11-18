@@ -1503,12 +1503,12 @@
    "name": "Bottom tab bar",
    "owner": "core+variant",
    "ios": {
-    "source": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723"
+    "source": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU"
    },
    "android": {
     "source": "Bottom navigation \u00b7 bar, navactive, bartext; 24dp icons"
    },
-   "note": "Android always uses the nav bar color; iOS too except BS.",
+   "note": "Android always uses the nav bar color; iOS too except BS. iOS tab names changed on iOS 26 (Apps team, DREAMT-4718, 2026-11-18); Android tab labels are not in our export.",
    "core": {
     "figma": null,
     "spec": null
@@ -1575,12 +1575,12 @@
    "name": "Primary button",
    "owner": "core+variant",
    "ios": {
-    "source": "Paywall Log In / Register \u00b7 action fill, white Open Sans Bold 14 caps, radius 4 (legacy 5 + 1pt border)"
+    "source": "Paywall Log In / Register \u00b7 action fill, white Open Sans Bold 14 caps, radius 4 (legacy 5 + 1pt border). NOT SHOWN IN PRODUCTION: login is the Auth0 Universal Login page in every market. Shipped purchase button (meter paywall): \u226545 pt, radius 8, Open Sans Bold 14, paywallPrimaryActionColor (f79fe3339)"
    },
    "android": {
     "source": "Paywall Subscribe \u00b7 action fill, white caps system font, 60dp tall, square"
    },
-   "note": "One Core primary button. Differences to decide: radius (4 vs 0), height, font.",
+   "note": "One Core primary button. Differences to decide: radius (4 vs 0), height, font. The iOS spec came from the native Log In / Register button, which is never shown (Auth0 Universal Login); re-basing it on the meter paywall purchase button is a decision for Karl.",
    "core": {
     "figma": null,
     "spec": null
@@ -1665,7 +1665,7 @@
    "name": "Manage subscription / delete account",
    "owner": "core+variant",
    "ios": {
-    "source": "Manage Subscription buttons, 44pt"
+    "source": "Settings rows (Delete account in system red). Manage Subscription modal: 44 pt radius 8, nav bar fill + white Cancel with 1 pt black border; white on white in 7 markets (DSC-34); modal logo blank (ICON-04)"
    },
    "android": {
     "source": "radius 10, filled or outlined (bottom sheets)"
@@ -1719,12 +1719,12 @@
    "name": "Social sign-in buttons",
    "owner": "ios",
    "ios": {
-    "source": "Apple (black, 44pt), Facebook, Google, Amazon (TroncKit defaults)"
+    "source": "Apple (black, 44pt), Facebook, Google, Amazon (TroncKit defaults): not shown in production, login is the Auth0 Universal Login page. Only shipped native sign-in: Newsletters login, Apple + Google, 52 pt, radius 9, Open Sans SemiBold 18, 1 pt outline, 22 pt icon (f79fe3339)"
    },
    "android": {
-    "source": "Native buttons exist but are hidden; login is Auth0's web page"
+    "source": "Native buttons exist but are hidden; login is the Auth0 Universal Login page"
    },
-   "note": "Android shows them only on the Auth0 web page.",
+   "note": "Login on both apps is the Auth0 Universal Login page (web), so social buttons there are Auth0's. iOS shows native Apple / Google buttons only on the Newsletters login.",
    "core": {
     "figma": null,
     "spec": null
