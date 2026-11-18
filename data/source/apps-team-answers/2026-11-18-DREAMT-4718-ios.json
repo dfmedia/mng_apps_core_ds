@@ -4,25 +4,131 @@
  "closed_by_karl": "2026-11-18: 1.2, 1.5, 3.1, 4.2, 4.3 (first pass); 1.6, 1.9, 2.2, 3.2, 5.7, 5.8 (second pass)",
  "ad_slots": {
   "unit": "pt",
-  "sizes": {"banner-phone": {"width": 320, "height": 50}, "banner-tablet": {"width": 728, "height": 90}, "box": {"width": 300, "height": 250}},
+  "sizes": {
+   "banner-phone": {
+    "width": 320,
+    "height": 50
+   },
+   "banner-tablet": {
+    "width": 728,
+    "height": 90
+   },
+   "box": {
+    "width": 300,
+    "height": 250
+   }
+  },
   "slots": [
-   {"id": "first", "name": "First article slot", "phone": "banner-phone", "tablet": "banner-tablet"},
-   {"id": "other", "name": "All other slots", "phone": "box", "tablet": "box"}
+   {
+    "id": "first",
+    "name": "First article slot",
+    "phone": "banner-phone",
+    "tablet": "banner-tablet"
+   },
+   {
+    "id": "other",
+    "name": "All other slots",
+    "phone": "box",
+    "tablet": "box"
+   }
   ],
-  "rules": ["Same in every market and the same as Android.", "When the view is too narrow for the ad, it falls back to 320 × 50."],
+  "rules": [
+   "Same in every market and the same as Android.",
+   "When the view is too narrow for the ad, it falls back to 320 × 50."
+  ],
   "adhesion_banner": false,
   "adhesion_note": "iOS has no adhesion (sticky) banner. The adhesionBannerBackgroundColor theme color exists but no banner uses it."
  },
  "checkbox": {
   "image_placement": "centered at natural size (17 × 18 pt) inside the 30 × 30 pt button",
-  "not_used": ["Uncheck-Grey"]
+  "not_used": [
+   "Uncheck-Grey"
+  ]
  },
  "tournament_symbols": {
-  "symbols": ["soccerball.inverse", "american.football.fill", "baseball.fill", "basketball.fill", "hockey.puck.fill"],
+  "symbols": [
+   "soccerball.inverse",
+   "american.football.fill",
+   "baseball.fill",
+   "basketball.fill",
+   "hockey.puck.fill"
+  ],
   "fallback": "sportscourt.fill",
   "size_pt": 72
  },
  "onboarding_fallback": "Markets without their own onboarding art show the shared mng-top-image-view image.",
  "dark_mode": "All 77 apps are light mode only; nothing in the code is moving toward dark mode.",
- "per_market_icon_copies": "Each recolored set (Saved-*, Checkmark-*, Uncheck-*, YourNews-*, Continue-*, TopicSelection-*) is one glyph saved as separate PNGs; one template image tinted per market can replace it."
+ "per_market_icon_copies": "Each recolored set (Saved-*, Checkmark-*, Uncheck-*, YourNews-*, Continue-*, TopicSelection-*) is one glyph saved as separate PNGs; one template image tinted per market can replace it.",
+ "buttons": {
+  "login": "Login is the Auth0 web view in every market. The native Log In / Register buttons and the social sign-in row (Facebook / Google / Amazon) are never shown.",
+  "single_primary": false,
+  "shipped": [
+   {
+    "id": "meter-purchase",
+    "name": "Meter paywall purchase button",
+    "height": "at least 45 pt (45 measured on TDP)",
+    "radius": 8,
+    "label": "Open Sans Bold 14",
+    "fill": "paywallPrimaryActionColor",
+    "text": "Set per market: default \"Subscription Offers\", TDP \"TRY ONE MONTH FREE\""
+   },
+   {
+    "id": "manage-subscription",
+    "name": "Manage App Subscription (modal)",
+    "height": "44 pt",
+    "radius": 8,
+    "label": null,
+    "fill": "Nav bar color; Cancel is white with a 1 pt black border",
+    "text": null
+   },
+   {
+    "id": "push-yes",
+    "name": "Push prompt Yes",
+    "height": "40 pt",
+    "radius": 5,
+    "label": "Open Sans Bold 14",
+    "fill": null,
+    "text": null
+   },
+   {
+    "id": "push-no",
+    "name": "Push prompt No",
+    "height": "40 pt",
+    "radius": 5,
+    "label": "Open Sans Regular 14, underlined except in VP",
+    "fill": "No fill",
+    "text": null
+   },
+   {
+    "id": "newsletters-login",
+    "name": "Newsletters login (Apple, Google)",
+    "height": "at least 52 pt",
+    "radius": 9,
+    "label": "Open Sans SemiBold 18, Dynamic Type",
+    "fill": "1 pt outline, 22 pt icon, 12 pt gap",
+    "text": null
+   }
+  ],
+  "guideline": "A 44 pt guideline fits these.",
+  "pressed": "None of these buttons has a custom pressed state. The title fades and the fill stays the same.",
+  "log_in_link": {
+   "font": "Open Sans Regular 14",
+   "size_exceptions": {
+    "11": [
+     "BS",
+     "DP",
+     "HC",
+     "MC",
+     "OS",
+     "SS"
+    ],
+    "12": [
+     "NYDN",
+     "VP"
+    ]
+   },
+   "underline": "Only \"Log In\" is underlined",
+   "text": "Per market; default \"Have an account? / Log In\""
+  }
+ }
 }

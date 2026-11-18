@@ -1,0 +1,162 @@
+{
+ "generated_by": "scripts/build_button_ios_review.py",
+ "status": "Findings only (Karl, 2026-11-18): no rebuild until the open questions are settled",
+ "sources": {
+  "spec": "DEC-07, data/source/button-shipped.json (TroncKit e30ad2585)",
+  "shipped": "Ameer Moukadam, DREAMT-4718 comment 276648, 2026-11-18; TroncKit @ f79fe3339; MNG iOS Style Guide v21 (artifact version 1795029427-a74c)"
+ },
+ "login": "Login is the Auth0 web view in every market. The native Log In / Register buttons and the social sign-in row (Facebook / Google / Amazon) are never shown.",
+ "single_primary": false,
+ "pressed": "None of these buttons has a custom pressed state. The title fades and the fill stays the same.",
+ "shipped": [
+  {
+   "id": "meter-purchase",
+   "name": "Meter paywall purchase button",
+   "height": "at least 45 pt (45 measured on TDP)",
+   "radius": 8,
+   "label": "Open Sans Bold 14",
+   "fill": "paywallPrimaryActionColor",
+   "text": "Set per market: default \"Subscription Offers\", TDP \"TRY ONE MONTH FREE\""
+  },
+  {
+   "id": "manage-subscription",
+   "name": "Manage App Subscription (modal)",
+   "height": "44 pt",
+   "radius": 8,
+   "label": null,
+   "fill": "Nav bar color; Cancel is white with a 1 pt black border",
+   "text": null
+  },
+  {
+   "id": "push-yes",
+   "name": "Push prompt Yes",
+   "height": "40 pt",
+   "radius": 5,
+   "label": "Open Sans Bold 14",
+   "fill": null,
+   "text": null
+  },
+  {
+   "id": "push-no",
+   "name": "Push prompt No",
+   "height": "40 pt",
+   "radius": 5,
+   "label": "Open Sans Regular 14, underlined except in VP",
+   "fill": "No fill",
+   "text": null
+  },
+  {
+   "id": "newsletters-login",
+   "name": "Newsletters login (Apple, Google)",
+   "height": "at least 52 pt",
+   "radius": 9,
+   "label": "Open Sans SemiBold 18, Dynamic Type",
+   "fill": "1 pt outline, 22 pt icon, 12 pt gap",
+   "text": null
+  },
+  {
+   "id": "subscription-option",
+   "name": "Subscription option (earlier guide, e30ad2585)",
+   "height": null,
+   "radius": 8,
+   "label": "Open Sans Bold 16",
+   "fill": "subscriptionTintColor",
+   "text": null
+  }
+ ],
+ "not_shown": [
+  {
+   "name": "Paywall Log In / Register",
+   "why": "Login is the Auth0 web view in every market. The native Log In / Register buttons and the social sign-in row (Facebook / Google / Amazon) are never shown."
+  },
+  {
+   "name": "Social sign-in row (Facebook, Google, Amazon)",
+   "why": "Login is the Auth0 web view in every market. The native Log In / Register buttons and the social sign-in row (Facebook / Google / Amazon) are never shown."
+  }
+ ],
+ "comparison": [
+  {
+   "property": "Based on",
+   "spec": "Paywall Log In / Register (style guide, TroncKit e30ad2585)",
+   "shipped": "Meter paywall purchase button (Apps team, f79fe3339)",
+   "verdict": "Differs",
+   "note": "Our source button is never shown: Login is the Auth0 web view in every market. The native Log In / Register buttons and the social sign-in row (Facebook / Google / Amazon) are never shown."
+  },
+  {
+   "property": "Fill",
+   "spec": "Brand theme action",
+   "shipped": "paywallPrimaryActionColor (= action)",
+   "verdict": "Same",
+   "note": ""
+  },
+  {
+   "property": "Label font",
+   "spec": "Open Sans Bold 14",
+   "shipped": "Open Sans Bold 14",
+   "verdict": "Same",
+   "note": ""
+  },
+  {
+   "property": "Label case",
+   "spec": "Always uppercase",
+   "shipped": "Set per market: default \"Subscription Offers\", TDP \"TRY ONE MONTH FREE\"",
+   "verdict": "Unclear",
+   "note": "Forced uppercase, or the text each market sets?"
+  },
+  {
+   "property": "Label color",
+   "spec": "#ffffff (paywallPrimaryTextColor, white in all 77 markets)",
+   "shipped": "Not stated",
+   "verdict": "Unclear",
+   "note": "Probably white; to confirm"
+  },
+  {
+   "property": "Radius",
+   "spec": "4 pt (legacy markets 5 pt + 1 pt border)",
+   "shipped": "8 pt",
+   "verdict": "Differs",
+   "note": "Does the purchase button have a legacy-market variant?"
+  },
+  {
+   "property": "Height",
+   "spec": "44 pt, provisional",
+   "shipped": "at least 45 pt (45 measured on TDP)",
+   "verdict": "Differs",
+   "note": "Fixed 45, or content-driven? A 44 pt guideline fits these."
+  },
+  {
+   "property": "Pressed",
+   "spec": "Native platform feedback",
+   "shipped": "None of these buttons has a custom pressed state. The title fades and the fill stays the same.",
+   "verdict": "Same",
+   "note": ""
+  },
+  {
+   "property": "Disabled",
+   "spec": "#c1c8cb / #767676 (Android values, new on iOS)",
+   "shipped": "Not stated; not shipped on iOS",
+   "verdict": "Unclear",
+   "note": ""
+  },
+  {
+   "property": "Text link font",
+   "spec": "OpenSans-Regular 14, provisional",
+   "shipped": "Open Sans Regular 14; 11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP",
+   "verdict": "Differs",
+   "note": "8 markets use a smaller size"
+  },
+  {
+   "property": "Text link underline",
+   "spec": "None",
+   "shipped": "Only \"Log In\" is underlined",
+   "verdict": "Differs",
+   "note": ""
+  }
+ ],
+ "questions": [
+  "Is the purchase button label forced to uppercase, or the text each market sets?",
+  "Is the height fixed at 45 pt or content-driven (at least 45)?",
+  "Do the legacy-template markets (BS, DP, HC, MC, OS, SS, VP) draw the purchase button differently?",
+  "Should the iOS primary button be the purchase button only, or the shared pattern of the purchase and Manage subscription buttons (radius 8, about 44 pt)?"
+ ]
+}

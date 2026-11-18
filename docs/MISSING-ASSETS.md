@@ -9,13 +9,13 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 
 **Numbers don't change.** When a question is answered we remove it and leave a gap, so the numbers you have quoted stay the same.
 
-**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. We are still reviewing your answers to 1.8, 1.11 and 4.1: nothing more is needed on those for now. 1.3, 1.4, 1.7, 2.1 and 6.1 have follow-up questions.
+**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. We are still reviewing your answers to 1.11 and 4.1: nothing more is needed on those for now. 1.3, 1.4, 1.7, 1.8, 2.1 and 6.1 have follow-up questions.
 
 ## Most needed
 
 1. **5.5** Android app shell sizes, and the Saratogian status bar on Android 15+
 2. **6.1** The iOS export at `f79fe3339`
-3. **1.3 / 1.4 / 1.7** iOS Saved tab icon, market tab icons, and Patrick's For You icon (follow-ups)
+3. **1.3 / 1.4 / 1.7 / 1.8** iOS tab bar: Saved icon, market tab icons, Patrick's For You icon, the e-edition tab (follow-ups)
 4. **2.1** Logo files for every market
 5. **5.4** Android button values
 6. **5.6** Other Android buttons and controls
@@ -31,7 +31,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 | 1.3 | iOS Saved tab: which icon should it show, and is a fix planned? | Your answer: the tab calls `UIImage(systemName: "saved")`, which returns no image, so the tab shows no icon. Android shows a bookmark (`mc_tab_icon_saved`). Was the intent an SF Symbol such as `bookmark` / `bookmark.fill`, or a custom image? |
 | 1.4 | Which markets override which tab-bar icons, what are the image set names, and can you send the files? | Your answer: 9 markets (CT, BS, DP, MC, NYDN, SS, VP, HC, OS) have their own Home icon and their own selected For You icon; Sections and Alerts use Font Awesome `bars` and `bell` everywhere. The earlier iOS style guide said 2 markets override the Font Awesome tab icons: which 2 markets and which icons, or is that out of date? Please send the 18 Home and For You files (PNG is fine). |
 | 1.7 | Could you ask Patrick Carr where his For You / Your News tab icon lives (Figma file, folder or link) and send it? | Your answer: no master exists in the iOS code; the icon ships only as the per-market `YourNews-*` PNGs. Patrick has shown us a For You icon, so a source exists outside the code. |
-| 1.8 | What does the iOS Digital tab open? | We need it to choose the icon. |
+| 1.8 | iOS: what is the e-edition tab called and which icon does it use at `f79fe3339`, and is it in the export you're sending for 6.1? | Your answer: there's no Digital tab anymore; "Digital" was another name for the eNewspaper tab, and that code is commented out. Our `e30ad2585` export has two tab icons, `tab-enews` and `tab-newspaper`, and the e-edition was planned to move into the bottom navigation as "Newspaper". Which name and icon ship now, in which markets, and does the tab open the native eNewspaper viewer? |
 | 1.10 | Android: is 15 s skip required, or would 10 / 30 s work? | Material Symbols only has 5 / 10 / 30 s; 15 s needs a custom icon. |
 | 1.11 | Can you send current official vectors for the brand marks? | Apple, Google, Facebook, X, Bluesky, Instagram, YouTube, Vimeo, Amazon, 1Password, Outbrain. |
 

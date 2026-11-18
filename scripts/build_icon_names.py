@@ -40,7 +40,7 @@ NAME = {
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
     'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'For You / Your News tab': '1.7 (no master vector; asking Patrick Carr where his icon lives)', 'Digital tab': '1.8 (what does it open?)',
+    'For You / Your News tab': '1.7 (no master vector; asking Patrick Carr where his icon lives)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
     'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}
