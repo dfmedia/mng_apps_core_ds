@@ -17,7 +17,7 @@ NAME = {
     'Search': ('search', ''), 'Settings': ('settings', ''), 'Share': ('share', ''),
     'Save (not saved)': ('save', ''), 'Saved': ('saved', 'Android also shows a star in special sections (see below), same name (DEC-17).'),
     'Home tab': ('tab-home', ''), 'Sections / menu': ('menu', 'Sections tab and the eNewspaper menu.'),
-    'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', ''), 'eNewspaper tab': ('tab-enewspaper', ''),
+    'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', 'No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).'), 'eNewspaper tab': ('tab-enewspaper', ''),
     'Games tab': ('tab-games', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Digital tab': ('tab-digital', ''),
     'Expand / show more': ('expand', ''), 'Collapse / show less': ('collapse', ''), 'Back': ('back', ''),
     'Forward / disclosure': ('forward', ''), 'Close': ('close', ''), 'Close (circle)': ('close-circle', ''),
@@ -40,7 +40,7 @@ NAME = {
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
     'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'For You / Your News tab': '1.7 (no master vector; asking Patrick Carr where his icon lives)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
+    'eNewspaper tab': '1.8 (which name and icon ship now; Patrick Carr\'s newspaper icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
     'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}

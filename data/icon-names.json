@@ -167,8 +167,8 @@
    "bucket": "Core",
    "ios": "tab-foryou · For You · YourNews-* (11)",
    "android": "mc_tab_icon_for_you",
-   "note": "",
-   "apps_team": "1.7 (no master vector; asking Patrick Carr where his icon lives)",
+   "note": "No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).",
+   "apps_team": "",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -185,7 +185,7 @@
    "ios": "tab-enews · tab-newspaper",
    "android": "mc_tab_icon_newspaper · ic_newspaper",
    "note": "",
-   "apps_team": "",
+   "apps_team": "1.8 (which name and icon ship now; Patrick Carr's newspaper icon)",
    "reference": {
     "sf_symbol": "newspaper",
     "material": "newspaper",
