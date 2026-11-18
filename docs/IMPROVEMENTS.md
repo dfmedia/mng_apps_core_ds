@@ -57,6 +57,8 @@ Result: one icon list to design and review, native look on each platform, no ras
 
 `Saved-Filled-*` / `Saved-Unfilled-*` (9 markets each), `Checkmark-*`, `Uncheck-*`, `YourNews-*`, `Continue-*`, `TopicSelection-*`, `Saved - *` tab icons are the same glyph exported in different colors. Replace each family with one template icon tinted by the market's color token (`tabactive`, `action`, …).
 
+Apps team (DREAMT-4718, 2026-11-18, answer to MISSING-ASSETS 1.6, closed by Karl): this works on iOS; each set is one glyph saved as separate PNGs, so one template image tinted per market can replace it.
+
 ### ICON-03 · Dead `"saved"` SF Symbol — `PROPOSED`
 
 `CoreTabBarViewController.swift:140` asks for `"saved"`, which is not an SF Symbol. Point it at `bookmark` / `bookmark.fill` (see MISSING-ASSETS 1.3).

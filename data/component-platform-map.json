@@ -257,10 +257,10 @@
    "group": "Layout",
    "id": "ad-slots",
    "name": "Ad slots",
-   "ios_today": "Sizes not in the guide; offline placeholder image, adhesion banner background",
+   "ios_today": "320\u00d750 phone / 728\u00d790 tablet first slot, 300\u00d7250 others, 320\u00d750 fallback when too narrow; no sticky banner (Apps team, 2026-11-18); offline placeholder image",
    "android_today": "320\u00d750 phone / 728\u00d790 tablet first slot and sticky footer, 300\u00d7250 others; hidden when the parent is narrower",
    "owner": "core+variant",
-   "note": "Colors Core (ad/background, ad/label); sizes per platform, iOS unknown (MISSING-ASSETS 5.8). docs/GUIDE-EXTRAS.md."
+   "note": "Colors Core (ad/background, ad/label); sizes the same on both (iOS answered 2026-11-18: 320\u00d750 / 728\u00d790 first slot, 300\u00d7250 others; no iOS sticky banner). docs/GUIDE-EXTRAS.md."
   },
   {
    "group": "Other",
@@ -287,7 +287,7 @@
    "ios_today": "Onboarding art and logos, masthead, paywall logo, placeholders, topic button backgrounds (43 files)",
    "android_today": "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)",
    "owner": "core+variant",
-   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1, 2.2."
+   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1. Markets without their own onboarding art show the shared mng-top-image-view image (Apps team, 2026-11-18)."
   }
  ]
 }

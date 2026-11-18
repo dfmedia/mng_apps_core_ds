@@ -5,7 +5,7 @@
 // uses those hashes and removes the temporary frame.
 // One component set: Set (Generic + 7 market sets) × State (Checked / Unchecked). Each variant is the 30 × 30 pt control
 // (width and height bound to Components · iOS › checkbox/size) with the shipped @3x image, 17 × 18 pt, centered
-// (placement unconfirmed: MISSING-ASSETS 5.7). Re-running replaces only this section (rule 4).
+// (placement: centered at natural size, Apps team 2026-11-18). Re-running replaces only this section (rule 4).
 const PAGE = 'Components · Controls', SECTION = '02 · Checkbox (as shipped)';
 const hex = (h) => { h = h.replace('#', ''); return { r: parseInt(h.slice(0, 2), 16) / 255, g: parseInt(h.slice(2, 4), 16) / 255, b: parseInt(h.slice(4, 6), 16) / 255 }; };
 const solid = (h) => ({ type: 'SOLID', color: hex(h) });
@@ -57,7 +57,7 @@ const row = (a, b, bold) => { const r = frame('Row', 'HORIZONTAL', 16); r.paddin
   const x = text(a, 12, bold ? 'SemiBold' : 'Regular'); x.resize(140, x.height); x.textAutoResize = 'HEIGHT'; const y = text(b, 12, bold ? 'SemiBold' : 'Regular'); y.resize(1040, y.height); y.textAutoResize = 'HEIGHT'; r.appendChild(x); r.appendChild(y); return r; };
 table.appendChild(row('Set', 'Markets', true));
 DATA.sets.forEach(s => table.appendChild(row(`${s.set} (${s.markets.length})`, s.markets.join(', '))));
-DATA.not_mapped.forEach(e => table.appendChild(row(e.file, e.note + ' (MISSING-ASSETS 5.7)')));
+DATA.not_mapped.forEach(e => table.appendChild(row(e.file, e.note)));
 root.appendChild(table);
 const extra = frame('Not mapped', 'HORIZONTAL', 8); extra.counterAxisAlignItems = 'CENTER';
 DATA.not_mapped.forEach(e => { extra.appendChild(imageRect(e.file)); extra.appendChild(text(`${e.file}: in the asset catalog, use not documented`, 11, 'Regular', '#555555')); });

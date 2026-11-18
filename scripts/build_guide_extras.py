@@ -8,6 +8,7 @@ as Android system colors (color.android-system.eedition.*, DEC-16 fixed colors).
 (whats-new-button-color, widget-*, Core ad/background and ad/label, component.android.whats-new-continue.radius) or is unknown.
 """
 import json
+ANS = __import__('json').load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))
 
 S = json.load(open('data/source/style-guide-extras.json'))
 SYS = json.load(open('data/system-color-comparison.json'))
@@ -117,7 +118,8 @@ sz = lambda k: f"{A['android']['sizes'][k]['width']} × {A['android']['sizes'][k
 for s in A['android']['slots']:
     L.append(f"| {s['name']}{' · ' + s['where'] if s.get('where') else ''} | {sz(s['phone'])} | {sz(s['tablet'])} |")
 L += [''] + [f'- {r}' for r in A['android']['rules']] + ['',
-      f"**iOS:** {A['ios']['unknown']} (unknown, ask Apps team: MISSING-ASSETS 5.8). What ships: " + '; '.join(A['ios']['known']) + '.', '',
+      f"**iOS sizes** (pt, Apps team answer, {ANS['source']}): " + '; '.join(f"{s['name']}: {ANS['ad_slots']['sizes'][s['phone']]['width']} × {ANS['ad_slots']['sizes'][s['phone']]['height']} phone, {ANS['ad_slots']['sizes'][s['tablet']]['width']} × {ANS['ad_slots']['sizes'][s['tablet']]['height']} tablet" for s in ANS['ad_slots']['slots']) + '. ' + ' '.join(ANS['ad_slots']['rules']) + ' ' + ANS['ad_slots']['adhesion_note'], '',
+      "**iOS assets:** " + '; '.join(A['ios']['known']) + '. iOS ad sizes are not yet tokens or in Figma.', '',
       "## What's New Continue button (Android only)", '',
       f"Source: {W['evidence']}. Not in the iOS guide. Label {hexrgb(W['label']['color'])}, {W['label']['case']}, "
       f"`{W['label']['font_key']}` = {whats_new['label']['font']} in {whats_new['label']['font_markets']} of 77 markets. "

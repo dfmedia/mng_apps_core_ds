@@ -464,7 +464,7 @@
   {
    "group": "Media",
    "purpose": "Tournament sport symbols (6)",
-   "ios_today": "SF \u2014 six symbols, names not listed",
+   "ios_today": "SF soccerball.inverse \u00b7 american.football.fill \u00b7 baseball.fill \u00b7 basketball.fill \u00b7 hockey.puck.fill (fallback sportscourt.fill), 72 pt",
    "android_today": null,
    "sf_symbol": null,
    "material": null,

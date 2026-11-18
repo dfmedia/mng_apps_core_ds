@@ -41,7 +41,7 @@ Karl (2026-11-10): add them to the registry and document them as shipped; design
 | Ad slots | Core (both apps) | Registry `layout/ad-slots`. Colors Core `ad/background`, `ad/label`; Android sizes `component.android.ad.*` (320 × 50, 728 × 90, 300 × 250). Core Figma Layout · iOS vs Android › 02; Android Figma Layout · Ads, widget, eEdition | iOS sizes (5.8) |
 | Home-screen widget | Android | Registry `component/widget`. Day colors are System colors · Android tokens (`widget-*`). Android Figma Layout · Ads, widget, eEdition › 02 | Night colors, layout and sizes (5.9) |
 | eEdition (PageSuite) colors | Android | Registry `component/eedition-colors`. Tokens `color.android-system.eedition.*` (4 fixed colors), Kotlin `MngSystemColors.eedition*`. Android Figma › 03 | — |
-| Non-icon images | iOS + Android | Registry `component/images`; file list in docs/GUIDE-EXTRAS.md. Not drawn in Figma (per-market artwork) | Vector masters (2.1, 2.2) |
+| Non-icon images | iOS + Android | Registry `component/images`; file list in docs/GUIDE-EXTRAS.md. Not drawn in Figma (per-market artwork) | Vector masters (2.1) |
 
 ## The asset files themselves
 

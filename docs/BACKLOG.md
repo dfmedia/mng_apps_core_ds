@@ -49,7 +49,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
-| Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only; confirm no plans (MISSING-ASSETS 3.2) |
+| Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only, no plans for dark mode (Apps team, 2026-11-18) |
 
 ## Color roles
 
@@ -114,7 +114,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | Home-screen widget | Android | 🟡 partial | 🟡 partial | 🟡 partial | ⛔ Night colors and layout: MISSING-ASSETS 5.9 · Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02 |
 | eEdition (PageSuite) colors | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | color.android-system.eedition.* (4 fixed colors), Android Layout · Ads, widget, eEdition › 03; docs/GUIDE-EXTRAS.md |
-| Non-icon images (logos, onboarding, placeholders) | Core + iOS + Android | — n/a | — n/a | ⛔ blocked | ⛔ Vector masters: MISSING-ASSETS 2.1, 2.2 · Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma |
+| Non-icon images (logos, onboarding, placeholders) | Core + iOS + Android | — n/a | — n/a | ⛔ blocked | ⛔ Vector masters: MISSING-ASSETS 2.1 · Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma |
 
 ## Layout
 
@@ -126,7 +126,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
-| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | ⛔ iOS ad sizes: MISSING-ASSETS 5.8 · Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
+| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
 
 ## Icons
 

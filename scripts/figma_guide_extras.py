@@ -44,7 +44,7 @@ if MODE == 'vars':
 
 elif MODE == 'core-ads':
     I = D['ad_slots']['ios']; col = {c['name']: c for c in D['ad_slots']['colors_core']}
-    ios_unknown = 'Unknown, ask Apps team (MISSING-ASSETS 5.8)'
+    ios_unknown = 'Same as Android, in pt (Apps team, 2026-11-18): 320 × 50 phone / 728 × 90 tablet first slot, 300 × 250 others'
     rows = [{'group': 'Colors · Core tokens (DEC-16)'}]
     for n, what, si, sa in (('ad/background', 'Ad slot background', 'cellAdBackgroundColor', 'ad_background'), ('ad/label', "'Advertisement' label", 'adLabelTextColor', 'advertisement_title')):
         v = col[n]['value']
@@ -56,7 +56,7 @@ elif MODE == 'core-ads':
     for s in A['slots']:
         andr = f"{sz(s['phone'])} phone · {sz(s['tablet'])} tablet" if s['phone'] != s['tablet'] else f"{sz(s['phone'])} phone and tablet"
         toks = ' / '.join(dict.fromkeys(f"component.android.ad.{k}" for k in (s['phone'], s['tablet'])))
-        ios = ios_unknown + ('. The adhesion banner above may be this slot.' if s['id'] == 'sticky-footer' else '')
+        ios = ('None: iOS has no adhesion (sticky) banner (Apps team, 2026-11-18)' if s['id'] == 'sticky-footer' else ios_unknown)
         rows.append([{'t': s['name'] + (f" · {s['where']}" if s.get('where') else ''), 'b': True}, ios, andr, toks, {'chip': 'Core, per-platform value'}])
     rows.append({'group': 'Rules and assets'})
     for r in A['rules']:
@@ -65,7 +65,7 @@ elif MODE == 'core-ads':
         rows.append(['iOS asset', k, '—', '—', {'chip': 'iOS only'}])
     T = {'name': '02 · Ad slots', 'title': 'Ad slots (as shipped)',
          'intro': ('Both apps show ads. The two ad colors are Core tokens. Android sets its slot sizes in code (first slot and sticky footer: banner, '
-                   'other slots: 300 × 250); the iOS guide has no sizes (MISSING-ASSETS 5.8). The Android slots are drawn from their tokens in the '
+                   'other slots: 300 × 250); iOS uses the same sizes and has no sticky banner (Apps team, 2026-11-18). The Android slots are drawn from their tokens in the '
                    f'Android file ({AP} › 01). Documented as shipped, nothing new designed. ' + SRC),
          'columns': [{'name': 'Item', 'w': 220}, {'name': 'iOS', 'w': 380}, {'name': 'Android', 'w': 380}, {'name': 'Token', 'w': 280}, {'name': 'Ownership', 'w': 180}],
          'rows': rows}

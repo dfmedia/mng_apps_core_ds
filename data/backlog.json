@@ -115,7 +115,7 @@
    "tokens": "na",
    "code": "na",
    "blocked_by": "",
-   "note": "Every app is light-only; confirm no plans (MISSING-ASSETS 3.2)",
+   "note": "Every app is light-only, no plans for dark mode (Apps team, 2026-11-18)",
    "overall": "n/a"
   },
   {
@@ -1427,8 +1427,8 @@
    "figma": "done",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "iOS ad sizes: MISSING-ASSETS 5.8",
-   "note": "Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label",
+   "blocked_by": "",
+   "note": "iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label",
    "overall": "in progress"
   },
   {
@@ -1466,7 +1466,7 @@
    "figma": "na",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Vector masters: MISSING-ASSETS 2.1, 2.2",
+   "blocked_by": "Vector masters: MISSING-ASSETS 2.1",
    "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma",
    "overall": "blocked"
   }

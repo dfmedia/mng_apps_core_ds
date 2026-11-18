@@ -1,0 +1,28 @@
+{
+ "$description": "Structured copy of the iOS answers on DREAMT-4718 (2026-11-18) that scripts read. Source data: do not edit. Wording and full answer: 2026-11-18-DREAMT-4718-ios.md in this folder.",
+ "source": "Ameer Moukadam, DREAMT-4718 comment 276648, 2026-11-18; TroncKit @ f79fe3339; MNG iOS Style Guide v21 (artifact version 1795029427-a74c)",
+ "closed_by_karl": "2026-11-18: 1.2, 1.5, 3.1, 4.2, 4.3 (first pass); 1.6, 1.9, 2.2, 3.2, 5.7, 5.8 (second pass)",
+ "ad_slots": {
+  "unit": "pt",
+  "sizes": {"banner-phone": {"width": 320, "height": 50}, "banner-tablet": {"width": 728, "height": 90}, "box": {"width": 300, "height": 250}},
+  "slots": [
+   {"id": "first", "name": "First article slot", "phone": "banner-phone", "tablet": "banner-tablet"},
+   {"id": "other", "name": "All other slots", "phone": "box", "tablet": "box"}
+  ],
+  "rules": ["Same in every market and the same as Android.", "When the view is too narrow for the ad, it falls back to 320 × 50."],
+  "adhesion_banner": false,
+  "adhesion_note": "iOS has no adhesion (sticky) banner. The adhesionBannerBackgroundColor theme color exists but no banner uses it."
+ },
+ "checkbox": {
+  "image_placement": "centered at natural size (17 × 18 pt) inside the 30 × 30 pt button",
+  "not_used": ["Uncheck-Grey"]
+ },
+ "tournament_symbols": {
+  "symbols": ["soccerball.inverse", "american.football.fill", "baseball.fill", "basketball.fill", "hockey.puck.fill"],
+  "fallback": "sportscourt.fill",
+  "size_pt": 72
+ },
+ "onboarding_fallback": "Markets without their own onboarding art show the shared mng-top-image-view image.",
+ "dark_mode": "All 77 apps are light mode only; nothing in the code is moving toward dark mode.",
+ "per_market_icon_copies": "Each recolored set (Saved-*, Checkmark-*, Uncheck-*, YourNews-*, Continue-*, TopicSelection-*) is one glyph saved as separate PNGs; one template image tinted per market can replace it."
+}

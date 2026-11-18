@@ -22,7 +22,9 @@ Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad
 - ads.sectionFrontsAdSizes / articlesAdSizes in the config JSON are not read by any code.
 - An ad is hidden when its parent is narrower than the ad.
 
-**iOS:** Ad slot sizes are not in the iOS guide (unknown, ask Apps team: MISSING-ASSETS 5.8). What ships: Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background).
+**iOS sizes** (pt, Apps team answer, Ameer Moukadam, DREAMT-4718 comment 276648, 2026-11-18; TroncKit @ f79fe3339; MNG iOS Style Guide v21 (artifact version 1795029427-a74c)): First article slot: 320 × 50 phone, 728 × 90 tablet; All other slots: 300 × 250 phone, 300 × 250 tablet. Same in every market and the same as Android. When the view is too narrow for the ad, it falls back to 320 × 50. iOS has no adhesion (sticky) banner. The adhesionBannerBackgroundColor theme color exists but no banner uses it.
+
+**iOS assets:** Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background). iOS ad sizes are not yet tokens or in Figma.
 
 ## What's New Continue button (Android only)
 

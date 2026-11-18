@@ -20,11 +20,11 @@ Open questions for the Apps team are the numbers in docs/MISSING-ASSETS.md §1. 
 | `settings` | Settings | Core | nav-settings (3 PNG) | mc_ic_settings (+10 market copies) | — | — | gearshape / settings / cog | Native on both platforms |
 | `share` | Share | Core | nav-share PNG | ic_share (+9 market copies) | — | — | square.and.arrow.up / share / share-alt | Native on both platforms · Glyph differs by platform convention; one semantic name. |
 | `save` | Save (not saved) | Core | FA bookmark · nav-save-unfilled · Unsaved-Article · Saved-Unfilled-* (9) | ic_bookmark_outline · ic_btn_unsave | — | — | bookmark / bookmark / bookmark | Native on both platforms |
-| `saved` | Saved | Core | nav-save-filled · Saved-Article · Saved-Filled-* (9) · Saved tab icons (11) | ic_bookmark · ic_btn_save · mc_tab_icon_saved | Android also shows a star in special sections (see below), same name (DEC-17). | 1.3 (iOS "saved" SF Symbol renders nothing), 1.6 (per-market copies) | bookmark.fill / bookmark / bookmark | Native on both platforms · Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). |
+| `saved` | Saved | Core | nav-save-filled · Saved-Article · Saved-Filled-* (9) · Saved tab icons (11) | ic_bookmark · ic_btn_save · mc_tab_icon_saved | Android also shows a star in special sections (see below), same name (DEC-17). | 1.3 (iOS "saved" SF Symbol renders nothing; follow-up) | bookmark.fill / bookmark / bookmark | Native on both platforms · Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). |
 | `tab-home` | Home tab | Core | FA home · tab-home · 9 market home icons | mc_tab_icon_latestnews (77 market copies) | — | 1.4 (market tab-bar overrides, follow-up) | house / home / home | Native on both platforms · Both apps ship per-market Home icons; one Core glyph removes ~86 files. |
 | `menu` | Sections / menu | Core | FA bars · tab-sections · eNewspaper menu, menu-line | mc_tab_icon_sections | Sections tab and the eNewspaper menu. | — | line.3.horizontal / menu / bars | Native on both platforms |
 | `tab-alerts` | Alerts tab | Core | FA bell · tab-alerts · Alert/bell | mc_tab_icon_alerts · mc_alert_bell (69 market copies) | — | — | bell / notifications / bell | Native on both platforms |
-| `tab-for-you` | For You / Your News tab | Core | tab-foryou · For You · YourNews-* (11) | mc_tab_icon_for_you | — | 1.6, 1.7 (no master vector) | — / — / — | Custom vector needed — see Missing Assets · Gap on both: one custom Core vector. |
+| `tab-for-you` | For You / Your News tab | Core | tab-foryou · For You · YourNews-* (11) | mc_tab_icon_for_you | — | 1.7 (no master vector; asking Patrick Carr where his icon lives) | — / — / — | Custom vector needed — see Missing Assets · Gap on both: one custom Core vector. |
 | `tab-enewspaper` | eNewspaper tab | Core | tab-enews · tab-newspaper | mc_tab_icon_newspaper · ic_newspaper | — | — | newspaper / newspaper / newspaper | Native on both platforms |
 | `tab-games` | Games tab | Core | tab-games · SF gamecontroller.fill | mc_tab_icon_games · ic_games | No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18). | — | gamecontroller.fill / sports_esports / gamepad | Native on both platforms |
 | `tab-digital` | Digital tab | iOS only | tab-digital (purpose unclear) | — | — | 1.8 (what does it open?) | — / — / — | Custom vector needed — see Missing Assets · Not on Android. Ask Apps team whether to retire. |
@@ -49,9 +49,9 @@ Open questions for the Apps team are the numbers in docs/MISSING-ASSETS.md §1. 
 |---|---|---|---|---|---|---|---|---|
 | `follow-topic` | Follow topic | iOS only | BTN_FollowTopic · FollowTopic · Plus-CT | ic_follow_topic (file exists, not used) | No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18). | — | plus.circle / add_circle / plus-circle | Native on both platforms · Android file is unreferenced. |
 | `unfollow-topic` | Unfollow topic | iOS only | BTN_UnFollowTopic · UnFollowTopic · Minus-CT | ic_unfollow_topic (file exists, not used) | No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18). | — | minus.circle / do_not_disturb_on / minus-circle | Native on both platforms · Android file is unreferenced. |
-| `checked` | Checked | Core | Checked · Checkmark-* (7) · GreyCheckmark · WhiteCheckmark · ButtonWithCheckmark · TopicSelection-* (9) | ic_check · ic_topic_selected · radio_button_on | — | 1.6 (per-market copies) | checkmark.circle.fill / check_circle / check-circle | Native on both platforms |
-| `unchecked` | Unchecked | Core | Unchecked · Uncheck-* (8) | radio_button_off | — | 1.6 (per-market copies) | circle / radio_button_unchecked / circle | Native on both platforms |
-| `continue` | Continue | Core | Continue-* (10) | arrow_circle_right | — | 1.6 (per-market copies) | arrow.right.circle.fill / arrow_circle_right / arrow-circle-right | Native on both platforms |
+| `checked` | Checked | Core | Checked · Checkmark-* (7) · GreyCheckmark · WhiteCheckmark · ButtonWithCheckmark · TopicSelection-* (9) | ic_check · ic_topic_selected · radio_button_on | — | — | checkmark.circle.fill / check_circle / check-circle | Native on both platforms |
+| `unchecked` | Unchecked | Core | Unchecked · Uncheck-* (8) | radio_button_off | — | — | circle / radio_button_unchecked / circle | Native on both platforms |
+| `continue` | Continue | Core | Continue-* (10) | arrow_circle_right | — | — | arrow.right.circle.fill / arrow_circle_right / arrow-circle-right | Native on both platforms |
 
 ## eNewspaper
 
@@ -73,7 +73,7 @@ Open questions for the Apps team are the numbers in docs/MISSING-ASSETS.md §1. 
 | `rewind` | Rewind | iOS only | button-rewind | — | — | — | backward.fill / fast_rewind / backward | Native on both platforms |
 | `fast-forward` | Fast forward | iOS only | button-fastforward | — | — | — | forward.fill / fast_forward / forward | Native on both platforms |
 | `embed-3d` | 3D embed | iOS only | embed-3d | — | — | — | cube / view_in_ar / cube | Native on both platforms |
-| `tournament-sport` | Tournament sport symbols (6) | iOS only | SF — six symbols, names not listed | — | Six symbols; names unknown. | 1.9 (symbol names) | — / — / — | Custom vector needed — see Missing Assets · Android World Cup tabs use text (Barlow Condensed), no icons. |
+| `tournament-sport` | Tournament sport symbols (6) | iOS only | SF soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill (fallback sportscourt.fill), 72 pt | — | SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18). | — | — / — / — | Custom vector needed — see Missing Assets · Android World Cup tabs use text (Barlow Condensed), no icons. |
 
 ## Ratings & social
 

@@ -100,7 +100,7 @@
    "ios": "nav-save-filled · Saved-Article · Saved-Filled-* (9) · Saved tab icons (11)",
    "android": "ic_bookmark · ic_btn_save · mc_tab_icon_saved",
    "note": "Android also shows a star in special sections (see below), same name (DEC-17).",
-   "apps_team": "1.3 (iOS \"saved\" SF Symbol renders nothing), 1.6 (per-market copies)",
+   "apps_team": "1.3 (iOS \"saved\" SF Symbol renders nothing; follow-up)",
    "reference": {
     "sf_symbol": "bookmark.fill",
     "material": "bookmark",
@@ -168,7 +168,7 @@
    "ios": "tab-foryou · For You · YourNews-* (11)",
    "android": "mc_tab_icon_for_you",
    "note": "",
-   "apps_team": "1.6, 1.7 (no master vector)",
+   "apps_team": "1.7 (no master vector; asking Patrick Carr where his icon lives)",
    "reference": {
     "sf_symbol": null,
     "material": null,
@@ -491,7 +491,7 @@
    "ios": "Checked · Checkmark-* (7) · GreyCheckmark · WhiteCheckmark · ButtonWithCheckmark · TopicSelection-* (9)",
    "android": "ic_check · ic_topic_selected · radio_button_on",
    "note": "",
-   "apps_team": "1.6 (per-market copies)",
+   "apps_team": "",
    "reference": {
     "sf_symbol": "checkmark.circle.fill",
     "material": "check_circle",
@@ -508,7 +508,7 @@
    "ios": "Unchecked · Uncheck-* (8)",
    "android": "radio_button_off",
    "note": "",
-   "apps_team": "1.6 (per-market copies)",
+   "apps_team": "",
    "reference": {
     "sf_symbol": "circle",
     "material": "radio_button_unchecked",
@@ -525,7 +525,7 @@
    "ios": "Continue-* (10)",
    "android": "arrow_circle_right",
    "note": "",
-   "apps_team": "1.6 (per-market copies)",
+   "apps_team": "",
    "reference": {
     "sf_symbol": "arrow.right.circle.fill",
     "material": "arrow_circle_right",
@@ -726,10 +726,10 @@
    "purpose": "Tournament sport symbols (6)",
    "group": "Media",
    "bucket": "iOS only",
-   "ios": "SF — six symbols, names not listed",
+   "ios": "SF soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill (fallback sportscourt.fill), 72 pt",
    "android": null,
-   "note": "Six symbols; names unknown.",
-   "apps_team": "1.9 (symbol names)",
+   "note": "SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).",
+   "apps_team": "",
    "reference": {
     "sf_symbol": null,
     "material": null,

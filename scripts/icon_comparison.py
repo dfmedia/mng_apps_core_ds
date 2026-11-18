@@ -42,7 +42,7 @@ R=[
 ("Media","Rewind","button-rewind","backward.fill",("fast_rewind","I"),("backward","f04a","S")),
 ("Media","Fast forward","button-fastforward","forward.fill",("fast_forward","I"),("forward","f04e","S")),
 ("Media","3D embed","embed-3d","cube",("view_in_ar","M"),("cube","f1b2","S")),
-("Media","Tournament sport symbols (6)","SF — six symbols, names not listed",None,None,None),
+("Media","Tournament sport symbols (6)","SF soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill (fallback sportscourt.fill), 72 pt",None,None,None),
 ("Ratings & social","Rating star (empty)","rating-star-empty","star",("star","M"),("star","f005","R")),
 ("Ratings & social","Rating star (half)","rating-star-half","star.leadinghalf.filled",("star_half","I"),("star-half-alt","f5c0","S")),
 ("Ratings & social","Rating star (full)","rating-star-full","star.fill",("star","I"),("star","f005","S")),

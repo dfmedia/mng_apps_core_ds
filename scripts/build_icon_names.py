@@ -28,7 +28,7 @@ NAME = {
     'Continue': ('continue', ''),
     'Expand page': ('enews-expand-page', ''), 'Fit to screen': ('enews-fit-to-screen', ''), 'Previous page': ('enews-previous-page', ''), 'Next page': ('enews-next-page', ''),
     'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS ships SF gobackward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18)."), 'Skip forward 15 s': ('skip-forward-15', "iOS ships SF goforward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18)."),
-    'Rewind': ('rewind', ''), 'Fast forward': ('fast-forward', ''), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'Six symbols; names unknown.'),
+    'Rewind': ('rewind', ''), 'Fast forward': ('fast-forward', ''), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).'),
     'Rating star (empty)': ('rating-star-empty', ''), 'Rating star (half)': ('rating-star-half', ''), 'Rating star (full)': ('rating-star-full', ''),
     'Like / favorite': ('like', 'Tweet embeds.'), 'Repost': ('repost', 'Tweet embeds.'), 'Verified': ('verified', 'Tweet embeds.'),
     'Apple': ('brand-apple', ''), 'Google': ('brand-google', ''), 'Facebook': ('brand-facebook', ''), 'X (Twitter)': ('brand-x', ''),
@@ -39,10 +39,9 @@ NAME = {
 }
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
-    'Saved': '1.3 (iOS "saved" SF Symbol renders nothing), 1.6 (per-market copies)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'For You / Your News tab': '1.6, 1.7 (no master vector)', 'Digital tab': '1.8 (what does it open?)',
-    'Checked': '1.6 (per-market copies)', 'Unchecked': '1.6 (per-market copies)', 'Continue': '1.6 (per-market copies)',
-    'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)', 'Tournament sport symbols (6)': '1.9 (symbol names)',
+    'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
+    'For You / Your News tab': '1.7 (no master vector; asking Patrick Carr where his icon lives)', 'Digital tab': '1.8 (what does it open?)',
+    'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}
 missing = [p['purpose'] for p in M['purposes'] if p['purpose'] not in NAME]
