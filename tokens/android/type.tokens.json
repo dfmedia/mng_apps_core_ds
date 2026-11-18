@@ -143,24 +143,24 @@
    },
    "article-subhead": {
     "$value": {
-     "fontFamily": "unknown",
+     "fontFamily": "PT Serif",
      "fontWeight": 400,
      "fontSize": "14px"
     },
     "$type": "typography",
-    "$description": "Article subhead (Android `article-subhead`): font not in the export Regular 14sp",
+    "$description": "Article subhead (Android `article-subhead`): PT Serif Regular 14sp",
     "$extensions": {
      "mng": {
       "role": "Article subhead",
       "group": "Article",
       "style": "article-subhead",
-      "asset": null,
+      "asset": "PT_Serif-Web-Regular.ttf",
       "system": false,
       "code": "articleSubhead",
       "uppercase": false,
-      "fontKnown": false,
-      "exceptions": "",
-      "source": "android-tribpub styles/dimens"
+      "fontKnown": true,
+      "exceptions": "NYDN: Open Sans Regular (Article_Subhead_Text_Regular → OpenSans-Regular.ttf)",
+      "source": "android-tribpub styles/dimens + Apps team, DREAMT-4719"
      }
     }
    },

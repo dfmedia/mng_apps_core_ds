@@ -873,14 +873,14 @@
    "platform": "android",
    "token": "type.android.article-subhead",
    "name": "Article/Subhead",
-   "family": null,
+   "family": "PT Serif",
    "figmaStyle": "Regular",
    "size": 14.0,
    "lineHeight": null,
    "letterSpacingEm": null,
    "uppercase": false,
    "style": "article-subhead",
-   "asset": null,
+   "asset": "PT_Serif-Web-Regular.ttf",
    "legacy": false
   },
   {

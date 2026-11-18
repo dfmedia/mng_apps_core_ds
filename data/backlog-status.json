@@ -47,7 +47,7 @@
       "tokens": "done",
       "code": "written",
       "blocked_by": "",
-      "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt"
+      "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 26 text styles in Figma (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt"
     },
     {
       "id": "foundation/type-markets",

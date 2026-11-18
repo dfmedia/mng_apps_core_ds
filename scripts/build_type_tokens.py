@@ -13,6 +13,8 @@ import json, re
 IOS = json.load(open('data/source/ios-type.json'))
 AND = json.load(open('data/source/android-type.json'))
 CMP = json.load(open('data/type-comparison.json'))
+# Apps team answers for fonts the export leaves out (DREAMT-4719)
+AND_ANS = json.load(open('data/source/apps-team-answers/2026-10-30-DREAMT-4719-android.json'))['type']
 LEGACY = ['BS', 'DP', 'HC', 'MC', 'OS', 'SS', 'VP']
 
 PS_FAMILY = [('OpenSansCondensed', 'Open Sans Condensed'), ('OpenSans_Condensed', 'Open Sans Condensed'), ('OpenSans', 'Open Sans'),
@@ -105,13 +107,17 @@ for gname, s in styles(AND):
     caps = bool(re.search(r'all caps', s['usage'], re.I))
     lh = float(s['lineHeight']) if s.get('lineHeight') else None
     exc = re.search(r'(?:;|\.) ([^.;]*in (?:DP|CT|NYDN|MC|HC|SS)[^.]*)', s['usage'])
+    exc = exc.group(1) if exc else ''
     key = slug(role)
+    ans = AND_ANS.get(s['name']) if fam is None else None
+    if ans:   # font answered by the Apps team (not in the export)
+        fam, asset, exc = ans['family'], ans['asset'], ans['exceptions']
     val = {'fontFamily': fam or 'unknown', 'fontWeight': w, 'fontSize': f'{size:g}px'}
     if lh: val['lineHeight'] = lh
     if ls: val['letterSpacing'] = f'{ls}em'
     and_tokens[key] = tok(val, f'{role} (Android `{s["name"]}`): {fam or "font not in the export"} {FIGMA_STYLE[w]} {size:g}sp',
                           role=role, group=group, style=s['name'], asset=asset, system=fam == 'Roboto', code=camel(role), uppercase=caps,
-                          fontKnown=fam is not None, exceptions=exc.group(1) if exc else '', source='android-tribpub styles/dimens')
+                          fontKnown=fam is not None, exceptions=exc, source='android-tribpub styles/dimens' + (' + Apps team, DREAMT-4719' if ans else ''))
     figma.append({'platform': 'android', 'token': f'type.android.{key}', 'name': f'{group}/{short(role, group)}', 'family': fam, 'figmaStyle': FIGMA_STYLE[w],
                   'size': size, 'lineHeight': lh, 'letterSpacingEm': ls, 'uppercase': caps, 'style': s['name'], 'asset': asset, 'legacy': False})
 

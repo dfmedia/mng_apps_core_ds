@@ -1,0 +1,14 @@
+{
+ "$description": "Structured copy of Android answers on DREAMT-4719 that scripts read. Source data: do not edit.",
+ "source": "Rajal Patel, Slack DM 2026-10-30, copied to DREAMT-4719 by Jessica Navarro (comment 275577, 2026-11-02): \"Looks like we're using PT_Serif. All for Article_Subhead_Text\". android-tribpub @ 1cfb069a6.",
+ "applied": "Karl, 2026-11-18: set the Android subhead to PT Serif Regular 14sp, NYDN exception Open Sans Regular",
+ "type": {
+  "article-subhead": {
+   "family": "PT Serif",
+   "weight": 400,
+   "asset": "PT_Serif-Web-Regular.ttf",
+   "evidence": "Export: Article_Subhead_Text_Regular = PT_Serif-Web-Regular.ttf in 76 of 77 markets (data/type-font-exceptions.json)",
+   "exceptions": "NYDN: Open Sans Regular (Article_Subhead_Text_Regular → OpenSans-Regular.ttf)"
+  }
+ }
+}

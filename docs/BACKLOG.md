@@ -31,7 +31,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 25 text styles in Figma (Android subhead font unknown), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 26 text styles in Figma (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
 | Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ✅ done | — n/a | — n/a | Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05 |
 
 ### Scales
