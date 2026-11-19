@@ -1162,6 +1162,76 @@
    "style": "toolbar-title",
    "asset": null,
    "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.breaking-news-banner-text",
+   "name": "App/Breaking-news banner text",
+   "family": "Open Sans",
+   "figmaStyle": "Bold",
+   "size": 14.0,
+   "lineHeight": null,
+   "letterSpacingEm": null,
+   "uppercase": false,
+   "style": "breaking-news",
+   "asset": "OpenSans-Bold.ttf",
+   "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.button-label",
+   "name": "Paywall/Button label",
+   "family": "Roboto",
+   "figmaStyle": "Medium",
+   "size": 14.0,
+   "lineHeight": null,
+   "letterSpacingEm": 0.0893,
+   "uppercase": true,
+   "style": "button-label",
+   "asset": null,
+   "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.subscription-option-label",
+   "name": "Paywall/Subscription option label",
+   "family": "Roboto",
+   "figmaStyle": "Bold",
+   "size": 16.0,
+   "lineHeight": null,
+   "letterSpacingEm": null,
+   "uppercase": false,
+   "style": "subscription-option",
+   "asset": null,
+   "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.whats-new-button-label",
+   "name": "Paywall/What's New button label",
+   "family": "Open Sans",
+   "figmaStyle": "Bold",
+   "size": 14.0,
+   "lineHeight": null,
+   "letterSpacingEm": null,
+   "uppercase": true,
+   "style": "whatsnew-label",
+   "asset": "OpenSans-Bold.ttf",
+   "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.segmented-control-label",
+   "name": "App/Segmented control label",
+   "family": "Roboto",
+   "figmaStyle": "Bold",
+   "size": 17.0,
+   "lineHeight": null,
+   "letterSpacingEm": null,
+   "uppercase": false,
+   "style": "segmented-label",
+   "asset": null,
+   "legacy": false
   }
  ]
 }

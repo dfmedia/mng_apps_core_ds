@@ -70,8 +70,11 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 |----|--------------|-----------|--------|----------|--------|
 | DSC-30 | Saved in special sections: Android uses a star, iOS a bookmark | Keep both for now: platform-specific glyphs, one icon name (Karl, DEC-17) | — | PLAT-09 | ACCEPTED AS PLATFORM DIFFERENCE 2026-11-10 |
 | DSC-31 | Text size: iOS smaller/larger glyphs, Android one glyph | One Core glyph + iOS variant (DEC-17) | — | PLAT-08 | DECIDED 2026-11-10 |
+| DSC-35 | Audio skip buttons: iOS skips 15 s (SF `gobackward.15` / `goforward.15`), Android 10 s (Media3 `skip_back_10` / `skip_forward_10`, `SEEK_INCREMENT_MS = 10_000`). The shared icon names `skip-back-15` / `skip-forward-15` say 15 s, so they don't describe Android | One skip interval on both apps (15 or 10 s: product decision). Names stay as they are until then (Karl, 2026-11-19: don't rename) | ? | Apps team: DREAMT-4718 (iOS 1.5, 2026-11-18), DREAMT-4719 (Android 1.10, 2026-11-19). docs/ICON-NAMES.md | OPEN |
 
 ## Log
+
+- **2026-11-19** — DSC-35 logged (Karl): skip interval differs (iOS 15 s, Android 10 s); icon names `skip-back-15` / `skip-forward-15` kept, not renamed.
 
 - **2026-11-18** — DSC-34 logged (Karl): iOS Manage subscription button is white on white in 7 markets, from the Apps team's iOS answers. Not yet checked on a device.
 

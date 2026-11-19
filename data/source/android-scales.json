@@ -1,5 +1,5 @@
 {
- "$description": "Spacing, radius, size and breakpoint values as shipped, copied from the style-guide artifact on 2026-11-03. Source data: do not edit.",
+ "$description": "Spacing, radius, size and breakpoint values as shipped, copied from the style-guide artifact on 2026-11-03; size and elevation re-copied on 2026-11-19 from version 1795110354-0c21. Source data: do not edit.",
  "source": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6, project/tokens.json",
  "spacing": {
   "note": "No shared spacing scale exists. These are the values the code uses, each with its source.",
@@ -96,6 +96,41 @@
     "name": "size-paywall-button",
     "value": "60px",
     "usage": "Paywall Subscribe button height (paywall_button_height)."
+   },
+   {
+    "name": "size-toolbar",
+    "value": "56px",
+    "usage": "Top app bar height on phones (?actionBarSize); 64dp at sw600dp, see size-toolbar-tablet. No market overrides."
+   },
+   {
+    "name": "size-toolbar-tablet",
+    "value": "64px",
+    "usage": "Top app bar height at sw600dp and up."
+   },
+   {
+    "name": "size-section-tab",
+    "value": "48px",
+    "usage": "Section tab height: Material TabLayout default for text-only tabs, 12dp start and end padding. Not set in our code."
+   },
+   {
+    "name": "size-tab-indicator",
+    "value": "3px",
+    "usage": "Section tab selected indicator height (tab_indicator_height), color Toolbar_Tabs_Indicator."
+   },
+   {
+    "name": "size-bottom-nav",
+    "value": "56px",
+    "usage": "Bottom navigation height (mc_phone_bottom_bar_height), phones and tablets."
+   },
+   {
+    "name": "size-widget-min-width",
+    "value": "300px",
+    "usage": "Home-screen widget minWidth (medium_app_widget_info.xml); target 2x1 cells, not resizable."
+   },
+   {
+    "name": "size-widget-min-height",
+    "value": "170px",
+    "usage": "Home-screen widget minHeight."
    }
   ]
  },
@@ -136,6 +171,30 @@
     "name": "grid-columns",
     "value": "12",
     "usage": "Section-front items take widths out of 12 per width class (ModelHelper.kt:15)."
+   }
+  ]
+ },
+ "elevation": {
+  "tokens": [
+   {
+    "name": "elevation-toolbar",
+    "value": "4px",
+    "usage": "Top bar when content scrolls under it (mc_toolbar_elevation); 0 at rest."
+   },
+   {
+    "name": "elevation-toolbar-secondary",
+    "value": "1px",
+    "usage": "Settings, web view and login toolbars."
+   },
+   {
+    "name": "elevation-section-tabs",
+    "value": "2px",
+    "usage": "Section tab strip under the top bar."
+   },
+   {
+    "name": "elevation-card",
+    "value": "3px",
+    "usage": "Cards (cardview_elevation, World Cup cards). Special-section cards use 4dp."
    }
   ]
  }

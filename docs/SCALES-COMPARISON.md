@@ -12,7 +12,7 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | 🟡 close | 1 |
 | 🔴 differs | 5 |
 | iOS only | 10 |
-| Android only | 14 |
+| Android only | 25 |
 
 ## Spacing
 
@@ -53,6 +53,13 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | Author contact icon | — | 22 (`size-author-icon`) | Android only | Below the touch minimum |
 | Overlay close button | — | 40 (`size-overlay-close`) | Android only | Breaking news and live video; below the touch minimum |
 | Paywall primary button height | — | 60 (`size-paywall-button`) | Android only | iOS height not in the source (44 provisional, DEC-07) |
+| Top bar height | — | 56 (`size-toolbar`) | Android only | iOS 44 pt (Apps team, f79fe3339; not in the iOS export) |
+| Top bar height, tablet | — | 64 (`size-toolbar-tablet`) | Android only |  |
+| Section tab height | — | 48 (`size-section-tab`) | Android only | iOS 44 pt (Apps team, f79fe3339; not in the iOS export) |
+| Section tab indicator | — | 3 (`size-tab-indicator`) | Android only | iOS 4 pt underline (Apps team, f79fe3339) |
+| Bottom navigation height | — | 56 (`size-bottom-nav`) | Android only | iOS: system tab bar height (Apps team, f79fe3339) |
+| Widget minimum width | — | 300 (`size-widget-min-width`) | Android only | Android home-screen widget |
+| Widget minimum height | — | 170 (`size-widget-min-height`) | Android only | Android home-screen widget |
 
 ## Breakpoints and grid
 

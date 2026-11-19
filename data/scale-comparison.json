@@ -2,7 +2,7 @@
  "generated_by": "scripts/compare_scales.py",
  "counts": {
   "same": 4,
-  "android-only": 14,
+  "android-only": 25,
   "ios-only": 10,
   "differs": 5,
   "close": 1
@@ -362,6 +362,149 @@
    },
    "match": "android-only",
    "note": "iOS height not in the source (44 provisional, DEC-07)"
+  },
+  {
+   "role": "Top bar height",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-toolbar",
+    "kind": "size",
+    "value": "56px",
+    "usage": "Top app bar height on phones (?actionBarSize); 64dp at sw600dp, see size-toolbar-tablet. No market overrides."
+   },
+   "match": "android-only",
+   "note": "iOS 44 pt (Apps team, f79fe3339; not in the iOS export)"
+  },
+  {
+   "role": "Top bar height, tablet",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-toolbar-tablet",
+    "kind": "size",
+    "value": "64px",
+    "usage": "Top app bar height at sw600dp and up."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Section tab height",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-section-tab",
+    "kind": "size",
+    "value": "48px",
+    "usage": "Section tab height: Material TabLayout default for text-only tabs, 12dp start and end padding. Not set in our code."
+   },
+   "match": "android-only",
+   "note": "iOS 44 pt (Apps team, f79fe3339; not in the iOS export)"
+  },
+  {
+   "role": "Section tab indicator",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-tab-indicator",
+    "kind": "size",
+    "value": "3px",
+    "usage": "Section tab selected indicator height (tab_indicator_height), color Toolbar_Tabs_Indicator."
+   },
+   "match": "android-only",
+   "note": "iOS 4 pt underline (Apps team, f79fe3339)"
+  },
+  {
+   "role": "Bottom navigation height",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-bottom-nav",
+    "kind": "size",
+    "value": "56px",
+    "usage": "Bottom navigation height (mc_phone_bottom_bar_height), phones and tablets."
+   },
+   "match": "android-only",
+   "note": "iOS: system tab bar height (Apps team, f79fe3339)"
+  },
+  {
+   "role": "Widget minimum width",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-widget-min-width",
+    "kind": "size",
+    "value": "300px",
+    "usage": "Home-screen widget minWidth (medium_app_widget_info.xml); target 2x1 cells, not resizable."
+   },
+   "match": "android-only",
+   "note": "Android home-screen widget"
+  },
+  {
+   "role": "Widget minimum height",
+   "kind": "size",
+   "ios": null,
+   "android": {
+    "name": "size-widget-min-height",
+    "kind": "size",
+    "value": "170px",
+    "usage": "Home-screen widget minHeight."
+   },
+   "match": "android-only",
+   "note": "Android home-screen widget"
+  },
+  {
+   "role": "Elevation: top bar (scrolled)",
+   "kind": "elevation",
+   "ios": null,
+   "android": {
+    "name": "elevation-toolbar",
+    "kind": "elevation",
+    "value": "4px",
+    "usage": "Top bar when content scrolls under it (mc_toolbar_elevation); 0 at rest."
+   },
+   "match": "android-only",
+   "note": "iOS sets shadows where used, no scale (Apps team, f79fe3339)"
+  },
+  {
+   "role": "Elevation: secondary top bars",
+   "kind": "elevation",
+   "ios": null,
+   "android": {
+    "name": "elevation-toolbar-secondary",
+    "kind": "elevation",
+    "value": "1px",
+    "usage": "Settings, web view and login toolbars."
+   },
+   "match": "android-only",
+   "note": "Settings, web view and login"
+  },
+  {
+   "role": "Elevation: section tabs",
+   "kind": "elevation",
+   "ios": null,
+   "android": {
+    "name": "elevation-section-tabs",
+    "kind": "elevation",
+    "value": "2px",
+    "usage": "Section tab strip under the top bar."
+   },
+   "match": "android-only",
+   "note": ""
+  },
+  {
+   "role": "Elevation: cards",
+   "kind": "elevation",
+   "ios": null,
+   "android": {
+    "name": "elevation-card",
+    "kind": "elevation",
+    "value": "3px",
+    "usage": "Cards (cardview_elevation, World Cup cards). Special-section cards use 4dp."
+   },
+   "match": "android-only",
+   "note": "Special-section cards 4dp"
   },
   {
    "role": "Section-front grid columns",

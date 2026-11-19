@@ -8,14 +8,13 @@ Match:  same     same family, weight and size
         close    same family; size within 2 or weight differs
         differs  different family, or same family with size and weight both different
         ios-only / android-only   the other app has no such style
-        unknown  the other app has the element, but its font is not in the export (Android top bar title: answered by the Apps team 2026-11-19, now added from data/source/apps-team-answers)
+        unknown  the other app has the element, but its font is not in the export
                  (also when a style's size is known but its font is not, e.g. Android article-subhead)
 """
 import json, re
 
 IOS = json.load(open('data/source/ios-type.json'))
-from android_answered_type import extend
-AND = extend(json.load(open('data/source/android-type.json')))   # + styles the Apps team answered (top bar title, DREAMT-4719)
+AND = json.load(open('data/source/android-type.json'))
 FAM = {'sans': 'Open Sans', 'condensed': 'Open Sans Condensed', 'serif': 'PT Serif', 'display': 'Spectral',
        'spectral': 'Spectral', 'roboto': 'Roboto', 'playfair': 'Playfair Display'}
 PARSE = [('Open Sans Condensed', 'Open Sans Condensed'), ('OpenSans', 'Open Sans'), ('Open Sans', 'Open Sans'),
@@ -34,7 +33,7 @@ def index(src):
                               'size': float(str(s['fontSize']).replace('px', '')), 'lineHeight': s.get('lineHeight'),
                               'letterSpacing': s.get('letterSpacing'), 'usage': s.get('usage', ''),
                               'legacy': 'legacy template only' in s.get('usage', ''),
-                              'uppercase': bool(re.search(r'all caps|uppercase', s.get('usage', ''), re.I))}
+                              'uppercase': bool(re.search(r'(?<!not )all caps|uppercase', s.get('usage', ''), re.I))}
     return out
 I, A = index(IOS), index(AND)
 # Android heading series: h2-h4 say "Same fonts as article-h1" (h4 is the same series: "h5 is 17sp, h6 16sp")
@@ -95,9 +94,11 @@ ROLES = [
  ('Legacy: signature', 'Section front', 'cell-signature', None, 'Legacy template: documented only (DEC-10)'),
  ('Legacy: kicker left', 'Section front', 'label-kicker-left', None, 'Legacy template: documented only (DEC-10)'),
  ('Legacy: label small left', 'Section front', 'label-normal-small-left', None, 'Legacy template: documented only (DEC-10)'),
- ('Top bar title', 'App', 'nav-title', 'toolbar-title', 'Android: Apps team answer, DREAMT-4719 4.4 (not in the export)'),
+ ('Top bar title', 'App', 'nav-title', 'toolbar-title', ''),
  ('Bottom tab label', 'App', 'tab-item', 'nav-label', ''),
- ('Section tabs', 'App', '?', 'section-tab', 'Android size: 12sp in articles, 14sp in notifications'),
+ ('Section tabs', 'App', '?', 'section-tab', 'Android: 12sp ships (14sp in notifications loses at merge)'),
+ ('Breaking-news banner text', 'App', '?', 'breaking-news', 'iOS: Open Sans Bold 14 (Apps team, f79fe3339), not in the iOS export'),
+ ('Segmented control label', 'App', '?', 'segmented-label', 'iOS: system font (Apps team, f79fe3339), not in the iOS export'),
  ('Sections list header', 'App', 'section-list-header', None, ''),
  ('Menu header', 'App', 'menu-header', None, ''),
  ('Menu item', 'App', 'menu-text', None, ''),
@@ -120,6 +121,9 @@ ROLES = [
  ('Paywall price', 'Paywall', 'blocker-price', None, ''),
  ('Paywall plan name', 'Paywall', 'blocker-name', None, ''),
  ('Continue button label', 'Paywall', None, 'continue-label', 'iOS draws Continue as PNG images (DSC-24)'),
+ ('Button label', 'Paywall', '?', 'button-label', 'Android Material default (Subscribe, Alerts Enable). iOS purchase button: Open Sans Bold 14 (Apps team, f79fe3339; MISSING-ASSETS 5.10)'),
+ ('Subscription option label', 'Paywall', '?', 'subscription-option', 'iOS: Open Sans Bold 16 (component map); which iOS Style.json key is not confirmed'),
+ ("What's New button label", 'Paywall', None, 'whatsnew-label', 'Not in the iOS guide'),
 ]
 
 def match(i, a):

@@ -193,7 +193,7 @@
   "layout": "16dp rounded card, 16dp padding. Date 12sp top-right. Logo 145 × 25dp. 2dp divider1. Lead row: 66dp-wide thumbnail (7dp corners), bold 15sp headline (max 3 lines). 2px divider2 at 12dp. Second headline bold 16sp (max 2 lines)."
  },
  "type_styles": {
-  "$description": "Android text styles the export does not have, answered by the Apps team; scripts/android_answered_type.py adds them to the Android source before compare_type.py and build_type_tokens.py read it.",
+  "$description": "Superseded 2026-11-19: the Apps team added these styles to the Android style guide, re-copied to data/source/android-type.json. Kept for the record; no script reads it.",
   "App": [
    {
     "name": "toolbar-title",

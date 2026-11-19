@@ -1,5 +1,5 @@
 {
- "$description": "Type styles as shipped, copied from the style-guide artifact on 2026-10-30. Source data: do not edit.",
+ "$description": "Type styles as shipped, copied from the style-guide artifact on 2026-10-30; App group re-copied on 2026-11-19 from version 1795110354-0c21 (Apps team added the shell, button and control styles after DREAMT-4719). Source data: do not edit.",
  "source": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6, project/tokens.json → type",
  "families": {
   "serif": "\"PT Serif\", Georgia, serif",
@@ -329,13 +329,13 @@
      "family": "roboto",
      "fontSize": "10px",
      "fontWeight": 400,
-     "usage": "Bottom-nav tab label: 10sp (NavigationPanelTextAppearance). No font file set, so the system font."
+     "usage": "Bottom-nav tab label: 10sp, 2dp below the icon (NavigationPanelTextAppearance). No font file set, so the system font (Roboto Regular). Always shown; active and inactive differ only in color."
     },
     {
      "name": "section-tab",
      "fontSize": "12px",
      "fontWeight": 600,
-     "usage": "Section tabs under the top bar: OpenSans SemiBold (Toolbar.Tab). Size is `tabs_text_size`, defined as 12sp in articles and 14sp in notifications."
+     "usage": "Section tabs under the top bar: OpenSans SemiBold 12sp, not all caps, single line (Toolbar.Tab). `tabs_text_size` is 12sp in articles and 14sp in notifications; articles wins at merge, so 12sp ships. Selected and unselected colors are set in code (MainTabLayout)."
     },
     {
      "name": "settings-item",
@@ -377,6 +377,49 @@
      "fontSize": "15px",
      "fontWeight": 600,
      "usage": "Your News Continue label: OpenSans SemiBold 15sp (17sp at width 400dp+), white."
+    },
+    {
+     "name": "toolbar-title",
+     "family": "roboto",
+     "fontSize": "16px",
+     "fontWeight": 500,
+     "usage": "Top bar text title: MC.TextAppearance.AppCompat.Widget.ActionBar.Title, 16sp, all caps, sans-serif-medium (Roboto Medium), color Toolbar_Text_Primary. Shown instead of the logo on Sections, Saved, Alerts, Your News, Settings, Games and opened sections. Restaurants and the corekit settings screen use the plain AppCompat title (Roboto Medium 20dp)."
+    },
+    {
+     "name": "breaking-news",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "Breaking-news banner text: OpenSans-Bold 14sp, white on br_news_red #cf000e, set in code (BreakingNewsViewHolder)."
+    },
+    {
+     "name": "button-label",
+     "family": "roboto",
+     "fontSize": "14px",
+     "fontWeight": 500,
+     "letterSpacing": "0.0893em",
+     "usage": "Default button label: no app button style, so Material defaults apply. Main screen (MaterialComponents): Roboto Medium 14sp, all caps, letter spacing 0.0893. Settings, web view and paywall (Material3): Roboto Medium 14sp, sentence case, line height 20sp. Used by the paywall Subscribe button and Alerts Enable."
+    },
+    {
+     "name": "subscription-option",
+     "family": "roboto",
+     "fontSize": "16px",
+     "fontWeight": 700,
+     "usage": "Subscription option (Monthly / Yearly) label: 16sp bold, no font file, so Roboto Bold; white (fragment_buy_subscription.xml)."
+    },
+    {
+     "name": "whatsnew-label",
+     "family": "sans",
+     "fontSize": "14px",
+     "fontWeight": 700,
+     "usage": "What's New Continue label: OpenSans-Bold 14sp (18sp landscape, 25sp at sw600dp), all caps, white (AdditionalWhatsNewDialog.ContinueButton). The older What's New dialog uses the system font at 14sp (30sp at sw600dp)."
+    },
+    {
+     "name": "segmented-label",
+     "family": "roboto",
+     "fontSize": "17px",
+     "fontWeight": 700,
+     "usage": "Segmented control (For You / Saved / Alerts) label: 17sp bold, Material3 TextButton; black when selected, #696969 otherwise."
     }
    ]
   }

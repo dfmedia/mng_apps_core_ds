@@ -2,7 +2,7 @@
 Usage: python3 scripts/build_type_tokens.py   (after compare_type.py; then `npm run build`)
 Reads:  data/source/ios-type.json, data/source/android-type.json, data/type-comparison.json (role names)
 Writes: tokens/ios/type.tokens.json       type.ios.<role>       (63 iOS styles; legacy-template values in $extensions.mng.legacy)
-        tokens/android/type.tokens.json   type.android.<role>   (27 Android styles; asset file names for TypefaceCache)
+        tokens/android/type.tokens.json   type.android.<role>   (32 Android styles; asset file names for TypefaceCache)
         data/type-styles.json             the Figma text styles to build in the iOS and Android files
         docs/TYPE-STYLES.md               every style with its Figma name, token and code name (generated)
 Values are the majority-market production values. Per-market font exceptions (NYDN, VP, the Android Open Sans group…)
@@ -11,8 +11,7 @@ are kept as text in $extensions.mng.exceptions; they are not tokens yet (backlog
 import json, re
 
 IOS = json.load(open('data/source/ios-type.json'))
-from android_answered_type import extend
-AND = extend(json.load(open('data/source/android-type.json')))   # + styles the Apps team answered (top bar title, DREAMT-4719)
+AND = json.load(open('data/source/android-type.json'))
 CMP = json.load(open('data/type-comparison.json'))
 # Apps team answers for fonts the export leaves out (DREAMT-4719)
 AND_ANS = json.load(open('data/source/apps-team-answers/2026-10-30-DREAMT-4719-android.json'))['type']
@@ -37,7 +36,7 @@ def figma_style(w, italic):
     return s
 
 def slug(role):
-    return re.sub(r'[^a-z0-9]+', '-', role.lower()).strip('-')
+    return re.sub(r'[^a-z0-9]+', '-', role.lower().replace("'", '')).strip('-')
 def short(role, group):
     """Figma name inside its group: 'Article headline' in Article -> 'Headline'; drops '(TroncAppThemeable)' and 'Legacy: '."""
     r = re.sub(r'\s*\(TroncAppThemeable\)', '', role).replace('Legacy: ', '')
@@ -47,7 +46,7 @@ def short(role, group):
             break
     return r[:1].upper() + r[1:]
 def camel(role):
-    parts = re.sub(r'[^A-Za-z0-9]+', ' ', role).split()
+    parts = re.sub(r'[^A-Za-z0-9]+', ' ', role.replace("'", '')).split()
     return parts[0].lower() + ''.join(p[:1].upper() + p[1:] for p in parts[1:])
 
 role_of = {}
@@ -105,11 +104,10 @@ for gname, s in styles(AND):
     asset = FILES.get((fam, w, False)) if fam and fam != 'Roboto' else None
     if fam == 'Open Sans Condensed' and w == 300: asset = 'OpenSans-Regular-Condensed.ttf'   # production file name (see source note)
     ls = float(s['letterSpacing'].replace('em', '')) if s.get('letterSpacing') else None
-    caps = bool(re.search(r'all caps', s['usage'], re.I))
+    caps = bool(re.search(r'(?<!not )all caps', s['usage'], re.I))
     lh = float(s['lineHeight']) if s.get('lineHeight') else None
     exc = re.search(r'(?:;|\.) ([^.;]*in (?:DP|CT|NYDN|MC|HC|SS)[^.]*)', s['usage'])
     exc = exc.group(1) if exc else ''
-    if s.get('answered') and s.get('exceptions'): exc = s['exceptions']
     key = slug(role)
     ans = AND_ANS.get(s['name']) if fam is None else None
     if ans:   # font answered by the Apps team (not in the export)
@@ -119,7 +117,7 @@ for gname, s in styles(AND):
     if ls: val['letterSpacing'] = f'{ls}em'
     and_tokens[key] = tok(val, f'{role} (Android `{s["name"]}`): {fam or "font not in the export"} {FIGMA_STYLE[w]} {size:g}sp',
                           role=role, group=group, style=s['name'], asset=asset, system=fam == 'Roboto', code=camel(role), uppercase=caps,
-                          fontKnown=fam is not None, exceptions=exc, source='Apps team, DREAMT-4719 (2026-11-19)' if s.get('answered') else 'android-tribpub styles/dimens' + (' + Apps team, DREAMT-4719' if ans else ''))
+                          fontKnown=fam is not None, exceptions=exc, source='android-tribpub styles/dimens' + (' + Apps team, DREAMT-4719' if ans else ''))
     figma.append({'platform': 'android', 'token': f'type.android.{key}', 'name': f'{group}/{short(role, group)}', 'family': fam, 'figmaStyle': FIGMA_STYLE[w],
                   'size': size, 'lineHeight': lh, 'letterSpacingEm': ls, 'uppercase': caps, 'style': s['name'], 'asset': asset, 'legacy': False})
 

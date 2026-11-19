@@ -1,6 +1,6 @@
 """Scales step 1: compare shipped spacing, radius, size and breakpoint values by role (read-only review).
 Usage: python3 scripts/compare_scales.py
-Reads:  data/source/ios-scales.json, data/source/android-scales.json (copied from the two style guides)
+Reads (spacing, radius, size, breakpoint, elevation):  data/source/ios-scales.json, data/source/android-scales.json (copied from the two style guides)
 Writes: data/scale-comparison.json, docs/SCALES-COMPARISON.md
 Values are read from the sources; only the role mapping below is hand-made. Neither app has a shared scale in code:
 these are the values the code uses, each with its source. Units: pt (iOS), dp (Android); breakpoints as noted.
@@ -13,8 +13,8 @@ AND = json.load(open('data/source/android-scales.json'))
 
 def index(src):
     out = {}
-    for sec in ('spacing', 'radius', 'size', 'breakpoint'):
-        for t in src[sec].get('tokens', []):
+    for sec in ('spacing', 'radius', 'size', 'breakpoint', 'elevation'):
+        for t in src.get(sec, {}).get('tokens', []):
             out[t['name']] = {'name': t['name'], 'kind': sec, 'value': t['value'], 'usage': t.get('usage', '')}
     return out
 I, A = index(IOS), index(AND)
@@ -46,6 +46,17 @@ ROLES = [
  ('Author contact icon', 'size', None, 'size-author-icon', 'Below the touch minimum'),
  ('Overlay close button', 'size', None, 'size-overlay-close', 'Breaking news and live video; below the touch minimum'),
  ('Paywall primary button height', 'size', None, 'size-paywall-button', 'iOS height not in the source (44 provisional, DEC-07)'),
+ ('Top bar height', 'size', None, 'size-toolbar', 'iOS 44 pt (Apps team, f79fe3339; not in the iOS export)'),
+ ('Top bar height, tablet', 'size', None, 'size-toolbar-tablet', ''),
+ ('Section tab height', 'size', None, 'size-section-tab', 'iOS 44 pt (Apps team, f79fe3339; not in the iOS export)'),
+ ('Section tab indicator', 'size', None, 'size-tab-indicator', 'iOS 4 pt underline (Apps team, f79fe3339)'),
+ ('Bottom navigation height', 'size', None, 'size-bottom-nav', 'iOS: system tab bar height (Apps team, f79fe3339)'),
+ ('Widget minimum width', 'size', None, 'size-widget-min-width', 'Android home-screen widget'),
+ ('Widget minimum height', 'size', None, 'size-widget-min-height', 'Android home-screen widget'),
+ ('Elevation: top bar (scrolled)', 'elevation', None, 'elevation-toolbar', 'iOS sets shadows where used, no scale (Apps team, f79fe3339)'),
+ ('Elevation: secondary top bars', 'elevation', None, 'elevation-toolbar-secondary', 'Settings, web view and login'),
+ ('Elevation: section tabs', 'elevation', None, 'elevation-section-tabs', ''),
+ ('Elevation: cards', 'elevation', None, 'elevation-card', 'Special-section cards 4dp'),
  ('Section-front grid columns', 'breakpoint', 'grid-columns', 'grid-columns', ''),
  ('Width class: small', 'breakpoint', 'bp-front-small', 'bp-small', 'iOS: window width in pt; Android: physical screen width in inches'),
  ('Width class: medium', 'breakpoint', 'bp-front-medium', 'bp-medium', 'iOS also has a second set for items (769 / 1025, LAY-01)'),

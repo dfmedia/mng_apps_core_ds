@@ -76,6 +76,17 @@ AND = [
  ('Audio player control', 'component.android.audio-player.control', 'Persistent audio player play/pause and close (below the touch minimum)', 'px'),
  ('Author contact icon', 'component.android.author.contact-icon', 'Author contact icons (below the touch minimum)', 'px'),
  ('Overlay close button', 'component.android.overlay.close', 'Breaking-news and live-video overlay close button (below the touch minimum)', 'px'),
+ ('Top bar height', 'component.android.top-bar.height', 'Top app bar height on phones (?actionBarSize)', 'px'),
+ ('Top bar height, tablet', 'component.android.top-bar.height-tablet', 'Top app bar height at sw600dp and up', 'px'),
+ ('Section tab height', 'component.android.section-tabs.height', 'Section tab height (Material TabLayout default)', 'px'),
+ ('Section tab indicator', 'component.android.section-tabs.indicator', 'Section tab selected indicator height', 'px'),
+ ('Bottom navigation height', 'component.android.bottom-nav.height', 'Bottom navigation height, phones and tablets', 'px'),
+ ('Widget minimum width', 'component.android.widget.min-width', 'Home-screen widget minWidth (2 x 1 cells, not resizable)', 'px'),
+ ('Widget minimum height', 'component.android.widget.min-height', 'Home-screen widget minHeight', 'px'),
+ ('Elevation: top bar (scrolled)', 'component.android.elevation.toolbar', 'Top bar elevation when content scrolls under it (0 at rest)', 'px'),
+ ('Elevation: secondary top bars', 'component.android.elevation.toolbar-secondary', 'Settings, web view and login toolbar elevation', 'px'),
+ ('Elevation: section tabs', 'component.android.elevation.section-tabs', 'Section tab strip elevation', 'px'),
+ ('Elevation: cards', 'component.android.elevation.card', 'Card elevation (special-section cards 4dp)', 'px'),
 ]
 for role, path, desc, unit in AND:
     t = side(role, 'android')

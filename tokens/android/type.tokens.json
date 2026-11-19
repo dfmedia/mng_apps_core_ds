@@ -622,8 +622,124 @@
       "code": "topBarTitle",
       "uppercase": true,
       "fontKnown": true,
-      "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20dp (fixed dp, does not follow the system font size; Android style guide 1795110354-0c21)",
-      "source": "Apps team, DREAMT-4719 (2026-11-19)"
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
+     }
+    }
+   },
+   "breaking-news-banner-text": {
+    "$value": {
+     "fontFamily": "Open Sans",
+     "fontWeight": 700,
+     "fontSize": "14px"
+    },
+    "$type": "typography",
+    "$description": "Breaking-news banner text (Android `breaking-news`): Open Sans Bold 14sp",
+    "$extensions": {
+     "mng": {
+      "role": "Breaking-news banner text",
+      "group": "App",
+      "style": "breaking-news",
+      "asset": "OpenSans-Bold.ttf",
+      "system": false,
+      "code": "breakingNewsBannerText",
+      "uppercase": false,
+      "fontKnown": true,
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
+     }
+    }
+   },
+   "button-label": {
+    "$value": {
+     "fontFamily": "Roboto",
+     "fontWeight": 500,
+     "fontSize": "14px",
+     "letterSpacing": "0.0893em"
+    },
+    "$type": "typography",
+    "$description": "Button label (Android `button-label`): Roboto Medium 14sp",
+    "$extensions": {
+     "mng": {
+      "role": "Button label",
+      "group": "Paywall",
+      "style": "button-label",
+      "asset": null,
+      "system": true,
+      "code": "buttonLabel",
+      "uppercase": true,
+      "fontKnown": true,
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
+     }
+    }
+   },
+   "subscription-option-label": {
+    "$value": {
+     "fontFamily": "Roboto",
+     "fontWeight": 700,
+     "fontSize": "16px"
+    },
+    "$type": "typography",
+    "$description": "Subscription option label (Android `subscription-option`): Roboto Bold 16sp",
+    "$extensions": {
+     "mng": {
+      "role": "Subscription option label",
+      "group": "Paywall",
+      "style": "subscription-option",
+      "asset": null,
+      "system": true,
+      "code": "subscriptionOptionLabel",
+      "uppercase": false,
+      "fontKnown": true,
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
+     }
+    }
+   },
+   "whats-new-button-label": {
+    "$value": {
+     "fontFamily": "Open Sans",
+     "fontWeight": 700,
+     "fontSize": "14px"
+    },
+    "$type": "typography",
+    "$description": "What's New button label (Android `whatsnew-label`): Open Sans Bold 14sp",
+    "$extensions": {
+     "mng": {
+      "role": "What's New button label",
+      "group": "Paywall",
+      "style": "whatsnew-label",
+      "asset": "OpenSans-Bold.ttf",
+      "system": false,
+      "code": "whatsNewButtonLabel",
+      "uppercase": true,
+      "fontKnown": true,
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
+     }
+    }
+   },
+   "segmented-control-label": {
+    "$value": {
+     "fontFamily": "Roboto",
+     "fontWeight": 700,
+     "fontSize": "17px"
+    },
+    "$type": "typography",
+    "$description": "Segmented control label (Android `segmented-label`): Roboto Bold 17sp",
+    "$extensions": {
+     "mng": {
+      "role": "Segmented control label",
+      "group": "App",
+      "style": "segmented-label",
+      "asset": null,
+      "system": true,
+      "code": "segmentedControlLabel",
+      "uppercase": false,
+      "fontKnown": true,
+      "exceptions": "",
+      "source": "android-tribpub styles/dimens"
      }
     }
    }

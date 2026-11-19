@@ -294,6 +294,159 @@
      }
     }
    },
+   "top-bar": {
+    "height": {
+     "$value": "56px",
+     "$type": "dimension",
+     "$description": "Top app bar height on phones (?actionBarSize)",
+     "$extensions": {
+      "mng": {
+       "source": "size-toolbar",
+       "usage": "Top app bar height on phones (?actionBarSize); 64dp at sw600dp, see size-toolbar-tablet. No market overrides.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "height-tablet": {
+     "$value": "64px",
+     "$type": "dimension",
+     "$description": "Top app bar height at sw600dp and up",
+     "$extensions": {
+      "mng": {
+       "source": "size-toolbar-tablet",
+       "usage": "Top app bar height at sw600dp and up.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "section-tabs": {
+    "height": {
+     "$value": "48px",
+     "$type": "dimension",
+     "$description": "Section tab height (Material TabLayout default)",
+     "$extensions": {
+      "mng": {
+       "source": "size-section-tab",
+       "usage": "Section tab height: Material TabLayout default for text-only tabs, 12dp start and end padding. Not set in our code.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "indicator": {
+     "$value": "3px",
+     "$type": "dimension",
+     "$description": "Section tab selected indicator height",
+     "$extensions": {
+      "mng": {
+       "source": "size-tab-indicator",
+       "usage": "Section tab selected indicator height (tab_indicator_height), color Toolbar_Tabs_Indicator.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "bottom-nav": {
+    "height": {
+     "$value": "56px",
+     "$type": "dimension",
+     "$description": "Bottom navigation height, phones and tablets",
+     "$extensions": {
+      "mng": {
+       "source": "size-bottom-nav",
+       "usage": "Bottom navigation height (mc_phone_bottom_bar_height), phones and tablets.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "widget": {
+    "min-width": {
+     "$value": "300px",
+     "$type": "dimension",
+     "$description": "Home-screen widget minWidth (2 x 1 cells, not resizable)",
+     "$extensions": {
+      "mng": {
+       "source": "size-widget-min-width",
+       "usage": "Home-screen widget minWidth (medium_app_widget_info.xml); target 2x1 cells, not resizable.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "min-height": {
+     "$value": "170px",
+     "$type": "dimension",
+     "$description": "Home-screen widget minHeight",
+     "$extensions": {
+      "mng": {
+       "source": "size-widget-min-height",
+       "usage": "Home-screen widget minHeight.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "elevation": {
+    "toolbar": {
+     "$value": "4px",
+     "$type": "dimension",
+     "$description": "Top bar elevation when content scrolls under it (0 at rest)",
+     "$extensions": {
+      "mng": {
+       "source": "elevation-toolbar",
+       "usage": "Top bar when content scrolls under it (mc_toolbar_elevation); 0 at rest.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "toolbar-secondary": {
+     "$value": "1px",
+     "$type": "dimension",
+     "$description": "Settings, web view and login toolbar elevation",
+     "$extensions": {
+      "mng": {
+       "source": "elevation-toolbar-secondary",
+       "usage": "Settings, web view and login toolbars.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "section-tabs": {
+     "$value": "2px",
+     "$type": "dimension",
+     "$description": "Section tab strip elevation",
+     "$extensions": {
+      "mng": {
+       "source": "elevation-section-tabs",
+       "usage": "Section tab strip under the top bar.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "card": {
+     "$value": "3px",
+     "$type": "dimension",
+     "$description": "Card elevation (special-section cards 4dp)",
+     "$extensions": {
+      "mng": {
+       "source": "elevation-card",
+       "usage": "Cards (cardview_elevation, World Cup cards). Special-section cards use 4dp.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
    "subscription-option": {
     "inset": {
      "$value": "14px",

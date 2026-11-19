@@ -89,7 +89,7 @@ elif MODE == 'android-ads':
 
 elif MODE == 'android-widget':
     W = D['widget']
-    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, {'t': hx(t['night'].lower()), 'sw': t['night'].lower()}, f"{t['name']} · {t['night_token']}"]
+    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, {'t': hx(t['night'].lower()), 'sw': t['night'].lower(), 'v': SYSA + 'widget-night-' + t['night_token'].split('.')[-1]}, f"{t['name']} · {t['night_token']}"]
             for t in W['day_tokens']]
     rows += [{'group': 'Size and layout (Apps team, DREAMT-4719, 2026-11-19)'}, ['Size', W['answered']['size'], '—', '—'], ['Layout', W['answered']['layout'], '—', '—'],
              {'group': 'Also on the widget'}, ['Logo', W['logo'], '—', '—'], ['Icons', W['icons'], '—', '—']]

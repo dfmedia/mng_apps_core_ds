@@ -15,9 +15,9 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 24 | 0 | 9 | 12 | 2 | 1 |
-| Layout | 9 | 1 | 5 | 1 | 2 | 0 |
+| Layout | 9 | 1 | 5 | 2 | 1 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **114** | **2** | **33** | **13** | **4** | **62** |
+| **Total** | **114** | **2** | **33** | **14** | **3** | **62** |
 
 ## Suggested order
 
@@ -31,7 +31,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 27 text styles (Android top bar title Roboto Medium 16sp caps, DREAMT-4719, 2026-11-19) (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
+| Text styles (63 iOS styles; Android font maps per market) | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 32 text styles (top bar title, breaking-news, button label, subscription option, What's New label and segmented label added from the Android style guide, 2026-11-19) (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt |
 | Per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | Core + iOS + Android | ✅ done | — n/a | — n/a | Documented as shipped (2026-11-10): docs/TYPE-FONT-EXCEPTIONS.md, Core Type · iOS vs Android › 04 (iOS) and 05 (Android); not built as tokens (DEC-09, majority rule). Future: TYPE-05 |
 
 ### Scales
@@ -127,7 +127,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
 | Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
-| Elevation / shadows | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new) |
+| Elevation / shadows | Core + iOS + Android | ⬜ to do | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new) |
 | Motion | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new) |
 
 ## Icons

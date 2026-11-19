@@ -3,8 +3,8 @@
  "counts": {
   "differs": 12,
   "ios-only": 48,
-  "unknown": 5,
-  "android-only": 8,
+  "unknown": 9,
+  "android-only": 9,
   "close": 1,
   "same": 1
  },
@@ -25,7 +25,7 @@
  },
  "styles": {
   "ios": 63,
-  "android": 27
+  "android": 32
  },
  "legacy_markets": "BS, DP, HC, MC, OS, SS, VP",
  "roles": [
@@ -1123,12 +1123,12 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20dp (fixed dp). Apps team, DREAMT-4719 (2026-11-19).",
+    "usage": "Top bar text title: MC.TextAppearance.AppCompat.Widget.ActionBar.Title, 16sp, all caps, sans-serif-medium (Roboto Medium), color Toolbar_Text_Primary. Shown instead of the logo on Sections, Saved, Alerts, Your News, Settings, Games and opened sections. Restaurants and the corekit settings screen use the plain AppCompat title (Roboto Medium 20dp).",
     "legacy": false,
     "uppercase": true
    },
    "match": "differs",
-   "note": "Android: Apps team answer, DREAMT-4719 4.4 (not in the export)"
+   "note": ""
   },
   {
    "role": "Bottom tab label",
@@ -1153,7 +1153,7 @@
     "size": 10.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Bottom-nav tab label: 10sp (NavigationPanelTextAppearance). No font file set, so the system font.",
+    "usage": "Bottom-nav tab label: 10sp, 2dp below the icon (NavigationPanelTextAppearance). No font file set, so the system font (Roboto Regular). Always shown; active and inactive differ only in color.",
     "legacy": false,
     "uppercase": false
    },
@@ -1172,12 +1172,50 @@
     "size": 12.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Section tabs under the top bar: OpenSans SemiBold (Toolbar.Tab). Size is `tabs_text_size`, defined as 12sp in articles and 14sp in notifications.",
+    "usage": "Section tabs under the top bar: OpenSans SemiBold 12sp, not all caps, single line (Toolbar.Tab). `tabs_text_size` is 12sp in articles and 14sp in notifications; articles wins at merge, so 12sp ships. Selected and unselected colors are set in code (MainTabLayout).",
     "legacy": false,
     "uppercase": false
    },
    "match": "unknown",
-   "note": "Android size: 12sp in articles, 14sp in notifications"
+   "note": "Android: 12sp ships (14sp in notifications loses at merge)"
+  },
+  {
+   "role": "Breaking-news banner text",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "breaking-news",
+    "group": "App",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Breaking-news banner text: OpenSans-Bold 14sp, white on br_news_red #cf000e, set in code (BreakingNewsViewHolder).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": "iOS: Open Sans Bold 14 (Apps team, f79fe3339), not in the iOS export"
+  },
+  {
+   "role": "Segmented control label",
+   "group": "App",
+   "ios": "?",
+   "android": {
+    "style": "segmented-label",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 700,
+    "size": 17.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Segmented control (For You / Saved / Alerts) label: 17sp bold, Material3 TextButton; black when selected, #696969 otherwise.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": "iOS: system font (Apps team, f79fe3339), not in the iOS export"
   },
   {
    "role": "Sections list header",
@@ -1618,6 +1656,63 @@
    },
    "match": "android-only",
    "note": "iOS draws Continue as PNG images (DSC-24)"
+  },
+  {
+   "role": "Button label",
+   "group": "Paywall",
+   "ios": "?",
+   "android": {
+    "style": "button-label",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 500,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": "0.0893em",
+    "usage": "Default button label: no app button style, so Material defaults apply. Main screen (MaterialComponents): Roboto Medium 14sp, all caps, letter spacing 0.0893. Settings, web view and paywall (Material3): Roboto Medium 14sp, sentence case, line height 20sp. Used by the paywall Subscribe button and Alerts Enable.",
+    "legacy": false,
+    "uppercase": true
+   },
+   "match": "unknown",
+   "note": "Android Material default (Subscribe, Alerts Enable). iOS purchase button: Open Sans Bold 14 (Apps team, f79fe3339; MISSING-ASSETS 5.10)"
+  },
+  {
+   "role": "Subscription option label",
+   "group": "Paywall",
+   "ios": "?",
+   "android": {
+    "style": "subscription-option",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 700,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Subscription option (Monthly / Yearly) label: 16sp bold, no font file, so Roboto Bold; white (fragment_buy_subscription.xml).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "match": "unknown",
+   "note": "iOS: Open Sans Bold 16 (component map); which iOS Style.json key is not confirmed"
+  },
+  {
+   "role": "What's New button label",
+   "group": "Paywall",
+   "ios": null,
+   "android": {
+    "style": "whatsnew-label",
+    "group": "App",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "What's New Continue label: OpenSans-Bold 14sp (18sp landscape, 25sp at sw600dp), all caps, white (AdditionalWhatsNewDialog.ContinueButton). The older What's New dialog uses the system font at 14sp (30sp at sw600dp).",
+    "legacy": false,
+    "uppercase": true
+   },
+   "match": "android-only",
+   "note": "Not in the iOS guide"
   }
  ]
 }
