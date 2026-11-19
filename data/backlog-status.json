@@ -312,8 +312,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and padding: MISSING-ASSETS 5.6 (c)",
-   "note": "Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718)"
+   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (b)",
+   "note": "Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339)."
   },
   "component/social-signin": {
    "figma": "todo",
@@ -396,18 +396,18 @@
    "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
   },
   "component/button-account-ios": {
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
-   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)"
+   "blocked_by": "",
+   "note": "iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34)."
   },
   "component/button-account-android": {
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
-   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)"
+   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (b)",
+   "note": "Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined."
   },
   "layout/breakpoints-ios": {
    "figma": "done",
@@ -451,8 +451,8 @@
   }
  },
  "next": [
-  "Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.4), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.5), remaining buttons and controls (5.6), Android settings colors (3.5), icons (§1)",
-  "App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.5)",
-  "Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names approved 2026-11-11; glyphs and the Icon component after MISSING-ASSETS §1"
+  "Apps team answers (DREAMT-4718 / 4719, docs/MISSING-ASSETS.md): 5.6 Alerts Enable fill and account buttons, 5.11 white log-in link, 3.4 dark mode, 1.1 icon vectors, 1.12 Amazon icon",
+  "App shell components in Figma (top bar, section tabs, tab bar, breaking-news banner): colors, sizes and type known on both apps",
+  "Icons: names done (DEC-17, docs/ICON-NAMES.md); glyphs and the Icon component after MISSING-ASSETS 1.1"
  ]
 }

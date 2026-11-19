@@ -21,9 +21,9 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 ## Suggested order
 
-1. Apps team answers (#pd-mobile-public): Android subhead + top bar fonts (4.4), button values (5.4), app shell sizes and Android 15+ status-bar icons in the other 70 markets (5.5), remaining buttons and controls (5.6), Android settings colors (3.5), icons (§1)
-2. App shell components (top bar, section tabs, tab bar, banner): colors done (DEC-13, DEC-15 incl. Android 14 vs 15+ status bar); waiting on sizes (5.5)
-3. Icons: combined icon name list done as shipped (DEC-17, docs/ICON-NAMES.md, Figma Icons › 05), names approved 2026-11-11; glyphs and the Icon component after MISSING-ASSETS §1
+1. Apps team answers (DREAMT-4718 / 4719, docs/MISSING-ASSETS.md): 5.6 Alerts Enable fill and account buttons, 5.11 white log-in link, 3.4 dark mode, 1.1 icon vectors, 1.12 Amazon icon
+2. App shell components in Figma (top bar, section tabs, tab bar, breaking-news banner): colors, sizes and type known on both apps
+3. Icons: names done (DEC-17, docs/ICON-NAMES.md); glyphs and the Icon component after MISSING-ASSETS 1.1
 
 ## Foundations
 
@@ -92,10 +92,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Subscription option | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button) |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android fill: MISSING-ASSETS 5.6 (a) · Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19) |
-| Manage subscription modal buttons (iOS) | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
-| Account bottom-sheet buttons (Android) | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
+| Manage subscription modal buttons (iOS) | iOS | ⬜ to do | 🟡 partial | 🟡 partial | iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34). |
+| Account bottom-sheet buttons (Android) | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (b) · Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined. |
 | What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19) |
-| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and padding: MISSING-ASSETS 5.6 (c) · Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718) |
+| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font, size and padding: MISSING-ASSETS 5.6 (b) · Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339). |
 | Social sign-in buttons | iOS | ⬜ to do | 🟡 partial | 🟡 partial | Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 

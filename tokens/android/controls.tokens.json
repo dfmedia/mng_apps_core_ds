@@ -81,18 +81,13 @@
      }
     }
    },
-   "savings-label-text": {
-    "$value": "#004e87",
-    "$type": "color",
-    "$description": "Savings label text on the subscription screen (DEC-14)",
-    "$extensions": {
-     "mng": {
-      "rgb": [
-       0,
-       78,
-       135
-      ],
-      "source": "style guide"
+   "$extensions": {
+    "mng": {
+     "follows": {
+      "savings-label-text": {
+       "role": "buy",
+       "$description": "Savings label text and 2dp outline on the subscription screen: the market buy color (VP screenshot, 2026-11-19; the style guide says #004E87)"
+      }
      }
     }
    }

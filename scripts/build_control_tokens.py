@@ -47,7 +47,6 @@ ANDROID_FIXED = {
  'switch-off-thumb': ('#e5e5e5', 'Settings switch thumb, off (SwitchCompat)'),
  'switch-off-track': ('#b9b9b9', 'Settings switch track, off (SwitchCompat)'),
  'checkbox-unchecked': ('#757575', 'Your News topic checkbox, unchecked (checkbox_tint)'),
- 'savings-label-text': ('#004e87', 'Savings label text on the subscription screen'),
 }
 # iOS system colors the native controls use when the app does not set one (Apple defaults, sRGB)
 IOS_SYSTEM = {'switch-off-track': ('#e9e9ea', 'UISwitch track, off (system default; the app sets only the on tint)'),
@@ -79,6 +78,11 @@ for c in out['const']:
     tree = ios if c['platform'] == 'ios' else andr
     put(tree, f"color.{c['platform']}-control.{slug[c['key']]}", ctok(c['value'], f"{c['what']} ({c['key']}; {c['majority']} of {c['of']} markets; exceptions documented only, DEC-14)", source=c['key']))
 for k, (h, d) in ANDROID_FIXED.items(): put(andr, f'color.android-control.{k}', ctok(h, d + ' (DEC-14)', source='style guide'))
+# Android colors that follow a brand role in every market (no value of their own): listed on the group, written as aliases by the code formats.
+# Savings label (2026-11-19): the VP screenshot shows the text and 2dp outline in the market color; the style guide's #004E87 is wrong (asked to fix, DREAMT-4719).
+ANDROID_FOLLOWS = {'savings-label-text': ('buy', 'Savings label text and 2dp outline on the subscription screen: the market buy color (VP screenshot, 2026-11-19; the style guide says #004E87)')}
+grp = andr.setdefault('color', {}).setdefault('android-control', {})
+grp['$extensions'] = {'mng': {'follows': {k: {'role': r, '$description': d} for k, (r, d) in ANDROID_FOLLOWS.items()}}}
 for k, (h, d) in IOS_SYSTEM.items(): put(ios, f'color.ios-control.{k}', ctok(h, d + ' (DEC-14)', source='system'))
 # typography for the subscription option label
 put(ios, 'type.ios-control.subscription-option', {'$value': {'fontFamily': 'Open Sans', 'fontWeight': 700, 'fontSize': '16px'}, '$type': 'typography',

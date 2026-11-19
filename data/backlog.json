@@ -1242,11 +1242,11 @@
    "group": "Buttons",
    "name": "Manage subscription modal buttons (iOS)",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
-   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)",
+   "blocked_by": "",
+   "note": "iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34).",
    "overall": "in progress"
   },
   {
@@ -1258,8 +1258,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
-   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)",
+   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (b)",
+   "note": "Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined.",
    "overall": "in progress"
   },
   {
@@ -1284,8 +1284,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and padding: MISSING-ASSETS 5.6 (c)",
-   "note": "Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718)",
+   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (b)",
+   "note": "Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339).",
    "overall": "in progress"
   },
   {
