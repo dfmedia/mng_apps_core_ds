@@ -8,13 +8,14 @@ Match:  same     same family, weight and size
         close    same family; size within 2 or weight differs
         differs  different family, or same family with size and weight both different
         ios-only / android-only   the other app has no such style
-        unknown  the other app has the element, but its font is not in the export (MISSING-ASSETS 4.4)
+        unknown  the other app has the element, but its font is not in the export (Android top bar title: answered by the Apps team 2026-11-19, now added from data/source/apps-team-answers)
                  (also when a style's size is known but its font is not, e.g. Android article-subhead)
 """
 import json, re
 
 IOS = json.load(open('data/source/ios-type.json'))
-AND = json.load(open('data/source/android-type.json'))
+from android_answered_type import extend
+AND = extend(json.load(open('data/source/android-type.json')))   # + styles the Apps team answered (top bar title, DREAMT-4719)
 FAM = {'sans': 'Open Sans', 'condensed': 'Open Sans Condensed', 'serif': 'PT Serif', 'display': 'Spectral',
        'spectral': 'Spectral', 'roboto': 'Roboto', 'playfair': 'Playfair Display'}
 PARSE = [('Open Sans Condensed', 'Open Sans Condensed'), ('OpenSans', 'Open Sans'), ('Open Sans', 'Open Sans'),
@@ -94,7 +95,7 @@ ROLES = [
  ('Legacy: signature', 'Section front', 'cell-signature', None, 'Legacy template: documented only (DEC-10)'),
  ('Legacy: kicker left', 'Section front', 'label-kicker-left', None, 'Legacy template: documented only (DEC-10)'),
  ('Legacy: label small left', 'Section front', 'label-normal-small-left', None, 'Legacy template: documented only (DEC-10)'),
- ('Top bar title', 'App', 'nav-title', '?', ''),
+ ('Top bar title', 'App', 'nav-title', 'toolbar-title', 'Android: Apps team answer, DREAMT-4719 4.4 (not in the export)'),
  ('Bottom tab label', 'App', 'tab-item', 'nav-label', ''),
  ('Section tabs', 'App', '?', 'section-tab', 'Android size: 12sp in articles, 14sp in notifications'),
  ('Sections list header', 'App', 'section-list-header', None, ''),

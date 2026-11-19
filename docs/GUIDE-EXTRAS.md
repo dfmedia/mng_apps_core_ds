@@ -28,7 +28,7 @@ Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad
 
 ## What's New Continue button (Android only)
 
-Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Unknown: height, label size, padding (MISSING-ASSETS 5.6).
+Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): label Open Sans Bold 14sp (18sp landscape, 25sp tablet), all caps, white; 15dp padding (about 50dp tall), radius 6dp. **To clarify:** Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)
 
 Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 markets. CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). White-label contrast is shown as shipped; below 4.5:1 fails for text.
 
@@ -61,23 +61,28 @@ Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 marke
 
 ## Alerts enable button (Android)
 
-Already tracked: component/permission-prompt (Android side of Notification prompt buttons). Fill `Alerts_Enable_Button_Background` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label `#ffffff` · 255, 255, 255, square corners. Font and height: MISSING-ASSETS 5.6.
+Already tracked: component/permission-prompt (Android side of Notification prompt buttons). Export: fill `Alerts_Enable_Button_Background` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label `#ffffff` · 255, 255, 255, square corners.
+
+Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): CUSTOMIZE: Roboto Medium 14sp, all caps, white, 10dp padding (about 40dp tall), full width, fill `#ff6859` · 255, 104, 89 (same in every market (answer)). NO, THANKS: transparent, black text. The Alerts-tab "Enable Alerts" is a system AlertDialog button.
+
+**To clarify:** Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)
 
 ## Home-screen widget (Android only)
 
 Source: project/6-dark-mode.md › Our app; project/3-icons.md (widgets module: 6 PNG drawables); project/assets/Other/README.md. Not in the iOS guide.
 
-| Color | Day value (token) | Night value |
+| Color | Day value (token) | Night value (token) |
 |---|---|---|
-| `widget_bg` | `#ffffff` · 255, 255, 255 (`widget-bg`, System colors · Android) | unknown, ask Apps team (5.9) |
-| `widget_divider1` | `#000000` · 0, 0, 0 (`widget-divider1`, System colors · Android) | unknown, ask Apps team (5.9) |
-| `widget_divider2` | `#b8b8b8` · 184, 184, 184 (`widget-divider2`, System colors · Android) | unknown, ask Apps team (5.9) |
-| `widget_text_main` | `#000000` · 0, 0, 0 (`widget-text-main`, System colors · Android) | unknown, ask Apps team (5.9) |
+| `widget_bg` | `#ffffff` · 255, 255, 255 (`widget-bg`, System colors · Android) | `#000000` · 0, 0, 0 (`color.android-system.widget-night.bg`) |
+| `widget_divider1` | `#000000` · 0, 0, 0 (`widget-divider1`, System colors · Android) | `#ffffff` · 255, 255, 255 (`color.android-system.widget-night.divider1`) |
+| `widget_divider2` | `#b8b8b8` · 184, 184, 184 (`widget-divider2`, System colors · Android) | `#b8b8b8` · 184, 184, 184 (`color.android-system.widget-night.divider2`) |
+| `widget_text_main` | `#000000` · 0, 0, 0 (`widget-text-main`, System colors · Android) | `#ffffff` · 255, 255, 255 (`color.android-system.widget-night.text-main`) |
 
-- values-night changes only the home-screen widget colors. The night values are not in the guide.
+- values-night changes only these four widget colors; no market overrides (Apps team, Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19).
+- Size: minWidth 300dp, minHeight 170dp, target 2×1 cells, not resizable, refreshes every 30 min.
+- Layout: 16dp rounded card, 16dp padding. Date 12sp top-right. Logo 145 × 25dp. 2dp divider1. Lead row: 66dp-wide thumbnail (7dp corners), bold 15sp headline (max 3 lines). 2px divider2 at 12dp. Second headline bold 16sp (max 2 lines).
 - All 77 flavors ship their own ic_logo plus a night ic_logo; it shows on the widget.
 - eNewspaper and Games icons used in dialogs and the widget (assets/Other).
-- Unknown: night color values (values-night), widget layout and sizes (MISSING-ASSETS 5.9).
 
 ## eEdition (PageSuite) colors (Android only)
 

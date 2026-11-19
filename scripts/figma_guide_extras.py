@@ -89,12 +89,13 @@ elif MODE == 'android-ads':
 
 elif MODE == 'android-widget':
     W = D['widget']
-    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, 'Unknown, ask Apps team (MISSING-ASSETS 5.9)', t['name']]
+    rows = [[{'t': t['source'], 'b': True}, {'t': hx(t['value']), 'sw': t['value'], 'v': SYSA + t['name']}, {'t': hx(t['night'].lower()), 'sw': t['night'].lower()}, f"{t['name']} · {t['night_token']}"]
             for t in W['day_tokens']]
-    rows += [{'group': 'Also on the widget'}, ['Logo', W['logo'], '—', '—'], ['Icons', W['icons'], '—', '—']]
+    rows += [{'group': 'Size and layout (Apps team, DREAMT-4719, 2026-11-19)'}, ['Size', W['answered']['size'], '—', '—'], ['Layout', W['answered']['layout'], '—', '—'],
+             {'group': 'Also on the widget'}, ['Logo', W['logo'], '—', '—'], ['Icons', W['icons'], '—', '—']]
     T = {'name': '02 · Home-screen widget colors', 'title': 'Home-screen widget colors (as shipped)',
-         'intro': (f"Android only. Day colors are System colors · Android tokens, the same in all 77 markets. {W['night']} "
-                   'The widget layout and sizes are not in the guide either (MISSING-ASSETS 5.9). ' + SRC),
+         'intro': ("Android only. Day colors are System colors · Android tokens, the same in all 77 markets. values-night changes only these four colors, "
+                   "with no market overrides; night values and the size and layout come from the Apps team (DREAMT-4719, 2026-11-19), night tokens color.android-system.widget-night.*. " + SRC),
          'columns': [{'name': 'Color', 'w': 200}, {'name': 'Day value', 'w': 460}, {'name': 'Night value (values-night)', 'w': 360}, {'name': 'Token', 'w': 220}],
          'rows': rows}
     print(table(AP, T))
@@ -119,12 +120,13 @@ elif MODE == 'whats-new':
         rows.append([cell, f"{r['count']}: " + (', '.join(r['markets']) if r['count'] < 20 else 'majority'), f"{r['white_label_contrast']}:1", r['kind']])
     rows += [{'group': 'Shape and label'},
              [{'t': 'Radius', 'b': True}, f"{W['radius']['value']} dp", '—', f"{W['radius']['token']} (Components · Android whats-new-continue/radius)"],
-             [{'t': 'Label', 'b': True}, f"{hx(W['label']['color'])}, {W['label']['case']}, {W['label']['font']} ({W['label']['font_key']}, {W['label']['font_markets']} of 77)", '—', 'Font size unknown'],
-             [{'t': 'Unknown', 'b': True}, ', '.join(W['unknown']).capitalize() + ': MISSING-ASSETS 5.6', '—', 'Not drawn as a component until then']]
+             [{'t': 'Label', 'b': True}, f"{hx(W['label']['color'])}, {W['label']['case']}, {W['label']['font']} ({W['label']['font_key']}, {W['label']['font_markets']} of 77)", '—', W['answered']['label'] + ' (Apps team)'],
+             [{'t': 'Height', 'b': True}, f"{W['answered']['padding']} dp padding, about {W['answered']['height_approx']} dp tall", '—', 'Apps team, DREAMT-4719, 2026-11-19'],
+             [{'t': 'To clarify', 'b': True}, W['ask'], '—', 'Not drawn as a component until the fill is confirmed']]
     T = {'name': "04 · What's New Continue (as shipped)", 'title': "What's New Continue button (as shipped)",
          'intro': ("Android only (not in the iOS guide). CT, NYDN and VP override the button drawable, so their drawable color ships, not the color resource. "
-                   "White-label contrast below 4.5:1 fails for text; values are kept as shipped. Height, label size and padding are unknown, so the button "
-                   "itself is not drawn. " + SRC),
+                   "White-label contrast below 4.5:1 fails for text; values are kept as shipped. Label size and height: Apps team (DREAMT-4719, 2026-11-19). "
+                   "The answer names whats_new_button_color as the fill in every market, which disagrees with the drawable overrides, so that is asked again (MISSING-ASSETS 5.6). " + SRC),
          'columns': [{'name': 'Fill / property', 'w': 300}, {'name': 'Markets / value', 'w': 560}, {'name': 'White label contrast', 'w': 180}, {'name': 'Kind / token', 'w': 360}],
          'rows': rows}
     print(table('Components · Button', T))

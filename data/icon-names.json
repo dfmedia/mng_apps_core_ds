@@ -18,8 +18,8 @@
   },
   "by_bucket": {
    "Core": 32,
-   "Core, per-platform value": 2,
-   "iOS only": 25,
+   "Core, per-platform value": 4,
+   "iOS only": 23,
    "Android only": 2
   }
  },
@@ -640,34 +640,34 @@
    "name": "skip-back-15",
    "purpose": "Skip back 15 s",
    "group": "Media",
-   "bucket": "iOS only",
+   "bucket": "Core, per-platform value",
    "ios": "SF gobackward.15",
-   "android": null,
-   "note": "iOS ships SF gobackward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18).",
-   "apps_team": "1.10 (15 s on Android?)",
+   "android": "Media3 skip_back_10 (skips 10 s)",
+   "note": "iOS ships SF gobackward.15 (15 s), Android Media3 skip_back_10 (10 s); no separate design (Apps team, DREAMT-4718 and DREAMT-4719, 2026-11-18/19). Name says 15 s: rename to skip-back is Karl's call.",
+   "apps_team": "",
    "reference": {
     "sf_symbol": "gobackward.15",
-    "material": null,
+    "material": "replay_10",
     "font_awesome": null,
-    "recommendation": "iOS native; Android needs custom vector",
-    "ownership_note": "Android player has no skip controls."
+    "recommendation": "Native on both platforms",
+    "ownership_note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19)."
    }
   },
   {
    "name": "skip-forward-15",
    "purpose": "Skip forward 15 s",
    "group": "Media",
-   "bucket": "iOS only",
+   "bucket": "Core, per-platform value",
    "ios": "SF goforward.15",
-   "android": null,
-   "note": "iOS ships SF goforward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18).",
-   "apps_team": "1.10 (15 s on Android?)",
+   "android": "Media3 skip_forward_10 (skips 10 s)",
+   "note": "iOS ships SF goforward.15 (15 s), Android Media3 skip_forward_10 (10 s); no separate design (Apps team, 2026-11-18/19). Name says 15 s: rename to skip-forward is Karl's call.",
+   "apps_team": "",
    "reference": {
     "sf_symbol": "goforward.15",
-    "material": null,
+    "material": "forward_10",
     "font_awesome": null,
-    "recommendation": "iOS native; Android needs custom vector",
-    "ownership_note": "Android player has no skip controls."
+    "recommendation": "Native on both platforms",
+    "ownership_note": "See Skip back."
    }
   },
   {

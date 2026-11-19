@@ -19438,7 +19438,7 @@
      "kind": "follows",
      "majority": "#004e87",
      "majority_markets": 19,
-     "follows": "tabbar",
+     "follows": "navbar",
      "follows_markets": 66,
      "not_set_markets": [],
      "exceptions": {
@@ -57510,7 +57510,7 @@
    "android": "Settings_Background",
    "what": "Settings: background",
    "name": "settings/background",
-   "check": "",
+   "check": "Android never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19)",
    "markets_compared": 77,
    "same": 7,
    "close": 0,

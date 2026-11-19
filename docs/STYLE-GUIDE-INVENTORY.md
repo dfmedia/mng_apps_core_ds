@@ -18,7 +18,7 @@ Brand colors (78 markets), app shell colors (incl. Android 14 vs 15+ status bar)
 
 | Item | Library | Waiting on |
 |---|---|---|
-| Top bar, section tabs, bottom tab bar, breaking-news banner (colors done) | Core + iOS + Android | Sizes, MISSING-ASSETS 5.4 |
+| Top bar, section tabs, bottom tab bar, breaking-news banner (colors done) | Core + iOS + Android | Sizes: Android answered 2026-11-19 (banner height open, MISSING-ASSETS 5.5) |
 | Section header band (iOS) and status bar (Android) drawn as components (colors done) | iOS / Android | Sizes, 5.5 |
 | Notification prompt Yes / No, Manage subscription / delete account | Core + iOS + Android | 5.6 |
 | Savings label | Android | 5.6 |

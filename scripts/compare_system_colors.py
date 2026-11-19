@@ -25,6 +25,8 @@ from collections import Counter, defaultdict
 IOS = json.load(open('data/source/markets.json')); AND = json.load(open('data/source/android-markets.json'))
 PAIRS = json.load(open('data/system-color-pairs.json'))
 CTRL = json.load(open('data/control-colors.json'))
+ANS = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
+NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)"}   # Android colors the app sets but nobody sees
 N = 77; MAJ = 39
 
 def norm(h):
@@ -140,6 +142,7 @@ for p in PAIRS['pairs']:
     elif len(same) >= MAJ and dE(a['majority'], b['majority']) < 0.012: bucket, why = 'Core', f'same value in {len(same)} of {len(common)} markets'
     else: bucket, why = 'Core, per-platform value', f'iOS {a["majority"]} ({a["kind"]}) vs Android {b["majority"]} ({b["kind"]})'
     check = 'differs in every market: Core token keeps a value per platform (DISCREPANCIES DSC-32/33)' if not same and not close else ''
+    if p['android'] in NOT_SEEN: check = '; '.join(x for x in (check, 'Android ' + NOT_SEEN[p['android']]) if x)
     pairs.append({**p, 'check': check, 'markets_compared': len(common), 'same': len(same), 'close': len(close), 'differ': len(differ),
                   'differ_markets': differ, 'bucket': bucket, 'why': why,
                   'ios_majority': a['majority'], 'android_majority': b['majority'], 'ios_kind': a['kind'], 'android_kind': b['kind']})

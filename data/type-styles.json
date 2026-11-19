@@ -1148,6 +1148,20 @@
    "style": "continue-label",
    "asset": "OpenSans-SemiBold.ttf",
    "legacy": false
+  },
+  {
+   "platform": "android",
+   "token": "type.android.top-bar-title",
+   "name": "App/Top bar title",
+   "family": "Roboto",
+   "figmaStyle": "Medium",
+   "size": 16.0,
+   "lineHeight": null,
+   "letterSpacingEm": null,
+   "uppercase": true,
+   "style": "toolbar-title",
+   "asset": null,
+   "legacy": false
   }
  ]
 }

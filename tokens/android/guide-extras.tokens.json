@@ -173,6 +173,76 @@
       }
      }
     }
+   },
+   "widget-night": {
+    "bg": {
+     "$value": "#000000",
+     "$type": "color",
+     "$description": "Home-screen widget, night (values-night `widget_bg`): same in every market. Day value: #ffffff",
+     "$extensions": {
+      "mng": {
+       "platform": "android",
+       "rgb": [
+        0,
+        0,
+        0
+       ],
+       "source": "values-night widget_bg",
+       "answered": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)"
+      }
+     }
+    },
+    "divider1": {
+     "$value": "#ffffff",
+     "$type": "color",
+     "$description": "Home-screen widget, night (values-night `widget_divider1`): same in every market. Day value: #000000",
+     "$extensions": {
+      "mng": {
+       "platform": "android",
+       "rgb": [
+        255,
+        255,
+        255
+       ],
+       "source": "values-night widget_divider1",
+       "answered": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)"
+      }
+     }
+    },
+    "divider2": {
+     "$value": "#b8b8b8",
+     "$type": "color",
+     "$description": "Home-screen widget, night (values-night `widget_divider2`): same in every market. Day value: #b8b8b8",
+     "$extensions": {
+      "mng": {
+       "platform": "android",
+       "rgb": [
+        184,
+        184,
+        184
+       ],
+       "source": "values-night widget_divider2",
+       "answered": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)"
+      }
+     }
+    },
+    "text-main": {
+     "$value": "#ffffff",
+     "$type": "color",
+     "$description": "Home-screen widget, night (values-night `widget_text_main`): same in every market. Day value: #000000",
+     "$extensions": {
+      "mng": {
+       "platform": "android",
+       "rgb": [
+        255,
+        255,
+        255
+       ],
+       "source": "values-night widget_text_main",
+       "answered": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)"
+      }
+     }
+    }
    }
   }
  }

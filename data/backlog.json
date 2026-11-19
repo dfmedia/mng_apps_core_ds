@@ -11,7 +11,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 26 text styles in Figma (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt",
+   "note": "DEC-09/10: production values per app (fonts per platform). iOS 56 + Android 27 text styles (Android top bar title Roboto Medium 16sp caps, DREAMT-4719, 2026-11-19) (Android subhead PT Serif Regular 14sp, NYDN Open Sans Regular; DREAMT-4719), tokens, MNGTypeStyles.swift, MngTypeStyles.kt",
    "overall": "built"
   },
   {
@@ -258,7 +258,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). Other markets' 15+ icons inferred light (MISSING-ASSETS 5.5)",
+   "note": "DEC-15: alias of Core navbar; 7 accepted dark overrides (Android 14 and below). Android 15+ version built 2026-11-10 (navbar + icon style tokens icons/icons15, values-v35 XML, Figma 14 vs 15+ samples). TSAR production correction removed 2026-11-19: production shows white icons on #F5F5F5 (Rajal Patel), IMPROVEMENTS CLR-09",
    "overall": "built"
   },
   {
@@ -747,12 +747,12 @@
    "area": "Icons",
    "group": "Icons · Media",
    "name": "Skip back 15 s",
-   "owner": "ios",
+   "owner": "core+variant",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android player has no skip controls.",
+   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
    "overall": "blocked"
   },
   {
@@ -760,12 +760,12 @@
    "area": "Icons",
    "group": "Icons · Media",
    "name": "Skip forward 15 s",
-   "owner": "ios",
+   "owner": "core+variant",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android player has no skip controls.",
+   "note": "See Skip back.",
    "overall": "blocked"
   },
   {
@@ -1073,11 +1073,11 @@
    "group": "App chrome",
    "name": "Top bar",
    "owner": "core+variant",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
-   "note": "Colors done (navbar, navtext, navicon). Sizes wait on the Apps team (MISSING-ASSETS 5.5, DEC-13)",
+   "blocked_by": "",
+   "note": "Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13)",
    "overall": "in progress"
   },
   {
@@ -1086,11 +1086,11 @@
    "group": "App chrome",
    "name": "Section tabs",
    "owner": "core+variant",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
-   "note": "Colors done per platform (DEC-13). Sizes wait on the Apps team (5.5)",
+   "blocked_by": "",
+   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp, 3dp indicator (Apps team, DREAMT-4719, 2026-11-19); notifications-screen size asked (MISSING-ASSETS 5.5). Ready to build",
    "overall": "in progress"
   },
   {
@@ -1099,11 +1099,11 @@
    "group": "App chrome",
    "name": "Bottom tab bar",
    "owner": "core+variant",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
-   "note": "Colors done (tab roles + Android labels). Sizes wait on the Apps team (5.5)",
+   "blocked_by": "",
+   "note": "Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build",
    "overall": "in progress"
   },
   {
@@ -1115,8 +1115,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "App shell sizes (MISSING-ASSETS 5.5)",
-   "note": "Colors done (alert, alerttext). Sizes wait on the Apps team (5.5). DSC-15/19 parked",
+   "blocked_by": "Banner height (MISSING-ASSETS 5.5)",
+   "note": "Colors done (alert, alerttext). Android label Open Sans Bold 14sp (Apps team, DREAMT-4719, 2026-11-19); height not given. DSC-15/19 parked",
    "overall": "in progress"
   },
   {
@@ -1142,7 +1142,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "Color only (DEC-15). Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples). Sizes wait on MISSING-ASSETS 5.5",
+   "note": "Color only (DEC-15); the system draws the bar. Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples)",
    "overall": "in progress"
   },
   {
@@ -1155,7 +1155,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-07 pilot; provisional values in MISSING-ASSETS 5.4",
+   "note": "DEC-07 pilot. Android label confirmed (Roboto Medium 14sp caps; Apps team, DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. iOS rebuild on hold until MISSING-ASSETS 5.10",
    "overall": "built"
   },
   {
@@ -1206,8 +1206,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, height)",
-   "note": "Colors and radius 5 are tokens (DEC-14)",
+   "blocked_by": "Android fill: MISSING-ASSETS 5.6 (a)",
+   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19)",
    "overall": "in progress"
   },
   {
@@ -1219,8 +1219,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, height, colors)",
-   "note": "Radius is a token (DEC-12)",
+   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
+   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)",
    "overall": "in progress"
   },
   {
@@ -1232,8 +1232,8 @@
    "figma": "partial",
    "tokens": "done",
    "code": "written",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (height, label size, padding)",
-   "note": "Colors and radius documented as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md",
+   "blocked_by": "Fill in CT, NYDN, VP: MISSING-ASSETS 5.6 (b)",
+   "note": "Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md",
    "overall": "in progress"
   },
   {
@@ -1245,8 +1245,8 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (font, padding)",
-   "note": "Text #004e87 and radius 15 are tokens",
+   "blocked_by": "Android font and padding: MISSING-ASSETS 5.6 (c)",
+   "note": "Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718)",
    "overall": "in progress"
   },
   {
@@ -1255,11 +1255,11 @@
    "group": "Buttons",
    "name": "Social sign-in buttons",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (fonts, heights, colors)",
-   "note": "Google radius and icon size are tokens",
+   "blocked_by": "",
+   "note": "Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login",
    "overall": "in progress"
   },
   {
@@ -1320,12 +1320,12 @@
    "group": "Controls",
    "name": "Segmented control",
    "owner": "core+variant",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (colors)",
-   "note": "Native control per platform; Core sets colors.",
-   "overall": "blocked"
+   "blocked_by": "",
+   "note": "iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19)",
+   "overall": "todo"
   },
   {
    "id": "component/loading",
@@ -1333,12 +1333,12 @@
    "group": "Controls",
    "name": "Loading indicator",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "todo",
    "code": "todo",
-   "blocked_by": "Apps team: MISSING-ASSETS 5.6 (colors)",
-   "note": "Same pattern on both; no in-button spinner.",
-   "overall": "blocked"
+   "blocked_by": "",
+   "note": "iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md",
+   "overall": "todo"
   },
   {
    "id": "layout/grid",
@@ -1432,16 +1432,42 @@
    "overall": "in progress"
   },
   {
+   "id": "layout/elevation",
+   "area": "Layout",
+   "group": "Layout",
+   "name": "Elevation / shadows",
+   "owner": "core+variant",
+   "figma": "todo",
+   "tokens": "todo",
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new)",
+   "overall": "todo"
+  },
+  {
+   "id": "layout/motion",
+   "area": "Layout",
+   "group": "Layout",
+   "name": "Motion",
+   "owner": "core+variant",
+   "figma": "todo",
+   "tokens": "todo",
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new)",
+   "overall": "todo"
+  },
+  {
    "id": "component/widget",
    "area": "Components",
    "group": "Other",
    "name": "Home-screen widget",
    "owner": "android",
    "figma": "partial",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Night colors and layout: MISSING-ASSETS 5.9",
-   "note": "Day colors are System colors · Android tokens (widget-*), shown in Android Layout · Ads, widget, eEdition › 02",
+   "tokens": "done",
+   "code": "written",
+   "blocked_by": "",
+   "note": "Day colors are System colors · Android tokens (widget-*); night colors color.android-system.widget-night.* (Apps team, DREAMT-4719, 2026-11-19); size and layout documented. Android Layout · Ads, widget, eEdition › 02",
    "overall": "in progress"
   },
   {

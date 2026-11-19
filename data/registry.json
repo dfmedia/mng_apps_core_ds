@@ -8,8 +8,8 @@
   },
   "icon": {
    "core": 32,
-   "ios": 25,
-   "core+variant": 2,
+   "ios": 23,
+   "core+variant": 4,
    "android": 2
   },
   "component": {
@@ -20,7 +20,7 @@
   },
   "layout": {
    "core": 3,
-   "core+variant": 4
+   "core+variant": 6
   }
  },
  "items": [
@@ -965,16 +965,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Media",
    "name": "Skip back 15 s",
-   "owner": "ios",
+   "owner": "core+variant",
    "ios": {
     "source": "SF gobackward.15",
     "native": "gobackward.15"
    },
    "android": {
-    "source": null,
-    "native": null
+    "source": "Media3 skip_back_10 (skips 10 s)",
+    "native": "replay_10"
    },
-   "note": "Android player has no skip controls.",
+   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
    "core": {
     "figma": null,
     "spec": null
@@ -985,16 +985,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Media",
    "name": "Skip forward 15 s",
-   "owner": "ios",
+   "owner": "core+variant",
    "ios": {
     "source": "SF goforward.15",
     "native": "goforward.15"
    },
    "android": {
-    "source": null,
-    "native": null
+    "source": "Media3 skip_forward_10 (skips 10 s)",
+    "native": "forward_10"
    },
-   "note": "Android player has no skip controls.",
+   "note": "See Skip back.",
    "core": {
     "figma": null,
     "spec": null
@@ -1470,7 +1470,7 @@
     "source": "UINavigationBar \u00b7 navbar fill, navtext title/buttons"
    },
    "android": {
-    "source": "Toolbar \u00b7 bar fill, bartext title/icons"
+    "source": "Toolbar \u00b7 bar fill, bartext title/icons; 56dp phone / 64dp tablet, title Roboto Medium 16sp caps, elevation 4dp on scroll (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Same job and tokens; each platform draws its native bar.",
    "core": {
@@ -1488,7 +1488,7 @@
     "source": "sectionBar* colors"
    },
    "android": {
-    "source": "Toolbar_Tabs_* colors"
+    "source": "Toolbar_Tabs_* colors; 48dp, Open Sans SemiBold 12sp, 3dp indicator, elevation 2dp (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Same job; native tab strip per platform.",
    "core": {
@@ -1506,7 +1506,7 @@
     "source": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU; screenshots (TDP, NYDN, VP) show five tabs NEWS \u00b7 SECTIONS \u00b7 GAMES \u00b7 YOU \u00b7 NEWSPAPER in a floating bar, selected tab on a lighter pill in the market color"
    },
    "android": {
-    "source": "Bottom navigation \u00b7 bar, navactive, bartext; 24dp icons"
+    "source": "Bottom navigation \u00b7 bar, navactive, bartext; 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Android always uses the nav bar color; iOS too except BS. iOS tab names changed on iOS 26 (Apps team, DREAMT-4718, 2026-11-18); Android tab labels are not in our export.",
    "core": {
@@ -1524,7 +1524,7 @@
     "source": "breakingNewsBanner* \u00b7 alert fill"
    },
    "android": {
-    "source": "Overlay \u00b7 br_news_red #cf000e"
+    "source": "Overlay \u00b7 br_news_red #cf000e; Open Sans Bold 14sp white (Apps team, DREAMT-4719, 2026-11-19); height not given (MISSING-ASSETS 5.5)"
    },
    "note": "One component, one Core alert color (PLAT-03).",
    "core": {
@@ -1578,7 +1578,7 @@
     "source": "Paywall Log In / Register \u00b7 action fill, white Open Sans Bold 14 caps, radius 4 (legacy 5 + 1pt border). NOT SHOWN IN PRODUCTION: login is the Auth0 Universal Login page in every market. Shipped purchase button (meter paywall): \u226545 pt, radius 8, Open Sans Bold 14, paywallPrimaryActionColor (f79fe3339)"
    },
    "android": {
-    "source": "Paywall Subscribe \u00b7 action fill, white caps system font, 60dp tall, square"
+    "source": "Paywall Subscribe \u00b7 action fill, white caps Roboto Medium 14sp, 60dp tall, square (Apps team, DREAMT-4719, 2026-11-19). Main screens (MaterialComponents): Roboto Medium 14sp caps, letterSpacing 0.0893; settings / web view / paywall (Material3): Roboto Medium 14sp sentence case, line height 20sp. Pressed: Material ripple, nothing designed"
    },
    "note": "One Core primary button. Differences to decide: radius (4 vs 0), height, font. The iOS spec came from the native Log In / Register button, which is never shown (Auth0 Universal Login); re-basing it on the meter paywall purchase button is a decision for Karl.",
    "core": {
@@ -1614,7 +1614,7 @@
     "source": "subscriptionTintColor, Open Sans Bold 16, radius 8, inset 16"
    },
    "android": {
-    "source": "buy fill, white 16sp (Monthly bold), square, 14dp padding"
+    "source": "buy fill, white Roboto Bold 16sp (Apps team, DREAMT-4719, 2026-11-19) (style guide: Monthly bold, MISSING-ASSETS 5.4), square, 14dp padding; Monthly has no pressed state"
    },
    "note": "Fill = action on both (PLAT-04). Differences: radius, font.",
    "core": {
@@ -1650,7 +1650,7 @@
     "source": "Push prompt Yes (filled) / No (text), radius 5"
    },
    "android": {
-    "source": "Alerts enable button, square"
+    "source": "Alerts enable CUSTOMIZE: Roboto Medium 14sp caps white, about 40dp, full width, square; fill #ff6859 per the answer vs Alerts_Enable_Button_Background in the export (MISSING-ASSETS 5.6). NO, THANKS: transparent, black text (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Same job; iOS has a Yes/No pair.",
    "core": {
@@ -1686,7 +1686,7 @@
     "source": "\u2014"
    },
    "android": {
-    "source": "whats_new_button_color fill (CT, NYDN, VP: drawable color), white caps Open Sans Bold, radius 6"
+    "source": "whats_new_button_color fill (CT, NYDN, VP: drawable color; which shows is MISSING-ASSETS 5.6), white caps Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp, radius 6"
    },
    "note": "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md.",
    "core": {
@@ -1812,7 +1812,7 @@
     "source": "UISegmentedControl (Your News, login/register, editions)"
    },
    "android": {
-    "source": "MaterialButtonToggleGroup (For You / Saved / Alerts)"
+    "source": "MaterialButtonToggleGroup (For You / Saved / Alerts): track #eeeeee radius 24dp; selected #ffffff (TSAR #f5f5f5), black text; unselected transparent, #696969 text; 17sp bold (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Native control per platform; Core sets colors.",
    "core": {
@@ -1830,7 +1830,7 @@
     "source": "Full-screen overlay (LoadingIndicatorManager)"
    },
    "android": {
-    "source": "Full-screen progress dialog"
+    "source": "Full-screen progress dialog. Spinners: section front #d5d5d5 55dp, generic #e0e6ec\u2192#2a5381, paywall #2a2a2a, others MainStyle_Control_Activated; bars: section-front top #49b0d6\u2192#35b5e4 2dp, web view #1e88e5 on #e3f2fd (Apps team, DREAMT-4719, 2026-11-19)"
    },
    "note": "Same pattern on both; no in-button spinner.",
    "core": {
@@ -1965,6 +1965,42 @@
    }
   },
   {
+   "id": "layout/elevation",
+   "type": "layout",
+   "group": "Layout",
+   "name": "Elevation / shadows",
+   "owner": "core+variant",
+   "ios": {
+    "source": "Set where used; no shared scale"
+   },
+   "android": {
+    "source": "Toolbar 4dp on scroll (0 at rest); settings, web and login toolbars 1dp; section tabs 2dp; cards 3dp (special-section cards 4dp) (Apps team, DREAMT-4719, 2026-11-19)"
+   },
+   "note": "Documented as shipped; no shared scale on either app yet.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "layout/motion",
+   "type": "layout",
+   "group": "Layout",
+   "name": "Motion",
+   "owner": "core+variant",
+   "ios": {
+    "source": "Durations set where used; no shared spec"
+   },
+   "android": {
+    "source": "Footer ad slide 200 ms; list items 300 ms decelerate; section layout 300 ms; slide up/down system medium, accelerate; pulse 280 ms \u00d71.1; shimmer 1000\u20131200 ms linear (Apps team, DREAMT-4719, 2026-11-19)"
+   },
+   "note": "Documented as shipped; no shared spec on either app yet.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
    "id": "component/widget",
    "type": "component",
    "group": "Other",
@@ -1974,9 +2010,9 @@
     "source": "\u2014"
    },
    "android": {
-    "source": "widget_* colors (day), values-night colors, per-market ic_logo + night logo"
+    "source": "widget_* colors (day), night #000000 bg / #ffffff text and divider1 / #b8b8b8 divider2, per-market ic_logo + night logo; 300\u00d7170dp min, 2\u00d71 cells, not resizable, refreshes every 30 min (Apps team, DREAMT-4719, 2026-11-19)"
    },
-   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.9).",
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors are tokens color.android-system.widget-night.* (docs/GUIDE-EXTRAS.md).",
    "core": {
     "figma": null,
     "spec": null

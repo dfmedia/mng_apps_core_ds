@@ -5,8 +5,8 @@
  },
  "summary": {
   "core": 32,
-  "ios-only": 25,
-  "core-variant": 2,
+  "ios-only": 23,
+  "core-variant": 4,
   "android-only": 2
  },
  "purposes": [
@@ -410,23 +410,23 @@
    "group": "Media",
    "purpose": "Skip back 15 s",
    "ios_today": "SF gobackward.15",
-   "android_today": null,
+   "android_today": "Media3 skip_back_10 (skips 10 s)",
    "sf_symbol": "gobackward.15",
-   "material": null,
-   "bucket": "ios-only",
-   "note": "Android player has no skip controls.",
-   "ios_recommendation": "iOS native; Android needs custom vector"
+   "material": "replay_10",
+   "bucket": "core-variant",
+   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
+   "ios_recommendation": "Native on both platforms"
   },
   {
    "group": "Media",
    "purpose": "Skip forward 15 s",
    "ios_today": "SF goforward.15",
-   "android_today": null,
+   "android_today": "Media3 skip_forward_10 (skips 10 s)",
    "sf_symbol": "goforward.15",
-   "material": null,
-   "bucket": "ios-only",
-   "note": "Android player has no skip controls.",
-   "ios_recommendation": "iOS native; Android needs custom vector"
+   "material": "forward_10",
+   "bucket": "core-variant",
+   "note": "See Skip back.",
+   "ios_recommendation": "Native on both platforms"
   },
   {
    "group": "Media",

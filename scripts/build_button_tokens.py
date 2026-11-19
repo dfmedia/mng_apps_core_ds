@@ -73,7 +73,7 @@ andb = {'button': {'android': {
     'primary': {
         'radius': dtok(sa['radius'], 'Corner radius: square (radius-paywall).', shipped=True),
         'height': dtok(sa['height'], 'Height (paywall_button_height).', shipped=True),
-        'label': ftok(P['android_label_font']['family'], 500, P['android_label_font']['size'], 'Label: system font, uppercase. Weight and size PROVISIONAL: ' + P['android_label_font']['why'], textCase='uppercase', letterSpacingEm=P['android_label_font']['letter_spacing_em'], provisional=True)},
+        'label': ftok(P['android_label_font']['family'], 500, P['android_label_font']['size'], 'Label: system font, uppercase. ' + ('' if P['android_label_font'].get('confirmed') else 'Weight and size PROVISIONAL: ') + P['android_label_font']['why'], textCase='uppercase', letterSpacingEm=P['android_label_font']['letter_spacing_em'], provisional=not P['android_label_font'].get('confirmed'))},
     'link': {
         'color': ctok('#000000', 'Text link (Paywall_Text), underlined.', shipped=True, underline=True),
         'label': ftok('Roboto', 400, 16, 'Text link: system sans 16sp, underlined.', shipped=True, underline=True)},

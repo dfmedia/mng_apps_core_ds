@@ -491,7 +491,7 @@
     "background": {
      "$type": "color",
      "$value": "#333333",
-     "$description": "Settings: background (Core, per-platform value): `Settings_Background` (Android): 70 of 77 markets; exceptions documented only (DEC-16)",
+     "$description": "Settings: background (Core, per-platform value): `Settings_Background` (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19).",
      "$extensions": {
       "mng": {
        "source": "Settings_Background",
@@ -513,7 +513,8 @@
         51,
         51
        ],
-       "owner": "core (per-platform value)"
+       "owner": "core (per-platform value)",
+       "not_seen": "never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19)"
       }
      }
     },

@@ -603,6 +603,29 @@
       "source": "android-tribpub styles/dimens"
      }
     }
+   },
+   "top-bar-title": {
+    "$value": {
+     "fontFamily": "Roboto",
+     "fontWeight": 500,
+     "fontSize": "16px"
+    },
+    "$type": "typography",
+    "$description": "Top bar title (Android `toolbar-title`): Roboto Medium 16sp",
+    "$extensions": {
+     "mng": {
+      "role": "Top bar title",
+      "group": "App",
+      "style": "toolbar-title",
+      "asset": null,
+      "system": true,
+      "code": "topBarTitle",
+      "uppercase": true,
+      "fontKnown": true,
+      "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4)",
+      "source": "Apps team, DREAMT-4719 (2026-11-19)"
+     }
+    }
    }
   }
  }

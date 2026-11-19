@@ -27,7 +27,7 @@ NAME = {
     'Follow topic': ('follow-topic', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Unfollow topic': ('unfollow-topic', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Checked': ('checked', ''), 'Unchecked': ('unchecked', ''),
     'Continue': ('continue', ''),
     'Expand page': ('enews-expand-page', ''), 'Fit to screen': ('enews-fit-to-screen', ''), 'Previous page': ('enews-previous-page', ''), 'Next page': ('enews-next-page', ''),
-    'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS ships SF gobackward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18)."), 'Skip forward 15 s': ('skip-forward-15', "iOS ships SF goforward.15; no separate design (Apps team, DREAMT-4718, 2026-11-18)."),
+    'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS ships SF gobackward.15 (15 s), Android Media3 skip_back_10 (10 s); no separate design (Apps team, DREAMT-4718 and DREAMT-4719, 2026-11-18/19). Name says 15 s: rename to skip-back is Karl's call."), 'Skip forward 15 s': ('skip-forward-15', "iOS ships SF goforward.15 (15 s), Android Media3 skip_forward_10 (10 s); no separate design (Apps team, 2026-11-18/19). Name says 15 s: rename to skip-forward is Karl's call."),
     'Rewind': ('rewind', ''), 'Fast forward': ('fast-forward', ''), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).'),
     'Rating star (empty)': ('rating-star-empty', ''), 'Rating star (half)': ('rating-star-half', ''), 'Rating star (full)': ('rating-star-full', ''),
     'Like / favorite': ('like', 'Tweet embeds.'), 'Repost': ('repost', 'Tweet embeds.'), 'Verified': ('verified', 'Tweet embeds.'),
@@ -41,7 +41,6 @@ NAME = {
 ASK = {
     'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
     'eNewspaper tab': '1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr\'s icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
-    'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
 BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}

@@ -26,13 +26,14 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | BTN-02 | Buttons | One button label style for both apps (iOS Open Sans Bold 14, Android system font) | All markets | FUTURE (DEC-07) |
 | BTN-03 | Buttons | Continue button: replace the iOS PNG images with a drawn button, then fold Continue into the Primary button (DSC-24) | 10 iOS image copies; both apps | FUTURE (DEC-14) |
 | CLR-08 | Color | Bring the exception markets in line with the majority (controls and app shell; docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md) | ~25 markets | FUTURE (DEC-14) |
-| CLR-09 | Color | Saratogian (TSAR) Android 15+ status bar: white icons on #F5F5F5 (1.09:1) because the app only switches to dark icons for exactly #FFFFFF | 1 market (Android) | DONE (Karl, 2026-11-10: white bar + dark icons, assumed in production; Ameer to confirm) |
+| CLR-09 | Color | Saratogian (TSAR) Android 15+ status bar: white icons on #F5F5F5 (1.09:1) because the app only switches to dark icons for exactly #FFFFFF | 1 market (Android) | PROPOSED (Apps team, 2026-11-19: production still shows white icons on #F5F5F5; the 2026-11-10 correction is removed) |
 | TYPE-03 | Type | One serif for both apps | — | REJECTED (Karl 2026-10-30: fonts stay per platform) |
 | TYPE-04 | Type | Shared type scale: one set of sizes for both apps, each in its own fonts | All markets | FUTURE (DEC-09) |
 | TYPE-05 | Type | Remove per-market font exceptions (iOS NYDN, VP…; Android Open Sans group, NYDN, CT, MC…) | ~13 markets | FUTURE (DEC-09) |
 | LAY-01 | Layout | Reconcile the two breakpoint sets (668/835/1113 vs 668/769/1025) | iPad section fronts | NOT PURSUED (2026-11-10: both documented as shipped) |
 | TYPE-01 | Type | Retire the legacy Style.json template (7 markets) | BS, DP, HC, MC, OS, SS, VP | PROPOSED |
 | TYPE-02 | Type | Remove font fallbacks that change size (e.g. 12 → 10) | `AppThemeable.swift:630` | PROPOSED |
+| TYPE-06 | Type | Android font file names that never load: NYDN `.ttff`; MC unused `OpenSans-Semibold.ttf` strings | NYDN, MC (Android) | PROPOSED |
 
 ---
 
@@ -211,22 +212,24 @@ Your News checkbox is 30 × 30 and social login icons are 24 pt. Keep the visual
 Only Primary exists. Disabled is styled only on tracking-consent Continue; loading is a full-screen overlay. Propose Secondary, Text, Disabled and inline Loading variants. Not pursued: neither app ships Secondary or an in-button Loading state, so the design system documents Primary, Disabled and Text link as built (DEC-07) and the full-screen loading overlay as shipped. If the Apps team adds these states, document them then.
 
 ### BTN-01 · One primary button height — `FUTURE`
-Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `button.ios.primary.height` 44 pt (provisional; not in the source, MISSING-ASSETS 5.4), Android `button.android.primary.height` 60 dp (`paywall_button_height`). Future change: one height for both, at least 48 so it meets both apps' touch minimums (44 pt / 48 dp).
+Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `button.ios.primary.height` 44 pt (provisional; the shipped purchase button is at least 45 pt, MISSING-ASSETS 5.10), Android `button.android.primary.height` 60 dp (`paywall_button_height`). Future change: one height for both, at least 48 so it meets both apps' touch minimums (44 pt / 48 dp).
 
 ### BTN-02 · One button label style — `FUTURE`
-Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font stays per platform for now: iOS Open Sans Bold 14 uppercase, Android system font uppercase (Roboto Medium 14sp, provisional). Future change: one label style in Core so the platform files no longer need their own label.
+Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font stays per platform for now: iOS Open Sans Bold 14 uppercase, Android system font uppercase (Roboto Medium 14sp, confirmed by the Apps team 2026-11-19). Future change: one label style in Core so the platform files no longer need their own label.
 
 ### BTN-03 · Continue button — `FUTURE`
 Karl, 2026-11-04 (DEC-14): keep Continue as shipped on each platform. iOS draws it as PNG images (Continue-*, 159 x 55 pt, background and chevron only, 10 market copies); Android draws it (bg_continue.xml, 152 x 54 dp, radius 9, Open Sans SemiBold 15, fill `btn_continue` = action in 70 of 77 markets). Future change: replace the iOS images with a drawn, token-tinted button, then fold Continue into the Primary button (DSC-24).
 
 ### CLR-08 · Exception markets — `FUTURE`
 Karl, 2026-11-04 (DEC-14): every color is built with the majority value; markets that ship something else are documented only (docs/CONTROL-EXCEPTIONS.md, docs/SHELL-EXCEPTIONS.md). Future change: bring those markets in line, or confirm them as a market-specific design and add them back as tokens.
-DEC-15 (2026-11-05): the 15 iOS header band and Android status bar exceptions were accepted as market overrides (the shipped color), so they are built and closed here. The Android ones can be dropped if the apps use dark status-bar icons (MISSING-ASSETS 5.5).
+DEC-15 (2026-11-05): the 15 iOS header band and Android status bar exceptions were accepted as market overrides (the shipped color), so they are built and closed here. The Android ones stay: on Android 14 and below the app always uses white status-bar icons (Apps team, 2026-11-10).
 
-### CLR-09 · TSAR status-bar icons on Android 15+ — `DONE` (Karl, 2026-11-10; assumed in production, Ameer to confirm)
+### CLR-09 · TSAR status-bar icons on Android 15+ — `PROPOSED` (fix on Android)
 What ships (android-tribpub `EdgeToEdgeUtil.java:30`, Ameer M., 2026-11-10): on Android 15+ the status bar shows the market's `NavigationBar_Background` (= top bar) and the app switches to dark icons only when that color is exactly `#FFFFFF`. Saratogian's top bar is `#F5F5F5` (245, 245, 245), so it keeps white icons: **1.09:1, fails 3:1**. Android 14 and below is fine (accepted black override, 21:1). Documented and built as shipped (`statusbar.android.tsar.icons15` = light; Figma Android › Components · App shell › 01).
 Possible fixes, for the Apps team to choose: pick dark icons by luminance instead of an exact match (e.g. when the bar's contrast with white is below 3:1), or ship TSAR's bar as `#FFFFFF`. Nothing changes in the design system until the app does.
 **Resolved (Karl, 2026-11-10):** TSAR shows a **white status bar (`#FFFFFF`) with dark icons** on Android 15+ (21:1); assume this correction is in production. Built as a production correction: `data/shell-overrides.json` `statusbar_icons.android15.production_corrections.tsar` → token `color.android.tsar.statusbar15` + `icons15` dark, Kotlin `statusbar15Override`, `flavors/tsar/res/values-v35`, Figma Android variable `TSAR/statusbar15`. The top bar stays `#F5F5F5`. Ameer M. to confirm what production shows (MISSING-ASSETS 5.5).
+
+**Production checked (Rajal Patel, DREAMT-4719, 2026-11-19):** Saratogian shows the off-white `#F5F5F5` bar with **white icons, barely visible** on Android 15+. The production correction is removed (Karl, 2026-11-19): tokens, Kotlin and Figma document it as shipped (`icons15` = light, no `statusbar15` override). The fix stays with the Apps team (options above).
 
 ### LAY-01 · One breakpoint set — `NOT PURSUED` (Karl, 2026-11-10: document what exists, design nothing new)
 What ships (TroncKit @ e30ad2585, `data/source/ios-tokens.json`): the iPad section front uses **two sets of width steps**.
@@ -252,3 +255,11 @@ One set of sizes for both apps, each app keeping its own fonts. Until then (DEC-
 
 ### TYPE-05 · Remove per-market font exceptions — `FUTURE`
 Some markets override the standard fonts: iOS NYDN (Open Sans Condensed) and VP (Open Sans), plus single-market values in a few cell and paywall styles; Android DP, SIT, TOD, TTT, VP (Open Sans for headlines and article text), NYDN, CT, MC, HC, OS, SS (byline, settings, search). Every market should use its platform's standard styles. Today they are tracked as notes on each type token (docs/TYPE-STYLES.md source notes).
+
+### TYPE-06 · Android font file names that never load — `PROPOSED` (fix on Android)
+What ships (Apps team, Rajal Patel, DREAMT-4719, 2026-11-19; was MISSING-ASSETS 4.5):
+- **NYDN** `StreamModule_Font_Time_And_Blurb` → `OpenSansCondensed-Bold.ttff` (double f). The file doesn't load, so the time / blurb line in the notification and stream lists falls back to **Roboto Regular**. Fix: rename to `OpenSansCondensed-Bold.ttf` (then NYDN shows Open Sans Condensed Bold like the other 76 markets).
+- **MC** `Article_Byline_Regular` and `Article_Dateline_Regular` → `OpenSans-Semibold.ttf` (lower-case b; the bundled file is `OpenSans-SemiBold.ttf`). The file wouldn't load, but no style references these two strings: MC bylines and datelines use `OpenSans-Bold.ttf`. Fix: delete the two unused strings (no visual change).
+
+Documented as shipped in docs/TYPE-FONT-EXCEPTIONS.md (the export's file names). Nothing changes in the design system until the app does.
+

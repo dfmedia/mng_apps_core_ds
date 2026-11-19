@@ -1,0 +1,208 @@
+{
+ "$description": "Structured copy of the Android answers on DREAMT-4719 (2026-11-19) that scripts read. Source data: do not edit. Wording and full answer: 2026-11-19-DREAMT-4719-android.md in this folder.",
+ "source": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)",
+ "statusbar_tsar": {
+  "android15_bar": "#F5F5F5",
+  "icons": "white",
+  "note": "Barely visible white icons on the off-white bar (MISSING-ASSETS 5.5: production is not white with dark icons)"
+ },
+ "shell": {
+  "unit": "dp",
+  "top_bar": {
+   "height_phone": 56,
+   "height_tablet": 64,
+   "title": "Roboto Medium 16sp, all caps",
+   "title_exceptions": "Restaurants and the corekit settings screen use the plain AppCompat title: Roboto Medium 20 (answer says 20dp)"
+  },
+  "section_tabs": {
+   "height": 48,
+   "label": "Open Sans SemiBold 12sp",
+   "indicator": 3
+  },
+  "bottom_nav": {
+   "height": 56,
+   "icon": 24,
+   "label": "Roboto Regular 10sp"
+  },
+  "breaking_news": {
+   "label": "Open Sans Bold 14sp",
+   "text": "#FFFFFF",
+   "fill": "#CF000E",
+   "height": null
+  }
+ },
+ "buttons": {
+  "system": "No app-wide button style; plain Buttons get Material library defaults",
+  "main_screens": "MaterialComponents theme: Roboto Medium 14sp, ALL CAPS, letterSpacing 0.0893",
+  "m3_screens": "Settings / web view / paywall (Material3 theme): Roboto Medium 14sp, sentence case, line height 20sp",
+  "paywall_subscribe": {
+   "height": 60,
+   "label": "Roboto Medium 14sp, all caps, white"
+  },
+  "subscription_options": {
+   "label": "Roboto Bold 16sp, white"
+  },
+  "pressed": "None designed. Material ripple on Material buttons, ?selectableItemBackground ripple on some views; the monthly subscription option has no pressed state. Legacy selectors: What's New close pressed #FF6859; update-app dialog button #076C9C → #6E8D9B pressed."
+ },
+ "alerts_enable": {
+  "label": "Roboto Medium 14sp, all caps, white",
+  "padding": 10,
+  "height_approx": 40,
+  "width": "full width",
+  "fill": "#FF6859",
+  "fill_note": "same in every market (answer)",
+  "no_thanks": "transparent, black text",
+  "alerts_tab": "The Alerts-tab \"Enable Alerts\" is a system AlertDialog button"
+ },
+ "whats_new": {
+  "label": "Open Sans Bold 14sp (18sp landscape, 25sp tablet), all caps, white",
+  "label_sizes": {
+   "phone": 14,
+   "landscape": 18,
+   "tablet": 25
+  },
+  "padding": 15,
+  "height_approx": 50,
+  "radius": 6,
+  "fill": "whats_new_button_color (per market)"
+ },
+ "segmented": {
+  "track": "#EEEEEE",
+  "track_radius": 24,
+  "selected_fill": "#FFFFFF",
+  "selected_fill_tsar": "#F5F5F5",
+  "selected_text": "#000000",
+  "unselected_fill": "transparent",
+  "unselected_text": "#696969",
+  "label": "17sp bold"
+ },
+ "loading": [
+  {
+   "where": "Section-front spinner",
+   "value": "#D5D5D5",
+   "size": "55dp"
+  },
+  {
+   "where": "Section-front top bar",
+   "value": "#49B0D6 → #35B5E4 gradient",
+   "size": "2dp"
+  },
+  {
+   "where": "Generic spinner",
+   "value": "#E0E6EC → #2A5381"
+  },
+  {
+   "where": "Paywall spinner",
+   "value": "#2A2A2A"
+  },
+  {
+   "where": "Web-view bar",
+   "value": "#1E88E5 on #E3F2FD"
+  },
+  {
+   "where": "Other ProgressBars",
+   "value": "each market's MainStyle_Control_Activated"
+  }
+ ],
+ "settings_background": {
+  "status": "unused",
+  "why": "The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white"
+ },
+ "skip": {
+  "seconds": 10,
+  "source": "AppPlaybackService SEEK_INCREMENT_MS = 10_000",
+  "icons": "Media3 skip_back_10 / skip_forward_10",
+  "material_ok": "Material Symbols' 10 s icons work as they are"
+ },
+ "type_top_bar_title": {
+  "family": "Roboto",
+  "weight": 500,
+  "size": 16,
+  "uppercase": true,
+  "style_source": "MC.TextAppearance.AppCompat.Widget.ActionBar.Title"
+ },
+ "fonts_45": {
+  "NYDN": "OpenSansCondensed-Bold.ttff does not load; falls back to Roboto Regular (time/blurb line in notification and stream lists). Fix: rename to .ttf",
+  "MC": "OpenSans-Semibold.ttf would not load, but Article_Byline_Regular / Article_Dateline_Regular are not referenced by any style; MC bylines and datelines use OpenSans-Bold.ttf"
+ },
+ "elevation": [
+  {
+   "where": "Toolbar",
+   "dp": "4 on scroll (0 at rest)"
+  },
+  {
+   "where": "Settings, web and login toolbars",
+   "dp": "1"
+  },
+  {
+   "where": "Section tabs",
+   "dp": "2"
+  },
+  {
+   "where": "Cards",
+   "dp": "3 (special-section cards 4)"
+  }
+ ],
+ "motion": [
+  {
+   "where": "Footer ad slide",
+   "duration": "200 ms"
+  },
+  {
+   "where": "List item animator",
+   "duration": "300 ms decelerate"
+  },
+  {
+   "where": "Section layout transition",
+   "duration": "300 ms"
+  },
+  {
+   "where": "slide_up / slide_down",
+   "duration": "system medium duration, accelerate"
+  },
+  {
+   "where": "Pulse",
+   "duration": "280 ms, scale 1.1"
+  },
+  {
+   "where": "Shimmer",
+   "duration": "1000–1200 ms linear loop"
+  }
+ ],
+ "widget": {
+  "colors": {
+   "widget_bg": [
+    "#FFFFFF",
+    "#000000"
+   ],
+   "widget_text_main": [
+    "#000000",
+    "#FFFFFF"
+   ],
+   "widget_divider1": [
+    "#000000",
+    "#FFFFFF"
+   ],
+   "widget_divider2": [
+    "#B8B8B8",
+    "#B8B8B8"
+   ]
+  },
+  "colors_note": "day / night; no market overrides",
+  "size": "minWidth 300dp, minHeight 170dp, target 2×1 cells, not resizable, refreshes every 30 min",
+  "layout": "16dp rounded card, 16dp padding. Date 12sp top-right. Logo 145 × 25dp. 2dp divider1. Lead row: 66dp-wide thumbnail (7dp corners), bold 15sp headline (max 3 lines). 2px divider2 at 12dp. Second headline bold 16sp (max 2 lines)."
+ },
+ "type_styles": {
+  "$description": "Android text styles the export does not have, answered by the Apps team; scripts/android_answered_type.py adds them to the Android source before compare_type.py and build_type_tokens.py read it.",
+  "App": [
+   {
+    "name": "toolbar-title",
+    "family": "roboto",
+    "fontSize": "16px",
+    "fontWeight": 500,
+    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4). Apps team, DREAMT-4719 (2026-11-19).",
+    "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4)"
+   }
+  ]
+ }
+}

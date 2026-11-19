@@ -72,7 +72,8 @@
    "sources": {
     "ios": "settingsCellBackgroundColor",
     "android": "Settings_Background"
-   }
+   },
+   "not_seen": "never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19)"
   },
   {
    "collection": "core",

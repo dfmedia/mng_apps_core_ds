@@ -20,6 +20,8 @@ import json, re
 
 C = json.load(open('data/system-color-comparison.json'))
 PAIRS = json.load(open('data/system-color-pairs.json'))['pairs']
+ANS = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
+NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)"}   # Android colors the app sets but nobody sees
 P = C['platforms']
 # UIKit defaults used when iOS leaves a color unset (light mode). Named so Swift uses the system color itself.
 UIKIT = {'sectionListSectionSeparatorColor': ('separator', '#3c3c4349', 'UITableView default separator (UIColor.separator, light: 60, 60, 67 at 29%)'),
@@ -83,9 +85,11 @@ for p in PAIRS:
         for plat, t, c in (('ios', ta, a), ('android', tb, b)):
             t = json.loads(json.dumps(t)); t['$extensions']['mng']['owner'] = 'core (per-platform value)'
             t['$description'] = f"{p['what']} (Core, per-platform value): {t['$description']}"
+            if plat == 'android' and c['key'] in NOT_SEEN:
+                t['$description'] += f" Shipped value, {NOT_SEEN[c['key']]}."; t['$extensions']['mng']['not_seen'] = NOT_SEEN[c['key']]
             put(core, ['color', f'system-{plat}'] + p['name'].split('/'), t)
         flat.append({'collection': 'core', 'name': p['name'], 'what': p['what'], 'values': {'ios': ta['$value'], 'android': tb['$value']}, 'same': False,
-                     'uikit': ta['$extensions']['mng'].get('uikit'), 'sources': {'ios': a['key'], 'android': b['key']}})
+                     'uikit': ta['$extensions']['mng'].get('uikit'), 'sources': {'ios': a['key'], 'android': b['key']}, **({'not_seen': NOT_SEEN[b['key']]} if b['key'] in NOT_SEEN else {})})
 
 camel = lambda n: ''.join(w if i == 0 else w[:1].upper() + w[1:] for i, w in enumerate(re.split(r'[-/.]', n)) if w)
 CORE_CAMEL = {camel(p['name']) for p in PAIRS}

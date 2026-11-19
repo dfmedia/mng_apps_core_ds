@@ -16,7 +16,7 @@
     "height": {
      "$value": "44px",
      "$type": "dimension",
-     "$description": "Height. PROVISIONAL: Not in the source; Apple minimum touch target (size-touch-min). Confirm with Apps team (MISSING-ASSETS 5.4).",
+     "$description": "Height. PROVISIONAL: Not in the source; Apple minimum touch target (size-touch-min). Apps team (DREAMT-4718, 2026-11-18): the shipped purchase button is at least 45 pt; rebuild on hold until MISSING-ASSETS 5.10 is answered.",
      "$extensions": {
       "mng": {
        "provisional": true
@@ -48,7 +48,7 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Text link label. PROVISIONAL: Not in the source; iOS bodyNormalFont. Confirm (MISSING-ASSETS 5.4).",
+     "$description": "Text link label. PROVISIONAL: iOS bodyNormalFont. Apps team (DREAMT-4718, 2026-11-18): the Log In link is Open Sans Regular 14 (11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP). iOS button rebuild on hold (MISSING-ASSETS 5.10).",
      "$extensions": {
       "mng": {
        "postscript": "OpenSans-Regular",

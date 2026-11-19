@@ -259,11 +259,20 @@
    "value": 6,
    "token": "component.android.whats-new-continue.radius"
   },
-  "unknown": [
-   "height",
-   "label size",
-   "padding"
-  ],
+  "answered": {
+   "label": "Open Sans Bold 14sp (18sp landscape, 25sp tablet), all caps, white",
+   "label_sizes": {
+    "phone": 14,
+    "landscape": 18,
+    "tablet": 25
+   },
+   "padding": 15,
+   "height_approx": 50,
+   "radius": 6,
+   "fill": "whats_new_button_color (per market)"
+  },
+  "unknown": [],
+  "ask": "Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)",
   "ios": "Not in the iOS guide"
  },
  "alerts_enable": {
@@ -276,7 +285,18 @@
    "color": "#ffffff"
   },
   "shape": "Square",
-  "registry": "component/permission-prompt (Android side of Notification prompt buttons)"
+  "registry": "component/permission-prompt (Android side of Notification prompt buttons)",
+  "answered": {
+   "label": "Roboto Medium 14sp, all caps, white",
+   "padding": 10,
+   "height_approx": 40,
+   "width": "full width",
+   "fill": "#FF6859",
+   "fill_note": "same in every market (answer)",
+   "no_thanks": "transparent, black text",
+   "alerts_tab": "The Alerts-tab \"Enable Alerts\" is a system AlertDialog button"
+  },
+  "ask": "Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)"
  },
  "ad_slots": {
   "android": {
@@ -390,31 +410,41 @@
   "night": "values-night changes only the home-screen widget colors. The night values are not in the guide.",
   "logo": "All 77 flavors ship their own ic_logo plus a night ic_logo; it shows on the widget.",
   "icons": "eNewspaper and Games icons used in dialogs and the widget (assets/Other).",
-  "unknown": [
-   "night color values (values-night)",
-   "widget layout and sizes"
-  ],
+  "unknown": [],
   "ios": "Not in the iOS guide",
+  "answered": {
+   "size": "minWidth 300dp, minHeight 170dp, target 2×1 cells, not resizable, refreshes every 30 min",
+   "layout": "16dp rounded card, 16dp padding. Date 12sp top-right. Logo 145 × 25dp. 2dp divider1. Lead row: 66dp-wide thumbnail (7dp corners), bold 15sp headline (max 3 lines). 2px divider2 at 12dp. Second headline bold 16sp (max 2 lines).",
+   "source": "Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19; android-tribpub (commit not stated; our export is 1cfb069a6)"
+  },
   "day_tokens": [
    {
     "name": "widget-bg",
     "value": "#ffffff",
-    "source": "widget_bg"
+    "source": "widget_bg",
+    "night": "#000000",
+    "night_token": "color.android-system.widget-night.bg"
    },
    {
     "name": "widget-divider1",
     "value": "#000000",
-    "source": "widget_divider1"
+    "source": "widget_divider1",
+    "night": "#FFFFFF",
+    "night_token": "color.android-system.widget-night.divider1"
    },
    {
     "name": "widget-divider2",
     "value": "#b8b8b8",
-    "source": "widget_divider2"
+    "source": "widget_divider2",
+    "night": "#B8B8B8",
+    "night_token": "color.android-system.widget-night.divider2"
    },
    {
     "name": "widget-text-main",
     "value": "#000000",
-    "source": "widget_text_main"
+    "source": "widget_text_main",
+    "night": "#FFFFFF",
+    "night_token": "color.android-system.widget-night.text-main"
    }
   ]
  },

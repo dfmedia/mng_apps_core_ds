@@ -1,9 +1,9 @@
 {
  "generated_by": "scripts/compare_type.py",
  "counts": {
-  "differs": 11,
+  "differs": 12,
   "ios-only": 48,
-  "unknown": 6,
+  "unknown": 5,
   "android-only": 8,
   "close": 1,
   "same": 1
@@ -25,7 +25,7 @@
  },
  "styles": {
   "ios": 63,
-  "android": 26
+  "android": 27
  },
  "legacy_markets": "BS, DP, HC, MC, OS, SS, VP",
  "roles": [
@@ -1115,9 +1115,20 @@
     "legacy": false,
     "uppercase": false
    },
-   "android": "?",
-   "match": "unknown",
-   "note": ""
+   "android": {
+    "style": "toolbar-title",
+    "group": "App",
+    "family": "Roboto",
+    "weight": 500,
+    "size": 16.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4). Apps team, DREAMT-4719 (2026-11-19).",
+    "legacy": false,
+    "uppercase": true
+   },
+   "match": "differs",
+   "note": "Android: Apps team answer, DREAMT-4719 4.4 (not in the export)"
   },
   {
    "role": "Bottom tab label",

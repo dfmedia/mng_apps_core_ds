@@ -6,9 +6,11 @@ Writes data/guide-extras.json, docs/GUIDE-EXTRAS.md, tokens/android/guide-extras
 Tokens (DEC-12): Android ad slot sizes as component metrics (component.android.ad.*); the four fixed PageSuite eEdition colors
 as Android system colors (color.android-system.eedition.*, DEC-16 fixed colors). Everything else already has a token
 (whats-new-button-color, widget-*, Core ad/background and ad/label, component.android.whats-new-continue.radius) or is unknown.
+Widget night colors (Apps team, DREAMT-4719, 2026-11-19): color.android-system.widget-night.*.
 """
 import json
 ANS = __import__('json').load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))
+AND19 = __import__('json').load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))   # Android answers (5.6, 5.9)
 
 S = json.load(open('data/source/style-guide-extras.json'))
 SYS = json.load(open('data/system-color-comparison.json'))
@@ -64,7 +66,9 @@ whats_new = {'platform': 'android', 'evidence': W['evidence'], 'token_fill': 'wh
              'color_resource_vs_drawable': {m: {'color_resource': fills[m], 'drawable': h} for m, h in W['drawable_overrides'].items()},
              'label': {**W['label'], 'font': font['majority'] if font else None, 'font_markets': font['majority_markets'] if font else None},
              'radius': {'value': W['radius']['value'], 'token': 'component.android.whats-new-continue.radius'},
-             'unknown': W['unknown'], 'ios': W['ios']}
+             'answered': AND19['whats_new'], 'unknown': [],
+             'ask': 'Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)',
+             'ios': W['ios']}
 
 # ---- Ad slots
 A = S['ad_slots']
@@ -75,14 +79,19 @@ ads = {'android': {**A['android'], 'tokens': ad_tokens}, 'ios': A['ios'],
 
 # ---- Widget, eEdition
 WG = S['widget']
-widget = {**WG, 'day_tokens': [{'name': TOK[k.replace('_', '-')]['name'], 'value': TOK[k.replace('_', '-')]['value'], 'source': k} for k in WG['day_keys']]}
+WA = AND19['widget']
+widget = {**WG, 'unknown': [], 'answered': {'size': WA['size'], 'layout': WA['layout'], 'source': AND19['source']},
+          'day_tokens': [{'name': TOK[k.replace('_', '-')]['name'], 'value': TOK[k.replace('_', '-')]['value'], 'source': k,
+                          'night': WA['colors'][k][1], 'night_token': f"color.android-system.widget-night.{k.replace('widget_', '').replace('_', '-')}"} for k in WG['day_keys']]}
+AE = {**S['alerts_enable'], 'answered': AND19['alerts_enable'],
+      'ask': 'Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)'}
 E = S['eedition']
 eedition = {**E, 'colors': [{**c, 'token': f"color.android-system.eedition.{c['id']}"} for c in E['colors']],
             'contrast': {'tab text on tab container': ratio('#ffffff', '#ffffff'), 'inactive tab text on tab container': ratio('#999999', '#ffffff')}}
 
 out = {'generated_by': 'scripts/build_guide_extras.py', 'sources': S['sources'],
        'rule': 'Documented as shipped (DEC-09). Majority values only; exceptions documented, not built (DEC-14/16). Nothing new designed.',
-       'whats_new_continue': whats_new, 'alerts_enable': S['alerts_enable'], 'ad_slots': ads, 'widget': widget, 'eedition': eedition,
+       'whats_new_continue': whats_new, 'alerts_enable': AE, 'ad_slots': ads, 'widget': widget, 'eedition': eedition,
        'images': S['images']}
 json.dump(out, open('data/guide-extras.json', 'w'), indent=1, ensure_ascii=False)
 
@@ -97,7 +106,10 @@ for k, v in A['android']['sizes'].items():
         d: {'$value': f"{v[d]}px", '$type': 'dimension', '$description': f"Ad slot {k} {d}: {use[k]}",
             '$extensions': ext(source='AdsUtil.getAdSizesListOfAdPos', usage=f"{v['width']}x{v['height']} dp: {use[k]} ({A['android']['evidence']})", unit='px')}
         for d in ('width', 'height')}
-for c in eedition['colors']:
+tok['color']['android-system']['widget-night'] = {t['night_token'].split('.')[-1]: {
+    '$value': t['night'].lower(), '$type': 'color', '$description': f"Home-screen widget, night (values-night `{t['source']}`): same in every market. Day value: {t['value']}",
+    '$extensions': ext(rgb=list(int(t['night'][i:i + 2], 16) for i in (1, 3, 5)), source=f"values-night {t['source']}", answered=AND19['source'])} for t in widget['day_tokens']}
+for c in eedition['colors']:   # tokens
     tok['color']['android-system']['eedition'][c['id']] = {
         '$type': 'color', '$value': c['value'],
         '$description': f"PageSuite eEdition {c['what'].lower()} (Android): same in all 77 markets" + (f" (passed as {c['shipped_as']})" if c.get('shipped_as') else ''),
@@ -123,7 +135,9 @@ L += [''] + [f'- {r}' for r in A['android']['rules']] + ['',
       "## What's New Continue button (Android only)", '',
       f"Source: {W['evidence']}. Not in the iOS guide. Label {hexrgb(W['label']['color'])}, {W['label']['case']}, "
       f"`{W['label']['font_key']}` = {whats_new['label']['font']} in {whats_new['label']['font_markets']} of 77 markets. "
-      f"Radius {W['radius']['value']} (`{whats_new['radius']['token']}`). Unknown: {', '.join(W['unknown'])} (MISSING-ASSETS 5.6).", '',
+      f"Radius {W['radius']['value']} (`{whats_new['radius']['token']}`). "
+      f"Apps team ({AND19['source'].split(';')[0]}): label {AND19['whats_new']['label']}; {AND19['whats_new']['padding']}dp padding (about {AND19['whats_new']['height_approx']}dp tall), radius {AND19['whats_new']['radius']}dp. "
+      f"**To clarify:** {whats_new['ask']}", '',
       f"Fill: token `whats-new-button-color` {hexrgb(wn['majority'])} in {wn['majority_markets']} of 77 markets. "
       "CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). "
       "White-label contrast is shown as shipped; below 4.5:1 fails for text.", '',
@@ -133,15 +147,17 @@ for r in fill_rows:
 L += ['', '| Market | Color resource `whats_new_button_color` | Drawable (ships) |', '|---|---|---|']
 for m, v in whats_new['color_resource_vs_drawable'].items():
     L.append(f"| {m} | {hexrgb(v['color_resource'])} | {hexrgb(v['drawable'])} |")
-AE = S['alerts_enable']
 L += ['', '## Alerts enable button (Android)', '',
-      f"Already tracked: {AE['registry']}. Fill `{AE['fill']['key']}` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label {hexrgb(AE['label']['color'])}, {AE['shape'].lower()} corners. Font and height: MISSING-ASSETS 5.6.", '',
+      f"Already tracked: {AE['registry']}. Export: fill `{AE['fill']['key']}` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label {hexrgb(AE['label']['color'])}, {AE['shape'].lower()} corners.", '',
+      f"Apps team ({AND19['source'].split(';')[0]}): CUSTOMIZE: {AE['answered']['label']}, {AE['answered']['padding']}dp padding (about {AE['answered']['height_approx']}dp tall), {AE['answered']['width']}, fill {hexrgb(AE['answered']['fill'].lower())} ({AE['answered']['fill_note']}). "
+      f"NO, THANKS: {AE['answered']['no_thanks']}. {AE['answered']['alerts_tab']}.", '',
+      f"**To clarify:** {AE['ask']}", '',
       '## Home-screen widget (Android only)', '',
       f"Source: {WG['evidence']}. {WG['ios']}.", '',
-      '| Color | Day value (token) | Night value |', '|---|---|---|']
+      '| Color | Day value (token) | Night value (token) |', '|---|---|---|']
 for t in widget['day_tokens']:
-    L.append(f"| `{t['source']}` | {hexrgb(t['value'])} (`{t['name']}`, System colors · Android) | unknown, ask Apps team (5.9) |")
-L += ['', f"- {WG['night']}", f"- {WG['logo']}", f"- {WG['icons']}", f"- Unknown: {', '.join(WG['unknown'])} (MISSING-ASSETS 5.9).", '',
+    L.append(f"| `{t['source']}` | {hexrgb(t['value'])} (`{t['name']}`, System colors · Android) | {hexrgb(t['night'].lower())} (`{t['night_token']}`) |")
+L += ['', f"- values-night changes only these four widget colors; no market overrides (Apps team, {AND19['source'].split(';')[0]}).", f"- Size: {WA['size']}.", f"- Layout: {WA['layout']}", f"- {WG['logo']}", f"- {WG['icons']}", '',
       '## eEdition (PageSuite) colors (Android only)', '',
       f"Source: {E['evidence']}. {E['sdk']}. {' '.join(E['rules'])} {E['ios']}.", '',
       '| Color | Value | Token |', '|---|---|---|']

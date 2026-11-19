@@ -4,7 +4,7 @@
   "android": "android-tribpub @ 1cfb069a6"
  },
  "summary": {
-  "core+variant": 15,
+  "core+variant": 17,
   "core": 9,
   "ios": 2,
   "android": 5
@@ -15,7 +15,7 @@
    "id": "nav-bar",
    "name": "Top bar",
    "ios_today": "UINavigationBar \u00b7 navbar fill, navtext title/buttons",
-   "android_today": "Toolbar \u00b7 bar fill, bartext title/icons",
+   "android_today": "Toolbar \u00b7 bar fill, bartext title/icons; 56dp phone / 64dp tablet, title Roboto Medium 16sp caps, elevation 4dp on scroll (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job and tokens; each platform draws its native bar."
   },
@@ -24,7 +24,7 @@
    "id": "section-tabs",
    "name": "Section tabs",
    "ios_today": "sectionBar* colors",
-   "android_today": "Toolbar_Tabs_* colors",
+   "android_today": "Toolbar_Tabs_* colors; 48dp, Open Sans SemiBold 12sp, 3dp indicator, elevation 2dp (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job; native tab strip per platform."
   },
@@ -33,7 +33,7 @@
    "id": "tab-bar",
    "name": "Bottom tab bar",
    "ios_today": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU; screenshots (TDP, NYDN, VP) show five tabs NEWS \u00b7 SECTIONS \u00b7 GAMES \u00b7 YOU \u00b7 NEWSPAPER in a floating bar, selected tab on a lighter pill in the market color",
-   "android_today": "Bottom navigation \u00b7 bar, navactive, bartext; 24dp icons",
+   "android_today": "Bottom navigation \u00b7 bar, navactive, bartext; 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Android always uses the nav bar color; iOS too except BS. iOS tab names changed on iOS 26 (Apps team, DREAMT-4718, 2026-11-18); Android tab labels are not in our export."
   },
@@ -42,7 +42,7 @@
    "id": "breaking-banner",
    "name": "Breaking-news banner",
    "ios_today": "breakingNewsBanner* \u00b7 alert fill",
-   "android_today": "Overlay \u00b7 br_news_red #cf000e",
+   "android_today": "Overlay \u00b7 br_news_red #cf000e; Open Sans Bold 14sp white (Apps team, DREAMT-4719, 2026-11-19); height not given (MISSING-ASSETS 5.5)",
    "owner": "core",
    "note": "One component, one Core alert color (PLAT-03)."
   },
@@ -69,7 +69,7 @@
    "id": "button-primary",
    "name": "Primary button",
    "ios_today": "Paywall Log In / Register \u00b7 action fill, white Open Sans Bold 14 caps, radius 4 (legacy 5 + 1pt border). NOT SHOWN IN PRODUCTION: login is the Auth0 Universal Login page in every market. Shipped purchase button (meter paywall): \u226545 pt, radius 8, Open Sans Bold 14, paywallPrimaryActionColor (f79fe3339)",
-   "android_today": "Paywall Subscribe \u00b7 action fill, white caps system font, 60dp tall, square",
+   "android_today": "Paywall Subscribe \u00b7 action fill, white caps Roboto Medium 14sp, 60dp tall, square (Apps team, DREAMT-4719, 2026-11-19). Main screens (MaterialComponents): Roboto Medium 14sp caps, letterSpacing 0.0893; settings / web view / paywall (Material3): Roboto Medium 14sp sentence case, line height 20sp. Pressed: Material ripple, nothing designed",
    "owner": "core+variant",
    "note": "One Core primary button. Differences to decide: radius (4 vs 0), height, font. The iOS spec came from the native Log In / Register button, which is never shown (Auth0 Universal Login); re-basing it on the meter paywall purchase button is a decision for Karl."
   },
@@ -87,7 +87,7 @@
    "id": "subscription-option",
    "name": "Subscription option",
    "ios_today": "subscriptionTintColor, Open Sans Bold 16, radius 8, inset 16",
-   "android_today": "buy fill, white 16sp (Monthly bold), square, 14dp padding",
+   "android_today": "buy fill, white Roboto Bold 16sp (Apps team, DREAMT-4719, 2026-11-19) (style guide: Monthly bold, MISSING-ASSETS 5.4), square, 14dp padding; Monthly has no pressed state",
    "owner": "core+variant",
    "note": "Fill = action on both (PLAT-04). Differences: radius, font."
   },
@@ -105,7 +105,7 @@
    "id": "permission-prompt",
    "name": "Notification prompt buttons",
    "ios_today": "Push prompt Yes (filled) / No (text), radius 5",
-   "android_today": "Alerts enable button, square",
+   "android_today": "Alerts enable CUSTOMIZE: Roboto Medium 14sp caps white, about 40dp, full width, square; fill #ff6859 per the answer vs Alerts_Enable_Button_Background in the export (MISSING-ASSETS 5.6). NO, THANKS: transparent, black text (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job; iOS has a Yes/No pair."
   },
@@ -123,7 +123,7 @@
    "id": "button-whats-new",
    "name": "What's New Continue button",
    "ios_today": "\u2014",
-   "android_today": "whats_new_button_color fill (CT, NYDN, VP: drawable color), white caps Open Sans Bold, radius 6",
+   "android_today": "whats_new_button_color fill (CT, NYDN, VP: drawable color; which shows is MISSING-ASSETS 5.6), white caps Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp, radius 6",
    "owner": "android",
    "note": "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md."
   },
@@ -186,7 +186,7 @@
    "id": "segmented",
    "name": "Segmented control",
    "ios_today": "UISegmentedControl (Your News, login/register, editions)",
-   "android_today": "MaterialButtonToggleGroup (For You / Saved / Alerts)",
+   "android_today": "MaterialButtonToggleGroup (For You / Saved / Alerts): track #eeeeee radius 24dp; selected #ffffff (TSAR #f5f5f5), black text; unselected transparent, #696969 text; 17sp bold (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Native control per platform; Core sets colors."
   },
@@ -195,7 +195,7 @@
    "id": "loading",
    "name": "Loading indicator",
    "ios_today": "Full-screen overlay (LoadingIndicatorManager)",
-   "android_today": "Full-screen progress dialog",
+   "android_today": "Full-screen progress dialog. Spinners: section front #d5d5d5 55dp, generic #e0e6ec\u2192#2a5381, paywall #2a2a2a, others MainStyle_Control_Activated; bars: section-front top #49b0d6\u2192#35b5e4 2dp, web view #1e88e5 on #e3f2fd (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core",
    "note": "Same pattern on both; no in-button spinner."
   },
@@ -263,13 +263,31 @@
    "note": "Colors Core (ad/background, ad/label); sizes the same on both (iOS answered 2026-11-18: 320\u00d750 / 728\u00d790 first slot, 300\u00d7250 others; no iOS sticky banner). docs/GUIDE-EXTRAS.md."
   },
   {
+   "group": "Layout",
+   "id": "elevation",
+   "name": "Elevation / shadows",
+   "ios_today": "Set where used; no shared scale",
+   "android_today": "Toolbar 4dp on scroll (0 at rest); settings, web and login toolbars 1dp; section tabs 2dp; cards 3dp (special-section cards 4dp) (Apps team, DREAMT-4719, 2026-11-19)",
+   "owner": "core+variant",
+   "note": "Documented as shipped; no shared scale on either app yet."
+  },
+  {
+   "group": "Layout",
+   "id": "motion",
+   "name": "Motion",
+   "ios_today": "Durations set where used; no shared spec",
+   "android_today": "Footer ad slide 200 ms; list items 300 ms decelerate; section layout 300 ms; slide up/down system medium, accelerate; pulse 280 ms \u00d71.1; shimmer 1000\u20131200 ms linear (Apps team, DREAMT-4719, 2026-11-19)",
+   "owner": "core+variant",
+   "note": "Documented as shipped; no shared spec on either app yet."
+  },
+  {
    "group": "Other",
    "id": "widget",
    "name": "Home-screen widget",
    "ios_today": "\u2014",
-   "android_today": "widget_* colors (day), values-night colors, per-market ic_logo + night logo",
+   "android_today": "widget_* colors (day), night #000000 bg / #ffffff text and divider1 / #b8b8b8 divider2, per-market ic_logo + night logo; 300\u00d7170dp min, 2\u00d71 cells, not resizable, refreshes every 30 min (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "android",
-   "note": "Day colors are System colors \u00b7 Android tokens; night colors unknown (MISSING-ASSETS 5.9)."
+   "note": "Day colors are System colors \u00b7 Android tokens; night colors are tokens color.android-system.widget-night.* (docs/GUIDE-EXTRAS.md)."
   },
   {
    "group": "Other",

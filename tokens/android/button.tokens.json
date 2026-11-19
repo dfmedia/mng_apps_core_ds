@@ -30,12 +30,12 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Label: system font, uppercase. Weight and size PROVISIONAL: Not in the source; Material Components Button default (TextAppearance.MaterialComponents.Button). Confirm (MISSING-ASSETS 5.4).",
+     "$description": "Label: system font, uppercase. Material Components Button default (TextAppearance.MaterialComponents.Button). Confirmed by the Apps team (DREAMT-4719, 2026-11-19): Roboto Medium 14sp, all caps, letterSpacing 0.0893 on MaterialComponents screens and on the blocking paywall Subscribe. Which paywall buttons are sentence case (Material3) is MISSING-ASSETS 5.4.",
      "$extensions": {
       "mng": {
        "textCase": "uppercase",
        "letterSpacingEm": 0.0892,
-       "provisional": true
+       "provisional": false
       }
      }
     }

@@ -33,7 +33,7 @@ export function registerTypeFormats(StyleDictionary) {
       let s = HEADER + `package ${options.packageName}\n\n`;
       s += '/**\n * One Android text style as shipped (android-tribpub styles and dimens).\n';
       s += ' * [assetFile] is the font file the app loads from assets through TypefaceCache; null with [systemFont] = the system font (Roboto);\n';
-      s += ' * null without [systemFont] = the font is not in the export (MISSING-ASSETS 4.4).\n */\n';
+      s += ' * null without [systemFont] = the font is not in the export.\n */\n';
       s += 'data class MngTextStyle(\n    val assetFile: String?,\n    val systemFont: Boolean,\n    val bold: Boolean,\n    val sizeSp: Float,\n    val lineSpacingMultiplier: Float = 1f,\n    val letterSpacingEm: Float = 0f,\n    val allCaps: Boolean = false,\n)\n\n';
       s += '/** Every Android text style, majority-market values. Per-market font exceptions are in the token notes. */\nobject MngTypeStyles {\n';
       for (const t of T) {
