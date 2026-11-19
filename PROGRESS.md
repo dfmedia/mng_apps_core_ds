@@ -11,10 +11,10 @@ Item-level to-do list (every element and component from the iOS and Android styl
 **State:** iOS data is now TroncKit `f79fe3339` (export on DREAMT-4718, 2026-11-19; 78 iOS markets with TDH). Every iOS question is closed (DEC-20 eighth pass). The iOS primary button is the meter paywall purchase button (DEC-22). Open on MISSING-ASSETS: 1.1, 1.12, 3.4, 5.4, 5.6. iOS style guide version `1795119836-15a3`; Android style guide `1795110354-0c21` (still `1cfb069a6`). Karl's ticket attachments live in his local `downloads/` (git-ignored; see downloads/CLEANUP.md): iOS and Android screenshots, 78 market logo folders, fonts, tab icons.
 
 **Waiting on Karl:**
-- Send the Slack message to Patrick Carr (newspaper icon) with a screenshot of Core Icons · System Comparison › 06. Ticket comments posted 2026-11-19 (4718: 276790, 4719: 276791).
+- Ticket comments posted 2026-11-19 (4718: 276790, 4719: 276791). Newspaper icon settled (Patrick's PNG = shipped tab-enews); no Slack message needed.
 - Publish Core, iOS and Android libraries again (Core: TDH in Market Palettes 02/03/06 and System colors; iOS: TDH descriptions; Android: Text link · Android collection, Button labels).
 
-**Waiting on the Apps team:** 1.1, 1.12, 3.4, 5.6, 5.11 (new: OS, SS, TSAR white log-in link). Newspaper icon: Patrick (Slack).
+**Waiting on the Apps team:** 1.1, 1.12, 3.4, 5.6, 5.11 (new: OS, SS, TSAR white log-in link).
 
 **Android screenshot findings (TDP, NYDN, VP, 2026-11-19):** meter paywall button "TRY ONE MONTH FREE" all caps, square, white on the market color; log-in link "Already a Subscriber? Log in to your <market> account", underlined, in `Paywall_LoginButton_Text`; subscription options sentence case and bold for both Monthly and Yearly (TDP, VP); VP savings label: white pill, stroke and text in the market color (not #004E87); Settings: SETTINGS title all caps, category headers spaced out.
 
@@ -175,3 +175,4 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - **2026-11-19** — 78th market in Figma: Core Color · System colors (01 counts, 03 Markets column for 124 iOS colors + tabBarDarkSelectedTintColor row, 05 TDH in I01 = 60, 07 intro; emitter figma_system_colors.py counts per platform), Market Palettes 02 (new card P46 · TDH, numbering kept), 03 (TDH row, 78), 06 (TDH row, no Android build), stat 78. iOS: TDH shell and Text link descriptions say shipped; Components · Button 04 white label in all 78.
 - **2026-11-19** — Core Icons · System Comparison › 06 · Newspaper tab icon: Patrick's vs what ships (new review section, built from Patrick's Slack PNG of Oct 21 and Karl's downloads/tab-icons): Patrick's NewspaperFinal.png and iOS tab-enews are the same drawing in the same gray (#999999); tab-newspaper (unused) is a different book-style glyph; the Android mc_tab_icon_newspaper image is not in our files. Ticket drafts reordered (open items first); Slack draft to Patrick updated.
 - **2026-11-19** — Posted (Karl approved): DREAMT-4718 comment 276790 (1.12 left; iOS list closed) and DREAMT-4719 comment 276791 (savings-label guide error; open 5.6, 5.11, 3.4, 1.1, 1.12; 5.3 and 5.4 closed). Slack draft to Patrick is with Karl.
+- **2026-11-19** — Karl: the newspaper icon is settled. Patrick's NewspaperFinal.png is the shipped iOS `tab-enews` (same drawing, same #999999); iOS has no vector (1.1), so nothing to ask Patrick. ICON-NAMES note and Core Icons › 06 intro updated.

@@ -184,7 +184,7 @@
    "bucket": "Core",
    "ios": "tab-enews · tab-newspaper",
    "android": "mc_tab_icon_newspaper · ic_newspaper",
-   "note": "iOS: NEWSPAPER, the fifth tab in all 78 markets, image set tab-enews (PNG), opens the PageSuite reader; tab-newspaper is never shown (Apps team, 2026-11-19).",
+   "note": "iOS: NEWSPAPER, the fifth tab in all 78 markets, image set tab-enews (PNG), opens the PageSuite reader; tab-newspaper is never shown (Apps team, 2026-11-19). Patrick Carr's NewspaperFinal.png (Slack, Oct 21) is the same drawing in the same gray #999999 (compared 2026-11-19, Core Icons › 06); no vector exists (1.1).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "newspaper",
