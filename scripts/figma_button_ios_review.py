@@ -30,12 +30,12 @@ elif MODE == '4':
     rows = [{'group': 'Our iOS primary button (DEC-07) vs the meter paywall purchase button'}]
     for r in D['comparison']:
         rows.append([{'t': r['property'], 'b': True}, r['spec'], r['shipped'], {'chip': r['verdict']}, dash(r['note'])])
-    rows.append({'group': 'To settle before any rebuild'})
+    rows.append({'group': 'Asked the Apps team (MISSING-ASSETS 5.10); no rebuild until they answer'})
     for i, q in enumerate(D['questions'], 1):
-        rows.append([{'t': f'Question {i}', 'b': True}, q, '—', {'chip': 'Open'}, '—'])
+        rows.append([{'t': f'5.10 · {i}', 'b': True}, q, '—', {'chip': 'Open'}, '—'])
     T = {'name': '04 · Primary button: our spec vs what ships', 'title': 'Primary button: our spec vs what ships (review)',
          'intro': 'Compares the iOS primary button spec in 01 with the closest button iOS actually shows, the meter paywall purchase button. '
-                  'Nothing is rebuilt until the questions below are settled (Karl, 2026-11-18). ' + SRC,
+                  f"Screenshot check, {D['screenshot']}. Nothing is rebuilt until the Apps team answers the questions below (Karl, 2026-11-19). " + SRC,
          'columns': [{'name': 'Property', 'w': 180}, {'name': 'Our spec (01)', 'w': 360}, {'name': 'Shipped purchase button', 'w': 380}, {'name': 'Same?', 'w': 110}, {'name': 'Note', 'w': 380}],
          'rows': rows}
 else:

@@ -34,7 +34,7 @@ for (const s of DATA.sets) for (const state of ['Checked', 'Unchecked']) {
   page.appendChild(c); comps.push(c);
 }
 const set = figma.combineAsVariants(comps, page); set.name = 'Checkbox · iOS (as shipped)';
-set.description = 'iOS Your News topic checkbox as shipped: an image per market set, not a tinted control. 30 × 30 pt control (checkbox/size), image 17 × 18 pt centered (MISSING-ASSETS 5.7). Source: data/ios-checkbox.json · docs/components/CHECKBOX-IOS.md.';
+set.description = 'iOS Your News topic checkbox as shipped: an image per market set, not a tinted control. 30 × 30 pt control (checkbox/size), image 17 × 18 pt centered at natural size (Apps team, 2026-11-18). Source: data/ios-checkbox.json · docs/components/CHECKBOX-IOS.md.';
 set.fills = [solid('#ffffff')]; set.strokes = [solid('#e6e6e6')]; set.strokeWeight = 1; set.cornerRadius = 8;
 const STEP = 70, PAD = 32;
 set.children.forEach(c => { const [setName, state] = c.name.split(', ').map(x => x.split('=')[1]); const i = DATA.sets.findIndex(s => s.set === setName); c.x = PAD + i * STEP; c.y = PAD + (state === 'Checked' ? 0 : STEP); });

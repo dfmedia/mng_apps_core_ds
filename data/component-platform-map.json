@@ -32,7 +32,7 @@
    "group": "App chrome",
    "id": "tab-bar",
    "name": "Bottom tab bar",
-   "ios_today": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU",
+   "ios_today": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU; screenshots (TDP, NYDN, VP) show five tabs NEWS \u00b7 SECTIONS \u00b7 GAMES \u00b7 YOU \u00b7 NEWSPAPER in a floating bar, selected tab on a lighter pill in the market color",
    "android_today": "Bottom navigation \u00b7 bar, navactive, bartext; 24dp icons",
    "owner": "core+variant",
    "note": "Android always uses the nav bar color; iOS too except BS. iOS tab names changed on iOS 26 (Apps team, DREAMT-4718, 2026-11-18); Android tab labels are not in our export."

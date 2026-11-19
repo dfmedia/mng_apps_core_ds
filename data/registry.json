@@ -1503,7 +1503,7 @@
    "name": "Bottom tab bar",
    "owner": "core+variant",
    "ios": {
-    "source": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU"
+    "source": "UITabBar \u00b7 tabbar, tabactive, tabinactive; FA icons 26\u00d723. iOS 26 (TroncKit f79fe3339): system 9 pt medium titles, TOP NEWS / YOUR NEWS renamed NEWS / YOU; screenshots (TDP, NYDN, VP) show five tabs NEWS \u00b7 SECTIONS \u00b7 GAMES \u00b7 YOU \u00b7 NEWSPAPER in a floating bar, selected tab on a lighter pill in the market color"
    },
    "android": {
     "source": "Bottom navigation \u00b7 bar, navactive, bartext; 24dp icons"

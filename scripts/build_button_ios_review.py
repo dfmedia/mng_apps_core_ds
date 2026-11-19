@@ -27,7 +27,7 @@ comparison = [
  ('Text link font', f"{DEC['provisional']['ios_link_font']['postscript']} {DEC['provisional']['ios_link_font']['size']}, provisional", f"{B['log_in_link']['font']}; {ex_txt}", 'Differs', '8 markets use a smaller size'),
  ('Text link underline', 'None' if not LINK['underline'] else 'Underlined', B['log_in_link']['underline'], 'Differs', ''),
 ]
-out = {'generated_by': 'scripts/build_button_ios_review.py', 'status': 'Findings only (Karl, 2026-11-18): no rebuild until the open questions are settled',
+out = {'generated_by': 'scripts/build_button_ios_review.py', 'status': 'Findings only. Karl, 2026-11-19: no rebuild until the Apps team answers MISSING-ASSETS 5.10', 'screenshot': 'TDP-6-paywall (f79fe3339): about 44–45 pt tall, radius about 8 pt, white bold uppercase label; the whole Log In text underlined',
        'sources': {'spec': 'DEC-07, data/source/button-shipped.json (TroncKit e30ad2585)', 'shipped': ANS['source']},
        'login': B['login'], 'single_primary': B['single_primary'], 'pressed': B['pressed'],
        'shipped': B['shipped'] + [{'id': 'subscription-option', 'name': 'Subscription option (earlier guide, e30ad2585)', 'height': None, 'radius': 8, 'label': 'Open Sans Bold 16', 'fill': 'subscriptionTintColor', 'text': None}],
@@ -36,6 +36,6 @@ out = {'generated_by': 'scripts/build_button_ios_review.py', 'status': 'Findings
        'questions': ['Is the purchase button label forced to uppercase, or the text each market sets?',
                      'Is the height fixed at 45 pt or content-driven (at least 45)?',
                      'Do the legacy-template markets (BS, DP, HC, MC, OS, SS, VP) draw the purchase button differently?',
-                     'Should the iOS primary button be the purchase button only, or the shared pattern of the purchase and Manage subscription buttons (radius 8, about 44 pt)?']}
+                     'Is the label always white?']}
 json.dump(out, open('data/button-ios-review.json', 'w'), indent=1, ensure_ascii=False)
 print(len(out['shipped']), 'shipped buttons;', sum(r['verdict'] == 'Differs' for r in out['comparison']), 'differences;', len(out['questions']), 'questions')

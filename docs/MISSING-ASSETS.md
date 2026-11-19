@@ -9,7 +9,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 
 **Numbers don't change.** When a question is answered we remove it and leave a gap, so the numbers you have quoted stay the same.
 
-**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. 1.3, 1.4, 1.8, 2.1, 4.1 and 6.1 have follow-up questions.
+**Thank you for the iOS answers.** Most iOS questions are now closed, and several below are down to their Android half. 1.3, 1.4, 1.8, 2.1, 4.1 and 6.1 have follow-up questions, and 5.10 is new.
 
 ## Most needed
 
@@ -64,6 +64,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 | 5.5 | Android: what are the production app shell sizes? And does Saratogian show a white status bar with dark icons on Android 15+ in production? | Sizes: heights, paddings and title / label text sizes for the top bar, section tabs, bottom navigation and breaking-news banner. The style guide only has example values. iOS is answered. Saratogian: the export's bar color is #F5F5F5, which by `EdgeToEdgeUtil.java:30` gives white icons. |
 | 5.6 | Android: what are the font, size and height of the Alerts Enable and What's New buttons, and the colors of the segmented control and loading indicator? | Segmented control: the For You / Saved / Alerts `MaterialButtonToggleGroup`. Loading: the full-screen progress dialog. iOS is answered. |
 | 5.9 | Android home-screen widget: what are the night colors, and the layout and sizes? | `values-night` changes `widget_bg`, `widget_divider1`, `widget_divider2` and `widget_text_main`; the values aren't in the style guide. |
+| 5.10 | iOS meter paywall purchase button: is the label forced to uppercase or the text each market sets; is the height fixed at 45 pt or does it grow with the text; do BS, DP, HC, MC, OS, SS and VP draw it differently (radius, border); is the label always white? | Your answer: at least 45 pt (45 measured on TDP), radius 8, Open Sans Bold 14, `paywallPrimaryActionColor`. TDP's text "TRY ONE MONTH FREE" is uppercase; the default "Subscription Offers" isn't. We'll match our primary button to it once these are settled. |
 
 ## 6. Platform
 

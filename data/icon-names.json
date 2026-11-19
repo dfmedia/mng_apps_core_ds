@@ -201,7 +201,7 @@
    "bucket": "Core",
    "ios": "tab-games · SF gamecontroller.fill",
    "android": "mc_tab_icon_games · ic_games",
-   "note": "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18).",
+   "note": "iOS 26 screenshots: puzzle-piece outline. No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "gamecontroller.fill",

@@ -1,6 +1,7 @@
 {
  "generated_by": "scripts/build_button_ios_review.py",
- "status": "Findings only (Karl, 2026-11-18): no rebuild until the open questions are settled",
+ "status": "Findings only. Karl, 2026-11-19: no rebuild until the Apps team answers MISSING-ASSETS 5.10",
+ "screenshot": "TDP-6-paywall (f79fe3339): about 44–45 pt tall, radius about 8 pt, white bold uppercase label; the whole Log In text underlined",
  "sources": {
   "spec": "DEC-07, data/source/button-shipped.json (TroncKit e30ad2585)",
   "shipped": "Ameer Moukadam, DREAMT-4718 comment 276648, 2026-11-18; TroncKit @ f79fe3339; MNG iOS Style Guide v21 (artifact version 1795029427-a74c)"
@@ -157,6 +158,6 @@
   "Is the purchase button label forced to uppercase, or the text each market sets?",
   "Is the height fixed at 45 pt or content-driven (at least 45)?",
   "Do the legacy-template markets (BS, DP, HC, MC, OS, SS, VP) draw the purchase button differently?",
-  "Should the iOS primary button be the purchase button only, or the shared pattern of the purchase and Manage subscription buttons (radius 8, about 44 pt)?"
+  "Is the label always white?"
  ]
 }

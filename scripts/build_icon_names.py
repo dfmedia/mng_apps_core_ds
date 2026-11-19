@@ -18,7 +18,7 @@ NAME = {
     'Save (not saved)': ('save', ''), 'Saved': ('saved', 'Android also shows a star in special sections (see below), same name (DEC-17).'),
     'Home tab': ('tab-home', ''), 'Sections / menu': ('menu', 'Sections tab and the eNewspaper menu.'),
     'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', 'No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).'), 'eNewspaper tab': ('tab-enewspaper', ''),
-    'Games tab': ('tab-games', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Digital tab': ('tab-digital', ''),
+    'Games tab': ('tab-games', "iOS 26 screenshots: puzzle-piece outline. No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Digital tab': ('tab-digital', ''),
     'Expand / show more': ('expand', ''), 'Collapse / show less': ('collapse', ''), 'Back': ('back', ''),
     'Forward / disclosure': ('forward', ''), 'Close': ('close', ''), 'Close (circle)': ('close-circle', ''),
     'Account': ('account', ''), 'Warning': ('warning', ''), 'Email': ('email', ''), 'Refresh': ('refresh', ''), 'Filter': ('filter', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."),
