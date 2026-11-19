@@ -6,7 +6,7 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 
 Item-level to-do list (every element and component from the iOS and Android style guides, with Figma / tokens / code status): **docs/BACKLOG.md**.
 
-## Next session (handoff 2026-11-18)
+## Next session (handoff 2026-11-19)
 
 **State:** the Apps team answered most iOS questions on DREAMT-4718 (2026-11-18; source copy in data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.md). DEC-20: MISSING-ASSETS keeps its numbers (gaps allowed). Android ticket DREAMT-4719: no new answers since the subhead font (Oct 30). Style guides read 2026-11-18: iOS `1795029427-a74c` (v21, at TroncKit `f79fe3339`), Android `1795019588-222e` (still android-tribpub `1cfb069a6`).
 
@@ -15,7 +15,7 @@ Item-level to-do list (every element and component from the iOS and Android styl
 - 4.1: Figma already has Open Sans Condensed Bold / Light / Light Italic (Google Fonts, checked 2026-11-18). Compare once the Apps team sends NYDN's files (asked in 4.1 and 6.1).
 - iOS primary button: review is in the iOS Figma file, Components · Button › 03 and 04 (four questions to settle first). No rebuild until then.
 
-**Waiting on the Apps team (DREAMT-4718):** 6.1 the iOS export at `f79fe3339` (the iOS style guide's data files can't be read from here: the artifact is owned by the Apps team), 1.3, 1.4, 1.7 (Patrick's For You icon), 2.1. Android questions on DREAMT-4719 not yet nudged.
+**Waiting on the Apps team (DREAMT-4718):** 6.1 the iOS export at `f79fe3339` (the iOS style guide's data files can't be read from here: the artifact is owned by the Apps team), 1.3, 1.4, 1.8 (NEWSPAPER tab, Patrick's newspaper icon), 4.1 (NYDN fonts), 2.1. Android questions on DREAMT-4719 not yet nudged.
 
 **Numbering (DEC-20):** don't renumber MISSING-ASSETS until every question is done; then renumber once (rule 7).
 
