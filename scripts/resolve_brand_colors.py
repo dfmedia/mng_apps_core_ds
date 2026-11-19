@@ -27,6 +27,8 @@ S = {r[1].upper(): dict(zip(sheet['columns'], r)) for r in sheet['rows']}
 ROLES = {'navbar': ('bar', 'primary'), 'action': ('action', 'primary'), 'tabactive': ('navactive', 'secondary')}
 res, stats = [], {}
 for im in sorted(ios['markets'], key=lambda m: m['name']):
+    if im['code'] not in A:
+        print('skip', im['code'], '(iOS only: no Android build yet; handled by apply_new_markets.py)'); continue
     c = im['code']; am = A[c]; sr = S.get(c, {}); row = {'code': c, 'name': im['name'], 'cluster': (sr.get('cluster') or '').strip(), 'sheet_status': sr.get('status_ios', ''), 'roles': {}}
     for role, (akey, skey) in ROLES.items():
         i = norm(im['core'][role]); a = norm(am['core'][akey]); s = norm(sr.get(skey, '') or '')

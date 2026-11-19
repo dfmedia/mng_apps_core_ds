@@ -1,5 +1,5 @@
 {
- "source": "ios-tronckit @ e30ad2585, extracted 2026-10-08",
+ "source": "ios-tronckit @ f79fe3339, extracted 2026-11-19",
  "roles": [
   "navbar",
   "navtext",
@@ -15,7 +15,7 @@
   "tabun": 0,
   "action": 22,
   "header": 6,
-  "alert": 70
+  "alert": 71
  },
  "palettes": [
   {
@@ -300,6 +300,20 @@
    },
    "markets": [
     "TCHW"
+   ]
+  },
+  {
+   "core": {
+    "navbar": "#0072b4",
+    "navtext": "#ffffff",
+    "tabbar": "#0072b4",
+    "tabactive": "#000000",
+    "action": "#000000",
+    "header": "#0072b4",
+    "alert": "#ff0000"
+   },
+   "markets": [
+    "TDH"
    ]
   },
   {
@@ -1738,6 +1752,82 @@
      "fg": "#ffffff",
      "bg": "#004e87",
      "ratio": 8.61,
+     "target": 4.5,
+     "pass": true
+    },
+    {
+     "id": "alert",
+     "label": "Banner text on breaking-news",
+     "fg": "#ffffff",
+     "bg": "#ff0000",
+     "ratio": 4.0,
+     "target": 4.5,
+     "pass": false,
+     "suggest": {
+      "role": "alert",
+      "from": "#ff0000",
+      "to": "#e81b12",
+      "ratio": 4.57
+     }
+    }
+   ]
+  },
+  {
+   "code": "TDH",
+   "name": "Daily Herald",
+   "template": "standard",
+   "core": {
+    "navbar": "#0072b4",
+    "navtext": "#ffffff",
+    "tabbar": "#0072b4",
+    "tabactive": "#000000",
+    "action": "#000000",
+    "header": "#0072b4",
+    "alert": "#ff0000"
+   },
+   "checks": [
+    {
+     "id": "nav",
+     "label": "Nav title on nav bar",
+     "fg": "#ffffff",
+     "bg": "#0072b4",
+     "ratio": 5.16,
+     "target": 4.5,
+     "pass": true
+    },
+    {
+     "id": "tab",
+     "label": "Selected tab on tab bar",
+     "fg": "#000000",
+     "bg": "#0072b4",
+     "ratio": 4.07,
+     "target": 3.0,
+     "pass": true
+    },
+    {
+     "id": "tabun",
+     "label": "Unselected tab on tab bar",
+     "fg": "#ffffff",
+     "bg": "#0072b4",
+     "ratio": 5.16,
+     "target": 3.0,
+     "pass": true
+    },
+    {
+     "id": "action",
+     "label": "White label on primary button",
+     "fg": "#ffffff",
+     "bg": "#000000",
+     "ratio": 21.0,
+     "target": 4.5,
+     "pass": true
+    },
+    {
+     "id": "header",
+     "label": "Header text on header band",
+     "fg": "#ffffff",
+     "bg": "#0072b4",
+     "ratio": 5.16,
      "target": 4.5,
      "pass": true
     },

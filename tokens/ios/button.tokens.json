@@ -4,22 +4,33 @@
   "ios": {
    "primary": {
     "radius": {
-     "$value": "4px",
+     "$value": "8px",
      "$type": "dimension",
-     "$description": "Corner radius, standard template (preferredButtonCornerRadius).",
+     "$description": "Corner radius: meter paywall purchase button (radius-purchase), all 78 markets (DEC-22).",
      "$extensions": {
       "mng": {
        "shipped": true
       }
      }
     },
-    "height": {
-     "$value": "44px",
+    "border-width": {
+     "$value": "0.7px",
      "$type": "dimension",
-     "$description": "Height. PROVISIONAL: Not in the source; Apple minimum touch target (size-touch-min). Apps team (DREAMT-4718, 2026-11-18): the shipped purchase button is at least 45 pt; rebuild on hold until MISSING-ASSETS 5.10 is answered.",
+     "$description": "Border width; the border is drawn in the fill color, all 78 markets (DEC-22).",
      "$extensions": {
       "mng": {
-       "provisional": true
+       "shipped": true,
+       "color": "fill"
+      }
+     }
+    },
+    "height": {
+     "$value": "45px",
+     "$type": "dimension",
+     "$description": "Height: size-button-purchase: constraint is at least 45 pt; one line of fixed 14 pt text, so always 45 in practice (Apps team, 5.10) (DEC-22).",
+     "$extensions": {
+      "mng": {
+       "shipped": true
       }
      }
     },
@@ -30,7 +41,7 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Label: OpenSans-Bold 14, uppercase.",
+     "$description": "Label: OpenSans-Bold 14, always uppercase (TRY ONE MONTH FREE in all 78 markets).",
      "$extensions": {
       "mng": {
        "postscript": "OpenSans-Bold",
@@ -48,11 +59,26 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Text link label. PROVISIONAL: iOS bodyNormalFont. Apps team (DREAMT-4718, 2026-11-18): the Log In link is Open Sans Regular 14 (11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP). iOS button rebuild on hold (MISSING-ASSETS 5.10).",
+     "$description": "Text link label: OpenSans-Regular 14, whole sentence underlined. 11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP (documented only).",
      "$extensions": {
       "mng": {
        "postscript": "OpenSans-Regular",
-       "provisional": true
+       "underline": true,
+       "exceptions": {
+        "11": [
+         "BS",
+         "DP",
+         "HC",
+         "MC",
+         "OS",
+         "SS"
+        ],
+        "12": [
+         "NYDN",
+         "VP"
+        ]
+       },
+       "shipped": true
       }
      }
     },
@@ -536,7 +562,7 @@
      "tdh": {
       "$value": "#0072b4",
       "$type": "color",
-      "$description": "Daily Herald: iOS text link color. provisional market: follows action.",
+      "$description": "Daily Herald: iOS text link color. paywallLinkColor (shipped).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -545,7 +571,7 @@
          180
         ],
         "market": "Daily Herald",
-        "shipped": false,
+        "shipped": true,
         "contrastOnWhite": 5.16
        }
       }

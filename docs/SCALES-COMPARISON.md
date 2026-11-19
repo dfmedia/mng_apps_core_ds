@@ -9,10 +9,10 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | Match | Roles |
 |---|---|
 | ✅ same | 4 |
-| 🟡 close | 1 |
-| 🔴 differs | 5 |
-| iOS only | 10 |
-| Android only | 25 |
+| 🟡 close | 3 |
+| 🔴 differs | 8 |
+| iOS only | 28 |
+| Android only | 20 |
 
 ## Spacing
 
@@ -26,20 +26,28 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | Article top margin, phone | 20 (`space-article-top-phone`) | — | iOS only |  |
 | Article top margin, tablet | 40 (`space-article-top-pad`) | — | iOS only |  |
 | Subscription option inset | 16 (`space-subscription-inset`) | — | iOS only | Android subscription options use 14dp padding (controls notes), not a token |
+| Section tab gap | 15 (`space-sectionbar-gap`) | — | iOS only | Half pads each end of the bar |
+| Section header band text inset | 10 (`space-header-band-inset`) | — | iOS only | iOS-only band |
+| Savings label inset, phone | 10 (`space-savings-inset-phone`) | — | iOS only |  |
+| Savings label inset, tablet | 35 (`space-savings-inset-pad`) | — | iOS only |  |
+| Newsletters button icon gap | 12 (`space-newsletters-icon-gap`) | — | iOS only |  |
 | Paywall login button side margin | — | 24 (`space-login-margin`) | Android only |  |
 
 ## Radius
 
 | Role | iOS | Android | Match | Note |
 |---|---|---|---|---|
-| Primary button radius | 4 (`radius-button`) | 0 (`radius-paywall`) | 🔴 differs | Kept per platform (DEC-07) |
+| Primary button radius | 8 (`radius-purchase`) | 0 (`radius-paywall`) | 🔴 differs | Kept per platform (DEC-07). iOS: meter paywall purchase button; also the Manage App Subscription / Cancel buttons |
+| Native login button radius | 4 (`radius-button`) | — | iOS only | Native Arc login only: not shown in production (Auth0 web view everywhere) |
 | Primary button radius, legacy template | 5 (`radius-button-legacy`) | — | iOS only | iOS legacy template: documented only (DEC-10). Also the push-prompt Yes/No buttons |
 | Subscription option radius | 8 (`radius-subscription`) | — | iOS only | Android subscription options are square (radius-paywall) |
 | Google sign-in radius | 2 (`radius-google`) | — | iOS only |  |
 | What's New Continue / outlined sheet button radius | — | 6 (`radius-whatsnew`) | Android only |  |
 | Your News Continue radius | — | 9 (`radius-continue`) | Android only | iOS draws Continue as PNG images (DSC-24) |
-| Manage subscription / delete account radius | — | 10 (`radius-sheet-button`) | Android only |  |
-| Savings label radius | — | 15 (`radius-discount`) | Android only |  |
+| Manage subscription / delete account radius | — | 10 (`radius-sheet-button`) | Android only | iOS: Settings rows, not buttons; the Manage subscription modal buttons use radius-purchase (8) |
+| Savings label radius | 13 (`radius-savings`) | 15 (`radius-discount`) | 🟡 close |  |
+| Newsletters button radius | 9 (`radius-newsletters`) | — | iOS only | Includes Apple / Google sign-in |
+| Loading indicator card radius | 12 (`radius-hud`) | — | iOS only |  |
 
 ## Size
 
@@ -52,11 +60,21 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | Audio player control | — | 20 (`size-player-control`) | Android only | Below the touch minimum |
 | Author contact icon | — | 22 (`size-author-icon`) | Android only | Below the touch minimum |
 | Overlay close button | — | 40 (`size-overlay-close`) | Android only | Breaking news and live video; below the touch minimum |
-| Paywall primary button height | — | 60 (`size-paywall-button`) | Android only | iOS height not in the source (44 provisional, DEC-07) |
-| Top bar height | — | 56 (`size-toolbar`) | Android only | iOS 44 pt (Apps team, f79fe3339; not in the iOS export) |
+| Paywall primary button height | 45 (`size-button-purchase`) | 60 (`size-paywall-button`) | 🔴 differs | iOS: at least 45, always 45 in practice (Apps team, MISSING-ASSETS 5.10) |
+| Push prompt button height | 40 (`size-button-push`) | — | iOS only | Yes and No |
+| Modal button height | 44 (`size-button-modal`) | — | iOS only | Manage App Subscription and Cancel |
+| Newsletters button height | 52 (`size-button-newsletters`) | — | iOS only | Minimum |
+| Breaking-news banner height | 35 (`size-banner-breaking`) | — | iOS only | Android height not in the source |
+| Section header band height | 30 (`size-header-band`) | — | iOS only | iOS-only band |
+| Segmented control band height | 50 (`size-segment-band`) | — | iOS only | For You / Saved / Alerts |
+| Settings header band height | 30 (`size-settings-header`) | — | iOS only |  |
+| Savings label size | 110 30 (`size-savings-pill`) | — | iOS only | Android size not confirmed (MISSING-ASSETS 5.6) |
+| Newsletters sign-in icon | 22 (`size-newsletters-icon`) | — | iOS only |  |
+| Tournament loading symbol | 72 (`size-tournament-icon`) | — | iOS only | SF Symbols |
+| Top bar height | 44 (`size-navbar`) | 56 (`size-toolbar`) | 🔴 differs | Platform defaults: iOS 44 pt, Android 56 dp |
 | Top bar height, tablet | — | 64 (`size-toolbar-tablet`) | Android only |  |
-| Section tab height | — | 48 (`size-section-tab`) | Android only | iOS 44 pt (Apps team, f79fe3339; not in the iOS export) |
-| Section tab indicator | — | 3 (`size-tab-indicator`) | Android only | iOS 4 pt underline (Apps team, f79fe3339) |
+| Section tab height | 44 (`size-sectionbar`) | 48 (`size-section-tab`) | 🔴 differs |  |
+| Section tab indicator | 4 (`size-section-underline`) | 3 (`size-tab-indicator`) | 🟡 close | iOS fades in over 0.32 s |
 | Bottom navigation height | — | 56 (`size-bottom-nav`) | Android only | iOS: system tab bar height (Apps team, f79fe3339) |
 | Widget minimum width | — | 300 (`size-widget-min-width`) | Android only | Android home-screen widget |
 | Widget minimum height | — | 170 (`size-widget-min-height`) | Android only | Android home-screen widget |

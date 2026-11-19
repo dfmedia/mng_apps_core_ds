@@ -41,8 +41,9 @@ def rgb(h):
 def desc(c, plat, extra=''):
     k = c['kind']
     n = c['follows_markets'] if k == 'follows' else c['majority_markets']
-    base = {'fixed': 'same in all 77 markets', 'majority': f'{n} of 77 markets; exceptions documented only (DEC-16)',
-            'follows': f"follows {c['follows']} in {n} of 77 markets; exceptions documented only (DEC-16)"}.get(k, k)
+    T = P[plat]['market_count']
+    base = {'fixed': f'same in all {T} markets', 'majority': f'{n} of {T} markets; exceptions documented only (DEC-16)',
+            'follows': f"follows {c['follows']} in {n} of {T} markets; exceptions documented only (DEC-16)"}.get(k, k)
     return f"`{c['key']}` ({'iOS' if plat == 'ios' else 'Android'}): {base}{extra}"
 
 def token(c, plat, value=None):

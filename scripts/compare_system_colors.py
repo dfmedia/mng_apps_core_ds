@@ -1,7 +1,7 @@
 """System colors, step 1 (PROGRESS 1.4): every themed color both apps ship, per market, compared and grouped.
 
 Usage: python3 scripts/compare_system_colors.py
-Reads:  data/source/markets.json (iOS TroncKit @ e30ad2585, 124 themed colors x 77 markets)
+Reads:  data/source/markets.json (iOS TroncKit @ f79fe3339, 125 themed colors x 78 markets)
         data/source/android-markets.json (android-tribpub @ 1cfb069a6, 136 colors x 77 markets)
         data/system-color-pairs.json (proposed iOS <-> Android pairs; not confirmed by the Apps team)
         data/control-colors.json, data/shell-colors.json (colors that already have tokens)
@@ -52,7 +52,7 @@ fmt = lambda h: '`not set` (system default)' if h is None else (f'`{h}`' if not 
 # Colors that already have tokens (so the system set is what's left)
 COVERED = {
     'ios': {'navigationBarBackgroundColor': 'brand navbar', 'navigationBarTitleColor': 'brand navtext', 'navigationBarItemTintColor': 'brand navicon',
-            'tabBarBackgroundColor': 'brand tabbar', 'tabBarSelectedTintColor': 'brand tabactive', 'tabBarUnselectedTintColor': 'brand tabinactive',
+            'tabBarBackgroundColor': 'brand tabbar', 'tabBarSelectedTintColor': 'brand tabactive', 'tabBarUnselectedTintColor': 'brand tabinactive', 'tabBarDarkSelectedTintColor': 'shell doc: iOS 26 dark tab accent (SHELL-EXCEPTIONS)',
             'paywallPrimaryActionColor': 'brand action', 'paywallViewPurchaseButtonColor': 'brand buy (= action)',
             'breakingNewsBannerBackgroundColor': 'brand alert', 'breakingNewsBannerTextColor': 'brand alerttext',
             'sectionBarBackgroundColor': 'shell sectiontabbar', 'sectionBarTextColor': 'shell sectiontabtext',
@@ -89,9 +89,10 @@ for plat, D in (('ios', IOS), ('android', AND)):
         # best brand role this color follows (same as the market's own role, near-identical allowed)
         fol = max(((r, sum(1 for c in codes if r in roles[c] and vals[c] is not None and dE(vals[c], roles[c][r]) < 0.012))
                    for r in set().union(*[roles[c].keys() for c in codes])), key=lambda t: t[1])
-        if topn == N: kind = 'fixed'
-        elif fol[1] >= MAJ and fol[1] > topn: kind = 'follows'
-        elif topn >= MAJ: kind = 'majority'
+        NM = len(markets); MJ = NM // 2 + 1   # iOS has 78 markets since f79fe3339 (TDH), Android 77
+        if topn == NM: kind = 'fixed'
+        elif fol[1] >= MJ and fol[1] > topn: kind = 'follows'
+        elif topn >= MJ: kind = 'majority'
         else: kind = 'per-market'
         groups = defaultdict(list)
         for c in codes: groups[vals[c]].append(c)
@@ -123,7 +124,7 @@ for plat, D in (('ios', IOS), ('android', AND)):
         diff = {c['key']: v for c, v in zip(sysc, vec) if v != base[c['key']]}
         palettes.append({'id': f"{'I' if plat == 'ios' else 'A'}{n:02d}", 'markets': ms, 'differences_from_majority': diff})
     names = {m['code']: m['name'] for m in markets}
-    OUT['platforms'][plat] = {'markets': names, 'templates': {m['code']: m.get('template') for m in markets} if plat == 'ios' else None,
+    OUT['platforms'][plat] = {'market_count': len(markets), 'markets': names, 'templates': {m['code']: m.get('template') for m in markets} if plat == 'ios' else None,
                               'colors': colors, 'majority_palette': base, 'palettes': palettes,
                               'summary': {'colors': len(colors), 'covered': sum(1 for c in colors if c['covered_by']),
                                           **Counter(c['kind'] for c in sysc), 'palettes': len(palettes)}}

@@ -1,0 +1,129 @@
+{
+  "$description": "Structured iOS answers from Ameer Moukadam, DREAMT-4718 comment 276765 (2026-11-19). Source data: do not edit. Verbatim text: 2026-11-19-DREAMT-4718-ios.md. Supersedes the 2026-11-18 file where they differ (controls.loading, buttons paywall text).",
+  "source": {
+    "ticket": "DREAMT-4718",
+    "comment": "276765",
+    "code": "TroncKit @ f79fe3339",
+    "guide_version": "1795119836-15a3"
+  },
+  "loading": {
+    "style": "large system spinner on a white card, radius 12",
+    "spinner": {
+      "majority": "#004E87",
+      "majority_markets": 66,
+      "exceptions": {
+        "DP": "#005F7E",
+        "VP": "#005F7E",
+        "BS": "#DAA520",
+        "HC": "#4FA8D1",
+        "MC": "#539CC4",
+        "NYDN": "#4591E0",
+        "OS": "#15919D",
+        "SS": "#761113",
+        "TDCD": "#5B9BC8",
+        "TDP": "#F7A430",
+        "TIVDB": "#E0E2E4"
+      }
+    }
+  },
+  "paywall_text": {
+    "purchase_label": "TRY ONE MONTH FREE",
+    "purchase_label_markets": 78,
+    "purchase_label_source": "\"Paywall_SubscriptionOffers_CallToAction\".localized.uppercased()",
+    "login_link": "Already a Subscriber? Log in to your <market> account",
+    "login_link_nydn": "Log in to your New York Daily News account",
+    "login_link_underline": "whole sentence",
+    "defaults_unused": [
+      "Subscription Offers",
+      "Have an account? / Log In"
+    ]
+  },
+  "purchase_button": {
+    "uppercase": "always",
+    "height": 45,
+    "height_note": "constraint is at least 45 pt; one line of fixed 14 pt text, so always 45 in practice",
+    "radius": 8,
+    "border": "0.7 pt in the fill color",
+    "font": "OpenSans-Bold 14",
+    "label_color": "#FFFFFF",
+    "fill": "paywallPrimaryActionColor",
+    "legacy_differs": false,
+    "markets": 78
+  },
+  "export": {
+    "ref": "f79fe3339",
+    "new_market": {
+      "code": "TDH",
+      "name": "Daily Herald",
+      "template": "standard",
+      "navbar": "#0072B4",
+      "tabbar": "#0072B4",
+      "header": "#0072B4",
+      "action": "#000000"
+    },
+    "new_color": {
+      "name": "tabBarDarkSelectedTintColor",
+      "usage": "selected-tab accent for the iOS 26 dark Liquid Glass tab bar",
+      "markets": {
+        "TDC": "#C3EED8",
+        "TWDD": "#C3EED8"
+      }
+    },
+    "unchanged": "every other color and font value for the original 77 markets"
+  },
+  "saved_tab": {
+    "exists": false,
+    "note": "Saved is the middle segment of the YOU tab. UIImage(systemName: \"saved\") is only in updateTabBasedOnIsPagesuite(), which nothing calls; the missing icon never shows. No fix planned."
+  },
+  "tab_icon_overrides": {
+    "font_awesome_overrides": 0,
+    "note": "BS, DP, HC, MC, OS, SS, VP carry their own copy of the Font Awesome tab icon helper (26 x 23 pt); none changes the icon."
+  },
+  "newspaper_tab": {
+    "position": 5,
+    "markets": 78,
+    "title": "NEWSPAPER",
+    "title_os": "Newspaper",
+    "icon": "tab-enews",
+    "unused_icon": "tab-newspaper",
+    "opens": "PageSuite PSReader in EnewsViewController",
+    "config_note": "bundled config; TB and TBCP get the default tabs (ALERTS instead of GAMES). Remote config not checked.",
+    "patrick_icon": "unknown; ask Patrick"
+  },
+  "logos": {
+    "markets": 78,
+    "vector_files": 81,
+    "note": "vector where one exists, otherwise largest PNG; offline ad images left out"
+  },
+  "fonts": {
+    "open_sans_condensed": {
+      "bold": "1.11",
+      "light": "1.10",
+      "light_italic": "1.10",
+      "bundled_in": "all 78",
+      "used_by": [
+        "NYDN"
+      ]
+    },
+    "open_sans": "1.10",
+    "open_sans_medium": {
+      "version": "3.003",
+      "missing_in": [
+        "CT",
+        "OCR",
+        "TB",
+        "TBCP",
+        "TDP"
+      ]
+    },
+    "pt_serif": "1.000W",
+    "spectral": "2.001",
+    "spectral_nydn": [
+      "Regular",
+      "Italic",
+      "Bold",
+      "BoldItalic"
+    ],
+    "tdp_extra": "Open Sans Condensed Regular 3.003"
+  }
+}

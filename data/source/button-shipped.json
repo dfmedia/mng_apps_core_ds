@@ -1,37 +1,117 @@
 {
- "$description": "Shipped button values, copied from the two style-guide artifacts (read 2026-10-26). Source data: do not edit except to record a new app export. Values not in the source are null with a note; provisional values used by the pilot are in data/button-decisions.json.",
+ "$description": "Shipped button values, copied from the two style-guide artifacts (read 2026-10-26); iOS primary and text link re-recorded from the TroncKit f79fe3339 export and the Apps team answers (DREAMT-4718, 2026-11-19). Source data: do not edit except to record a new app export. Values not in the source are null with a note; provisional values used by the pilot are in data/button-decisions.json.",
  "sources": {
-  "ios": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ e30ad2585: project/5-controls.md, project/components/Buttons, project/tokens.json; colors from data/source/markets.json",
+  "ios": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ f79fe3339: project/5-controls.md, project/tokens.json (radius-purchase, size-button-purchase, paywall-purchase, paywall-login-link); Apps team answers DREAMT-4718 (2026-11-18, 2026-11-19: MISSING-ASSETS 5.4 correction and 5.10); colors from data/source/markets.json",
   "android": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6: project/5-controls.md, project/components/Buttons, project/tokens.json; colors from data/source/android-markets.json"
  },
  "primary": {
   "ios": {
-   "where": "Paywall Log In / Register",
-   "fill": "paywallPrimaryActionColor (= Core action role)",
-   "label_color": "#ffffff (paywallPrimaryTextColor, white in all 77 markets)",
-   "font": {"family": "Open Sans", "weight": "Bold", "postscript": "OpenSans-Bold", "size": 14, "case": "uppercase"},
-   "radius": 4, "radius_source": "radius-button (preferredButtonCornerRadius), 70 standard-template markets",
-   "radius_legacy": 5, "border_legacy": 1, "legacy_source": "radius-button-legacy, 1 pt border in the fill color; legacy-template markets (template = legacy in markets.json)",
-   "height": null, "height_note": "Not in the source. Only size-touch-min (44 pt) is documented.",
-   "disabled": null, "disabled_note": "Only the tracking-consent Continue button has a disabled style (text #aaaaaa, text-only button).",
-   "pressed": null, "pressed_note": "Not in the source.",
-   "loading": "Full-screen overlay (LoadingIndicatorManager); no in-button state"
+   "where": "Meter paywall purchase button (the primary button every market shows; Paywall.storyboard)",
+   "fill": "paywallPrimaryActionColor (= Core action role), always",
+   "label_color": "#ffffff (white in all 78 markets)",
+   "label_text": "TRY ONE MONTH FREE (\"Paywall_SubscriptionOffers_CallToAction\".localized.uppercased(), the same in all 78 markets)",
+   "font": {
+    "family": "Open Sans",
+    "weight": "Bold",
+    "postscript": "OpenSans-Bold",
+    "size": 14,
+    "case": "uppercase"
+   },
+   "radius": 8,
+   "radius_source": "radius-purchase (Paywall.storyboard), all 78 markets",
+   "border": 0.7,
+   "border_color": "the fill color",
+   "border_source": "Paywall.storyboard, all 78 markets",
+   "radius_legacy": null,
+   "border_legacy": null,
+   "legacy_note": "No legacy-template difference: all 78 markets use the same storyboard button (Apps team, 5.10).",
+   "height": 45,
+   "height_source": "size-button-purchase: constraint is at least 45 pt; one line of fixed 14 pt text, so always 45 in practice (Apps team, 5.10)",
+   "disabled": null,
+   "disabled_note": "No disabled style ships on the purchase button.",
+   "pressed": null,
+   "pressed_note": "No custom pressed state: the title fades and the fill stays the same (Apps team, 5.4).",
+   "loading": "Full-screen overlay (LoadingIndicatorManager); no in-button state",
+   "previous": {
+    "recorded": "2026-10-26 (e30ad2585 export)",
+    "where": "Paywall Log In / Register",
+    "radius": 4,
+    "radius_legacy": 5,
+    "border_legacy": 1,
+    "why_replaced": "Paywall Log In / Register are native Arc login buttons that production never shows (Auth0 web view in every market, Apps team 2026-11-18)."
+   }
   },
   "android": {
    "where": "Paywall Subscribe (purchase_button)",
    "fill": "Paywall_PurchaseButton_Background (= Core action role)",
    "label_color": "#ffffff (Paywall_Button_TextColor; 6 markets use a selector with disabled @color/text_disabled)",
-   "font": {"family": "system (Roboto)", "weight": null, "size": null, "case": "uppercase", "note": "Weight and size not in the source."},
-   "radius": 0, "radius_source": "radius-paywall: plain color background, no corner radius",
-   "height": 60, "height_source": "size-paywall-button (paywall_button_height)",
-   "disabled": {"fill": "#c1c8cb", "label": "#767676", "source": "Your News Continue background (bg_continue) and Text_Disabled_Font / button_color selector"},
-   "pressed": null, "pressed_note": "Not in the source.",
+   "font": {
+    "family": "system (Roboto)",
+    "weight": null,
+    "size": null,
+    "case": "uppercase",
+    "note": "Weight and size not in the source."
+   },
+   "radius": 0,
+   "radius_source": "radius-paywall: plain color background, no corner radius",
+   "height": 60,
+   "height_source": "size-paywall-button (paywall_button_height)",
+   "disabled": {
+    "fill": "#c1c8cb",
+    "label": "#767676",
+    "source": "Your News Continue background (bg_continue) and Text_Disabled_Font / button_color selector"
+   },
+   "pressed": null,
+   "pressed_note": "Not in the source.",
    "loading": "Full-screen progress dialog (openProgressDialogFragment); no in-button state"
   }
  },
  "text_link": {
-  "ios": {"where": "Paywall Log In link", "color": "paywallLinkColor (per market, data/source/markets.json)", "font": null, "font_note": "Not in the source.", "underline": false},
-  "android": {"where": "Paywall Log In link", "color": "#000000 (Paywall_Text; underline_paywall_login #000000)", "font": {"family": "system sans", "size": 16}, "underline": true}
+  "ios": {
+   "where": "Meter paywall Log In link (one centered button below the purchase button)",
+   "color": "paywallLinkColor (per market, data/source/markets.json)",
+   "text": "Already a Subscriber? Log in to your <market> account (NYDN: Log in to your New York Daily News account)",
+   "font": {
+    "family": "Open Sans",
+    "weight": "Regular",
+    "postscript": "OpenSans-Regular",
+    "size": 14,
+    "exceptions": {
+     "11": [
+      "BS",
+      "DP",
+      "HC",
+      "MC",
+      "OS",
+      "SS"
+     ],
+     "12": [
+      "NYDN",
+      "VP"
+     ]
+    }
+   },
+   "underline": "whole sentence",
+   "source": "paywall-login-link (paywallViewLoginTextFont), Apps team DREAMT-4718 2026-11-19",
+   "previous": {
+    "font": null,
+    "underline": false,
+    "note": "2026-10-26: font not in the source, no underline recorded"
+   }
+  },
+  "android": {
+   "where": "Paywall Log In link",
+   "color": "#000000 (Paywall_Text; underline_paywall_login #000000)",
+   "font": {
+    "family": "system sans",
+    "size": 16
+   },
+   "underline": true
+  }
  },
- "not_shipped": ["Secondary (outlined) as a system: only two Android bottom-sheet drawables (radius 6 / 10)", "In-button loading on either app", "Disabled on iOS primary"]
+ "not_shipped": [
+  "Secondary (outlined) as a system: only two Android bottom-sheet drawables (radius 6 / 10)",
+  "In-button loading on either app",
+  "Disabled on iOS primary (purchase button)"
+ ]
 }

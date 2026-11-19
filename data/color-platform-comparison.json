@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ios": "ios-tronckit @ e30ad2585, extracted 2026-10-08",
+  "ios": "ios-tronckit @ f79fe3339, extracted 2026-11-19",
   "android": "android-tribpub @ 1cfb069a6 (dev, 2026-10-15): lat-app/src/<flavor>/res/values over lat-app/src/main over corekit libraries"
  },
  "thresholds": {

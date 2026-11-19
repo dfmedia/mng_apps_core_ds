@@ -1,9 +1,12 @@
 """iOS primary button review (Karl, 2026-11-18): our DEC-07 iOS spec next to the buttons iOS actually shows.
+FROZEN 2026-11-19: superseded by DEC-22 (the iOS primary is now the purchase button). data/button-ios-review.json is kept as the record; do not re-run.
 Findings only; nothing is rebuilt. Usage: python3 scripts/build_button_ios_review.py
 Reads:  data/source/button-shipped.json (e30ad2585 style guide), data/button-decisions.json (DEC-07),
         data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json (f79fe3339)
 Writes: data/button-ios-review.json (read by scripts/figma_button_ios_review.py)
 """
+import sys
+sys.exit('Frozen 2026-11-19 (DEC-22): data/button-ios-review.json is the record of the review.')
 import json
 SHIP = json.load(open('data/source/button-shipped.json'))['primary']['ios']
 LINK = json.load(open('data/source/button-shipped.json'))['text_link']['ios']

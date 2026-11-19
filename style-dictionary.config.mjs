@@ -125,7 +125,7 @@ StyleDictionary.registerFormat({
   name: 'mng/swift-button',
   format: ({ dictionary }) => {
     const A = dictionary.allTokens, g = (p) => find(A, p);
-    const r = g('button.ios.primary.radius'), h = g('button.ios.primary.height');
+    const r = g('button.ios.primary.radius'), h = g('button.ios.primary.height'), bw = g('button.ios.primary.border-width');
     const lab = g('button.ios.primary.label'), link = g('button.ios.link.label');
     const links = A.filter(t => t.path[0] === 'button' && t.path[1] === 'ios' && t.path[2] === 'link' && t.path[3] === 'color').sort((a, b) => a.path[4].localeCompare(b.path[4]));
     const col = (p) => { const t = g(p); return `UIColor(mngHex: 0x${hex6(t)})  /* ${t.$value} · ${rgbc(t)} */`; };
@@ -133,12 +133,13 @@ StyleDictionary.registerFormat({
     s += `    /// Primary label color. Core \`button.primary.label\`. Fails 4.5:1 in some markets (IMPROVEMENTS CLR-04).\n    public static let primaryLabel = ${col('button.primary.label')}\n`;
     s += `    /// Disabled fill. Core \`button.disabled.fill\`.\n    public static let disabledFill = ${col('button.disabled.fill')}\n`;
     s += `    /// Disabled label. Core \`button.disabled.label\`.\n    public static let disabledLabel = ${col('button.disabled.label')}\n\n`;
-    s += `    /// Corner radius.\n    public static let cornerRadius: CGFloat = ${px(r)}\n`;
-    s += `    /// Height. PROVISIONAL: not in the source; shipped purchase button is at least 45 pt (MISSING-ASSETS 5.10). Future: BTN-01.\n    public static let height: CGFloat = ${px(h)}\n\n`;
+    s += `    /// Corner radius: meter paywall purchase button, all 78 markets (DEC-22).\n    public static let cornerRadius: CGFloat = ${px(r)}\n`;
+    s += `    /// Border width; the border is drawn in the fill color (DEC-22).\n    public static let borderWidth: CGFloat = ${px(bw)}\n`;
+    s += `    /// Height: at least 45 pt, always 45 in practice (one line of fixed 14 pt text; DEC-22). Future: BTN-01.\n    public static let height: CGFloat = ${px(h)}\n\n`;
     s += '\n';
     s += `    /// Label font: ${lab.$extensions.mng.postscript} ${px({ $value: lab.$value.fontSize })}, uppercase. Falls back to the bold system font at the same size.\n`;
     s += `    public static var labelFont: UIFont { UIFont(name: "${lab.$extensions.mng.postscript}", size: ${px({ $value: lab.$value.fontSize })}) ?? .boldSystemFont(ofSize: ${px({ $value: lab.$value.fontSize })}) }\n`;
-    s += `    /// Text link font. PROVISIONAL (iOS button rebuild on hold, MISSING-ASSETS 5.10).\n    public static var linkFont: UIFont { UIFont(name: "${link.$extensions.mng.postscript}", size: ${px({ $value: link.$value.fontSize })}) ?? .systemFont(ofSize: ${px({ $value: link.$value.fontSize })}) }\n\n`;
+    s += `    /// Text link font (whole sentence underlined). 11 pt in BS, DP, HC, MC, OS, SS and 12 pt in NYDN, VP: documented only.\n    public static var linkFont: UIFont { UIFont(name: "${link.$extensions.mng.postscript}", size: ${px({ $value: link.$value.fontSize })}) ?? .systemFont(ofSize: ${px({ $value: link.$value.fontSize })}) }\n\n`;
     s += '    /// Text link color per market (iOS `paywallLinkColor`, shipped).\n    public static func linkColor(forMarket market: String) -> UIColor? {\n        switch market.lowercased() {\n';
     for (const t of links) s += `        case "${t.path[4]}": return UIColor(mngHex: 0x${hex6(t)})  // ${t.$value} · ${rgbc(t)}\n`;
     s += '        default: return nil\n        }\n    }\n}\n';

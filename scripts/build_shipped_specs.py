@@ -1,6 +1,6 @@
 """App shell sizes, elevation, motion and other controls as shipped, iOS next to Android (documented only, DEC-09).
 Usage: python3 scripts/build_shipped_specs.py   (after build_scale_tokens.py; then figma_shipped_specs.py)
-Reads:  data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json (iOS, TroncKit f79fe3339 answers)
+Reads:  data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json + 2026-11-19 corrections (iOS, TroncKit f79fe3339 answers)
         data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json (Android answers + style guide 1795110354-0c21)
         data/source/android-scales.json (Android size and elevation tokens), data/component-platform-map.json (owner buckets)
 Writes: data/shipped-specs.json, docs/SHIPPED-SPECS.md
@@ -10,6 +10,7 @@ our iOS export (e30ad2585), so they are not iOS tokens yet (MISSING-ASSETS 6.1).
 import json
 
 I = json.load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))
+I2 = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4718-ios.json'))   # corrections (spinner colors, paywall text)
 A = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
 SC = json.load(open('data/source/android-scales.json'))
 OWN = {i['id']: i['owner'] for i in json.load(open('data/component-platform-map.json'))['items']}
@@ -41,7 +42,7 @@ elevation = {'ios': I['shadows'], 'ios_note': I['shadows_note'], 'android': A['e
 motion = {'ios': I['motion'], 'android': A['motion']}
 
 C, ac = I['controls'], A
-lo = C['loading']['spinner']
+lo = I2['loading']['spinner']   # 2026-11-19 correction: 11 colors (TDP orange, MC, NYDN, OS, SS added)
 controls = [
     {'id': 'segmented', 'what': 'Segmented control (For You / Saved / Alerts)',
      'ios': f"{C['segmented']['style']}: selected {C['segmented']['selected']} on {C['segmented']['track']}, {C['segmented']['label']}, {C['segmented']['band']} pt band",

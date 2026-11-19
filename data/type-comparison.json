@@ -1,12 +1,12 @@
 {
  "generated_by": "scripts/compare_type.py",
  "counts": {
-  "differs": 12,
-  "ios-only": 48,
-  "unknown": 9,
+  "differs": 16,
+  "ios-only": 54,
+  "unknown": 4,
   "android-only": 9,
   "close": 1,
-  "same": 1
+  "same": 2
  },
  "families": {
   "ios": [
@@ -24,7 +24,7 @@
   ]
  },
  "styles": {
-  "ios": 63,
+  "ios": 74,
   "android": 32
  },
  "legacy_markets": "BS, DP, HC, MC, OS, SS, VP",
@@ -40,7 +40,7 @@
     "size": 31.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-title`. OpenSans-Bold 31 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
+    "usage": "Style.json `page-title`. OpenSans-Bold 31 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -70,7 +70,7 @@
     "size": 42.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
+    "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -89,7 +89,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-body`. Spectral-Regular 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
+    "usage": "Style.json `page-body`. Spectral-Regular 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -119,7 +119,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
+    "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -138,7 +138,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
+    "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -157,7 +157,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
+    "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -176,7 +176,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 18 (1).",
+    "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 70 of 71 standard-template markets. Other values: PTSerif-Italic 18 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -195,7 +195,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -301,7 +301,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-deck`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
+    "usage": "Style.json `page-deck`. OpenSans-Light 18 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
     "legacy": false,
     "uppercase": false
    },
@@ -320,7 +320,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -339,7 +339,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-byline`. OpenSans-Light 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+    "usage": "Style.json `page-byline`. OpenSans-Light 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
     "legacy": false,
     "uppercase": false
    },
@@ -388,7 +388,7 @@
     "size": 12.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+    "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
     "legacy": false,
     "uppercase": false
    },
@@ -456,7 +456,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-bio`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
+    "usage": "Style.json `page-bio`. OpenSans-Light 18 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
     "legacy": false,
     "uppercase": false
    },
@@ -475,7 +475,7 @@
     "size": 18.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -494,7 +494,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 16 (1).",
+    "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 70 of 71 standard-template markets. Other values: PTSerif-Italic 16 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -513,7 +513,7 @@
     "size": 25.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+    "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -543,7 +543,7 @@
     "size": 22.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
+    "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -573,7 +573,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
+    "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -603,7 +603,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-body`. Spectral-Regular 16 in 69 of 70 standard-template markets. Other values: PTSerif-Regular 13 (1).",
+    "usage": "Style.json `cell-body`. Spectral-Regular 16 in 70 of 71 standard-template markets. Other values: PTSerif-Regular 13 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -633,7 +633,7 @@
     "size": 13.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -663,7 +663,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
+    "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
     "legacy": false,
     "uppercase": false
    },
@@ -693,7 +693,7 @@
     "size": 12.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -712,7 +712,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -731,7 +731,7 @@
     "size": 21.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+    "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -750,7 +750,7 @@
     "size": 17.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -769,7 +769,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+    "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -788,7 +788,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
+    "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -807,7 +807,7 @@
     "size": 15.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 69 of 70 standard-template markets. Other values: OpenSans-Light 15 (1).",
+    "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 70 of 71 standard-template markets. Other values: OpenSans-Light 15 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -826,7 +826,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
+    "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
     "legacy": false,
     "uppercase": false
    },
@@ -845,7 +845,7 @@
     "size": 10.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
+    "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
     "legacy": false,
     "uppercase": false
    },
@@ -864,7 +864,7 @@
     "size": 10.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
+    "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
     "legacy": false,
     "uppercase": false
    },
@@ -883,7 +883,7 @@
     "size": 36.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
+    "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
     "legacy": false,
     "uppercase": false
    },
@@ -902,7 +902,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+    "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -921,7 +921,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -940,7 +940,7 @@
     "size": 13.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -959,7 +959,7 @@
     "size": 20.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1111,7 +1111,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14.",
+    "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14. No iOS code reads this key by name at f79fe3339. The nav bar title uses the system font.",
     "legacy": false,
     "uppercase": false
    },
@@ -1141,7 +1141,7 @@
     "size": 10.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 71 of 71 standard-template markets. No iOS code reads this key by name at f79fe3339. Tab titles use the system font; on iOS 26, system 9 pt medium scaled with Dynamic Type.",
     "legacy": false,
     "uppercase": false
    },
@@ -1163,7 +1163,18 @@
   {
    "role": "Section tabs",
    "group": "App",
-   "ios": "?",
+   "ios": {
+    "style": "section-tab",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 11.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`sectionBarFont`: OpenSans-Bold 11. BS, CT, DP, HC, MC, NYDN, OS, SS, TDP, TDPS, VP and TIVDB override it with OpenSans-SemiBold 12 (SectionBarCell.swift:77).",
+    "legacy": false,
+    "uppercase": false
+   },
    "android": {
     "style": "section-tab",
     "group": "App",
@@ -1176,13 +1187,24 @@
     "legacy": false,
     "uppercase": false
    },
-   "match": "unknown",
-   "note": "Android: 12sp ships (14sp in notifications loses at merge)"
+   "match": "differs",
+   "note": "Android: 12sp ships (14sp in notifications loses at merge). iOS: SemiBold 12 in 12 markets"
   },
   {
    "role": "Breaking-news banner text",
    "group": "App",
-   "ios": "?",
+   "ios": {
+    "style": "breaking-banner",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`breakingNewsBannerFont`: OpenSans-Bold 14 in all markets.",
+    "legacy": false,
+    "uppercase": false
+   },
    "android": {
     "style": "breaking-news",
     "group": "App",
@@ -1195,8 +1217,8 @@
     "legacy": false,
     "uppercase": false
    },
-   "match": "unknown",
-   "note": "iOS: Open Sans Bold 14 (Apps team, f79fe3339), not in the iOS export"
+   "match": "same",
+   "note": ""
   },
   {
    "role": "Segmented control label",
@@ -1228,7 +1250,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
+    "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
     "legacy": false,
     "uppercase": false
    },
@@ -1247,7 +1269,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1266,7 +1288,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `menu-text`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `menu-text`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1277,7 +1299,18 @@
   {
    "role": "Settings row",
    "group": "App",
-   "ios": "?",
+   "ios": {
+    "style": "settings-row",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`settingsCellTitleFont`: OpenSans-Regular 14 in 73 markets. BS, HC, SS: 11. NYDN: 12. Delete Account uses this font in `destructive` red.",
+    "legacy": false,
+    "uppercase": false
+   },
    "android": {
     "style": "settings-item",
     "group": "App",
@@ -1290,13 +1323,24 @@
     "legacy": false,
     "uppercase": false
    },
-   "match": "unknown",
-   "note": ""
+   "match": "differs",
+   "note": "iOS: 11 in BS, HC, SS; 12 in NYDN"
   },
   {
    "role": "Settings header",
    "group": "App",
-   "ios": "?",
+   "ios": {
+    "style": "settings-header",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "`settingsHeaderFont`: OpenSans-Bold 14, uppercase, in a 30 pt band. NYDN: OpenSansCondensed-Bold 14.",
+    "legacy": false,
+    "uppercase": true
+   },
    "android": {
     "style": "settings-category",
     "group": "App",
@@ -1309,8 +1353,8 @@
     "legacy": false,
     "uppercase": false
    },
-   "match": "unknown",
-   "note": ""
+   "match": "differs",
+   "note": "iOS: NYDN uses Open Sans Condensed Bold 14"
   },
   {
    "role": "Search result headline",
@@ -1329,7 +1373,83 @@
     "uppercase": false
    },
    "match": "unknown",
+   "note": "iOS: story results use cell-headline at the xx-small size (not its own style)"
+  },
+  {
+   "role": "Search result: section name",
+   "group": "App",
+   "ios": {
+    "style": "search-section-result",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 300,
+    "size": 20.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Section-name rows in search results: OpenSans-Light 20 (SearchResultsTableViewCell.xib). Story results use `cell-headline` at the xx-small size.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
    "note": ""
+  },
+  {
+   "role": "Push prompt Yes",
+   "group": "App",
+   "ios": {
+    "style": "push-yes",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Push prompt Yes button, `pushNotificationPromptYesButtonFont`: OpenSans-Bold 14 in all markets.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android asks with the Alerts Enable button (Button label)"
+  },
+  {
+   "role": "Push prompt No",
+   "group": "App",
+   "ios": {
+    "style": "push-no",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Push prompt No button, `pushNotificationPromptNoButtonFont`: OpenSans-Regular 14, underlined (VP: not underlined).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Underlined except VP"
+  },
+  {
+   "role": "Newsletters button",
+   "group": "App",
+   "ios": {
+    "style": "newsletters-button",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 600,
+    "size": 18.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Newsletters buttons including Apple / Google sign-in: OpenSans-SemiBold 18, scaled with Dynamic Type (NewslettersUIConfigs.swift:35).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Includes Apple / Google sign-in; scales with Dynamic Type"
   },
   {
    "role": "Shared headline (TroncAppThemeable)",
@@ -1342,7 +1462,7 @@
     "size": 31.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 75 of 77 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
+    "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 76 of 78 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
     "legacy": false,
     "uppercase": false
    },
@@ -1361,7 +1481,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 77 of 77 markets.",
+    "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 78 of 78 markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1380,7 +1500,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 77 of 77 markets.",
+    "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 78 of 78 markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1399,7 +1519,7 @@
     "size": 11.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 75 of 77 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
+    "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 76 of 78 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
     "legacy": false,
     "uppercase": false
    },
@@ -1418,7 +1538,7 @@
     "size": 11.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 75 of 77 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
+    "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 76 of 78 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
     "legacy": false,
     "uppercase": false
    },
@@ -1437,7 +1557,7 @@
     "size": 35.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 35 (1).",
+    "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 70 of 71 standard-template markets. Other values: PTSerif-Bold 35 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -1467,7 +1587,7 @@
     "size": 60.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 60 (1).",
+    "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 70 of 71 standard-template markets. Other values: PTSerif-Bold 60 (1).",
     "legacy": false,
     "uppercase": false
    },
@@ -1486,7 +1606,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1516,7 +1636,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1535,7 +1655,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1554,7 +1674,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1573,7 +1693,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 71 of 71 standard-template markets. No iOS code reads this key by name at f79fe3339. The shipped link is `paywall-login-link`.",
     "legacy": false,
     "uppercase": false
    },
@@ -1592,7 +1712,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1611,7 +1731,7 @@
     "size": 24.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1630,7 +1750,7 @@
     "size": 14.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+    "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
     "legacy": false,
     "uppercase": false
    },
@@ -1660,7 +1780,18 @@
   {
    "role": "Button label",
    "group": "Paywall",
-   "ios": "?",
+   "ios": {
+    "style": "paywall-purchase",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Meter paywall purchase button, `paywallViewPurchaseButtonFont`: OpenSans-Bold 14 in all 78 markets. White, always uppercase (\"TRY ONE MONTH FREE\").",
+    "legacy": false,
+    "uppercase": true
+   },
    "android": {
     "style": "button-label",
     "group": "App",
@@ -1673,8 +1804,46 @@
     "legacy": false,
     "uppercase": true
    },
-   "match": "unknown",
-   "note": "Android Material default (Subscribe, Alerts Enable). iOS purchase button: Open Sans Bold 14 (Apps team, f79fe3339; MISSING-ASSETS 5.10)"
+   "match": "differs",
+   "note": "Android Material default (Subscribe, Alerts Enable). iOS: the meter paywall purchase button, always uppercase"
+  },
+  {
+   "role": "Paywall log-in link",
+   "group": "Paywall",
+   "ios": {
+    "style": "paywall-login-link",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 400,
+    "size": 14.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Meter paywall Log In link, `paywallViewLoginTextFont`: OpenSans-Regular 14 in 70 markets. BS, DP, HC, MC, OS, SS: 11. NYDN, VP: 12. \"Already a Subscriber? Log in to your <market> account\", the whole sentence underlined.",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "iOS: whole sentence underlined; 11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP"
+  },
+  {
+   "role": "Savings label",
+   "group": "Paywall",
+   "ios": {
+    "style": "savings-label",
+    "group": "Controls & settings",
+    "family": "Open Sans",
+    "weight": 700,
+    "size": 13.0,
+    "lineHeight": null,
+    "letterSpacing": null,
+    "usage": "Savings pill text, OpenSans-Bold 13 in `subscriptionTintColor` (Paywall.storyboard).",
+    "legacy": false,
+    "uppercase": false
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android size not confirmed (MISSING-ASSETS 5.6)"
   },
   {
    "role": "Subscription option label",

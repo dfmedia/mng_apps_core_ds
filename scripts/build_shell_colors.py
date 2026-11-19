@@ -160,6 +160,15 @@ L += ['', 'Foreground: iOS header text is `Style.json cell-tertiary-headertext` 
       '(confirmed 2026-11-10, Android 16 emulator, Denver Post). So DP, MC, NYDN, OS, SS and VP get dark icons. TSAR: production shows white icons on its #F5F5F5 bar on Android 15+, barely visible (1.09:1), as the export and the rule give (Rajal Patel, Apps team, 2026-11-19). The earlier production correction (white bar, dark icons, Karl 2026-11-10) is removed; the fix is IMPROVEMENTS CLR-09. '
       'Both versions are built (DEC-15): `statusbar` + `icons` (14 and below), navbar + `icons15` (15+). '
       'Dark and light icon colors are drawn by the system; the contrast above uses black and white.']
+# iOS 26 dark tab bar accent (f79fe3339, DREAMT-4718): optional, documented only. Unset markets get an accent iOS 26 derives
+# from tabactive (not a fixed value, so no token); the markets that set it are listed with the shipped hex.
+DARK = {k: hexn(I[k]['tabBarDarkSelectedTintColor']) for k in I if I[k].get('tabBarDarkSelectedTintColor')}
+L += ['', '## iOS 26 dark tab bar: selected-tab accent', '',
+      '`tabBarDarkSelectedTintColor` (new at TroncKit f79fe3339) is the selected-tab accent on the iOS 26 dark Liquid Glass tab bar. '
+      f'{len(I) - len(DARK)} of {len(I)} markets leave it unset, and iOS 26 derives an accent from `tabBarSelectedTintColor` (`tabactive`), so there is no token for it. '
+      'The markets that set it, documented only:', '', '| Market | Shipped | Light-bar tabactive |', '|---|---|---|']
+L += [f"| {BRAND[k]['navbar']['$extensions']['mng']['market']} ({k.upper()}) | {fx(h)} | {fx(BRAND[k]['tabactive']['$value'])} |" for k, h in sorted(DARK.items())]
+json.dump({**json.load(open('data/shell-colors.json')), 'ios_dark_tab_accent': DARK}, open('data/shell-colors.json', 'w'), indent=1)
 open('docs/SHELL-EXCEPTIONS.md', 'w').write('\n'.join(L) + '\n')
 print(len(EXC), 'exceptions documented;', len(ROLE_EXC), 'header/statusbar exceptions,', sum(e['accepted'] for e in ROLE_EXC), 'accepted overrides')
 print(len(data), 'markets; iOS roles', len(IOS_ROLES), 'Android roles', len(AND_ROLES))

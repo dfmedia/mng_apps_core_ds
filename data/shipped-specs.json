@@ -204,7 +204,7 @@
   {
    "id": "loading",
    "what": "Loading indicator",
-   "ios": "large system spinner on a white card, radius 12; spinner #004E87 in 66 markets; DP #005F7E, VP #005F7E, BS #DAA520, HC #4FA8D1, TDCD #5B9BC8, TIVDB #E0E2E4",
+   "ios": "large system spinner on a white card, radius 12; spinner #004E87 in 66 markets; DP #005F7E, VP #005F7E, BS #DAA520, HC #4FA8D1, MC #539CC4, NYDN #4591E0, OS #15919D, SS #761113, TDCD #5B9BC8, TDP #F7A430, TIVDB #E0E2E4",
    "android": "Full-screen progress dialog. Section-front spinner #D5D5D5 (55dp); Section-front top bar #49B0D6 → #35B5E4 gradient (2dp); Generic spinner #E0E6EC → #2A5381; Paywall spinner #2A2A2A; Web-view bar #1E88E5 on #E3F2FD; Other ProgressBars each market's MainStyle_Control_Activated",
    "swatches": {
     "ios": [

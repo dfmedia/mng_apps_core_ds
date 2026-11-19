@@ -4,8 +4,8 @@
  "meta": {
   "source": "code",
   "repo": "ios-tronckit",
-  "ref": "e30ad2585",
-  "synced": "2026-10-08"
+  "ref": "f79fe3339",
+  "synced": "2026-11-19"
  },
  "color": {
   "themes": [
@@ -14,7 +14,7 @@
     "name": "Light"
    }
   ],
-  "note": "Seven brand colors per market, named <market code>-<role>. Every app is light-only. All 124 themed colors per market are in the Market palette component and assets/Data/markets.json.",
+  "note": "Seven brand colors per market, named <market code>-<role>. Every app is light-only. All 125 themed colors per market are in the Market palette component and assets/Data/markets.json.",
   "tokens": [
    {
     "name": "bs-navbar",
@@ -39,7 +39,7 @@
    {
     "name": "bs-action",
     "value": "#daa520",
-    "usage": "Baltimore Sun (BS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.2:1. Below 4.5:1, kept as shipped."
+    "usage": "Baltimore Sun (BS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.2:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "bs-header",
@@ -74,7 +74,7 @@
    {
     "name": "ct-action",
     "value": "#9dd1f5",
-    "usage": "Chicago Tribune (CT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Chicago Tribune (CT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "ct-header",
@@ -109,7 +109,7 @@
    {
     "name": "dp-action",
     "value": "#005f7e",
-    "usage": "Daily Press (DP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 7.1:1."
+    "usage": "Daily Press (DP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 7.1:1."
    },
    {
     "name": "dp-header",
@@ -144,7 +144,7 @@
    {
     "name": "hc-action",
     "value": "#4fa8d1",
-    "usage": "Hartford Courant (HC): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.7:1. Below 4.5:1, kept as shipped."
+    "usage": "Hartford Courant (HC): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.7:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "hc-header",
@@ -179,7 +179,7 @@
    {
     "name": "mc-action",
     "value": "#539cc4",
-    "usage": "Morning Call (MC): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.0:1. Below 4.5:1, kept as shipped."
+    "usage": "Morning Call (MC): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.0:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "mc-header",
@@ -214,7 +214,7 @@
    {
     "name": "nydn-action",
     "value": "#4591e0",
-    "usage": "New York Daily News (NYDN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.3:1. Below 4.5:1, kept as shipped."
+    "usage": "New York Daily News (NYDN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.3:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "nydn-header",
@@ -249,7 +249,7 @@
    {
     "name": "ocr-action",
     "value": "#b04f0f",
-    "usage": "Orange County Register (OCR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.3:1."
+    "usage": "Orange County Register (OCR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.3:1."
    },
    {
     "name": "ocr-header",
@@ -284,7 +284,7 @@
    {
     "name": "os-action",
     "value": "#15919d",
-    "usage": "Orlando Sentinel (OS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.8:1. Below 4.5:1, kept as shipped."
+    "usage": "Orlando Sentinel (OS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.8:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "os-header",
@@ -319,7 +319,7 @@
    {
     "name": "pac-action",
     "value": "#a06318",
-    "usage": "Petaluma Argus-Courier (PAC): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 4.9:1."
+    "usage": "Petaluma Argus-Courier (PAC): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 4.9:1."
    },
    {
     "name": "pac-header",
@@ -354,7 +354,7 @@
    {
     "name": "psn-action",
     "value": "#ff6900",
-    "usage": "Pasadena Star News (PSN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
+    "usage": "Pasadena Star News (PSN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "psn-header",
@@ -389,7 +389,7 @@
    {
     "name": "sdut-action",
     "value": "#000000",
-    "usage": "The San Diego Union-Tribune (SDUT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 21.0:1."
+    "usage": "The San Diego Union-Tribune (SDUT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 21.0:1."
    },
    {
     "name": "sdut-header",
@@ -424,7 +424,7 @@
    {
     "name": "sgvt-action",
     "value": "#ff6900",
-    "usage": "San Gabriel Valley Tribune (SGVT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
+    "usage": "San Gabriel Valley Tribune (SGVT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "sgvt-header",
@@ -459,7 +459,7 @@
    {
     "name": "sit-action",
     "value": "#0f73a8",
-    "usage": "Sonoma Index Tribune (SIT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.2:1."
+    "usage": "Sonoma Index Tribune (SIT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.2:1."
    },
    {
     "name": "sit-header",
@@ -494,7 +494,7 @@
    {
     "name": "ss-action",
     "value": "#761113",
-    "usage": "Sun Sentinel (SS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 11.3:1."
+    "usage": "Sun Sentinel (SS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 11.3:1."
    },
    {
     "name": "ss-header",
@@ -529,7 +529,7 @@
    {
     "name": "tb-action",
     "value": "#4252b0",
-    "usage": "Buffzone (TB): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.9:1."
+    "usage": "Buffzone (TB): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.9:1."
    },
    {
     "name": "tb-header",
@@ -564,7 +564,7 @@
    {
     "name": "tban-action",
     "value": "#004e87",
-    "usage": "Bay Area News (TBAN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Bay Area News (TBAN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tban-header",
@@ -599,7 +599,7 @@
    {
     "name": "tbcp-action",
     "value": "#4052b5",
-    "usage": "Boulder County Preps (TBCP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.8:1."
+    "usage": "Boulder County Preps (TBCP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.8:1."
    },
    {
     "name": "tbcp-header",
@@ -634,7 +634,7 @@
    {
     "name": "tbe-action",
     "value": "#0070b8",
-    "usage": "Broomfield Enterprise News (TBE): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.2:1."
+    "usage": "Broomfield Enterprise News (TBE): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.2:1."
    },
    {
     "name": "tbe-header",
@@ -669,7 +669,7 @@
    {
     "name": "tbh-action",
     "value": "#9dd1f5",
-    "usage": "Boston Herald (TBH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Boston Herald (TBH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tbh-header",
@@ -704,7 +704,7 @@
    {
     "name": "tbhs-action",
     "value": "#b01e35",
-    "usage": "Boston Herald Sports (TBHS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.8:1."
+    "usage": "Boston Herald Sports (TBHS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.8:1."
    },
    {
     "name": "tbhs-header",
@@ -739,7 +739,7 @@
    {
     "name": "tccdr-action",
     "value": "#36408a",
-    "usage": "Canon City Daily Record (TCCDR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.3:1."
+    "usage": "Canon City Daily Record (TCCDR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.3:1."
    },
    {
     "name": "tccdr-header",
@@ -774,7 +774,7 @@
    {
     "name": "tce-action",
     "value": "#004e87",
-    "usage": "Chico Enterprise Record (TCE): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Chico Enterprise Record (TCE): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tce-header",
@@ -809,7 +809,7 @@
    {
     "name": "tchw-action",
     "value": "#36408a",
-    "usage": "Colorado Hometown Weekly (TCHW): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.3:1."
+    "usage": "Colorado Hometown Weekly (TCHW): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.3:1."
    },
    {
     "name": "tchw-header",
@@ -844,7 +844,7 @@
    {
     "name": "tcv-action",
     "value": "#424a54",
-    "usage": "The Citizens' Voice (TCV): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.0:1."
+    "usage": "The Citizens' Voice (TCV): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.0:1."
    },
    {
     "name": "tcv-header",
@@ -879,7 +879,7 @@
    {
     "name": "tdb-action",
     "value": "#9dd1f5",
-    "usage": "Daily Breeze (TDB): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Daily Breeze (TDB): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdb-header",
@@ -914,7 +914,7 @@
    {
     "name": "tdc-action",
     "value": "#007538",
-    "usage": "The Daily Camera (TDC): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.8:1."
+    "usage": "The Daily Camera (TDC): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.8:1."
    },
    {
     "name": "tdc-header",
@@ -949,7 +949,7 @@
    {
     "name": "tdcd-action",
     "value": "#5b9bc8",
-    "usage": "Delaware County Daily Times (TDCD): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.0:1. Below 4.5:1, kept as shipped."
+    "usage": "Delaware County Daily Times (TDCD): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.0:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdcd-header",
@@ -984,7 +984,7 @@
    {
     "name": "tdf-action",
     "value": "#9dd1f5",
-    "usage": "Daily Freeman (TDF): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Daily Freeman (TDF): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdf-header",
@@ -995,6 +995,41 @@
     "name": "tdf-alert",
     "value": "#ff0000",
     "usage": "Daily Freeman (TDF): Breaking-news banner. From `breakingNewsBannerBackgroundColor`."
+   },
+   {
+    "name": "tdh-navbar",
+    "value": "#0072b4",
+    "usage": "Daily Herald (TDH): Navigation bar background. From `navigationBarBackgroundColor`."
+   },
+   {
+    "name": "tdh-navtext",
+    "value": "#ffffff",
+    "usage": "Daily Herald (TDH): Navigation bar title and buttons. From `navigationBarTitleColor`. 5.2:1 on tdh-navbar."
+   },
+   {
+    "name": "tdh-tabbar",
+    "value": "#0072b4",
+    "usage": "Daily Herald (TDH): Tab bar background. From `tabBarBackgroundColor`."
+   },
+   {
+    "name": "tdh-tabactive",
+    "value": "#000000",
+    "usage": "Daily Herald (TDH): Selected tab icon and label. From `tabBarSelectedTintColor`. 4.1:1 on tdh-tabbar."
+   },
+   {
+    "name": "tdh-action",
+    "value": "#000000",
+    "usage": "Daily Herald (TDH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 21.0:1."
+   },
+   {
+    "name": "tdh-header",
+    "value": "#0072b4",
+    "usage": "Daily Herald (TDH): Section-front header band. From `cell-tertiary-headerBg` in Style.json."
+   },
+   {
+    "name": "tdh-alert",
+    "value": "#ff0000",
+    "usage": "Daily Herald (TDH): Breaking-news banner. From `breakingNewsBannerBackgroundColor`."
    },
    {
     "name": "tdlw-navbar",
@@ -1019,7 +1054,7 @@
    {
     "name": "tdlw-action",
     "value": "#1591b7",
-    "usage": "Daily Local Weschester (TDLW): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Daily Local Weschester (TDLW): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdlw-header",
@@ -1054,7 +1089,7 @@
    {
     "name": "tdp-action",
     "value": "#f7a430",
-    "usage": "The Denver Post (TDP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.0:1. Below 4.5:1, kept as shipped."
+    "usage": "The Denver Post (TDP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.0:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdp-header",
@@ -1089,7 +1124,7 @@
    {
     "name": "tdps-action",
     "value": "#c75c14",
-    "usage": "Denver Post Sports (TDPS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 4.2:1. Below 4.5:1, kept as shipped."
+    "usage": "Denver Post Sports (TDPS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 4.2:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tdps-header",
@@ -1124,7 +1159,7 @@
    {
     "name": "tebt-action",
     "value": "#6bd1e6",
-    "usage": "The East Bay Times (TEBT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.8:1. Below 4.5:1, kept as shipped."
+    "usage": "The East Bay Times (TEBT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.8:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tebt-header",
@@ -1159,7 +1194,7 @@
    {
     "name": "teptg-action",
     "value": "#33408f",
-    "usage": "Estes Park Trail Gazette (TEPTG): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.2:1."
+    "usage": "Estes Park Trail Gazette (TEPTG): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.2:1."
    },
    {
     "name": "teptg-header",
@@ -1194,7 +1229,7 @@
    {
     "name": "tets-action",
     "value": "#36408a",
-    "usage": "Eureka Times Standard (TETS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.3:1."
+    "usage": "Eureka Times Standard (TETS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.3:1."
    },
    {
     "name": "tets-header",
@@ -1229,7 +1264,7 @@
    {
     "name": "tfmt-action",
     "value": "#33408f",
-    "usage": "Fort Morgan Times (TFMT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.2:1."
+    "usage": "Fort Morgan Times (TFMT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.2:1."
    },
    {
     "name": "tfmt-header",
@@ -1264,7 +1299,7 @@
    {
     "name": "tgt-action",
     "value": "#546e80",
-    "usage": "Greeley Tribune (TGT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.4:1."
+    "usage": "Greeley Tribune (TGT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.4:1."
    },
    {
     "name": "tgt-header",
@@ -1299,7 +1334,7 @@
    {
     "name": "tivdb-action",
     "value": "#004e87",
-    "usage": "Inland Valley Daily Bulletin (TIVDB): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Inland Valley Daily Bulletin (TIVDB): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tivdb-header",
@@ -1334,7 +1369,7 @@
    {
     "name": "tja-action",
     "value": "#36408a",
-    "usage": "Journal Advocate (TJA): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.3:1."
+    "usage": "Journal Advocate (TJA): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.3:1."
    },
    {
     "name": "tja-header",
@@ -1369,7 +1404,7 @@
    {
     "name": "tladn-action",
     "value": "#ab4021",
-    "usage": "Los Angeles Daily News (TLADN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.0:1."
+    "usage": "Los Angeles Daily News (TLADN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.0:1."
    },
    {
     "name": "tladn-header",
@@ -1404,7 +1439,7 @@
    {
     "name": "tlbpt-action",
     "value": "#004e87",
-    "usage": "Long Beach Press-Telegram (TLBPT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Long Beach Press-Telegram (TLBPT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tlbpt-header",
@@ -1439,7 +1474,7 @@
    {
     "name": "tlr-action",
     "value": "#ab4021",
-    "usage": "Loveland Reporter Herald (TLR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.0:1."
+    "usage": "Loveland Reporter Herald (TLR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.0:1."
    },
    {
     "name": "tlr-header",
@@ -1474,7 +1509,7 @@
    {
     "name": "tls-action",
     "value": "#ab4021",
-    "usage": "Lowell Sun News for Mobile (TLS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.0:1."
+    "usage": "Lowell Sun News for Mobile (TLS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.0:1."
    },
    {
     "name": "tls-header",
@@ -1509,7 +1544,7 @@
    {
     "name": "tltc-action",
     "value": "#007dba",
-    "usage": "Longmont Times-Call for Mobile (TLTC): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 4.5:1."
+    "usage": "Longmont Times-Call for Mobile (TLTC): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 4.5:1."
    },
    {
     "name": "tltc-header",
@@ -1544,7 +1579,7 @@
    {
     "name": "tmch-action",
     "value": "#3d6191",
-    "usage": "Monterey County Herald (TMCH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.3:1."
+    "usage": "Monterey County Herald (TMCH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.3:1."
    },
    {
     "name": "tmch-header",
@@ -1579,7 +1614,7 @@
    {
     "name": "tmd-action",
     "value": "#405278",
-    "usage": "Macomb Daily (TMD): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 7.8:1."
+    "usage": "Macomb Daily (TMD): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 7.8:1."
    },
    {
     "name": "tmd-header",
@@ -1614,7 +1649,7 @@
    {
     "name": "tmi-action",
     "value": "#004e87",
-    "usage": "Marin Independent Journal News (TMI): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Marin Independent Journal News (TMI): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tmi-header",
@@ -1649,7 +1684,7 @@
    {
     "name": "tmj-action",
     "value": "#bd3b0f",
-    "usage": "The Morning Journal (TMJ): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.5:1."
+    "usage": "The Morning Journal (TMJ): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.5:1."
    },
    {
     "name": "tmj-header",
@@ -1684,7 +1719,7 @@
    {
     "name": "tmn-action",
     "value": "#004e87",
-    "usage": "The Mercury News (TMN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "The Mercury News (TMN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tmn-header",
@@ -1719,7 +1754,7 @@
    {
     "name": "tms-action",
     "value": "#405278",
-    "usage": "The Morning Sun (TMS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 7.8:1."
+    "usage": "The Morning Sun (TMS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 7.8:1."
    },
    {
     "name": "tms-header",
@@ -1754,7 +1789,7 @@
    {
     "name": "tnh-action",
     "value": "#ab4021",
-    "usage": "The News Herald (TNH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.0:1."
+    "usage": "The News Herald (TNH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.0:1."
    },
    {
     "name": "tnh-header",
@@ -1789,7 +1824,7 @@
    {
     "name": "tod-action",
     "value": "#ba2112",
-    "usage": "Oneida Daily Dispatch (TOD): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 6.3:1."
+    "usage": "Oneida Daily Dispatch (TOD): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 6.3:1."
    },
    {
     "name": "tod-header",
@@ -1824,7 +1859,7 @@
    {
     "name": "top-action",
     "value": "#004e87",
-    "usage": "The Oakland Press (TOP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "The Oakland Press (TOP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "top-header",
@@ -1859,7 +1894,7 @@
    {
     "name": "tpd-action",
     "value": "#000000",
-    "usage": "The Press Democrat (TPD): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 21.0:1."
+    "usage": "The Press Democrat (TPD): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 21.0:1."
    },
    {
     "name": "tpd-header",
@@ -1894,7 +1929,7 @@
    {
     "name": "tpe-action",
     "value": "#ff6900",
-    "usage": "The Press-Enterprise (TPE): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
+    "usage": "The Press-Enterprise (TPE): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tpe-header",
@@ -1929,7 +1964,7 @@
    {
     "name": "tpm-action",
     "value": "#bd3b0f",
-    "usage": "The Pottstown Mercury (TPM): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.5:1."
+    "usage": "The Pottstown Mercury (TPM): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.5:1."
    },
    {
     "name": "tpm-header",
@@ -1964,7 +1999,7 @@
    {
     "name": "tr-action",
     "value": "#007dba",
-    "usage": "The Reporter for Mobile (TR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 4.5:1."
+    "usage": "The Reporter for Mobile (TR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 4.5:1."
    },
    {
     "name": "tr-header",
@@ -1999,7 +2034,7 @@
    {
     "name": "trdf-action",
     "value": "#9dd1f5",
-    "usage": "Redlands Daily Facts (TRDF): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
+    "usage": "Redlands Daily Facts (TRDF): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 1.6:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "trdf-header",
@@ -2034,7 +2069,7 @@
    {
     "name": "tre-action",
     "value": "#004e87",
-    "usage": "Reading Eagle (TRE): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Reading Eagle (TRE): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tre-header",
@@ -2069,7 +2104,7 @@
    {
     "name": "trh-action",
     "value": "#424a54",
-    "usage": "Republican-Herald (TRH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.0:1."
+    "usage": "Republican-Herald (TRH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.0:1."
    },
    {
     "name": "trh-header",
@@ -2104,7 +2139,7 @@
    {
     "name": "trot-action",
     "value": "#003b66",
-    "usage": "Royal Oak Tribune (TROT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 11.6:1."
+    "usage": "Royal Oak Tribune (TROT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 11.6:1."
    },
    {
     "name": "trot-header",
@@ -2139,7 +2174,7 @@
    {
     "name": "trr-action",
     "value": "#bd3b0f",
-    "usage": "The Troy Record (TRR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.5:1."
+    "usage": "The Troy Record (TRR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.5:1."
    },
    {
     "name": "trr-header",
@@ -2174,7 +2209,7 @@
    {
     "name": "tsar-action",
     "value": "#004e87",
-    "usage": "Saratogian (TSAR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Saratogian (TSAR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tsar-header",
@@ -2209,7 +2244,7 @@
    {
     "name": "tsbs-action",
     "value": "#ff6900",
-    "usage": "The San Bernardino Sun (TSBS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
+    "usage": "The San Bernardino Sun (TSBS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tsbs-header",
@@ -2244,7 +2279,7 @@
    {
     "name": "tscs-action",
     "value": "#36408a",
-    "usage": "Santa Cruz Sentinel (TSCS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.3:1."
+    "usage": "Santa Cruz Sentinel (TSCS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.3:1."
    },
    {
     "name": "tscs-header",
@@ -2279,7 +2314,7 @@
    {
     "name": "tseb-action",
     "value": "#bd3b0f",
-    "usage": "Sentinel and Enterprise (TSEB): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.5:1."
+    "usage": "Sentinel and Enterprise (TSEB): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.5:1."
    },
    {
     "name": "tseb-header",
@@ -2314,7 +2349,7 @@
    {
     "name": "tsppp-action",
     "value": "#004e87",
-    "usage": "St. Paul Pioneer Press (TSPPP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "St. Paul Pioneer Press (TSPPP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tsppp-header",
@@ -2349,7 +2384,7 @@
    {
     "name": "tss-action",
     "value": "#424a54",
-    "usage": "The Standard-Speaker (TSS): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.0:1."
+    "usage": "The Standard-Speaker (TSS): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.0:1."
    },
    {
     "name": "tss-header",
@@ -2384,7 +2419,7 @@
    {
     "name": "tsv-action",
     "value": "#004e87",
-    "usage": "Silicon Valley (TSV): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "Silicon Valley (TSV): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tsv-header",
@@ -2419,7 +2454,7 @@
    {
     "name": "tt-action",
     "value": "#004e87",
-    "usage": "The Trentonian (TT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 8.6:1."
+    "usage": "The Trentonian (TT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 8.6:1."
    },
    {
     "name": "tt-header",
@@ -2454,7 +2489,7 @@
    {
     "name": "tth-action",
     "value": "#bd3b0f",
-    "usage": "The Times Herald (TTH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.5:1."
+    "usage": "The Times Herald (TTH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.5:1."
    },
    {
     "name": "tth-header",
@@ -2489,7 +2524,7 @@
    {
     "name": "ttt-action",
     "value": "#424a54",
-    "usage": "Times-Tribune (TTT): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.0:1."
+    "usage": "Times-Tribune (TTT): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.0:1."
    },
    {
     "name": "ttt-header",
@@ -2524,7 +2559,7 @@
    {
     "name": "tudj-action",
     "value": "#408fcc",
-    "usage": "Ukiah Daily Journal (TUDJ): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.5:1. Below 4.5:1, kept as shipped."
+    "usage": "Ukiah Daily Journal (TUDJ): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.5:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tudj-header",
@@ -2559,7 +2594,7 @@
    {
     "name": "tvr-action",
     "value": "#408fcc",
-    "usage": "Vacaville Reporter (TVR): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 3.5:1. Below 4.5:1, kept as shipped."
+    "usage": "Vacaville Reporter (TVR): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 3.5:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "tvr-header",
@@ -2594,7 +2629,7 @@
    {
     "name": "tvth-action",
     "value": "#8c0a2e",
-    "usage": "Vallejo Times Herald News (TVTH): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 9.6:1."
+    "usage": "Vallejo Times Herald News (TVTH): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 9.6:1."
    },
    {
     "name": "tvth-header",
@@ -2629,7 +2664,7 @@
    {
     "name": "twdd-action",
     "value": "#007739",
-    "usage": "Woodland Daily Democrat (TWDD): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 5.7:1."
+    "usage": "Woodland Daily Democrat (TWDD): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 5.7:1."
    },
    {
     "name": "twdd-header",
@@ -2664,7 +2699,7 @@
    {
     "name": "twdn-action",
     "value": "#ff6900",
-    "usage": "Whittier Daily News (TWDN): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
+    "usage": "Whittier Daily News (TWDN): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 2.9:1. Below 4.5:1, kept as shipped."
    },
    {
     "name": "twdn-header",
@@ -2699,7 +2734,7 @@
    {
     "name": "vp-action",
     "value": "#005f7e",
-    "usage": "Virginian Pilot (VP): Primary button fill (Log In, Register, Subscribe). From `paywallPrimaryActionColor`. White button text is 7.1:1."
+    "usage": "Virginian Pilot (VP): Primary button fill (meter paywall purchase button, subscription links). From `paywallPrimaryActionColor`. White button text is 7.1:1."
    },
    {
     "name": "vp-header",
@@ -2710,6 +2745,34 @@
     "name": "vp-alert",
     "value": "#d80000",
     "usage": "Virginian Pilot (VP): Breaking-news banner. From `breakingNewsBannerBackgroundColor`."
+   },
+   {
+    "name": "segment-selected",
+    "value": {
+     "light": "#ffffff"
+    },
+    "usage": "Selected segment of the For You / Saved / Alerts control (ContainerViewController.swift:101)."
+   },
+   {
+    "name": "segment-track",
+    "value": {
+     "light": "#f2f2f7"
+    },
+    "usage": "Segmented control background, iOS `secondarySystemBackground` (ContainerViewController.swift:102)."
+   },
+   {
+    "name": "ios-switch-on",
+    "value": {
+     "light": "#34c759"
+    },
+    "usage": "iOS default switch green. Shows wherever a switch tint is unset: tracking consent (all markets), offline mode (NYDN, OS)."
+   },
+   {
+    "name": "destructive",
+    "value": {
+     "light": "#ff3b30"
+    },
+    "usage": "Delete Account settings row text, iOS system red (SettingsHelpers.swift:68)."
    }
   ]
  },
@@ -2925,7 +2988,7 @@
       "family": "display",
       "fontSize": "31px",
       "fontWeight": 500,
-      "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 75 of 77 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
+      "usage": "`headlineNormalFont` (TroncAppThemeable). Spectral-Medium 31 in 76 of 78 markets. Exceptions: OpenSansCondensed-Light 31 (NYDN); OpenSans-Regular 30 (VP).",
       "sample": "Storm closes mountain passes"
      },
      {
@@ -2933,7 +2996,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 400,
-      "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 77 of 77 markets.",
+      "usage": "`bodyNormalFont` (TroncAppThemeable). OpenSans-Regular 14 in 78 of 78 markets.",
       "sample": "Crews worked through the night to reopen the highway."
      },
      {
@@ -2941,7 +3004,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 77 of 77 markets.",
+      "usage": "`bodyBoldFont` (TroncAppThemeable). OpenSans-Bold 14 in 78 of 78 markets.",
       "sample": "Read the full story"
      },
      {
@@ -2949,7 +3012,7 @@
       "family": "sans",
       "fontSize": "11px",
       "fontWeight": 400,
-      "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 75 of 77 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
+      "usage": "`captionNormalFont` (TroncAppThemeable). OpenSans-Regular 11 in 76 of 78 markets. Exceptions: OpenSans-Regular 12 (NYDN, VP).",
       "sample": "Updated 6:42 a.m."
      },
      {
@@ -2957,7 +3020,7 @@
       "family": "sans",
       "fontSize": "11px",
       "fontWeight": 700,
-      "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 75 of 77 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
+      "usage": "`captionBoldFont` (TroncAppThemeable). OpenSans-Bold 11 in 76 of 78 markets. Exceptions: OpenSans-Bold 12 (NYDN, VP).",
       "sample": "BREAKING"
      }
     ]
@@ -2971,7 +3034,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 700,
-      "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14.",
+      "usage": "Style.json `nav-title`. OpenSans-Bold 16 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Bold 14. No iOS code reads this key by name at f79fe3339. The nav bar title uses the system font.",
       "sample": "Sections"
      },
      {
@@ -2979,7 +3042,7 @@
       "family": "sans",
       "fontSize": "10px",
       "fontWeight": 700,
-      "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `tab-item`. OpenSans-Bold 10 in 71 of 71 standard-template markets. No iOS code reads this key by name at f79fe3339. Tab titles use the system font; on iOS 26, system 9 pt medium scaled with Dynamic Type.",
       "sample": "Home"
      },
      {
@@ -2987,7 +3050,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
+      "usage": "Style.json `section-list-header`. OpenSans-Bold 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 14.",
       "sample": "NEWS"
      },
      {
@@ -2995,7 +3058,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `menu-header`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
       "sample": "Local News"
      },
      {
@@ -3003,7 +3066,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 300,
-      "usage": "Style.json `menu-text`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `menu-text`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
       "sample": "Local News"
      }
     ]
@@ -3017,7 +3080,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-buy`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3025,7 +3088,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 700,
-      "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-buy-regular`. OpenSans-Bold 16 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3033,7 +3096,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 300,
-      "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-description`. OpenSans-Light 14 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3041,7 +3104,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 300,
-      "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-store-policy-header`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3049,7 +3112,7 @@
       "family": "display",
       "fontSize": "35px",
       "fontWeight": 700,
-      "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 35 (1).",
+      "usage": "Style.json `blocker-header`. Spectral-Bold 35 in 70 of 71 standard-template markets. Other values: PTSerif-Bold 35 (1).",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3057,7 +3120,7 @@
       "family": "display",
       "fontSize": "60px",
       "fontWeight": 700,
-      "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 69 of 70 standard-template markets. Other values: PTSerif-Bold 60 (1).",
+      "usage": "Style.json `blocker-header-regular`. Spectral-Bold 60 in 70 of 71 standard-template markets. Other values: PTSerif-Bold 60 (1).",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3065,7 +3128,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 300,
-      "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-login`. OpenSans-Light 14 in 71 of 71 standard-template markets. No iOS code reads this key by name at f79fe3339. The shipped link is `paywall-login-link`.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3073,7 +3136,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 300,
-      "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-login-regular`. OpenSans-Light 16 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3081,7 +3144,7 @@
       "family": "sans",
       "fontSize": "24px",
       "fontWeight": 300,
-      "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-price`. OpenSans-Light 24 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      },
      {
@@ -3089,7 +3152,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `blocker-name`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
       "sample": "Subscribe for unlimited access"
      }
     ]
@@ -3103,7 +3166,7 @@
       "family": "display",
       "fontSize": "16px",
       "fontWeight": 400,
-      "usage": "Style.json `cell-body`. Spectral-Regular 16 in 69 of 70 standard-template markets. Other values: PTSerif-Regular 13 (1).",
+      "usage": "Style.json `cell-body`. Spectral-Regular 16 in 70 of 71 standard-template markets. Other values: PTSerif-Regular 13 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3111,7 +3174,7 @@
       "family": "sans",
       "fontSize": "12px",
       "fontWeight": 400,
-      "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-caption`. OpenSans-Regular 12 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3119,7 +3182,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-deck`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3127,7 +3190,7 @@
       "family": "display",
       "fontSize": "25px",
       "fontWeight": 500,
-      "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+      "usage": "Style.json `cell-headline`. Spectral-Medium 25 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3135,7 +3198,7 @@
       "family": "display",
       "fontSize": "22px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
+      "usage": "Style.json `cell-headline-highlight`. Spectral-Bold 22 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 24. Other values: OpenSansCondensed-Bold 16 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3143,7 +3206,7 @@
       "family": "display",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
+      "usage": "Style.json `cell-headline-thin`. Spectral-Bold 14 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Bold 16. Other values: OpenSans-Bold 14 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3151,7 +3214,7 @@
       "family": "serif",
       "fontSize": "21px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
+      "usage": "Style.json `cell-headline-media-above`. PTSerif-Bold 21 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 21 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3159,7 +3222,7 @@
       "family": "sans",
       "fontSize": "17px",
       "fontWeight": 400,
-      "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-headline-media-bottom`. Open Sans 17 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3167,7 +3230,7 @@
       "family": "serif",
       "fontSize": "16px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+      "usage": "Style.json `cell-headline-media-left`. PTSerif-Bold 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3175,7 +3238,7 @@
       "family": "serif",
       "fontSize": "16px",
       "fontWeight": 400,
-      "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
+      "usage": "Style.json `cell-headline-media-left-normalfont`. PTSerif-Regular 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Regular 16 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3183,7 +3246,7 @@
       "family": "serif",
       "fontSize": "15px",
       "fontWeight": 400,
-      "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 69 of 70 standard-template markets. Other values: OpenSans-Light 15 (1).",
+      "usage": "Style.json `cell-headline-bullets`. PTSerif-Regular 15 in 70 of 71 standard-template markets. Other values: OpenSans-Light 15 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3191,7 +3254,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
+      "usage": "Style.json `cell-label-bold-large`. OpenSans-Bold 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 16.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3199,7 +3262,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 300,
-      "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
+      "usage": "Style.json `cell-label-light-large`. OpenSans-Light 16 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 16.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3207,7 +3270,7 @@
       "family": "sans",
       "fontSize": "10px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
+      "usage": "Style.json `cell-label-bold-small`. OpenSans-Bold 10 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 14.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3215,7 +3278,7 @@
       "family": "sans",
       "fontSize": "10px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
+      "usage": "Style.json `cell-label-light-small`. OpenSans-Bold 10 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 14.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3223,7 +3286,7 @@
       "family": "sans",
       "fontSize": "36px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
+      "usage": "Style.json `cell-score`. OpenSans-Bold 36 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 36.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3231,7 +3294,7 @@
       "family": "serif",
       "fontSize": "16px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 69 of 70 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
+      "usage": "Style.json `cell-tertiary`. PTSerif-Bold 16 in 70 of 71 standard-template markets. Other values: OpenSansCondensed-Bold 16 (1).",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3239,7 +3302,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 700,
-      "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-tertiary-headertext`. OpenSans-Bold 14 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3247,7 +3310,7 @@
       "family": "sans",
       "fontSize": "13px",
       "fontWeight": 600,
-      "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-timestamp`. OpenSans-SemiBold 13 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3255,7 +3318,7 @@
       "family": "sans",
       "fontSize": "13px",
       "fontWeight": 600,
-      "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `cell-timestamp-tertiary`. OpenSans-SemiBold 13 in 71 of 71 standard-template markets.",
       "sample": "City council approves new transit plan"
      },
      {
@@ -3263,7 +3326,7 @@
       "family": "sans",
       "fontSize": "20px",
       "fontWeight": 700,
-      "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `ar-headline`. OpenSans-Bold 20 in 71 of 71 standard-template markets.",
       "sample": "Augmented reality story"
      },
      {
@@ -3333,7 +3396,7 @@
       "family": "sans",
       "fontSize": "18px",
       "fontWeight": 300,
-      "usage": "Style.json `page-bio`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
+      "usage": "Style.json `page-bio`. OpenSans-Light 18 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBold 18.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3341,7 +3404,7 @@
       "family": "display",
       "fontSize": "18px",
       "fontWeight": 400,
-      "usage": "Style.json `page-body`. Spectral-Regular 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
+      "usage": "Style.json `page-body`. Spectral-Regular 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Regular 18. Other values: PTSerif-Regular 18 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3349,7 +3412,7 @@
       "family": "display",
       "fontSize": "18px",
       "fontWeight": 700,
-      "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
+      "usage": "Style.json `page-body-bold`. Spectral-Bold 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 31. Other values: PTSerif-Bold 18 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3358,7 +3421,7 @@
       "fontSize": "18px",
       "fontWeight": 700,
       "fontStyle": "italic",
-      "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
+      "usage": "Style.json `page-body-bolditalic`. Spectral-BoldItalic 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-BoldItalic 18. Other values: PTSerif-BoldItalic 18 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3367,7 +3430,7 @@
       "fontSize": "18px",
       "fontWeight": 400,
       "fontStyle": "italic",
-      "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
+      "usage": "Style.json `page-body-italic`. Spectral-Italic 18 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-SemiBoldItalic 18. Other values: PTSerif-Italic 18 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3376,7 +3439,7 @@
       "fontSize": "18px",
       "fontWeight": 400,
       "fontStyle": "italic",
-      "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 18 (1).",
+      "usage": "Style.json `page-body-lightitalic`. Spectral-Italic 18 in 70 of 71 standard-template markets. Other values: PTSerif-Italic 18 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3384,7 +3447,7 @@
       "family": "sans",
       "fontSize": "14px",
       "fontWeight": 300,
-      "usage": "Style.json `page-byline`. OpenSans-Light 14 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+      "usage": "Style.json `page-byline`. OpenSans-Light 14 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3392,7 +3455,7 @@
       "family": "sans",
       "fontSize": "12px",
       "fontWeight": 400,
-      "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
+      "usage": "Style.json `page-caption`. OpenSans-Regular 12 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 14.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3400,7 +3463,7 @@
       "family": "sans",
       "fontSize": "18px",
       "fontWeight": 300,
-      "usage": "Style.json `page-deck`. OpenSans-Light 18 in 70 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
+      "usage": "Style.json `page-deck`. OpenSans-Light 18 in 71 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): OpenSans-Regular 18.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3408,7 +3471,7 @@
       "family": "sans",
       "fontSize": "16px",
       "fontWeight": 700,
-      "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `page-kicker`. OpenSans-Bold 16 in 71 of 71 standard-template markets.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3416,7 +3479,7 @@
       "family": "sans",
       "fontSize": "18px",
       "fontWeight": 700,
-      "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `page-gallery`. OpenSans-Bold 18 in 71 of 71 standard-template markets.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3424,7 +3487,7 @@
       "family": "sans",
       "fontSize": "18px",
       "fontWeight": 700,
-      "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 70 of 70 standard-template markets.",
+      "usage": "Style.json `page-subhead`. OpenSans-Bold 18 in 71 of 71 standard-template markets.",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3432,7 +3495,7 @@
       "family": "sans",
       "fontSize": "31px",
       "fontWeight": 700,
-      "usage": "Style.json `page-title`. OpenSans-Bold 31 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
+      "usage": "Style.json `page-title`. OpenSans-Bold 31 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): Spectral-Regular 25. Other values: OpenSansCondensed-Bold 31 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3440,7 +3503,7 @@
       "family": "display",
       "fontSize": "42px",
       "fontWeight": 700,
-      "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 69 of 70 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
+      "usage": "Style.json `page-title-tablet`. Spectral-Bold 42 in 70 of 71 standard-template markets. Legacy template (BS, DP, HC, MC, OS, SS, VP): PTSerif-Bold 42. Other values: PTSerif-Bold 42 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
      },
      {
@@ -3449,8 +3512,102 @@
       "fontSize": "16px",
       "fontWeight": 400,
       "fontStyle": "italic",
-      "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 69 of 70 standard-template markets. Other values: PTSerif-Italic 16 (1).",
+      "usage": "Style.json `page-slogan`. Spectral-Italic 16 in 70 of 71 standard-template markets. Other values: PTSerif-Italic 16 (1).",
       "sample": "The plan adds 40 miles of bus lanes by 2028."
+     }
+    ]
+   },
+   {
+    "name": "Controls & settings",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "section-tab",
+      "family": "sans",
+      "fontSize": "11px",
+      "fontWeight": 700,
+      "usage": "`sectionBarFont`: OpenSans-Bold 11. BS, CT, DP, HC, MC, NYDN, OS, SS, TDP, TDPS, VP and TIVDB override it with OpenSans-SemiBold 12 (SectionBarCell.swift:77).",
+      "sample": "Top News"
+     },
+     {
+      "name": "settings-row",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "usage": "`settingsCellTitleFont`: OpenSans-Regular 14 in 73 markets. BS, HC, SS: 11. NYDN: 12. Delete Account uses this font in `destructive` red.",
+      "sample": "Manage Subscription"
+     },
+     {
+      "name": "settings-header",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "usage": "`settingsHeaderFont`: OpenSans-Bold 14, uppercase, in a 30 pt band. NYDN: OpenSansCondensed-Bold 14.",
+      "sample": "ACCOUNT"
+     },
+     {
+      "name": "breaking-banner",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "usage": "`breakingNewsBannerFont`: OpenSans-Bold 14 in all markets.",
+      "sample": "Storm closes mountain passes"
+     },
+     {
+      "name": "paywall-purchase",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "usage": "Meter paywall purchase button, `paywallViewPurchaseButtonFont`: OpenSans-Bold 14 in all 78 markets. White, always uppercase (\"TRY ONE MONTH FREE\").",
+      "sample": "TRY ONE MONTH FREE"
+     },
+     {
+      "name": "paywall-login-link",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "usage": "Meter paywall Log In link, `paywallViewLoginTextFont`: OpenSans-Regular 14 in 70 markets. BS, DP, HC, MC, OS, SS: 11. NYDN, VP: 12. \"Already a Subscriber? Log in to your <market> account\", the whole sentence underlined.",
+      "sample": "Already a Subscriber? Log in to your account"
+     },
+     {
+      "name": "savings-label",
+      "family": "sans",
+      "fontSize": "13px",
+      "fontWeight": 700,
+      "usage": "Savings pill text, OpenSans-Bold 13 in `subscriptionTintColor` (Paywall.storyboard).",
+      "sample": "20% savings"
+     },
+     {
+      "name": "push-yes",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "usage": "Push prompt Yes button, `pushNotificationPromptYesButtonFont`: OpenSans-Bold 14 in all markets.",
+      "sample": "Yes, notify me"
+     },
+     {
+      "name": "push-no",
+      "family": "sans",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "usage": "Push prompt No button, `pushNotificationPromptNoButtonFont`: OpenSans-Regular 14, underlined (VP: not underlined).",
+      "sample": "No, thanks."
+     },
+     {
+      "name": "newsletters-button",
+      "family": "sans",
+      "fontSize": "18px",
+      "fontWeight": 600,
+      "usage": "Newsletters buttons including Apple / Google sign-in: OpenSans-SemiBold 18, scaled with Dynamic Type (NewslettersUIConfigs.swift:35).",
+      "sample": "Continue with Apple"
+     },
+     {
+      "name": "search-section-result",
+      "family": "sans",
+      "fontSize": "20px",
+      "fontWeight": 300,
+      "usage": "Section-name rows in search results: OpenSans-Light 20 (SearchResultsTableViewCell.xib). Story results use `cell-headline` at the xx-small size.",
+      "sample": "Sports"
      }
     ]
    }
@@ -3488,6 +3645,31 @@
     "name": "space-subscription-inset",
     "value": "16px",
     "usage": "Inner padding of a subscription option button (SubscriptionOptionButton.xib)."
+   },
+   {
+    "name": "space-sectionbar-gap",
+    "value": "15px",
+    "usage": "Gap between section tabs, all markets (`sectionBarCellSpacing`). Half of it (7.5) pads each end."
+   },
+   {
+    "name": "space-header-band-inset",
+    "value": "10px",
+    "usage": "Left and right text inset in the section header band."
+   },
+   {
+    "name": "space-savings-inset-phone",
+    "value": "10px",
+    "usage": "Savings pill inset from the yearly option trailing edge on iPhone."
+   },
+   {
+    "name": "space-savings-inset-pad",
+    "value": "35px",
+    "usage": "Savings pill inset from the yearly option trailing edge on iPad."
+   },
+   {
+    "name": "space-newsletters-icon-gap",
+    "value": "12px",
+    "usage": "Gap between icon and label in Newsletters buttons."
    }
   ]
  },
@@ -3496,7 +3678,7 @@
    {
     "name": "radius-button",
     "value": "4px",
-    "usage": "Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
+    "usage": "Native Arc login only. Not shown in production: every market logs in through an Auth0 web view. Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
    },
    {
     "name": "radius-button-legacy",
@@ -3511,7 +3693,27 @@
    {
     "name": "radius-google",
     "value": "2px",
-    "usage": "Sign in with Google button (TroncKit default)."
+    "usage": "Sign in with Google button (TroncKit default). Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
+   },
+   {
+    "name": "radius-purchase",
+    "value": "8px",
+    "usage": "Meter paywall purchase button and the Manage App Subscription / Cancel buttons (Paywall.storyboard, ManageSubscriptionViewController.swift:49)."
+   },
+   {
+    "name": "radius-savings",
+    "value": "13px",
+    "usage": "Savings pill on the subscription screen (SubscriptionOptionsViewController2.swift:165)."
+   },
+   {
+    "name": "radius-newsletters",
+    "value": "9px",
+    "usage": "Newsletters buttons, including Apple / Google sign-in (NewslettersUIConfigs.swift:65)."
+   },
+   {
+    "name": "radius-hud",
+    "value": "12px",
+    "usage": "Loading indicator card (LoadingIndicatorManager.swift:87)."
    }
   ]
  },
@@ -3565,12 +3767,122 @@
    {
     "name": "size-social-icon",
     "value": "24px",
-    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min."
+    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min. Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
    },
    {
     "name": "size-tab-icon",
     "value": "26px 23px",
     "usage": "Font Awesome tab bar icons are drawn at 26 x 23 pt (CoreKit+FontAwesome.swift:16)."
+   },
+   {
+    "name": "size-button-purchase",
+    "value": "45px",
+    "usage": "Meter paywall purchase button, minimum height (Paywall.storyboard)."
+   },
+   {
+    "name": "size-button-push",
+    "value": "40px",
+    "usage": "Push prompt Yes and No buttons (PushNotificationOptInView.xib)."
+   },
+   {
+    "name": "size-button-modal",
+    "value": "44px",
+    "usage": "Manage App Subscription and Cancel buttons (ManageSubscriptionViewController.swift:129)."
+   },
+   {
+    "name": "size-button-newsletters",
+    "value": "52px",
+    "usage": "Newsletters buttons, minimum height (NewslettersUIConfigs.swift:64)."
+   },
+   {
+    "name": "size-navbar",
+    "value": "44px",
+    "usage": "Navigation bar. iOS default height; the app does not override it. The masthead logo shows at its natural size."
+   },
+   {
+    "name": "size-sectionbar",
+    "value": "44px",
+    "usage": "Section tabs bar (LatestNews.storyboard)."
+   },
+   {
+    "name": "size-section-underline",
+    "value": "4px",
+    "usage": "Selected section tab underline, full tab width, fades in over 0.32 s (LatestNews.storyboard, SectionBarCell.swift)."
+   },
+   {
+    "name": "size-banner-breaking",
+    "value": "35px",
+    "usage": "Breaking-news banner (LatestNews.storyboard)."
+   },
+   {
+    "name": "size-header-band",
+    "value": "30px",
+    "usage": "Section header band, Style.json `cell-tertiary-header*` (SectionFrontTertiaryLabelCell.swift:34)."
+   },
+   {
+    "name": "size-segment-band",
+    "value": "50px",
+    "usage": "Band holding the For You / Saved / Alerts segmented control (CoreTabBarItemManager.swift:78)."
+   },
+   {
+    "name": "size-settings-header",
+    "value": "30px",
+    "usage": "Settings section header band, all markets (`settingsHeaderHeight`)."
+   },
+   {
+    "name": "size-savings-pill",
+    "value": "110px 30px",
+    "usage": "Savings pill on the subscription screen (Paywall.storyboard)."
+   },
+   {
+    "name": "size-newsletters-icon",
+    "value": "22px",
+    "usage": "Apple / Google icon inside Newsletters sign-in buttons (NewslettersUIConfigs.swift:104)."
+   },
+   {
+    "name": "size-tournament-icon",
+    "value": "72px",
+    "usage": "Sport symbol in tournament loading (SportTournamentLoadingIndicatorStyle.swift)."
+   }
+  ]
+ },
+ "shadow": {
+  "note": "No shared elevation scale exists in the code; each shadow is set where it is used. Checked against f79fe3339. CSS blur is 2 x the iOS shadowRadius (the same conversion Figma uses). Recirculation cards take their shadow from the article style; if unset: opacity 1, radius 1, offset 0,2 (RecirculationItemCell.swift:97).",
+  "tokens": [
+   {
+    "name": "shadow-banner",
+    "value": "0 8px 28px rgba(0,0,0,0.18)",
+    "usage": "Top banner alert. iOS: black, opacity 0.18, radius 14, offset 0,8 (TopBannerAlertView.swift:237)."
+   },
+   {
+    "name": "shadow-audio-player",
+    "value": "0 -2px 20px rgba(0,0,0,0.2)",
+    "usage": "Persistent audio player. iOS: black, opacity 0.20, radius 10, offset 0,-2 (PersistentAudioPlayerStyle.swift:279). No shadow when it sits in the iOS 26 tab bar accessory."
+   },
+   {
+    "name": "shadow-web-sheet",
+    "value": "0 4px 20px rgba(0,0,0,0.15)",
+    "usage": "In-app web view sheet. iOS: black, opacity 0.15, radius 10, offset 0,4 (WebViewController.swift:25)."
+   },
+   {
+    "name": "shadow-image-alert",
+    "value": "2px 2px 10px rgba(0,0,0,0.5)",
+    "usage": "Alert with image. iOS: black, opacity 0.5, radius 5, offset 2,2 (TroncAlertControllerWithImage.swift:56)."
+   },
+   {
+    "name": "shadow-mini-player",
+    "value": "0 1px 8px rgba(0,0,0,0.3)",
+    "usage": "Mini media player. iOS: default black, opacity 0.3, radius 4, offset 0,1 (MiniMediaPlayerViewController.swift:46)."
+   },
+   {
+    "name": "shadow-newsletters-back",
+    "value": "0 1px 6px rgba(0,0,0,0.15)",
+    "usage": "Newsletters back button background. iOS: default black, opacity 0.15, radius 3, offset 0,1 (NewslettersUIConfigs.swift:109)."
+   },
+   {
+    "name": "shadow-photo-transition",
+    "value": "0 -3px 12px rgba(0,0,0,0.4)",
+    "usage": "Photo gallery push transition. iOS: default black, opacity 0.4, radius 6, offset not set so the iOS default 0,-3 (PhonePushTransition.swift:19)."
    }
   ]
  }

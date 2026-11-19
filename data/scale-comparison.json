@@ -2,10 +2,10 @@
  "generated_by": "scripts/compare_scales.py",
  "counts": {
   "same": 4,
-  "android-only": 25,
-  "ios-only": 10,
-  "differs": 5,
-  "close": 1
+  "android-only": 20,
+  "ios-only": 28,
+  "differs": 8,
+  "close": 3
  },
  "roles": [
   {
@@ -128,6 +128,71 @@
    "note": "Android subscription options use 14dp padding (controls notes), not a token"
   },
   {
+   "role": "Section tab gap",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-sectionbar-gap",
+    "kind": "spacing",
+    "value": "15px",
+    "usage": "Gap between section tabs, all markets (`sectionBarCellSpacing`). Half of it (7.5) pads each end."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Half pads each end of the bar"
+  },
+  {
+   "role": "Section header band text inset",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-header-band-inset",
+    "kind": "spacing",
+    "value": "10px",
+    "usage": "Left and right text inset in the section header band."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "iOS-only band"
+  },
+  {
+   "role": "Savings label inset, phone",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-savings-inset-phone",
+    "kind": "spacing",
+    "value": "10px",
+    "usage": "Savings pill inset from the yearly option trailing edge on iPhone."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Savings label inset, tablet",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-savings-inset-pad",
+    "kind": "spacing",
+    "value": "35px",
+    "usage": "Savings pill inset from the yearly option trailing edge on iPad."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Newsletters button icon gap",
+   "kind": "spacing",
+   "ios": {
+    "name": "space-newsletters-icon-gap",
+    "kind": "spacing",
+    "value": "12px",
+    "usage": "Gap between icon and label in Newsletters buttons."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
    "role": "Paywall login button side margin",
    "kind": "spacing",
    "ios": null,
@@ -144,10 +209,10 @@
    "role": "Primary button radius",
    "kind": "radius",
    "ios": {
-    "name": "radius-button",
+    "name": "radius-purchase",
     "kind": "radius",
-    "value": "4px",
-    "usage": "Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
+    "value": "8px",
+    "usage": "Meter paywall purchase button and the Manage App Subscription / Cancel buttons (Paywall.storyboard, ManageSubscriptionViewController.swift:49)."
    },
    "android": {
     "name": "radius-paywall",
@@ -156,7 +221,20 @@
     "usage": "Paywall Subscribe button and subscription options have no corner radius (plain color background)."
    },
    "match": "differs",
-   "note": "Kept per platform (DEC-07)"
+   "note": "Kept per platform (DEC-07). iOS: meter paywall purchase button; also the Manage App Subscription / Cancel buttons"
+  },
+  {
+   "role": "Native login button radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-button",
+    "kind": "radius",
+    "value": "4px",
+    "usage": "Native Arc login only. Not shown in production: every market logs in through an Auth0 web view. Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Native Arc login only: not shown in production (Auth0 web view everywhere)"
   },
   {
    "role": "Primary button radius, legacy template",
@@ -191,7 +269,7 @@
     "name": "radius-google",
     "kind": "radius",
     "value": "2px",
-    "usage": "Sign in with Google button (TroncKit default)."
+    "usage": "Sign in with Google button (TroncKit default). Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
    },
    "android": null,
    "match": "ios-only",
@@ -234,19 +312,50 @@
     "usage": "Manage subscription and delete account buttons (manage_app_sub_button_corner_radius, delete_account_buttons_corner)."
    },
    "match": "android-only",
-   "note": ""
+   "note": "iOS: Settings rows, not buttons; the Manage subscription modal buttons use radius-purchase (8)"
   },
   {
    "role": "Savings label radius",
    "kind": "radius",
-   "ios": null,
+   "ios": {
+    "name": "radius-savings",
+    "kind": "radius",
+    "value": "13px",
+    "usage": "Savings pill on the subscription screen (SubscriptionOptionsViewController2.swift:165)."
+   },
    "android": {
     "name": "radius-discount",
     "kind": "radius",
     "value": "15px",
     "usage": "Savings label on the subscription screen (paywall_discount_rounded_label.xml)."
    },
-   "match": "android-only",
+   "match": "close",
+   "note": ""
+  },
+  {
+   "role": "Newsletters button radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-newsletters",
+    "kind": "radius",
+    "value": "9px",
+    "usage": "Newsletters buttons, including Apple / Google sign-in (NewslettersUIConfigs.swift:65)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Includes Apple / Google sign-in"
+  },
+  {
+   "role": "Loading indicator card radius",
+   "kind": "radius",
+   "ios": {
+    "name": "radius-hud",
+    "kind": "radius",
+    "value": "12px",
+    "usage": "Loading indicator card (LoadingIndicatorManager.swift:87)."
+   },
+   "android": null,
+   "match": "ios-only",
    "note": ""
   },
   {
@@ -287,7 +396,7 @@
     "name": "size-social-icon",
     "kind": "size",
     "value": "24px",
-    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min."
+    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min. Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
    },
    "android": null,
    "match": "ios-only",
@@ -353,28 +462,168 @@
   {
    "role": "Paywall primary button height",
    "kind": "size",
-   "ios": null,
+   "ios": {
+    "name": "size-button-purchase",
+    "kind": "size",
+    "value": "45px",
+    "usage": "Meter paywall purchase button, minimum height (Paywall.storyboard)."
+   },
    "android": {
     "name": "size-paywall-button",
     "kind": "size",
     "value": "60px",
     "usage": "Paywall Subscribe button height (paywall_button_height)."
    },
-   "match": "android-only",
-   "note": "iOS height not in the source (44 provisional, DEC-07)"
+   "match": "differs",
+   "note": "iOS: at least 45, always 45 in practice (Apps team, MISSING-ASSETS 5.10)"
+  },
+  {
+   "role": "Push prompt button height",
+   "kind": "size",
+   "ios": {
+    "name": "size-button-push",
+    "kind": "size",
+    "value": "40px",
+    "usage": "Push prompt Yes and No buttons (PushNotificationOptInView.xib)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Yes and No"
+  },
+  {
+   "role": "Modal button height",
+   "kind": "size",
+   "ios": {
+    "name": "size-button-modal",
+    "kind": "size",
+    "value": "44px",
+    "usage": "Manage App Subscription and Cancel buttons (ManageSubscriptionViewController.swift:129)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Manage App Subscription and Cancel"
+  },
+  {
+   "role": "Newsletters button height",
+   "kind": "size",
+   "ios": {
+    "name": "size-button-newsletters",
+    "kind": "size",
+    "value": "52px",
+    "usage": "Newsletters buttons, minimum height (NewslettersUIConfigs.swift:64)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Minimum"
+  },
+  {
+   "role": "Breaking-news banner height",
+   "kind": "size",
+   "ios": {
+    "name": "size-banner-breaking",
+    "kind": "size",
+    "value": "35px",
+    "usage": "Breaking-news banner (LatestNews.storyboard)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android height not in the source"
+  },
+  {
+   "role": "Section header band height",
+   "kind": "size",
+   "ios": {
+    "name": "size-header-band",
+    "kind": "size",
+    "value": "30px",
+    "usage": "Section header band, Style.json `cell-tertiary-header*` (SectionFrontTertiaryLabelCell.swift:34)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "iOS-only band"
+  },
+  {
+   "role": "Segmented control band height",
+   "kind": "size",
+   "ios": {
+    "name": "size-segment-band",
+    "kind": "size",
+    "value": "50px",
+    "usage": "Band holding the For You / Saved / Alerts segmented control (CoreTabBarItemManager.swift:78)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "For You / Saved / Alerts"
+  },
+  {
+   "role": "Settings header band height",
+   "kind": "size",
+   "ios": {
+    "name": "size-settings-header",
+    "kind": "size",
+    "value": "30px",
+    "usage": "Settings section header band, all markets (`settingsHeaderHeight`)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Savings label size",
+   "kind": "size",
+   "ios": {
+    "name": "size-savings-pill",
+    "kind": "size",
+    "value": "110px 30px",
+    "usage": "Savings pill on the subscription screen (Paywall.storyboard)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "Android size not confirmed (MISSING-ASSETS 5.6)"
+  },
+  {
+   "role": "Newsletters sign-in icon",
+   "kind": "size",
+   "ios": {
+    "name": "size-newsletters-icon",
+    "kind": "size",
+    "value": "22px",
+    "usage": "Apple / Google icon inside Newsletters sign-in buttons (NewslettersUIConfigs.swift:104)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": ""
+  },
+  {
+   "role": "Tournament loading symbol",
+   "kind": "size",
+   "ios": {
+    "name": "size-tournament-icon",
+    "kind": "size",
+    "value": "72px",
+    "usage": "Sport symbol in tournament loading (SportTournamentLoadingIndicatorStyle.swift)."
+   },
+   "android": null,
+   "match": "ios-only",
+   "note": "SF Symbols"
   },
   {
    "role": "Top bar height",
    "kind": "size",
-   "ios": null,
+   "ios": {
+    "name": "size-navbar",
+    "kind": "size",
+    "value": "44px",
+    "usage": "Navigation bar. iOS default height; the app does not override it. The masthead logo shows at its natural size."
+   },
    "android": {
     "name": "size-toolbar",
     "kind": "size",
     "value": "56px",
     "usage": "Top app bar height on phones (?actionBarSize); 64dp at sw600dp, see size-toolbar-tablet. No market overrides."
    },
-   "match": "android-only",
-   "note": "iOS 44 pt (Apps team, f79fe3339; not in the iOS export)"
+   "match": "differs",
+   "note": "Platform defaults: iOS 44 pt, Android 56 dp"
   },
   {
    "role": "Top bar height, tablet",
@@ -392,28 +641,38 @@
   {
    "role": "Section tab height",
    "kind": "size",
-   "ios": null,
+   "ios": {
+    "name": "size-sectionbar",
+    "kind": "size",
+    "value": "44px",
+    "usage": "Section tabs bar (LatestNews.storyboard)."
+   },
    "android": {
     "name": "size-section-tab",
     "kind": "size",
     "value": "48px",
     "usage": "Section tab height: Material TabLayout default for text-only tabs, 12dp start and end padding. Not set in our code."
    },
-   "match": "android-only",
-   "note": "iOS 44 pt (Apps team, f79fe3339; not in the iOS export)"
+   "match": "differs",
+   "note": ""
   },
   {
    "role": "Section tab indicator",
    "kind": "size",
-   "ios": null,
+   "ios": {
+    "name": "size-section-underline",
+    "kind": "size",
+    "value": "4px",
+    "usage": "Selected section tab underline, full tab width, fades in over 0.32 s (LatestNews.storyboard, SectionBarCell.swift)."
+   },
    "android": {
     "name": "size-tab-indicator",
     "kind": "size",
     "value": "3px",
     "usage": "Section tab selected indicator height (tab_indicator_height), color Toolbar_Tabs_Indicator."
    },
-   "match": "android-only",
-   "note": "iOS 4 pt underline (Apps team, f79fe3339)"
+   "match": "close",
+   "note": "iOS fades in over 0.32 s"
   },
   {
    "role": "Bottom navigation height",

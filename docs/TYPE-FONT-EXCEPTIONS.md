@@ -23,9 +23,9 @@ Sources: iOS TroncKit @ e30ad2585 (data/source/markets.json, AppThemeable fonts)
 
 | Key | Majority (markets) | Exceptions |
 |---|---|---|
-| `headlineNormalFont` | `Spectral-Medium 31` (75) | `OpenSans-Regular 30`: VP; `OpenSansCondensed-Light 31`: NYDN |
-| `captionNormalFont` | `OpenSans-Regular 11` (75) | `OpenSans-Regular 12`: NYDN, VP |
-| `captionBoldFont` | `OpenSans-Bold 11` (75) | `OpenSans-Bold 12`: NYDN, VP |
+| `headlineNormalFont` | `Spectral-Medium 31` (76) | `OpenSans-Regular 30`: VP; `OpenSansCondensed-Light 31`: NYDN |
+| `captionNormalFont` | `OpenSans-Regular 11` (76) | `OpenSans-Regular 12`: NYDN, VP |
+| `captionBoldFont` | `OpenSans-Bold 11` (76) | `OpenSans-Bold 12`: NYDN, VP |
 
 ## Android: by market
 

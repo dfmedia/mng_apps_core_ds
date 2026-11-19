@@ -48,6 +48,8 @@ def bucket(x, y):
 
 rows, roleStats = [], collections.defaultdict(collections.Counter)
 for im in sorted(ios['markets'], key=lambda m: m['name']):
+    if im['code'] not in A:
+        print('skip', im['code'], '(iOS only: no Android build yet; handled by apply_new_markets.py)'); continue
     am = A[im['code']]; r = {'code': im['code'], 'name': im['name'], 'template': im['template'], 'roles': {}}
     for role, gi, ga, *_ in SHARED + CANDIDATES:
         x, y = norm(gi(im)), norm(ga(am)); b, d = bucket(x, y)

@@ -44,3 +44,12 @@ DEC-15 (Karl, 2026-11-05): `header` and `statusbar` follow the top bar (`navbar`
 | Android | Saratogian (TSAR) | statusbar | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ | `#000000` · 0, 0, 0 (same hex as `navtext`, `tabinactive`) | 21.0:1 ✅ | accepted, built | 3.0:1 (status-bar icons #ffffff) | navbar `#f5f5f5` · 245, 245, 245, light icons: 1.09:1 ❌ |
 
 Foreground: iOS header text is `Style.json cell-tertiary-headertext` (#ffffff in all 77 markets). Android status-bar icons are light by default; the main theme never sets `windowLightStatusBar`. Apps team (Ameer M., 2026-11-05 from code; confirmed on device 2026-11-10): on Android 14 and below the icons are white, so the dark overrides are needed; on Android 15+ the status bar is navbar and the app picks dark icons only when that color is exactly #FFFFFF (EdgeToEdgeUtil.java:30); every other color keeps white icons (confirmed 2026-11-10, Android 16 emulator, Denver Post). So DP, MC, NYDN, OS, SS and VP get dark icons. TSAR: production shows white icons on its #F5F5F5 bar on Android 15+, barely visible (1.09:1), as the export and the rule give (Rajal Patel, Apps team, 2026-11-19). The earlier production correction (white bar, dark icons, Karl 2026-11-10) is removed; the fix is IMPROVEMENTS CLR-09. Both versions are built (DEC-15): `statusbar` + `icons` (14 and below), navbar + `icons15` (15+). Dark and light icon colors are drawn by the system; the contrast above uses black and white.
+
+## iOS 26 dark tab bar: selected-tab accent
+
+`tabBarDarkSelectedTintColor` (new at TroncKit f79fe3339) is the selected-tab accent on the iOS 26 dark Liquid Glass tab bar. 76 of 78 markets leave it unset, and iOS 26 derives an accent from `tabBarSelectedTintColor` (`tabactive`), so there is no token for it. The markets that set it, documented only:
+
+| Market | Shipped | Light-bar tabactive |
+|---|---|---|
+| The Daily Camera (TDC) | `#c3eed8` · 195, 238, 216 | `#000000` · 0, 0, 0 |
+| Woodland Daily Democrat (TWDD) | `#c3eed8` · 195, 238, 216 | `#000000` · 0, 0, 0 |

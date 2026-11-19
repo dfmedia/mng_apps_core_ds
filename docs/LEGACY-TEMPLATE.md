@@ -8,8 +8,10 @@ Seven iOS markets (BS, DP, HC, MC, OS, SS, VP) still run TroncKit's older theme 
 
 | Part | Standard | Legacy template |
 |---|---|---|
-| Corner radius | 4 pt | 5 pt |
-| Border | none | 1 pt in the fill color |
+| Corner radius | 8 pt | 8 pt (same) |
+| Border | 0.7 pt in the fill color | 0.7 pt in the fill color (same) |
+
+The meter paywall purchase button is the same storyboard button in all 78 markets (Apps team, DREAMT-4718, 2026-11-19; DEC-22). The earlier difference (radius 4 vs 5 pt + 1 pt border) belongs to the native Log In / Register buttons, which production never shows.
 
 ## Text styles
 

@@ -1,122 +1,237 @@
 {
- "$description": "Spacing, radius, size and breakpoint values as shipped, copied from the style-guide artifact on 2026-11-03. Source data: do not edit.",
- "source": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ e30ad2585, project/tokens.json",
- "spacing": {
-  "note": "No shared spacing scale exists in the code. These are the values the code uses most, each with its source.",
-  "tokens": [
-   {
-    "name": "space-cell-margin",
-    "value": "16px",
-    "usage": "Section-front cell margins on all four sides (SectionFrontCell.swift:46)."
-   },
-   {
-    "name": "space-cell-padding",
-    "value": "8px",
-    "usage": "Spacing between elements inside a section-front cell (SectionFrontCell.swift:47)."
-   },
-   {
-    "name": "space-article-margin-min",
-    "value": "16px",
-    "usage": "Minimum article side margin. The margin grows with width: 0.3125 x width - 160 (NativeArticleScrollView.swift:104)."
-   },
-   {
-    "name": "space-article-top-phone",
-    "value": "20px",
-    "usage": "Article card top margin on iPhone (ArticleCardCell.swift:30)."
-   },
-   {
-    "name": "space-article-top-pad",
-    "value": "40px",
-    "usage": "Article card top margin on iPad (ArticleCardCell.swift:30)."
-   },
-   {
-    "name": "space-subscription-inset",
-    "value": "16px",
-    "usage": "Inner padding of a subscription option button (SubscriptionOptionButton.xib)."
-   }
-  ]
- },
- "radius": {
-  "tokens": [
-   {
-    "name": "radius-button",
-    "value": "4px",
-    "usage": "Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
-   },
-   {
-    "name": "radius-button-legacy",
-    "value": "5px",
-    "usage": "Paywall buttons in BS, DP, HC, MC, OS, SS, VP and TroncKit defaults; push-prompt Yes / No buttons (PushNotificationOptInView.xib)."
-   },
-   {
-    "name": "radius-subscription",
-    "value": "8px",
-    "usage": "Subscription option buttons (SubscriptionOptionButton.xib)."
-   },
-   {
-    "name": "radius-google",
-    "value": "2px",
-    "usage": "Sign in with Google button (TroncKit default)."
-   }
-  ]
- },
- "size": {
-  "tokens": [
-   {
-    "name": "size-touch-min",
-    "value": "44px",
-    "usage": "Apple's minimum touch target. Not enforced app-wide; set by hand in about 6 places."
-   },
-   {
-    "name": "size-checkbox",
-    "value": "30px",
-    "usage": "Your News topic checkbox, 30 x 30 (CollapsibleTableViewCell.swift:21). Below size-touch-min."
-   },
-   {
-    "name": "size-social-icon",
-    "value": "24px",
-    "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min."
-   },
-   {
-    "name": "size-tab-icon",
-    "value": "26px 23px",
-    "usage": "Font Awesome tab bar icons are drawn at 26 x 23 pt (CoreKit+FontAwesome.swift:16)."
-   }
-  ]
- },
- "breakpoint": {
-  "note": "Window-width classes for section fronts.",
-  "tokens": [
-   {
-    "name": "bp-front-small",
-    "value": "668px",
-    "usage": "Section front switches from x-small to small at this window width (FrontWidth.swift:26)."
-   },
-   {
-    "name": "bp-front-medium",
-    "value": "835px",
-    "usage": "Small to medium (FrontWidth.swift:27)."
-   },
-   {
-    "name": "bp-front-large",
-    "value": "1113px",
-    "usage": "Medium to large, 12.9-inch iPad landscape (FrontWidth.swift:28)."
-   },
-   {
-    "name": "bp-item-medium",
-    "value": "769px",
-    "usage": "Item width classes use a different medium step (PageItem.swift:85). Disagrees with bp-front-medium."
-   },
-   {
-    "name": "bp-item-large",
-    "value": "1025px",
-    "usage": "Item width classes use a different large step (PageItem.swift:86). Disagrees with bp-front-large."
-   },
-   {
-    "name": "grid-columns",
-    "value": "12",
-    "usage": "Section-front items are sized in twelfths of their parent (PageItem.swift:73)."
-   }
-  ]
- }
+  "$description": "Spacing, radius, size and breakpoint values as shipped, copied from the style-guide artifact on 2026-11-03. Source data: do not edit.",
+  "source": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ f79fe3339, project/tokens.json",
+  "spacing": {
+    "note": "No shared spacing scale exists in the code. These are the values the code uses most, each with its source.",
+    "tokens": [
+      {
+        "name": "space-cell-margin",
+        "value": "16px",
+        "usage": "Section-front cell margins on all four sides (SectionFrontCell.swift:46)."
+      },
+      {
+        "name": "space-cell-padding",
+        "value": "8px",
+        "usage": "Spacing between elements inside a section-front cell (SectionFrontCell.swift:47)."
+      },
+      {
+        "name": "space-article-margin-min",
+        "value": "16px",
+        "usage": "Minimum article side margin. The margin grows with width: 0.3125 x width - 160 (NativeArticleScrollView.swift:104)."
+      },
+      {
+        "name": "space-article-top-phone",
+        "value": "20px",
+        "usage": "Article card top margin on iPhone (ArticleCardCell.swift:30)."
+      },
+      {
+        "name": "space-article-top-pad",
+        "value": "40px",
+        "usage": "Article card top margin on iPad (ArticleCardCell.swift:30)."
+      },
+      {
+        "name": "space-subscription-inset",
+        "value": "16px",
+        "usage": "Inner padding of a subscription option button (SubscriptionOptionButton.xib)."
+      },
+      {
+        "name": "space-sectionbar-gap",
+        "value": "15px",
+        "usage": "Gap between section tabs, all markets (`sectionBarCellSpacing`). Half of it (7.5) pads each end."
+      },
+      {
+        "name": "space-header-band-inset",
+        "value": "10px",
+        "usage": "Left and right text inset in the section header band."
+      },
+      {
+        "name": "space-savings-inset-phone",
+        "value": "10px",
+        "usage": "Savings pill inset from the yearly option trailing edge on iPhone."
+      },
+      {
+        "name": "space-savings-inset-pad",
+        "value": "35px",
+        "usage": "Savings pill inset from the yearly option trailing edge on iPad."
+      },
+      {
+        "name": "space-newsletters-icon-gap",
+        "value": "12px",
+        "usage": "Gap between icon and label in Newsletters buttons."
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-button",
+        "value": "4px",
+        "usage": "Native Arc login only. Not shown in production: every market logs in through an Auth0 web view. Paywall Log In / Register buttons in the 70 standard-template markets (preferredButtonCornerRadius)."
+      },
+      {
+        "name": "radius-button-legacy",
+        "value": "5px",
+        "usage": "Paywall buttons in BS, DP, HC, MC, OS, SS, VP and TroncKit defaults; push-prompt Yes / No buttons (PushNotificationOptInView.xib)."
+      },
+      {
+        "name": "radius-subscription",
+        "value": "8px",
+        "usage": "Subscription option buttons (SubscriptionOptionButton.xib)."
+      },
+      {
+        "name": "radius-google",
+        "value": "2px",
+        "usage": "Sign in with Google button (TroncKit default). Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
+      },
+      {
+        "name": "radius-purchase",
+        "value": "8px",
+        "usage": "Meter paywall purchase button and the Manage App Subscription / Cancel buttons (Paywall.storyboard, ManageSubscriptionViewController.swift:49)."
+      },
+      {
+        "name": "radius-savings",
+        "value": "13px",
+        "usage": "Savings pill on the subscription screen (SubscriptionOptionsViewController2.swift:165)."
+      },
+      {
+        "name": "radius-newsletters",
+        "value": "9px",
+        "usage": "Newsletters buttons, including Apple / Google sign-in (NewslettersUIConfigs.swift:65)."
+      },
+      {
+        "name": "radius-hud",
+        "value": "12px",
+        "usage": "Loading indicator card (LoadingIndicatorManager.swift:87)."
+      }
+    ]
+  },
+  "size": {
+    "tokens": [
+      {
+        "name": "size-touch-min",
+        "value": "44px",
+        "usage": "Apple's minimum touch target. Not enforced app-wide; set by hand in about 6 places."
+      },
+      {
+        "name": "size-checkbox",
+        "value": "30px",
+        "usage": "Your News topic checkbox, 30 x 30 (CollapsibleTableViewCell.swift:21). Below size-touch-min."
+      },
+      {
+        "name": "size-social-icon",
+        "value": "24px",
+        "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min. Native Arc login only. Not shown in production: every market logs in through an Auth0 web view."
+      },
+      {
+        "name": "size-tab-icon",
+        "value": "26px 23px",
+        "usage": "Font Awesome tab bar icons are drawn at 26 x 23 pt (CoreKit+FontAwesome.swift:16)."
+      },
+      {
+        "name": "size-button-purchase",
+        "value": "45px",
+        "usage": "Meter paywall purchase button, minimum height (Paywall.storyboard)."
+      },
+      {
+        "name": "size-button-push",
+        "value": "40px",
+        "usage": "Push prompt Yes and No buttons (PushNotificationOptInView.xib)."
+      },
+      {
+        "name": "size-button-modal",
+        "value": "44px",
+        "usage": "Manage App Subscription and Cancel buttons (ManageSubscriptionViewController.swift:129)."
+      },
+      {
+        "name": "size-button-newsletters",
+        "value": "52px",
+        "usage": "Newsletters buttons, minimum height (NewslettersUIConfigs.swift:64)."
+      },
+      {
+        "name": "size-navbar",
+        "value": "44px",
+        "usage": "Navigation bar. iOS default height; the app does not override it. The masthead logo shows at its natural size."
+      },
+      {
+        "name": "size-sectionbar",
+        "value": "44px",
+        "usage": "Section tabs bar (LatestNews.storyboard)."
+      },
+      {
+        "name": "size-section-underline",
+        "value": "4px",
+        "usage": "Selected section tab underline, full tab width, fades in over 0.32 s (LatestNews.storyboard, SectionBarCell.swift)."
+      },
+      {
+        "name": "size-banner-breaking",
+        "value": "35px",
+        "usage": "Breaking-news banner (LatestNews.storyboard)."
+      },
+      {
+        "name": "size-header-band",
+        "value": "30px",
+        "usage": "Section header band, Style.json `cell-tertiary-header*` (SectionFrontTertiaryLabelCell.swift:34)."
+      },
+      {
+        "name": "size-segment-band",
+        "value": "50px",
+        "usage": "Band holding the For You / Saved / Alerts segmented control (CoreTabBarItemManager.swift:78)."
+      },
+      {
+        "name": "size-settings-header",
+        "value": "30px",
+        "usage": "Settings section header band, all markets (`settingsHeaderHeight`)."
+      },
+      {
+        "name": "size-savings-pill",
+        "value": "110px 30px",
+        "usage": "Savings pill on the subscription screen (Paywall.storyboard)."
+      },
+      {
+        "name": "size-newsletters-icon",
+        "value": "22px",
+        "usage": "Apple / Google icon inside Newsletters sign-in buttons (NewslettersUIConfigs.swift:104)."
+      },
+      {
+        "name": "size-tournament-icon",
+        "value": "72px",
+        "usage": "Sport symbol in tournament loading (SportTournamentLoadingIndicatorStyle.swift)."
+      }
+    ]
+  },
+  "breakpoint": {
+    "note": "Window-width classes for section fronts.",
+    "tokens": [
+      {
+        "name": "bp-front-small",
+        "value": "668px",
+        "usage": "Section front switches from x-small to small at this window width (FrontWidth.swift:26)."
+      },
+      {
+        "name": "bp-front-medium",
+        "value": "835px",
+        "usage": "Small to medium (FrontWidth.swift:27)."
+      },
+      {
+        "name": "bp-front-large",
+        "value": "1113px",
+        "usage": "Medium to large, 12.9-inch iPad landscape (FrontWidth.swift:28)."
+      },
+      {
+        "name": "bp-item-medium",
+        "value": "769px",
+        "usage": "Item width classes use a different medium step (PageItem.swift:85). Disagrees with bp-front-medium."
+      },
+      {
+        "name": "bp-item-large",
+        "value": "1025px",
+        "usage": "Item width classes use a different large step (PageItem.swift:86). Disagrees with bp-front-large."
+      },
+      {
+        "name": "grid-columns",
+        "value": "12",
+        "usage": "Section-front items are sized in twelfths of their parent (PageItem.swift:73)."
+      }
+    ]
+  }
 }

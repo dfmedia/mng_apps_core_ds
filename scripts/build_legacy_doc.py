@@ -11,7 +11,9 @@ L = ['# iOS legacy theme template (acknowledged only)', '',
      'These values ship today, so they are recorded here. Per DEC-10 (Karl, 2026-11-03) they are **not** built in Figma, tokens or code, because the template should go away (IMPROVEMENTS TYPE-01). '
      'Designs for these markets use the standard styles. Source: the iOS style guide notes ("Legacy template (BS, DP, …): …").', '',
      '## Primary button', '', '| Part | Standard | Legacy template |', '|---|---|---|',
-     f"| Corner radius | {B['radius']} pt | {B['radius_legacy']} pt |", f"| Border | none | {B['border_legacy']} pt in the fill color |", '',
+     f"| Corner radius | {B['radius']} pt | {B['radius']} pt (same) |", f"| Border | {B['border']} pt in the fill color | {B['border']} pt in the fill color (same) |", '',
+     f"The meter paywall purchase button is the same storyboard button in all 78 markets (Apps team, DREAMT-4718, 2026-11-19; DEC-22). "
+     f"The earlier difference (radius {B['previous']['radius']} vs {B['previous']['radius_legacy']} pt + {B['previous']['border_legacy']} pt border) belongs to the native Log In / Register buttons, which production never shows.", '',
      '## Text styles', '', '| Role | iOS style | Standard | Legacy template |', '|---|---|---|---|']
 for r in T['type']:
     L.append(f"| {r['role'].replace('Legacy: ', '')} | `{r['style']}` | {r['standard'] or '— (legacy only)'} | {r['legacy']} |")

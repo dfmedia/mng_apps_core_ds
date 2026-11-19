@@ -1976,7 +1976,7 @@
        ],
        "market": "Daily Herald",
        "source": "sectionBarBackgroundColor",
-       "provisional": true
+       "provisional": false
       }
      }
     },
@@ -1993,7 +1993,7 @@
        ],
        "market": "Daily Herald",
        "source": "sectionBarTextColor",
-       "provisional": true
+       "provisional": false
       }
      }
     },
@@ -2010,7 +2010,7 @@
        ],
        "market": "Daily Herald",
        "source": "sectionBarSelectedTextColor",
-       "provisional": true
+       "provisional": false
       }
      }
     },
@@ -2027,7 +2027,7 @@
        ],
        "market": "Daily Herald",
        "source": "sectionBarSelectedUnderBarColor",
-       "provisional": true
+       "provisional": false
       }
      }
     }

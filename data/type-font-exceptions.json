@@ -12,7 +12,7 @@
    {
     "key": "headlineNormalFont",
     "majority": "Spectral-Medium 31",
-    "majority_markets": 75,
+    "majority_markets": 76,
     "exceptions": [
      {
       "value": "OpenSans-Regular 30",
@@ -31,19 +31,19 @@
    {
     "key": "bodyNormalFont",
     "majority": "OpenSans-Regular 14",
-    "majority_markets": 77,
+    "majority_markets": 78,
     "exceptions": []
    },
    {
     "key": "bodyBoldFont",
     "majority": "OpenSans-Bold 14",
-    "majority_markets": 77,
+    "majority_markets": 78,
     "exceptions": []
    },
    {
     "key": "captionNormalFont",
     "majority": "OpenSans-Regular 11",
-    "majority_markets": 75,
+    "majority_markets": 76,
     "exceptions": [
      {
       "value": "OpenSans-Regular 12",
@@ -57,7 +57,7 @@
    {
     "key": "captionBoldFont",
     "majority": "OpenSans-Bold 11",
-    "majority_markets": 75,
+    "majority_markets": 76,
     "exceptions": [
      {
       "value": "OpenSans-Bold 12",

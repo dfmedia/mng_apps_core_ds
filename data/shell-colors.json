@@ -2553,5 +2553,9 @@
    "shipped": "#000000",
    "built": "#00919e"
   }
- ]
+ ],
+ "ios_dark_tab_accent": {
+  "tdc": "#c3eed8",
+  "twdd": "#c3eed8"
+ }
 }

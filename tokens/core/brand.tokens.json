@@ -5139,9 +5139,9 @@
         180
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#0072b4",
         "android": null
        },
        "fix": null,
@@ -5161,9 +5161,9 @@
         255
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#ffffff",
         "android": null
        },
        "fix": null,
@@ -5183,9 +5183,9 @@
         180
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#0072b4",
         "android": null
        },
        "fix": null,
@@ -5205,9 +5205,9 @@
         0
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#000000",
         "android": null
        },
        "fix": null,
@@ -5227,9 +5227,9 @@
         255
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#ffffff",
         "android": null
        },
        "fix": null,
@@ -5238,20 +5238,20 @@
      }
     },
     "action": {
-     "$value": "#0072b4",
+     "$value": "#000000",
      "$type": "color",
      "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
         0,
-        114,
-        180
+        0,
+        0
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#000000",
         "android": null
        },
        "fix": null,
@@ -5271,7 +5271,7 @@
         14
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "core-alert",
        "shipped": {
         "ios": null,
         "android": null
@@ -5293,9 +5293,9 @@
         255
        ],
        "market": "Daily Herald",
-       "evidence": "new-market",
+       "evidence": "ios-only-market",
        "shipped": {
-        "ios": null,
+        "ios": "#ffffff",
         "android": null
        },
        "fix": null,

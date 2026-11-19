@@ -17658,10 +17658,11 @@
    "name": "Daily Herald",
    "cluster": "Tribune",
    "provisional": true,
-   "status": "provisional",
+   "status": "ios-only",
+   "ios_shipped": "f79fe3339",
    "roles": {
     "navbar": {
-     "ios": null,
+     "ios": "#0072b4",
      "android": null,
      "sheet": null,
      "value": "#0072b4",
@@ -17670,12 +17671,12 @@
       114,
       180
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "navtext": {
-     "ios": null,
+     "ios": "#ffffff",
      "android": null,
      "sheet": null,
      "value": "#ffffff",
@@ -17684,12 +17685,12 @@
       255,
       255
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "tabbar": {
-     "ios": null,
+     "ios": "#0072b4",
      "android": null,
      "sheet": null,
      "value": "#0072b4",
@@ -17698,12 +17699,12 @@
       114,
       180
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "tabactive": {
-     "ios": null,
+     "ios": "#000000",
      "android": null,
      "sheet": null,
      "value": "#000000",
@@ -17712,12 +17713,12 @@
       0,
       0
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "tabinactive": {
-     "ios": null,
+     "ios": "#ffffff",
      "android": null,
      "sheet": null,
      "value": "#ffffff",
@@ -17726,23 +17727,23 @@
       255,
       255
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "action": {
-     "ios": null,
+     "ios": "#000000",
      "android": null,
      "sheet": null,
-     "value": "#0072b4",
+     "value": "#000000",
      "value_rgb": [
       0,
-      114,
-      180
+      0,
+      0
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "alert": {
      "ios": null,
@@ -17754,12 +17755,12 @@
       0,
       14
      ],
-     "evidence": "new-market",
+     "evidence": "core-alert",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     },
     "alerttext": {
-     "ios": null,
+     "ios": "#ffffff",
      "android": null,
      "sheet": null,
      "value": "#ffffff",
@@ -17768,9 +17769,9 @@
       255,
       255
      ],
-     "evidence": "new-market",
+     "evidence": "ios-only-market",
      "fix": null,
-     "note": "Tribpub-MNG App Migrations, Production row tdh: #hex Primary Color #0072B4"
+     "note": "iOS as shipped: TroncKit f79fe3339 markets.json (DREAMT-4718, 2026-11-19). Navbar matches the migration sheet Primary #0072B4."
     }
    },
    "platform_only": {

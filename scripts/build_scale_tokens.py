@@ -47,7 +47,28 @@ IOS = [
  ('Subscription option radius', 'component.ios.subscription-option.radius', 'Subscription option button corner radius'),
  ('Google sign-in radius', 'component.ios.google-sign-in.radius', 'Sign in with Google button corner radius (TroncKit default)'),
  ('Your News checkbox', 'component.ios.checkbox.size', 'Your News topic checkbox, square (below the touch minimum)'),
- ('Social sign-in icon', 'component.ios.social-sign-in.icon', 'Icon inside social sign-in buttons'),
+ ('Social sign-in icon', 'component.ios.social-sign-in.icon', 'Icon inside social sign-in buttons (native Arc login, not shown in production)'),
+ # f79fe3339 export (DREAMT-4718, 2026-11-19)
+ ('Top bar height', 'component.ios.top-bar.height', 'Navigation bar height (iOS default; logo at natural size)'),
+ ('Section tab height', 'component.ios.section-tabs.height', 'Section tabs bar height'),
+ ('Section tab gap', 'component.ios.section-tabs.gap', 'Gap between section tabs; half pads each end'),
+ ('Section tab indicator', 'component.ios.section-tabs.indicator', 'Selected section tab underline, full tab width, fades in over 0.32 s'),
+ ('Breaking-news banner height', 'component.ios.breaking-news-banner.height', 'Breaking-news banner height'),
+ ('Section header band height', 'component.ios.section-header-band.height', 'Section header band height'),
+ ('Section header band text inset', 'component.ios.section-header-band.inset', 'Section header band left and right text inset'),
+ ('Segmented control band height', 'component.ios.segmented-control.band-height', 'Band holding the For You / Saved / Alerts segmented control'),
+ ('Settings header band height', 'component.ios.settings-header.height', 'Settings section header band height'),
+ ('Savings label radius', 'component.ios.savings-label.radius', 'Savings pill corner radius'),
+ ('Savings label inset, phone', 'component.ios.savings-label.inset', 'Savings pill inset from the yearly option trailing edge, iPhone'),
+ ('Savings label inset, tablet', 'component.ios.savings-label.inset-tablet', 'Savings pill inset from the yearly option trailing edge, iPad'),
+ ('Push prompt button height', 'component.ios.permission-prompt.height', 'Notification prompt Yes / No button height'),
+ ('Modal button height', 'component.ios.modal-button.height', 'Manage App Subscription and Cancel buttons height'),
+ ('Newsletters button height', 'component.ios.newsletters-button.height', 'Newsletters buttons minimum height (incl. Apple / Google sign-in)'),
+ ('Newsletters button radius', 'component.ios.newsletters-button.radius', 'Newsletters buttons corner radius'),
+ ('Newsletters sign-in icon', 'component.ios.newsletters-button.icon', 'Apple / Google icon inside Newsletters sign-in buttons'),
+ ('Newsletters button icon gap', 'component.ios.newsletters-button.icon-gap', 'Gap between icon and label in Newsletters buttons'),
+ ('Loading indicator card radius', 'component.ios.loading-indicator.radius', 'Loading indicator card corner radius'),
+ ('Tournament loading symbol', 'component.ios.tournament-loading.icon', 'Sport symbol in tournament loading (SF Symbols)'),
 ]
 for role, path, desc in IOS: put(ios, path, tok(side(role, 'ios'), desc, 'ios'))
 # push-prompt Yes/No buttons ship radius 5 in every market (the same value the legacy template uses for paywall buttons)
@@ -55,6 +76,9 @@ put(ios, 'component.ios.permission-prompt.radius', tok(side('Primary button radi
 tab = side('Tab bar icon', 'ios'); w, h = [float(x.replace('px', '')) for x in str(tab['value']).split()]
 put(ios, 'component.ios.tab-bar.icon-width', tok(tab, 'Tab bar icon width (Font Awesome, 26 x 23)', 'ios', value=w))
 put(ios, 'component.ios.tab-bar.icon-height', tok(tab, 'Tab bar icon height (Font Awesome, 26 x 23)', 'ios', value=h))
+sav = side('Savings label size', 'ios'); w, h = [float(x.replace('px', '')) for x in str(sav['value']).split()]
+put(ios, 'component.ios.savings-label.width', tok(sav, 'Savings pill width (110 x 30)', 'ios', value=w))
+put(ios, 'component.ios.savings-label.height', tok(sav, 'Savings pill height (110 x 30)', 'ios', value=h))
 
 # ---- Android (dp; width classes in physical inches)
 AND = [

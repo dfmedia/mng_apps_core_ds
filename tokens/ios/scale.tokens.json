@@ -160,7 +160,7 @@
      "$extensions": {
       "mng": {
        "source": "radius-google",
-       "usage": "Sign in with Google button (TroncKit default).",
+       "usage": "Sign in with Google button (TroncKit default). Native Arc login only. Not shown in production: every market logs in through an Auth0 web view.",
        "platform": "ios",
        "unit": "px"
       }
@@ -186,11 +186,207 @@
     "icon": {
      "$value": "24px",
      "$type": "dimension",
-     "$description": "Icon inside social sign-in buttons",
+     "$description": "Icon inside social sign-in buttons (native Arc login, not shown in production)",
      "$extensions": {
       "mng": {
        "source": "size-social-icon",
-       "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min.",
+       "usage": "Icon inside social login buttons (SocialLoginButton.xib). Below size-touch-min. Native Arc login only. Not shown in production: every market logs in through an Auth0 web view.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "top-bar": {
+    "height": {
+     "$value": "44px",
+     "$type": "dimension",
+     "$description": "Navigation bar height (iOS default; logo at natural size)",
+     "$extensions": {
+      "mng": {
+       "source": "size-navbar",
+       "usage": "Navigation bar. iOS default height; the app does not override it. The masthead logo shows at its natural size.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "section-tabs": {
+    "height": {
+     "$value": "44px",
+     "$type": "dimension",
+     "$description": "Section tabs bar height",
+     "$extensions": {
+      "mng": {
+       "source": "size-sectionbar",
+       "usage": "Section tabs bar (LatestNews.storyboard).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "gap": {
+     "$value": "15px",
+     "$type": "dimension",
+     "$description": "Gap between section tabs; half pads each end",
+     "$extensions": {
+      "mng": {
+       "source": "space-sectionbar-gap",
+       "usage": "Gap between section tabs, all markets (`sectionBarCellSpacing`). Half of it (7.5) pads each end.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "indicator": {
+     "$value": "4px",
+     "$type": "dimension",
+     "$description": "Selected section tab underline, full tab width, fades in over 0.32 s",
+     "$extensions": {
+      "mng": {
+       "source": "size-section-underline",
+       "usage": "Selected section tab underline, full tab width, fades in over 0.32 s (LatestNews.storyboard, SectionBarCell.swift).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "breaking-news-banner": {
+    "height": {
+     "$value": "35px",
+     "$type": "dimension",
+     "$description": "Breaking-news banner height",
+     "$extensions": {
+      "mng": {
+       "source": "size-banner-breaking",
+       "usage": "Breaking-news banner (LatestNews.storyboard).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "section-header-band": {
+    "height": {
+     "$value": "30px",
+     "$type": "dimension",
+     "$description": "Section header band height",
+     "$extensions": {
+      "mng": {
+       "source": "size-header-band",
+       "usage": "Section header band, Style.json `cell-tertiary-header*` (SectionFrontTertiaryLabelCell.swift:34).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "inset": {
+     "$value": "10px",
+     "$type": "dimension",
+     "$description": "Section header band left and right text inset",
+     "$extensions": {
+      "mng": {
+       "source": "space-header-band-inset",
+       "usage": "Left and right text inset in the section header band.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "segmented-control": {
+    "band-height": {
+     "$value": "50px",
+     "$type": "dimension",
+     "$description": "Band holding the For You / Saved / Alerts segmented control",
+     "$extensions": {
+      "mng": {
+       "source": "size-segment-band",
+       "usage": "Band holding the For You / Saved / Alerts segmented control (CoreTabBarItemManager.swift:78).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "settings-header": {
+    "height": {
+     "$value": "30px",
+     "$type": "dimension",
+     "$description": "Settings section header band height",
+     "$extensions": {
+      "mng": {
+       "source": "size-settings-header",
+       "usage": "Settings section header band, all markets (`settingsHeaderHeight`).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "savings-label": {
+    "radius": {
+     "$value": "13px",
+     "$type": "dimension",
+     "$description": "Savings pill corner radius",
+     "$extensions": {
+      "mng": {
+       "source": "radius-savings",
+       "usage": "Savings pill on the subscription screen (SubscriptionOptionsViewController2.swift:165).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "inset": {
+     "$value": "10px",
+     "$type": "dimension",
+     "$description": "Savings pill inset from the yearly option trailing edge, iPhone",
+     "$extensions": {
+      "mng": {
+       "source": "space-savings-inset-phone",
+       "usage": "Savings pill inset from the yearly option trailing edge on iPhone.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "inset-tablet": {
+     "$value": "35px",
+     "$type": "dimension",
+     "$description": "Savings pill inset from the yearly option trailing edge, iPad",
+     "$extensions": {
+      "mng": {
+       "source": "space-savings-inset-pad",
+       "usage": "Savings pill inset from the yearly option trailing edge on iPad.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "width": {
+     "$value": "110px",
+     "$type": "dimension",
+     "$description": "Savings pill width (110 x 30)",
+     "$extensions": {
+      "mng": {
+       "source": "size-savings-pill",
+       "usage": "Savings pill on the subscription screen (Paywall.storyboard).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "height": {
+     "$value": "30px",
+     "$type": "dimension",
+     "$description": "Savings pill height (110 x 30)",
+     "$extensions": {
+      "mng": {
+       "source": "size-savings-pill",
+       "usage": "Savings pill on the subscription screen (Paywall.storyboard).",
        "platform": "ios",
        "unit": "px"
       }
@@ -198,6 +394,19 @@
     }
    },
    "permission-prompt": {
+    "height": {
+     "$value": "40px",
+     "$type": "dimension",
+     "$description": "Notification prompt Yes / No button height",
+     "$extensions": {
+      "mng": {
+       "source": "size-button-push",
+       "usage": "Push prompt Yes and No buttons (PushNotificationOptInView.xib).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
     "radius": {
      "$value": "5px",
      "$type": "dimension",
@@ -206,6 +415,105 @@
       "mng": {
        "source": "radius-button-legacy",
        "usage": "Paywall buttons in BS, DP, HC, MC, OS, SS, VP and TroncKit defaults; push-prompt Yes / No buttons (PushNotificationOptInView.xib).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "modal-button": {
+    "height": {
+     "$value": "44px",
+     "$type": "dimension",
+     "$description": "Manage App Subscription and Cancel buttons height",
+     "$extensions": {
+      "mng": {
+       "source": "size-button-modal",
+       "usage": "Manage App Subscription and Cancel buttons (ManageSubscriptionViewController.swift:129).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "newsletters-button": {
+    "height": {
+     "$value": "52px",
+     "$type": "dimension",
+     "$description": "Newsletters buttons minimum height (incl. Apple / Google sign-in)",
+     "$extensions": {
+      "mng": {
+       "source": "size-button-newsletters",
+       "usage": "Newsletters buttons, minimum height (NewslettersUIConfigs.swift:64).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "radius": {
+     "$value": "9px",
+     "$type": "dimension",
+     "$description": "Newsletters buttons corner radius",
+     "$extensions": {
+      "mng": {
+       "source": "radius-newsletters",
+       "usage": "Newsletters buttons, including Apple / Google sign-in (NewslettersUIConfigs.swift:65).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "icon": {
+     "$value": "22px",
+     "$type": "dimension",
+     "$description": "Apple / Google icon inside Newsletters sign-in buttons",
+     "$extensions": {
+      "mng": {
+       "source": "size-newsletters-icon",
+       "usage": "Apple / Google icon inside Newsletters sign-in buttons (NewslettersUIConfigs.swift:104).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    },
+    "icon-gap": {
+     "$value": "12px",
+     "$type": "dimension",
+     "$description": "Gap between icon and label in Newsletters buttons",
+     "$extensions": {
+      "mng": {
+       "source": "space-newsletters-icon-gap",
+       "usage": "Gap between icon and label in Newsletters buttons.",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "loading-indicator": {
+    "radius": {
+     "$value": "12px",
+     "$type": "dimension",
+     "$description": "Loading indicator card corner radius",
+     "$extensions": {
+      "mng": {
+       "source": "radius-hud",
+       "usage": "Loading indicator card (LoadingIndicatorManager.swift:87).",
+       "platform": "ios",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "tournament-loading": {
+    "icon": {
+     "$value": "72px",
+     "$type": "dimension",
+     "$description": "Sport symbol in tournament loading (SF Symbols)",
+     "$extensions": {
+      "mng": {
+       "source": "size-tournament-icon",
+       "usage": "Sport symbol in tournament loading (SportTournamentLoadingIndicatorStyle.swift).",
        "platform": "ios",
        "unit": "px"
       }

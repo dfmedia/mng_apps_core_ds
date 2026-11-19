@@ -5,13 +5,13 @@
    "adhesion-banner-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`adhesionBannerBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`adhesionBannerBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "adhesionBannerBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -26,13 +26,13 @@
    "alert-cell-unviewed-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertCellUnviewedBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`alertCellUnviewedBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertCellUnviewedBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -47,13 +47,13 @@
    "alert-cell-viewed-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertCellViewedBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`alertCellViewedBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertCellViewedBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -68,13 +68,13 @@
    "alert-detail-cell-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertDetailCellBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`alertDetailCellBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertDetailCellBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -89,13 +89,13 @@
    "alert-detail-cell-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`alertDetailCellTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertDetailCellTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertDetailCellTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -118,13 +118,13 @@
    "alert-footer-background": {
     "$type": "color",
     "$value": "#0000ff",
-    "$description": "`alertFooterBackgroundColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertFooterBackgroundColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertFooterBackgroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#000000",
        "DP": "#000000",
@@ -147,13 +147,13 @@
    "alert-footer-text": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertFooterTextColor` (iOS): same in all 77 markets",
+    "$description": "`alertFooterTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertFooterTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -168,13 +168,13 @@
    "alert-settings-table-view-background": {
     "$type": "color",
     "$value": "#f1f1f1",
-    "$description": "`alertSettingsTableViewBackgroundColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertSettingsTableViewBackgroundColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertSettingsTableViewBackgroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#aaaaaa",
        "DP": "#aaaaaa",
@@ -197,13 +197,13 @@
    "alert-settings-table-view-separator": {
     "$type": "color",
     "$value": "#f1f1f1",
-    "$description": "`alertSettingsTableViewSeparatorColor` (iOS): 69 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertSettingsTableViewSeparatorColor` (iOS): 70 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertSettingsTableViewSeparatorColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 69,
+      "markets": 70,
       "exceptions": {
        "BS": "#808080",
        "DP": "#808080",
@@ -227,13 +227,13 @@
    "alert-topic-cell-disabled-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertTopicCellDisabledBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`alertTopicCellDisabledBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertTopicCellDisabledBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -248,13 +248,13 @@
    "alert-topic-cell-disabled-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`alertTopicCellDisabledTextColor` (iOS): 69 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertTopicCellDisabledTextColor` (iOS): 70 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertTopicCellDisabledTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 69,
+      "markets": 70,
       "exceptions": {
        "BS": "#808080",
        "DP": "#808080",
@@ -278,13 +278,13 @@
    "alert-topic-cell-enabled-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`alertTopicCellEnabledBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`alertTopicCellEnabledBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "alertTopicCellEnabledBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -299,13 +299,13 @@
    "alert-topic-cell-enabled-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`alertTopicCellEnabledTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`alertTopicCellEnabledTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "alertTopicCellEnabledTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -328,13 +328,13 @@
    "breaking-news-button": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`breakingNewsButtonColor` (iOS): same in all 77 markets",
+    "$description": "`breakingNewsButtonColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "breakingNewsButtonColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -350,22 +350,22 @@
     "mng": {
      "follows": {
       "e-newspaper-primary-button": {
-       "$description": "`eNewspaperPrimaryButtonColor` (iOS): follows action in 77 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`eNewspaperPrimaryButtonColor` (iOS): follows action in 78 of 78 markets; exceptions documented only (DEC-16)",
        "source": "eNewspaperPrimaryButtonColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "follows": "action",
        "owner": "ios"
       },
       "navigation-view": {
-       "$description": "`navigationViewColor` (iOS): follows navbar in 76 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`navigationViewColor` (iOS): follows navbar in 77 of 78 markets; exceptions documented only (DEC-16)",
        "source": "navigationViewColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 76,
+       "markets": 77,
        "exceptions": {
         "TDP": "#f7a430"
        },
@@ -374,11 +374,11 @@
        "owner": "ios"
       },
       "navigation-view-item-tint": {
-       "$description": "`navigationViewItemTintColor` (iOS): follows navtext in 76 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`navigationViewItemTintColor` (iOS): follows navtext in 77 of 78 markets; exceptions documented only (DEC-16)",
        "source": "navigationViewItemTintColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 76,
+       "markets": 77,
        "exceptions": {
         "TIVDB": "#ffffff"
        },
@@ -387,22 +387,22 @@
        "owner": "ios"
       },
       "paywall-thank-you-next-steps-button-background": {
-       "$description": "`paywallThankYouNextStepsButtonBackgroundColor` (iOS): follows action in 77 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`paywallThankYouNextStepsButtonBackgroundColor` (iOS): follows action in 78 of 78 markets; exceptions documented only (DEC-16)",
        "source": "paywallThankYouNextStepsButtonBackgroundColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "follows": "action",
        "owner": "ios"
       },
       "safari-control-tint": {
-       "$description": "`safariControlTintColor` (iOS): follows navtext in 75 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`safariControlTintColor` (iOS): follows navtext in 76 of 78 markets; exceptions documented only (DEC-16)",
        "source": "safariControlTintColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 75,
+       "markets": 76,
        "exceptions": {
         "TIVDB": "#ffffff",
         "TSAR": "#ffffff"
@@ -412,11 +412,11 @@
        "owner": "ios"
       },
       "section-list-cell-selected-background": {
-       "$description": "`sectionListCellSelectedBackgroundColor` (iOS): follows action in 72 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`sectionListCellSelectedBackgroundColor` (iOS): follows action in 73 of 78 markets; exceptions documented only (DEC-16)",
        "source": "sectionListCellSelectedBackgroundColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 72,
+       "markets": 73,
        "exceptions": {
         "NYDN": "#999999",
         "TDCD": "#000000",
@@ -429,11 +429,11 @@
        "owner": "ios"
       },
       "settings-info-button-tint": {
-       "$description": "`settingsInfoButtonTintColor` (iOS): follows action in 68 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`settingsInfoButtonTintColor` (iOS): follows action in 69 of 78 markets; exceptions documented only (DEC-16)",
        "source": "settingsInfoButtonTintColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 68,
+       "markets": 69,
        "exceptions": {
         "BS": "#000000",
         "DP": "#000000",
@@ -450,11 +450,11 @@
        "owner": "ios"
       },
       "subscription-active": {
-       "$description": "`subscriptionActiveColor` (iOS): follows action in 65 of 77 markets; exceptions documented only (DEC-16)",
+       "$description": "`subscriptionActiveColor` (iOS): follows action in 66 of 78 markets; exceptions documented only (DEC-16)",
        "source": "subscriptionActiveColor",
        "platform": "ios",
        "kind": "follows",
-       "markets": 65,
+       "markets": 66,
        "exceptions": {
         "BS": "#d80000",
         "DP": "#ff0000",
@@ -479,13 +479,13 @@
    "empty-list-view-button-title": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`emptyListViewButtonTitleColor` (iOS): same in all 77 markets",
+    "$description": "`emptyListViewButtonTitleColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "emptyListViewButtonTitleColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -500,13 +500,13 @@
    "empty-list-view-detail": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`emptyListViewDetailColor` (iOS): same in all 77 markets",
+    "$description": "`emptyListViewDetailColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "emptyListViewDetailColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -521,13 +521,13 @@
    "empty-list-view-title": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`emptyListViewTitleColor` (iOS): same in all 77 markets",
+    "$description": "`emptyListViewTitleColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "emptyListViewTitleColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -542,13 +542,13 @@
    "enable-notification-view-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`enableNotificationViewBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`enableNotificationViewBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "enableNotificationViewBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -563,13 +563,13 @@
    "enable-notification-view-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`enableNotificationViewTextColor` (iOS): 69 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`enableNotificationViewTextColor` (iOS): 70 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "enableNotificationViewTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 69,
+      "markets": 70,
       "exceptions": {
        "BS": "#000000",
        "DP": "#000000",
@@ -593,13 +593,13 @@
    "message-view-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`messageViewBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`messageViewBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "messageViewBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -614,13 +614,13 @@
    "message-view-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`messageViewTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`messageViewTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "messageViewTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -643,13 +643,13 @@
    "offline-banner-background": {
     "$type": "color",
     "$value": "#555555",
-    "$description": "`offlineBannerBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`offlineBannerBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineBannerBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -664,13 +664,13 @@
    "offline-banner-text": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`offlineBannerTextColor` (iOS): same in all 77 markets",
+    "$description": "`offlineBannerTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineBannerTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -685,13 +685,13 @@
    "offline-downloading-text": {
     "$type": "color",
     "$value": "#ff0000",
-    "$description": "`offlineDownloadingTextColor` (iOS): same in all 77 markets",
+    "$description": "`offlineDownloadingTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineDownloadingTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -706,13 +706,13 @@
    "offline-view-cell-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`offlineViewCellBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewCellBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewCellBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -727,13 +727,13 @@
    "offline-view-cell-selected-background": {
     "$type": "color",
     "$value": "#555555",
-    "$description": "`offlineViewCellSelectedBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewCellSelectedBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewCellSelectedBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -748,13 +748,13 @@
    "offline-view-cell-text": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`offlineViewCellTextColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewCellTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewCellTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -769,13 +769,13 @@
    "offline-view-footer": {
     "$type": "color",
     "$value": "#aaaaaa",
-    "$description": "`offlineViewFooterColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewFooterColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewFooterColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -790,13 +790,13 @@
    "offline-view-header-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`offlineViewHeaderBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewHeaderBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewHeaderBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -811,13 +811,13 @@
    "offline-view-header-text": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`offlineViewHeaderTextColor` (iOS): same in all 77 markets",
+    "$description": "`offlineViewHeaderTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "offlineViewHeaderTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -832,13 +832,13 @@
    "page-body": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`pageBodyColor` (iOS): same in all 77 markets",
+    "$description": "`pageBodyColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pageBodyColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -853,13 +853,13 @@
    "page-border": {
     "$type": "color",
     "$value": "#b8b8b8",
-    "$description": "`pageBorderColor` (iOS): same in all 77 markets",
+    "$description": "`pageBorderColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pageBorderColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -874,13 +874,13 @@
    "page-caption": {
     "$type": "color",
     "$value": "#838383",
-    "$description": "`pageCaptionColor` (iOS): same in all 77 markets",
+    "$description": "`pageCaptionColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pageCaptionColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -895,13 +895,13 @@
    "page-item": {
     "$type": "color",
     "$value": "#f2f2f2",
-    "$description": "`pageItemColor` (iOS): same in all 77 markets",
+    "$description": "`pageItemColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pageItemColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -916,13 +916,13 @@
    "paywall-authentication-text-field-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`paywallAuthenticationTextFieldBackgroundColor` (iOS): 76 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallAuthenticationTextFieldBackgroundColor` (iOS): 77 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallAuthenticationTextFieldBackgroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 76,
+      "markets": 77,
       "exceptions": {
        "TSAR": "#000000"
       },
@@ -939,13 +939,13 @@
    "paywall-multiple-field-label": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`paywallMultipleFieldLabelColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallMultipleFieldLabelColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallMultipleFieldLabelColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -968,13 +968,13 @@
    "paywall-safari-bar-tint": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallSafariBarTintColor` (iOS): 73 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallSafariBarTintColor` (iOS): 74 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallSafariBarTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 73,
+      "markets": 74,
       "exceptions": {
        "CT": "#004e87",
        "NYDN": "#ffffff",
@@ -994,13 +994,13 @@
    "paywall-safari-control-tint": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`paywallSafariControlTintColor` (iOS): 76 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallSafariControlTintColor` (iOS): 77 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallSafariControlTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 76,
+      "markets": 77,
       "exceptions": {
        "NYDN": "#333333"
       },
@@ -1017,13 +1017,13 @@
    "paywall-screen-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`paywallScreenBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`paywallScreenBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "paywallScreenBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1038,13 +1038,13 @@
    "paywall-secondary-action": {
     "$type": "color",
     "$value": "#999999",
-    "$description": "`paywallSecondaryActionColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallSecondaryActionColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallSecondaryActionColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "DP": "#cccccc",
        "HC": "#cccccc",
@@ -1067,13 +1067,13 @@
    "paywall-secondary-text": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`paywallSecondaryTextColor` (iOS): 76 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallSecondaryTextColor` (iOS): 77 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallSecondaryTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 76,
+      "markets": 77,
       "exceptions": {
        "TSAR": "#000000"
       },
@@ -1090,13 +1090,13 @@
    "paywall-subscription-options-legal-text": {
     "$type": "color",
     "$value": "#999999",
-    "$description": "`paywallSubscriptionOptionsLegalTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallSubscriptionOptionsLegalTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallSubscriptionOptionsLegalTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#808080",
        "DP": "#808080",
@@ -1119,13 +1119,13 @@
    "paywall-thank-you-branded-label": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallThankYouBrandedLabelColor` (iOS): same in all 77 markets",
+    "$description": "`paywallThankYouBrandedLabelColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "paywallThankYouBrandedLabelColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1140,13 +1140,13 @@
    "paywall-thank-you-message-label": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallThankYouMessageLabelColor` (iOS): 66 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallThankYouMessageLabelColor` (iOS): 67 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallThankYouMessageLabelColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 66,
+      "markets": 67,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -1173,13 +1173,13 @@
    "paywall-thank-you-next-steps-label": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallThankYouNextStepsLabelColor` (iOS): same in all 77 markets",
+    "$description": "`paywallThankYouNextStepsLabelColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "paywallThankYouNextStepsLabelColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1194,13 +1194,13 @@
    "paywall-view-login-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`paywallViewLoginTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallViewLoginTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallViewLoginTextColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 70,
+      "markets": 71,
       "exceptions": {
        "BS": "#555555",
        "DP": "#555555",
@@ -1223,13 +1223,13 @@
    "paywall-view-meter-state-message": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallViewMeterStateMessageColor` (iOS): 68 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallViewMeterStateMessageColor` (iOS): 69 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallViewMeterStateMessageColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 68,
+      "markets": 69,
       "exceptions": {
        "DP": "#555555",
        "HC": "#555555",
@@ -1254,13 +1254,13 @@
    "paywall-view-meter-subscription-message": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`paywallViewMeterSubscriptionMessageColor` (iOS): 74 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`paywallViewMeterSubscriptionMessageColor` (iOS): 75 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "paywallViewMeterSubscriptionMessageColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 74,
+      "markets": 75,
       "exceptions": {
        "NYDN": "#333333",
        "TDPS": "#c75c14",
@@ -1279,13 +1279,13 @@
    "paywall-view-purchase-button-font": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`paywallViewPurchaseButtonFontColor` (iOS): same in all 77 markets",
+    "$description": "`paywallViewPurchaseButtonFontColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "paywallViewPurchaseButtonFontColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1300,13 +1300,13 @@
    "progress-hud-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`progressHUDBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`progressHUDBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "progressHUDBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1321,13 +1321,13 @@
    "progress-hud-foreground": {
     "$type": "color",
     "$value": "#004e87",
-    "$description": "`progressHUDForegroundColor` (iOS): 66 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`progressHUDForegroundColor` (iOS): 67 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "progressHUDForegroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 66,
+      "markets": 67,
       "exceptions": {
        "BS": "#daa520",
        "DP": "#005f7e",
@@ -1354,13 +1354,13 @@
    "push-notification-prompt-bell-tint": {
     "$type": "color",
     "$value": "#1955a5",
-    "$description": "`pushNotificationPromptBellTint` (iOS): same in all 77 markets",
+    "$description": "`pushNotificationPromptBellTint` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pushNotificationPromptBellTint",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1375,13 +1375,13 @@
    "push-notification-prompt-message-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`pushNotificationPromptMessageTextColor` (iOS): same in all 77 markets",
+    "$description": "`pushNotificationPromptMessageTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pushNotificationPromptMessageTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1396,13 +1396,13 @@
    "push-notification-prompt-request-text": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`pushNotificationPromptRequestTextColor` (iOS): same in all 77 markets",
+    "$description": "`pushNotificationPromptRequestTextColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "pushNotificationPromptRequestTextColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1417,13 +1417,13 @@
    "rating-background": {
     "$type": "color",
     "$value": "#f2f2f2",
-    "$description": "`ratingBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`ratingBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "ratingBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1438,13 +1438,13 @@
    "safari-bar-tint": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`safariBarTintColor` (iOS): 68 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`safariBarTintColor` (iOS): 69 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "safariBarTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 68,
+      "markets": 69,
       "exceptions": {
        "CT": "#004e87",
        "DP": "#ffffff",
@@ -1469,13 +1469,13 @@
    "saved-cell-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`savedCellBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`savedCellBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "savedCellBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1490,13 +1490,13 @@
    "search-accessory-tint": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`searchAccessoryTintColor` (iOS): 75 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`searchAccessoryTintColor` (iOS): 76 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "searchAccessoryTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 75,
+      "markets": 76,
       "exceptions": {
        "BS": "#ffffff",
        "HC": "#ffffff"
@@ -1514,13 +1514,13 @@
    "search-background": {
     "$type": "color",
     "$value": "#f1f1f1",
-    "$description": "`searchBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`searchBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "searchBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1535,13 +1535,13 @@
    "search-bar-text-field-tint": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`searchBarTextFieldTintColor` (iOS): 66 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`searchBarTextFieldTintColor` (iOS): 67 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "searchBarTextFieldTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 66,
+      "markets": 67,
       "exceptions": {
        "CT": "#004e87",
        "DP": "#ffffff",
@@ -1568,13 +1568,13 @@
    "search-bar-tint": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`searchBarTintColor` (iOS): 66 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`searchBarTintColor` (iOS): 67 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "searchBarTintColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 66,
+      "markets": 67,
       "exceptions": {
        "CT": "#004e87",
        "DP": "#ffffff",
@@ -1601,13 +1601,13 @@
    "search-caption": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`searchCaptionColor` (iOS): same in all 77 markets",
+    "$description": "`searchCaptionColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "searchCaptionColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1622,13 +1622,13 @@
    "search-cell-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`searchCellBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`searchCellBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "searchCellBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1643,13 +1643,13 @@
    "search-cell-selected-background": {
     "$type": "color",
     "$value": "#555555",
-    "$description": "`searchCellSelectedBackgroundColor` (iOS): 71 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`searchCellSelectedBackgroundColor` (iOS): 72 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "searchCellSelectedBackgroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 71,
+      "markets": 72,
       "exceptions": {
        "BS": "#333333",
        "DP": "#333333",
@@ -1671,13 +1671,13 @@
    "search-header": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`searchHeaderColor` (iOS): 65 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`searchHeaderColor` (iOS): 66 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "searchHeaderColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 65,
+      "markets": 66,
       "exceptions": {
        "BS": "#333333",
        "DP": "#333333",
@@ -1705,13 +1705,13 @@
    "search-text-field-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`searchTextFieldBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`searchTextFieldBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "searchTextFieldBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1726,13 +1726,13 @@
    "section-list-cell-selected-title": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`sectionListCellSelectedTitleColor` (iOS): 76 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`sectionListCellSelectedTitleColor` (iOS): 77 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "sectionListCellSelectedTitleColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 76,
+      "markets": 77,
       "exceptions": {
        "TSAR": "#004e87"
       },
@@ -1749,13 +1749,13 @@
    "section-list-header-background": {
     "$type": "color",
     "$value": "#333333",
-    "$description": "`sectionListHeaderBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`sectionListHeaderBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "sectionListHeaderBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1770,13 +1770,13 @@
    "settings-header-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`settingsHeaderBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`settingsHeaderBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "settingsHeaderBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1791,13 +1791,13 @@
    "settings-slider-background": {
     "$type": "color",
     "$value": "#00000000",
-    "$description": "`settingsSliderBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`settingsSliderBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "settingsSliderBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1813,13 +1813,13 @@
    "settings-table-view-separator": {
     "$type": "color",
     "$value": "#cccccc",
-    "$description": "`settingsTableViewSeparatorColor` (iOS): 76 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`settingsTableViewSeparatorColor` (iOS): 77 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "settingsTableViewSeparatorColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 76,
+      "markets": 77,
       "exceptions": {
        "NYDN": "#999999"
       },
@@ -1836,13 +1836,13 @@
    "shared-table-view-background": {
     "$type": "color",
     "$value": "#f1f1f1",
-    "$description": "`sharedTableViewBackgroundColor` (iOS): 72 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`sharedTableViewBackgroundColor` (iOS): 73 of 78 markets; exceptions documented only (DEC-16)",
     "$extensions": {
      "mng": {
       "source": "sharedTableViewBackgroundColor",
       "platform": "ios",
       "kind": "majority",
-      "markets": 72,
+      "markets": 73,
       "exceptions": {
        "DP": "#aaaaaa",
        "HC": "#aaaaaa",
@@ -1863,13 +1863,13 @@
    "tracking-consent-continue-button-disabled-font": {
     "$type": "color",
     "$value": "#aaaaaa",
-    "$description": "`trackingConsentContinueButtonDisabledFontColor` (iOS): same in all 77 markets",
+    "$description": "`trackingConsentContinueButtonDisabledFontColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "trackingConsentContinueButtonDisabledFontColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1884,13 +1884,13 @@
    "tracking-consent-continue-button-enabled-font": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`trackingConsentContinueButtonEnabledFontColor` (iOS): same in all 77 markets",
+    "$description": "`trackingConsentContinueButtonEnabledFontColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "trackingConsentContinueButtonEnabledFontColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -1905,13 +1905,13 @@
    "tracking-consent-switch-on-tint": {
     "$type": "color",
     "$value": "#34c759",
-    "$description": "`trackingConsentSwitchOnTintColor` (iOS): same in all 77 markets; not set by the app: UISwitch default on tint (UIColor.systemGreen, light)",
+    "$description": "`trackingConsentSwitchOnTintColor` (iOS): same in all 78 markets; not set by the app: UISwitch default on tint (UIColor.systemGreen, light)",
     "$extensions": {
      "mng": {
       "source": "trackingConsentSwitchOnTintColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [
        "BS",
@@ -1942,6 +1942,7 @@
        "TDC",
        "TDCD",
        "TDF",
+       "TDH",
        "TDLW",
        "TDP",
        "TDPS",
@@ -2005,13 +2006,13 @@
    "tracking-consent-terms-and-privacy-policy-button-font": {
     "$type": "color",
     "$value": "#000000",
-    "$description": "`trackingConsentTermsAndPrivacyPolicyButtonFontColor` (iOS): same in all 77 markets",
+    "$description": "`trackingConsentTermsAndPrivacyPolicyButtonFontColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "trackingConsentTermsAndPrivacyPolicyButtonFontColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [
@@ -2026,13 +2027,13 @@
    "your-news-cell-background": {
     "$type": "color",
     "$value": "#ffffff",
-    "$description": "`yourNewsCellBackgroundColor` (iOS): same in all 77 markets",
+    "$description": "`yourNewsCellBackgroundColor` (iOS): same in all 78 markets",
     "$extensions": {
      "mng": {
       "source": "yourNewsCellBackgroundColor",
       "platform": "ios",
       "kind": "fixed",
-      "markets": 77,
+      "markets": 78,
       "exceptions": {},
       "not_set_markets": [],
       "rgb": [

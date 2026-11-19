@@ -66,7 +66,8 @@ ios_tokens, and_tokens, figma, legacy_rows = {}, {}, [], []
 # ---- iOS: the font comes from the production postscript name in the source note
 for gname, s in styles(IOS):
     u = s['usage']
-    m = re.search(r'((?:OpenSans|OpenSansCondensed|OpenSans_Condensed|PTSerif|Spectral)-[A-Za-z]+|Open Sans) (\d+(?:\.\d+)?) in \d+ of \d+', u)
+    m = re.search(r'((?:OpenSans|OpenSansCondensed|OpenSans_Condensed|PTSerif|Spectral)-[A-Za-z]+|Open Sans) (\d+(?:\.\d+)?) in \d+ of \d+', u) \
+        or re.search(r'((?:OpenSans|OpenSansCondensed|PTSerif|Spectral)-[A-Za-z]+) (\d+(?:\.\d+)?)', u)   # f79fe3339 "Controls & settings" styles
     ps, size = m.group(1), float(m.group(2))
     fam, w, it = from_postscript(ps)
     role, group = role_of[('ios', s['name'])]
@@ -77,6 +78,9 @@ for gname, s in styles(IOS):
         lf, lw, li = from_postscript(lm.group(1))
         legacy = {'postscript': lm.group(1), 'fontFamily': lf, 'fontWeight': lw, 'italic': li, 'fontSize': float(lm.group(2)), 'markets': LEGACY}
     exc = '; '.join(x.group(0) for x in re.finditer(r'(Exceptions|Other values): [^.]*', u))
+    if not exc and gname == 'Controls & settings':   # these notes name their exceptions in prose after the first sentence
+        exc = ' '.join(x.strip() for x in re.split(r'(?<=\.) ', u)[1:] if re.search(r'\b(BS|CT|DP|HC|MC|NYDN|OS|SS|VP)\b', x))
+    ios_caps = bool(re.search(r'uppercase', u, re.I))
     key = slug(role)
     # DEC-10: the iOS legacy template is acknowledged only (data/legacy-template.json, docs/LEGACY-TEMPLATE.md), not built
     if legacy_only or legacy:
@@ -88,9 +92,9 @@ for gname, s in styles(IOS):
     ios_tokens[key] = tok({'fontFamily': fam, 'fontWeight': w, 'fontSize': f'{size:g}px', 'fontStyle': 'italic' if it else 'normal'},
                           f'{role} (iOS `{s["name"]}`): {ps} {size:g} pt',
                           role=role, group=group, style=s['name'], postscript=ps, code=camel(role),
-                          exceptions=exc, source='TroncKit Style.json / TroncAppThemeable')
+                          exceptions=exc, uppercase=ios_caps, source='TroncKit Style.json / TroncAppThemeable' if gname != 'Controls & settings' else 'TroncKit f79fe3339 (fonts set in code / storyboards)')
     base = {'platform': 'ios', 'token': f'type.ios.{key}', 'family': fam, 'figmaStyle': figma_style(w, it), 'size': size,
-            'lineHeight': None, 'letterSpacingEm': None, 'uppercase': False, 'style': s['name'], 'postscript': ps}
+            'lineHeight': None, 'letterSpacingEm': None, 'uppercase': ios_caps, 'style': s['name'], 'postscript': ps}
     figma.append({**base, 'name': f'{group}/{short(role, group)}', 'legacy': False})
 
 # ---- Android: family + asset file from the bundled font list

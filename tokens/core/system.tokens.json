@@ -6,7 +6,7 @@
     "background": {
      "$type": "color",
      "$value": "#ffffff",
-     "$description": "Sections menu: background: same on both apps. `sectionListCellBackgroundColor` (iOS): same in all 77 markets; `SectionsMenu_Background` (Android): same in all 77 markets",
+     "$description": "Sections menu: background: same on both apps. `sectionListCellBackgroundColor` (iOS): same in all 78 markets; `SectionsMenu_Background` (Android): same in all 77 markets",
      "$extensions": {
       "mng": {
        "owner": "core",
@@ -19,7 +19,7 @@
         "source": "sectionListCellBackgroundColor",
         "platform": "ios",
         "kind": "fixed",
-        "markets": 77,
+        "markets": 78,
         "exceptions": {},
         "not_set_markets": [],
         "rgb": [
@@ -47,7 +47,7 @@
     "header-text": {
      "$type": "color",
      "$value": "#ffffff",
-     "$description": "Sections menu: group header text: same on both apps. `sectionListHeaderFontColor` (iOS): same in all 77 markets; `SectionMenu_Header_Text` (Android): 74 of 77 markets; exceptions documented only (DEC-16)",
+     "$description": "Sections menu: group header text: same on both apps. `sectionListHeaderFontColor` (iOS): same in all 78 markets; `SectionMenu_Header_Text` (Android): 74 of 77 markets; exceptions documented only (DEC-16)",
      "$extensions": {
       "mng": {
        "owner": "core",
@@ -60,7 +60,7 @@
         "source": "sectionListHeaderFontColor",
         "platform": "ios",
         "kind": "fixed",
-        "markets": 77,
+        "markets": 78,
         "exceptions": {},
         "not_set_markets": [],
         "rgb": [
@@ -94,7 +94,7 @@
     "background": {
      "$type": "color",
      "$value": "#ffffff",
-     "$description": "Section front: background: same on both apps. `newsPageBackgroundColor` (iOS): same in all 77 markets; `SectionFront_Background` (Android): same in all 77 markets",
+     "$description": "Section front: background: same on both apps. `newsPageBackgroundColor` (iOS): same in all 78 markets; `SectionFront_Background` (Android): same in all 77 markets",
      "$extensions": {
       "mng": {
        "owner": "core",
@@ -107,7 +107,7 @@
         "source": "newsPageBackgroundColor",
         "platform": "ios",
         "kind": "fixed",
-        "markets": 77,
+        "markets": 78,
         "exceptions": {},
         "not_set_markets": [],
         "rgb": [
@@ -137,7 +137,7 @@
     "background": {
      "$type": "color",
      "$value": "#ffffff",
-     "$description": "Ad slot: background: same on both apps. `cellAdBackgroundColor` (iOS): same in all 77 markets; `ad_background` (Android): same in all 77 markets",
+     "$description": "Ad slot: background: same on both apps. `cellAdBackgroundColor` (iOS): same in all 78 markets; `ad_background` (Android): same in all 77 markets",
      "$extensions": {
       "mng": {
        "owner": "core",
@@ -150,7 +150,7 @@
         "source": "cellAdBackgroundColor",
         "platform": "ios",
         "kind": "fixed",
-        "markets": 77,
+        "markets": 78,
         "exceptions": {},
         "not_set_markets": [],
         "rgb": [
@@ -178,7 +178,7 @@
     "label": {
      "$type": "color",
      "$value": "#999999",
-     "$description": "Ad slot: 'Advertisement' label: same on both apps. `adLabelTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16); `advertisement_title` (Android): same in all 77 markets",
+     "$description": "Ad slot: 'Advertisement' label: same on both apps. `adLabelTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16); `advertisement_title` (Android): same in all 77 markets",
      "$extensions": {
       "mng": {
        "owner": "core",
@@ -191,7 +191,7 @@
         "source": "adLabelTextColor",
         "platform": "ios",
         "kind": "majority",
-        "markets": 70,
+        "markets": 71,
         "exceptions": {
          "BS": "#cccccc",
          "DP": "#cccccc",
@@ -231,13 +231,13 @@
     "section-name": {
      "$type": "color",
      "$value": "#333333",
-     "$description": "Sections menu: section name (Core, per-platform value): `sectionListCellTitleColor` (iOS): same in all 77 markets",
+     "$description": "Sections menu: section name (Core, per-platform value): `sectionListCellTitleColor` (iOS): same in all 78 markets",
      "$extensions": {
       "mng": {
        "source": "sectionListCellTitleColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "rgb": [
@@ -252,13 +252,13 @@
     "divider": {
      "$type": "color",
      "$value": "#3c3c4349",
-     "$description": "Sections menu: divider (Core, per-platform value): `sectionListSectionSeparatorColor` (iOS): same in all 77 markets; not set by the app: UITableView default separator (UIColor.separator, light: 60, 60, 67 at 29%)",
+     "$description": "Sections menu: divider (Core, per-platform value): `sectionListSectionSeparatorColor` (iOS): same in all 78 markets; not set by the app: UITableView default separator (UIColor.separator, light: 60, 60, 67 at 29%)",
      "$extensions": {
       "mng": {
        "source": "sectionListSectionSeparatorColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [
         "BS",
@@ -289,6 +289,7 @@
         "TDC",
         "TDCD",
         "TDF",
+        "TDH",
         "TDLW",
         "TDP",
         "TDPS",
@@ -355,13 +356,13 @@
     "background": {
      "$type": "color",
      "$value": "#ffffff",
-     "$description": "Settings: background (Core, per-platform value): `settingsCellBackgroundColor` (iOS): same in all 77 markets",
+     "$description": "Settings: background (Core, per-platform value): `settingsCellBackgroundColor` (iOS): same in all 78 markets",
      "$extensions": {
       "mng": {
        "source": "settingsCellBackgroundColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "rgb": [
@@ -376,13 +377,13 @@
     "item-title": {
      "$type": "color",
      "$value": "#333333",
-     "$description": "Settings: item title (Core, per-platform value): `settingsCellTitleColor` (iOS): same in all 77 markets",
+     "$description": "Settings: item title (Core, per-platform value): `settingsCellTitleColor` (iOS): same in all 78 markets",
      "$extensions": {
       "mng": {
        "source": "settingsCellTitleColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "rgb": [
@@ -397,13 +398,13 @@
     "category-header": {
      "$type": "color",
      "$value": "#333333",
-     "$description": "Settings: category header (Core, per-platform value): `settingsHeaderTextColor` (iOS): same in all 77 markets",
+     "$description": "Settings: category header (Core, per-platform value): `settingsHeaderTextColor` (iOS): same in all 78 markets",
      "$extensions": {
       "mng": {
        "source": "settingsHeaderTextColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "rgb": [
@@ -418,13 +419,13 @@
     "summary": {
      "$type": "color",
      "$value": "#cccccc",
-     "$description": "Settings: summary / footer text (Core, per-platform value): `settingsFooterColor` (iOS): same in all 77 markets",
+     "$description": "Settings: summary / footer text (Core, per-platform value): `settingsFooterColor` (iOS): same in all 78 markets",
      "$extensions": {
       "mng": {
        "source": "settingsFooterColor",
        "platform": "ios",
        "kind": "fixed",
-       "markets": 77,
+       "markets": 78,
        "exceptions": {},
        "not_set_markets": [],
        "rgb": [

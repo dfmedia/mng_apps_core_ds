@@ -6,7 +6,7 @@
     "unselected-fill": {
      "$value": "#f1f1f1",
      "$type": "color",
-     "$description": "Subscription option, unselected background (subscriptionInactiveColor; 69 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Subscription option, unselected background (subscriptionInactiveColor; 70 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -21,7 +21,7 @@
     "label": {
      "$value": "#ffffff",
      "$type": "color",
-     "$description": "Subscription option and primary button text (paywallPrimaryTextColor; 77 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Subscription option and primary button text (paywallPrimaryTextColor; 78 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -38,7 +38,7 @@
     "yes-label": {
      "$value": "#ffffff",
      "$type": "color",
-     "$description": "Notification prompt Yes text (pushNotificationPromptYesButtonTextColor; 76 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Notification prompt Yes text (pushNotificationPromptYesButtonTextColor; 77 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -53,7 +53,7 @@
     "no-label": {
      "$value": "#333333",
      "$type": "color",
-     "$description": "Notification prompt No text (pushNotificationPromptNoButtonTextColor; 77 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Notification prompt No text (pushNotificationPromptNoButtonTextColor; 78 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -70,7 +70,7 @@
     "track": {
      "$value": "#999999",
      "$type": "color",
-     "$description": "Text size slider track (settingsSliderMinimumTrackTintColor; 70 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Text size slider track (settingsSliderMinimumTrackTintColor; 71 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -85,7 +85,7 @@
     "tick": {
      "$value": "#999999",
      "$type": "color",
-     "$description": "Text size slider tick marks (settingsSliderTickMarkTint; 70 of 77 markets; exceptions documented only, DEC-14)",
+     "$description": "Text size slider tick marks (settingsSliderTickMarkTint; 71 of 78 markets; exceptions documented only, DEC-14)",
      "$extensions": {
       "mng": {
        "rgb": [

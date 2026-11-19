@@ -8,7 +8,7 @@ Control: 30 × 30 pt (Components · iOS › checkbox/size (component.ios checkbo
 
 | Set | Checked | Unchecked | Markets |
 |---|---|---|---|
-| Generic | `Checked.png` | `Unchecked.png` | 69: CT, OCR, PAC, PSN, SDUT, SGVT, SIT, TB, TBAN, TBCP, TBE, TBH, TBHS, TCCDR, TCE, TCHW, TCV, TDB, TDC, TDCD, TDF, TDLW, TDP, TDPS, TEBT, TEPTG, TETS, TFMT, TGT, TIVDB, TJA, TLADN, TLBPT, TLR, TLS, TLTC, TMCH, TMD, TMI, TMJ, TMN, TMS, TNH, TOD, TOP, TPD, TPE, TPM, TR, TRDF, TRE, TRH, TROT, TRR, TSAR, TSBS, TSCS, TSEB, TSPPP, TSS, TSV, TT, TTH, TTT, TUDJ, TVR, TVTH, TWDD, TWDN |
+| Generic | `Checked.png` | `Unchecked.png` | 70: CT, OCR, PAC, PSN, SDUT, SGVT, SIT, TB, TBAN, TBCP, TBE, TBH, TBHS, TCCDR, TCE, TCHW, TCV, TDB, TDC, TDCD, TDF, TDH, TDLW, TDP, TDPS, TEBT, TEPTG, TETS, TFMT, TGT, TIVDB, TJA, TLADN, TLBPT, TLR, TLS, TLTC, TMCH, TMD, TMI, TMJ, TMN, TMS, TNH, TOD, TOP, TPD, TPE, TPM, TR, TRDF, TRE, TRH, TROT, TRR, TSAR, TSBS, TSCS, TSEB, TSPPP, TSS, TSV, TT, TTH, TTT, TUDJ, TVR, TVTH, TWDD, TWDN |
 | BS | `Checkmark-BS.png` | `Uncheck-BS.png` | 1: BS |
 | HC | `Checkmark-Hart.png` | `Uncheck-Hart.png` | 1: HC |
 | MC | `Checkmark-MC.png` | `Uncheck-MC.png` | 1: MC |

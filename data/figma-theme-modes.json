@@ -13,8 +13,8 @@
    "name": "Orange County Register",
    "cluster": "SCNG",
    "why": "required",
-   "nearest": "TGT",
-   "nearest_dE": 0.101
+   "nearest": "TTT",
+   "nearest_dE": 0.106
   },
   {
    "code": "TDP",
@@ -69,8 +69,8 @@
    "name": "Daily Herald",
    "cluster": "Tribune",
    "why": "required",
-   "nearest": "TGT",
-   "nearest_dE": 0.043
+   "nearest": "TMN",
+   "nearest_dE": 0.112
   },
   {
    "code": "TBH",
@@ -101,8 +101,8 @@
    "name": "Delaware County Daily Times",
    "cluster": "21C / Philly",
    "why": "covers cluster 21C / Philly",
-   "nearest": "TDH",
-   "nearest_dE": 0.069
+   "nearest": "TLR",
+   "nearest_dE": 0.086
   },
   {
    "code": "TTT",
@@ -117,16 +117,16 @@
    "name": "Woodland Daily Democrat",
    "cluster": "Norcal",
    "why": "covers cluster Norcal",
-   "nearest": "TGT",
-   "nearest_dE": 0.069
+   "nearest": "TTT",
+   "nearest_dE": 0.083
   },
   {
-   "code": "TGT",
-   "name": "Greeley Tribune",
+   "code": "TLR",
+   "name": "Loveland Reporter Herald",
    "cluster": "PMP",
    "why": "covers cluster PMP",
-   "nearest": "TDH",
-   "nearest_dE": 0.043
+   "nearest": "TCCDR",
+   "nearest_dE": 0.063
   },
   {
    "code": "TPD",
