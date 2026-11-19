@@ -30,7 +30,7 @@
       "fontSize": "14px"
      },
      "$type": "typography",
-     "$description": "Label: system font, uppercase. Material Components Button default (TextAppearance.MaterialComponents.Button). Confirmed by the Apps team (DREAMT-4719, 2026-11-19): Roboto Medium 14sp, all caps, letterSpacing 0.0893 on MaterialComponents screens and on the blocking paywall Subscribe. Which paywall buttons are sentence case (Material3) is MISSING-ASSETS 5.4.",
+     "$description": "Label: system font, uppercase. Material Components Button default (TextAppearance.MaterialComponents.Button). Confirmed by the Apps team (DREAMT-4719, 2026-11-19): Roboto Medium 14sp, all caps, letterSpacing 0.0893 on MaterialComponents screens and on the blocking paywall Subscribe. Screenshots (2026-11-19, MISSING-ASSETS 5.4 closed): the meter paywall purchase button is all caps; the subscription options are sentence case and bold.",
      "$extensions": {
       "mng": {
        "textCase": "uppercase",
@@ -42,18 +42,1408 @@
    },
    "link": {
     "color": {
-     "$value": "#000000",
-     "$type": "color",
-     "$description": "Text link (Paywall_Text), underlined.",
-     "$extensions": {
-      "mng": {
-       "rgb": [
-        0,
-        0,
-        0
-       ],
-       "shipped": true,
-       "underline": true
+     "bs": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Baltimore Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Baltimore Sun",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "ct": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Chicago Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Chicago Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "dp": {
+      "$value": "#4fa8d1",
+      "$type": "color",
+      "$description": "Daily Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         79,
+         168,
+         209
+        ],
+        "market": "Daily Press",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.67
+       }
+      }
+     },
+     "hc": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Hartford Courant: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Hartford Courant",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "mc": {
+      "$value": "#4fa8d1",
+      "$type": "color",
+      "$description": "Morning Call: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         79,
+         168,
+         209
+        ],
+        "market": "Morning Call",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.67
+       }
+      }
+     },
+     "nydn": {
+      "$value": "#4591e0",
+      "$type": "color",
+      "$description": "New York Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         69,
+         145,
+         224
+        ],
+        "market": "New York Daily News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 3.29
+       }
+      }
+     },
+     "ocr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Orange County Register: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Orange County Register",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "os": {
+      "$value": "#ffffff",
+      "$type": "color",
+      "$description": "Orlando Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         255,
+         255,
+         255
+        ],
+        "market": "Orlando Sentinel",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 1.0
+       }
+      }
+     },
+     "pac": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Petaluma Argus-Courier: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Petaluma Argus-Courier",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "psn": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Pasadena Star News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Pasadena Star News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "sdut": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The San Diego Union-Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The San Diego Union-Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "sgvt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "San Gabriel Valley Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "San Gabriel Valley Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "sit": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Sonoma Index Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Sonoma Index Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "ss": {
+      "$value": "#ffffff",
+      "$type": "color",
+      "$description": "Sun Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         255,
+         255,
+         255
+        ],
+        "market": "Sun Sentinel",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 1.0
+       }
+      }
+     },
+     "tb": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Buffzone: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Buffzone",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tban": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Bay Area News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Bay Area News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tbcp": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Boulder County Preps: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Boulder County Preps",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tbe": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Broomfield Enterprise News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Broomfield Enterprise News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tbh": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Boston Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Boston Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tbhs": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Boston Herald Sports: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Boston Herald Sports",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tccdr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Canon City Daily Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Canon City Daily Record",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tce": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Chico Enterprise Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Chico Enterprise Record",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tchw": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Colorado Hometown Weekly: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Colorado Hometown Weekly",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tcv": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Citizens' Voice: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Citizens' Voice",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdb": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Daily Breeze: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Daily Breeze",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdc": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Daily Camera: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Daily Camera",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdcd": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Delaware County Daily Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Delaware County Daily Times",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdf": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Daily Freeman: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Daily Freeman",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdh": {
+      "$value": "#0072b4",
+      "$type": "color",
+      "$description": "Daily Herald: Android text link color, underlined. no Android build yet: follows the iOS link (provisional).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         0,
+         114,
+         180
+        ],
+        "market": "Daily Herald",
+        "shipped": false,
+        "underline": true,
+        "contrastOnWhite": 5.16
+       }
+      }
+     },
+     "tdlw": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Daily Local Weschester: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Daily Local Weschester",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdp": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Denver Post: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Denver Post",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tdps": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Denver Post Sports: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Denver Post Sports",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tebt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The East Bay Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The East Bay Times",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "teptg": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Estes Park Trail Gazette: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Estes Park Trail Gazette",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tets": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Eureka Times Standard: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Eureka Times Standard",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tfmt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Fort Morgan Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Fort Morgan Times",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tgt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Greeley Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Greeley Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tivdb": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Inland Valley Daily Bulletin: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Inland Valley Daily Bulletin",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tja": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Journal Advocate: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Journal Advocate",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tladn": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Los Angeles Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Los Angeles Daily News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tlbpt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Long Beach Press-Telegram: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Long Beach Press-Telegram",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tlr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Loveland Reporter Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Loveland Reporter Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tls": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Lowell Sun News for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Lowell Sun News for Mobile",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tltc": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Longmont Times-Call for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Longmont Times-Call for Mobile",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tmch": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Monterey County Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Monterey County Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tmd": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Macomb Daily: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Macomb Daily",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tmi": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Marin Independent Journal News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Marin Independent Journal News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tmj": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Morning Journal: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Morning Journal",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tmn": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Mercury News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Mercury News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tms": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Morning Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Morning Sun",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tnh": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The News Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The News Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tod": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Oneida Daily Dispatch: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Oneida Daily Dispatch",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "top": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Oakland Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Oakland Press",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tpd": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Press Democrat: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Press Democrat",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tpe": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Press-Enterprise: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Press-Enterprise",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tpm": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Pottstown Mercury: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Pottstown Mercury",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Reporter for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Reporter for Mobile",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "trdf": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Redlands Daily Facts: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Redlands Daily Facts",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tre": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Reading Eagle: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Reading Eagle",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "trh": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Republican-Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Republican-Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "trot": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Royal Oak Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Royal Oak Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "trr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Troy Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Troy Record",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tsar": {
+      "$value": "#f5f5f5",
+      "$type": "color",
+      "$description": "Saratogian: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         245,
+         245,
+         245
+        ],
+        "market": "Saratogian",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 1.09
+       }
+      }
+     },
+     "tsbs": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The San Bernardino Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The San Bernardino Sun",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tscs": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Santa Cruz Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Santa Cruz Sentinel",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tseb": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Sentinel and Enterprise: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Sentinel and Enterprise",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tsppp": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "St. Paul Pioneer Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "St. Paul Pioneer Press",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tss": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Standard-Speaker: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Standard-Speaker",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tsv": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Silicon Valley: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Silicon Valley",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Trentonian: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Trentonian",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tth": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "The Times Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "The Times Herald",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "ttt": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Times-Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Times-Tribune",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tudj": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Ukiah Daily Journal: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Ukiah Daily Journal",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tvr": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Vacaville Reporter: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Vacaville Reporter",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "tvth": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Vallejo Times Herald News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Vallejo Times Herald News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "twdd": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Woodland Daily Democrat: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Woodland Daily Democrat",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "twdn": {
+      "$value": "#56a1dd",
+      "$type": "color",
+      "$description": "Whittier Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         86,
+         161,
+         221
+        ],
+        "market": "Whittier Daily News",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 2.79
+       }
+      }
+     },
+     "vp": {
+      "$value": "#005f7e",
+      "$type": "color",
+      "$description": "Virginian Pilot: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$extensions": {
+       "mng": {
+        "rgb": [
+         0,
+         95,
+         126
+        ],
+        "market": "Virginian Pilot",
+        "shipped": true,
+        "underline": true,
+        "contrastOnWhite": 7.15
+       }
       }
      }
     },

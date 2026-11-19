@@ -87,7 +87,7 @@
    "id": "subscription-option",
    "name": "Subscription option",
    "ios_today": "subscriptionTintColor, Open Sans Bold 16, radius 8, inset 16",
-   "android_today": "buy fill, white Roboto Bold 16sp (Apps team, DREAMT-4719, 2026-11-19) (style guide: Monthly bold, MISSING-ASSETS 5.4), square, 14dp padding; Monthly has no pressed state",
+   "android_today": "buy fill, white Roboto Bold 16sp (Apps team, DREAMT-4719, 2026-11-19) (every option bold, sentence case: TDP and VP screenshots, 2026-11-19), square, 14dp padding; Monthly has no pressed state",
    "owner": "core+variant",
    "note": "Fill = action on both (PLAT-04). Differences: radius, font."
   },
@@ -141,7 +141,7 @@
    "id": "savings-badge",
    "name": "Savings label",
    "ios_today": "Savings pill 110 \u00d7 30, white fill, 2 pt border in subscriptionTintColor, radius 13, Open Sans Bold 13 in the same color; inset 10 pt (35 pt iPad) (Apps team, DREAMT-4718, f79fe3339)",
-   "android_today": "White, 2dp stroke in buy color, radius 15",
+   "android_today": "White, 2dp stroke in buy color, radius 15; text in the market color (VP screenshot 2026-11-19; the style guide says #004E87)",
    "owner": "core+variant",
    "note": "Both apps have it (iOS answered 2026-11-18). Differences: size, radius (13 vs 15), stroke color role."
   },

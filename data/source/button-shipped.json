@@ -1,5 +1,5 @@
 {
- "$description": "Shipped button values, copied from the two style-guide artifacts (read 2026-10-26); iOS primary and text link re-recorded from the TroncKit f79fe3339 export and the Apps team answers (DREAMT-4718, 2026-11-19). Source data: do not edit except to record a new app export. Values not in the source are null with a note; provisional values used by the pilot are in data/button-decisions.json.",
+ "$description": "Shipped button values, copied from the two style-guide artifacts (read 2026-10-26); iOS primary and text link re-recorded from the TroncKit f79fe3339 export and the Apps team answers (DREAMT-4718, 2026-11-19); Android text link color re-recorded from the Android screenshots (2026-11-19). Source data: do not edit except to record a new app export. Values not in the source are null with a note; provisional values used by the pilot are in data/button-decisions.json.",
  "sources": {
   "ios": "MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc), TroncKit @ f79fe3339: project/5-controls.md, project/tokens.json (radius-purchase, size-button-purchase, paywall-purchase, paywall-login-link); Apps team answers DREAMT-4718 (2026-11-18, 2026-11-19: MISSING-ASSETS 5.4 correction and 5.10); colors from data/source/markets.json",
   "android": "MNG Android Style Guide artifact (https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ), android-tribpub @ 1cfb069a6: project/5-controls.md, project/components/Buttons, project/tokens.json; colors from data/source/android-markets.json"
@@ -100,13 +100,19 @@
    }
   },
   "android": {
-   "where": "Paywall Log In link",
-   "color": "#000000 (Paywall_Text; underline_paywall_login #000000)",
+   "where": "Meter paywall Log In link (\"Already a Subscriber? Log in to your <market> account\")",
+   "color": "Paywall_LoginButton_Text (per market, data/source/android-markets.json): #56A1DD in 70 of 77; DP #4FA8D1, NYDN #4591E0, VP #005F7E; OS and SS #FFFFFF, TSAR #F5F5F5",
+   "color_key": "Paywall_LoginButton_Text",
+   "evidence": "Android screenshots from the Apps team (Rajal Patel, email 2026-11-19, MISSING-ASSETS 5.3): TDP link #56A1DD, NYDN #4591E0, matching Paywall_LoginButton_Text",
    "font": {
     "family": "system sans",
     "size": 16
    },
-   "underline": true
+   "underline": true,
+   "previous": {
+    "color": "#000000 (Paywall_Text; underline_paywall_login #000000)",
+    "why_replaced": "From the Android style guide's Buttons table (Paywall_Text / underline_paywall_login #000000); the screenshots show the link in Paywall_LoginButton_Text."
+   }
   }
  },
  "not_shipped": [

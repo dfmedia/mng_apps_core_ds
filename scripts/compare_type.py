@@ -127,7 +127,7 @@ ROLES = [
  ('Continue button label', 'Paywall', None, 'continue-label', 'iOS draws Continue as PNG images (DSC-24)'),
  ('Button label', 'Paywall', 'paywall-purchase', 'button-label', 'Android Material default (Subscribe, Alerts Enable). iOS: the meter paywall purchase button, always uppercase'),
  ('Paywall log-in link', 'Paywall', 'paywall-login-link', None, 'iOS: whole sentence underlined; 11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP'),
- ('Savings label', 'Paywall', 'savings-label', None, 'Android size not confirmed (MISSING-ASSETS 5.6)'),
+ ('Savings label', 'Paywall', 'savings-label', None, 'Android: text in the market color (VP screenshot); font and size not in the source'),
  ('Subscription option label', 'Paywall', '?', 'subscription-option', 'iOS: Open Sans Bold 16 (component map); which iOS Style.json key is not confirmed'),
  ("What's New button label", 'Paywall', None, 'whatsnew-label', 'Not in the iOS guide'),
 ]

@@ -52,7 +52,7 @@
    "height": 60,
    "height_provisional": false,
    "label": "Roboto Medium 14sp, uppercase (weight and size provisional)",
-   "link": "#000000, system 16sp, underlined",
+   "link": "Paywall_LoginButton_Text per market, system 16sp, underlined",
    "pressed": "Material ripple (system)"
   }
  },
@@ -85,6 +85,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -111,6 +114,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -137,6 +143,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#4fa8d1",
+   "android_link_contrast": 2.67,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -163,6 +172,9 @@
    "ios_link_pass": false,
    "suggested_link": "#1e7fa6",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -189,6 +201,9 @@
    "ios_link_pass": false,
    "suggested_link": "#337ea5",
    "ios_radius": 8,
+   "android_link": "#4fa8d1",
+   "android_link_contrast": 2.67,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -215,6 +230,9 @@
    "ios_link_pass": false,
    "suggested_link": "#2c79c7",
    "ios_radius": 8,
+   "android_link": "#4591e0",
+   "android_link_contrast": 3.29,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -241,6 +259,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -267,6 +288,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#ffffff",
+   "android_link_contrast": 1.0,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -293,6 +317,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -319,6 +346,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -345,6 +375,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -371,6 +404,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -397,6 +433,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -423,6 +462,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#ffffff",
+   "android_link_contrast": 1.0,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false
@@ -449,6 +491,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -475,6 +520,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -501,6 +549,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -527,6 +578,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -553,6 +607,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -579,6 +636,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -605,6 +665,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -631,6 +694,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -657,6 +723,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -683,6 +752,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -709,6 +781,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -735,6 +810,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -761,6 +839,9 @@
    "ios_link_pass": false,
    "suggested_link": "#3c7ca8",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -787,6 +868,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -813,6 +897,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#0072b4",
+   "android_link_contrast": 5.16,
+   "android_link_pass": true,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": true
@@ -839,6 +926,9 @@
    "ios_link_pass": false,
    "suggested_link": "#0080a6",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -865,6 +955,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -891,6 +984,9 @@
    "ios_link_pass": false,
    "suggested_link": "#c25709",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -917,6 +1013,9 @@
    "ios_link_pass": false,
    "suggested_link": "#4d78b2",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -943,6 +1042,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -969,6 +1071,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -995,6 +1100,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1021,6 +1129,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1047,6 +1158,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1073,6 +1187,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1099,6 +1216,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1125,6 +1245,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1151,6 +1274,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1177,6 +1303,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1203,6 +1332,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1229,6 +1361,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1255,6 +1390,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1281,6 +1419,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1307,6 +1448,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1333,6 +1477,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1359,6 +1506,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1385,6 +1535,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1411,6 +1564,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1437,6 +1593,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1463,6 +1622,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1489,6 +1651,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1515,6 +1680,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1541,6 +1709,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1567,6 +1738,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1593,6 +1767,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1619,6 +1796,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1645,6 +1825,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1671,6 +1854,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1697,6 +1883,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#f5f5f5",
+   "android_link_contrast": 1.09,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1723,6 +1912,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1749,6 +1941,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1775,6 +1970,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1801,6 +1999,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1827,6 +2028,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1853,6 +2057,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1879,6 +2086,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1905,6 +2115,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1931,6 +2144,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1957,6 +2173,9 @@
    "ios_link_pass": false,
    "suggested_link": "#2a7bb7",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -1983,6 +2202,9 @@
    "ios_link_pass": false,
    "suggested_link": "#2a7bb7",
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -2009,6 +2231,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -2035,6 +2260,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -2061,6 +2289,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#56a1dd",
+   "android_link_contrast": 2.79,
+   "android_link_pass": false,
    "ios_border": 0.7,
    "legacy_template": false,
    "provisional_market": false
@@ -2087,6 +2318,9 @@
    "ios_link_pass": true,
    "suggested_link": null,
    "ios_radius": 8,
+   "android_link": "#005f7e",
+   "android_link_contrast": 7.15,
+   "android_link_pass": true,
    "ios_border": 0.7,
    "legacy_template": true,
    "provisional_market": false

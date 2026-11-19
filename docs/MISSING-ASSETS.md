@@ -9,12 +9,12 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339`, from your export; And
 
 **Numbers don't change.** When a question is answered we remove it and leave a gap, so the numbers you have quoted stay the same.
 
-**Thank you for the iOS export, the logos, fonts, tab icons and screenshots.** Every iOS-only question is now closed. Five questions are left: one for both apps (1.12) and four for Android (1.1, 3.4, 5.4, 5.6). Where an answer and the code (or the style guide) say different things, the question says what each one says, so you can tell us which one ships.
+**Thank you for the iOS export, the logos, fonts, tab icons and screenshots.** Every iOS-only question is now closed. Five questions are left: one for both apps (1.12) and four for Android (1.1, 3.4, 5.6, 5.11 new). Thank you for the Android screenshots: they answered 5.4. Where an answer and the code (or the style guide) say different things, the question says what each one says, so you can tell us which one ships.
 
 ## Most needed
 
-1. **5.6** Android: Alerts Enable fill; account and savings label sizes (follow-up)
-2. **5.4** Android: paywall button text case and subscription option weight (follow-up)
+1. **5.6** Android: Alerts Enable fill; account bottom-sheet buttons (follow-up)
+2. **5.11** Android: the paywall log-in link in OS, SS and TSAR
 3. **3.4** Android: do some screens follow the phone's dark mode?
 4. **1.12** Both apps: is the Amazon sign-in icon used anywhere?
 5. **1.1** Android: vector masters for the icon images
@@ -44,8 +44,8 @@ All answered, thank you.
 
 | # | Question | What we know |
 |---|---|---|
-| 5.4 | Android: (a) Which paywall buttons are sentence case and which are all caps? (b) Are all subscription option buttons Roboto Bold 16sp, or only Monthly? | (a) Your answer and the style guide: settings, web view and paywall use the Material3 theme (sentence case), but the blocking paywall Subscribe is all caps. (b) Your answer and the guide's text say the subscription options are Roboto Bold 16sp; the guide's Buttons table says "White 16sp; Monthly bold". |
-| 5.6 | Android: (a) Which fill ships on the Alerts Enable "CUSTOMIZE" button? (b) What are the font, size and height of the account bottom-sheet buttons and the savings label? | (a) Your answer and the style guide: `Alerts_Enable_Button_Background` is #FF6859 in every market. The export at `1cfb069a6` (the guide's market data) has it per market: the market's action color in 58 of 77, #DAA520 in 15, #FF6859 only in OS and TSAR, #4FA8D1 in DP, #000000 in TPD. Is that color overridden somewhere (a drawable or style), so every market shows #FF6859? (b) Not covered yet: the account bottom-sheet buttons (radius 10, filled or outlined) and the savings label (white, 2dp stroke in the buy color, radius 15, text #004E87). Do they use the Material defaults from your 5.4 answer? The What's New fill, sizes, segmented control and loading colors are answered, thank you. |
+| 5.6 | Android: (a) Which fill ships on the Alerts Enable "CUSTOMIZE" button? (b) What are the font, size and height of the account bottom-sheet buttons? | (a) Your answer and the style guide: `Alerts_Enable_Button_Background` is #FF6859 in every market. The export at `1cfb069a6` (the guide's market data) has it per market: the market's action color in 58 of 77, #DAA520 in 15, #FF6859 only in OS and TSAR, #4FA8D1 in DP, #000000 in TPD. Is that color overridden somewhere (a drawable or style), so every market shows #FF6859? (b) The account bottom-sheet buttons (radius 10, filled or outlined): do they use the Material defaults (Roboto Medium 14sp)? Savings label, from your screenshots: the style guide says its text is #004E87, but the VP screenshot shows the text and the 2dp outline in the market color (#005F7E). We'll document the screenshot unless you tell us otherwise; please correct the guide. |
+| 5.11 | Android: in OS, SS and TSAR, is the paywall "Already a Subscriber? Log in…" link visible? | Your screenshots show the link in `Paywall_LoginButton_Text` (TDP #56A1DD, NYDN #4591E0), not #000000 as the guide's Buttons table says. In the export that color is #FFFFFF in OS and SS and #F5F5F5 in TSAR, which would be white on the white paywall. Is the link invisible there, or is it drawn on a different background? |
 
 ## 6. Platform
 

@@ -30,7 +30,9 @@ Core component with platform differences. Core holds the anatomy, states, shared
 | Border | 0.7 pt in the fill color (`button.ios.primary.border-width`) | none | iOS: all 78 markets |
 | Height | 45 pt (`button.ios.primary.height`) | 60 dp (`button.android.primary.height`) | Future: one height, IMPROVEMENTS BTN-01 |
 | Label | Open Sans Bold 14, always uppercase | Roboto Medium 14sp, uppercase | Future: one label style, IMPROVEMENTS BTN-02 |
-| Text link | `paywallLinkColor` per market (`button.ios.link.color.<code>`), Open Sans Regular 14, whole sentence underlined | `#000000` · 0, 0, 0, 16sp, underlined | iOS link fails 4.5:1 on white in 9 markets |
+| Text link | `paywallLinkColor` per market (`button.ios.link.color.<code>`), Open Sans Regular 14, whole sentence underlined | `Paywall_LoginButton_Text` per market (`button.android.link.color.<code>`), 16sp, underlined | On white, 4.5:1 fails: iOS in 9 markets, Android in 76 |
+
+Android link color corrected 2026-11-19 (DEC-23): the Android screenshots (TDP #56A1DD, NYDN #4591E0) show `Paywall_LoginButton_Text`, not the #000000 the style guide's Buttons table gives. OS and SS ship #FFFFFF and TSAR #F5F5F5, which would be invisible on a white paywall (to confirm with the Apps team).
 
 iOS values are the meter paywall purchase button and its Log In link, the same in all 78 markets (Apps team, DREAMT-4718, MISSING-ASSETS 5.10; DEC-22). Before DEC-22 the iOS column used the native Log In / Register buttons (radius 4; legacy template 5 + 1 pt border), which production never shows. The iOS link text is smaller in 8 markets (11 pt: BS, DP, HC, MC, OS, SS; 12 pt: NYDN, VP); documented only.
 
@@ -50,83 +52,83 @@ iOS values are the meter paywall purchase button and its Log In link, the same i
 
 ## Per market
 
-| Code | Market | action (fill) | White label | iOS radius | iOS link | Link on white |
-|---|---|---|---|---|---|---|
-| BS | Baltimore Sun | `#daa520` · 218, 165, 32 | 2.24:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| CT | Chicago Tribune | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| HC | Hartford Courant | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | 8 + 0.7 border | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
-| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 8 + 0.7 border | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ |
-| NYDN | New York Daily News | `#4492e0` · 68, 146, 224 | 3.26:1 ❌ | 8 + 0.7 border | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ |
-| OCR | Orange County Register | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | 8 + 0.7 border | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ |
-| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| PAC | Petaluma Argus-Courier | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | 8 + 0.7 border | `#a06318` · 160, 99, 24 | 4.89:1 ✅ |
-| PSN | Pasadena Star News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| SDUT | The San Diego Union-Tribune | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
-| SGVT | San Gabriel Valley Tribune | `#ff6900` · 255, 105, 0 | 2.89:1 ❌ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| SIT | Sonoma Index Tribune | `#0f73a9` · 15, 115, 169 | 5.19:1 ✅ | 8 + 0.7 border | `#0f73a8` · 15, 115, 168 | 5.2:1 ✅ |
-| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TB | Buffzone | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 8 + 0.7 border | `#4252b0` · 66, 82, 176 | 6.85:1 ✅ |
-| TBAN | Bay Area News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TBCP | Boulder County Preps | `#3f51b5` · 63, 81, 181 | 6.87:1 ✅ | 8 + 0.7 border | `#4052b5` · 64, 82, 181 | 6.79:1 ✅ |
-| TBE | Broomfield Enterprise News | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 8 + 0.7 border | `#0070b8` · 0, 112, 184 | 5.24:1 ✅ |
-| TBH | Boston Herald | `#00538a` · 0, 83, 138 | 8.06:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TBHS | Boston Herald Sports | `#b01e35` · 176, 30, 53 | 6.81:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| TCCDR | Canon City Daily Record | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |
-| TCE | Chico Enterprise Record | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TCHW | Colorado Hometown Weekly | `#353f8a` · 53, 63, 138 | 9.42:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |
-| TCV | The Citizens' Voice | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ |
-| TDB | Daily Breeze | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TDC | The Daily Camera | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 8 + 0.7 border | `#007538` · 0, 117, 56 | 5.83:1 ✅ |
-| TDCD | Delaware County Daily Times | `#5b9bc8` · 91, 155, 200 | 3.01:1 ❌ | 8 + 0.7 border | `#5b9bc8` · 91, 155, 200 | 3.01:1 ❌ |
-| TDF | Daily Freeman | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TDH | Daily Herald | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#0072b4` · 0, 114, 180 | 5.16:1 ✅ |
-| TDLW | Daily Local Weschester | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ | 8 + 0.7 border | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ |
-| TDP | The Denver Post | `#f7a430` · 247, 164, 48 | 2.04:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TDPS | Denver Post Sports | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ | 8 + 0.7 border | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ |
-| TEBT | The East Bay Times | `#6bd1e6` · 107, 209, 230 | 1.77:1 ❌ | 8 + 0.7 border | `#5480ba` · 84, 128, 186 | 4.06:1 ❌ |
-| TEPTG | Estes Park Trail Gazette | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#33408f` · 51, 64, 143 | 9.25:1 ✅ |
-| TETS | Eureka Times Standard | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |
-| TFMT | Fort Morgan Times | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#33408f` · 51, 64, 143 | 9.25:1 ✅ |
-| TGT | Greeley Tribune | `#44687f` · 68, 104, 127 | 5.95:1 ✅ | 8 + 0.7 border | `#546e80` · 84, 110, 128 | 5.36:1 ✅ |
-| TIVDB | Inland Valley Daily Bulletin | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TJA | Journal Advocate | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |
-| TLADN | Los Angeles Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ |
-| TLBPT | Long Beach Press-Telegram | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TLR | Loveland Reporter Herald | `#4e5dca` · 78, 93, 202 | 5.61:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ |
-| TLS | Lowell Sun News for Mobile | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ |
-| TLTC | Longmont Times-Call for Mobile | `#007cba` · 0, 124, 186 | 4.57:1 ✅ | 8 + 0.7 border | `#007dba` · 0, 125, 186 | 4.52:1 ✅ |
-| TMCH | Monterey County Herald | `#3c6292` · 60, 98, 146 | 6.26:1 ✅ | 8 + 0.7 border | `#3d6191` · 61, 97, 145 | 6.33:1 ✅ |
-| TMD | Macomb Daily | `#3a527a` · 58, 82, 122 | 7.87:1 ✅ | 8 + 0.7 border | `#405278` · 64, 82, 120 | 7.79:1 ✅ |
-| TMI | Marin Independent Journal News | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TMJ | The Morning Journal | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ |
-| TMN | The Mercury News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TMS | The Morning Sun | `#3a527a` · 58, 82, 122 | 7.87:1 ✅ | 8 + 0.7 border | `#405278` · 64, 82, 120 | 7.79:1 ✅ |
-| TNH | The News Herald | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ |
-| TOD | Oneida Daily Dispatch | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ba2112` · 186, 33, 18 | 6.34:1 ✅ |
-| TOP | The Oakland Press | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#0b151e` · 11, 21, 30 | 18.42:1 ✅ |
-| TPD | The Press Democrat | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
-| TPE | The Press-Enterprise | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| TPM | The Pottstown Mercury | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ |
-| TR | The Reporter for Mobile | `#007cba` · 0, 124, 186 | 4.57:1 ✅ | 8 + 0.7 border | `#007dba` · 0, 125, 186 | 4.52:1 ✅ |
-| TRDF | Redlands Daily Facts | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TRE | Reading Eagle | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
-| TRH | Republican-Herald | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ |
-| TROT | Royal Oak Tribune | `#013a67` · 1, 58, 103 | 11.65:1 ✅ | 8 + 0.7 border | `#003b66` · 0, 59, 102 | 11.55:1 ✅ |
-| TRR | The Troy Record | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ |
-| TSAR | Saratogian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
-| TSBS | The San Bernardino Sun | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| TSCS | Santa Cruz Sentinel | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ |
-| TSEB | Sentinel and Enterprise | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ |
-| TSPPP | St. Paul Pioneer Press | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TSS | The Standard-Speaker | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ |
-| TSV | Silicon Valley | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TT | The Trentonian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
-| TTH | The Times Herald | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ |
-| TTT | Times-Tribune | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ |
-| TUDJ | Ukiah Daily Journal | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#408fcc` · 64, 143, 204 | 3.49:1 ❌ |
-| TVR | Vacaville Reporter | `#408fcb` · 64, 143, 203 | 3.49:1 ❌ | 8 + 0.7 border | `#408fcc` · 64, 143, 204 | 3.49:1 ❌ |
-| TVTH | Vallejo Times Herald News | `#8d092d` · 141, 9, 45 | 9.5:1 ✅ | 8 + 0.7 border | `#8c0a2e` · 140, 10, 46 | 9.55:1 ✅ |
-| TWDD | Woodland Daily Democrat | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 8 + 0.7 border | `#007739` · 0, 119, 57 | 5.68:1 ✅ |
-| TWDN | Whittier Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ |
-| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ |
+| Code | Market | action (fill) | White label | iOS radius | iOS link | Link on white | Android link | Link on white |
+|---|---|---|---|---|---|---|---|---|
+| BS | Baltimore Sun | `#daa520` · 218, 165, 32 | 2.24:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| CT | Chicago Tribune | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
+| HC | Hartford Courant | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | 8 + 0.7 border | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 8 + 0.7 border | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
+| NYDN | New York Daily News | `#4492e0` · 68, 146, 224 | 3.26:1 ❌ | 8 + 0.7 border | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ |
+| OCR | Orange County Register | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | 8 + 0.7 border | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ |
+| PAC | Petaluma Argus-Courier | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | 8 + 0.7 border | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| PSN | Pasadena Star News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| SDUT | The San Diego Union-Tribune | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| SGVT | San Gabriel Valley Tribune | `#ff6900` · 255, 105, 0 | 2.89:1 ❌ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| SIT | Sonoma Index Tribune | `#0f73a9` · 15, 115, 169 | 5.19:1 ✅ | 8 + 0.7 border | `#0f73a8` · 15, 115, 168 | 5.2:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ |
+| TB | Buffzone | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 8 + 0.7 border | `#4252b0` · 66, 82, 176 | 6.85:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TBAN | Bay Area News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TBCP | Boulder County Preps | `#3f51b5` · 63, 81, 181 | 6.87:1 ✅ | 8 + 0.7 border | `#4052b5` · 64, 82, 181 | 6.79:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TBE | Broomfield Enterprise News | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 8 + 0.7 border | `#0070b8` · 0, 112, 184 | 5.24:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TBH | Boston Herald | `#00538a` · 0, 83, 138 | 8.06:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TBHS | Boston Herald Sports | `#b01e35` · 176, 30, 53 | 6.81:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TCCDR | Canon City Daily Record | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TCE | Chico Enterprise Record | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TCHW | Colorado Hometown Weekly | `#353f8a` · 53, 63, 138 | 9.42:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TCV | The Citizens' Voice | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDB | Daily Breeze | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDC | The Daily Camera | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 8 + 0.7 border | `#007538` · 0, 117, 56 | 5.83:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDCD | Delaware County Daily Times | `#5b9bc8` · 91, 155, 200 | 3.01:1 ❌ | 8 + 0.7 border | `#5b9bc8` · 91, 155, 200 | 3.01:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDF | Daily Freeman | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDH | Daily Herald | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#0072b4` · 0, 114, 180 | 5.16:1 ✅ | `#0072b4` · 0, 114, 180 | 5.16:1 ✅ |
+| TDLW | Daily Local Weschester | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ | 8 + 0.7 border | `#1591b7` · 21, 145, 183 | 3.64:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDP | The Denver Post | `#f7a430` · 247, 164, 48 | 2.04:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TDPS | Denver Post Sports | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ | 8 + 0.7 border | `#c75c14` · 199, 92, 20 | 4.23:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TEBT | The East Bay Times | `#6bd1e6` · 107, 209, 230 | 1.77:1 ❌ | 8 + 0.7 border | `#5480ba` · 84, 128, 186 | 4.06:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TEPTG | Estes Park Trail Gazette | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#33408f` · 51, 64, 143 | 9.25:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TETS | Eureka Times Standard | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TFMT | Fort Morgan Times | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#33408f` · 51, 64, 143 | 9.25:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TGT | Greeley Tribune | `#44687f` · 68, 104, 127 | 5.95:1 ✅ | 8 + 0.7 border | `#546e80` · 84, 110, 128 | 5.36:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TIVDB | Inland Valley Daily Bulletin | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TJA | Journal Advocate | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TLADN | Los Angeles Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TLBPT | Long Beach Press-Telegram | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TLR | Loveland Reporter Herald | `#4e5dca` · 78, 93, 202 | 5.61:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TLS | Lowell Sun News for Mobile | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TLTC | Longmont Times-Call for Mobile | `#007cba` · 0, 124, 186 | 4.57:1 ✅ | 8 + 0.7 border | `#007dba` · 0, 125, 186 | 4.52:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMCH | Monterey County Herald | `#3c6292` · 60, 98, 146 | 6.26:1 ✅ | 8 + 0.7 border | `#3d6191` · 61, 97, 145 | 6.33:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMD | Macomb Daily | `#3a527a` · 58, 82, 122 | 7.87:1 ✅ | 8 + 0.7 border | `#405278` · 64, 82, 120 | 7.79:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMI | Marin Independent Journal News | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMJ | The Morning Journal | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMN | The Mercury News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TMS | The Morning Sun | `#3a527a` · 58, 82, 122 | 7.87:1 ✅ | 8 + 0.7 border | `#405278` · 64, 82, 120 | 7.79:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TNH | The News Herald | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ab4021` · 171, 64, 33 | 6.02:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TOD | Oneida Daily Dispatch | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#ba2112` · 186, 33, 18 | 6.34:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TOP | The Oakland Press | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#0b151e` · 11, 21, 30 | 18.42:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TPD | The Press Democrat | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TPE | The Press-Enterprise | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TPM | The Pottstown Mercury | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TR | The Reporter for Mobile | `#007cba` · 0, 124, 186 | 4.57:1 ✅ | 8 + 0.7 border | `#007dba` · 0, 125, 186 | 4.52:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TRDF | Redlands Daily Facts | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TRE | Reading Eagle | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TRH | Republican-Herald | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TROT | Royal Oak Tribune | `#013a67` · 1, 58, 103 | 11.65:1 ✅ | 8 + 0.7 border | `#003b66` · 0, 59, 102 | 11.55:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TRR | The Troy Record | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSAR | Saratogian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ |
+| TSBS | The San Bernardino Sun | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSCS | Santa Cruz Sentinel | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSEB | Sentinel and Enterprise | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSPPP | St. Paul Pioneer Press | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSS | The Standard-Speaker | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TSV | Silicon Valley | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TT | The Trentonian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TTH | The Times Herald | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TTT | Times-Tribune | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TUDJ | Ukiah Daily Journal | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#408fcc` · 64, 143, 204 | 3.49:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TVR | Vacaville Reporter | `#408fcb` · 64, 143, 203 | 3.49:1 ❌ | 8 + 0.7 border | `#408fcc` · 64, 143, 204 | 3.49:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TVTH | Vallejo Times Herald News | `#8d092d` · 141, 9, 45 | 9.5:1 ✅ | 8 + 0.7 border | `#8c0a2e` · 140, 10, 46 | 9.55:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TWDD | Woodland Daily Democrat | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 8 + 0.7 border | `#007739` · 0, 119, 57 | 5.68:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| TWDN | Whittier Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
+| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ |

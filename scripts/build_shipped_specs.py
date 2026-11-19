@@ -58,7 +58,7 @@ controls = [
      'swatches': {'android': [ac['alerts_enable']['fill']]}},
     {'id': 'savings-badge', 'what': 'Savings label',
      'ios': f"{C['savings_pill']['width']} × {C['savings_pill']['height']} pt, {C['savings_pill']['fill']}, {C['savings_pill']['border']}, radius {C['savings_pill']['radius']}; {C['savings_pill']['label']}; inset {C['savings_pill']['inset']}",
-     'android': 'White, 2dp stroke in the buy color, radius 15, text #004e87; font and padding: MISSING-ASSETS 5.6'},
+     'android': 'White, 2dp stroke in the buy color, radius 15, text in the market color (VP screenshot, 2026-11-19; the style guide says #004e87); font and padding not in the source'},
     {'id': 'button-account', 'what': 'Manage subscription buttons (split, DEC-21)',
      'ios': f"Modal: {C['manage_subscription_modal']['height']} pt, radius {C['manage_subscription_modal']['radius']}; {C['manage_subscription_modal']['buttons']} (white on white in 7 markets, DSC-34)",
      'android': 'Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6'},

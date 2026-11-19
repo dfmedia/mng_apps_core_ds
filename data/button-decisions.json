@@ -15,7 +15,7 @@
    "weight": "Medium",
    "size": 14,
    "letter_spacing_em": 0.0892,
-   "why": "Material Components Button default (TextAppearance.MaterialComponents.Button). Confirmed by the Apps team (DREAMT-4719, 2026-11-19): Roboto Medium 14sp, all caps, letterSpacing 0.0893 on MaterialComponents screens and on the blocking paywall Subscribe. Which paywall buttons are sentence case (Material3) is MISSING-ASSETS 5.4.",
+   "why": "Material Components Button default (TextAppearance.MaterialComponents.Button). Confirmed by the Apps team (DREAMT-4719, 2026-11-19): Roboto Medium 14sp, all caps, letterSpacing 0.0893 on MaterialComponents screens and on the blocking paywall Subscribe. Screenshots (2026-11-19, MISSING-ASSETS 5.4 closed): the meter paywall purchase button is all caps; the subscription options are sentence case and bold.",
    "confirmed": "Rajal Patel, DREAMT-4719, 2026-11-19"
   },
   "disabled": {
