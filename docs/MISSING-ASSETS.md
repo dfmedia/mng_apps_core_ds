@@ -15,7 +15,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 
 1. **5.5** Android app shell sizes, and the Saratogian status bar on Android 15+
 2. **6.1** The iOS export at `f79fe3339`
-3. **1.3 / 1.4 / 1.8** iOS tab bar: Saved icon, market tab icons, the e-edition tab and Patrick's newspaper icon (follow-ups)
+3. **1.3 / 1.4 / 1.8** iOS tab bar: Saved icon, market tab icons, the NEWSPAPER tab and Patrick's newspaper icon (follow-ups)
 4. **2.1** Logo files for every market
 5. **5.4** Android button values
 6. **5.6** Other Android buttons and controls
@@ -30,7 +30,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 | 1.1 | Android: can you send vector masters (SVG or PDF) for the icon images, or confirm none exist? | iOS: none exist (213 of 218 images are PNG exports; the only vectors are the 4 Author Profile SVGs). Android: the style guide has 126 PNG and 12 SVG exports, not masters. Most useful first: top bar, bottom navigation, general, player controls. |
 | 1.3 | iOS Saved tab: which icon should it show, and is a fix planned? | Your answer: the tab calls `UIImage(systemName: "saved")`, which returns no image, so the tab shows no icon. Android shows a bookmark (`mc_tab_icon_saved`). Was the intent an SF Symbol such as `bookmark` / `bookmark.fill`, or a custom image? |
 | 1.4 | Which markets override which tab-bar icons, what are the image set names, and can you send the files? | Your answer: 9 markets (CT, BS, DP, MC, NYDN, SS, VP, HC, OS) have their own Home icon and their own selected For You icon; Sections and Alerts use Font Awesome `bars` and `bell` everywhere. The earlier iOS style guide said 2 markets override the Font Awesome tab icons: which 2 markets and which icons, or is that out of date? Please send the 18 Home and For You files (PNG is fine). |
-| 1.8 | iOS: what is the e-edition tab called and which icon does it use at `f79fe3339`, and is it in the export you're sending for 6.1? Could you also ask Patrick Carr for his newspaper icon (the vector source, and where it lives)? | Your answer: there's no Digital tab anymore; "Digital" was another name for the eNewspaper tab, and that code is commented out. Our `e30ad2585` export has two tab icons, `tab-enews` and `tab-newspaper`, and the e-edition was planned to move into the bottom navigation as "Newspaper". Patrick shared a newspaper icon as a PNG on Oct 21 (a newspaper with a folded edge, an image block and text lines): is that the one that ships, and is there a vector? Which markets show the tab, and does it open the native eNewspaper viewer? |
+| 1.8 | iOS: is the NEWSPAPER tab in every market, which image set is its icon, and is there a vector? Could you ask Patrick Carr for his newspaper icon (the vector source, and where it lives)? | Your screenshots (TDP, NYDN, VP) show five tabs: NEWS · SECTIONS · GAMES · YOU · NEWSPAPER, with a filled newspaper icon that looks like the one Patrick shared as a PNG on Oct 21. You said "Digital" was another name for this tab and that code is commented out. Does the tab open the native eNewspaper viewer? |
 | 1.10 | Android: is 15 s skip required, or would 10 / 30 s work? | Material Symbols only has 5 / 10 / 30 s; 15 s needs a custom icon. |
 
 ## 2. Logos and artwork

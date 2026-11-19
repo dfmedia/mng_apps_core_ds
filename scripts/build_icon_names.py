@@ -40,7 +40,7 @@ NAME = {
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
     'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'eNewspaper tab': '1.8 (which name and icon ship now; Patrick Carr\'s newspaper icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
+    'eNewspaper tab': '1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr\'s icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
     'Skip back 15 s': '1.10 (15 s on Android?)', 'Skip forward 15 s': '1.10 (15 s on Android?)',
 }
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs

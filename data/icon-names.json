@@ -185,7 +185,7 @@
    "ios": "tab-enews · tab-newspaper",
    "android": "mc_tab_icon_newspaper · ic_newspaper",
    "note": "",
-   "apps_team": "1.8 (which name and icon ship now; Patrick Carr's newspaper icon)",
+   "apps_team": "1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr's icon)",
    "reference": {
     "sf_symbol": "newspaper",
     "material": "newspaper",
