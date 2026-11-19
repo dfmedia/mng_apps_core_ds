@@ -8,9 +8,8 @@
   },
   "icon": {
    "core": 32,
-   "ios": 23,
-   "core+variant": 4,
-   "android": 2
+   "ios": 26,
+   "android": 5
   },
   "component": {
    "core+variant": 12,
@@ -461,26 +460,6 @@
    }
   },
   {
-   "id": "icon/digital-tab",
-   "type": "icon",
-   "group": "Icons \u00b7 Navigation & UI",
-   "name": "Digital tab",
-   "owner": "ios",
-   "ios": {
-    "source": "tab-digital (purpose unclear)",
-    "native": null
-   },
-   "android": {
-    "source": null,
-    "native": null
-   },
-   "note": "Not on Android. Ask Apps team whether to retire.",
-   "core": {
-    "figma": null,
-    "spec": null
-   }
-  },
-  {
    "id": "icon/expand-show-more",
    "type": "icon",
    "group": "Icons \u00b7 Navigation & UI",
@@ -614,7 +593,7 @@
     "source": null,
     "native": "account_circle"
    },
-   "note": "Android has no account icon; login is Auth0 web.",
+   "note": "Android equivalent: none (login is the Auth0 web page; no account icon).",
    "core": {
     "figma": null,
     "spec": null
@@ -705,16 +684,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Navigation & UI",
    "name": "Text size smaller",
-   "owner": "core+variant",
+   "owner": "ios",
    "ios": {
     "source": "textsizesmall",
     "native": "textformat.size.smaller"
    },
    "android": {
-    "source": "ic_font_size \u00b7 ic_textsize_change (one icon, opens a 4-step list)",
+    "source": null,
     "native": "text_decrease"
    },
-   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "core": {
     "figma": null,
     "spec": null
@@ -725,16 +704,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Navigation & UI",
    "name": "Text size larger",
-   "owner": "core+variant",
+   "owner": "ios",
    "ios": {
     "source": "textsizelarge",
     "native": "textformat.size.larger"
    },
    "android": {
-    "source": "(same single icon)",
+    "source": null,
     "native": "text_increase"
    },
-   "note": "See Text size smaller.",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "core": {
     "figma": null,
     "spec": null
@@ -754,7 +733,7 @@
     "source": "ic_follow_topic (file exists, not used)",
     "native": "add_circle"
    },
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "core": {
     "figma": null,
     "spec": null
@@ -774,7 +753,7 @@
     "source": "ic_unfollow_topic (file exists, not used)",
     "native": "do_not_disturb_on"
    },
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "core": {
     "figma": null,
     "spec": null
@@ -854,7 +833,7 @@
     "source": null,
     "native": "open_in_full"
    },
-   "note": "Android eEdition is the PageSuite SDK; its icons ship inside the SDK.",
+   "note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons).",
    "core": {
     "figma": null,
     "spec": null
@@ -874,7 +853,7 @@
     "source": null,
     "native": "close_fullscreen"
    },
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "core": {
     "figma": null,
     "spec": null
@@ -894,7 +873,7 @@
     "source": null,
     "native": "arrow_back"
    },
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "core": {
     "figma": null,
     "spec": null
@@ -914,7 +893,7 @@
     "source": null,
     "native": "arrow_forward"
    },
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "core": {
     "figma": null,
     "spec": null
@@ -965,16 +944,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Media",
    "name": "Skip back 15 s",
-   "owner": "core+variant",
+   "owner": "ios",
    "ios": {
     "source": "SF gobackward.15",
     "native": "gobackward.15"
    },
    "android": {
-    "source": "Media3 skip_back_10 (skips 10 s)",
-    "native": "replay_10"
+    "source": null,
+    "native": null
    },
-   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only).",
    "core": {
     "figma": null,
     "spec": null
@@ -985,16 +964,16 @@
    "type": "icon",
    "group": "Icons \u00b7 Media",
    "name": "Skip forward 15 s",
-   "owner": "core+variant",
+   "owner": "ios",
    "ios": {
     "source": "SF goforward.15",
     "native": "goforward.15"
    },
    "android": {
-    "source": "Media3 skip_forward_10 (skips 10 s)",
-    "native": "forward_10"
+    "source": null,
+    "native": null
    },
-   "note": "See Skip back.",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only).",
    "core": {
     "figma": null,
     "spec": null
@@ -1014,7 +993,7 @@
     "source": null,
     "native": "fast_rewind"
    },
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "core": {
     "figma": null,
     "spec": null
@@ -1034,7 +1013,7 @@
     "source": null,
     "native": "fast_forward"
    },
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "core": {
     "figma": null,
     "spec": null
@@ -1054,7 +1033,7 @@
     "source": null,
     "native": "view_in_ar"
    },
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1074,7 +1053,7 @@
     "source": null,
     "native": null
    },
-   "note": "Android World Cup tabs use text (Barlow Condensed), no icons.",
+   "note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed).",
    "core": {
     "figma": null,
     "spec": null
@@ -1094,7 +1073,7 @@
     "source": null,
     "native": "star"
    },
-   "note": "Android stars mean saved, not rating.",
+   "note": "Android equivalent: none; its stars mean saved (special sections), not ratings.",
    "core": {
     "figma": null,
     "spec": null
@@ -1114,7 +1093,7 @@
     "source": null,
     "native": "star_half"
    },
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "core": {
     "figma": null,
     "spec": null
@@ -1134,7 +1113,7 @@
     "source": null,
     "native": "star"
    },
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "core": {
     "figma": null,
     "spec": null
@@ -1154,7 +1133,7 @@
     "source": null,
     "native": "favorite"
    },
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1174,7 +1153,7 @@
     "source": null,
     "native": "repeat"
    },
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1194,7 +1173,7 @@
     "source": null,
     "native": "verified"
    },
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1214,7 +1193,7 @@
     "source": "apple_button (file exists, not used)",
     "native": null
    },
-   "note": "Sign in with Apple is iOS-only.",
+   "note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused).",
    "core": {
     "figma": null,
     "spec": null
@@ -1334,7 +1313,7 @@
     "source": null,
     "native": null
    },
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1354,7 +1333,7 @@
     "source": null,
     "native": null
    },
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1374,7 +1353,7 @@
     "source": "ic_amazon",
     "native": null
    },
-   "note": "",
+   "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
    "core": {
     "figma": null,
     "spec": null
@@ -1394,7 +1373,7 @@
     "source": null,
     "native": null
    },
-   "note": "iOS paywall password autofill.",
+   "note": "iOS paywall password autofill. Android equivalent: none in the Android guide.",
    "core": {
     "figma": null,
     "spec": null
@@ -1414,7 +1393,67 @@
     "source": null,
     "native": null
    },
-   "note": "Not in Android drawables; confirm Android Outbrain widget has no logo.",
+   "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/text-size",
+   "type": "icon",
+   "group": "Icons \u00b7 Navigation & UI",
+   "name": "Text size",
+   "owner": "android",
+   "ios": {
+    "source": null,
+    "native": null
+   },
+   "android": {
+    "source": "ic_font_size \u00b7 ic_textsize_change (one icon, opens a 4-step list)",
+    "native": null
+   },
+   "note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only).",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/skip-back-10-s",
+   "type": "icon",
+   "group": "Icons \u00b7 Media",
+   "name": "Skip back 10 s",
+   "owner": "android",
+   "ios": {
+    "source": null,
+    "native": null
+   },
+   "android": {
+    "source": "Media3 skip_back_10 (AppPlaybackService SEEK_INCREMENT_MS 10_000)",
+    "native": null
+   },
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/skip-forward-10-s",
+   "type": "icon",
+   "group": "Icons \u00b7 Media",
+   "name": "Skip forward 10 s",
+   "owner": "android",
+   "ios": {
+    "source": null,
+    "native": null
+   },
+   "android": {
+    "source": "Media3 skip_forward_10",
+    "native": null
+   },
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35.",
    "core": {
     "figma": null,
     "spec": null
@@ -1434,7 +1473,7 @@
     "source": "per-market notification icons (monochrome)",
     "native": null
    },
-   "note": "Android requires a monochrome status-bar icon; no iOS equivalent.",
+   "note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).",
    "core": {
     "figma": null,
     "spec": null
@@ -1454,7 +1493,7 @@
     "source": "card_star_default \u00b7 star_on_card_saved_state",
     "native": null
    },
-   "note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected).",
+   "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
    "core": {
     "figma": null,
     "spec": null

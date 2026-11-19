@@ -398,3 +398,11 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - `continue`: moves to **Android only**, as an alias of `action` inside the Android file. iOS has no continue color (its Continue button is pre-colored `Continue-*` PNGs); Android ships `btn_continue`.
   - iOS only: `header`. Android only: `statusbar`, `accent`.
 - **Not moved yet.** The moves (Core tokens, Swift `continueButton`, Kotlin, Figma Core Brand theme and platform variables) are done together after all ownership pages are reviewed, with a plan for Karl first (rule 3).
+- **Second rule (Karl, 2026-11-19):** if the two apps do different things for the same purpose, each app's item goes to its own platform file, even when both have one.
+- **Icons (Core Icons · System Comparison › 05), approved with these changes:** 32 Core, 26 iOS only, 5 Android only (was 32 / 23 / 2 plus 4 Core per-platform).
+  - Digital tab dropped: it no longer ships (Apps team, 2026-11-18).
+  - Text size: `text-size` is Android only (one icon, 4-step list); `text-size-smaller` / `text-size-larger` are iOS only. Supersedes PLAT-08.
+  - Skip: `skip-back-15` / `skip-forward-15` are iOS only (names unchanged); new names `skip-back-10` / `skip-forward-10` for Android's Media3 icons, Android only. DSC-35 (interval) stays open.
+  - Amazon sign-in icon: stays Core for now; asked the Apps team whether it shows anywhere (new MISSING-ASSETS 1.12).
+  - Every iOS-only and Android-only icon now names its equivalent on the other app (or "none") in its note.
+

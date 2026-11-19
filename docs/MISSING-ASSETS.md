@@ -9,7 +9,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 
 **Numbers don't change.** When a question is answered we remove it and leave a gap, so the numbers you have quoted stay the same.
 
-**Thank you for the iOS and Android answers.** Most questions are now closed. The rest are follow-ups: where an answer and the code (or the style guide) say different things, the question below says what each one says, so you can tell us which one ships. iOS: 1.3, 1.4, 1.8, 2.1, 4.1, 5.10 and 6.1. Android: 1.1, 3.4, 5.3 (screenshots to come), 5.4 and 5.6. Thank you for adding the answers to the Android style guide too.
+**Thank you for the iOS and Android answers.** Most questions are now closed. The rest are follow-ups: where an answer and the code (or the style guide) say different things, the question below says what each one says, so you can tell us which one ships. iOS: 1.3, 1.4, 1.8, 2.1, 4.1, 5.10 and 6.1. Both apps: 1.12 (new). Android: 1.1, 3.4, 5.3 (screenshots to come), 5.4 and 5.6. Thank you for adding the answers to the Android style guide too.
 
 ## Most needed
 
@@ -29,6 +29,7 @@ We work from the shipped code (iOS TroncKit @ `f79fe3339` per your latest answer
 | 1.3 | iOS Saved tab: which icon should it show, and is a fix planned? | Your answer: the tab calls `UIImage(systemName: "saved")`, which returns no image, so the tab shows no icon. Android shows a bookmark (`mc_tab_icon_saved`). Was the intent an SF Symbol such as `bookmark` / `bookmark.fill`, or a custom image? |
 | 1.4 | Which markets override which tab-bar icons, what are the image set names, and can you send the files? | Your answer: 9 markets (CT, BS, DP, MC, NYDN, SS, VP, HC, OS) have their own Home icon and their own selected For You icon; Sections and Alerts use Font Awesome `bars` and `bell` everywhere. (Android: only the Home tab icon is per market.) The earlier iOS style guide said 2 markets override the Font Awesome tab icons: which 2 markets and which icons, or is that out of date? Please send the 18 Home and For You files (PNG is fine). |
 | 1.8 | iOS: is the NEWSPAPER tab in every market, which image set is its icon, and is there a vector? Could you ask Patrick Carr for his newspaper icon (the vector source, and where it lives)? | Your screenshots (TDP, NYDN, VP) show five tabs: NEWS · SECTIONS · GAMES · YOU · NEWSPAPER, with a filled newspaper icon that looks like the one Patrick shared as a PNG on Oct 21. You said "Digital" was another name for this tab and that code is commented out. Does the tab open the native eNewspaper viewer? |
+| 1.12 | Is the Amazon sign-in icon used anywhere a reader can see it? | Both apps include it (iOS: the TroncKit default Amazon button; Android: `ic_amazon`), but login is the Auth0 web page on both apps, so the native Amazon button never shows. If it's unused, we'll leave it out of the design system. |
 
 ## 2. Logos and artwork
 

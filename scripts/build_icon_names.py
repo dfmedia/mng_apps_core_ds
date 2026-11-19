@@ -18,16 +18,19 @@ NAME = {
     'Save (not saved)': ('save', ''), 'Saved': ('saved', 'Android also shows a star in special sections (see below), same name (DEC-17).'),
     'Home tab': ('tab-home', ''), 'Sections / menu': ('menu', 'Sections tab and the eNewspaper menu.'),
     'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', 'No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).'), 'eNewspaper tab': ('tab-enewspaper', ''),
-    'Games tab': ('tab-games', "iOS 26 screenshots: puzzle-piece outline. No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Digital tab': ('tab-digital', ''),
+    'Games tab': ('tab-games', "iOS 26 screenshots: puzzle-piece outline. No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."),
     'Expand / show more': ('expand', ''), 'Collapse / show less': ('collapse', ''), 'Back': ('back', ''),
     'Forward / disclosure': ('forward', ''), 'Close': ('close', ''), 'Close (circle)': ('close-circle', ''),
     'Account': ('account', ''), 'Warning': ('warning', ''), 'Email': ('email', ''), 'Refresh': ('refresh', ''), 'Filter': ('filter', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."),
-    'Text size smaller': ('text-size-smaller', 'iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08). No separate design; platform symbol is fine (Apps team, 2026-11-18).'),
-    'Text size larger': ('text-size-larger', 'iOS variant of text-size; Android ships one text-size icon (DEC-17, PLAT-08). No separate design; platform symbol is fine (Apps team, 2026-11-18).'),
+    'Skip back 10 s': ('skip-back-10', 'Android only (Karl, 2026-11-19, DEC-21): Media3 skip_back_10; Material Symbols replay_10 works as is (Apps team, 2026-11-19). iOS: skip-back-15.'),
+    'Skip forward 10 s': ('skip-forward-10', 'Android only (Karl, 2026-11-19, DEC-21): Media3 skip_forward_10; Material Symbols forward_10 works as is (Apps team, 2026-11-19). iOS: skip-forward-15.'),
+    'Text size': ('text-size', 'Android only (Karl, 2026-11-19, DEC-21): one icon that opens the 4-step list.'),
+    'Text size smaller': ('text-size-smaller', 'iOS only (Karl, 2026-11-19, DEC-21). No separate design; platform symbol is fine (Apps team, 2026-11-18).'),
+    'Text size larger': ('text-size-larger', 'iOS only (Karl, 2026-11-19, DEC-21). No separate design; platform symbol is fine (Apps team, 2026-11-18).'),
     'Follow topic': ('follow-topic', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Unfollow topic': ('unfollow-topic', "No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."), 'Checked': ('checked', ''), 'Unchecked': ('unchecked', ''),
     'Continue': ('continue', ''),
     'Expand page': ('enews-expand-page', ''), 'Fit to screen': ('enews-fit-to-screen', ''), 'Previous page': ('enews-previous-page', ''), 'Next page': ('enews-next-page', ''),
-    'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS ships SF gobackward.15 (15 s), Android Media3 skip_back_10 (10 s); no separate design (Apps team, DREAMT-4718 and DREAMT-4719, 2026-11-18/19). Name kept (Karl, 2026-11-19); the 15 s vs 10 s difference is DISCREPANCIES DSC-35."), 'Skip forward 15 s': ('skip-forward-15', "iOS ships SF goforward.15 (15 s), Android Media3 skip_forward_10 (10 s); no separate design (Apps team, 2026-11-18/19). Name kept (Karl, 2026-11-19); the 15 s vs 10 s difference is DISCREPANCIES DSC-35."),
+    'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS only (Karl, 2026-11-19, DEC-21): SF gobackward.15, skips 15 s. No separate design (Apps team, 2026-11-18). Android: skip-back-10."), 'Skip forward 15 s': ('skip-forward-15', "iOS only (Karl, 2026-11-19, DEC-21): SF goforward.15, skips 15 s. No separate design (Apps team, 2026-11-18). Android: skip-forward-10."),
     'Rewind': ('rewind', ''), 'Fast forward': ('fast-forward', ''), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).'),
     'Rating star (empty)': ('rating-star-empty', ''), 'Rating star (half)': ('rating-star-half', ''), 'Rating star (full)': ('rating-star-full', ''),
     'Like / favorite': ('like', 'Tweet embeds.'), 'Repost': ('repost', 'Tweet embeds.'), 'Verified': ('verified', 'Tweet embeds.'),
@@ -39,8 +42,8 @@ NAME = {
 }
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
-    'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'eNewspaper tab': '1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr\'s icon)', 'Digital tab': '1.8 ("Digital" was another name for the eNewspaper tab; asking which name and icon ship now)',
+    'Amazon (sign-in)': '1.12 (neither app shows it; keep or drop?)', 'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
+    'eNewspaper tab': '1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr\'s icon)',
 }
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
 BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}

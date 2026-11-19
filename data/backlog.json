@@ -418,19 +418,6 @@
    "overall": "blocked"
   },
   {
-   "id": "icon/digital-tab",
-   "area": "Icons",
-   "group": "Icons · Navigation & UI",
-   "name": "Digital tab",
-   "owner": "ios",
-   "figma": "blocked",
-   "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Not on Android. Ask Apps team whether to retire.",
-   "overall": "blocked"
-  },
-  {
    "id": "icon/expand-show-more",
    "area": "Icons",
    "group": "Icons · Navigation & UI",
@@ -518,7 +505,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android has no account icon; login is Auth0 web.",
+   "note": "Android equivalent: none (login is the Auth0 web page; no account icon).",
    "overall": "blocked"
   },
   {
@@ -578,12 +565,12 @@
    "area": "Icons",
    "group": "Icons · Navigation & UI",
    "name": "Text size smaller",
-   "owner": "core+variant",
+   "owner": "ios",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "overall": "blocked"
   },
   {
@@ -591,12 +578,12 @@
    "area": "Icons",
    "group": "Icons · Navigation & UI",
    "name": "Text size larger",
-   "owner": "core+variant",
+   "owner": "ios",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "See Text size smaller.",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "overall": "blocked"
   },
   {
@@ -609,7 +596,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "overall": "blocked"
   },
   {
@@ -622,7 +609,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "overall": "blocked"
   },
   {
@@ -674,7 +661,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android eEdition is the PageSuite SDK; its icons ship inside the SDK.",
+   "note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons).",
    "overall": "blocked"
   },
   {
@@ -687,7 +674,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
   {
@@ -700,7 +687,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
   {
@@ -713,7 +700,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
   {
@@ -747,12 +734,12 @@
    "area": "Icons",
    "group": "Icons · Media",
    "name": "Skip back 15 s",
-   "owner": "core+variant",
+   "owner": "ios",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only).",
    "overall": "blocked"
   },
   {
@@ -760,12 +747,12 @@
    "area": "Icons",
    "group": "Icons · Media",
    "name": "Skip forward 15 s",
-   "owner": "core+variant",
+   "owner": "ios",
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "See Skip back.",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only).",
    "overall": "blocked"
   },
   {
@@ -778,7 +765,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "overall": "blocked"
   },
   {
@@ -791,7 +778,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "overall": "blocked"
   },
   {
@@ -804,7 +791,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -817,7 +804,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android World Cup tabs use text (Barlow Condensed), no icons.",
+   "note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed).",
    "overall": "blocked"
   },
   {
@@ -830,7 +817,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android stars mean saved, not rating.",
+   "note": "Android equivalent: none; its stars mean saved (special sections), not ratings.",
    "overall": "blocked"
   },
   {
@@ -843,7 +830,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "overall": "blocked"
   },
   {
@@ -856,7 +843,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "overall": "blocked"
   },
   {
@@ -869,7 +856,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -882,7 +869,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -895,7 +882,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -908,7 +895,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Sign in with Apple is iOS-only.",
+   "note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused).",
    "overall": "blocked"
   },
   {
@@ -986,7 +973,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -999,7 +986,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -1012,7 +999,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
+   "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
    "overall": "blocked"
   },
   {
@@ -1025,7 +1012,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS paywall password autofill.",
+   "note": "iOS paywall password autofill. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
   {
@@ -1038,7 +1025,46 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Not in Android drawables; confirm Android Outbrain widget has no logo.",
+   "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
+   "overall": "blocked"
+  },
+  {
+   "id": "icon/text-size",
+   "area": "Icons",
+   "group": "Icons · Navigation & UI",
+   "name": "Text size",
+   "owner": "android",
+   "figma": "blocked",
+   "tokens": "na",
+   "code": "blocked",
+   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only).",
+   "overall": "blocked"
+  },
+  {
+   "id": "icon/skip-back-10-s",
+   "area": "Icons",
+   "group": "Icons · Media",
+   "name": "Skip back 10 s",
+   "owner": "android",
+   "figma": "blocked",
+   "tokens": "na",
+   "code": "blocked",
+   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35.",
+   "overall": "blocked"
+  },
+  {
+   "id": "icon/skip-forward-10-s",
+   "area": "Icons",
+   "group": "Icons · Media",
+   "name": "Skip forward 10 s",
+   "owner": "android",
+   "figma": "blocked",
+   "tokens": "na",
+   "code": "blocked",
+   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35.",
    "overall": "blocked"
   },
   {
@@ -1051,7 +1077,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android requires a monochrome status-bar icon; no iOS equivalent.",
+   "note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).",
    "overall": "blocked"
   },
   {
@@ -1064,7 +1090,7 @@
    "tokens": "na",
    "code": "blocked",
    "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected).",
+   "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
    "overall": "blocked"
   },
   {

@@ -12,12 +12,11 @@ Status key: `PROPOSED` · `WAITING` (on Apps team) · `APPROVED` · `REJECTED` �
 
 | Bucket | Count | What's in it |
 |--------|-------|--------------|
-| Core | 32 | Search, settings, share, save/saved, Home / Sections / Alerts / For You / eNewspaper / Games tabs, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram, Amazon) |
-| Core, per-platform value | 4 | Text size smaller / larger (Android has one icon that opens a 4-step list); skip back / forward (iOS 15 s, Android 10 s: DSC-35, names kept) |
-| iOS only | 23 | Digital tab (code commented out, Apps team 2026-11-18), account, follow/unfollow topic, 4 eNewspaper viewer controls (Android uses the PageSuite SDK), rewind, fast forward, 3D embed, tournament symbols, 3 rating stars, 3 tweet-embed icons, Apple, YouTube, Vimeo, 1Password, Outbrain |
-| Android only | 2 | Notification small icon (a platform requirement); special-section save star (same meaning as Saved; kept as Android's glyph, DEC-17) |
+| Core | 32 | Search, settings, share, save/saved, Home / Sections / Alerts / For You / eNewspaper / Games tabs, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram, Amazon: Amazon asked, MISSING-ASSETS 1.12) |
+| iOS only | 26 | Text size smaller / larger; skip back / forward 15 s; account; follow / unfollow topic; 4 eNewspaper viewer controls (Android uses the PageSuite SDK); rewind; fast forward; 3D embed; tournament symbols; 3 rating stars; 3 tweet-embed icons; Apple, YouTube, Vimeo, 1Password, Outbrain |
+| Android only | 5 | Text size (one icon); skip back / forward 10 s; notification small icon (a platform requirement); special-section save star (iOS equivalent: Saved, DEC-17) |
 
-Updated 2026-11-19 from data/icon-platform-map.json (skip moved to Core, per-platform value after the Android 1.10 answer). Figma: Icons · System Comparison › 05 · Icon list (the bucket column).
+Updated 2026-11-19 (Karl, DEC-21): an icon is Core only if both apps ship it and do the same thing; otherwise each app's icon goes to its own file (text size, skip). Digital tab dropped (no longer ships). The "Android equivalent" / "iOS equivalent" for every one-platform icon is in its note (docs/ICON-NAMES.md, Figma Icons › 05). Source: data/icon-platform-map.json.
 
 Most iOS-only items are **features** Android doesn't have, not icon disagreements. If Android adds the feature, the icon moves to Core.
 
@@ -53,6 +52,6 @@ Most iOS-only items are **features** Android doesn't have, not icon disagreement
 | PLAT-05 | `statusbar` (Android) and `header` (iOS) default to `navbar` | Platform files only store the exceptions (7 and 11 markets) | APPROVED 2026-11-05 → DEC-15 (aliases of navbar; 8 iOS + 7 Android exceptions documented with suggested overrides, not built) |
 | PLAT-06 | 10 markets where iOS shows template blue #004e87 and Android shows the market's own color (TBAN, TBH, TCE, TDB, TDF, TLBPT, TMI, TRDF, TSPPP, TT) | Ask Apps team which is intended. Likely Android | RESOLVED 2026-10-26: iOS value (DEC-03, DEC-08) |
 | PLAT-07 | Big brand differences: TLR (iOS rust vs Android blue), TEPTG (navy vs green), TSV (black vs blue), TUDJ, SGVT/PSN/TPE/TSBS/TWDN (orange action on iOS) | Ask brand owners for the correct color per market | RESOLVED 2026-10-26: migration sheet where it covers the market, otherwise iOS (DEC-01, DEC-03, DEC-08) |
-| PLAT-08 | Text size icons: one Core "text size" glyph; iOS keeps smaller/larger as a platform variant | Yes | APPROVED 2026-11-10 → DEC-17 (built with the icons, after MISSING-ASSETS §1) |
+| PLAT-08 | Text size icons: one Core "text size" glyph; iOS keeps smaller/larger as a platform variant | Yes | APPROVED 2026-11-10 → DEC-17; SUPERSEDED 2026-11-19 (Karl, DEC-21): text-size is Android only, text-size-smaller / -larger are iOS only |
 | PLAT-09 | Drop the Android special-section save star; use Core Saved | Yes | REJECTED 2026-11-10 → DEC-17: the Android star and the iOS bookmark are platform-specific for now; keep both, one icon name |
 | PLAT-10 | Android `accent`: decide the switch-on color (today the Material default in Settings, accent on alert topics) | Map to `action` or `tabactive` and retire gold #daa520 | SETTLED 2026-11-10 by what's built (Karl): `accent` follows Core `action`, the value 52 of 77 Android markets ship (DEC-14). The 25 exceptions, including template gold #daa520, are documented in docs/CONTROL-EXCEPTIONS.md, not built; the apps still ship them until the Apps team changes them |

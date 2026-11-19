@@ -5,9 +5,8 @@
  },
  "summary": {
   "core": 32,
-  "ios-only": 23,
-  "core-variant": 4,
-  "android-only": 2
+  "ios-only": 26,
+  "android-only": 5
  },
  "purposes": [
   {
@@ -133,17 +132,6 @@
   },
   {
    "group": "Navigation & UI",
-   "purpose": "Digital tab",
-   "ios_today": "tab-digital (purpose unclear)",
-   "android_today": null,
-   "sf_symbol": null,
-   "material": null,
-   "bucket": "ios-only",
-   "note": "Not on Android. Ask Apps team whether to retire.",
-   "ios_recommendation": "Custom vector needed \u2014 see Missing Assets"
-  },
-  {
-   "group": "Navigation & UI",
    "purpose": "Expand / show more",
    "ios_today": "FA chevronUp \u00b7 Chevron - Up \u00b7 chevron_up",
    "android_today": "icon_uparrow",
@@ -216,7 +204,7 @@
    "sf_symbol": "person.circle.fill",
    "material": "account_circle",
    "bucket": "ios-only",
-   "note": "Android has no account icon; login is Auth0 web.",
+   "note": "Android equivalent: none (login is the Auth0 web page; no account icon).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -267,22 +255,22 @@
    "group": "Navigation & UI",
    "purpose": "Text size smaller",
    "ios_today": "textsizesmall",
-   "android_today": "ic_font_size \u00b7 ic_textsize_change (one icon, opens a 4-step list)",
+   "android_today": null,
    "sf_symbol": "textformat.size.smaller",
    "material": "text_decrease",
-   "bucket": "core-variant",
-   "note": "Core: one \"text size\" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08).",
+   "bucket": "ios-only",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "ios_recommendation": "Native on both platforms"
   },
   {
    "group": "Navigation & UI",
    "purpose": "Text size larger",
    "ios_today": "textsizelarge",
-   "android_today": "(same single icon)",
+   "android_today": null,
    "sf_symbol": "textformat.size.larger",
    "material": "text_increase",
-   "bucket": "core-variant",
-   "note": "See Text size smaller.",
+   "bucket": "ios-only",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -293,7 +281,7 @@
    "sf_symbol": "plus.circle",
    "material": "add_circle",
    "bucket": "ios-only",
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -304,7 +292,7 @@
    "sf_symbol": "minus.circle",
    "material": "do_not_disturb_on",
    "bucket": "ios-only",
-   "note": "Android file is unreferenced.",
+   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -348,7 +336,7 @@
    "sf_symbol": "arrow.up.left.and.arrow.down.right",
    "material": "open_in_full",
    "bucket": "ios-only",
-   "note": "Android eEdition is the PageSuite SDK; its icons ship inside the SDK.",
+   "note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -359,7 +347,7 @@
    "sf_symbol": "arrow.down.right.and.arrow.up.left",
    "material": "close_fullscreen",
    "bucket": "ios-only",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -370,7 +358,7 @@
    "sf_symbol": "arrow.left",
    "material": "arrow_back",
    "bucket": "ios-only",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -381,7 +369,7 @@
    "sf_symbol": "arrow.right",
    "material": "arrow_forward",
    "bucket": "ios-only",
-   "note": "PageSuite SDK on Android.",
+   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -410,23 +398,23 @@
    "group": "Media",
    "purpose": "Skip back 15 s",
    "ios_today": "SF gobackward.15",
-   "android_today": "Media3 skip_back_10 (skips 10 s)",
+   "android_today": null,
    "sf_symbol": "gobackward.15",
-   "material": "replay_10",
-   "bucket": "core-variant",
-   "note": "Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19).",
-   "ios_recommendation": "Native on both platforms"
+   "material": null,
+   "bucket": "ios-only",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only).",
+   "ios_recommendation": "iOS native; Android needs custom vector"
   },
   {
    "group": "Media",
    "purpose": "Skip forward 15 s",
    "ios_today": "SF goforward.15",
-   "android_today": "Media3 skip_forward_10 (skips 10 s)",
+   "android_today": null,
    "sf_symbol": "goforward.15",
-   "material": "forward_10",
-   "bucket": "core-variant",
-   "note": "See Skip back.",
-   "ios_recommendation": "Native on both platforms"
+   "material": null,
+   "bucket": "ios-only",
+   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only).",
+   "ios_recommendation": "iOS native; Android needs custom vector"
   },
   {
    "group": "Media",
@@ -436,7 +424,7 @@
    "sf_symbol": "backward.fill",
    "material": "fast_rewind",
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -447,7 +435,7 @@
    "sf_symbol": "forward.fill",
    "material": "fast_forward",
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -458,7 +446,7 @@
    "sf_symbol": "cube",
    "material": "view_in_ar",
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -469,7 +457,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "ios-only",
-   "note": "Android World Cup tabs use text (Barlow Condensed), no icons.",
+   "note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed).",
    "ios_recommendation": "Custom vector needed \u2014 see Missing Assets"
   },
   {
@@ -480,7 +468,7 @@
    "sf_symbol": "star",
    "material": "star",
    "bucket": "ios-only",
-   "note": "Android stars mean saved, not rating.",
+   "note": "Android equivalent: none; its stars mean saved (special sections), not ratings.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -491,7 +479,7 @@
    "sf_symbol": "star.leadinghalf.filled",
    "material": "star_half",
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -502,7 +490,7 @@
    "sf_symbol": "star.fill",
    "material": "star",
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none (see Rating star (empty)).",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -513,7 +501,7 @@
    "sf_symbol": "heart",
    "material": "favorite",
    "bucket": "ios-only",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -524,7 +512,7 @@
    "sf_symbol": "arrow.2.squarepath",
    "material": "repeat",
    "bucket": "ios-only",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -535,7 +523,7 @@
    "sf_symbol": "checkmark.seal.fill",
    "material": "verified",
    "bucket": "ios-only",
-   "note": "iOS native tweet embeds only.",
+   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -546,7 +534,7 @@
    "sf_symbol": "apple.logo",
    "material": null,
    "bucket": "ios-only",
-   "note": "Sign in with Apple is iOS-only.",
+   "note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused).",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
   },
   {
@@ -612,7 +600,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
   },
   {
@@ -623,7 +611,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "ios-only",
-   "note": "",
+   "note": "Android equivalent: none in the Android guide.",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
   },
   {
@@ -634,7 +622,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "core",
-   "note": "",
+   "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
   },
   {
@@ -645,7 +633,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "ios-only",
-   "note": "iOS paywall password autofill.",
+   "note": "iOS paywall password autofill. Android equivalent: none in the Android guide.",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
   },
   {
@@ -656,8 +644,41 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "ios-only",
-   "note": "Not in Android drawables; confirm Android Outbrain widget has no logo.",
+   "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
+  },
+  {
+   "group": "Navigation & UI",
+   "purpose": "Text size",
+   "ios_today": null,
+   "android_today": "ic_font_size \u00b7 ic_textsize_change (one icon, opens a 4-step list)",
+   "sf_symbol": null,
+   "material": null,
+   "bucket": "android-only",
+   "note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only).",
+   "ios_recommendation": null
+  },
+  {
+   "group": "Media",
+   "purpose": "Skip back 10 s",
+   "ios_today": null,
+   "android_today": "Media3 skip_back_10 (AppPlaybackService SEEK_INCREMENT_MS 10_000)",
+   "sf_symbol": null,
+   "material": null,
+   "bucket": "android-only",
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35.",
+   "ios_recommendation": null
+  },
+  {
+   "group": "Media",
+   "purpose": "Skip forward 10 s",
+   "ios_today": null,
+   "android_today": "Media3 skip_forward_10",
+   "sf_symbol": null,
+   "material": null,
+   "bucket": "android-only",
+   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35.",
+   "ios_recommendation": null
   },
   {
    "group": "Navigation & UI",
@@ -667,7 +688,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "android-only",
-   "note": "Android requires a monochrome status-bar icon; no iOS equivalent.",
+   "note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).",
    "ios_recommendation": null
   },
   {
@@ -678,7 +699,7 @@
    "sf_symbol": null,
    "material": null,
    "bucket": "android-only",
-   "note": "Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected).",
+   "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
    "ios_recommendation": null
   }
  ]

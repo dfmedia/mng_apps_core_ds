@@ -16,8 +16,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 24 | 0 | 9 | 14 | 0 | 1 |
 | Layout | 9 | 2 | 5 | 2 | 0 | 0 |
-| Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **114** | **3** | **33** | **16** | **0** | **62** |
+| Icons | 63 | 0 | 0 | 0 | 0 | 63 |
+| **Total** | **116** | **3** | **33** | **16** | **0** | **64** |
 
 ## Suggested order
 
@@ -147,28 +147,28 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | For You / Your News tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Gap on both: one custom Core vector. |
 | eNewspaper tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Games tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Digital tab | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Not on Android. Ask Apps team whether to retire. |
 | Expand / show more | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Collapse / show less | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Back | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Forward / disclosure | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android has 4 arrows for this; consolidate. |
 | Close | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Close (circle) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Confirm the Android glyph is a circled X. |
-| Account | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android has no account icon; login is Auth0 web. |
+| Account | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (login is the Auth0 web page; no account icon). |
 | Warning | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android uses it only in notifications. |
 | Email | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Refresh | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Filter | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Text size smaller | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Core: one "text size" icon. iOS adds smaller/larger glyphs (DEC-17, PLAT-08). |
-| Text size larger | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · See Text size smaller. |
-| Notification small icon | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android requires a monochrome status-bar icon; no iOS equivalent. |
+| Text size smaller | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only). |
+| Text size larger | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only). |
+| Text size | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only). |
+| Notification small icon | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon). |
 
 ### Icons · Topics & selection
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Follow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android file is unreferenced. |
-| Unfollow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android file is unreferenced. |
+| Follow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes). |
+| Unfollow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes). |
 | Checked | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Unchecked | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Continue | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
@@ -177,10 +177,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Expand page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android eEdition is the PageSuite SDK; its icons ship inside the SDK. |
-| Fit to screen | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · PageSuite SDK on Android. |
-| Previous page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · PageSuite SDK on Android. |
-| Next page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · PageSuite SDK on Android. |
+| Expand page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons). |
+| Fit to screen | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
+| Previous page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
+| Next page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
 
 ### Icons · Media
 
@@ -188,37 +188,39 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | Play | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Pause | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Skip back 15 s | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Both apps skip: iOS 15 s, Android 10 s (AppPlaybackService SEEK_INCREMENT_MS 10_000). Material Symbols 10 s icons work as they are (Apps team, DREAMT-4719, 2026-11-19). |
-| Skip forward 15 s | Core + iOS + Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · See Skip back. |
-| Rewind | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Fast forward | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| 3D embed | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Tournament sport symbols (6) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android World Cup tabs use text (Barlow Condensed), no icons. |
+| Skip back 15 s | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only). |
+| Skip forward 15 s | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only). |
+| Rewind | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide (its audio player has 10 s skip only). |
+| Fast forward | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide (its audio player has 10 s skip only). |
+| 3D embed | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
+| Tournament sport symbols (6) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none; World Cup tabs use text (Barlow Condensed). |
+| Skip back 10 s | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35. |
+| Skip forward 10 s | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35. |
 
 ### Icons · Ratings & social
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Rating star (empty) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android stars mean saved, not rating. |
-| Rating star (half) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Rating star (full) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Like / favorite | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
-| Repost | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
-| Verified | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. |
-| Save star (special sections) | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Same meaning as Saved; kept as Android's glyph for now, one icon name (DEC-17, PLAT-09 rejected). |
+| Rating star (empty) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none; its stars mean saved (special sections), not ratings. |
+| Rating star (half) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (see Rating star (empty)). |
+| Rating star (full) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (see Rating star (empty)). |
+| Like / favorite | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
+| Repost | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
+| Verified | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
+| Save star (special sections) | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected). |
 
 ### Icons · Brands
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Apple | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Sign in with Apple is iOS-only. |
+| Apple | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Sign in with Apple is iOS only. Android equivalent: none shipped (file unused). |
 | Google | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Dormant on Android. |
 | Facebook | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | X (Twitter) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Bluesky | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Instagram | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| YouTube | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Vimeo | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Amazon (sign-in) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
-| 1Password | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS paywall password autofill. |
-| Outbrain | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Not in Android drawables; confirm Android Outbrain widget has no logo. |
+| YouTube | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
+| Vimeo | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
+| Amazon (sign-in) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12). |
+| 1Password | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · iOS paywall password autofill. Android equivalent: none in the Android guide. |
+| Outbrain | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide). |
