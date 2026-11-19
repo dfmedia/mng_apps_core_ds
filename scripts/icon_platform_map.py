@@ -17,7 +17,7 @@ ANDROID = {
  'Share': ('ic_share (+9 market copies)', 'core', 'Glyph differs by platform convention; one semantic name.'),
  'Save (not saved)': ('ic_bookmark_outline · ic_btn_unsave', 'core', ''),
  'Saved': ('ic_bookmark · ic_btn_save · mc_tab_icon_saved', 'core', 'Android special-section star (card_star_default) also means saved: kept as Android\'s glyph, same icon name (DEC-17, PLAT-09 rejected).'),
- 'Home tab': ('mc_tab_icon_latestnews (77 market copies)', 'core', 'Both apps ship per-market Home icons; one Core glyph removes ~86 files.'),
+ 'Home tab': ('mc_tab_icon_latestnews (77 market copies)', 'core', 'Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19).'),
  'Sections / menu': ('mc_tab_icon_sections', 'core', ''),
  'Alerts tab': ('mc_tab_icon_alerts · mc_alert_bell (69 market copies)', 'core', ''),
  'For You / Your News tab': ('mc_tab_icon_for_you', 'core', 'Gap on both: one custom Core vector.'),

@@ -73,7 +73,7 @@
    "sf_symbol": "house",
    "material": "home",
    "bucket": "core",
-   "note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files.",
+   "note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19).",
    "ios_recommendation": "Native on both platforms"
   },
   {

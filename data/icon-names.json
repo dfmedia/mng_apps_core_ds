@@ -123,7 +123,7 @@
     "material": "home",
     "font_awesome": "home",
     "recommendation": "Native on both platforms",
-    "ownership_note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files."
+    "ownership_note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19)."
    }
   },
   {

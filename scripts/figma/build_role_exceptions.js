@@ -82,8 +82,9 @@ function mock(e, roleHex, roleVar, navHex, navVar, navtextHex, navtextVar, fgOve
 let page = figma.root.children.find(p => p.name === PAGE);
 if (!page) { page = figma.createPage(); page.name = PAGE; }
 await page.loadAsync();
-page.children.filter(n => n.name === SECTION).forEach(n => n.remove());
-const others = page.children; const y0 = others.length ? Math.max(...others.map(n => n.y + n.height)) + 200 : 0;
+const old = page.children.filter(n => n.name === SECTION); const keepY = old.length ? old[0].y : null; const keepX = old.length ? old[0].x : 0;   // keep the section where it was
+old.forEach(n => n.remove());
+const others = page.children; const y0 = keepY !== null ? keepY : (others.length ? Math.max(...others.map(n => n.y + n.height)) + 200 : 0);
 
 const root = frame(SECTION, 'VERTICAL', 32, 64); root.fills = [solid('#ffffff')];
 const what = PLATFORM === 'iOS' ? 'section header band (`header`)' : 'status bar (`statusbar`)';
@@ -144,5 +145,5 @@ for (const e of DATA) {
 }
 root.appendChild(grid);
 const sec = figma.createSection(); sec.name = SECTION; page.appendChild(sec); sec.appendChild(root);
-root.x = 80; root.y = 80; sec.resizeWithoutConstraints(root.width + 160, root.height + 160); sec.x = 0; sec.y = y0;
+root.x = 80; root.y = 80; sec.resizeWithoutConstraints(root.width + 160, root.height + 160); sec.x = keepX; sec.y = y0;
 return { page: page.id, section: sec.id, cards: DATA.length, linked: DATA.filter(e => byName[`${e.code.toUpperCase()}/${ROLE}`]).length, navLinked: DATA.filter(e => byName[`core:${e.code.toUpperCase()}/navbar`]).length };

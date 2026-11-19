@@ -200,9 +200,25 @@
     "family": "roboto",
     "fontSize": "16px",
     "fontWeight": 500,
-    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4). Apps team, DREAMT-4719 (2026-11-19).",
-    "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4)"
+    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20dp (fixed dp). Apps team, DREAMT-4719 (2026-11-19).",
+    "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20dp (fixed dp, does not follow the system font size; Android style guide 1795110354-0c21)"
    }
   ]
+ },
+ "style_guide_update": {
+  "$description": "Rajal Patel updated the Android style guide with these answers (DREAMT-4719 comment 276747, 2026-11-19); guide version 1795110354-0c21, still android-tribpub 1cfb069a6. Facts below are copied from the guide pages, not inferred.",
+  "version": "1795110354-0c21",
+  "top_bar_title_exception_unit": "dp on purpose: 'nothing is fixed except dp-sized AppCompat toolbar titles (20dp)' (2-type-by-market)",
+  "section_tab": "Open Sans SemiBold 12sp (confirmed; no 14sp variant), 48dp, 12dp side padding, scrollable",
+  "breaking_news": "Section-front list item; padding 10dp (24dp sides at sw600dp); text 60dp right margin; close 40dp; Open Sans Bold 14sp white on #cf000e, 2dp white line under it. Height follows the content.",
+  "whats_new_fill": "whats_new_button_color per market; CT #9dd1f5, NYDN #4591e0, VP #005f7e override the drawable (5-controls) — matches our data",
+  "alerts_enable_fill": "Guide: Alerts_Enable_Button_Background = #ff6859 in every market (5-controls). Our export at 1cfb069a6 has per-market values: still to clarify (MISSING-ASSETS 5.6)",
+  "tsar_white": "TSAR redefines @color/white as #f5f5f5, so its bar and segmented selected fill are off-white (1-market-colors)",
+  "breaking_news_banner_background": "BreakingNews_Banner_Background is defined but never used; the overlay uses br_news_red #cf000e",
+  "home_icon": "77 markets ship their own Home tab icon (mc_tab_icon_latestnews); only the Home tab icon is per market (comment 276747, 1.4)",
+  "condensed_fonts": "Open Sans Condensed is Google's legacy static release: OpenSansCondensed-Bold.ttf (Bold 700, v1.11) and OpenSans-Regular-Condensed.ttf = OpenSansCondensed-Light (Light 300, v1.10) renamed. No Light Italic. NYDN uses these shared copies (4.1, Android)",
+  "article_text_size": "4 options Small / Medium (default) / Large / Extra Large; each adds -2 / 0 / +2 / +4 x 1.6 raw px (not dp), about 93 / 100 / 107 / 114 % of 15sp on xxhdpi. Bugs: the saved choice is not re-applied after a cold start (FontSizeManager.init() never called); the Settings text-size entry is in no preference XML and its handler is empty (4.2, Android)",
+  "ads": "No adaptive, fluid or 300x600 sizes",
+  "dark_mode": "README: Settings, web views, login/paywall and Your News topics use a DayNight theme with nothing forcing light, so they follow the device's dark setting for theme defaults"
  }
 }

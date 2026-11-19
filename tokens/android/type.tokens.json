@@ -622,7 +622,7 @@
       "code": "topBarTitle",
       "uppercase": true,
       "fontKnown": true,
-      "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4)",
+      "exceptions": "Restaurants and the corekit settings screen: plain AppCompat title, Roboto Medium 20dp (fixed dp, does not follow the system font size; Android style guide 1795110354-0c21)",
       "source": "Apps team, DREAMT-4719 (2026-11-19)"
      }
     }

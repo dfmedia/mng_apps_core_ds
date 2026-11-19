@@ -4,18 +4,18 @@
   "android": "android-tribpub @ 1cfb069a6"
  },
  "summary": {
-  "core+variant": 17,
+  "core+variant": 18,
   "core": 9,
   "ios": 2,
-  "android": 5
+  "android": 4
  },
  "items": [
   {
    "group": "App chrome",
    "id": "nav-bar",
    "name": "Top bar",
-   "ios_today": "UINavigationBar \u00b7 navbar fill, navtext title/buttons",
-   "android_today": "Toolbar \u00b7 bar fill, bartext title/icons; 56dp phone / 64dp tablet, title Roboto Medium 16sp caps, elevation 4dp on scroll (Apps team, DREAMT-4719, 2026-11-19)",
+   "ios_today": "UINavigationBar \u00b7 navbar fill, navtext title/buttons; 44 pt, logo at natural size (Apps team, DREAMT-4718, f79fe3339)",
+   "android_today": "Toolbar \u00b7 bar fill, bartext title/icons; 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (restaurants and corekit settings: Roboto Medium 20dp, fixed), elevation 4dp on scroll (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job and tokens; each platform draws its native bar."
   },
@@ -23,8 +23,8 @@
    "group": "App chrome",
    "id": "section-tabs",
    "name": "Section tabs",
-   "ios_today": "sectionBar* colors",
-   "android_today": "Toolbar_Tabs_* colors; 48dp, Open Sans SemiBold 12sp, 3dp indicator, elevation 2dp (Apps team, DREAMT-4719, 2026-11-19)",
+   "ios_today": "sectionBar* colors; 44 pt, 15 pt between tabs, 4 pt underline fading in over 0.32 s; Open Sans Bold 11 (SemiBold 12 in 12 markets) (Apps team, DREAMT-4718, f79fe3339)",
+   "android_today": "Toolbar_Tabs_* colors; 48dp, Open Sans SemiBold 12sp (confirmed, no 14sp variant), 12dp side padding, scrollable, 3dp indicator, elevation 2dp (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job; native tab strip per platform."
   },
@@ -41,8 +41,8 @@
    "group": "App chrome",
    "id": "breaking-banner",
    "name": "Breaking-news banner",
-   "ios_today": "breakingNewsBanner* \u00b7 alert fill",
-   "android_today": "Overlay \u00b7 br_news_red #cf000e; Open Sans Bold 14sp white (Apps team, DREAMT-4719, 2026-11-19); height not given (MISSING-ASSETS 5.5)",
+   "ios_today": "breakingNewsBanner* \u00b7 alert fill; 35 pt, Open Sans Bold 14 (Apps team, DREAMT-4718, f79fe3339)",
+   "android_today": "Overlay \u00b7 br_news_red #cf000e; Open Sans Bold 14sp white, 10dp padding (24dp sides at sw600dp), close 40dp, 2dp white line under it; height follows the content (Apps team, DREAMT-4719 and Android style guide, 2026-11-19)",
    "owner": "core",
    "note": "One component, one Core alert color (PLAT-03)."
   },
@@ -50,7 +50,7 @@
    "group": "App chrome",
    "id": "section-header",
    "name": "Section header band",
-   "ios_today": "Style.json cell-tertiary-header*",
+   "ios_today": "Style.json cell-tertiary-header*; 30 pt, 10 pt text inset (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "\u2014",
    "owner": "ios",
    "note": "No band on Android. Equals navbar in 66/77 markets."
@@ -104,7 +104,7 @@
    "group": "Buttons",
    "id": "permission-prompt",
    "name": "Notification prompt buttons",
-   "ios_today": "Push prompt Yes (filled) / No (text), radius 5",
+   "ios_today": "Push prompt Yes (filled, Open Sans Bold 14) / No (text, Open Sans Regular 14, underlined except VP), both 40 pt, radius 5 (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "Alerts enable CUSTOMIZE: Roboto Medium 14sp caps white, about 40dp, full width, square; fill #ff6859 per the answer vs Alerts_Enable_Button_Background in the export (MISSING-ASSETS 5.6). NO, THANKS: transparent, black text (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Same job; iOS has a Yes/No pair."
@@ -123,7 +123,7 @@
    "id": "button-whats-new",
    "name": "What's New Continue button",
    "ios_today": "\u2014",
-   "android_today": "whats_new_button_color fill (CT, NYDN, VP: drawable color; which shows is MISSING-ASSETS 5.6), white caps Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp, radius 6",
+   "android_today": "whats_new_button_color fill (CT, NYDN, VP: drawable color, confirmed by the Android style guide), white caps Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp, radius 6",
    "owner": "android",
    "note": "Not in the iOS guide. As shipped: docs/GUIDE-EXTRAS.md."
   },
@@ -131,10 +131,10 @@
    "group": "Buttons",
    "id": "savings-badge",
    "name": "Savings label",
-   "ios_today": "\u2014",
+   "ios_today": "Savings pill 110 \u00d7 30, white fill, 2 pt border in subscriptionTintColor, radius 13, Open Sans Bold 13 in the same color; inset 10 pt (35 pt iPad) (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "White, 2dp stroke in buy color, radius 15",
-   "owner": "android",
-   "note": "Not on iOS paywall."
+   "owner": "core+variant",
+   "note": "Both apps have it (iOS answered 2026-11-18). Differences: size, radius (13 vs 15), stroke color role."
   },
   {
    "group": "Buttons",
@@ -185,7 +185,7 @@
    "group": "Controls",
    "id": "segmented",
    "name": "Segmented control",
-   "ios_today": "UISegmentedControl (Your News, login/register, editions)",
+   "ios_today": "UISegmentedControl, system style in every market: white selected segment on #F2F2F7, system font, 50 pt band (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "MaterialButtonToggleGroup (For You / Saved / Alerts): track #eeeeee radius 24dp; selected #ffffff (TSAR #f5f5f5), black text; unselected transparent, #696969 text; 17sp bold (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Native control per platform; Core sets colors."
@@ -194,7 +194,7 @@
    "group": "Controls",
    "id": "loading",
    "name": "Loading indicator",
-   "ios_today": "Full-screen overlay (LoadingIndicatorManager)",
+   "ios_today": "Full-screen overlay (LoadingIndicatorManager): large system spinner on a white card radius 12; #004E87 in 66 markets, #005F7E DP/VP, BS #DAA520, HC #4FA8D1, TDCD #5B9BC8, TIVDB #E0E2E4 (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "Full-screen progress dialog. Spinners: section front #d5d5d5 55dp, generic #e0e6ec\u2192#2a5381, paywall #2a2a2a, others MainStyle_Control_Activated; bars: section-front top #49b0d6\u2192#35b5e4 2dp, web view #1e88e5 on #e3f2fd (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core",
    "note": "Same pattern on both; no in-button spinner."
@@ -266,7 +266,7 @@
    "group": "Layout",
    "id": "elevation",
    "name": "Elevation / shadows",
-   "ios_today": "Set where used; no shared scale",
+   "ios_today": "Set where used; no shared scale. All black: top banner alert 0.18 / 14 / 0,8; persistent audio player 0.20 / 10 / 0,\u22122; web view sheet 0.15 / 10 / 0,4; alert with image 0.5 / 5 / 2,2; mini player 0.3 / 4 / 0,1 (opacity / radius / offset) (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "Toolbar 4dp on scroll (0 at rest); settings, web and login toolbars 1dp; section tabs 2dp; cards 3dp (special-section cards 4dp) (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Documented as shipped; no shared scale on either app yet."
@@ -275,7 +275,7 @@
    "group": "Layout",
    "id": "motion",
    "name": "Motion",
-   "ios_today": "Durations set where used; no shared spec",
+   "ios_today": "No shared spec: 0.3 s most fades and expands; 0.5 s recirculation, games landing, live blog (section front and Your News 0.5 s after 0.2 s, ease-out); 0.32 s tab underline; 0.18 s article layout; 1.5 s widget shimmer (Apps team, DREAMT-4718, f79fe3339)",
    "android_today": "Footer ad slide 200 ms; list items 300 ms decelerate; section layout 300 ms; slide up/down system medium, accelerate; pulse 280 ms \u00d71.1; shimmer 1000\u20131200 ms linear (Apps team, DREAMT-4719, 2026-11-19)",
    "owner": "core+variant",
    "note": "Documented as shipped; no shared spec on either app yet."

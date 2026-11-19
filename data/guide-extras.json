@@ -272,7 +272,7 @@
    "fill": "whats_new_button_color (per market)"
   },
   "unknown": [],
-  "ask": "Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)",
+  "confirmed": "Android style guide 1795110354-0c21: whats_new_button_color per market; CT, NYDN and VP override the drawable (matches this table)",
   "ios": "Not in the iOS guide"
  },
  "alerts_enable": {
@@ -296,7 +296,7 @@
    "no_thanks": "transparent, black text",
    "alerts_tab": "The Alerts-tab \"Enable Alerts\" is a system AlertDialog button"
   },
-  "ask": "Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)"
+  "ask": "Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)"
  },
  "ad_slots": {
   "android": {

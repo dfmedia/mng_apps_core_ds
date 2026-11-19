@@ -1123,7 +1123,7 @@
     "size": 16.0,
     "lineHeight": null,
     "letterSpacing": null,
-    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20 (unit to confirm, MISSING-ASSETS 4.4). Apps team, DREAMT-4719 (2026-11-19).",
+    "usage": "Top bar title: Roboto Medium 16sp, all caps (MC.TextAppearance.AppCompat.Widget.ActionBar.Title). Restaurants and the corekit settings screen use the plain AppCompat title, Roboto Medium 20dp (fixed dp). Apps team, DREAMT-4719 (2026-11-19).",
     "legacy": false,
     "uppercase": true
    },

@@ -49,7 +49,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
-| Dark mode | Core | — n/a | — n/a | — n/a | Every app is light-only, no plans for dark mode (Apps team, 2026-11-18) |
+| Dark mode | Core | — n/a | — n/a | — n/a | iOS: light only, no plans (Apps team, 2026-11-18). Android: the style guide says Settings, web views, login/paywall and Your News topics follow the device's dark setting for theme defaults; asked in MISSING-ASSETS 3.4. Widget night colors are tokens. |
 
 ## Color roles
 
@@ -77,9 +77,9 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
 | Top bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13) |
-| Section tabs | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp, 3dp indicator (Apps team, DREAMT-4719, 2026-11-19); notifications-screen size asked (MISSING-ASSETS 5.5). Ready to build |
+| Section tabs | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build |
 | Bottom tab bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build |
-| Breaking-news banner | Core | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Banner height (MISSING-ASSETS 5.5) · Colors done (alert, alerttext). Android label Open Sans Bold 14sp (Apps team, DREAMT-4719, 2026-11-19); height not given. DSC-15/19 parked |
+| Breaking-news banner | Core | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked |
 | Section header band | iOS | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables |
 | Status bar color | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (DEC-15); the system draws the bar. Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples) |
 
@@ -93,8 +93,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android fill: MISSING-ASSETS 5.6 (a) · Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19) |
 | Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
-| What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Fill in CT, NYDN, VP: MISSING-ASSETS 5.6 (b) · Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md |
-| Savings label | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and padding: MISSING-ASSETS 5.6 (c) · Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718) |
+| What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19) |
+| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and padding: MISSING-ASSETS 5.6 (c) · Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718) |
 | Social sign-in buttons | iOS | ⬜ to do | 🟡 partial | 🟡 partial | Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 
@@ -141,7 +141,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Share | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Glyph differs by platform convention; one semantic name. |
 | Save (not saved) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Saved | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). |
-| Home tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Both apps ship per-market Home icons; one Core glyph removes ~86 files. |
+| Home tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19). |
 | Sections / menu | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | Alerts tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) |
 | For You / Your News tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8) · Gap on both: one custom Core vector. |

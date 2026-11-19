@@ -28,7 +28,7 @@ Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad
 
 ## What's New Continue button (Android only)
 
-Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): label Open Sans Bold 14sp (18sp landscape, 25sp tablet), all caps, white; 15dp padding (about 50dp tall), radius 6dp. **To clarify:** Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)
+Source: project/5-controls.md › Buttons; project/components/Buttons/README.md. Not in the iOS guide. Label `#ffffff` · 255, 255, 255, all caps, `Continue_button_Font_Additional_Whats_New` = OpenSans-Bold.ttf in 77 of 77 markets. Radius 6 (`component.android.whats-new-continue.radius`). Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): label Open Sans Bold 14sp (18sp landscape, 25sp tablet), all caps, white; 15dp padding (about 50dp tall), radius 6dp. Fill: Android style guide 1795110354-0c21: whats_new_button_color per market; CT, NYDN and VP override the drawable (matches this table).
 
 Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 markets. CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). White-label contrast is shown as shipped; below 4.5:1 fails for text.
 
@@ -65,7 +65,7 @@ Already tracked: component/permission-prompt (Android side of Notification promp
 
 Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): CUSTOMIZE: Roboto Medium 14sp, all caps, white, 10dp padding (about 40dp tall), full width, fill `#ff6859` · 255, 104, 89 (same in every market (answer)). NO, THANKS: transparent, black text. The Alerts-tab "Enable Alerts" is a system AlertDialog button.
 
-**To clarify:** Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)
+**To clarify:** Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)
 
 ## Home-screen widget (Android only)
 

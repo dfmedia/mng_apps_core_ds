@@ -67,7 +67,7 @@ whats_new = {'platform': 'android', 'evidence': W['evidence'], 'token_fill': 'wh
              'label': {**W['label'], 'font': font['majority'] if font else None, 'font_markets': font['majority_markets'] if font else None},
              'radius': {'value': W['radius']['value'], 'token': 'component.android.whats-new-continue.radius'},
              'answered': AND19['whats_new'], 'unknown': [],
-             'ask': 'Fill: the answer says whats_new_button_color in every market, but CT, NYDN and VP override the button drawable with another color. Which one shows? (MISSING-ASSETS 5.6)',
+             'confirmed': 'Android style guide 1795110354-0c21: whats_new_button_color per market; CT, NYDN and VP override the drawable (matches this table)',
              'ios': W['ios']}
 
 # ---- Ad slots
@@ -84,7 +84,7 @@ widget = {**WG, 'unknown': [], 'answered': {'size': WA['size'], 'layout': WA['la
           'day_tokens': [{'name': TOK[k.replace('_', '-')]['name'], 'value': TOK[k.replace('_', '-')]['value'], 'source': k,
                           'night': WA['colors'][k][1], 'night_token': f"color.android-system.widget-night.{k.replace('widget_', '').replace('_', '-')}"} for k in WG['day_keys']]}
 AE = {**S['alerts_enable'], 'answered': AND19['alerts_enable'],
-      'ask': 'Fill: the answer says #FF6859 in every market, but the export sets Alerts_Enable_Button_Background per market (Core action in 58 of 77). Is that color resource unused on this button? (MISSING-ASSETS 5.6)'}
+      'ask': 'Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)'}
 E = S['eedition']
 eedition = {**E, 'colors': [{**c, 'token': f"color.android-system.eedition.{c['id']}"} for c in E['colors']],
             'contrast': {'tab text on tab container': ratio('#ffffff', '#ffffff'), 'inactive tab text on tab container': ratio('#999999', '#ffffff')}}
@@ -137,7 +137,7 @@ L += [''] + [f'- {r}' for r in A['android']['rules']] + ['',
       f"`{W['label']['font_key']}` = {whats_new['label']['font']} in {whats_new['label']['font_markets']} of 77 markets. "
       f"Radius {W['radius']['value']} (`{whats_new['radius']['token']}`). "
       f"Apps team ({AND19['source'].split(';')[0]}): label {AND19['whats_new']['label']}; {AND19['whats_new']['padding']}dp padding (about {AND19['whats_new']['height_approx']}dp tall), radius {AND19['whats_new']['radius']}dp. "
-      f"**To clarify:** {whats_new['ask']}", '',
+      f"Fill: {whats_new['confirmed']}.", '',
       f"Fill: token `whats-new-button-color` {hexrgb(wn['majority'])} in {wn['majority_markets']} of 77 markets. "
       "CT, NYDN and VP override the button drawable, so the drawable color is what ships there (their color resource is not used on this button). "
       "White-label contrast is shown as shipped; below 4.5:1 fails for text.", '',

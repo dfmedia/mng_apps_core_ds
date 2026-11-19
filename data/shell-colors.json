@@ -2191,7 +2191,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2228,7 +2228,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2265,7 +2265,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2302,7 +2302,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2336,7 +2336,7 @@
     "same_as": []
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2373,7 +2373,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.0,
@@ -2410,7 +2410,7 @@
     ]
    },
    "foreground": "#ffffff",
-   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10, MISSING-ASSETS 5.5)",
+   "foreground_source": "Android 14 and below: light (white) status-bar icons; the main theme never sets windowLightStatusBar (Ameer M., confirmed on device 2026-11-10)",
    "foreground_is": "status-bar icons",
    "target": 3.0,
    "contrast_majority": 1.09,

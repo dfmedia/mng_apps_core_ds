@@ -34,6 +34,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 | TYPE-01 | Type | Retire the legacy Style.json template (7 markets) | BS, DP, HC, MC, OS, SS, VP | PROPOSED |
 | TYPE-02 | Type | Remove font fallbacks that change size (e.g. 12 → 10) | `AppThemeable.swift:630` | PROPOSED |
 | TYPE-06 | Type | Android font file names that never load: NYDN `.ttff`; MC unused `OpenSans-Semibold.ttf` strings | NYDN, MC (Android) | PROPOSED |
+| TYPE-07 | Type | Android article text size: saved choice lost after a cold start; Settings text-size entry not wired | All Android markets | PROPOSED |
 
 ---
 
@@ -262,4 +263,10 @@ What ships (Apps team, Rajal Patel, DREAMT-4719, 2026-11-19; was MISSING-ASSETS 
 - **MC** `Article_Byline_Regular` and `Article_Dateline_Regular` → `OpenSans-Semibold.ttf` (lower-case b; the bundled file is `OpenSans-SemiBold.ttf`). The file wouldn't load, but no style references these two strings: MC bylines and datelines use `OpenSans-Bold.ttf`. Fix: delete the two unused strings (no visual change).
 
 Documented as shipped in docs/TYPE-FONT-EXCEPTIONS.md (the export's file names). Nothing changes in the design system until the app does.
+
+### TYPE-07 · Android article text size bugs — `PROPOSED` (fix on Android)
+What ships (Android style guide 1795110354-0c21, 2-type-by-market; DREAMT-4719, 2026-11-19): the article's font button opens a 4-option list (Small / Medium, default / Large / Extra Large). Each step adds −2 / 0 / +2 / +4 × 1.6 raw px (not dp) to native article text, so the effect shrinks as screen density rises: about 93 / 100 / 107 / 114 % of 15sp on an xxhdpi phone. iOS has 6 steps (×0.85 to ×1.60, Apps team 4.2), already a per-platform difference (PLAT-08).
+- **Bug 1:** the saved choice is not re-applied after a cold start (`FontSizeManager.init()` is never called).
+- **Bug 2:** the Settings text-size entry is in no preference XML and its handler is empty, so Settings has no working text-size control.
+Possible fix for the Apps team: call `FontSizeManager.init()` at start-up and either wire or remove the Settings entry; scale in sp or a percentage so steps look the same on every screen. Documented as shipped until the app changes.
 

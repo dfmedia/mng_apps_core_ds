@@ -129,7 +129,7 @@
    "figma": "na",
    "tokens": "na",
    "code": "na",
-   "note": "Every app is light-only, no plans for dark mode (Apps team, 2026-11-18)"
+   "note": "iOS: light only, no plans (Apps team, 2026-11-18). Android: the style guide says Settings, web views, login/paywall and Your News topics follow the device's dark setting for theme defaults; asked in MISSING-ASSETS 3.4. Widget night colors are tokens."
   }
  ],
  "items": {
@@ -227,9 +227,9 @@
   "component/breaking-banner": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (alert, alerttext). Android label Open Sans Bold 14sp (Apps team, DREAMT-4719, 2026-11-19); height not given. DSC-15/19 parked",
-   "figma": "blocked",
-   "blocked_by": "Banner height (MISSING-ASSETS 5.5)"
+   "note": "Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked",
+   "figma": "todo",
+   "blocked_by": ""
   },
   "component/nav-bar": {
    "tokens": "partial",
@@ -299,7 +299,7 @@
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp, 3dp indicator (Apps team, DREAMT-4719, 2026-11-19); notifications-screen size asked (MISSING-ASSETS 5.5). Ready to build"
+   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build"
   },
   "component/subscription-option": {
    "figma": "done",
@@ -371,8 +371,8 @@
    "figma": "partial",
    "tokens": "done",
    "code": "written",
-   "blocked_by": "Fill in CT, NYDN, VP: MISSING-ASSETS 5.6 (b)",
-   "note": "Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md"
+   "blocked_by": "",
+   "note": "Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19)"
   },
   "layout/ad-slots": {
    "figma": "done",

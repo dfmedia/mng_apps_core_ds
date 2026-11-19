@@ -122,11 +122,11 @@ elif MODE == 'whats-new':
              [{'t': 'Radius', 'b': True}, f"{W['radius']['value']} dp", '—', f"{W['radius']['token']} (Components · Android whats-new-continue/radius)"],
              [{'t': 'Label', 'b': True}, f"{hx(W['label']['color'])}, {W['label']['case']}, {W['label']['font']} ({W['label']['font_key']}, {W['label']['font_markets']} of 77)", '—', W['answered']['label'] + ' (Apps team)'],
              [{'t': 'Height', 'b': True}, f"{W['answered']['padding']} dp padding, about {W['answered']['height_approx']} dp tall", '—', 'Apps team, DREAMT-4719, 2026-11-19'],
-             [{'t': 'To clarify', 'b': True}, W['ask'], '—', 'Not drawn as a component until the fill is confirmed']]
+             [{'t': 'Fill', 'b': True}, W['confirmed'], '—', 'Confirmed 2026-11-19']]
     T = {'name': "04 · What's New Continue (as shipped)", 'title': "What's New Continue button (as shipped)",
          'intro': ("Android only (not in the iOS guide). CT, NYDN and VP override the button drawable, so their drawable color ships, not the color resource. "
                    "White-label contrast below 4.5:1 fails for text; values are kept as shipped. Label size and height: Apps team (DREAMT-4719, 2026-11-19). "
-                   "The answer names whats_new_button_color as the fill in every market, which disagrees with the drawable overrides, so that is asked again (MISSING-ASSETS 5.6). " + SRC),
+                   "The Android style guide (2026-11-19) confirms the drawable overrides. " + SRC),
          'columns': [{'name': 'Fill / property', 'w': 300}, {'name': 'Markets / value', 'w': 560}, {'name': 'White label contrast', 'w': 180}, {'name': 'Kind / token', 'w': 360}],
          'rows': rows}
     print(table('Components · Button', T))
