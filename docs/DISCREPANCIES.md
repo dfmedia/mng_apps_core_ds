@@ -2,7 +2,7 @@
 
 Everything that differs between the two apps but **should be the same**. Each row says what the right value is, how we know, and which app needs the fix, so the Apps team can work through it later. Differences that are intentional platform conventions (SF Symbols vs Material, 44 pt vs 48 dp) are not listed here; they live in the registry as "Core + variant".
 
-- Sources: iOS TroncKit @ `e30ad2585` · Android android-tribpub @ `1cfb069a6` · migration sheet "Tribpub-MNG App Migrations" (tab Production, Primary / Secondary color)
+- Sources: iOS TroncKit @ `f79fe3339` (was `e30ad2585`; brand colors unchanged) · Android android-tribpub @ `1cfb069a6` · migration sheet "Tribpub-MNG App Migrations" (tab Production, Primary / Secondary color)
 - Data: `data/brand-color-resolution.json` (`scripts/resolve_brand_colors.py`), `data/color-platform-comparison.json`
 - Figma (Core file): Color · Market Palettes → **06 · Brand color source of truth**
 
@@ -55,7 +55,7 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 
 | ID | What differs | Should be | Fix on | Evidence | Status |
 |----|--------------|-----------|--------|----------|--------|
-| DSC-20 | Primary button: iOS radius 4 (legacy 5 + 1 pt border), Open Sans Bold 14; Android square corners, system font, 60 dp tall | One Core spec | both | Same component on both paywalls. DEC-07 (2026-10-26): kept per platform as tokens for now; height and label font are future changes (IMPROVEMENTS BTN-01, BTN-02). Spec: docs/components/BUTTON.md | KNOWN (kept per DEC-07) |
+| DSC-20 | Primary button: iOS radius 8 with a 0.7 pt border, 45 pt, Open Sans Bold 14 (the meter paywall purchase button, DEC-22); Android square corners, Roboto Medium 14sp, 60 dp tall | One Core spec | both | Same component on both paywalls. DEC-07 (2026-10-26): kept per platform as tokens for now; height and label font are future changes (IMPROVEMENTS BTN-01, BTN-02). Spec: docs/components/BUTTON.md | KNOWN (kept per DEC-07) |
 | DSC-21 | Subscription option: iOS radius 8, Open Sans Bold 16; Android square, system 16sp | One Core spec | both | | OPEN |
 | DSC-22 | Article text size: iOS 6 steps (slider), Android 4 steps (list) | Same number of steps | ? | The control can differ per platform; the scale should not. | OPEN |
 | DSC-23 | Your News checkbox: iOS uses 8 per-market image sets; Android tints one control | One tinted checkbox | iOS | | KNOWN |
@@ -71,6 +71,8 @@ All brand colors are now decided; the values are in `docs/BRAND-COLORS.md` (hex 
 | DSC-30 | Saved in special sections: Android uses a star, iOS a bookmark | Keep both for now: platform-specific glyphs, one icon name (Karl, DEC-17) | — | PLAT-09 | ACCEPTED AS PLATFORM DIFFERENCE 2026-11-10 |
 | DSC-31 | Text size: iOS smaller/larger glyphs, Android one glyph | One Core glyph + iOS variant (DEC-17) | — | PLAT-08 | DECIDED 2026-11-10 |
 | DSC-35 | Audio skip buttons: iOS skips 15 s (SF `gobackward.15` / `goforward.15`), Android 10 s (Media3 `skip_back_10` / `skip_forward_10`, `SEEK_INCREMENT_MS = 10_000`). The shared icon names `skip-back-15` / `skip-forward-15` say 15 s, so they don't describe Android | One skip interval on both apps (15 or 10 s: product decision). Names stay as they are (Karl, 2026-11-19: don't rename). Icons are now per platform: `skip-back-15` / `skip-forward-15` iOS only, `skip-back-10` / `skip-forward-10` Android only (DEC-21) | ? | Apps team: DREAMT-4718 (iOS 1.5, 2026-11-18), DREAMT-4719 (Android 1.10, 2026-11-19). docs/ICON-NAMES.md | OPEN |
+
+Production bugs (things that look wrong in one app, matching or not) are collected for the Apps team in docs/BUG-REPORT.md (generated).
 
 ## Log
 

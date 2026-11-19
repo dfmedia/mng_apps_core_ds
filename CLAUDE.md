@@ -100,6 +100,7 @@ docs/ARCHITECTURE.md              how Core, iOS and Android fit together (regist
 docs/PLATFORM-OWNERSHIP.md        Core vs iOS vs Android findings and PLAT- decisions
 docs/DECISIONS.md                 approved decisions (DEC- IDs): rule, date, what changed
 docs/DISCREPANCIES.md             iOS vs Android differences that should match (DSC- IDs), with the right value and which app to fix
+docs/BUG-REPORT.md                generated: production bugs for the Apps team, per app, with evidence and a suggested fix
 docs/REGISTRY.md                  generated: every item and its owner (from data/registry.json)
 docs/BACKLOG.md                   generated: what is left to build in Figma and export to GitHub (status in data/backlog-status.json)
 docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
@@ -160,6 +161,7 @@ python3 scripts/build_system_tokens.py     # DEC-16: tokens/*/system.tokens.json
 python3 scripts/build_shipped_specs.py   # app shell sizes, elevation, motion, other controls as shipped (data/shipped-specs.json, docs/SHIPPED-SPECS.md)
 python3 scripts/figma_shipped_specs.py shell|motion|controls   # prints JS for Core Layout · iOS vs Android › 03 / 04 and Components · Controls › 01
 python3 scripts/figma_component_ownership.py   # prints JS for Core Components · Platform Ownership › 02 · Component ownership (generated) from data/component-platform-map.json
+python3 scripts/build_bug_report.py   # docs/BUG-REPORT.md for the Apps team (production bugs found, per app)
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)
 ```
