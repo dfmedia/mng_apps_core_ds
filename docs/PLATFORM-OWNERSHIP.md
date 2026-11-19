@@ -12,10 +12,12 @@ Status key: `PROPOSED` · `WAITING` (on Apps team) · `APPROVED` · `REJECTED` �
 
 | Bucket | Count | What's in it |
 |--------|-------|--------------|
-| Core | 32 | Search, settings, share, save/saved, all tabs except Digital, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram, Amazon) |
-| Core + platform variant | 2 | Text size: Android has one icon that opens a 4-step list; iOS has smaller and larger glyphs |
-| iOS only | 25 | Digital tab, account, follow/unfollow topic, 4 eNewspaper viewer controls (Android uses the PageSuite SDK), skip 15 s, rewind, fast forward, 3D embed, tournament symbols, 3 rating stars, 3 tweet-embed icons, Apple, YouTube, Vimeo, 1Password, Outbrain |
+| Core | 32 | Search, settings, share, save/saved, Home / Sections / Alerts / For You / eNewspaper / Games tabs, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram, Amazon) |
+| Core, per-platform value | 4 | Text size smaller / larger (Android has one icon that opens a 4-step list); skip back / forward (iOS 15 s, Android 10 s: DSC-35, names kept) |
+| iOS only | 23 | Digital tab (code commented out, Apps team 2026-11-18), account, follow/unfollow topic, 4 eNewspaper viewer controls (Android uses the PageSuite SDK), rewind, fast forward, 3D embed, tournament symbols, 3 rating stars, 3 tweet-embed icons, Apple, YouTube, Vimeo, 1Password, Outbrain |
 | Android only | 2 | Notification small icon (a platform requirement); special-section save star (same meaning as Saved; kept as Android's glyph, DEC-17) |
+
+Updated 2026-11-19 from data/icon-platform-map.json (skip moved to Core, per-platform value after the Android 1.10 answer). Figma: Icons · System Comparison › 05 · Icon list (the bucket column).
 
 Most iOS-only items are **features** Android doesn't have, not icon disagreements. If Android adds the feature, the icon moves to Core.
 
@@ -34,7 +36,7 @@ Most iOS-only items are **features** Android doesn't have, not icon disagreement
 | continue | Core alias → action | — | Android only as a color; = action in 70/77. iOS uses pre-colored PNGs |
 | statusbar | Android only | — | = navbar in 70/77; default alias to navbar |
 | header | iOS only | — | = navbar in 66/77; default alias to navbar |
-| accent | Android only | 43 / 3 / 31 | Theme accent for switches; 19 markets still use template gold #daa520 |
+| accent | Android only (built as an alias of Core action, PLAT-10) | 43 / 3 / 31 | Theme accent for switches. Follows Core `action` in 52 of 77 Android markets; the 25 exceptions, incl. template gold #daa520, are documented only (DEC-14) |
 
 - **43 markets** match on all six bar/tab/button roles and can share one Core palette now.
 - **34 markets** have at least one real difference (listed in Figma section 05).
