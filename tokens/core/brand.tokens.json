@@ -116,7 +116,7 @@
     "action": {
      "$value": "#daa520",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -180,11 +180,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.bs.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.bs.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -304,7 +299,7 @@
     "action": {
      "$value": "#9dd1f5",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -368,11 +363,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.ct.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.ct.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -492,7 +482,7 @@
     "action": {
      "$value": "#005f7e",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -556,11 +546,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.dp.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.dp.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -680,7 +665,7 @@
     "action": {
      "$value": "#4fa8d1",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -744,11 +729,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.hc.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.hc.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -868,7 +848,7 @@
     "action": {
      "$value": "#539cc4",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -932,11 +912,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.mc.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.mc.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1056,7 +1031,7 @@
     "action": {
      "$value": "#4492e0",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -1120,11 +1095,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.nydn.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.nydn.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1244,7 +1214,7 @@
     "action": {
      "$value": "#b04f0f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -1308,11 +1278,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.ocr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.ocr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1432,7 +1397,7 @@
     "action": {
      "$value": "#15919d",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -1496,11 +1461,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.os.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.os.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1620,7 +1580,7 @@
     "action": {
      "$value": "#a06318",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -1684,11 +1644,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.pac.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.pac.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1808,7 +1763,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -1872,11 +1827,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.psn.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.psn.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -1996,7 +1946,7 @@
     "action": {
      "$value": "#000000",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -2060,11 +2010,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.sdut.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.sdut.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -2184,7 +2129,7 @@
     "action": {
      "$value": "#ff6900",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -2248,11 +2193,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.sgvt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.sgvt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -2372,7 +2312,7 @@
     "action": {
      "$value": "#0f73a9",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -2436,11 +2376,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.sit.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.sit.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -2560,7 +2495,7 @@
     "action": {
      "$value": "#761113",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -2624,11 +2559,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.ss.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.ss.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -2748,7 +2678,7 @@
     "action": {
      "$value": "#4351af",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -2812,11 +2742,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tb.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tb.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -2936,7 +2861,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3000,11 +2925,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tban.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tban.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -3124,7 +3044,7 @@
     "action": {
      "$value": "#3f51b5",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3188,11 +3108,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tbcp.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tbcp.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -3312,7 +3227,7 @@
     "action": {
      "$value": "#4351af",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3376,11 +3291,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tbe.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tbe.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -3500,7 +3410,7 @@
     "action": {
      "$value": "#00538a",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3564,11 +3474,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tbh.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tbh.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -3688,7 +3593,7 @@
     "action": {
      "$value": "#b01e35",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3752,11 +3657,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tbhs.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tbhs.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -3876,7 +3776,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -3940,11 +3840,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tccdr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tccdr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -4064,7 +3959,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -4128,11 +4023,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tce.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tce.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -4252,7 +4142,7 @@
     "action": {
      "$value": "#353f8a",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -4316,11 +4206,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tchw.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tchw.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -4440,7 +4325,7 @@
     "action": {
      "$value": "#434953",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -4504,11 +4389,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tcv.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tcv.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -4628,7 +4508,7 @@
     "action": {
      "$value": "#9dd1f5",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -4692,11 +4572,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdb.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdb.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -4816,7 +4691,7 @@
     "action": {
      "$value": "#007639",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -4880,11 +4755,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdc.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdc.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5004,7 +4874,7 @@
     "action": {
      "$value": "#5b9bc8",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -5068,11 +4938,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdcd.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdcd.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5192,7 +5057,7 @@
     "action": {
      "$value": "#9dd1f5",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -5256,11 +5121,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdf.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdf.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5380,7 +5240,7 @@
     "action": {
      "$value": "#0072b4",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -5444,11 +5304,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdh.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdh.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5568,7 +5423,7 @@
     "action": {
      "$value": "#1591b7",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -5632,11 +5487,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdlw.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdlw.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5756,7 +5606,7 @@
     "action": {
      "$value": "#f7a430",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -5820,11 +5670,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdp.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdp.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -5944,7 +5789,7 @@
     "action": {
      "$value": "#c75c14",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6008,11 +5853,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tdps.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tdps.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -6132,7 +5972,7 @@
     "action": {
      "$value": "#6bd1e6",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6196,11 +6036,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tebt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tebt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -6320,7 +6155,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6384,11 +6219,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.teptg.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.teptg.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -6508,7 +6338,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6572,11 +6402,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tets.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tets.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -6696,7 +6521,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6760,11 +6585,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tfmt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tfmt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -6884,7 +6704,7 @@
     "action": {
      "$value": "#44687f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -6948,11 +6768,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tgt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tgt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -7072,7 +6887,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -7136,11 +6951,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tivdb.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tivdb.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -7260,7 +7070,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -7324,11 +7134,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tja.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tja.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -7448,7 +7253,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -7512,11 +7317,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tladn.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tladn.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -7636,7 +7436,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -7700,11 +7500,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tlbpt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tlbpt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -7824,7 +7619,7 @@
     "action": {
      "$value": "#4e5dca",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -7888,11 +7683,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tlr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tlr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8012,7 +7802,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -8076,11 +7866,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tls.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tls.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8200,7 +7985,7 @@
     "action": {
      "$value": "#007cba",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -8264,11 +8049,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tltc.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tltc.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8388,7 +8168,7 @@
     "action": {
      "$value": "#3c6292",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -8452,11 +8232,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tmch.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tmch.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8576,7 +8351,7 @@
     "action": {
      "$value": "#3a527a",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -8640,11 +8415,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tmd.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tmd.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8764,7 +8534,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -8828,11 +8598,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tmi.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tmi.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -8952,7 +8717,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9016,11 +8781,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tmj.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tmj.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -9140,7 +8900,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9204,11 +8964,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tmn.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tmn.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -9328,7 +9083,7 @@
     "action": {
      "$value": "#3a527a",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9392,11 +9147,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tms.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tms.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -9516,7 +9266,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9580,11 +9330,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tnh.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tnh.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -9704,7 +9449,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9768,11 +9513,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tod.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tod.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -9892,7 +9632,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -9956,11 +9696,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.top.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.top.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -10080,7 +9815,7 @@
     "action": {
      "$value": "#000000",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -10144,11 +9879,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tpd.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tpd.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -10268,7 +9998,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -10332,11 +10062,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tpe.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tpe.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -10456,7 +10181,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -10520,11 +10245,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tpm.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tpm.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -10644,7 +10364,7 @@
     "action": {
      "$value": "#007cba",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -10708,11 +10428,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -10832,7 +10547,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -10896,11 +10611,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.trdf.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.trdf.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11020,7 +10730,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -11084,11 +10794,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tre.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tre.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11208,7 +10913,7 @@
     "action": {
      "$value": "#434953",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -11272,11 +10977,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.trh.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.trh.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11396,7 +11096,7 @@
     "action": {
      "$value": "#013a67",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -11460,11 +11160,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.trot.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.trot.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11584,7 +11279,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -11648,11 +11343,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.trr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.trr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11772,7 +11462,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -11836,11 +11526,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tsar.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tsar.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -11960,7 +11645,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12024,11 +11709,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tsbs.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tsbs.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -12148,7 +11828,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12212,11 +11892,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tscs.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tscs.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -12336,7 +12011,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12400,11 +12075,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tseb.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tseb.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -12524,7 +12194,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12588,11 +12258,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tsppp.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tsppp.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -12712,7 +12377,7 @@
     "action": {
      "$value": "#434953",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12776,11 +12441,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tss.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tss.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -12900,7 +12560,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -12964,11 +12624,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tsv.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tsv.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -13088,7 +12743,7 @@
     "action": {
      "$value": "#004e87",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -13152,11 +12807,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -13276,7 +12926,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -13340,11 +12990,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tth.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tth.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -13464,7 +13109,7 @@
     "action": {
      "$value": "#434953",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -13528,11 +13173,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.ttt.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.ttt.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -13652,7 +13292,7 @@
     "action": {
      "$value": "#32408f",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -13716,11 +13356,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tudj.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tudj.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -13840,7 +13475,7 @@
     "action": {
      "$value": "#408fcb",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -13904,11 +13539,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tvr.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tvr.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -14028,7 +13658,7 @@
     "action": {
      "$value": "#8d092d",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -14092,11 +13722,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.tvth.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.tvth.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -14216,7 +13841,7 @@
     "action": {
      "$value": "#007639",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -14280,11 +13905,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.twdd.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.twdd.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -14404,7 +14024,7 @@
     "action": {
      "$value": "#b93611",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -14468,11 +14088,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.twdn.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.twdn.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"
@@ -14592,7 +14207,7 @@
     "action": {
      "$value": "#005f7e",
      "$type": "color",
-     "$description": "Primary button fill (white label); buy and continue alias this",
+     "$description": "Primary button fill (white label); buy (Core) and continue (Android only, DEC-21) alias this",
      "$extensions": {
       "mng": {
        "rgb": [
@@ -14656,11 +14271,6 @@
      }
     },
     "buy": {
-     "$value": "{color.brand.vp.action}",
-     "$type": "color",
-     "$description": "Alias of action (PLAT-04)"
-    },
-    "continue": {
      "$value": "{color.brand.vp.action}",
      "$type": "color",
      "$description": "Alias of action (PLAT-04)"

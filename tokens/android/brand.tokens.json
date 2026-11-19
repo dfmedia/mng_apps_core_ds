@@ -14,6 +14,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.bs.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "ct": {
@@ -26,6 +37,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#004e87"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.ct.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -47,6 +69,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.dp.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "hc": {
@@ -59,6 +92,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#000000"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.hc.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -80,6 +124,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.mc.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "nydn": {
@@ -99,6 +154,17 @@
        "shipped": "#333333"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.nydn.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "ocr": {
@@ -111,6 +177,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#ac4e0f"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.ocr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -132,6 +209,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.os.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "pac": {
@@ -144,6 +232,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#a06318"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.pac.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -160,6 +259,17 @@
        "shipped": "#a6371e"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.psn.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "sdut": {
@@ -172,6 +282,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#000000"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.sdut.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -188,6 +309,17 @@
        "shipped": "#b11e35"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.sgvt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "sit": {
@@ -200,6 +332,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#0f73a9"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.sit.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -221,6 +364,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.ss.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tb": {
@@ -233,6 +387,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#4351af"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tb.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -249,6 +414,17 @@
        "shipped": "#152c4f"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tban.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tbcp": {
@@ -261,6 +437,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#3f51b5"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tbcp.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -277,6 +464,17 @@
        "shipped": "#4351af"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tbe.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tbh": {
@@ -289,6 +487,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#255e97"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tbh.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -305,6 +514,17 @@
        "shipped": "#c00030"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tbhs.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tccdr": {
@@ -317,6 +537,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#353f8a"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tccdr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -333,6 +564,17 @@
        "shipped": "#1f4d83"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tce.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tchw": {
@@ -345,6 +587,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#353f8a"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tchw.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -361,6 +614,17 @@
        "shipped": "#434953"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tcv.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tdb": {
@@ -373,6 +637,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#2e6c90"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tdb.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -389,6 +664,17 @@
        "shipped": "#007639"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tdc.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tdcd": {
@@ -401,6 +687,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#4891b3"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tdcd.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -417,6 +714,17 @@
        "shipped": "#1b6bad"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tdf.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tdh": {
@@ -429,6 +737,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#0072b4"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tdh.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -445,6 +764,17 @@
        "shipped": "#1591b5"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tdlw.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tdp": {
@@ -457,6 +787,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#000000"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tdp.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -473,6 +814,17 @@
        "shipped": "#c75d14"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tdps.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tebt": {
@@ -485,6 +837,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#557fba"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tebt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -501,6 +864,17 @@
        "shipped": "#3e8e75"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.teptg.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tets": {
@@ -513,6 +887,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#353f8a"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tets.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -529,6 +914,17 @@
        "shipped": "#32408f"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tfmt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tgt": {
@@ -541,6 +937,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#536e7f"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tgt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -557,6 +964,17 @@
        "shipped": "#004e87"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tivdb.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tja": {
@@ -569,6 +987,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#353f8a"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tja.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -585,6 +1014,17 @@
        "shipped": "#ab4022"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tladn.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tlbpt": {
@@ -597,6 +1037,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#2c47a0"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tlbpt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -613,6 +1064,17 @@
        "shipped": "#4e5dca"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tlr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tls": {
@@ -625,6 +1087,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#ab4022"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tls.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -641,6 +1114,17 @@
        "shipped": "#007cba"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tltc.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tmch": {
@@ -653,6 +1137,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#3c6292"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tmch.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -669,6 +1164,17 @@
        "shipped": "#3f5177"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tmd.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tmi": {
@@ -681,6 +1187,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#1f4d83"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tmi.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -697,6 +1214,17 @@
        "shipped": "#bc3b10"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tmj.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tmn": {
@@ -709,6 +1237,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#004e87"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tmn.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -725,6 +1264,17 @@
        "shipped": "#3f5177"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tms.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tnh": {
@@ -737,6 +1287,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#ab4022"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tnh.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -753,6 +1314,17 @@
        "shipped": "#b92111"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tod.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "top": {
@@ -765,6 +1337,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#0b151d"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.top.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -781,6 +1364,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tpd.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tpe": {
@@ -793,6 +1387,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#a6371e"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tpe.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -809,6 +1414,17 @@
        "shipped": "#bc3b10"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tpm.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tr": {
@@ -821,6 +1437,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#007cba"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -837,6 +1464,17 @@
        "shipped": "#2c47a0"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.trdf.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tre": {
@@ -849,6 +1487,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#000000"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tre.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -865,6 +1514,17 @@
        "shipped": "#434953"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.trh.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "trot": {
@@ -879,6 +1539,17 @@
        "shipped": "#013a67"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.trot.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "trr": {
@@ -891,6 +1562,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#bc3b10"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.trr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -912,6 +1594,17 @@
        "shipped": "#000000"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tsar.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tsbs": {
@@ -924,6 +1617,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#a6371e"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tsbs.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -940,6 +1644,17 @@
        "shipped": "#353f8a"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tscs.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tseb": {
@@ -952,6 +1667,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#bc3b10"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tseb.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -968,6 +1694,17 @@
        "shipped": "#557fba"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tsppp.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tss": {
@@ -980,6 +1717,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#434953"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tss.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -996,6 +1744,17 @@
        "shipped": "#557fba"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tsv.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tt": {
@@ -1008,6 +1767,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#357dad"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -1024,6 +1794,17 @@
        "shipped": "#bc3b10"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tth.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "ttt": {
@@ -1036,6 +1817,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#434953"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.ttt.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -1052,6 +1844,17 @@
        "shipped": "#32408f"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tudj.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "tvr": {
@@ -1064,6 +1867,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#408fcb"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.tvr.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -1080,6 +1894,17 @@
        "shipped": "#8d092d"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.tvth.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "twdd": {
@@ -1094,6 +1919,17 @@
        "shipped": "#007639"
       }
      }
+    },
+    "continue": {
+     "$value": "{color.brand.twdd.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
+      }
+     }
     }
    },
    "twdn": {
@@ -1106,6 +1942,17 @@
        "owner": "android",
        "follows": "navbar",
        "shipped": "#a6371e"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.twdn.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }
@@ -1125,6 +1972,17 @@
        "owner": "android",
        "override": true,
        "shipped": "#000000"
+      }
+     }
+    },
+    "continue": {
+     "$value": "{color.brand.vp.action}",
+     "$type": "color",
+     "$description": "Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of Core action (PLAT-04)",
+     "$extensions": {
+      "mng": {
+       "owner": "android",
+       "follows": "action"
       }
      }
     }

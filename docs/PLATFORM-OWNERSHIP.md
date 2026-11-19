@@ -32,7 +32,7 @@ Most iOS-only items are **features** Android doesn't have, not icon disagreement
 | action | Core | 49 / 6 / 22 | Primary / Subscribe button |
 | alert | Core (one value) | 0 / 6 / 71 | Android #cf000e everywhere; iOS #ff0000 (71) and #d80000 (6) |
 | buy | Core alias → action | 48 / 6 / 23 | = action in 77/77 iOS and 74/77 Android markets |
-| continue | Android only (alias of action in the Android file; Karl, 2026-11-19, DEC-21) | — | Android only as a color; = action in 70/77. iOS uses pre-colored PNGs. Move not done yet |
+| continue | Android only (alias of action in the Android file; Karl, 2026-11-19, DEC-21) | — | Android only as a color; = action in 70/77. iOS uses pre-colored PNGs. Moved 2026-11-19: token color.android.<m>.continue, Kotlin continueButton; removed from Core tokens and Swift |
 | statusbar | Android only | — | = navbar in 70/77; default alias to navbar |
 | header | iOS only | — | = navbar in 66/77; default alias to navbar |
 | accent | Android only (built as an alias of Core action, PLAT-10) | 43 / 3 / 31 | Theme accent for switches. Follows Core `action` in 52 of 77 Android markets; the 25 exceptions, incl. template gold #daa520, are documented only (DEC-14) |
