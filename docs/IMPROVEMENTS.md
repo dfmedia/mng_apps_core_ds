@@ -61,11 +61,13 @@ Result: one icon list to design and review, native look on each platform, no ras
 
 Apps team (DREAMT-4718, 2026-11-18, answer to MISSING-ASSETS 1.6, closed by Karl): this works on iOS; each set is one glyph saved as separate PNGs, so one template image tinted per market can replace it.
 
-### ICON-03 · Dead `"saved"` SF Symbol — `PROPOSED`
+### ICON-03 · Dead `"saved"` SF Symbol — `WITHDRAWN`
 
 `CoreTabBarViewController.swift:140` asks for `"saved"`, which is not an SF Symbol. Point it at `bookmark` / `bookmark.fill` (see MISSING-ASSETS 1.3).
 
 Apps team (DREAMT-4718, 2026-11-18, TroncKit `f79fe3339`): still the case; `UIImage(systemName: "saved")` returns no image, so the Saved tab shows no icon. The intended icon is asked again in MISSING-ASSETS 1.3.
+
+**Withdrawn 2026-11-19** (Apps team, DREAMT-4718): there is no Saved tab; Saved is the middle segment of the YOU tab. The `"saved"` call is in `updateTabBasedOnIsPagesuite()`, which nothing calls, so the missing icon never shows. No fix needed.
 
 ### ICON-04 · Blank logo on the iOS Manage Subscription modal — `PROPOSED`
 
@@ -213,7 +215,7 @@ Your News checkbox is 30 × 30 and social login icons are 24 pt. Keep the visual
 Only Primary exists. Disabled is styled only on tracking-consent Continue; loading is a full-screen overlay. Propose Secondary, Text, Disabled and inline Loading variants. Not pursued: neither app ships Secondary or an in-button Loading state, so the design system documents Primary, Disabled and Text link as built (DEC-07) and the full-screen loading overlay as shipped. If the Apps team adds these states, document them then.
 
 ### BTN-01 · One primary button height — `FUTURE`
-Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `button.ios.primary.height` 44 pt (provisional; the shipped purchase button is at least 45 pt, MISSING-ASSETS 5.10), Android `button.android.primary.height` 60 dp (`paywall_button_height`). Future change: one height for both, at least 48 so it meets both apps' touch minimums (44 pt / 48 dp).
+Decided 2026-10-26 (DEC-07): keep each app's height for now, as tokens: iOS `button.ios.primary.height` 45 pt (the meter paywall purchase button; was 44 provisional until DEC-22, 2026-11-19), Android `button.android.primary.height` 60 dp (`paywall_button_height`). Future change: one height for both, at least 48 so it meets both apps' touch minimums (44 pt / 48 dp).
 
 ### BTN-02 · One button label style — `FUTURE`
 Decided 2026-10-26 (DEC-07): the Button is a Core component, but the label font stays per platform for now: iOS Open Sans Bold 14 uppercase, Android system font uppercase (Roboto Medium 14sp, confirmed by the Apps team 2026-11-19). Future change: one label style in Core so the platform files no longer need their own label.

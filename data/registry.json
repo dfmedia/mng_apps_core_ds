@@ -335,7 +335,7 @@
     "source": "ic_bookmark \u00b7 ic_btn_save \u00b7 mc_tab_icon_saved",
     "native": "bookmark"
    },
-   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected).",
+   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19).",
    "core": {
     "figma": null,
     "spec": null
@@ -2179,7 +2179,7 @@
    "android": {
     "source": "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)"
    },
-   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1. Markets without their own onboarding art show the shared mng-top-image-view image (Apps team, 2026-11-18).",
+   "note": "Per-market artwork, tracked not built. iOS logo files received 2026-11-19 (DREAMT-4718; vectors where they exist). Markets without their own onboarding art show the shared mng-top-image-view image (Apps team, 2026-11-18).",
    "core": {
     "figma": null,
     "spec": null

@@ -16,8 +16,8 @@ M = json.load(open('data/icon-platform-map.json'))
 NAME = {
     'Search': ('search', ''), 'Settings': ('settings', ''), 'Share': ('share', ''),
     'Save (not saved)': ('save', ''), 'Saved': ('saved', 'Android also shows a star in special sections (see below), same name (DEC-17).'),
-    'Home tab': ('tab-home', ''), 'Sections / menu': ('menu', 'Sections tab and the eNewspaper menu.'),
-    'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', 'No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).'), 'eNewspaper tab': ('tab-enewspaper', ''),
+    'Home tab': ('tab-home', 'iOS: 9 markets (CT, BS, DP, MC, NYDN, SS, VP, HC, OS) ship their own PNG; the rest Font Awesome home, 26 x 23 pt. No market overrides Sections or Alerts (Apps team, 2026-11-19).'), 'Sections / menu': ('menu', 'Sections tab and the eNewspaper menu.'),
+    'Alerts tab': ('tab-alerts', ''), 'For You / Your News tab': ('tab-for-you', 'No master vector exists; ships only as the per-market YourNews-* PNGs (Apps team, 2026-11-18; MISSING-ASSETS 1.7 closed by Karl).'), 'eNewspaper tab': ('tab-enewspaper', 'iOS: NEWSPAPER, the fifth tab in all 78 markets, image set tab-enews (PNG), opens the PageSuite reader; tab-newspaper is never shown (Apps team, 2026-11-19).'),
     'Games tab': ('tab-games', "iOS 26 screenshots: puzzle-piece outline. No separate design; each platform's own symbol is fine (Apps team, DREAMT-4718, 2026-11-18)."),
     'Expand / show more': ('expand', ''), 'Collapse / show less': ('collapse', ''), 'Back': ('back', ''),
     'Forward / disclosure': ('forward', ''), 'Close': ('close', ''), 'Close (circle)': ('close-circle', ''),
@@ -42,8 +42,7 @@ NAME = {
 }
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
 ASK = {
-    'Amazon (sign-in)': '1.12 (neither app shows it; keep or drop?)', 'Saved': '1.3 (iOS "saved" SF Symbol renders nothing; follow-up)', 'Home tab': '1.4 (market tab-bar overrides, follow-up)',
-    'eNewspaper tab': '1.8 (ships as NEWSPAPER in TDP, NYDN, VP screenshots; asking which image set, vector, Patrick Carr\'s icon)',
+    'Amazon (sign-in)': '1.12 (neither app shows it; keep or drop?)',
 }
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
 BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}

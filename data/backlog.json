@@ -283,7 +283,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -296,7 +296,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -309,7 +309,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Glyph differs by platform convention; one semantic name.",
    "overall": "blocked"
   },
@@ -322,7 +322,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -335,8 +335,8 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected).",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19).",
    "overall": "blocked"
   },
   {
@@ -348,7 +348,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19).",
    "overall": "blocked"
   },
@@ -361,7 +361,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -374,7 +374,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -387,7 +387,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Gap on both: one custom Core vector.",
    "overall": "blocked"
   },
@@ -400,7 +400,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -413,7 +413,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -426,7 +426,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -439,7 +439,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -452,7 +452,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -465,7 +465,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android has 4 arrows for this; consolidate.",
    "overall": "blocked"
   },
@@ -478,7 +478,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -491,7 +491,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Confirm the Android glyph is a circled X.",
    "overall": "blocked"
   },
@@ -504,7 +504,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none (login is the Auth0 web page; no account icon).",
    "overall": "blocked"
   },
@@ -517,7 +517,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android uses it only in notifications.",
    "overall": "blocked"
   },
@@ -530,7 +530,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -543,7 +543,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -556,7 +556,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -569,7 +569,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "overall": "blocked"
   },
@@ -582,7 +582,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
    "overall": "blocked"
   },
@@ -595,7 +595,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "overall": "blocked"
   },
@@ -608,7 +608,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
    "overall": "blocked"
   },
@@ -621,7 +621,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -634,7 +634,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -647,7 +647,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -660,7 +660,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons).",
    "overall": "blocked"
   },
@@ -673,7 +673,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
@@ -686,7 +686,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
@@ -699,7 +699,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
    "overall": "blocked"
   },
@@ -712,7 +712,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -725,7 +725,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -738,7 +738,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only).",
    "overall": "blocked"
   },
@@ -751,7 +751,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only).",
    "overall": "blocked"
   },
@@ -764,7 +764,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "overall": "blocked"
   },
@@ -777,7 +777,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
    "overall": "blocked"
   },
@@ -790,7 +790,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -803,7 +803,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed).",
    "overall": "blocked"
   },
@@ -816,7 +816,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none; its stars mean saved (special sections), not ratings.",
    "overall": "blocked"
   },
@@ -829,7 +829,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none (see Rating star (empty)).",
    "overall": "blocked"
   },
@@ -842,7 +842,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none (see Rating star (empty)).",
    "overall": "blocked"
   },
@@ -855,7 +855,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -868,7 +868,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -881,7 +881,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -894,7 +894,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused).",
    "overall": "blocked"
   },
@@ -907,7 +907,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Dormant on Android.",
    "overall": "blocked"
   },
@@ -920,7 +920,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -933,7 +933,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -946,7 +946,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -959,7 +959,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "",
    "overall": "blocked"
   },
@@ -972,7 +972,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -985,7 +985,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -998,7 +998,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
    "overall": "blocked"
   },
@@ -1011,7 +1011,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "iOS paywall password autofill. Android equivalent: none in the Android guide.",
    "overall": "blocked"
   },
@@ -1024,7 +1024,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
    "overall": "blocked"
   },
@@ -1037,7 +1037,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only).",
    "overall": "blocked"
   },
@@ -1050,7 +1050,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35.",
    "overall": "blocked"
   },
@@ -1063,7 +1063,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35.",
    "overall": "blocked"
   },
@@ -1076,7 +1076,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).",
    "overall": "blocked"
   },
@@ -1089,7 +1089,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)",
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
    "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
    "overall": "blocked"
   },
@@ -1181,7 +1181,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-07 pilot. Android label confirmed (Roboto Medium 14sp caps; Apps team, DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. iOS rebuild on hold until MISSING-ASSETS 5.10",
+   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4.",
    "overall": "built"
   },
   {
@@ -1582,10 +1582,10 @@
    "owner": "core+variant",
    "figma": "na",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Vector masters: MISSING-ASSETS 2.1",
-   "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma",
-   "overall": "blocked"
+   "code": "na",
+   "blocked_by": "",
+   "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma. iOS logo files for all 78 markets received 2026-11-19 (DREAMT-4718; 81 vectors, otherwise PNG), kept in Karl's local downloads/market-logos.",
+   "overall": "n/a"
   }
  ]
 }

@@ -23,7 +23,7 @@
    "figma": "blocked",
    "tokens": "na",
    "code": "blocked",
-   "blocked_by": "Apps team icon answers (MISSING-ASSETS §1); semantic icon list + Icon component (PROGRESS 1.8)"
+   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)"
   },
   "component": {
    "figma": "todo",
@@ -203,7 +203,7 @@
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-07 pilot. Android label confirmed (Roboto Medium 14sp caps; Apps team, DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. iOS rebuild on hold until MISSING-ASSETS 5.10"
+   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4."
   },
   "component/button-text": {
    "figma": "done",
@@ -379,9 +379,9 @@
   "component/images": {
    "figma": "na",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Vector masters: MISSING-ASSETS 2.1",
-   "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma"
+   "code": "na",
+   "blocked_by": "",
+   "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma. iOS logo files for all 78 markets received 2026-11-19 (DREAMT-4718; 81 vectors, otherwise PNG), kept in Karl's local downloads/market-logos."
   },
   "component/text-size-ios": {
    "figma": "done",

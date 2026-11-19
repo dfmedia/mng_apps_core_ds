@@ -61,7 +61,7 @@
    "sf_symbol": "bookmark.fill",
    "material": "bookmark",
    "bucket": "core",
-   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected).",
+   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19).",
    "ios_recommendation": "Native on both platforms"
   },
   {

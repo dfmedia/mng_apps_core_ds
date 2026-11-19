@@ -99,7 +99,7 @@ Contrast as shipped (how the SDK paints these is not in the guide): tab text on 
 
 ## Non-icon images (as shipped, not built)
 
-Per-market artwork, not reusable design-system parts. Tracked here and in the registry; vector masters are MISSING-ASSETS 2.1 / 2.2. Not drawn in Figma.
+Per-market artwork, not reusable design-system parts. Tracked here and in the registry; iOS logo files (vectors where they exist) received 2026-11-19 (DREAMT-4718). Not drawn in Figma.
 
 | Platform | Group | What | Files |
 |---|---|---|---|

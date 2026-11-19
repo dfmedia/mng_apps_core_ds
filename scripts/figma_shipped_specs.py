@@ -14,8 +14,8 @@ if MODE == 'shell':
     PAGE = 'Layout · iOS vs Android'
     T = {'name': '03 · App shell sizes (as shipped)', 'title': 'App shell sizes (as shipped)',
          'intro': ('Heights, spacing and label type of the app shell on each app, documented exactly as shipped (DEC-09). Android values are tokens '
-                   '(Components · Android variables in the Android file). iOS values come from the Apps team answers at f79fe3339, newer than our iOS '
-                   'export, so they are not iOS tokens yet (MISSING-ASSETS 6.1). ' + SRC),
+                   '(Components · Android variables in the Android file). iOS values come from the Apps team answers and export at f79fe3339 '
+                   'and are iOS tokens too (Components · iOS variables in the iOS file). ' + SRC),
          'columns': [{'name': 'Part', 'w': 180}, {'name': 'Owner', 'w': 200}, {'name': 'iOS', 'w': 440}, {'name': 'Android', 'w': 520}, {'name': 'Android tokens', 'w': 300}],
          'rows': [[{'t': r['what'], 'b': True}, {'chip': r['bucket']}, hexrgb(r['ios']), hexrgb(r['android']), r['tokens'] or '—'] for r in D['shell']]}
 elif MODE == 'motion':

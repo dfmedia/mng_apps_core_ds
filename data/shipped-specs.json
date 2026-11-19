@@ -4,7 +4,7 @@
   "ios": "Apps team, DREAMT-4718 (TroncKit f79fe3339)",
   "android": "Apps team, DREAMT-4719 + Android style guide 1795110354-0c21"
  },
- "rule": "Documented as shipped (DEC-09). iOS values are not tokens until the f79fe3339 export arrives (MISSING-ASSETS 6.1).",
+ "rule": "Documented as shipped (DEC-09). iOS sizes are tokens since the f79fe3339 export (component.ios.*).",
  "shell": [
   {
    "id": "nav-bar",

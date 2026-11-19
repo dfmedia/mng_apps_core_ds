@@ -52,7 +52,7 @@ Use the figma-console Desktop Bridge. Pass `fileKey` on every call, or `figma_na
 
 | Platform | Code | Style guide (Claude artifact) | Data in this repo |
 |----------|------|-------------------------------|-------------------|
-| iOS | TroncKit @ `e30ad2585` | https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc | `data/source/markets.json`, `data/source/ios-tokens.json` |
+| iOS | TroncKit @ `f79fe3339` (export 2026-11-19, DREAMT-4718; was `e30ad2585`) | https://claude.ai/artifact/V364juyHFU3STfVZ6EgjMc | `data/source/markets.json`, `data/source/ios-tokens.json`, `ios-type.json`, `ios-scales.json`, `ios-guide-f79fe3339/` |
 | Android | android-tribpub @ `1cfb069a6` (dev, 2026-10-15) | https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ | `data/source/android-markets.json` |
 
 Brand colors also come from the **migration sheet** "Tribpub-MNG App Migrations" (Google Sheet `1PGCnV0mSnOMOycNT-CSViYKyH82TrnwPSO4VrCl_HS4`, tab Production, Primary / Secondary color), copied to `data/source/migration-sheet-brand-colors.json`. It is the source of truth when it matches either app.
@@ -115,6 +115,7 @@ tokens/                           DTCG design tokens (generated; the source for 
 style-dictionary.config.mjs       builds Swift / Kotlin / Android XML from tokens/
 docs/BRAND-COLORS.md              every brand color as hex and RGB (generated)
 data/source/                      raw exports from each app (don't edit)
+downloads/                        Karl's local copies of ticket attachments (logos, fonts, screenshots); git-ignored
 data/*.json                       generated analysis
 scripts/                          regenerate data/*.json
 scripts/figma/                    Figma builders run through the Desktop Bridge (figma_execute), fed by data/*.json

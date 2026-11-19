@@ -14,7 +14,7 @@ This project is **completely separate from the MNG Web Design System**. It does 
 
 ## Source
 
-- iOS: TroncKit @ `e30ad2585`, extracted into the MNG iOS Style Guide artifact. 77 market apps, light mode only.
+- iOS: TroncKit @ `f79fe3339` (export 2026-11-19; earlier `e30ad2585`), extracted into the MNG iOS Style Guide artifact. 78 market apps (TDH added), light mode only.
 - Android: android-tribpub @ `1cfb069a6` (2026-10-15), extracted into the MNG Android Style Guide artifact. 77 market apps (Gradle flavors), light mode on most screens.
 
 ## Repo layout

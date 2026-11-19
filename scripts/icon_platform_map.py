@@ -16,7 +16,7 @@ ANDROID = {
  'Settings': ('mc_ic_settings (+10 market copies)', 'core', ''),
  'Share': ('ic_share (+9 market copies)', 'core', 'Glyph differs by platform convention; one semantic name.'),
  'Save (not saved)': ('ic_bookmark_outline · ic_btn_unsave', 'core', ''),
- 'Saved': ('ic_bookmark · ic_btn_save · mc_tab_icon_saved', 'core', 'Android special-section star (card_star_default) also means saved: kept as Android\'s glyph, same icon name (DEC-17, PLAT-09 rejected).'),
+ 'Saved': ('ic_bookmark · ic_btn_save · mc_tab_icon_saved', 'core', 'Android special-section star (card_star_default) also means saved: kept as Android\'s glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19).'),
  'Home tab': ('mc_tab_icon_latestnews (77 market copies)', 'core', 'Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19).'),
  'Sections / menu': ('mc_tab_icon_sections', 'core', ''),
  'Alerts tab': ('mc_tab_icon_alerts · mc_alert_bell (69 market copies)', 'core', ''),

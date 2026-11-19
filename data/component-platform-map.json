@@ -350,7 +350,7 @@
    "ios_today": "Onboarding art and logos, masthead, paywall logo, placeholders, topic button backgrounds (43 files)",
    "android_today": "Per-market ic_logo + night logo, launcher, splash and notification icons (not in the guide)",
    "owner": "core+variant",
-   "note": "Per-market artwork, tracked not built. Vector masters: MISSING-ASSETS 2.1. Markets without their own onboarding art show the shared mng-top-image-view image (Apps team, 2026-11-18)."
+   "note": "Per-market artwork, tracked not built. iOS logo files received 2026-11-19 (DREAMT-4718; vectors where they exist). Markets without their own onboarding art show the shared mng-top-image-view image (Apps team, 2026-11-18)."
   }
  ]
 }
