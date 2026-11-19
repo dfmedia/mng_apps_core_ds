@@ -1099,11 +1099,11 @@
    "group": "App chrome",
    "name": "Top bar",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13). Sizes documented: Core Layout · iOS vs Android › 03",
+   "note": "Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13). Sizes documented: Core Layout · iOS vs Android › 03 Figma 2026-11-19: iOS and Android files, Components · App shell › 02, component `App shell/Top bar` (same name on both), colors bound to Core Brand theme and the platform Shell theme, sizes to the platform Components variables.",
    "overall": "in progress"
   },
   {
@@ -1112,11 +1112,11 @@
    "group": "App chrome",
    "name": "Section tabs",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03",
+   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03 Figma 2026-11-19: iOS and Android files, Components · App shell › 02, component `App shell/Section tabs` (same name on both), colors bound to Core Brand theme and the platform Shell theme, sizes to the platform Components variables.",
    "overall": "in progress"
   },
   {
@@ -1125,11 +1125,11 @@
    "group": "App chrome",
    "name": "Bottom tab bar",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03",
+   "note": "Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03 Figma 2026-11-19: iOS and Android files, Components · App shell › 02, component `App shell/Tab bar` (same name on both), colors bound to Core Brand theme and the platform Shell theme, sizes to the platform Components variables.",
    "overall": "in progress"
   },
   {
@@ -1138,11 +1138,11 @@
    "group": "App chrome",
    "name": "Breaking-news banner",
    "owner": "core",
-   "figma": "todo",
+   "figma": "done",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked. Sizes documented: Core Layout · iOS vs Android › 03",
+   "note": "Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked. Sizes documented: Core Layout · iOS vs Android › 03 Figma 2026-11-19: iOS and Android files, Components · App shell › 02, component `App shell/Breaking-news banner` (same name on both), colors bound to Core Brand theme and the platform Shell theme, sizes to the platform Components variables.",
    "overall": "in progress"
   },
   {
