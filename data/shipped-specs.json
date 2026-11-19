@@ -239,10 +239,10 @@
   },
   {
    "id": "button-account",
-   "what": "Manage subscription buttons",
+   "what": "Manage subscription buttons (split, DEC-21)",
    "ios": "Modal: 44 pt, radius 8; one filled with the nav bar color; white Cancel with a 1 pt black border (white on white in 7 markets, DSC-34)",
    "android": "Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6",
-   "bucket": "Core, per-platform value"
+   "bucket": "Split: iOS only + Android only"
   },
   {
    "id": "social-signin",

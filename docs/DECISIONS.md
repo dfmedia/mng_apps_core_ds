@@ -405,4 +405,5 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - Skip: `skip-back-15` / `skip-forward-15` are iOS only (names unchanged); new names `skip-back-10` / `skip-forward-10` for Android's Media3 icons, Android only. DSC-35 (interval) stays open.
   - Amazon sign-in icon: stays Core for now; asked the Apps team whether it shows anywhere (new MISSING-ASSETS 1.12).
   - Every iOS-only and Android-only icon now names its equivalent on the other app (or "none") in its note.
+- **Components (Core Components · Platform Ownership › 02), split per platform (Karl, 2026-11-19):** text size setting (iOS 6-step slider / Android 4-option list), Manage subscription buttons (iOS modal / Android bottom sheets), breakpoints (iOS window width / Android physical inches), elevation (iOS shadows / Android elevation) and motion. Each now has an iOS-only row and an Android-only row naming the other as its equivalent (data/component-platform-map.json; backlog ids `*-ios` / `*-android`). Savings label: still Core, per-platform value, waiting on Karl's question (it is the paywall discount label, e.g. "70% savings").
 

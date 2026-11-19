@@ -58,14 +58,15 @@ controls = [
     {'id': 'savings-badge', 'what': 'Savings label',
      'ios': f"{C['savings_pill']['width']} × {C['savings_pill']['height']} pt, {C['savings_pill']['fill']}, {C['savings_pill']['border']}, radius {C['savings_pill']['radius']}; {C['savings_pill']['label']}; inset {C['savings_pill']['inset']}",
      'android': 'White, 2dp stroke in the buy color, radius 15, text #004e87; font and padding: MISSING-ASSETS 5.6'},
-    {'id': 'button-account', 'what': 'Manage subscription buttons',
+    {'id': 'button-account', 'what': 'Manage subscription buttons (split, DEC-21)',
      'ios': f"Modal: {C['manage_subscription_modal']['height']} pt, radius {C['manage_subscription_modal']['radius']}; {C['manage_subscription_modal']['buttons']} (white on white in 7 markets, DSC-34)",
      'android': 'Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6'},
     {'id': 'social-signin', 'what': 'Social sign-in',
      'ios': f"{C['social_signin']['where']}: {C['social_signin']['height']} pt, radius {C['social_signin']['radius']}, {C['social_signin']['label']}, {C['social_signin']['outline']} pt outline, {C['social_signin']['icon']} pt icon, {C['social_signin']['gap']} pt gap",
      'android': 'None in the app: login is the Auth0 hosted page'},
 ]
-for r in controls: r['bucket'] = BUCKET[OWN[r['id']]]
+SPLIT = 'Split: iOS only + Android only'   # DEC-21: the apps do different things
+for r in controls: r['bucket'] = BUCKET[OWN[r['id']]] if r['id'] in OWN else SPLIT
 
 out = {'generated_by': 'scripts/build_shipped_specs.py', 'sources': {'ios': SRC_I, 'android': SRC_A},
        'rule': 'Documented as shipped (DEC-09). iOS values are not tokens until the f79fe3339 export arrives (MISSING-ASSETS 6.1).',

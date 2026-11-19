@@ -29,7 +29,7 @@ elif MODE == 'motion':
     rows += [{'group': f"Android motion ({len(M['android'])}): no shared spec"}] + [[{'t': m['where'], 'b': True}, m['duration']] for m in M['android']]
     T = {'name': '04 · Elevation and motion (as shipped)', 'title': 'Elevation and motion (as shipped)',
          'intro': ('Neither app has a shared elevation scale or motion spec: each value is set where it is used. Documented as shipped (DEC-09); '
-                   'nothing new is designed (Karl, 2026-11-10). Owner: Core, per-platform value. ' + SRC),
+                   'nothing new is designed (Karl, 2026-11-10). Owner: split per platform, iOS only + Android only (Karl, 2026-11-19, DEC-21). ' + SRC),
          'columns': [{'name': 'Where', 'w': 460}, {'name': 'Value', 'w': 620}], 'rows': rows}
 elif MODE == 'controls':
     PAGE = 'Components · Controls'

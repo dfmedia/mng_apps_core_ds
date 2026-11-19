@@ -288,12 +288,6 @@
    "code": "written",
    "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
   },
-  "layout/breakpoints": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
-  },
   "component/section-tabs": {
    "figma": "todo",
    "tokens": "partial",
@@ -313,13 +307,6 @@
    "code": "partial",
    "blocked_by": "Android fill: MISSING-ASSETS 5.6 (a)",
    "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19)"
-  },
-  "component/button-account": {
-   "figma": "blocked",
-   "tokens": "partial",
-   "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
-   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)"
   },
   "component/savings-badge": {
    "figma": "blocked",
@@ -346,12 +333,6 @@
    "tokens": "done",
    "code": "written",
    "note": "DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended"
-  },
-  "component/text-size": {
-   "figma": "done",
-   "tokens": "done",
-   "code": "written",
-   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
   },
   "component/segmented": {
    "figma": "partial",
@@ -402,14 +383,66 @@
    "blocked_by": "Vector masters: MISSING-ASSETS 2.1",
    "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma"
   },
-  "layout/elevation": {
+  "component/text-size-ios": {
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
+  },
+  "component/text-size-android": {
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
+  },
+  "component/button-account-ios": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
+   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)"
+  },
+  "component/button-account-android": {
+   "figma": "blocked",
+   "tokens": "partial",
+   "code": "partial",
+   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (c)",
+   "note": "Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718)"
+  },
+  "layout/breakpoints-ios": {
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
+  },
+  "layout/breakpoints-android": {
+   "figma": "done",
+   "tokens": "done",
+   "code": "written",
+   "note": "DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued)"
+  },
+  "layout/elevation-ios": {
    "figma": "done",
    "tokens": "partial",
    "code": "written",
    "blocked_by": "",
    "note": "Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped)"
   },
-  "layout/motion": {
+  "layout/elevation-android": {
+   "figma": "done",
+   "tokens": "partial",
+   "code": "written",
+   "blocked_by": "",
+   "note": "Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped)"
+  },
+  "layout/motion-ios": {
+   "figma": "done",
+   "tokens": "na",
+   "code": "na",
+   "blocked_by": "",
+   "note": "Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new)"
+  },
+  "layout/motion-android": {
    "figma": "done",
    "tokens": "na",
    "code": "na",

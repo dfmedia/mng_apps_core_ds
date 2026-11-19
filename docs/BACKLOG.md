@@ -14,10 +14,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
-| Components | 24 | 0 | 9 | 14 | 0 | 1 |
-| Layout | 9 | 2 | 5 | 2 | 0 | 0 |
+| Components | 26 | 0 | 10 | 15 | 0 | 1 |
+| Layout | 12 | 3 | 6 | 3 | 0 | 0 |
 | Icons | 63 | 0 | 0 | 0 | 0 | 63 |
-| **Total** | **116** | **3** | **33** | **16** | **0** | **64** |
+| **Total** | **121** | **4** | **35** | **18** | **0** | **64** |
 
 ## Suggested order
 
@@ -92,7 +92,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Subscription option | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button) |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
 | Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android fill: MISSING-ASSETS 5.6 (a) · Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19) |
-| Manage subscription / delete account | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
+| Manage subscription modal buttons (iOS) | iOS | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
+| Account bottom-sheet buttons (Android) | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (c) · Radius is a token (DEC-12). iOS Manage subscription modal: two 44 pt buttons, radius 8 (DREAMT-4718) |
 | What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19) |
 | Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and padding: MISSING-ASSETS 5.6 (c) · Text #004e87 and radius 15 are tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (DREAMT-4718) |
 | Social sign-in buttons | iOS | ⬜ to do | 🟡 partial | 🟡 partial | Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login |
@@ -104,7 +105,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | Switch | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls) |
 | Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended |
-| Text size setting | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
+| Text size slider (iOS) | iOS | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
+| Text size list dialog (Android) | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
 | Segmented control | Core + iOS + Android | 🟡 partial | ⬜ to do | ⬜ to do | iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review |
 | Loading indicator | Core | 🟡 partial | ⬜ to do | ⬜ to do | iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review |
 
@@ -122,13 +124,16 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | Section-front grid | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
 | Cell spacing | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 space.cell.margin 16, space.cell.gap 8 |
-| Breakpoints | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
+| Breakpoints: window width (iOS) | iOS | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
+| Breakpoints: physical width (Android) | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-12: breakpoints as shipped per platform (iOS front + item sets; LAY-01 not pursued) |
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
 | Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
-| Elevation / shadows | Core + iOS + Android | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
-| Motion | Core + iOS + Android | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |
+| Shadows (iOS) | iOS | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
+| Elevation (Android) | Android | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
+| Motion (iOS) | iOS | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |
+| Motion (Android) | Android | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |
 
 ## Icons
 

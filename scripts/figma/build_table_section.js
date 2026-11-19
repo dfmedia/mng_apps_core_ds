@@ -8,7 +8,8 @@
 //       v binds the swatch fill to that variable (DEC-12: linked to tokens); sw is only the fallback color shown before binding.
 // Re-running replaces only the section with the same name (rule 4). Sections stack downward in creation order.
 const CHIPS = { 'Core': ['#e6f4ea', '#14532d'], 'Core alias': ['#e6f4ea', '#14532d'], 'Core, per-platform value': ['#fff4d6', '#6b4500'],
-  'iOS only': ['#e3eefc', '#0b3d7a'], 'Android only': ['#efe7fb', '#43217a'], 'Differs': ['#fde8e8', '#8a1c1c'], 'Token': ['#f1f1f1', '#333333'] };
+  'iOS only': ['#e3eefc', '#0b3d7a'], 'Android only': ['#efe7fb', '#43217a'], 'Differs': ['#fde8e8', '#8a1c1c'], 'Token': ['#f1f1f1', '#333333'],
+  'Split: iOS only + Android only': ['#f1f1f1', '#333333'] };
 const hex = (h) => { h = h.replace('#', ''); return { r: parseInt(h.slice(0, 2), 16) / 255, g: parseInt(h.slice(2, 4), 16) / 255, b: parseInt(h.slice(4, 6), 16) / 255 }; };
 const solid = (h, o) => ({ type: 'SOLID', color: hex(h), opacity: o ?? 1 });
 await Promise.all(['Regular', 'Bold', 'SemiBold'].map(style => figma.loadFontAsync({ family: 'Open Sans', style })));
