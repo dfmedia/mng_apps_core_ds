@@ -14,10 +14,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|---|
 | Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
-| Components | 24 | 0 | 9 | 12 | 2 | 1 |
-| Layout | 9 | 1 | 5 | 2 | 1 | 0 |
+| Components | 24 | 0 | 9 | 14 | 0 | 1 |
+| Layout | 9 | 2 | 5 | 2 | 0 | 0 |
 | Icons | 61 | 0 | 0 | 0 | 0 | 61 |
-| **Total** | **114** | **2** | **33** | **14** | **3** | **62** |
+| **Total** | **114** | **3** | **33** | **16** | **0** | **62** |
 
 ## Suggested order
 
@@ -76,10 +76,10 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Top bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13) |
-| Section tabs | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build |
-| Bottom tab bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build |
-| Breaking-news banner | Core | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked |
+| Top bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13). Sizes documented: Core Layout · iOS vs Android › 03 |
+| Section tabs | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03 |
+| Bottom tab bar | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03 |
+| Breaking-news banner | Core | ⬜ to do | 🟡 partial | 🟡 partial | Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked. Sizes documented: Core Layout · iOS vs Android › 03 |
 | Section header band | iOS | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (header = navbar, DEC-15). Exception samples in Components · App shell, bound to the live variables |
 | Status bar color | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Color only (DEC-15); the system draws the bar. Android 14 and below vs 15+ built 2026-11-10 (icon style tokens, Figma samples) |
 
@@ -105,8 +105,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Switch | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: native look, on = action. Built in the iOS and Android files (Components · Controls) |
 | Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended |
 | Text size setting | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
-| Segmented control | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19) |
-| Loading indicator | Core | ⬜ to do | ⬜ to do | ⬜ to do | iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md |
+| Segmented control | Core + iOS + Android | 🟡 partial | ⬜ to do | ⬜ to do | iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review |
+| Loading indicator | Core | 🟡 partial | ⬜ to do | ⬜ to do | iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review |
 
 ### Other
 
@@ -127,8 +127,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
 | Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
-| Elevation / shadows | Core + iOS + Android | ⬜ to do | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new) |
-| Motion | Core + iOS + Android | ⬜ to do | ⬜ to do | ⬜ to do | Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new) |
+| Elevation / shadows | Core + iOS + Android | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
+| Motion | Core + iOS + Android | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |
 
 ## Icons
 

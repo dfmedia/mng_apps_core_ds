@@ -1,0 +1,255 @@
+{
+ "generated_by": "scripts/build_shipped_specs.py",
+ "sources": {
+  "ios": "Apps team, DREAMT-4718 (TroncKit f79fe3339)",
+  "android": "Apps team, DREAMT-4719 + Android style guide 1795110354-0c21"
+ },
+ "rule": "Documented as shipped (DEC-09). iOS values are not tokens until the f79fe3339 export arrives (MISSING-ASSETS 6.1).",
+ "shell": [
+  {
+   "id": "nav-bar",
+   "what": "Top bar",
+   "ios": "44 pt; logo at its natural size",
+   "android": "56dp phone / 64dp tablet; title Roboto Medium 16sp, all caps; elevation 4dp when scrolled",
+   "tokens": "component.android.top-bar.height / height-tablet",
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "section-tabs",
+   "what": "Section tabs",
+   "ios": "44 pt, 15 pt between tabs, 4 pt underline fading in over 0.32 s; Open Sans Bold 11; SemiBold 12 in BS, CT, DP, HC, MC, NYDN, OS, SS, TDP, TDPS, VP, TIVDB",
+   "android": "48dp, 12dp side padding, scrollable, 3dp indicator; Open Sans SemiBold 12sp; elevation 2dp",
+   "tokens": "component.android.section-tabs.height / indicator",
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "tab-bar",
+   "what": "Bottom tab bar",
+   "ios": "iOS default height; system font; iOS 26: system 9 pt medium titles, NEWS / YOU",
+   "android": "56dp, 24dp icons, label Roboto Regular 10sp 2dp below the icon",
+   "tokens": "component.android.bottom-nav.height, component.android.tab-bar.icon-height",
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "breaking-banner",
+   "what": "Breaking-news banner",
+   "ios": "35 pt; Open Sans Bold 14",
+   "android": "Section-front list item; padding 10dp (24dp sides at sw600dp); text 60dp right margin; close 40dp; Open Sans Bold 14sp white on #cf000e, 2dp white line under it. Height follows the content.",
+   "tokens": "component.android.overlay.close (40dp close)",
+   "bucket": "Core"
+  },
+  {
+   "id": "section-header",
+   "what": "Section header band",
+   "ios": "30 pt, 10 pt text inset",
+   "android": "—",
+   "tokens": "",
+   "bucket": "iOS only"
+  },
+  {
+   "id": "status-bar",
+   "what": "Status bar",
+   "ios": "System; takes the nav bar color",
+   "android": "System; color and icon style per Android version (DEC-15, Components · App shell › 01)",
+   "tokens": "statusbar.android.*",
+   "bucket": "Android only"
+  }
+ ],
+ "elevation": {
+  "ios": [
+   {
+    "where": "Top banner alert",
+    "opacity": 0.18,
+    "radius": 14,
+    "offset": "0, 8"
+   },
+   {
+    "where": "Persistent audio player",
+    "opacity": 0.2,
+    "radius": 10,
+    "offset": "0, −2"
+   },
+   {
+    "where": "Web view sheet",
+    "opacity": 0.15,
+    "radius": 10,
+    "offset": "0, 4"
+   },
+   {
+    "where": "Alert with image",
+    "opacity": 0.5,
+    "radius": 5,
+    "offset": "2, 2"
+   },
+   {
+    "where": "Mini media player",
+    "opacity": 0.3,
+    "radius": 4,
+    "offset": "0, 1"
+   },
+   {
+    "where": "Newsletters back button",
+    "opacity": 0.15,
+    "radius": 3,
+    "offset": "0, 1"
+   },
+   {
+    "where": "Photo push transition",
+    "opacity": 0.4,
+    "radius": 6,
+    "offset": "0, −3"
+   }
+  ],
+  "ios_note": "All black; no shared elevation scale. Recirculation cards take their shadow from the article style.",
+  "android": [
+   {
+    "where": "Toolbar",
+    "dp": "4 on scroll (0 at rest)"
+   },
+   {
+    "where": "Settings, web and login toolbars",
+    "dp": "1"
+   },
+   {
+    "where": "Section tabs",
+    "dp": "2"
+   },
+   {
+    "where": "Cards",
+    "dp": "3 (special-section cards 4)"
+   }
+  ]
+ },
+ "motion": {
+  "ios": [
+   {
+    "where": "Most fades and expands",
+    "duration": "0.3 s"
+   },
+   {
+    "where": "Recirculation, games landing, live blog",
+    "duration": "0.5 s"
+   },
+   {
+    "where": "Section front and Your News",
+    "duration": "0.5 s after 0.2 s delay, ease-out"
+   },
+   {
+    "where": "Section tab underline",
+    "duration": "0.32 s"
+   },
+   {
+    "where": "Article layout",
+    "duration": "0.18 s"
+   },
+   {
+    "where": "Section front top region",
+    "duration": "0.1 s"
+   },
+   {
+    "where": "Tournament loading",
+    "duration": "0.72 s"
+   },
+   {
+    "where": "Widget shimmer",
+    "duration": "1.5 s"
+   }
+  ],
+  "android": [
+   {
+    "where": "Footer ad slide",
+    "duration": "200 ms"
+   },
+   {
+    "where": "List item animator",
+    "duration": "300 ms decelerate"
+   },
+   {
+    "where": "Section layout transition",
+    "duration": "300 ms"
+   },
+   {
+    "where": "slide_up / slide_down",
+    "duration": "system medium duration, accelerate"
+   },
+   {
+    "where": "Pulse",
+    "duration": "280 ms, scale 1.1"
+   },
+   {
+    "where": "Shimmer",
+    "duration": "1000–1200 ms linear loop"
+   }
+  ]
+ },
+ "controls": [
+  {
+   "id": "segmented",
+   "what": "Segmented control (For You / Saved / Alerts)",
+   "ios": "iOS system, same in every market: selected #FFFFFF on #F2F2F7, system font, 50 pt band",
+   "android": "MaterialButtonToggleGroup: track #EEEEEE radius 24dp; selected #FFFFFF (TSAR #F5F5F5) with #000000 text; unselected transparent with #696969 text; 17sp bold",
+   "swatches": {
+    "ios": [
+     "#FFFFFF",
+     "#F2F2F7"
+    ],
+    "android": [
+     "#EEEEEE",
+     "#FFFFFF",
+     "#696969"
+    ]
+   },
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "loading",
+   "what": "Loading indicator",
+   "ios": "large system spinner on a white card, radius 12; spinner #004E87 in 66 markets; DP #005F7E, VP #005F7E, BS #DAA520, HC #4FA8D1, TDCD #5B9BC8, TIVDB #E0E2E4",
+   "android": "Full-screen progress dialog. Section-front spinner #D5D5D5 (55dp); Section-front top bar #49B0D6 → #35B5E4 gradient (2dp); Generic spinner #E0E6EC → #2A5381; Paywall spinner #2A2A2A; Web-view bar #1E88E5 on #E3F2FD; Other ProgressBars each market's MainStyle_Control_Activated",
+   "swatches": {
+    "ios": [
+     "#004E87"
+    ],
+    "android": [
+     "#D5D5D5",
+     "#2A2A2A",
+     "#1E88E5"
+    ]
+   },
+   "bucket": "Core"
+  },
+  {
+   "id": "permission-prompt",
+   "what": "Notification prompt buttons",
+   "ios": "Yes Open Sans Bold 14 (filled) / No Open Sans Regular 14, underlined except VP, no fill; 40 pt, radius 5",
+   "android": "CUSTOMIZE: Roboto Medium 14sp, all caps, white, about 40dp, full width, square; fill #FF6859 per the answer (export differs per market: MISSING-ASSETS 5.6). NO, THANKS: transparent, black text",
+   "swatches": {
+    "android": [
+     "#FF6859"
+    ]
+   },
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "savings-badge",
+   "what": "Savings label",
+   "ios": "110 × 30 pt, white, 2 pt subscriptionTintColor, radius 13; Open Sans Bold 13 in subscriptionTintColor; inset 10 pt phone, 35 pt iPad",
+   "android": "White, 2dp stroke in the buy color, radius 15, text #004e87; font and padding: MISSING-ASSETS 5.6",
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "button-account",
+   "what": "Manage subscription buttons",
+   "ios": "Modal: 44 pt, radius 8; one filled with the nav bar color; white Cancel with a 1 pt black border (white on white in 7 markets, DSC-34)",
+   "android": "Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6",
+   "bucket": "Core, per-platform value"
+  },
+  {
+   "id": "social-signin",
+   "what": "Social sign-in",
+   "ios": "Newsletters login only, Apple and Google: 52 pt, radius 9, Open Sans SemiBold 18 (Dynamic Type), 1 pt outline, 22 pt icon, 12 pt gap",
+   "android": "None in the app: login is the Auth0 hosted page",
+   "bucket": "iOS only"
+  }
+ ]
+}

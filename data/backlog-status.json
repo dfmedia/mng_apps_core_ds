@@ -227,21 +227,21 @@
   "component/breaking-banner": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked",
+   "note": "Colors done (alert, alerttext). Android: Open Sans Bold 14sp, 10dp padding, close 40dp, 2dp white line, height follows the content (Apps team and Android style guide, 2026-11-19); iOS 35 pt, Open Sans Bold 14 (DREAMT-4718). Ready to build. DSC-15/19 parked. Sizes documented: Core Layout · iOS vs Android › 03",
    "figma": "todo",
    "blocked_by": ""
   },
   "component/nav-bar": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13)",
+   "note": "Colors done (navbar, navtext, navicon). Android sizes answered: 56dp phone / 64dp tablet, title Roboto Medium 16sp caps (Apps team, DREAMT-4719, 2026-11-19); iOS: system bar (DREAMT-4718). Ready to build (DEC-13). Sizes documented: Core Layout · iOS vs Android › 03",
    "figma": "todo",
    "blocked_by": ""
   },
   "component/tab-bar": {
    "tokens": "partial",
    "code": "partial",
-   "note": "Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build",
+   "note": "Colors done (tab roles + Android labels). Android 56dp, 24dp icons, Roboto Regular 10sp (Apps team, DREAMT-4719, 2026-11-19); iOS default height, system font, iOS 26 floating bar (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03",
    "figma": "todo",
    "blocked_by": ""
   },
@@ -299,7 +299,7 @@
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build"
+   "note": "Colors done per platform (DEC-13). Android 48dp, Open Sans SemiBold 12sp (confirmed), 12dp side padding, 3dp indicator; iOS 44 pt, 15 pt between tabs, 4 pt underline (DREAMT-4718). Ready to build. Sizes documented: Core Layout · iOS vs Android › 03"
   },
   "component/subscription-option": {
    "figma": "done",
@@ -354,18 +354,18 @@
    "note": "DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw)"
   },
   "component/segmented": {
-   "figma": "todo",
+   "figma": "partial",
    "tokens": "todo",
    "code": "todo",
    "blocked_by": "",
-   "note": "iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19)"
+   "note": "iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review"
   },
   "component/loading": {
-   "figma": "todo",
+   "figma": "partial",
    "tokens": "todo",
    "code": "todo",
    "blocked_by": "",
-   "note": "iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md"
+   "note": "iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review"
   },
   "component/button-whats-new": {
    "figma": "partial",
@@ -403,18 +403,18 @@
    "note": "Listed as shipped in docs/GUIDE-EXTRAS.md; per-market artwork, not drawn in Figma"
   },
   "layout/elevation": {
-   "figma": "todo",
+   "figma": "done",
    "tokens": "partial",
    "code": "written",
    "blocked_by": "",
-   "note": "Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new)"
+   "note": "Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped)"
   },
   "layout/motion": {
-   "figma": "todo",
-   "tokens": "todo",
-   "code": "todo",
+   "figma": "done",
+   "tokens": "na",
+   "code": "na",
    "blocked_by": "",
-   "note": "Android values answered 2026-11-19 (DREAMT-4719); iOS sets them where used (no shared scale). Document as shipped first (Karl, 2026-11-10: design nothing new)"
+   "note": "Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new)"
   }
  },
  "next": [

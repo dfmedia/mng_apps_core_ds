@@ -106,6 +106,7 @@ docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
 docs/MISSING-ASSETS.md            open questions for the Apps team, written for them (numbered with no gaps)
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
+docs/SHIPPED-SPECS.md             generated: app shell sizes, elevation, motion and other controls, iOS vs Android as shipped
 docs/GUIDE-EXTRAS.md              generated: style-guide items documented as shipped (ad slots, What's New button, widget, eEdition colors, images)
 docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md)
 docs/ORIENTATION.md               generated: phone / tablet / foldable orientation as shipped
@@ -155,6 +156,8 @@ python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)
 python3 scripts/build_system_tokens.py     # DEC-16: tokens/*/system.tokens.json, data/system-tokens.json, docs/SYSTEM-TOKENS.md (before npm run build)
+python3 scripts/build_shipped_specs.py   # app shell sizes, elevation, motion, other controls as shipped (data/shipped-specs.json, docs/SHIPPED-SPECS.md)
+python3 scripts/figma_shipped_specs.py shell|motion|controls   # prints JS for Core Layout · iOS vs Android › 03 / 04 and Components · Controls › 01
 python3 scripts/figma_component_ownership.py   # prints JS for Core Components · Platform Ownership › 02 · Component ownership (generated) from data/component-platform-map.json
 python3 scripts/build_registry.py   # run last; reads the two maps above
 python3 scripts/build_backlog.py    # after the registry: docs/BACKLOG.md from data/backlog-status.json (edit that file to mark progress)

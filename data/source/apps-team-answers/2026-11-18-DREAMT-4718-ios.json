@@ -130,5 +130,164 @@
    "underline": "Only \"Log In\" is underlined",
    "text": "Per market; default \"Have an account? / Log In\""
   }
- }
+ },
+ "shell": {
+  "$note": "Structured copy of 5.5 (2026-11-18-DREAMT-4718-ios.md). Units pt.",
+  "nav_bar": {
+   "height": 44,
+   "note": "logo at its natural size"
+  },
+  "section_tabs": {
+   "height": 44,
+   "gap": 15,
+   "indicator": 4,
+   "indicator_fade_s": 0.32,
+   "label": "Open Sans Bold 11; SemiBold 12 in BS, CT, DP, HC, MC, NYDN, OS, SS, TDP, TDPS, VP, TIVDB"
+  },
+  "breaking_news": {
+   "height": 35,
+   "label": "Open Sans Bold 14"
+  },
+  "section_header": {
+   "height": 30,
+   "inset": 10
+  },
+  "tab_bar": {
+   "height": "iOS default",
+   "label": "system font; iOS 26: system 9 pt medium titles, NEWS / YOU"
+  }
+ },
+ "controls": {
+  "$note": "Structured copy of 5.6.",
+  "push_prompt": {
+   "height": 40,
+   "radius": 5,
+   "yes": "Open Sans Bold 14",
+   "no": "Open Sans Regular 14, underlined except VP, no fill"
+  },
+  "manage_subscription_modal": {
+   "height": 44,
+   "radius": 8,
+   "buttons": "one filled with the nav bar color; white Cancel with a 1 pt black border"
+  },
+  "savings_pill": {
+   "width": 110,
+   "height": 30,
+   "radius": 13,
+   "border": "2 pt subscriptionTintColor",
+   "fill": "white",
+   "label": "Open Sans Bold 13 in subscriptionTintColor",
+   "inset": "10 pt phone, 35 pt iPad"
+  },
+  "social_signin": {
+   "where": "Newsletters login only, Apple and Google",
+   "height": 52,
+   "radius": 9,
+   "label": "Open Sans SemiBold 18 (Dynamic Type)",
+   "outline": 1,
+   "icon": 22,
+   "gap": 12
+  },
+  "segmented": {
+   "style": "iOS system, same in every market",
+   "selected": "#FFFFFF",
+   "track": "#F2F2F7",
+   "label": "system font",
+   "band": 50
+  },
+  "loading": {
+   "style": "large system spinner on a white card, radius 12",
+   "spinner": {
+    "majority": "#004E87",
+    "majority_markets": 66,
+    "exceptions": {
+     "DP": "#005F7E",
+     "VP": "#005F7E",
+     "BS": "#DAA520",
+     "HC": "#4FA8D1",
+     "TDCD": "#5B9BC8",
+     "TIVDB": "#E0E2E4"
+    }
+   }
+  }
+ },
+ "shadows": [
+  {
+   "where": "Top banner alert",
+   "opacity": 0.18,
+   "radius": 14,
+   "offset": "0, 8"
+  },
+  {
+   "where": "Persistent audio player",
+   "opacity": 0.2,
+   "radius": 10,
+   "offset": "0, −2"
+  },
+  {
+   "where": "Web view sheet",
+   "opacity": 0.15,
+   "radius": 10,
+   "offset": "0, 4"
+  },
+  {
+   "where": "Alert with image",
+   "opacity": 0.5,
+   "radius": 5,
+   "offset": "2, 2"
+  },
+  {
+   "where": "Mini media player",
+   "opacity": 0.3,
+   "radius": 4,
+   "offset": "0, 1"
+  },
+  {
+   "where": "Newsletters back button",
+   "opacity": 0.15,
+   "radius": 3,
+   "offset": "0, 1"
+  },
+  {
+   "where": "Photo push transition",
+   "opacity": 0.4,
+   "radius": 6,
+   "offset": "0, −3"
+  }
+ ],
+ "shadows_note": "All black; no shared elevation scale. Recirculation cards take their shadow from the article style.",
+ "motion": [
+  {
+   "where": "Most fades and expands",
+   "duration": "0.3 s"
+  },
+  {
+   "where": "Recirculation, games landing, live blog",
+   "duration": "0.5 s"
+  },
+  {
+   "where": "Section front and Your News",
+   "duration": "0.5 s after 0.2 s delay, ease-out"
+  },
+  {
+   "where": "Section tab underline",
+   "duration": "0.32 s"
+  },
+  {
+   "where": "Article layout",
+   "duration": "0.18 s"
+  },
+  {
+   "where": "Section front top region",
+   "duration": "0.1 s"
+  },
+  {
+   "where": "Tournament loading",
+   "duration": "0.72 s"
+  },
+  {
+   "where": "Widget shimmer",
+   "duration": "1.5 s"
+  }
+ ]
 }
