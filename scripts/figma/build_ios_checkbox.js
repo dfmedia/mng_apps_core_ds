@@ -60,7 +60,7 @@ DATA.sets.forEach(s => table.appendChild(row(`${s.set} (${s.markets.length})`, s
 DATA.not_mapped.forEach(e => table.appendChild(row(e.file, e.note)));
 root.appendChild(table);
 const extra = frame('Not mapped', 'HORIZONTAL', 8); extra.counterAxisAlignItems = 'CENTER';
-DATA.not_mapped.forEach(e => { extra.appendChild(imageRect(e.file)); extra.appendChild(text(`${e.file}: in the asset catalog, use not documented`, 11, 'Regular', '#555555')); });
+DATA.not_mapped.forEach(e => { extra.appendChild(imageRect(e.file)); extra.appendChild(text(`${e.file}: ${e.note}`, 11, 'Regular', '#555555')); });
 root.appendChild(extra);
 page.children.filter(n => n.name === TEMP).forEach(n => n.remove());
 const sec = figma.createSection(); sec.name = SECTION; page.appendChild(sec); sec.appendChild(root);

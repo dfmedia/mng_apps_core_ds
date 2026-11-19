@@ -25,7 +25,7 @@ comparison = [
  ('Pressed', 'Native platform feedback', B['pressed'], 'Same', ''),
  ('Disabled', f"{DEC['provisional']['disabled']['fill']} / {DEC['provisional']['disabled']['label']} (Android values, new on iOS)", 'Not stated; not shipped on iOS', 'Unclear', ''),
  ('Text link font', f"{DEC['provisional']['ios_link_font']['postscript']} {DEC['provisional']['ios_link_font']['size']}, provisional", f"{B['log_in_link']['font']}; {ex_txt}", 'Differs', '8 markets use a smaller size'),
- ('Text link underline', 'None' if not LINK['underline'] else 'Underlined', B['log_in_link']['underline'], 'Differs', ''),
+ ('Text link underline', 'None' if not LINK['underline'] else 'Underlined', B['log_in_link']['underline'] + ' in the default text', 'Differs', 'TDP screenshot: its own text is underlined throughout'),
 ]
 out = {'generated_by': 'scripts/build_button_ios_review.py', 'status': 'Findings only. Karl, 2026-11-19: no rebuild until the Apps team answers MISSING-ASSETS 5.10', 'screenshot': 'TDP-6-paywall (f79fe3339): about 44–45 pt tall, radius about 8 pt, white bold uppercase label; the whole Log In text underlined',
        'sources': {'spec': 'DEC-07, data/source/button-shipped.json (TroncKit e30ad2585)', 'shipped': ANS['source']},

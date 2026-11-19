@@ -44,23 +44,31 @@ if MODE == 'vars':
 
 elif MODE == 'core-ads':
     I = D['ad_slots']['ios']; col = {c['name']: c for c in D['ad_slots']['colors_core']}
-    ios_unknown = 'Same as Android, in pt (Apps team, 2026-11-18): 320 × 50 phone / 728 × 90 tablet first slot, 300 × 250 others'
+    ANS = json.load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))['ad_slots']
+    isz = lambda k: f"{ANS['sizes'][k]['width']} × {ANS['sizes'][k]['height']}"
+    ios_slot = {x['id']: x for x in ANS['slots']}
     rows = [{'group': 'Colors · Core tokens (DEC-16)'}]
     for n, what, si, sa in (('ad/background', 'Ad slot background', 'cellAdBackgroundColor', 'ad_background'), ('ad/label', "'Advertisement' label", 'adLabelTextColor', 'advertisement_title')):
         v = col[n]['value']
         rows.append([{'t': what, 'b': True}, {'t': f"{hx(v['ios'])} · {si}", 'sw': v['ios'], 'v': f'System colors::{n}'},
                      {'t': f"{hx(v['android'])} · {sa}", 'sw': v['android'], 'v': f'System colors::{n}'}, f'{n} (System colors)', {'chip': 'Core'}])
     ad = D['ad_slots']['ios_adhesion']
-    rows.append([{'t': 'Adhesion (sticky) banner background', 'b': True}, f"{hx(ad['value'])} · {ad['source']} (iOS token {ad['name']}, iOS file)", '—', ad['name'] + ' (System colors · iOS)', {'chip': 'iOS only'}])
+    rows.append([{'t': 'Adhesion (sticky) banner background', 'b': True}, f"{hx(ad['value'])} · {ad['source']} (iOS token {ad['name']}, iOS file). {ANS['adhesion_note']}", '—', ad['name'] + ' (System colors · iOS)', {'chip': 'iOS only'}])
     rows.append({'group': 'Sizes · iOS pt, Android dp'})
     for s in A['slots']:
         andr = f"{sz(s['phone'])} phone · {sz(s['tablet'])} tablet" if s['phone'] != s['tablet'] else f"{sz(s['phone'])} phone and tablet"
         toks = ' / '.join(dict.fromkeys(f"component.android.ad.{k}" for k in (s['phone'], s['tablet'])))
-        ios = ('None: iOS has no adhesion (sticky) banner (Apps team, 2026-11-18)' if s['id'] == 'sticky-footer' else ios_unknown)
-        rows.append([{'t': s['name'] + (f" · {s['where']}" if s.get('where') else ''), 'b': True}, ios, andr, toks, {'chip': 'Core, per-platform value'}])
+        if s['id'] == 'sticky-footer':
+            ios, chip = 'None: iOS has no adhesion (sticky) banner (Apps team, 2026-11-18)', 'Android only'
+        else:
+            x = ios_slot['first' if s['id'] == 'first' else 'other']
+            ios = (f"{isz(x['phone'])} phone · {isz(x['tablet'])} tablet" if x['phone'] != x['tablet'] else f"{isz(x['phone'])} phone and tablet") + ' (Apps team, 2026-11-18)'
+            chip = 'Core'
+        rows.append([{'t': s['name'] + (f" · {s['where']}" if s.get('where') else ''), 'b': True}, ios, andr, toks, {'chip': chip}])
     rows.append({'group': 'Rules and assets'})
     for r in A['rules']:
         rows.append(['Android rule', '—', r, '—', {'chip': 'Android only'}])
+    rows.append(['iOS rule', ANS['rules'][1], '—', '—', {'chip': 'iOS only'}])
     for k in I['known'][:2]:
         rows.append(['iOS asset', k, '—', '—', {'chip': 'iOS only'}])
     T = {'name': '02 · Ad slots', 'title': 'Ad slots (as shipped)',

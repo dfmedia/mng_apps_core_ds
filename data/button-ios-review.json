@@ -149,9 +149,9 @@
   {
    "property": "Text link underline",
    "spec": "None",
-   "shipped": "Only \"Log In\" is underlined",
+   "shipped": "Only \"Log In\" is underlined in the default text",
    "verdict": "Differs",
-   "note": ""
+   "note": "TDP screenshot: its own text is underlined throughout"
   }
  ],
  "questions": [
