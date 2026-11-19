@@ -1373,10 +1373,10 @@
    "name": "Segmented control",
    "owner": "core+variant",
    "figma": "partial",
-   "tokens": "todo",
-   "code": "todo",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review",
+   "note": "iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review Colors are tokens (color.ios-control.segmented.*, color.android-control.segmented.*; Apps team answers).",
    "overall": "in progress"
   },
   {
@@ -1386,10 +1386,10 @@
    "name": "Loading indicator",
    "owner": "core",
    "figma": "partial",
-   "tokens": "todo",
-   "code": "todo",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review",
+   "note": "iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review iOS spinner = System color progressHUDForegroundColor (67 of 78, exceptions documented); Android spinners color.android-control.loading.* and System loading_spinner_* (Apps team answers).",
    "overall": "in progress"
   },
   {
@@ -1490,11 +1490,11 @@
    "name": "Ad slots",
    "owner": "core+variant",
    "figma": "done",
-   "tokens": "partial",
-   "code": "partial",
+   "tokens": "done",
+   "code": "written",
    "blocked_by": "",
-   "note": "iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label",
-   "overall": "in progress"
+   "note": "Core tokens component.ad.* (banner-phone 320×50, banner-tablet 728×90, box 300×250): iOS answer (2026-11-18) = Android, so Core; Swift MNGScale.componentAd*, Android @dimen/mng_component_ad_* (same names as before). Figma: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01.",
+   "overall": "built"
   },
   {
    "id": "layout/elevation-ios",
@@ -1503,11 +1503,11 @@
    "name": "Shadows (iOS)",
    "owner": "ios",
    "figma": "done",
-   "tokens": "partial",
+   "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped)",
-   "overall": "in progress"
+   "note": "iOS shadows as shipped are tokens (shadow.ios.*, 7 values from the f79fe3339 export; Swift MNGShadowTokens). No shared elevation scale on iOS. Figma: Core Layout · iOS vs Android › 04.",
+   "overall": "built"
   },
   {
    "id": "layout/elevation-android",

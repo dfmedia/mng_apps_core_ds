@@ -79,7 +79,7 @@ L = ['# Shipped specs: app shell, elevation, motion, controls (generated)', '',
      "iOS sizes are tokens since the f79fe3339 export (`component.ios.*`, tokens/ios/scale.tokens.json). Figma: Core Layout · iOS vs Android › 03, 04; Core Components · Controls › 01.", '',
      '## App shell sizes', '', '| Part | Owner | iOS | Android | Android tokens |', '|---|---|---|---|---|']
 L += [f"| {r['what']} | {r['bucket']} | {r['ios']} | {r['android']} | {r['tokens'] or '—'} |" for r in shell]
-L += ['', '## Elevation and shadows', '', f"iOS: {I['shadows_note']}", '', '| iOS (where) | Opacity | Radius | Offset |', '|---|---|---|---|']
+L += ['', '## Elevation and shadows', '', f"iOS: {I['shadows_note']} Tokens: `shadow.ios.*` (Swift `MNGShadowTokens`, from the f79fe3339 export).", '', '| iOS (where) | Opacity | Radius | Offset |', '|---|---|---|---|']
 L += [f"| {s['where']} | {s['opacity']} | {s['radius']} | {s['offset']} |" for s in I['shadows']]
 L += ['', '| Android (where) | Elevation |', '|---|---|'] + [f"| {e['where']} | {e['dp']} (dp) |" for e in A['elevation']]
 L += ['', '## Motion', '', '| iOS (where) | Duration |', '|---|---|'] + [f"| {m['where']} | {m['duration']} |" for m in I['motion']]

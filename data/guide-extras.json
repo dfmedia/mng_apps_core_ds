@@ -346,17 +346,17 @@
     "banner-phone": {
      "width": 320,
      "height": 50,
-     "token": "component.android.ad.banner-phone"
+     "token": "component.ad.banner-phone"
     },
     "banner-tablet": {
      "width": 728,
      "height": 90,
-     "token": "component.android.ad.banner-tablet"
+     "token": "component.ad.banner-tablet"
     },
     "box": {
      "width": 300,
      "height": 250,
-     "token": "component.android.ad.box"
+     "token": "component.ad.box"
     }
    }
   },

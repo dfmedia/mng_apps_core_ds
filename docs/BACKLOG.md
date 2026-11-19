@@ -15,9 +15,9 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Foundations | 8 | 1 | 7 | 0 | 0 | 0 |
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 25 | 0 | 10 | 15 | 0 | 0 |
-| Layout | 12 | 3 | 6 | 3 | 0 | 0 |
+| Layout | 12 | 3 | 8 | 1 | 0 | 0 |
 | Icons | 63 | 0 | 0 | 0 | 0 | 63 |
-| **Total** | **120** | **4** | **35** | **18** | **0** | **63** |
+| **Total** | **120** | **4** | **37** | **16** | **0** | **63** |
 
 ## Suggested order
 
@@ -107,8 +107,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Checkbox (Your News topics) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Android checkbox built (checked = action, unchecked #757575). iOS checkbox built as shipped from the image sets (iOS file, Components · Controls › 02; 8 sets × 2 states, docs/components/CHECKBOX-IOS.md); image placement and Uncheck-Grey: MISSING-ASSETS 5.7. Core checkbox still recommended |
 | Text size slider (iOS) | iOS | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
 | Text size list dialog (Android) | Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: iOS slider built (track/ticks #999999, thumb = action); Android dialog has no custom colors (nothing to draw) |
-| Segmented control | Core + iOS + Android | 🟡 partial | ⬜ to do | ⬜ to do | iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review |
-| Loading indicator | Core | 🟡 partial | ⬜ to do | ⬜ to do | iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review |
+| Segmented control | Core + iOS + Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | iOS system style, white selected on #F2F2F7, 50 pt band (DREAMT-4718). Android track #eeeeee radius 24dp, selected #ffffff (TSAR #f5f5f5), unselected text #696969, 17sp bold (Apps team, DREAMT-4719, 2026-11-19). Documented as shipped: Core Components · Controls › 01; component after the ownership review Colors are tokens (color.ios-control.segmented.*, color.android-control.segmented.*; Apps team answers). |
+| Loading indicator | Core | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | iOS large system spinner on a white card radius 12, #004e87 in 66 markets (DREAMT-4718). Android spinners and bars per screen (Apps team, DREAMT-4719, 2026-11-19); docs/REGISTRY.md. Documented as shipped: Core Components · Controls › 01; component after the ownership review iOS spinner = System color progressHUDForegroundColor (67 of 78, exceptions documented); Android spinners color.android-control.loading.* and System loading_spinner_* (Apps team answers). |
 
 ### Other
 
@@ -129,8 +129,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Article side margin | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 Core 16; iOS width formula not tokenised; Android 30/75 |
 | Minimum touch target | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | ⛔ Spacing, radius and size scales (foundations below) · DEC-11 iOS 44, Android 48 (not enforced in the apps) |
 | Orientation | Core | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 01 · Orientation (docs/ORIENTATION.md). Phones portrait only, tablets all, no foldables on both apps |
-| Ad slots | Core + iOS + Android | ✅ done | 🟡 partial | 🟡 partial | iOS sizes answered 2026-11-18 (same as Android, no sticky banner); not yet in iOS tokens or the Core Figma table. Documented as shipped: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01 (slots bound to component.android.ad.* and Core ad/background). Colors Core ad/background, ad/label |
-| Shadows (iOS) | iOS | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
+| Ad slots | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Core tokens component.ad.* (banner-phone 320×50, banner-tablet 728×90, box 300×250): iOS answer (2026-11-18) = Android, so Core; Swift MNGScale.componentAd*, Android @dimen/mng_component_ad_* (same names as before). Figma: Core Layout · iOS vs Android › 02 · Ad slots; Android Layout · Ads, widget, eEdition › 01. |
+| Shadows (iOS) | iOS | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | iOS shadows as shipped are tokens (shadow.ios.*, 7 values from the f79fe3339 export; Swift MNGShadowTokens). No shared elevation scale on iOS. Figma: Core Layout · iOS vs Android › 04. |
 | Elevation (Android) | Android | ✅ done | 🟡 partial | 📝 written, compile-checked, not in an app yet | Android elevation tokens component.android.elevation.* (4 values, Android style guide 2026-11-19) and Figma variables Components · Android elevation/*; iOS shadows set where used (Apps team, f79fe3339), not tokens. Document as shipped (Karl, 2026-11-10: design nothing new). Figma: Core Layout · iOS vs Android › 04 (as shipped) |
 | Motion (iOS) | iOS | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |
 | Motion (Android) | Android | ✅ done | — n/a | — n/a | Documented as shipped: Core Layout · iOS vs Android › 04; docs/SHIPPED-SPECS.md. No spec on either app, so no tokens (Karl, 2026-11-10: design nothing new) |

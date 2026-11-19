@@ -10,7 +10,7 @@ Sources: iOS MNG iOS Style Guide artifact (https://claude.ai/artifact/V364juyHFU
 
 Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad/label` `#999999` · 153, 153, 153. iOS also has the adhesion (sticky) banner background `adhesion-banner-background` `#ffffff` · 255, 255, 255.
 
-**Android sizes** (dp, tokens `component.android.ad.*`, source: project/4-layout.md › Ads; project/tokens.json breakpoint bp-sw500 usage):
+**Android sizes** (dp, Core tokens `component.ad.*`, source: project/4-layout.md › Ads; project/tokens.json breakpoint bp-sw500 usage):
 
 | Slot | Phone | Tablet |
 |---|---|---|
@@ -24,7 +24,7 @@ Colors are Core tokens (DEC-16): `ad/background` `#ffffff` · 255, 255, 255; `ad
 
 **iOS sizes** (pt, Apps team answer, Ameer Moukadam, DREAMT-4718 comment 276648, 2026-11-18; TroncKit @ f79fe3339; MNG iOS Style Guide v21 (artifact version 1795029427-a74c)): First article slot: 320 × 50 phone, 728 × 90 tablet; All other slots: 300 × 250 phone, 300 × 250 tablet. Same in every market and the same as Android. When the view is too narrow for the ad, it falls back to 320 × 50. iOS has no adhesion (sticky) banner. The adhesionBannerBackgroundColor theme color exists but no banner uses it.
 
-**iOS assets:** Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background). iOS ad sizes are not yet tokens or in Figma.
+**iOS assets:** Offline ad placeholder image ad-bigbox-offline-250.jpg (assets/Ads); Outbrain logo outbrainLogo.png (assets/Ads); Adhesion (sticky) banner background adhesionBannerBackgroundColor (iOS system color, token adhesion-banner-background). iOS ad sizes (Apps team, DREAMT-4718) are the same as Android, so the sizes are Core tokens `component.ad.*` (Swift `MNGScale.componentAd…`, Android `@dimen/mng_component_ad_…`).
 
 ## What's New Continue button (Android only)
 

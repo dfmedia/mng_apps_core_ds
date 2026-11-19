@@ -127,6 +127,38 @@
       "source": "system"
      }
     }
+   },
+   "segmented": {
+    "selected": {
+     "$value": "#ffffff",
+     "$type": "color",
+     "$description": "Segmented control (For You / Saved / Alerts): selected segment, iOS system style, every market (Apps team, DREAMT-4718)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        255,
+        255,
+        255
+       ],
+       "source": "system (Apps team)"
+      }
+     }
+    },
+    "track": {
+     "$value": "#f2f2f7",
+     "$type": "color",
+     "$description": "Segmented control track, iOS system style, every market (Apps team, DREAMT-4718)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        242,
+        242,
+        247
+       ],
+       "source": "system (Apps team)"
+      }
+     }
+    }
    }
   }
  },

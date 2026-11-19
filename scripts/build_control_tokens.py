@@ -84,6 +84,27 @@ ANDROID_FOLLOWS = {'savings-label-text': ('buy', 'Savings label text and 2dp out
 grp = andr.setdefault('color', {}).setdefault('android-control', {})
 grp['$extensions'] = {'mng': {'follows': {k: {'role': r, '$description': d} for k, (r, d) in ANDROID_FOLLOWS.items()}}}
 for k, (h, d) in IOS_SYSTEM.items(): put(ios, f'color.ios-control.{k}', ctok(h, d + ' (DEC-14)', source='system'))
+# Segmented control and loading indicators, from the Apps team answers (not in the exports): DREAMT-4718 (2026-11-18) and DREAMT-4719 (2026-11-19)
+ANS_I = json.load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))['controls']
+ANS_A = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
+seg_i, seg_a = ANS_I['segmented'], ANS_A['segmented']
+for k, h, d in [('segmented.selected', seg_i['selected'], 'Segmented control (For You / Saved / Alerts): selected segment, iOS system style, every market'),
+                ('segmented.track', seg_i['track'], 'Segmented control track, iOS system style, every market')]:
+    put(ios, f'color.ios-control.{k}', ctok(h.lower(), d + ' (Apps team, DREAMT-4718)', source='system (Apps team)'))
+for k, h, d in [('segmented.track', seg_a['track'], 'Segmented control track (MaterialButtonToggleGroup), radius 24dp'),
+                ('segmented.selected', seg_a['selected_fill'], 'Segmented control selected segment (TSAR ' + seg_a['selected_fill_tsar'] + ', documented only)'),
+                ('segmented.selected-label', seg_a['selected_text'], 'Segmented control selected label'),
+                ('segmented.label', seg_a['unselected_text'], 'Segmented control unselected label (unselected segment is transparent)')]:
+    put(andr, f'color.android-control.{k}', ctok(h.lower(), d + ' (Apps team, DREAMT-4719)', source='Apps team'))
+LOAD = {x['where']: x for x in ANS_A['loading']}
+for k, where, d in [('loading.section-front', 'Section-front spinner', 'Section-front loading spinner (55dp)'), ('loading.paywall', 'Paywall spinner', 'Paywall loading spinner')]:
+    put(andr, f'color.android-control.{k}', ctok(LOAD[where]['value'].lower(), d + ' (Apps team, DREAMT-4719)', source='Apps team'))
+g = [x.strip().lower() for x in LOAD['Section-front top bar']['value'].split('gradient')[0].split('→')]
+put(andr, 'color.android-control.loading.top-bar-start', ctok(g[0], 'Section-front top progress bar (2dp), gradient start (Apps team, DREAMT-4719)', source='Apps team'))
+put(andr, 'color.android-control.loading.top-bar-end', ctok(g[1], 'Section-front top progress bar (2dp), gradient end (Apps team, DREAMT-4719)', source='Apps team'))
+wv = [x.strip().lower() for x in LOAD['Web-view bar']['value'].split(' on ')]
+put(andr, 'color.android-control.loading.web-view-bar', ctok(wv[0], 'Web view progress bar (Apps team, DREAMT-4719)', source='Apps team'))
+put(andr, 'color.android-control.loading.web-view-track', ctok(wv[1], 'Web view progress bar track (Apps team, DREAMT-4719)', source='Apps team'))
 # typography for the subscription option label
 put(ios, 'type.ios-control.subscription-option', {'$value': {'fontFamily': 'Open Sans', 'fontWeight': 700, 'fontSize': '16px'}, '$type': 'typography',
     '$description': 'Subscription option label: OpenSans-Bold 16 (SubscriptionOptionButton.xib)', '$extensions': {'mng': {'postscript': 'OpenSans-Bold'}}})

@@ -90,6 +90,160 @@
       }
      }
     }
+   },
+   "segmented": {
+    "track": {
+     "$value": "#eeeeee",
+     "$type": "color",
+     "$description": "Segmented control track (MaterialButtonToggleGroup), radius 24dp (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        238,
+        238,
+        238
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "selected": {
+     "$value": "#ffffff",
+     "$type": "color",
+     "$description": "Segmented control selected segment (TSAR #F5F5F5, documented only) (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        255,
+        255,
+        255
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "selected-label": {
+     "$value": "#000000",
+     "$type": "color",
+     "$description": "Segmented control selected label (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "label": {
+     "$value": "#696969",
+     "$type": "color",
+     "$description": "Segmented control unselected label (unselected segment is transparent) (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        105,
+        105,
+        105
+       ],
+       "source": "Apps team"
+      }
+     }
+    }
+   },
+   "loading": {
+    "section-front": {
+     "$value": "#d5d5d5",
+     "$type": "color",
+     "$description": "Section-front loading spinner (55dp) (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        213,
+        213,
+        213
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "paywall": {
+     "$value": "#2a2a2a",
+     "$type": "color",
+     "$description": "Paywall loading spinner (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        42,
+        42,
+        42
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "top-bar-start": {
+     "$value": "#49b0d6",
+     "$type": "color",
+     "$description": "Section-front top progress bar (2dp), gradient start (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        73,
+        176,
+        214
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "top-bar-end": {
+     "$value": "#35b5e4",
+     "$type": "color",
+     "$description": "Section-front top progress bar (2dp), gradient end (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        53,
+        181,
+        228
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "web-view-bar": {
+     "$value": "#1e88e5",
+     "$type": "color",
+     "$description": "Web view progress bar (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        30,
+        136,
+        229
+       ],
+       "source": "Apps team"
+      }
+     }
+    },
+    "web-view-track": {
+     "$value": "#e3f2fd",
+     "$type": "color",
+     "$description": "Web view progress bar track (Apps team, DREAMT-4719)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        227,
+        242,
+        253
+       ],
+       "source": "Apps team"
+      }
+     }
+    }
    }
   }
  },
