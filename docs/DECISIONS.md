@@ -429,6 +429,6 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 
 ## DEC-23 · Android text link color per market
 
-- **Rule (Karl, 2026-11-19):** the Android paywall log-in link takes each market's `Paywall_LoginButton_Text` (70 of 77 #56A1DD; DP #4FA8D1, NYDN #4591E0, VP #005F7E; OS and SS #FFFFFF, TSAR #F5F5F5, asked in MISSING-ASSETS 5.11). TDH has no Android build: it follows its iOS link (provisional).
+- **Rule (Karl, 2026-11-19):** the Android paywall log-in link takes each market's `Paywall_LoginButton_Text` (70 of 77 #56A1DD; DP and MC #4FA8D1, NYDN #4591E0, VP #005F7E; OS and SS #FFFFFF, TSAR #F5F5F5, asked in MISSING-ASSETS 5.11). TDH has no Android build: it follows its iOS link (provisional).
 - **Why:** the Android screenshots (TDP #56A1DD, NYDN #4591E0) show this key. Our token was #000000 (`Paywall_Text` / `underline_paywall_login`, from the style guide's Buttons table), which was wrong.
 - **Changed:** data/source/button-shipped.json (previous value kept), `button.android.link.color.<market>` (tokens/android/button.tokens.json), Android XML (`mng_button_link` default = majority in values/mng_button.xml, per market in each flavor's mng_brand_colors.xml; mng_apps_android_ds), docs/components/BUTTON.md, IMPROVEMENTS CLR-04 (76 of 78 Android links fail 4.5:1 on white; #56A1DD is 2.67:1), the Android Figma Text link (one variable per market mode).

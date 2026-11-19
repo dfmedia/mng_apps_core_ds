@@ -101,7 +101,7 @@
   },
   "android": {
    "where": "Meter paywall Log In link (\"Already a Subscriber? Log in to your <market> account\")",
-   "color": "Paywall_LoginButton_Text (per market, data/source/android-markets.json): #56A1DD in 70 of 77; DP #4FA8D1, NYDN #4591E0, VP #005F7E; OS and SS #FFFFFF, TSAR #F5F5F5",
+   "color": "Paywall_LoginButton_Text (per market, data/source/android-markets.json): #56A1DD in 70 of 77; DP and MC #4FA8D1, NYDN #4591E0, VP #005F7E; OS and SS #FFFFFF, TSAR #F5F5F5",
    "color_key": "Paywall_LoginButton_Text",
    "evidence": "Android screenshots from the Apps team (Rajal Patel, email 2026-11-19, MISSING-ASSETS 5.3): TDP link #56A1DD, NYDN #4591E0, matching Paywall_LoginButton_Text",
    "font": {
