@@ -16,13 +16,13 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 25 | 0 | 10 | 15 | 0 | 0 |
 | Layout | 12 | 3 | 8 | 1 | 0 | 0 |
-| Icons | 63 | 0 | 0 | 0 | 0 | 63 |
-| **Total** | **120** | **4** | **37** | **16** | **0** | **63** |
+| Icons | 62 | 0 | 0 | 0 | 62 | 0 |
+| **Total** | **119** | **4** | **37** | **16** | **62** | **0** |
 
 ## Suggested order
 
-1. Apps team answers (DREAMT-4718 / 4719, docs/MISSING-ASSETS.md): 5.6 Alerts Enable fill and account buttons, 5.11 white log-in link, 3.4 dark mode, 1.1 icon vectors, 1.12 Amazon icon
-2. Icons: names done (DEC-17, docs/ICON-NAMES.md); glyphs and the Icon component after MISSING-ASSETS 1.1
+1. Apps team: savings label font, size and padding on Android (MISSING-ASSETS 5.6, the last open question)
+2. Icons: draw the Core glyphs to the DEC-17 names (no vector masters on either app), then the Icon component (PROGRESS 1.8)
 
 ## Foundations
 
@@ -48,7 +48,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 |---|---|---|---|---|---|
 | The other themed colors per market (iOS 124, Android 136: 58 / 69 fixed in every market → System collection) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-16: majority tokens (Core 11, iOS 85, Android 103; 27 follow a brand role), every market documented (docs/SYSTEM-COLORS.md palettes), exceptions not built. docs/SYSTEM-TOKENS.md. Figma variables: Core System colors + platform collections |
 | Brand colors, 78 markets (Brand colors + Brand theme) | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-01…06. Swift/Kotlin generated, not compiled in an app yet |
-| Dark mode | Core | — n/a | — n/a | — n/a | iOS: light only, no plans (Apps team, 2026-11-18). Android: the style guide says Settings, web views, login/paywall and Your News topics follow the device's dark setting for theme defaults; asked in MISSING-ASSETS 3.4. Widget night colors are tokens. |
+| Dark mode | Core | — n/a | — n/a | — n/a | iOS: light only, no plans (Apps team, 2026-11-18). Android: every screen the design system covers stays light; only system-drawn views can go dark (web views, unstyled Settings dialogs, the Auth0 page, Your News topics; from code, not checked on a device; Apps team, 2026-11-23). Widget night colors are tokens. |
 
 ## Color roles
 
@@ -86,15 +86,15 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. Android text link color per market (Paywall_LoginButton_Text, DEC-23, 2026-11-19). |
+| Primary button | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); paywall button all caps, subscription options sentence case (screenshots, 5.4 closed). Android text link color per market (link, DEC-24, 2026-11-23; replaces DEC-23). |
 | Continue button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: as shipped per platform. iOS image button 159x55 (Components · Controls), Android 152x54 r9 (Components · Button). Not Core. Future BTN-03 |
 | Subscription option | Core + iOS + Android | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button) |
 | Text link button | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | DEC-07 pilot |
-| Notification prompt buttons | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android fill: MISSING-ASSETS 5.6 (a) · Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19) |
+| Notification prompt buttons | Core + iOS + Android | ⬜ to do | 🟡 partial | 🟡 partial | Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23). |
 | Manage subscription modal buttons (iOS) | iOS | ⬜ to do | 🟡 partial | 🟡 partial | iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34). |
-| Account bottom-sheet buttons (Android) | Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font and height: MISSING-ASSETS 5.6 (b) · Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined. |
+| Account bottom-sheet buttons (Android) | Android | ⬜ to do | 🟡 partial | 🟡 partial | Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23). |
 | What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19) |
-| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font, size and padding: MISSING-ASSETS 5.6 (b) · Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339). |
+| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font, size and padding: MISSING-ASSETS 5.6 (asked again 2026-11-24) · Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339). |
 | Social sign-in buttons | iOS | ⬜ to do | 🟡 partial | 🟡 partial | Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 
@@ -140,91 +140,90 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Search | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Settings | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Share | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Glyph differs by platform convention; one semantic name. |
-| Save (not saved) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Saved | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19). |
-| Home tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19). |
-| Sections / menu | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Alerts tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| For You / Your News tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Gap on both: one custom Core vector. |
-| eNewspaper tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Games tab | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Expand / show more | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Collapse / show less | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Back | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Forward / disclosure | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android has 4 arrows for this; consolidate. |
-| Close | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Close (circle) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Confirm the Android glyph is a circled X. |
-| Account | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (login is the Auth0 web page; no account icon). |
-| Warning | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android uses it only in notifications. |
-| Email | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Refresh | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Filter | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Text size smaller | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only). |
-| Text size larger | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only). |
-| Text size | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only). |
-| Notification small icon | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon). |
+| Search | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Settings | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Share | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Save (not saved) | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Saved | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Home tab | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Sections / menu | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Alerts tab | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| For You / Your News tab | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| eNewspaper tab | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Games tab | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Expand / show more | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Collapse / show less | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Back | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Forward / disclosure | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Close | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Close (circle) | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Account | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Warning | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Email | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Refresh | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Filter | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Text size smaller | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Text size larger | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Text size | Android | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Notification small icon | Android | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
 
 ### Icons · Topics & selection
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Follow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes). |
-| Unfollow topic | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes). |
-| Checked | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Unchecked | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Continue | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
+| Follow topic | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Unfollow topic | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Checked | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Unchecked | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Continue | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
 
 ### Icons · eNewspaper
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Expand page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons). |
-| Fit to screen | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
-| Previous page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
-| Next page | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: inside the PageSuite SDK (not our icons). |
+| Expand page | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Fit to screen | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Previous page | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Next page | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
 
 ### Icons · Media
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Play | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Pause | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Skip back 15 s | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only). |
-| Skip forward 15 s | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only). |
-| Rewind | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide (its audio player has 10 s skip only). |
-| Fast forward | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide (its audio player has 10 s skip only). |
-| 3D embed | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
-| Tournament sport symbols (6) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none; World Cup tabs use text (Barlow Condensed). |
-| Skip back 10 s | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35. |
-| Skip forward 10 s | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35. |
+| Play | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Pause | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Skip back 15 s | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Skip forward 15 s | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Rewind | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Fast forward | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| 3D embed | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Tournament sport symbols (6) | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Skip back 10 s | Android | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Skip forward 10 s | Android | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
 
 ### Icons · Ratings & social
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Rating star (empty) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none; its stars mean saved (special sections), not ratings. |
-| Rating star (half) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (see Rating star (empty)). |
-| Rating star (full) | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none (see Rating star (empty)). |
-| Like / favorite | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
-| Repost | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
-| Verified | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS native tweet embeds only. Android equivalent: none in the Android guide. |
-| Save star (special sections) | Android | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected). |
+| Rating star (empty) | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Rating star (half) | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Rating star (full) | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Like / favorite | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Repost | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Verified | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Save star (special sections) | Android | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
 
 ### Icons · Brands
 
 | Item | Where | Figma | Tokens | Code | Blocked by / note |
 |---|---|---|---|---|---|
-| Apple | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Sign in with Apple is iOS only. Android equivalent: none shipped (file unused). |
-| Google | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Dormant on Android. |
-| Facebook | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| X (Twitter) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Bluesky | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| Instagram | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) |
-| YouTube | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
-| Vimeo | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android guide. |
-| Amazon (sign-in) | Core | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12). |
-| 1Password | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · iOS paywall password autofill. Android equivalent: none in the Android guide. |
-| Outbrain | iOS | ⛔ blocked | — n/a | ⛔ blocked | ⛔ Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8) · Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide). |
+| Apple | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Google | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Facebook | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| X (Twitter) | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Bluesky | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Instagram | Core | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| YouTube | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Vimeo | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| 1Password | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |
+| Outbrain | iOS | ⬜ to do | — n/a | ⬜ to do | Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8). |

@@ -12,7 +12,7 @@ Status key: `PROPOSED` · `WAITING` (on Apps team) · `APPROVED` · `REJECTED` �
 
 | Bucket | Count | What's in it |
 |--------|-------|--------------|
-| Core | 32 | Search, settings, share, save/saved, Home / Sections / Alerts / For You / eNewspaper / Games tabs, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram, Amazon: Amazon asked, MISSING-ASSETS 1.12) |
+| Core | 31 | Search, settings, share, save/saved, Home / Sections / Alerts / For You / eNewspaper / Games tabs, arrows, close, play/pause, check/uncheck, continue, email, refresh, filter, warning, brands used by both (Google, Facebook, X, Bluesky, Instagram). Amazon dropped 2026-11-23: never shown on either app |
 | iOS only | 26 | Text size smaller / larger; skip back / forward 15 s; account; follow / unfollow topic; 4 eNewspaper viewer controls (Android uses the PageSuite SDK); rewind; fast forward; 3D embed; tournament symbols; 3 rating stars; 3 tweet-embed icons; Apple, YouTube, Vimeo, 1Password, Outbrain |
 | Android only | 5 | Text size (one icon); skip back / forward 10 s; notification small icon (a platform requirement); special-section save star (iOS equivalent: Saved, DEC-17) |
 

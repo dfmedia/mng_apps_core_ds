@@ -84,7 +84,7 @@ widget = {**WG, 'unknown': [], 'answered': {'size': WA['size'], 'layout': WA['la
           'day_tokens': [{'name': TOK[k.replace('_', '-')]['name'], 'value': TOK[k.replace('_', '-')]['value'], 'source': k,
                           'night': WA['colors'][k][1], 'night_token': f"color.android-system.widget-night.{k.replace('widget_', '').replace('_', '-')}"} for k in WG['day_keys']]}
 AE = {**S['alerts_enable'], 'answered': AND19['alerts_enable'],
-      'ask': 'Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)'}
+      'resolved': 'Fill: Alerts_Enable_Button_Background per market, as the export says (Apps team, DREAMT-4719, 2026-11-23): the market action in 58 of 77, #DAA520 in 15, DP #4FA8D1, TPD #000000; only OS and TSAR keep the default #FF6859. The style guide is corrected (1795459789-4808).'}
 E = S['eedition']
 eedition = {**E, 'colors': [{**c, 'token': f"color.android-system.eedition.{c['id']}"} for c in E['colors']],
             'contrast': {'tab text on tab container': ratio('#ffffff', '#ffffff'), 'inactive tab text on tab container': ratio('#999999', '#ffffff')}}
@@ -159,9 +159,9 @@ for m, v in whats_new['color_resource_vs_drawable'].items():
     L.append(f"| {m} | {hexrgb(v['color_resource'])} | {hexrgb(v['drawable'])} |")
 L += ['', '## Alerts enable button (Android)', '',
       f"Already tracked: {AE['registry']}. Export: fill `{AE['fill']['key']}` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label {hexrgb(AE['label']['color'])}, {AE['shape'].lower()} corners.", '',
-      f"Apps team ({AND19['source'].split(';')[0]}): CUSTOMIZE: {AE['answered']['label']}, {AE['answered']['padding']}dp padding (about {AE['answered']['height_approx']}dp tall), {AE['answered']['width']}, fill {hexrgb(AE['answered']['fill'].lower())} ({AE['answered']['fill_note']}). "
+      f"Apps team ({AND19['source'].split(';')[0]}): CUSTOMIZE: {AE['answered']['label']}, {AE['answered']['padding']}dp padding (about {AE['answered']['height_approx']}dp tall), {AE['answered']['width']}, fill {hexrgb(AE['answered']['fill'].lower())} ({AE['answered']['fill_note']}; corrected 2026-11-23, see Settled). "
       f"NO, THANKS: {AE['answered']['no_thanks']}. {AE['answered']['alerts_tab']}.", '',
-      f"**To clarify:** {AE['ask']}", '',
+      f"**Settled:** {AE['resolved']}", '',
       '## Home-screen widget (Android only)', '',
       f"Source: {WG['evidence']}. {WG['ios']}.", '',
       '| Color | Day value (token) | Night value (token) |', '|---|---|---|']

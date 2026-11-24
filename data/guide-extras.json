@@ -296,7 +296,7 @@
    "no_thanks": "transparent, black text",
    "alerts_tab": "The Alerts-tab \"Enable Alerts\" is a system AlertDialog button"
   },
-  "ask": "Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)"
+  "resolved": "Fill: Alerts_Enable_Button_Background per market, as the export says (Apps team, DREAMT-4719, 2026-11-23): the market action in 58 of 77, #DAA520 in 15, DP #4FA8D1, TPD #000000; only OS and TSAR keep the default #FF6859. The style guide is corrected (1795459789-4808)."
  },
  "ad_slots": {
   "android": {

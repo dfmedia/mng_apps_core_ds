@@ -2,7 +2,7 @@
  "generated_by": "scripts/build_shipped_specs.py",
  "sources": {
   "ios": "Apps team, DREAMT-4718 (TroncKit f79fe3339)",
-  "android": "Apps team, DREAMT-4719 + Android style guide 1795110354-0c21"
+  "android": "Apps team, DREAMT-4719 + Android style guide 1795110354-0c21 (5.6 follow-ups: 1795459789-4808)"
  },
  "rule": "Documented as shipped (DEC-09). iOS sizes are tokens since the f79fe3339 export (component.ios.*).",
  "shell": [
@@ -222,9 +222,11 @@
    "id": "permission-prompt",
    "what": "Notification prompt buttons",
    "ios": "Yes Open Sans Bold 14 (filled) / No Open Sans Regular 14, underlined except VP, no fill; 40 pt, radius 5",
-   "android": "CUSTOMIZE: Roboto Medium 14sp, all caps, white, about 40dp, full width, square; fill #FF6859 per the answer (export differs per market: MISSING-ASSETS 5.6). NO, THANKS: transparent, black text",
+   "android": "CUSTOMIZE: Roboto Medium 14sp, all caps, white, about 40dp, full width, square; fill Alerts_Enable_Button_Background per market: the market action in 58 of 77, #DAA520 in 15, DP #4FA8D1, TPD #000000, OS and TSAR the default #FF6859 (Apps team, 2026-11-23). NO, THANKS: transparent, black text",
    "swatches": {
     "android": [
+     "#DAA520",
+     "#4FA8D1",
      "#FF6859"
     ]
    },
@@ -234,14 +236,14 @@
    "id": "savings-badge",
    "what": "Savings label",
    "ios": "110 × 30 pt, white, 2 pt subscriptionTintColor, radius 13; Open Sans Bold 13 in subscriptionTintColor; inset 10 pt phone, 35 pt iPad",
-   "android": "White, 2dp stroke in the buy color, radius 15, text in the market color (VP screenshot, 2026-11-19; the style guide says #004e87); font and padding not in the source",
+   "android": "White, 2dp stroke in the buy color, radius 15, text in the market color (VP screenshot, 2026-11-19; the style guide says #004e87); font, size and padding asked (MISSING-ASSETS 5.6)",
    "bucket": "Core, per-platform value"
   },
   {
    "id": "button-account",
    "what": "Manage subscription buttons (split, DEC-21)",
    "ios": "Modal: 44 pt, radius 8; one filled with the nav bar color; white Cancel with a 1 pt black border (white on white in 7 markets, DSC-34)",
-   "android": "Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6",
+   "android": "Bottom sheets, device default button style (not Material): Roboto Medium 14sp on stock Android (OEM fonts may differ), sentence case; Open Play Store filled App_Primary, text Toolbar_Text_Primary, radius 10; Cancel and Delete account outlined, 1dp black, radius 6; Delete account's Cancel filled cancel_btn_color #014E85, white text; Delete account buttons 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23)",
    "bucket": "Split: iOS only + Android only"
   },
   {

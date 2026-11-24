@@ -20,10 +20,10 @@
    "code": "todo"
   },
   "icon": {
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)"
+   "code": "todo",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8)."
   },
   "component": {
    "figma": "todo",
@@ -129,7 +129,7 @@
    "figma": "na",
    "tokens": "na",
    "code": "na",
-   "note": "iOS: light only, no plans (Apps team, 2026-11-18). Android: the style guide says Settings, web views, login/paywall and Your News topics follow the device's dark setting for theme defaults; asked in MISSING-ASSETS 3.4. Widget night colors are tokens."
+   "note": "iOS: light only, no plans (Apps team, 2026-11-18). Android: every screen the design system covers stays light; only system-drawn views can go dark (web views, unstyled Settings dialogs, the Auth0 page, Your News topics; from code, not checked on a device; Apps team, 2026-11-23). Widget night colors are tokens."
   }
  ],
  "items": {
@@ -203,7 +203,7 @@
    "figma": "done",
    "tokens": "done",
    "code": "written",
-   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. Android text link color per market (Paywall_LoginButton_Text, DEC-23, 2026-11-19)."
+   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); paywall button all caps, subscription options sentence case (screenshots, 5.4 closed). Android text link color per market (link, DEC-24, 2026-11-23; replaces DEC-23)."
   },
   "component/button-text": {
    "figma": "done",
@@ -302,17 +302,16 @@
    "note": "DEC-14: Core component with iOS/Android modes (radius 8/0, inset 16/14, fonts); platform files wrap it in their own mode (Components · Button)"
   },
   "component/permission-prompt": {
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android fill: MISSING-ASSETS 5.6 (a)",
-   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19)"
+   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23)."
   },
   "component/savings-badge": {
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (b)",
+   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (asked again 2026-11-24)",
    "note": "Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339)."
   },
   "component/social-signin": {
@@ -403,11 +402,10 @@
    "note": "iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34)."
   },
   "component/button-account-android": {
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (b)",
-   "note": "Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined."
+   "note": "Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23)."
   },
   "layout/breakpoints-ios": {
    "figma": "done",
@@ -451,7 +449,7 @@
   }
  },
  "next": [
-  "Apps team answers (DREAMT-4718 / 4719, docs/MISSING-ASSETS.md): 5.6 Alerts Enable fill and account buttons, 5.11 white log-in link, 3.4 dark mode, 1.1 icon vectors, 1.12 Amazon icon",
-  "Icons: names done (DEC-17, docs/ICON-NAMES.md); glyphs and the Icon component after MISSING-ASSETS 1.1"
+  "Apps team: savings label font, size and padding on Android (MISSING-ASSETS 5.6, the last open question)",
+  "Icons: draw the Core glyphs to the DEC-17 names (no vector masters on either app), then the Icon component (PROGRESS 1.8)"
  ]
 }

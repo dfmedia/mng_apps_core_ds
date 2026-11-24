@@ -2,6 +2,7 @@
 Usage: python3 scripts/build_shipped_specs.py   (after build_scale_tokens.py; then figma_shipped_specs.py)
 Reads:  data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json + 2026-11-19 corrections (iOS, TroncKit f79fe3339 answers)
         data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json (Android answers + style guide 1795110354-0c21)
+        data/source/apps-team-answers/2026-11-23-DREAMT-4719-android.json (5.6 follow-ups + style guide 1795459789-4808)
         data/source/android-scales.json (Android size and elevation tokens), data/component-platform-map.json (owner buckets)
 Writes: data/shipped-specs.json, docs/SHIPPED-SPECS.md
 Every value comes from the Apps team's answers or the Android style guide. iOS values are from f79fe3339; since the
@@ -12,12 +13,13 @@ import json
 I = json.load(open('data/source/apps-team-answers/2026-11-18-DREAMT-4718-ios.json'))
 I2 = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4718-ios.json'))   # corrections (spinner colors, paywall text)
 A = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
+A3 = json.load(open('data/source/apps-team-answers/2026-11-23-DREAMT-4719-android.json'))   # 5.6 follow-ups (Alerts fill, bottom sheets)
 SC = json.load(open('data/source/android-scales.json'))
 OWN = {i['id']: i['owner'] for i in json.load(open('data/component-platform-map.json'))['items']}
 TOK = {t['name']: t['value'].replace('px', '') for k in ('size', 'elevation') for t in SC.get(k, {}).get('tokens', [])}
 BUCKET = {'core': 'Core', 'core+variant': 'Core, per-platform value', 'ios': 'iOS only', 'android': 'Android only'}
 SRC_I = 'Apps team, DREAMT-4718 (TroncKit f79fe3339)'
-SRC_A = f"Apps team, DREAMT-4719 + Android style guide {A['style_guide_update']['version']}"
+SRC_A = f"Apps team, DREAMT-4719 + Android style guide {A['style_guide_update']['version']} (5.6 follow-ups: 1795459789-4808)"
 
 sh, ash = I['shell'], A['shell']
 g = A['style_guide_update']
@@ -54,14 +56,14 @@ controls = [
      'swatches': {'ios': [lo['majority']], 'android': ['#D5D5D5', '#2A2A2A', '#1E88E5']}},
     {'id': 'permission-prompt', 'what': 'Notification prompt buttons',
      'ios': f"Yes {C['push_prompt']['yes']} (filled) / No {C['push_prompt']['no']}; {C['push_prompt']['height']} pt, radius {C['push_prompt']['radius']}",
-     'android': f"CUSTOMIZE: {ac['alerts_enable']['label']}, about {ac['alerts_enable']['height_approx']}dp, {ac['alerts_enable']['width']}, square; fill {ac['alerts_enable']['fill']} per the answer (export differs per market: MISSING-ASSETS 5.6). NO, THANKS: {ac['alerts_enable']['no_thanks']}",
-     'swatches': {'android': [ac['alerts_enable']['fill']]}},
+     'android': f"CUSTOMIZE: {ac['alerts_enable']['label']}, about {ac['alerts_enable']['height_approx']}dp, {ac['alerts_enable']['width']}, square; fill Alerts_Enable_Button_Background per market: the market action in 58 of 77, #DAA520 in 15, DP #4FA8D1, TPD #000000, OS and TSAR the default #FF6859 (Apps team, 2026-11-23). NO, THANKS: {ac['alerts_enable']['no_thanks']}",
+     'swatches': {'android': ['#DAA520', '#4FA8D1', '#FF6859']}},
     {'id': 'savings-badge', 'what': 'Savings label',
      'ios': f"{C['savings_pill']['width']} × {C['savings_pill']['height']} pt, {C['savings_pill']['fill']}, {C['savings_pill']['border']}, radius {C['savings_pill']['radius']}; {C['savings_pill']['label']}; inset {C['savings_pill']['inset']}",
-     'android': 'White, 2dp stroke in the buy color, radius 15, text in the market color (VP screenshot, 2026-11-19; the style guide says #004e87); font and padding not in the source'},
+     'android': 'White, 2dp stroke in the buy color, radius 15, text in the market color (VP screenshot, 2026-11-19; the style guide says #004e87); font, size and padding asked (MISSING-ASSETS 5.6)'},
     {'id': 'button-account', 'what': 'Manage subscription buttons (split, DEC-21)',
      'ios': f"Modal: {C['manage_subscription_modal']['height']} pt, radius {C['manage_subscription_modal']['radius']}; {C['manage_subscription_modal']['buttons']} (white on white in 7 markets, DSC-34)",
-     'android': 'Bottom sheets: radius 10, App_Primary fill or outlined; font and height: MISSING-ASSETS 5.6'},
+     'android': (lambda b: f"Bottom sheets, device default button style (not Material): {b['label']}; Open Play Store filled {b['open_play_store']['fill']}, text {b['open_play_store']['text']}, radius {b['open_play_store']['radius']}; {b['outlined']['buttons']} outlined, {b['outlined']['stroke']}, radius {b['outlined']['radius']}; Delete account's Cancel filled {b['delete_account_cancel']['fill']}, white text; Delete account buttons {b['height']['delete_account']}dp, Manage subscription at least {b['height']['manage_subscription_min']}dp (Apps team, 2026-11-23)")(A3['account_bottom_sheets'])},
     {'id': 'social-signin', 'what': 'Social sign-in',
      'ios': f"{C['social_signin']['where']}: {C['social_signin']['height']} pt, radius {C['social_signin']['radius']}, {C['social_signin']['label']}, {C['social_signin']['outline']} pt outline, {C['social_signin']['icon']} pt icon, {C['social_signin']['gap']} pt gap",
      'android': 'None in the app: login is the Auth0 hosted page'},

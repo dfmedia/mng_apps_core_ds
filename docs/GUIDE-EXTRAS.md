@@ -63,9 +63,9 @@ Fill: token `whats-new-button-color` `#daa520` · 218, 165, 32 in 52 of 77 marke
 
 Already tracked: component/permission-prompt (Android side of Notification prompt buttons). Export: fill `Alerts_Enable_Button_Background` (control token, 58 of 77 markets follow Core action, docs/CONTROL-EXCEPTIONS.md), label `#ffffff` · 255, 255, 255, square corners.
 
-Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): CUSTOMIZE: Roboto Medium 14sp, all caps, white, 10dp padding (about 40dp tall), full width, fill `#ff6859` · 255, 104, 89 (same in every market (answer)). NO, THANKS: transparent, black text. The Alerts-tab "Enable Alerts" is a system AlertDialog button.
+Apps team (Rajal Patel, DREAMT-4719 comments 276725 and 276735, 2026-11-19): CUSTOMIZE: Roboto Medium 14sp, all caps, white, 10dp padding (about 40dp tall), full width, fill `#ff6859` · 255, 104, 89 (same in every market (answer); corrected 2026-11-23, see Settled). NO, THANKS: transparent, black text. The Alerts-tab "Enable Alerts" is a system AlertDialog button.
 
-**To clarify:** Fill: the answer and the Android style guide say Alerts_Enable_Button_Background is #FF6859 in every market, but the export at 1cfb069a6 sets it per market (Core action in 58 of 77). Is it overridden somewhere? (MISSING-ASSETS 5.6)
+**Settled:** Fill: Alerts_Enable_Button_Background per market, as the export says (Apps team, DREAMT-4719, 2026-11-23): the market action in 58 of 77, #DAA520 in 15, DP #4FA8D1, TPD #000000; only OS and TSAR keep the default #FF6859. The style guide is corrected (1795459789-4808).
 
 ## Home-screen widget (Android only)
 

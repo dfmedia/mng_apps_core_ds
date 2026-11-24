@@ -1,0 +1,32 @@
+{
+ "$description": "Structured copy of the Android answers on DREAMT-4719 (2026-11-23) that scripts read. Source data: do not edit. Wording and full answer: 2026-11-23-DREAMT-4719-android.md in this folder. Bottom-sheet details are copied from the updated Android style guide (version 1795459789-4808, project/5-controls.md), which Rajal says carries these answers.",
+ "source": "Rajal Patel, DREAMT-4719 comment 276938, 2026-11-23; Android style guide 1795459789-4808 (still android-tribpub 1cfb069a6; markets.json unchanged)",
+ "alerts_enable_fill": {
+  "answer": "The export is right and the guide was wrong: the default in main is #FF6859, but 75 of 77 markets set their own Alerts_Enable_Button_Background",
+  "source_key": "Alerts_Enable_Button_Background (data/source/android-markets.json)",
+  "breakdown": {"action": 58, "#DAA520": 15, "#4FA8D1": ["DP"], "#000000": ["TPD"], "#FF6859": ["OS", "TSAR"]},
+  "note": "'#DAA520 in 17' in the comment counts the two markets whose action is also #DAA520; the guide's 15 leaves them in the 58"
+ },
+ "account_bottom_sheets": {
+  "answer": "Not Material: the two account bottom sheets (Manage subscription and Delete account) are inflated with the application context, which drops the app theme, so their buttons are plain framework buttons in the device default style (SettingsFragment.java:608, 651)",
+  "label": "Roboto Medium 14sp on stock Android (OEM fonts may differ), sentence case",
+  "open_play_store": {"fill": "App_Primary", "text": "Toolbar_Text_Primary", "radius": 10},
+  "outlined": {"buttons": "Cancel and Delete account", "stroke": "1dp black", "text": "black", "radius": 6, "radius_note": "app:cornerRadius is ignored"},
+  "delete_account_cancel": {"fill": "cancel_btn_color #014E85", "text": "white", "radius": 6},
+  "height": {"delete_account": 52, "manage_subscription_min": 48},
+  "pressed": "Device default (no Material ripple color)"
+ },
+ "login_link": {
+  "answer": "Drawn in the color resource link, underlined (PaywallManagerImpl.java:165), on the white paywall screen (fragment_paywall_purchase.xml); Paywall_LoginButton_Text is not used by any code",
+  "source_key": "link",
+  "values": {"#56A1DD": 73, "#4591E0": ["NYDN"], "#004E87": ["DP", "VP"], "#000000": ["MC"]}
+ },
+ "dark_mode": {
+  "answer": "Only the web views, Your News topics and the pop-up dialogs in Settings are different",
+  "style_guide": "From code, not checked on a device: Settings dialogs without their own style use Material 3 dark dialog colors; web views set no background (dark window while loading; pages with prefers-color-scheme dark render dark); Auth0 login follows the browser; in CT, DP, HC, MC, NYDN, TOD and VP the Settings screen sets no white window background. Splash and Your News onboarding force light. No user toggle. values-night changes only the widget colors.",
+  "our_reading": "Every screen the design system covers is light only on both apps; only views drawn by the system or by web content can go dark."
+ },
+ "icon_vector_masters": {"answer": "no", "reading": "No vector masters exist on Android either (iOS: none, 2026-11-18)."},
+ "amazon_signin": {"answer": "no", "reading": "ic_amazon is never shown; the style guide moved it to Remove."},
+ "not_answered": ["Savings label font, size and padding (5.6, second half of b)", "Style guide still gives the savings label text as #004E87; the VP screenshot shows the market color"]
+}

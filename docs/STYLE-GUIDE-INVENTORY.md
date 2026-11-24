@@ -48,4 +48,4 @@ Karl (2026-11-10): add them to the registry and document them as shipped; design
 
 ## The asset files themselves
 
-Both guides carry the shipped image files, so "as shipped" icons and images can be placed in Figma now as reference: PNGs as image fills, the 16 SVGs as vectors. They are exports, not vector masters (except the 16 SVGs), so MISSING-ASSETS 1.1 (vector masters) still stands for building real icon components. The Android exports are in the Android guide.
+Both guides carry the shipped image files, so "as shipped" icons and images can be placed in Figma now as reference: PNGs as image fills, the 16 SVGs as vectors. They are exports, not vector masters (except the 16 SVGs), and neither app has vector masters (Apps team, 2026-11-18 and 2026-11-23), so the real icon components are drawn by us to the DEC-17 names. The Android exports are in the Android guide.

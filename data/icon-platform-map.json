@@ -1,10 +1,10 @@
 {
  "source": {
-  "ios": "TroncKit @ e30ad2585",
+  "ios": "TroncKit @ f79fe3339",
   "android": "android-tribpub @ 1cfb069a6"
  },
  "summary": {
-  "core": 32,
+  "core": 31,
   "ios-only": 26,
   "android-only": 5
  },
@@ -616,17 +616,6 @@
   },
   {
    "group": "Brands",
-   "purpose": "Amazon (sign-in)",
-   "ios_today": "TroncKit default button",
-   "android_today": "ic_amazon",
-   "sf_symbol": null,
-   "material": null,
-   "bucket": "core",
-   "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
-   "ios_recommendation": "Use official brand asset (custom Core vector)"
-  },
-  {
-   "group": "Brands",
    "purpose": "1Password",
    "ios_today": "paywall-1password",
    "android_today": null,
@@ -701,6 +690,12 @@
    "bucket": "android-only",
    "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
    "ios_recommendation": null
+  }
+ ],
+ "dropped": [
+  {
+   "purpose": "Amazon (sign-in)",
+   "why": "Never shown on either app: iOS has no Amazon icon (only a text-only button on the native login screen, which never opens because Auth0 is on in all 78 markets); Android never shows ic_amazon (Apps team, DREAMT-4718 / 4719, 2026-11-23, MISSING-ASSETS 1.12)."
   }
  ]
 }

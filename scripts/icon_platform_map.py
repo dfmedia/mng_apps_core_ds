@@ -67,7 +67,7 @@ ANDROID = {
  'Instagram': ('author_contact_instagram', 'core', ''),
  'YouTube': (None, 'ios-only', 'Android equivalent: none in the Android guide.'),
  'Vimeo': (None, 'ios-only', 'Android equivalent: none in the Android guide.'),
- 'Amazon (sign-in)': ('ic_amazon', 'core', 'Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).'),
+ 'Amazon (sign-in)': ('ic_amazon', 'core', 'Neither app shows it: login is the Auth0 web page on both. Dropped (DROPPED below).'),
  '1Password': (None, 'ios-only', 'iOS paywall password autofill. Android equivalent: none in the Android guide.'),
  'Outbrain': (None, 'ios-only', 'Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).'),
 }
@@ -78,8 +78,11 @@ ANDROID_ONLY = [
  ('Navigation & UI', 'Notification small icon', 'per-market notification icons (monochrome)', 'android-only', 'Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).'),
  ('Ratings & social', 'Save star (special sections)', 'card_star_default · star_on_card_saved_state', 'android-only', 'Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).'),
 ]
+# Purposes left out of the design system: never shown in either app (they stay in icon-comparison.json as reference)
+DROPPED = {'Amazon (sign-in)': 'Never shown on either app: iOS has no Amazon icon (only a text-only button on the native login screen, which never opens because Auth0 is on in all 78 markets); Android never shows ic_amazon (Apps team, DREAMT-4718 / 4719, 2026-11-23, MISSING-ASSETS 1.12).'}
 res = []
 for g, purpose, ios_today, sf, mat, fa, rec in rows:
+    if purpose in DROPPED: continue
     a, b, note = ANDROID[purpose]
     res.append({'group': g, 'purpose': purpose, 'ios_today': ios_today, 'android_today': a, 'sf_symbol': sf,
                 'material': mat[0] if mat else None, 'bucket': b, 'note': note, 'ios_recommendation': rec})
@@ -87,5 +90,5 @@ for g, p, a, b, n in ANDROID_ONLY:
     res.append({'group': g, 'purpose': p, 'ios_today': None, 'android_today': a, 'sf_symbol': None, 'material': None, 'bucket': b, 'note': n, 'ios_recommendation': None})
 from collections import Counter
 summary = Counter(r['bucket'] for r in res)
-json.dump({'source': {'ios': 'TroncKit @ e30ad2585', 'android': 'android-tribpub @ 1cfb069a6'}, 'summary': dict(summary), 'purposes': res}, open(out, 'w'), indent=1)
+json.dump({'source': {'ios': 'TroncKit @ f79fe3339', 'android': 'android-tribpub @ 1cfb069a6'}, 'summary': dict(summary), 'purposes': res, 'dropped': [{'purpose': k, 'why': v} for k, v in DROPPED.items()]}, open(out, 'w'), indent=1)
 print(dict(summary), len(res))

@@ -115,7 +115,7 @@
    "tokens": "na",
    "code": "na",
    "blocked_by": "",
-   "note": "iOS: light only, no plans (Apps team, 2026-11-18). Android: the style guide says Settings, web views, login/paywall and Your News topics follow the device's dark setting for theme defaults; asked in MISSING-ASSETS 3.4. Widget night colors are tokens.",
+   "note": "iOS: light only, no plans (Apps team, 2026-11-18). Android: every screen the design system covers stays light; only system-drawn views can go dark (web views, unstyled Settings dialogs, the Auth0 page, Your News topics; from code, not checked on a device; Apps team, 2026-11-23). Widget night colors are tokens.",
    "overall": "n/a"
   },
   {
@@ -280,12 +280,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Search",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/settings",
@@ -293,12 +293,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Settings",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/share",
@@ -306,12 +306,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Share",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Glyph differs by platform convention; one semantic name.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/save-not-saved",
@@ -319,12 +319,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Save (not saved)",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/saved",
@@ -332,12 +332,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Saved",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/home-tab",
@@ -345,12 +345,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Home tab",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/sections-menu",
@@ -358,12 +358,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Sections / menu",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/alerts-tab",
@@ -371,12 +371,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Alerts tab",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/for-you-your-news-tab",
@@ -384,12 +384,12 @@
    "group": "Icons · Navigation & UI",
    "name": "For You / Your News tab",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Gap on both: one custom Core vector.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/enewspaper-tab",
@@ -397,12 +397,12 @@
    "group": "Icons · Navigation & UI",
    "name": "eNewspaper tab",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/games-tab",
@@ -410,12 +410,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Games tab",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/expand-show-more",
@@ -423,12 +423,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Expand / show more",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/collapse-show-less",
@@ -436,12 +436,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Collapse / show less",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/back",
@@ -449,12 +449,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Back",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/forward-disclosure",
@@ -462,12 +462,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Forward / disclosure",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android has 4 arrows for this; consolidate.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/close",
@@ -475,12 +475,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Close",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/close-circle",
@@ -488,12 +488,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Close (circle)",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Confirm the Android glyph is a circled X.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/account",
@@ -501,12 +501,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Account",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none (login is the Auth0 web page; no account icon).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/warning",
@@ -514,12 +514,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Warning",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android uses it only in notifications.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/email",
@@ -527,12 +527,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Email",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/refresh",
@@ -540,12 +540,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Refresh",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/filter",
@@ -553,12 +553,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Filter",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/text-size-smaller",
@@ -566,12 +566,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Text size smaller",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/text-size-larger",
@@ -579,12 +579,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Text size larger",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/follow-topic",
@@ -592,12 +592,12 @@
    "group": "Icons · Topics & selection",
    "name": "Follow topic",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/unfollow-topic",
@@ -605,12 +605,12 @@
    "group": "Icons · Topics & selection",
    "name": "Unfollow topic",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/checked",
@@ -618,12 +618,12 @@
    "group": "Icons · Topics & selection",
    "name": "Checked",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/unchecked",
@@ -631,12 +631,12 @@
    "group": "Icons · Topics & selection",
    "name": "Unchecked",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/continue",
@@ -644,12 +644,12 @@
    "group": "Icons · Topics & selection",
    "name": "Continue",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/expand-page",
@@ -657,12 +657,12 @@
    "group": "Icons · eNewspaper",
    "name": "Expand page",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/fit-to-screen",
@@ -670,12 +670,12 @@
    "group": "Icons · eNewspaper",
    "name": "Fit to screen",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/previous-page",
@@ -683,12 +683,12 @@
    "group": "Icons · eNewspaper",
    "name": "Previous page",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/next-page",
@@ -696,12 +696,12 @@
    "group": "Icons · eNewspaper",
    "name": "Next page",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: inside the PageSuite SDK (not our icons).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/play",
@@ -709,12 +709,12 @@
    "group": "Icons · Media",
    "name": "Play",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/pause",
@@ -722,12 +722,12 @@
    "group": "Icons · Media",
    "name": "Pause",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/skip-back-15-s",
@@ -735,12 +735,12 @@
    "group": "Icons · Media",
    "name": "Skip back 15 s",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/skip-forward-15-s",
@@ -748,12 +748,12 @@
    "group": "Icons · Media",
    "name": "Skip forward 15 s",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/rewind",
@@ -761,12 +761,12 @@
    "group": "Icons · Media",
    "name": "Rewind",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/fast-forward",
@@ -774,12 +774,12 @@
    "group": "Icons · Media",
    "name": "Fast forward",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/3d-embed",
@@ -787,12 +787,12 @@
    "group": "Icons · Media",
    "name": "3D embed",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/tournament-sport-symbols-6",
@@ -800,12 +800,12 @@
    "group": "Icons · Media",
    "name": "Tournament sport symbols (6)",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/rating-star-empty",
@@ -813,12 +813,12 @@
    "group": "Icons · Ratings & social",
    "name": "Rating star (empty)",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none; its stars mean saved (special sections), not ratings.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/rating-star-half",
@@ -826,12 +826,12 @@
    "group": "Icons · Ratings & social",
    "name": "Rating star (half)",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none (see Rating star (empty)).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/rating-star-full",
@@ -839,12 +839,12 @@
    "group": "Icons · Ratings & social",
    "name": "Rating star (full)",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none (see Rating star (empty)).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/like-favorite",
@@ -852,12 +852,12 @@
    "group": "Icons · Ratings & social",
    "name": "Like / favorite",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/repost",
@@ -865,12 +865,12 @@
    "group": "Icons · Ratings & social",
    "name": "Repost",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/verified",
@@ -878,12 +878,12 @@
    "group": "Icons · Ratings & social",
    "name": "Verified",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS native tweet embeds only. Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/apple",
@@ -891,12 +891,12 @@
    "group": "Icons · Brands",
    "name": "Apple",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/google",
@@ -904,12 +904,12 @@
    "group": "Icons · Brands",
    "name": "Google",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Dormant on Android.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/facebook",
@@ -917,12 +917,12 @@
    "group": "Icons · Brands",
    "name": "Facebook",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/x-twitter",
@@ -930,12 +930,12 @@
    "group": "Icons · Brands",
    "name": "X (Twitter)",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/bluesky",
@@ -943,12 +943,12 @@
    "group": "Icons · Brands",
    "name": "Bluesky",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/instagram",
@@ -956,12 +956,12 @@
    "group": "Icons · Brands",
    "name": "Instagram",
    "owner": "core",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/youtube",
@@ -969,12 +969,12 @@
    "group": "Icons · Brands",
    "name": "YouTube",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/vimeo",
@@ -982,25 +982,12 @@
    "group": "Icons · Brands",
    "name": "Vimeo",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android guide.",
-   "overall": "blocked"
-  },
-  {
-   "id": "icon/amazon-sign-in",
-   "area": "Icons",
-   "group": "Icons · Brands",
-   "name": "Amazon (sign-in)",
-   "owner": "core",
-   "figma": "blocked",
-   "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/1password",
@@ -1008,12 +995,12 @@
    "group": "Icons · Brands",
    "name": "1Password",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "iOS paywall password autofill. Android equivalent: none in the Android guide.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/outbrain",
@@ -1021,12 +1008,12 @@
    "group": "Icons · Brands",
    "name": "Outbrain",
    "owner": "ios",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/text-size",
@@ -1034,12 +1021,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Text size",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/skip-back-10-s",
@@ -1047,12 +1034,12 @@
    "group": "Icons · Media",
    "name": "Skip back 10 s",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/skip-forward-10-s",
@@ -1060,12 +1047,12 @@
    "group": "Icons · Media",
    "name": "Skip forward 10 s",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35.",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/notification-small-icon",
@@ -1073,12 +1060,12 @@
    "group": "Icons · Navigation & UI",
    "name": "Notification small icon",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "icon/save-star-special-sections",
@@ -1086,12 +1073,12 @@
    "group": "Icons · Ratings & social",
    "name": "Save star (special sections)",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "na",
-   "code": "blocked",
-   "blocked_by": "Icon vectors (iOS: none exist; Android masters asked, MISSING-ASSETS 1.1); semantic icon list + Icon component (PROGRESS 1.8)",
-   "note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected).",
-   "overall": "blocked"
+   "code": "todo",
+   "blocked_by": "",
+   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
   },
   {
    "id": "component/nav-bar",
@@ -1181,7 +1168,7 @@
    "tokens": "done",
    "code": "written",
    "blocked_by": "",
-   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); which paywall buttons are sentence case: MISSING-ASSETS 5.4. Android text link color per market (Paywall_LoginButton_Text, DEC-23, 2026-11-19).",
+   "note": "DEC-07 pilot; iOS rebuilt to the meter paywall purchase button 2026-11-19 (DEC-22: 45 pt, radius 8, 0.7 pt border in the fill, link underlined; Apps team MISSING-ASSETS 5.10, answered). Android label confirmed (Roboto Medium 14sp caps; DREAMT-4719, 2026-11-19); paywall button all caps, subscription options sentence case (screenshots, 5.4 closed). Android text link color per market (link, DEC-24, 2026-11-23; replaces DEC-23).",
    "overall": "built"
   },
   {
@@ -1229,11 +1216,11 @@
    "group": "Buttons",
    "name": "Notification prompt buttons",
    "owner": "core+variant",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android fill: MISSING-ASSETS 5.6 (a)",
-   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19)",
+   "blocked_by": "",
+   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23).",
    "overall": "in progress"
   },
   {
@@ -1255,11 +1242,11 @@
    "group": "Buttons",
    "name": "Account bottom-sheet buttons (Android)",
    "owner": "android",
-   "figma": "blocked",
+   "figma": "todo",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font and height: MISSING-ASSETS 5.6 (b)",
-   "note": "Radius 10 is a token (DEC-12). Bottom-sheet buttons, filled or outlined.",
+   "blocked_by": "",
+   "note": "Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23).",
    "overall": "in progress"
   },
   {
@@ -1284,7 +1271,7 @@
    "figma": "blocked",
    "tokens": "partial",
    "code": "partial",
-   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (b)",
+   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (asked again 2026-11-24)",
    "note": "Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339).",
    "overall": "in progress"
   },

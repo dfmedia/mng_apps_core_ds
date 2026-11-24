@@ -1,15 +1,15 @@
 {
  "generated_by": "scripts/build_icon_names.py",
  "source": {
-  "ios": "TroncKit @ e30ad2585",
+  "ios": "TroncKit @ f79fe3339",
   "android": "android-tribpub @ 1cfb069a6"
  },
  "decision": "DEC-17",
  "rule": "One name per icon purpose, glyphs as each app ships them. Lowercase, hyphens, named for the job. Prefixes tab-, enews-, brand-.",
  "status": "names approved by Karl 2026-11-11 (DEC-17); glyphs documented as shipped",
  "summary": {
-  "purposes": 63,
-  "names": 62,
+  "purposes": 62,
+  "names": 61,
   "shared_names": {
    "saved": [
     "Saved",
@@ -17,7 +17,7 @@
    ]
   },
   "by_bucket": {
-   "Core": 32,
+   "Core": 31,
    "Core, per-platform value": 0,
    "iOS only": 26,
    "Android only": 5
@@ -830,7 +830,7 @@
    "bucket": "iOS only",
    "ios": "AppleIcon (Sign in with Apple)",
    "android": "apple_button (file exists, not used)",
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "apple.logo",
@@ -847,7 +847,7 @@
    "bucket": "Core",
    "ios": "GoogleIcon",
    "android": "google_button (only when Auth0 is off)",
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -864,7 +864,7 @@
    "bucket": "Core",
    "ios": "FacebookIcon · AuthorContactFacebook",
    "android": "fb_button · ic_fb · author_contact_facebook",
-   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -881,7 +881,7 @@
    "bucket": "Core",
    "ios": "TwitterIcon · AuthorContactX · tweet-logo · twitter-logo",
    "android": "ic_twitter · author_contact_x",
-   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -898,7 +898,7 @@
    "bucket": "Core",
    "ios": "AuthorContactBluesky",
    "android": "author_contact_bluesky",
-   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -915,7 +915,7 @@
    "bucket": "Core",
    "ios": "AuthorContactInstagram · instagram-logo (3)",
    "android": "author_contact_instagram",
-   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: iOS Author Profile ships an SVG; other iOS uses are PNG. Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -932,7 +932,7 @@
    "bucket": "iOS only",
    "ios": "youtube-logo",
    "android": null,
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -949,7 +949,7 @@
    "bucket": "iOS only",
    "ios": "vimeo-logo",
    "android": null,
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -960,30 +960,13 @@
    }
   },
   {
-   "name": "brand-amazon",
-   "purpose": "Amazon (sign-in)",
-   "group": "Brands",
-   "bucket": "Core",
-   "ios": "TroncKit default button",
-   "android": "ic_amazon",
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
-   "apps_team": "1.12 (neither app shows it; keep or drop?)",
-   "reference": {
-    "sf_symbol": null,
-    "material": null,
-    "font_awesome": "amazon",
-    "recommendation": "Use official brand asset (custom Core vector)",
-    "ownership_note": "Neither app shows it: login is the Auth0 web page on both. Asked the Apps team (MISSING-ASSETS 1.12)."
-   }
-  },
-  {
    "name": "brand-1password",
    "purpose": "1Password",
    "group": "Brands",
    "bucket": "iOS only",
    "ios": "paywall-1password",
    "android": null,
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,
@@ -1000,7 +983,7 @@
    "bucket": "iOS only",
    "ios": "outbrainLogo",
    "android": null,
-   "note": "Vector: missing on iOS (PNG only). Android: not confirmed (MISSING-ASSETS 1.1). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
+   "note": "Vector: missing on iOS (PNG only). Android: no vector masters (Apps team, 2026-11-23). Bundled in the apps, not loaded from the vendor; not sourced from the vendor (Karl, 2026-11-18).",
    "apps_team": "",
    "reference": {
     "sf_symbol": null,

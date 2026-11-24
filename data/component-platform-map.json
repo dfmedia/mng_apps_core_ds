@@ -105,7 +105,7 @@
    "id": "permission-prompt",
    "name": "Notification prompt buttons",
    "ios_today": "Push prompt Yes (filled, Open Sans Bold 14) / No (text, Open Sans Regular 14, underlined except VP), both 40 pt, radius 5 (Apps team, DREAMT-4718, f79fe3339)",
-   "android_today": "Alerts enable CUSTOMIZE: Roboto Medium 14sp caps white, about 40dp, full width, square; fill #ff6859 per the answer vs Alerts_Enable_Button_Background in the export (MISSING-ASSETS 5.6). NO, THANKS: transparent, black text (Apps team, DREAMT-4719, 2026-11-19)",
+   "android_today": "Alerts enable CUSTOMIZE: Roboto Medium 14sp caps white, about 40dp, full width, square; fill Alerts_Enable_Button_Background per market (action in 58 of 77; #DAA520 in 15; OS and TSAR #ff6859). NO, THANKS: transparent, black text (Apps team, DREAMT-4719, 2026-11-19 and 2026-11-23)",
    "owner": "core+variant",
    "note": "Same job; iOS has a Yes/No pair."
   },
@@ -123,9 +123,9 @@
    "id": "button-account-android",
    "name": "Account bottom-sheet buttons (Android)",
    "ios_today": "\u2014",
-   "android_today": "radius 10, filled or outlined (bottom sheets)",
+   "android_today": "Device default button style, not Material: Roboto Medium 14sp (stock), sentence case; Open Play Store filled App_Primary, radius 10; others outlined 1dp black, radius 6; 52dp (Delete account) / at least 48dp (Manage subscription)",
    "owner": "android",
-   "note": "Split per platform (Karl, 2026-11-19, DEC-21: the apps do different things). iOS equivalent: Manage subscription modal buttons (iOS). Font and size asked (MISSING-ASSETS 5.6)."
+   "note": "Split per platform (Karl, 2026-11-19, DEC-21: the apps do different things). iOS equivalent: Manage subscription modal buttons (iOS). Font and size: Apps team, DREAMT-4719, 2026-11-23."
   },
   {
    "group": "Buttons",
