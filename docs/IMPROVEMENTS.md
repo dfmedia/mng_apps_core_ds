@@ -163,7 +163,7 @@ iOS text link (`paywallLinkColor`) on the white paywall, target 4.5:1. 9 markets
 | TUDJ | `#408fcc` · 64, 143, 204 | 3.49:1 | `#2a7bb7` · 42, 123, 183 | 4.55:1 |
 | TVR | `#408fcc` · 64, 143, 204 | 3.49:1 | `#2a7bb7` · 42, 123, 183 | 4.55:1 |
 
-Android text link (`link`, DEC-24) on the white paywall, target 4.5:1. 74 markets fail; most ship #56A1DD (2.67:1).
+Android text link (`link`, DEC-24) on the white paywall, target 4.5:1. 74 markets fail; most ship #56A1DD (2.79:1).
 
 | Market | Shipped link | Ratio | Suggested | New ratio |
 |---|---|---|---|---|

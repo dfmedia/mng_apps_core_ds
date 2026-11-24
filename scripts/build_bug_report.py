@@ -32,9 +32,9 @@ tivdb_alert_text = h6(I['TIVDB']['breakingNewsBannerTextColor'])
 spin = ANS_I['loading']['spinner']
 spin_all = {**{c: spin['majority'] for c in I}, **spin['exceptions']}
 spin_low = sorted((c, v, ratio(v.lower(), '#ffffff')) for c, v in spin['exceptions'].items() if ratio(v.lower(), '#ffffff') < 3)
-alink = {c: h6(A[c]['Paywall_LoginButton_Text']) for c in A}
-alink_invisible = sorted(c for c, v in alink.items() if ratio(v, '#ffffff') < 1.5)
-alink_low = sorted(c for c, v in alink.items() if 1.5 <= ratio(v, '#ffffff') < 4.5)
+alink = {c: h6(A[c]['link']) for c in A}   # DEC-24: the link is drawn in the color resource link (Apps team, 2026-11-23)
+alink_low = sorted(c for c, v in alink.items() if ratio(v, '#ffffff') < 4.5)
+alink_invisible = []
 label_fail = BS['summary']['label_fail']; ios_link_fail = BS['summary']['ios_link_fail']
 tsar15 = next(e['android15'] for e in SH['role_exceptions'] if e['code'] == 'tsar' and e.get('android15'))
 
@@ -59,10 +59,10 @@ BUGS = {'iOS': [
   (L_, 'Unused code and assets', 'UIImage(systemName: "saved") in updateTabBasedOnIsPagesuite() (never called; "saved" is not an SF Symbol) and the tab-newspaper image set (only referenced by an unused property).',
    'Apps team answers.', 'Remove them.', ''),
 ], 'Android': [
-  (S, 'Paywall Log In link may be invisible in OS, SS and TSAR', f"The link uses Paywall_LoginButton_Text, which is {', '.join(f'{c} {alink[c].upper()}' for c in alink_invisible)}: white on the white paywall.",
-   'Export; screenshots show the link in this color in TDP and NYDN.', 'Use a dark or brand color in those markets. (Asked as question 5.11.)', 'MISSING-ASSETS 5.11'),
-  (M, 'Paywall Log In link fails contrast everywhere else', f"{len(alink_low)} markets use a color under 4.5:1 on white; most use #56A1DD ({ratio('#56a1dd', '#ffffff')}:1).",
-   'Export and screenshots.', 'Darken the link (or use the market action color where it passes).', 'CLR-04'),
+  (M, 'Paywall Log In link fails contrast', f"The link (color resource link) is under 4.5:1 on the white paywall in {len(alink_low)} of {len(alink)} markets: #56A1DD ({ratio('#56a1dd', '#ffffff')}:1) in most, NYDN #4591E0 ({ratio('#4591e0', '#ffffff')}:1). DP, VP (#004E87) and MC (#000000) pass.",
+   'Export and Apps team answer (PaywallManagerImpl.java:165).', 'Darken link (or use the market action color where it passes).', 'CLR-04'),
+  (L_, 'Color keys that no code uses', 'Paywall_LoginButton_Text (white in OS and SS, #F5F5F5 in TSAR) and Settings_Background (#333333 in about 70 markets) are set per market but never drawn. They make the market palettes look wrong (white link, dark Settings).',
+   'Apps team answers (5.11, 3.3).', 'Remove them from the flavors, or mark them unused.', ''),
   (M, 'TSAR status bar icons invisible on Android 15+', f"The status bar is {tsar15['statusbar'].upper()} with white icons: {tsar15['contrast']}:1.",
    'Confirmed in production (Apps team).', 'Use dark icons when the bar is light, not only when it is exactly #FFFFFF.', 'CLR-09'),
   (M, 'Article text size is not remembered, and the Settings entry does nothing', 'The chosen size is not re-applied after a cold start (FontSizeManager.init() is never called), and the Settings text-size entry is in no preference XML and has an empty handler. Steps are raw px, so they shrink on denser screens.',
@@ -77,8 +77,7 @@ BUGS = {'iOS': [
   (M, 'Nav bar title, selected tab and section header fail contrast in some iOS markets', f"Nav title under 4.5:1 in {len(fails('nav'))} ({lst(fails('nav'))}); selected tab under 3:1 in {len(fails('tab'))}; header text under 4.5:1 in {len(fails('header'))}.",
    'Export (iOS values; Android mostly the same colors).', 'Darken those market colors.', 'CLR-02, CLR-03, CLR-05'),
 ], 'Style guides': [
-  (L_, 'Android guide: savings label text color', 'The guide says #004E87; the VP screenshot shows the text and 2dp outline in the market color.', 'Screenshots (5.3).', 'Correct the guide. (Asked on the Android ticket.)', ''),
-  (L_, 'Android guide: Log In link color', "The Buttons table says #000000 (Paywall_Text); production uses Paywall_LoginButton_Text.", 'Screenshots (5.3).', 'Correct the guide.', ''),
+  (L_, 'Android guide: savings label text color', 'The guide (version 1795459789-4808) still says #004E87; the VP screenshot shows the text and 2dp outline in the market color (#005F7E for VP).', 'Screenshots (5.3).', 'Correct the guide. (Asked again with question 5.6.)', ''),
 ]}
 
 L = ['# Bug report: what the design-system work found in the apps', '',
@@ -95,4 +94,4 @@ for app, bugs in BUGS.items():
         n += 1; L.append(f"| {n} | {pr} | {title} | {det} | {ev} | {fix} | {ref or '—'} |")
     L.append('')
 open('docs/BUG-REPORT.md', 'w').write('\n'.join(L) + '\n')
-print(f"{sum(len(v) for v in BUGS.values())} bugs; white nav {len(white_nav)}, alert {len(alert_ff)}, android link invisible {alink_invisible}, low {len(alink_low)}, spinner low {spin_low}")
+print(f"{sum(len(v) for v in BUGS.values())} bugs; white nav {len(white_nav)}, alert {len(alert_ff)}, android link low {len(alink_low)}, spinner low {spin_low}")
