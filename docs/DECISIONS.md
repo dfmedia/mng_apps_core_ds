@@ -421,6 +421,7 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
   - Every iOS-only and Android-only icon now names its equivalent on the other app (or "none") in its note.
 - **Components (Core Components · Platform Ownership › 02), split per platform (Karl, 2026-11-19):** text size setting (iOS 6-step slider / Android 4-option list), Manage subscription buttons (iOS modal / Android bottom sheets), breakpoints (iOS window width / Android physical inches), elevation (iOS shadows / Android elevation) and motion. Each now has an iOS-only row and an Android-only row naming the other as its equivalent (data/component-platform-map.json; backlog ids `*-ios` / `*-android`). Savings label (the paywall discount label, e.g. "70% savings"): stays Core, per-platform value (Karl, 2026-11-19).
 - **All three ownership pages approved (Karl, 2026-11-19).** Moves to the platform files follow the plan in PROGRESS (batch), after Karl's OK (rule 3).
+- **Moved (2026-11-19, PROGRESS log):** color roles are done: Core keeps navbar, navtext, tabbar, tabactive, tabinactive, action, alert (+ alerttext) and the `buy` alias; `continue` and `statusbar` are in tokens/android, `header` in tokens/ios; Swift `continueButton` removed; Figma Android `continue` variables and theme, Core Brand theme `continue` deleted. Icons and the split components have no built assets yet: they are created directly in their owner's file when built.
 
 ## DEC-22 · iOS primary button = the meter paywall purchase button
 
