@@ -45,7 +45,7 @@
      "bs": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Baltimore Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Baltimore Sun: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -63,7 +63,7 @@
      "ct": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Chicago Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Chicago Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -79,27 +79,27 @@
       }
      },
      "dp": {
-      "$value": "#4fa8d1",
+      "$value": "#004e87",
       "$type": "color",
-      "$description": "Daily Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Daily Press: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
-         79,
-         168,
-         209
+         0,
+         78,
+         135
         ],
         "market": "Daily Press",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 2.67
+        "contrastOnWhite": 8.61
        }
       }
      },
      "hc": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Hartford Courant: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Hartford Courant: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -115,27 +115,27 @@
       }
      },
      "mc": {
-      "$value": "#4fa8d1",
+      "$value": "#000000",
       "$type": "color",
-      "$description": "Morning Call: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Morning Call: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
-         79,
-         168,
-         209
+         0,
+         0,
+         0
         ],
         "market": "Morning Call",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 2.67
+        "contrastOnWhite": 21.0
        }
       }
      },
      "nydn": {
       "$value": "#4591e0",
       "$type": "color",
-      "$description": "New York Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "New York Daily News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -153,7 +153,7 @@
      "ocr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Orange County Register: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Orange County Register: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -169,27 +169,27 @@
       }
      },
      "os": {
-      "$value": "#ffffff",
+      "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Orlando Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Orlando Sentinel: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
-         255,
-         255,
-         255
+         86,
+         161,
+         221
         ],
         "market": "Orlando Sentinel",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 1.0
+        "contrastOnWhite": 2.79
        }
       }
      },
      "pac": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Petaluma Argus-Courier: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Petaluma Argus-Courier: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -207,7 +207,7 @@
      "psn": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Pasadena Star News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Pasadena Star News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -225,7 +225,7 @@
      "sdut": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The San Diego Union-Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The San Diego Union-Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -243,7 +243,7 @@
      "sgvt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "San Gabriel Valley Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "San Gabriel Valley Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -261,7 +261,7 @@
      "sit": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Sonoma Index Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Sonoma Index Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -277,27 +277,27 @@
       }
      },
      "ss": {
-      "$value": "#ffffff",
+      "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Sun Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Sun Sentinel: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
-         255,
-         255,
-         255
+         86,
+         161,
+         221
         ],
         "market": "Sun Sentinel",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 1.0
+        "contrastOnWhite": 2.79
        }
       }
      },
      "tb": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Buffzone: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Buffzone: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -315,7 +315,7 @@
      "tban": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Bay Area News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Bay Area News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -333,7 +333,7 @@
      "tbcp": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Boulder County Preps: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Boulder County Preps: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -351,7 +351,7 @@
      "tbe": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Broomfield Enterprise News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Broomfield Enterprise News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -369,7 +369,7 @@
      "tbh": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Boston Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Boston Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -387,7 +387,7 @@
      "tbhs": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Boston Herald Sports: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Boston Herald Sports: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -405,7 +405,7 @@
      "tccdr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Canon City Daily Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Canon City Daily Record: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -423,7 +423,7 @@
      "tce": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Chico Enterprise Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Chico Enterprise Record: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -441,7 +441,7 @@
      "tchw": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Colorado Hometown Weekly: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Colorado Hometown Weekly: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -459,7 +459,7 @@
      "tcv": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Citizens' Voice: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Citizens' Voice: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -477,7 +477,7 @@
      "tdb": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Daily Breeze: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Daily Breeze: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -495,7 +495,7 @@
      "tdc": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Daily Camera: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Daily Camera: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -513,7 +513,7 @@
      "tdcd": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Delaware County Daily Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Delaware County Daily Times: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -531,7 +531,7 @@
      "tdf": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Daily Freeman: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Daily Freeman: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -567,7 +567,7 @@
      "tdlw": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Daily Local Weschester: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Daily Local Weschester: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -585,7 +585,7 @@
      "tdp": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Denver Post: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Denver Post: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -603,7 +603,7 @@
      "tdps": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Denver Post Sports: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Denver Post Sports: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -621,7 +621,7 @@
      "tebt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The East Bay Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The East Bay Times: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -639,7 +639,7 @@
      "teptg": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Estes Park Trail Gazette: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Estes Park Trail Gazette: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -657,7 +657,7 @@
      "tets": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Eureka Times Standard: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Eureka Times Standard: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -675,7 +675,7 @@
      "tfmt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Fort Morgan Times: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Fort Morgan Times: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -693,7 +693,7 @@
      "tgt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Greeley Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Greeley Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -711,7 +711,7 @@
      "tivdb": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Inland Valley Daily Bulletin: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Inland Valley Daily Bulletin: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -729,7 +729,7 @@
      "tja": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Journal Advocate: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Journal Advocate: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -747,7 +747,7 @@
      "tladn": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Los Angeles Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Los Angeles Daily News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -765,7 +765,7 @@
      "tlbpt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Long Beach Press-Telegram: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Long Beach Press-Telegram: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -783,7 +783,7 @@
      "tlr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Loveland Reporter Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Loveland Reporter Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -801,7 +801,7 @@
      "tls": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Lowell Sun News for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Lowell Sun News for Mobile: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -819,7 +819,7 @@
      "tltc": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Longmont Times-Call for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Longmont Times-Call for Mobile: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -837,7 +837,7 @@
      "tmch": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Monterey County Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Monterey County Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -855,7 +855,7 @@
      "tmd": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Macomb Daily: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Macomb Daily: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -873,7 +873,7 @@
      "tmi": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Marin Independent Journal News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Marin Independent Journal News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -891,7 +891,7 @@
      "tmj": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Morning Journal: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Morning Journal: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -909,7 +909,7 @@
      "tmn": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Mercury News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Mercury News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -927,7 +927,7 @@
      "tms": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Morning Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Morning Sun: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -945,7 +945,7 @@
      "tnh": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The News Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The News Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -963,7 +963,7 @@
      "tod": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Oneida Daily Dispatch: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Oneida Daily Dispatch: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -981,7 +981,7 @@
      "top": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Oakland Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Oakland Press: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -999,7 +999,7 @@
      "tpd": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Press Democrat: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Press Democrat: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1017,7 +1017,7 @@
      "tpe": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Press-Enterprise: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Press-Enterprise: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1035,7 +1035,7 @@
      "tpm": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Pottstown Mercury: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Pottstown Mercury: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1053,7 +1053,7 @@
      "tr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Reporter for Mobile: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Reporter for Mobile: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1071,7 +1071,7 @@
      "trdf": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Redlands Daily Facts: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Redlands Daily Facts: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1089,7 +1089,7 @@
      "tre": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Reading Eagle: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Reading Eagle: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1107,7 +1107,7 @@
      "trh": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Republican-Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Republican-Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1125,7 +1125,7 @@
      "trot": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Royal Oak Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Royal Oak Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1143,7 +1143,7 @@
      "trr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Troy Record: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Troy Record: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1159,27 +1159,27 @@
       }
      },
      "tsar": {
-      "$value": "#f5f5f5",
+      "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Saratogian: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Saratogian: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
-         245,
-         245,
-         245
+         86,
+         161,
+         221
         ],
         "market": "Saratogian",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 1.09
+        "contrastOnWhite": 2.79
        }
       }
      },
      "tsbs": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The San Bernardino Sun: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The San Bernardino Sun: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1197,7 +1197,7 @@
      "tscs": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Santa Cruz Sentinel: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Santa Cruz Sentinel: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1215,7 +1215,7 @@
      "tseb": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Sentinel and Enterprise: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Sentinel and Enterprise: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1233,7 +1233,7 @@
      "tsppp": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "St. Paul Pioneer Press: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "St. Paul Pioneer Press: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1251,7 +1251,7 @@
      "tss": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Standard-Speaker: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Standard-Speaker: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1269,7 +1269,7 @@
      "tsv": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Silicon Valley: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Silicon Valley: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1287,7 +1287,7 @@
      "tt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Trentonian: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Trentonian: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1305,7 +1305,7 @@
      "tth": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "The Times Herald: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "The Times Herald: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1323,7 +1323,7 @@
      "ttt": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Times-Tribune: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Times-Tribune: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1341,7 +1341,7 @@
      "tudj": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Ukiah Daily Journal: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Ukiah Daily Journal: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1359,7 +1359,7 @@
      "tvr": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Vacaville Reporter: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Vacaville Reporter: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1377,7 +1377,7 @@
      "tvth": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Vallejo Times Herald News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Vallejo Times Herald News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1395,7 +1395,7 @@
      "twdd": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Woodland Daily Democrat: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Woodland Daily Democrat: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1413,7 +1413,7 @@
      "twdn": {
       "$value": "#56a1dd",
       "$type": "color",
-      "$description": "Whittier Daily News: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Whittier Daily News: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
@@ -1429,20 +1429,20 @@
       }
      },
      "vp": {
-      "$value": "#005f7e",
+      "$value": "#004e87",
       "$type": "color",
-      "$description": "Virginian Pilot: Android text link color, underlined. Paywall_LoginButton_Text (shipped; screenshots 2026-11-19).",
+      "$description": "Virginian Pilot: Android text link color, underlined. link (shipped; Apps team DREAMT-4719, 2026-11-23, DEC-24).",
       "$extensions": {
        "mng": {
         "rgb": [
          0,
-         95,
-         126
+         78,
+         135
         ],
         "market": "Virginian Pilot",
         "shipped": true,
         "underline": true,
-        "contrastOnWhite": 7.15
+        "contrastOnWhite": 8.61
        }
       }
      }

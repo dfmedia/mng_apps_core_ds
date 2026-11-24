@@ -30,9 +30,9 @@ Core component with platform differences. Core holds the anatomy, states, shared
 | Border | 0.7 pt in the fill color (`button.ios.primary.border-width`) | none | iOS: all 78 markets |
 | Height | 45 pt (`button.ios.primary.height`) | 60 dp (`button.android.primary.height`) | Future: one height, IMPROVEMENTS BTN-01 |
 | Label | Open Sans Bold 14, always uppercase | Roboto Medium 14sp, uppercase | Future: one label style, IMPROVEMENTS BTN-02 |
-| Text link | `paywallLinkColor` per market (`button.ios.link.color.<code>`), Open Sans Regular 14, whole sentence underlined | `Paywall_LoginButton_Text` per market (`button.android.link.color.<code>`), 16sp, underlined | On white, 4.5:1 fails: iOS in 9 markets, Android in 76 |
+| Text link | `paywallLinkColor` per market (`button.ios.link.color.<code>`), Open Sans Regular 14, whole sentence underlined | `link` per market (`button.android.link.color.<code>`), 16sp, underlined | On white, 4.5:1 fails: iOS in 9 markets, Android in 74 |
 
-Android link color corrected 2026-11-19 (DEC-23): the Android screenshots (TDP #56A1DD, NYDN #4591E0) show `Paywall_LoginButton_Text`, not the #000000 the style guide's Buttons table gives. OS and SS ship #FFFFFF and TSAR #F5F5F5, which would be invisible on a white paywall (to confirm with the Apps team).
+Android link color corrected 2026-11-23 (DEC-24, replaces DEC-23): the link is drawn in the color resource `link` (#56A1DD in 73 markets; DP and VP #004E87, MC #000000, NYDN #4591E0), always on the white paywall. `Paywall_LoginButton_Text` is not used by any code (Apps team, DREAMT-4719).
 
 iOS values are the meter paywall purchase button and its Log In link, the same in all 78 markets (Apps team, DREAMT-4718, MISSING-ASSETS 5.10; DEC-22). Before DEC-22 the iOS column used the native Log In / Register buttons (radius 4; legacy template 5 + 1 pt border), which production never shows. The iOS link text is smaller in 8 markets (11 pt: BS, DP, HC, MC, OS, SS; 12 pt: NYDN, VP); documented only.
 
@@ -56,18 +56,18 @@ iOS values are the meter paywall purchase button and its Log In link, the same i
 |---|---|---|---|---|---|---|---|---|
 | BS | Baltimore Sun | `#daa520` · 218, 165, 32 | 2.24:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | CT | Chicago Tribune | `#9dd1f5` · 157, 209, 245 | 1.63:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
+| DP | Daily Press | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
 | HC | Hartford Courant | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | 8 + 0.7 border | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 8 + 0.7 border | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | `#4fa8d1` · 79, 168, 209 | 2.67:1 ❌ |
+| MC | Morning Call | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | 8 + 0.7 border | `#539cc4` · 83, 156, 196 | 3.03:1 ❌ | `#000000` · 0, 0, 0 | 21.0:1 ✅ |
 | NYDN | New York Daily News | `#4492e0` · 68, 146, 224 | 3.26:1 ❌ | 8 + 0.7 border | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ | `#4591e0` · 69, 145, 224 | 3.29:1 ❌ |
 | OCR | Orange County Register | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | 8 + 0.7 border | `#b04f0f` · 176, 79, 15 | 5.29:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ |
+| OS | Orlando Sentinel | `#15919d` · 21, 145, 157 | 3.77:1 ❌ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | PAC | Petaluma Argus-Courier | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | 8 + 0.7 border | `#a06318` · 160, 99, 24 | 4.89:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | PSN | Pasadena Star News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | SDUT | The San Diego Union-Tribune | `#000000` · 0, 0, 0 | 21.0:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | SGVT | San Gabriel Valley Tribune | `#ff6900` · 255, 105, 0 | 2.89:1 ❌ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | SIT | Sonoma Index Tribune | `#0f73a9` · 15, 115, 169 | 5.19:1 ✅ | 8 + 0.7 border | `#0f73a8` · 15, 115, 168 | 5.2:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#ffffff` · 255, 255, 255 | 1.0:1 ❌ |
+| SS | Sun Sentinel | `#761113` · 118, 17, 19 | 11.29:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TB | Buffzone | `#4351af` · 67, 81, 175 | 6.92:1 ✅ | 8 + 0.7 border | `#4252b0` · 66, 82, 176 | 6.85:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TBAN | Bay Area News | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TBCP | Boulder County Preps | `#3f51b5` · 63, 81, 181 | 6.87:1 ✅ | 8 + 0.7 border | `#4052b5` · 64, 82, 181 | 6.79:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
@@ -116,7 +116,7 @@ iOS values are the meter paywall purchase button and its Log In link, the same i
 | TRH | Republican-Herald | `#434953` · 67, 73, 83 | 9.07:1 ✅ | 8 + 0.7 border | `#424a54` · 66, 74, 84 | 8.98:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TROT | Royal Oak Tribune | `#013a67` · 1, 58, 103 | 11.65:1 ✅ | 8 + 0.7 border | `#003b66` · 0, 59, 102 | 11.55:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TRR | The Troy Record | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| TSAR | Saratogian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#f5f5f5` · 245, 245, 245 | 1.09:1 ❌ |
+| TSAR | Saratogian | `#004e87` · 0, 78, 135 | 8.61:1 ✅ | 8 + 0.7 border | `#000000` · 0, 0, 0 | 21.0:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TSBS | The San Bernardino Sun | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TSCS | Santa Cruz Sentinel | `#32408f` · 50, 64, 143 | 9.27:1 ✅ | 8 + 0.7 border | `#36408a` · 54, 64, 138 | 9.3:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TSEB | Sentinel and Enterprise | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#bd3b0f` · 189, 59, 15 | 5.53:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
@@ -131,4 +131,4 @@ iOS values are the meter paywall purchase button and its Log In link, the same i
 | TVTH | Vallejo Times Herald News | `#8d092d` · 141, 9, 45 | 9.5:1 ✅ | 8 + 0.7 border | `#8c0a2e` · 140, 10, 46 | 9.55:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TWDD | Woodland Daily Democrat | `#007639` · 0, 118, 57 | 5.75:1 ✅ | 8 + 0.7 border | `#007739` · 0, 119, 57 | 5.68:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
 | TWDN | Whittier Daily News | `#b93611` · 185, 54, 17 | 5.84:1 ✅ | 8 + 0.7 border | `#b01f36` · 176, 31, 54 | 6.78:1 ✅ | `#56a1dd` · 86, 161, 221 | 2.79:1 ❌ |
-| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ |
+| VP | Virginian Pilot | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | 8 + 0.7 border | `#005f7e` · 0, 95, 126 | 7.15:1 ✅ | `#004e87` · 0, 78, 135 | 8.61:1 ✅ |
