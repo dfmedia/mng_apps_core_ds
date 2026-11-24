@@ -1337,7 +1337,8 @@
    "follows": null,
    "uikit": null,
    "markets": 70,
-   "exceptions": 7
+   "exceptions": 7,
+   "not_seen": "not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24)"
   },
   {
    "collection": "android",

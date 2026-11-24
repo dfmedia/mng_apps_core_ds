@@ -781,7 +781,7 @@
    "paywall-loginbutton-text": {
     "$type": "color",
     "$value": "#56a1dd",
-    "$description": "`Paywall_LoginButton_Text` (Android): 70 of 77 markets; exceptions documented only (DEC-16)",
+    "$description": "`Paywall_LoginButton_Text` (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24).",
     "$extensions": {
      "mng": {
       "source": "Paywall_LoginButton_Text",
@@ -803,7 +803,8 @@
        161,
        221
       ],
-      "owner": "android"
+      "owner": "android",
+      "not_seen": "not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24)"
      }
     }
    },

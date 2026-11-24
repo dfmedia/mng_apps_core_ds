@@ -157,7 +157,7 @@ How to read a value: hex · R, G, B (0–255). `not set` = iOS leaves it to the 
 | `navigationBarItemTintColor` | follows | = navtext | 78 | — | token: brand navicon |
 | `navigationBarTitleColor` | follows | = navtext | 78 | — | token: brand navtext |
 | `offlineViewSwitchTintColor` | follows | = action | 72 | NYDN `not set` (system default), OS `not set` (system default), TDCD `#000000` · 0, 0, 0, TDLW `#000000` · 0, 0, 0, TIVDB `#807c7c` · 128, 124, 124, TSAR `#ffffff` · 255, 255, 255 | token: control: Offline mode switch (on) |
-| `paywallLinkColor` | follows | = tabbar | 67 | BS `#004e87` · 0, 78, 135, DP `#004e87` · 0, 78, 135, HC `#4fa8d1` · 79, 168, 209, MC `#539cc4` · 83, 156, 196, NYDN `#4591e0` · 69, 145, 224, OS `#004e87` · 0, 78, 135, SS `#004e87` · 0, 78, 135, TDP `#004e87` · 0, 78, 135, TSAR `#000000` · 0, 0, 0, TSV `#004e87` · 0, 78, 135, VP `#005f7e` · 0, 95, 126 | token: button link |
+| `paywallLinkColor` | follows | = navbar | 67 | BS `#004e87` · 0, 78, 135, DP `#004e87` · 0, 78, 135, HC `#4fa8d1` · 79, 168, 209, MC `#539cc4` · 83, 156, 196, NYDN `#4591e0` · 69, 145, 224, OS `#004e87` · 0, 78, 135, SS `#004e87` · 0, 78, 135, TDP `#004e87` · 0, 78, 135, TSAR `#000000` · 0, 0, 0, TSV `#004e87` · 0, 78, 135, VP `#005f7e` · 0, 95, 126 | token: button link |
 | `paywallPrimaryActionColor` | follows | = action | 78 | — | token: brand action |
 | `paywallViewPurchaseButtonColor` | follows | = action | 78 | — | token: brand buy (= action) |
 | `pushNotificationPromptYesButtonBackgroundColor` | follows | = action | 75 | TDCD `#000000` · 0, 0, 0, TIVDB `#807c7c` · 128, 124, 124, TSAR `#ffffff` · 255, 255, 255 | token: control: Notification prompt Yes fill |

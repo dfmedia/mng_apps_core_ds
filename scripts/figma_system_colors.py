@@ -4,6 +4,7 @@ Usage: python3 scripts/figma_system_colors.py <n>   ->  prints JS (PAGE + T + sc
 """
 import json, sys
 D = json.load(open('data/system-color-comparison.json')); P = D['platforms']
+UNUSED = {t['source']: t['not_seen'] for t in json.load(open('data/system-tokens.json'))['tokens'] if t.get('not_seen') and t.get('source')}   # Android keys no code draws (Apps team)
 PAGE = 'Color · System colors'
 sw = lambda h: {'sw': h if (h and h.startswith('#')) else None, 't': (h or 'not set') + ('' if not h or not h.startswith('#') else ' · ' + ', '.join(str(int(h[i:i+2], 16)) for i in (1, 3, 5)) + (f', alpha {round(int(h[7:], 16) / 255, 2)}' if len(h) == 9 else ''))}
 chip = lambda b: {'chip': b.replace(' (until pairing confirmed)', '')} if b else ''
@@ -21,7 +22,7 @@ def colors(plat):
             else: ex = ', '.join(f"{k} {v or 'not set'}" for k, v in list(sorted(exc.items()))[:6]) + (f" … +{len(exc) - 6}" if len(exc) > 6 else '')
             val = {'t': '= ' + c['follows'] + ' (market brand color)', 'sw': None} if kind == 'follows' else sw(c['majority'])
             n = c['follows_markets'] if kind == 'follows' else c['majority_markets']
-            rows.append([{'t': c['key'], 'b': True}, val, str(n), ex or '—', chip(c['bucket'])])
+            rows.append([{'t': c['key'] + (' · not used by any code' if plat == 'android' and c['key'] in UNUSED else ''), 'b': True}, val, str(n), ex or '—', chip(c['bucket'])])
     cov = sorted([c for c in cs if c['covered_by']], key=lambda c: c['key'])
     rows.append({'group': f'Already tokens or not system colors: brand roles, app shell, controls, buttons, brand assets ({len(cov)})'})
     for c in cov: rows.append([{'t': c['key'], 'b': True}, {'t': '= ' + c['follows'], 'sw': None} if c['kind'] == 'follows' else sw(c['majority']), str(c['follows_markets'] if c['kind'] == 'follows' else c['majority_markets']), '—', 'token: ' + c['covered_by']])

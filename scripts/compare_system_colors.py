@@ -26,7 +26,7 @@ IOS = json.load(open('data/source/markets.json')); AND = json.load(open('data/so
 PAIRS = json.load(open('data/system-color-pairs.json'))
 CTRL = json.load(open('data/control-colors.json'))
 ANS = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
-NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)"}   # Android colors the app sets but nobody sees
+NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)", 'Paywall_LoginButton_Text': 'not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24)'}   # Android colors the app sets but nobody sees
 N = 77; MAJ = 39
 
 def norm(h):

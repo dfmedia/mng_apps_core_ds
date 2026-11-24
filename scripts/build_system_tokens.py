@@ -21,7 +21,7 @@ import json, re
 C = json.load(open('data/system-color-comparison.json'))
 PAIRS = json.load(open('data/system-color-pairs.json'))['pairs']
 ANS = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))
-NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)"}   # Android colors the app sets but nobody sees
+NOT_SEEN = {'Settings_Background': f"never seen: {ANS['settings_background']['why']} (Apps team, DREAMT-4719, 2026-11-19)", 'Paywall_LoginButton_Text': 'not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24)'}   # Android colors the app sets but nobody sees
 P = C['platforms']
 # UIKit defaults used when iOS leaves a color unset (light mode). Named so Swift uses the system color itself.
 UIKIT = {'sectionListSectionSeparatorColor': ('separator', '#3c3c4349', 'UITableView default separator (UIColor.separator, light: 60, 60, 67 at 29%)'),
@@ -102,6 +102,8 @@ for plat in ('ios', 'android'):
         name = kebab(c['key'], plat)
         if camel(name) in CORE_CAMEL: name += '-alt'      # e.g. Android section_front_background (#f7f7f7) vs Core section-front/background
         t = token(c, plat); t['$extensions']['mng']['owner'] = plat
+        if plat == 'android' and c['key'] in NOT_SEEN:
+            t['$description'] += f" Shipped value, {NOT_SEEN[c['key']]}."; t['$extensions']['mng']['not_seen'] = NOT_SEEN[c['key']]
         if c['kind'] == 'follows':   # no value of its own: listed on the group, read from the brand palette by the code formats
             grp = tree.setdefault('color', {}).setdefault(f'{plat}-system', {})
             grp.setdefault('$extensions', {'mng': {'follows': {}}})['mng']['follows'][name] = {'$description': t['$description'], **t['$extensions']['mng']}
@@ -109,7 +111,7 @@ for plat in ('ios', 'android'):
             put(tree, ['color', f'{plat}-system', name], t)
         flat.append({'collection': plat, 'name': name, 'source': c['key'], 'kind': c['kind'], 'value': t['$value'],
                      'follows': t['$extensions']['mng'].get('follows'), 'uikit': t['$extensions']['mng'].get('uikit'),
-                     'markets': t['$extensions']['mng']['markets'], 'exceptions': len(c['exceptions'])})
+                     'markets': t['$extensions']['mng']['markets'], 'exceptions': len(c['exceptions']), **({'not_seen': NOT_SEEN[c['key']]} if plat == 'android' and c['key'] in NOT_SEEN else {})})
     plats[plat] = tree
 
 names = [f"{f['collection']}:{f['name']}" for f in flat]

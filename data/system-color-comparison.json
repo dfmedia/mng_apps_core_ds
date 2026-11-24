@@ -19902,7 +19902,7 @@
      "kind": "follows",
      "majority": "#004e87",
      "majority_markets": 19,
-     "follows": "tabbar",
+     "follows": "navbar",
      "follows_markets": 67,
      "not_set_markets": [],
      "exceptions": {
