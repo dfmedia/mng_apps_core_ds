@@ -8,12 +8,11 @@ Item-level to-do list (every element and component from the iOS and Android styl
 
 ## Next session (handoff 2026-11-24, afternoon)
 
-**State:** every Apps team question is answered; docs/MISSING-ASSETS.md is empty and DEC-20 numbering is closed (old numbers stay valid as references to the ticket answers). Last answer: the Android savings label (DEC-25: Roboto Bold 14sp, text btn_blue with 5 market overrides, padding 15/5dp, radius 15). DEC-24: Android log-in link = `link`. Icons are unblocked (no vector masters; 62 to do). iOS style guide `1795119836-15a3`; Android style guide `1795544871-b15c` (still `1cfb069a6`). Gherkin pilot: docs/components/button.feature + BUTTON.md › Behavior. Pushing to main is blocked from these sessions: work goes to branch `claude/2026-11-24-apps-team-answers` (PR #1 in Core and Android).
+**State:** every Apps team question is answered; docs/MISSING-ASSETS.md is empty and DEC-20 numbering is closed (old numbers stay valid as references to the ticket answers). Last answer: the Android savings label (DEC-25: Roboto Bold 14sp, text btn_blue with 5 market overrides, padding 15/5dp, radius 15). DEC-24: Android log-in link = `link`. Icons are unblocked (no vector masters; 62 to do). iOS style guide `1795119836-15a3`; Android style guide `1795544871-b15c` (still `1cfb069a6`). Gherkin pilot: docs/components/button.feature + BUTTON.md › Behavior.
 
 **Waiting on Karl:**
 - Approve the closing Jira comment on DREAMT-4719 (thank Rajal; everything closed) — drafted 2026-11-24, not posted.
 - Review the Gherkin pilot; if approved, roll it out to the other specs (plan: which docs get scenarios).
-- Merge PR #1 in mng_apps_core_ds and PR #1 in mng_apps_android_ds (pushing to main is blocked from these sessions, so work goes to `claude/…` branches); then pull locally.
 - Publish iOS, Android (Text link · Android variables, notes) and Core (Controls › 01, Icons › 05) libraries.
 - Bug report (docs/BUG-REPORT.md, 18 items, now including the savings label contrast): ready to send.
 
