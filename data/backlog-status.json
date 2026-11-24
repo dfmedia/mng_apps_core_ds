@@ -308,10 +308,10 @@
    "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23)."
   },
   "component/savings-badge": {
-   "figma": "todo",
+   "figma": "done",
    "tokens": "done",
    "code": "partial",
-   "note": "Android (Apps team, 2026-11-24, DEC-25): Roboto Bold 14sp in btn_blue (= buy in 72 of 77; BS, DP, TDP, TPD, TSAR override in their flavor), padding 15/5dp, 2dp buy border, radius 15, 50dp from the right edge: all tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (component.ios.savings-label.*)."
+   "note": "Android (Apps team, 2026-11-24, DEC-25): Roboto Bold 14sp in btn_blue (= buy in 72 of 77; BS, DP, TDP, TPD, TSAR override in their flavor), padding 15/5dp, 2dp buy border, radius 15, 50dp from the right edge: all tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (component.ios.savings-label.*). Figma: iOS Components · Controls › 03 and Android › 02 (2026-11-24), bound to Brand theme › buy, Components · iOS / · Android sizes and the Savings label · Android text collection."
   },
   "component/social-signin": {
    "figma": "todo",
