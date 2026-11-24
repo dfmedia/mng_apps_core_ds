@@ -1,0 +1,10 @@
+{
+ "$description": "Structured copy of the Android answer on DREAMT-4719 (2026-11-24, MISSING-ASSETS 5.6 savings label) that scripts read. Source data: do not edit. Wording: 2026-11-24-DREAMT-4719-android.md in this folder.",
+ "source": "Rajal Patel, DREAMT-4719 comment 277025, 2026-11-24; Android style guide 1795544871-b15c",
+ "savings_label": {
+  "text": {"family": "Roboto", "weight": 700, "size": 14, "unit": "sp", "content": "<n>% savings", "hidden_when": "no saving", "per_market_layout": false},
+  "text_color": {"key": "btn_blue", "note": "equals the buy color in 72 of 77 markets; BS, DP, TDP, TPD and TSAR differ (export)"},
+  "pill": {"sizing": "wraps the text", "padding_horizontal": 15, "padding_vertical": 5, "height_approx": 29, "fill": "#FFFFFF", "border_width": 2, "border_color": "buy", "radius": 15},
+  "position": {"align": "right", "end_margin": 50, "overlaps": "the top edge of the Yearly option, drawn above it"}
+ }
+}

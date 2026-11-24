@@ -61,7 +61,7 @@ ROLES = [
  ('Section header band height', 'size', 'size-header-band', None, 'iOS-only band'),
  ('Segmented control band height', 'size', 'size-segment-band', None, 'For You / Saved / Alerts'),
  ('Settings header band height', 'size', 'size-settings-header', None, ''),
- ('Savings label size', 'size', 'size-savings-pill', None, 'Android size not confirmed (MISSING-ASSETS 5.6)'),
+ ('Savings label size', 'size', 'size-savings-pill', None, 'Android: wraps the text, padding 15dp / 5dp, about 29dp tall (component.android.savings-label.*, DEC-25)'),
  ('Newsletters sign-in icon', 'size', 'size-newsletters-icon', None, ''),
  ('Tournament loading symbol', 'size', 'size-tournament-icon', None, 'SF Symbols'),
  ('Top bar height', 'size', 'size-navbar', 'size-toolbar', 'Platform defaults: iOS 44 pt, Android 56 dp'),

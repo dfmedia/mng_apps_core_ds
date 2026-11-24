@@ -122,6 +122,13 @@ put(ios, 'component.ios.continue.width', {'$value': '159px', '$type': 'dimension
 put(ios, 'component.ios.continue.height', {'$value': '55px', '$type': 'dimension', '$description': 'Your News Continue button height (Continue-* PNG image, 159 x 55 pt)', **SRC('Continue-* PNGs', 'px', 'ios')})
 put(andr, 'component.android.continue.width', {'$value': '152px', '$type': 'dimension', '$description': 'Your News Continue button width (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
 put(andr, 'component.android.continue.height', {'$value': '54px', '$type': 'dimension', '$description': 'Your News Continue button height (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
+SAVP = json.load(open('data/source/apps-team-answers/2026-11-24-DREAMT-4719-android.json'))['savings_label']   # DEC-25
+for k, v, d in [('padding-horizontal', SAVP['pill']['padding_horizontal'], 'Savings label left and right padding (the pill wraps its text)'),
+                ('padding-vertical', SAVP['pill']['padding_vertical'], 'Savings label top and bottom padding (about 29dp tall)'),
+                ('border-width', SAVP['pill']['border_width'], 'Savings label outline width (buy color)'),
+                ('end-margin', SAVP['position']['end_margin'], 'Savings label distance from the right edge; it overlaps the top edge of the Yearly option')]:
+    put(andr, f'component.android.savings-label.{k}', {'$value': f'{v}px', '$type': 'dimension', '$description': d + ' (DEC-25, Apps team, DREAMT-4719, 2026-11-24)',
+        '$extensions': {'mng': {'source': 'Apps team answer (paywall discount label layout)', 'platform': 'android', 'unit': 'px'}}})
 put(andr, 'component.android.subscription-option.inset', {'$value': '14px', '$type': 'dimension',
     '$description': 'Subscription option inner padding (controls notes: 14dp padding)', '$extensions': {'mng': {'source': 'paywall subscription option (5-controls.md)', 'platform': 'android', 'unit': 'px'}}})
 

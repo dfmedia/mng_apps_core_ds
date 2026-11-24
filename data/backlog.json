@@ -1268,11 +1268,11 @@
    "group": "Buttons",
    "name": "Savings label",
    "owner": "core+variant",
-   "figma": "blocked",
-   "tokens": "partial",
+   "figma": "todo",
+   "tokens": "done",
    "code": "partial",
-   "blocked_by": "Android font, size and padding: MISSING-ASSETS 5.6 (asked again 2026-11-24)",
-   "note": "Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339).",
+   "blocked_by": "",
+   "note": "Android (Apps team, 2026-11-24, DEC-25): Roboto Bold 14sp in btn_blue (= buy in 72 of 77; BS, DP, TDP, TPD, TSAR override in their flavor), padding 15/5dp, 2dp buy border, radius 15, 50dp from the right edge: all tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (component.ios.savings-label.*).",
    "overall": "in progress"
   },
   {

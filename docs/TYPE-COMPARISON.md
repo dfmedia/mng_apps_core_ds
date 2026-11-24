@@ -124,6 +124,6 @@ iOS ships 74 styles (TroncKit Style.json + TroncAppThemeable); Android ships 32 
 | Continue button label | — | Open Sans SemiBold 15 (`continue-label`) | Android only | iOS draws Continue as PNG images (DSC-24) |
 | Button label | Open Sans Bold 14, caps (`paywall-purchase`) | Roboto Medium 14, caps (`button-label`) | 🔴 differs | Android Material default (Subscribe, Alerts Enable). iOS: the meter paywall purchase button, always uppercase |
 | Paywall log-in link | Open Sans Regular 14 (`paywall-login-link`) | — | iOS only | iOS: whole sentence underlined; 11 in BS, DP, HC, MC, OS, SS; 12 in NYDN, VP |
-| Savings label | Open Sans Bold 13 (`savings-label`) | — | iOS only | Android: text in the market color (VP screenshot); font and size not in the source |
+| Savings label | Open Sans Bold 13 (`savings-label`) | — | iOS only | Android: Roboto Bold 14sp in btn_blue, no style key of its own (type.android-control.savings-label; Apps team, 2026-11-24, DEC-25) |
 | Subscription option label | not in the export | Roboto Bold 16 (`subscription-option`) | ❓ unknown | iOS: Open Sans Bold 16 (component map); which iOS Style.json key is not confirmed |
 | What's New button label | — | Open Sans Bold 14, caps (`whatsnew-label`) | Android only | Not in the iOS guide |

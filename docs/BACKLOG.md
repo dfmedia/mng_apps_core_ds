@@ -21,8 +21,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 
 ## Suggested order
 
-1. Apps team: savings label font, size and padding on Android (MISSING-ASSETS 5.6, the last open question)
-2. Icons: draw the Core glyphs to the DEC-17 names (no vector masters on either app), then the Icon component (PROGRESS 1.8)
+1. Icons: draw the Core glyphs to the DEC-17 names (no vector masters on either app), then the Icon component (PROGRESS 1.8)
 
 ## Foundations
 
@@ -94,7 +93,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Manage subscription modal buttons (iOS) | iOS | ⬜ to do | 🟡 partial | 🟡 partial | iOS Manage subscription modal: two 44 pt buttons, radius 8, one filled with navbar, Cancel white with a 1 pt black border (DREAMT-4718); height is a token (component.ios.modal-button.height). White on white in 7 markets (DSC-34). |
 | Account bottom-sheet buttons (Android) | Android | ⬜ to do | 🟡 partial | 🟡 partial | Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23). |
 | What's New Continue button | Android | 🟡 partial | ✅ done | 📝 written, compile-checked, not in an app yet | Colors and radius as shipped (fill whats-new-button-color, radius component.android.whats-new-continue.radius); label Open Sans Bold 14sp (18 landscape, 25 tablet), about 50dp (Apps team, DREAMT-4719, 2026-11-19): Android Components · Button › What's New Continue; docs/GUIDE-EXTRAS.md. Fill confirmed by the Android style guide (2026-11-19) |
-| Savings label | Core + iOS + Android | ⛔ blocked | 🟡 partial | 🟡 partial | ⛔ Android font, size and padding: MISSING-ASSETS 5.6 (asked again 2026-11-24) · Android text and 2dp outline follow buy (VP screenshot 2026-11-19; mng_savings_label_text = @color/mng_brand_buy), radius 15 is a token. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13; iOS sizes are tokens (component.ios.savings-label.*, f79fe3339). |
+| Savings label | Core + iOS + Android | ⬜ to do | ✅ done | 🟡 partial | Android (Apps team, 2026-11-24, DEC-25): Roboto Bold 14sp in btn_blue (= buy in 72 of 77; BS, DP, TDP, TPD, TSAR override in their flavor), padding 15/5dp, 2dp buy border, radius 15, 50dp from the right edge: all tokens. iOS pill 110 × 30, 2 pt border, radius 13, Open Sans Bold 13 (component.ios.savings-label.*). |
 | Social sign-in buttons | iOS | ⬜ to do | 🟡 partial | 🟡 partial | Google radius and icon size are tokens. iOS: Newsletters login only, Apple and Google, 52 pt, radius 9, Open Sans SemiBold 18 (DREAMT-4718). Android: hidden, login is Auth0 Universal Login |
 | Secondary, disabled, loading states | Core | ✅ done | ✅ done | 📝 written, compile-checked, not in an app yet | Disabled built (DEC-07). Secondary and in-button Loading: neither app ships them, not designed (CTRL-02 not pursued, Karl 2026-11-10) |
 

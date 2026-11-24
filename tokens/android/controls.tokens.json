@@ -86,7 +86,11 @@
      "follows": {
       "savings-label-text": {
        "role": "buy",
-       "$description": "Savings label text and 2dp outline on the subscription screen: the market buy color (VP screenshot, 2026-11-19; the style guide says #004E87)"
+       "$description": "Savings label text on the subscription screen: btn_blue, which equals the buy color in 72 of 77 markets; BS, DP, TDP, TPD, TSAR differ and set their own in the flavor (DEC-25, Apps team, DREAMT-4719, 2026-11-24)"
+      },
+      "savings-label-border": {
+       "role": "buy",
+       "$description": "Savings label 2dp outline: the market buy color in every market (DEC-25, Apps team, DREAMT-4719, 2026-11-24)"
       }
      }
     }
@@ -245,10 +249,98 @@
      }
     }
    }
+  },
+  "android-control-override": {
+   "savings-label-text": {
+    "BS": {
+     "$value": "#779dcf",
+     "$type": "color",
+     "$description": "BS: savings label text, btn_blue (differs from the buy outline #daa520; DEC-25)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        119,
+        157,
+        207
+       ],
+       "source": "btn_blue"
+      }
+     }
+    },
+    "DP": {
+     "$value": "#4fa8d1",
+     "$type": "color",
+     "$description": "DP: savings label text, btn_blue (differs from the buy outline #005f7e; DEC-25)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        79,
+        168,
+        209
+       ],
+       "source": "btn_blue"
+      }
+     }
+    },
+    "TDP": {
+     "$value": "#000000",
+     "$type": "color",
+     "$description": "TDP: savings label text, btn_blue (differs from the buy outline #daa520; DEC-25)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
+       "source": "btn_blue"
+      }
+     }
+    },
+    "TPD": {
+     "$value": "#000000",
+     "$type": "color",
+     "$description": "TPD: savings label text, btn_blue (differs from the buy outline #999999; DEC-25)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
+       "source": "btn_blue"
+      }
+     }
+    },
+    "TSAR": {
+     "$value": "#000000",
+     "$type": "color",
+     "$description": "TSAR: savings label text, btn_blue (differs from the buy outline #15919d; DEC-25)",
+     "$extensions": {
+      "mng": {
+       "rgb": [
+        0,
+        0,
+        0
+       ],
+       "source": "btn_blue"
+      }
+     }
+    }
+   }
   }
  },
  "type": {
   "android-control": {
+   "savings-label": {
+    "$value": {
+     "fontFamily": "Roboto",
+     "fontWeight": 700,
+     "fontSize": "14px"
+    },
+    "$type": "typography",
+    "$description": "Savings label text \"<n>% savings\": Roboto Bold 14sp, system default size and family; hidden when there is no saving; same in every market (DEC-25, Apps team, 2026-11-24)"
+   },
    "subscription-option": {
     "$value": {
      "fontFamily": "Roboto",

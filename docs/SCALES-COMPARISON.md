@@ -68,7 +68,7 @@ Neither app has a shared spacing scale in code; these are the values the code us
 | Section header band height | 30 (`size-header-band`) | — | iOS only | iOS-only band |
 | Segmented control band height | 50 (`size-segment-band`) | — | iOS only | For You / Saved / Alerts |
 | Settings header band height | 30 (`size-settings-header`) | — | iOS only |  |
-| Savings label size | 110 30 (`size-savings-pill`) | — | iOS only | Android size not confirmed (MISSING-ASSETS 5.6) |
+| Savings label size | 110 30 (`size-savings-pill`) | — | iOS only | Android: wraps the text, padding 15dp / 5dp, about 29dp tall (component.android.savings-label.*, DEC-25) |
 | Newsletters sign-in icon | 22 (`size-newsletters-icon`) | — | iOS only |  |
 | Tournament loading symbol | 72 (`size-tournament-icon`) | — | iOS only | SF Symbols |
 | Top bar height | 44 (`size-navbar`) | 56 (`size-toolbar`) | 🔴 differs | Platform defaults: iOS 44 pt, Android 56 dp |

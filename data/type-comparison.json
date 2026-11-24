@@ -1843,7 +1843,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": "Android: text in the market color (VP screenshot); font and size not in the source"
+   "note": "Android: Roboto Bold 14sp in btn_blue, no style key of its own (type.android-control.savings-label; Apps team, 2026-11-24, DEC-25)"
   },
   {
    "role": "Subscription option label",

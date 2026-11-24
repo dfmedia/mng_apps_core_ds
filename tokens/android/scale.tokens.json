@@ -232,6 +232,54 @@
        "unit": "px"
       }
      }
+    },
+    "padding-horizontal": {
+     "$value": "15px",
+     "$type": "dimension",
+     "$description": "Savings label left and right padding (the pill wraps its text) (DEC-25, Apps team, DREAMT-4719, 2026-11-24)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer (paywall discount label layout)",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "padding-vertical": {
+     "$value": "5px",
+     "$type": "dimension",
+     "$description": "Savings label top and bottom padding (about 29dp tall) (DEC-25, Apps team, DREAMT-4719, 2026-11-24)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer (paywall discount label layout)",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "border-width": {
+     "$value": "2px",
+     "$type": "dimension",
+     "$description": "Savings label outline width (buy color) (DEC-25, Apps team, DREAMT-4719, 2026-11-24)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer (paywall discount label layout)",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "end-margin": {
+     "$value": "50px",
+     "$type": "dimension",
+     "$description": "Savings label distance from the right edge; it overlaps the top edge of the Yearly option (DEC-25, Apps team, DREAMT-4719, 2026-11-24)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer (paywall discount label layout)",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
     }
    },
    "tab-bar": {

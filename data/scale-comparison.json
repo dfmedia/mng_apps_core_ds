@@ -579,7 +579,7 @@
    },
    "android": null,
    "match": "ios-only",
-   "note": "Android size not confirmed (MISSING-ASSETS 5.6)"
+   "note": "Android: wraps the text, padding 15dp / 5dp, about 29dp tall (component.android.savings-label.*, DEC-25)"
   },
   {
    "role": "Newsletters sign-in icon",

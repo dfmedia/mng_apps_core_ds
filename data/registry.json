@@ -1743,9 +1743,9 @@
     "source": "Savings pill 110 \u00d7 30, white fill, 2 pt border in subscriptionTintColor, radius 13, Open Sans Bold 13 in the same color; inset 10 pt (35 pt iPad) (Apps team, DREAMT-4718, f79fe3339)"
    },
    "android": {
-    "source": "White, 2dp stroke in buy color, radius 15; text in the market color (VP screenshot 2026-11-19; the style guide says #004E87)"
+    "source": "Wraps the text, padding 15dp / 5dp (about 29dp tall), white, 2dp border in buy, radius 15; Roboto Bold 14sp in btn_blue (= buy in 72 of 77); 50dp from the right edge (Apps team, DREAMT-4719, 2026-11-24, DEC-25)"
    },
-   "note": "Both apps have it (iOS answered 2026-11-18). Differences: size, radius (13 vs 15), stroke color role.",
+   "note": "Both apps have it (iOS answered 2026-11-18, Android 2026-11-24). Differences: font (Open Sans Bold 13 vs Roboto Bold 14sp), fixed 110 \u00d7 30 vs sized to the text, radius 13 vs 15, inset 10 pt vs 50dp; Android text color can differ from the outline in 5 markets.",
    "core": {
     "figma": null,
     "spec": null
