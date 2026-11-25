@@ -76,16 +76,18 @@ if !glyphFontFound { say("No font with symbol glyphs found. Install SF Pro (deve
 struct Sig { var v: [Float]; var aspect: Float }
 
 // Render into an 8-bit gray canvas (coverage 0…255) and reduce to an N×N signature of the ink bbox.
-func signature(_ draw: (CGContext) -> Void) -> Sig? {
+// invert: the drawing is dark ink on white (a symbol image drawn as is) instead of white ink on black.
+func signature(invert: Bool = false, _ draw: (CGContext) -> Void) -> Sig? {
     var buf = [UInt8](repeating: 0, count: S * S)
     let ok: Bool = buf.withUnsafeMutableBytes { raw -> Bool in
         guard let ctx = CGContext(data: raw.baseAddress, width: S, height: S, bitsPerComponent: 8,
                                   bytesPerRow: S, space: CGColorSpaceCreateDeviceGray(),
                                   bitmapInfo: CGImageAlphaInfo.none.rawValue) else { return false }
-        ctx.setFillColor(gray: 0, alpha: 1); ctx.fill(CGRect(x: 0, y: 0, width: S, height: S))
+        ctx.setFillColor(gray: invert ? 1 : 0, alpha: 1); ctx.fill(CGRect(x: 0, y: 0, width: S, height: S))
         draw(ctx); return true
     }
     if !ok { return nil }
+    if invert { for i in 0..<buf.count { buf[i] = 255 - buf[i] } }
     var x0 = S, y0 = S, x1 = -1, y1 = -1
     for y in 0..<S { for x in 0..<S where buf[y * S + x] > 40 {
         x0 = min(x0, x); x1 = max(x1, x); y0 = min(y0, y); y1 = max(y1, y) } }
@@ -107,14 +109,13 @@ func symbolSig(_ name: String) -> Sig? {
           let img = base.withSymbolConfiguration(
               NSImage.SymbolConfiguration(pointSize: fontSize, weight: .regular).applying(.preferringMonochrome()))
     else { return nil }
-    let white = NSImage(size: img.size, flipped: false) { r in
-        img.draw(in: r); NSColor.white.set(); r.fill(using: .sourceAtop); return true }
-    return signature { ctx in
-        NSGraphicsContext.saveGraphicsState()
-        NSGraphicsContext.current = NSGraphicsContext(cgContext: ctx, flipped: false)
-        let s = white.size
-        white.draw(in: NSRect(x: (CGFloat(S) - s.width) / 2, y: (CGFloat(S) - s.height) / 2, width: s.width, height: s.height))
-        NSGraphicsContext.restoreGraphicsState()
+    // 2026-11-25: drawing through an NSImage drawing-handler block crashes the swift interpreter (trace trap in
+    // NSCustomImageRep). Take the symbol's CGImage instead and draw it with Core Graphics only (black ink on white).
+    var rect = CGRect(origin: .zero, size: img.size)
+    guard let cg = img.cgImage(forProposedRect: &rect, context: nil, hints: nil) else { return nil }
+    let w = img.size.width, h = img.size.height
+    return signature(invert: true) { ctx in
+        ctx.draw(cg, in: CGRect(x: (CGFloat(S) - w) / 2, y: (CGFloat(S) - h) / 2, width: w, height: h))
     }
 }
 
