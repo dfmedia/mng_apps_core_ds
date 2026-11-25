@@ -126,6 +126,10 @@ def main():
         files.append(OrderedDict(platform=r['platform'], folder=r['folder'], file=r['file'], name=r['name'],
                                  material=mat, sf=SF.get(mat) if mat else SF_BY_FILE.get(r['file']) or SF_BY_NAME.get(r['name']),
                                  shape_rank=score))
+    _rp = os.path.join(ROOT, 'data', 'icon-redraws.json')
+    redraws = defaultdict(list)
+    for r in (json.load(open(_rp))['redraws'] if os.path.exists(_rp) else []):
+        redraws[r['name']].append(r['svg'])
     # per name
     rows = []
     for n in sorted(MATERIAL):
@@ -135,7 +139,7 @@ def main():
         status = 'open' if n in OPEN else 'partly-redraw' if n in REDRAW and (MATERIAL[n] or any(f['material'] for f in fs)) else 'redraw' if n in REDRAW \
             else 'ask' if n == 'notification' else 'symbol'
         rows.append(OrderedDict(name=n, bucket=bucket.get(n), material=mats, sf=sfs, status=status,
-                                note=OPEN.get(n) or REDRAW.get(n) or CONFIRMED.get(n) or OTHER.get(n) or '', shipped_files=len(fs)))
+                                note=OPEN.get(n) or REDRAW.get(n) or CONFIRMED.get(n) or OTHER.get(n) or '', redrawn=redraws.get(n, []), shipped_files=len(fs)))
     # copy Material SVGs: Core and core-variant names -> this repo; Android only -> Android repo; iOS only -> none (SF on iOS)
     dest = {'core': os.path.join(ROOT, 'icons', 'material'), 'android': os.path.join(ROOT, '..', 'mng_apps_android_ds', 'icons', 'material')}
     want = defaultdict(set)
@@ -184,10 +188,10 @@ def write_md(out):
          f"Material SVGs: {s['material_svgs'].get('core', 0)} in `icons/material/` (Core), {s['material_svgs'].get('android', 0)} in "
          f"`mng_apps_android_ds/icons/material/` (Android only). SF Symbols needed: {s['sf_symbols']}.", '',
          'Brand marks (`brand-*`) are not here: they stay the brands\' own artwork (DEC-26).', '',
-         '## By icon name', '', '| Name | Owner | Material Symbol | SF Symbol | Status | Note |', '|---|---|---|---|---|---|']
+         '## By icon name', '', '| Name | Owner | Material Symbol | SF Symbol | Status | Redrawn SVG | Note |', '|---|---|---|---|---|---|---|']
     for r in out['names']:
         L.append(f"| `{r['name']}` | {r['bucket'] or '—'} | {', '.join('`'+m+'`' for m in r['material']) or '—'} | "
-                 f"{', '.join('`'+m+'`' for m in r['sf']) or '—'} | {STATUS[r['status']]} | {r['note'] or '—'} |")
+                 f"{', '.join('`'+m+'`' for m in r['sf']) or '—'} | {STATUS[r['status']]} | {', '.join('`'+x+'`' for x in r['redrawn']) or '—'} | {r['note'] or '—'} |")
     L += ['', '## By shipped file', '', 'Which symbol replaces each shipped file. Shape rank: how close the Material Symbol is to the shipped '
           'drawing (soft IoU of the ink, 0–1; blank where the pick was not in the top 5, e.g. a white glyph on a colored circle).', '',
           '| Platform | File | Name | Material | SF | Shape rank |', '|---|---|---|---|---|---|']

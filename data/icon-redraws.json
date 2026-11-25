@@ -1,0 +1,49 @@
+{
+ "generated_by": "scripts/redraw_icons.py",
+ "decision": "DEC-29",
+ "grid": "Material Symbols 960 grid, 60-unit strokes",
+ "redraws": [
+  {
+   "name": "filter",
+   "owner": "core",
+   "svg": "mng_apps_core_ds/icons/redrawn/filter.svg",
+   "guide": "android/Toolbar/ic_filter.png",
+   "note": ""
+  },
+  {
+   "name": "tab-for-you",
+   "owner": "core",
+   "svg": "mng_apps_core_ds/icons/redrawn/tab-for-you-fill.svg",
+   "guide": "android/Bottom nav/mc_tab_icon_for_you.png",
+   "note": ""
+  },
+  {
+   "name": "tab-for-you",
+   "owner": "core",
+   "svg": "mng_apps_core_ds/icons/redrawn/tab-for-you.svg",
+   "guide": "ios/Tab Bar/tab-foryou.png",
+   "note": ""
+  },
+  {
+   "name": "tab-enewspaper",
+   "owner": "core",
+   "svg": "mng_apps_core_ds/icons/redrawn/tab-enewspaper.svg",
+   "guide": "android/Bottom nav/mc_tab_icon_newspaper.png",
+   "note": ""
+  },
+  {
+   "name": "unfollow-topic",
+   "owner": "ios",
+   "svg": "mng_apps_ios_ds/icons/redrawn/unfollow-topic.svg",
+   "guide": "android/Save and select/ic_unfollow_topic.png",
+   "note": "derived from Material format_list_bulleted_add (Apache-2.0)"
+  },
+  {
+   "name": "enews-coach-arrow",
+   "owner": "ios",
+   "svg": "mng_apps_ios_ds/icons/redrawn/enews-coach-arrow.svg",
+   "guide": "ios/ENewspaper/menu-line.png",
+   "note": ""
+  }
+ ]
+}

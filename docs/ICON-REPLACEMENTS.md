@@ -10,60 +10,60 @@ Brand marks (`brand-*`) are not here: they stay the brands' own artwork (DEC-26)
 
 ## By icon name
 
-| Name | Owner | Material Symbol | SF Symbol | Status | Note |
-|---|---|---|---|---|---|
-| `account` | iOS only | `account_circle` | `person.circle.fill` | Stock symbol | — |
-| `back` | Core | `chevron_left` | `chevron.left` | Stock symbol | — |
-| `checked` | Core | `check`, `check_circle`, `check_circle-fill`, `radio_button_checked` | `checkmark`, `checkmark.circle`, `checkmark.circle.fill`, `smallcircle.filled.circle` | Stock symbol | — |
-| `close` | Core | `cancel-fill`, `close` | `xmark`, `xmark.circle.fill` | Stock symbol | — |
-| `close-circle` | Core | `cancel-fill` | `xmark.circle.fill` | Stock symbol | — |
-| `collapse` | Core | `keyboard_arrow_down` | `chevron.down` | Stock symbol | — |
-| `continue` | Core | `arrow_circle_right-fill` | `arrow.right.circle.fill` | Stock symbol | — |
-| `email` | Core | `mail-fill` | `envelope.fill` | Stock symbol | — |
-| `embed-3d` | iOS only | `deployed_code` | `cube` | Open: Karl to decide | Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is asked (MISSING-ASSETS 1.4). Material deployed_code / SF cube is the cube alone. |
-| `enews-coach-arrow` | iOS only | — | — | Redraw | No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2). |
-| `enews-expand-page` | iOS only | `open_in_full` | `arrow.up.left.and.arrow.down.right` | Stock symbol | — |
-| `enews-fit-to-screen` | iOS only | `close_fullscreen` | `arrow.down.right.and.arrow.up.left` | Stock symbol | — |
-| `enews-next-page` | iOS only | `arrow_forward_ios` | `chevron.right` | Stock symbol | — |
-| `enews-previous-page` | iOS only | `arrow_back_ios_new` | `chevron.left` | Stock symbol | — |
-| `exit-full-screen` | iOS only | `close_fullscreen` | `arrow.down.right.and.arrow.up.left` | Stock symbol | — |
-| `expand` | Core | `keyboard_arrow_up` | `chevron.up` | Stock symbol | — |
-| `filter` | Core | — | — | Redraw | Redraw (Karl): three sliders with round knobs; no stock symbol matches. |
-| `follow-topic` | iOS only | `add_circle`, `format_list_bulleted_add` | `plus.circle`, `text.badge.plus` | Stock symbol | Karl: good (list: format_list_bulleted_add / SF text.badge.plus; circle: add_circle / SF plus.circle). |
-| `forward` | Core | `arrow_circle_right-fill`, `chevron_right` | `arrow.right.circle.fill`, `chevron.right` | Stock symbol | — |
-| `like` | iOS only | `favorite-fill` | `heart.fill` | Stock symbol | — |
-| `menu` | Core | `menu` | `line.3.horizontal` | Stock symbol | — |
-| `notification` | Android only | — | — | Asked of the Apps team | Per-market notification icons: asked of the Apps team (MISSING-ASSETS 1.3). |
-| `pause` | Core | `pause-fill`, `pause_circle-fill` | `pause.circle.fill`, `pause.fill` | Stock symbol | — |
-| `play` | Core | `play_arrow-fill`, `play_circle-fill` | `play.circle.fill`, `play.fill` | Stock symbol | — |
-| `player-error` | iOS only | `error-fill` | `exclamationmark.circle.fill` | Stock symbol | — |
-| `rating-star-empty` | iOS only | `star` | `star` | Stock symbol | — |
-| `rating-star-full` | iOS only | `star-fill` | `star.fill` | Stock symbol | — |
-| `rating-star-half` | iOS only | `star_half-fill` | `star.leadinghalf.filled` | Stock symbol | — |
-| `refresh` | Core | `refresh` | `arrow.clockwise` | Stock symbol | — |
-| `repost` | iOS only | `repeat` | `arrow.2.squarepath` | Stock symbol | Karl: good (repeat / SF arrow.2.squarepath). |
-| `save` | Core | `bookmark` | `bookmark` | Stock symbol | — |
-| `saved` | Core | `bookmark-fill`, `star`, `star-fill` | `bookmark.fill`, `star`, `star.fill` | Stock symbol | — |
-| `search` | Core | `search` | `magnifyingglass` | Stock symbol | — |
-| `settings` | Core | `settings` | `gearshape` | Stock symbol | — |
-| `share` | Core | `ios_share`, `share` | `square.and.arrow.up` | Stock symbol | — |
-| `skip-back-10` | Android only | `replay_10` | — | Stock symbol | — |
-| `skip-back-15` | iOS only | — | `gobackward.15` | Stock symbol | iOS only: SF gobackward.15 (Material has 5, 10 and 30 only). |
-| `skip-forward-10` | Android only | `forward_10` | — | Stock symbol | — |
-| `skip-forward-15` | iOS only | — | `goforward.15` | Stock symbol | iOS only: SF goforward.15 (Material has 5, 10 and 30 only). |
-| `tab-alerts` | Core | `notifications`, `notifications-fill` | `bell`, `bell.fill` | Stock symbol | — |
-| `tab-enewspaper` | Core | — | — | Redraw | Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS. |
-| `tab-for-you` | Core | — | — | Redraw | Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18). |
-| `tab-games` | Core | `extension` | `puzzlepiece` | Stock symbol | — |
-| `tab-home` | Core | `home` | `house` | Stock symbol for some files, redraw for others | Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon. |
-| `text-size` | Android only | `format_size` | `textformat.size` | Stock symbol | Android only. Material format_size (T T) replaces the shipped serif A A (Karl, 2026-11-25). |
-| `text-size-larger` | iOS only | `text_increase` | `textformat.size.larger` | Stock symbol | iOS only (DEC-21): SF textformat.size.larger (Karl: good). Android has no such icon: it uses text-size. |
-| `text-size-smaller` | iOS only | `text_decrease` | `textformat.size.smaller` | Stock symbol | iOS only (DEC-21): SF textformat.size.smaller (Karl: good). Android has no such icon: it uses text-size. |
-| `tournament-sport` | iOS only | — | `soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill · sportscourt.fill` | Stock symbol | iOS only: SF Symbols as shipped. |
-| `unchecked` | Core | `radio_button_unchecked` | `circle` | Stock symbol | — |
-| `unfollow-topic` | iOS only | `do_not_disturb_on` | `minus.circle`, `text.badge.minus` | Stock symbol for some files, redraw for others | iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good). |
-| `verified` | iOS only | `verified-fill` | `checkmark.seal.fill` | Stock symbol | — |
-| `warning` | Core | `warning-fill` | `exclamationmark.triangle.fill` | Stock symbol | — |
+| Name | Owner | Material Symbol | SF Symbol | Status | Redrawn SVG | Note |
+|---|---|---|---|---|---|---|
+| `account` | iOS only | `account_circle` | `person.circle.fill` | Stock symbol | — | — |
+| `back` | Core | `chevron_left` | `chevron.left` | Stock symbol | — | — |
+| `checked` | Core | `check`, `check_circle`, `check_circle-fill`, `radio_button_checked` | `checkmark`, `checkmark.circle`, `checkmark.circle.fill`, `smallcircle.filled.circle` | Stock symbol | — | — |
+| `close` | Core | `cancel-fill`, `close` | `xmark`, `xmark.circle.fill` | Stock symbol | — | — |
+| `close-circle` | Core | `cancel-fill` | `xmark.circle.fill` | Stock symbol | — | — |
+| `collapse` | Core | `keyboard_arrow_down` | `chevron.down` | Stock symbol | — | — |
+| `continue` | Core | `arrow_circle_right-fill` | `arrow.right.circle.fill` | Stock symbol | — | — |
+| `email` | Core | `mail-fill` | `envelope.fill` | Stock symbol | — | — |
+| `embed-3d` | iOS only | `deployed_code` | `cube` | Open: Karl to decide | — | Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is asked (MISSING-ASSETS 1.4). Material deployed_code / SF cube is the cube alone. |
+| `enews-coach-arrow` | iOS only | — | — | Redraw | `mng_apps_ios_ds/icons/redrawn/enews-coach-arrow.svg` | No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2). |
+| `enews-expand-page` | iOS only | `open_in_full` | `arrow.up.left.and.arrow.down.right` | Stock symbol | — | — |
+| `enews-fit-to-screen` | iOS only | `close_fullscreen` | `arrow.down.right.and.arrow.up.left` | Stock symbol | — | — |
+| `enews-next-page` | iOS only | `arrow_forward_ios` | `chevron.right` | Stock symbol | — | — |
+| `enews-previous-page` | iOS only | `arrow_back_ios_new` | `chevron.left` | Stock symbol | — | — |
+| `exit-full-screen` | iOS only | `close_fullscreen` | `arrow.down.right.and.arrow.up.left` | Stock symbol | — | — |
+| `expand` | Core | `keyboard_arrow_up` | `chevron.up` | Stock symbol | — | — |
+| `filter` | Core | — | — | Redraw | `mng_apps_core_ds/icons/redrawn/filter.svg` | Redraw (Karl): three sliders with round knobs; no stock symbol matches. |
+| `follow-topic` | iOS only | `add_circle`, `format_list_bulleted_add` | `plus.circle`, `text.badge.plus` | Stock symbol | — | Karl: good (list: format_list_bulleted_add / SF text.badge.plus; circle: add_circle / SF plus.circle). |
+| `forward` | Core | `arrow_circle_right-fill`, `chevron_right` | `arrow.right.circle.fill`, `chevron.right` | Stock symbol | — | — |
+| `like` | iOS only | `favorite-fill` | `heart.fill` | Stock symbol | — | — |
+| `menu` | Core | `menu` | `line.3.horizontal` | Stock symbol | — | — |
+| `notification` | Android only | — | — | Asked of the Apps team | — | Per-market notification icons: asked of the Apps team (MISSING-ASSETS 1.3). |
+| `pause` | Core | `pause-fill`, `pause_circle-fill` | `pause.circle.fill`, `pause.fill` | Stock symbol | — | — |
+| `play` | Core | `play_arrow-fill`, `play_circle-fill` | `play.circle.fill`, `play.fill` | Stock symbol | — | — |
+| `player-error` | iOS only | `error-fill` | `exclamationmark.circle.fill` | Stock symbol | — | — |
+| `rating-star-empty` | iOS only | `star` | `star` | Stock symbol | — | — |
+| `rating-star-full` | iOS only | `star-fill` | `star.fill` | Stock symbol | — | — |
+| `rating-star-half` | iOS only | `star_half-fill` | `star.leadinghalf.filled` | Stock symbol | — | — |
+| `refresh` | Core | `refresh` | `arrow.clockwise` | Stock symbol | — | — |
+| `repost` | iOS only | `repeat` | `arrow.2.squarepath` | Stock symbol | — | Karl: good (repeat / SF arrow.2.squarepath). |
+| `save` | Core | `bookmark` | `bookmark` | Stock symbol | — | — |
+| `saved` | Core | `bookmark-fill`, `star`, `star-fill` | `bookmark.fill`, `star`, `star.fill` | Stock symbol | — | — |
+| `search` | Core | `search` | `magnifyingglass` | Stock symbol | — | — |
+| `settings` | Core | `settings` | `gearshape` | Stock symbol | — | — |
+| `share` | Core | `ios_share`, `share` | `square.and.arrow.up` | Stock symbol | — | — |
+| `skip-back-10` | Android only | `replay_10` | — | Stock symbol | — | — |
+| `skip-back-15` | iOS only | — | `gobackward.15` | Stock symbol | — | iOS only: SF gobackward.15 (Material has 5, 10 and 30 only). |
+| `skip-forward-10` | Android only | `forward_10` | — | Stock symbol | — | — |
+| `skip-forward-15` | iOS only | — | `goforward.15` | Stock symbol | — | iOS only: SF goforward.15 (Material has 5, 10 and 30 only). |
+| `tab-alerts` | Core | `notifications`, `notifications-fill` | `bell`, `bell.fill` | Stock symbol | — | — |
+| `tab-enewspaper` | Core | — | — | Redraw | `mng_apps_core_ds/icons/redrawn/tab-enewspaper.svg` | Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS. |
+| `tab-for-you` | Core | — | — | Redraw | `mng_apps_core_ds/icons/redrawn/tab-for-you-fill.svg`, `mng_apps_core_ds/icons/redrawn/tab-for-you.svg` | Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18). |
+| `tab-games` | Core | `extension` | `puzzlepiece` | Stock symbol | — | — |
+| `tab-home` | Core | `home` | `house` | Stock symbol for some files, redraw for others | — | Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon. |
+| `text-size` | Android only | `format_size` | `textformat.size` | Stock symbol | — | Android only. Material format_size (T T) replaces the shipped serif A A (Karl, 2026-11-25). |
+| `text-size-larger` | iOS only | `text_increase` | `textformat.size.larger` | Stock symbol | — | iOS only (DEC-21): SF textformat.size.larger (Karl: good). Android has no such icon: it uses text-size. |
+| `text-size-smaller` | iOS only | `text_decrease` | `textformat.size.smaller` | Stock symbol | — | iOS only (DEC-21): SF textformat.size.smaller (Karl: good). Android has no such icon: it uses text-size. |
+| `tournament-sport` | iOS only | — | `soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill · sportscourt.fill` | Stock symbol | — | iOS only: SF Symbols as shipped. |
+| `unchecked` | Core | `radio_button_unchecked` | `circle` | Stock symbol | — | — |
+| `unfollow-topic` | iOS only | `do_not_disturb_on` | `minus.circle`, `text.badge.minus` | Stock symbol for some files, redraw for others | `mng_apps_ios_ds/icons/redrawn/unfollow-topic.svg` | iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good). |
+| `verified` | iOS only | `verified-fill` | `checkmark.seal.fill` | Stock symbol | — | — |
+| `warning` | Core | `warning-fill` | `exclamationmark.triangle.fill` | Stock symbol | — | — |
 
 ## By shipped file
 
