@@ -7,9 +7,10 @@ downloads/style-guides/) this records:
   - name: the DEC-17 icon name (docs/ICON-NAMES.md) the file belongs to, where it has one
   - shape: files that are the same drawing in another colour share one shape id (one vector + a colour token)
   - colours: mono · two-tone · multi (multi = photo, gradient or texture: tracing will not match)
-  - vector: what the DS uses as the vector master: the shipped SVG where one exists, else a trace of the
-    largest shipped PNG of that shape (DEC-26 rule 1), else keep raster (photos) or rebuild as a component
-    (images of buttons)
+  - vector: how the DS gets a professional vector (DEC-29): UI icons are replaced by the closest Material Symbol /
+    SF Symbol (scripts/build_icon_replacements.py); market marks, logos and simple artwork with no stock symbol are
+    redrawn cleanly (the PNG is only a guide); photos stay raster; pictures of buttons become the Button component.
+    Shipped SVGs are used as they are. Nothing is traced.
 Writes data/icon-sources.json and docs/ICON-SOURCES.md. Needs downloads/style-guides/ for the shape
 comparison (git-ignored); without it, shapes fall back to one per file.
 """
@@ -115,14 +116,14 @@ NAME_RULES = [
 
 # Notes on single files: what the picture shows where the file name misleads, and Karl's call on it (DEC-28, 2026-11-25).
 NOTES = {
-    'button-fastforward.png': 'PostKit player: a clockwise arrow with "15", not a fast-forward glyph. Named skip-forward-15, iOS only, traced to SVG (DEC-28).',
-    'button-rewind.png': 'PostKit player: a counter-clockwise arrow with "15", not a rewind glyph. Named skip-back-15, iOS only, traced to SVG (DEC-28).',
-    'video-fullscreen-close.png': 'Two arrows pointing inward (exit full screen), not an X. Own name exit-full-screen; traced to SVG (DEC-28).',
+    'button-fastforward.png': 'PostKit player: a clockwise arrow with "15", not a fast-forward glyph. Named skip-forward-15, iOS only; vector SF goforward.15 (DEC-29).',
+    'button-rewind.png': 'PostKit player: a counter-clockwise arrow with "15", not a rewind glyph. Named skip-back-15, iOS only; vector SF gobackward.15 (DEC-29).',
+    'video-fullscreen-close.png': 'Two arrows pointing inward (exit full screen), not an X. Own name exit-full-screen; vector Material close_fullscreen / SF arrow.down.right.and.arrow.up.left (DEC-29).',
     'gif-play.png': 'A "GIF" badge, not a play button. Not carried into the DS; reported as a bug to delete; where it shows is asked (DEC-28).',
-    'menu-line.png': 'A dotted curved arrow, not a menu icon. Own name enews-coach-arrow; traced to SVG; where and how it is applied is asked (DEC-28).',
+    'menu-line.png': 'A dotted curved arrow, not a menu icon. Own name enews-coach-arrow; to be redrawn cleanly (no stock symbol); where and how it is applied is asked (DEC-28).',
     'overlay-close.png': 'An X with the word "Close" baked into the image (text in a PNG).',
-    'player-error-image.png': 'Exclamation in a dark circle. Same drawing as player-offline-image: one SVG, player-error, for both (DEC-28).',
-    'player-offline-image.png': 'Same drawing as player-error-image: uses the player-error SVG (DEC-28).',
+    'player-error-image.png': 'Exclamation in a dark circle. Same drawing as player-offline-image: one icon, player-error, for both (DEC-28): Material error-fill / SF exclamationmark.circle.fill (DEC-29).',
+    'player-offline-image.png': 'Same drawing as player-error-image: uses player-error (DEC-28).',
     'tab-digital.png': 'A phone outline; not listed in ICON-NAMES (no tab uses it per the Apps team tab list).',
     'tab-home.png': 'The Chicago Tribune "C" (white): CT\'s market home icon, not the generic home.',
     'ic_amazon.png': 'Never shown on either app (Apps team, 2026-11-23): not carried into the DS.',
@@ -132,18 +133,14 @@ DROP = {'ic_amazon.png', 'gif-play.png'}
 # (scripts/sf_symbols_vectors.swift → assets/sf-symbols/vector/, git-ignored while the repos are public: Apple licence).
 SF = 'SF Symbol SVG from scripts/sf_symbols_vectors.swift (Karl\'s Mac; git-ignored while the repos are public)'
 NO_FILE_SVG = {
-    'account': ('iOS', 'SF person.circle.fill', SF),
+    'account': ('iOS', 'SF person.circle.fill', SF + '; Material account_circle as reference'),
     'tournament-sport': ('iOS', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill', SF),
-    'skip-back-15': ('iOS', 'SF gobackward.15 (main player); PostKit player ships button-rewind', SF + '; PostKit drawing traced: mng_apps_ios_ds/icons/traced/skip-back-15.svg'),
-    'skip-forward-15': ('iOS', 'SF goforward.15 (main player); PostKit player ships button-fastforward', SF + '; PostKit drawing traced: mng_apps_ios_ds/icons/traced/skip-forward-15.svg'),
-    'skip-back-10': ('Android', 'Media3 skip_back_10', 'Material Symbols replay_10: mng_apps_android_ds/icons/material/skip-back-10.svg'),
-    'skip-forward-10': ('Android', 'Media3 skip_forward_10', 'Material Symbols forward_10: mng_apps_android_ds/icons/material/skip-forward-10.svg'),
+    'skip-back-15': ('iOS', 'SF gobackward.15 (main player); PostKit player ships button-rewind', SF),
+    'skip-forward-15': ('iOS', 'SF goforward.15 (main player); PostKit player ships button-fastforward', SF),
+    'skip-back-10': ('Android', 'Media3 skip_back_10', 'Material Symbols replay_10: mng_apps_android_ds/icons/material/replay_10.svg'),
+    'skip-forward-10': ('Android', 'Media3 skip_forward_10', 'Material Symbols forward_10: mng_apps_android_ds/icons/material/forward_10.svg'),
     'notification': ('Android', 'per-market monochrome notification icons', 'Not in either style guide: asked of the Apps team (1.3)'),
 }
-# Traced SVGs and their check at shipped size (scripts/trace_icons.py)
-_tp = os.path.join(ROOT, 'data', 'icon-traces.json')
-TRACES = {t['source'].split('/', 2)[2]: t for t in (json.load(open(_tp))['traces'] if os.path.exists(_tp) else [])}
-TRACED_ALSO = {'player-offline-image.png': 'player-error-image.png'}   # same drawing, one SVG
 
 # Origin notes for graphics that come from the Washington Post PostKit SDK inside TroncKit.
 WAPO = re.compile(r'^(Masthead|twp-slogan|paywall-logo|player-placeholder|recirculationPlaceholder|ad-bigbox)')
@@ -216,16 +213,15 @@ def shape_groups(assets):
 def vector_plan(a, kind, col):
     if a['format'] == 'svg':
         return 'shipped-svg'
-    t = TRACES.get(TRACED_ALSO.get(a['file'], a['file']))
-    if t:
-        return 'traced' if t['pass'] else 'traced-check-failed'
+    if kind == 'icon':
+        return 'symbol'
     if kind == 'image':
-        return 'keep-raster' if col == 'multi' else 'trace'
+        return 'keep-raster' if col == 'multi' else 'redraw'
     if kind == 'button-image':
         return 'component'
     if a['file'] in DROP:
         return 'drop'
-    return 'trace' if col in ('mono', 'two-tone') else 'review'
+    return 'redraw' if col in ('mono', 'two-tone') else 'review'
 
 def main():
     assets = SRC['assets']
@@ -236,14 +232,13 @@ def main():
         n = name_of(a)
         col = colours(a)
         f = NOTES.get(a['file'])
-        t = TRACES.get(TRACED_ALSO.get(a['file'], a['file']))
         row = OrderedDict(
             platform=a['platform'], folder=a['folder'], file=a['file'], kind=k, name=n,
             format=a['format'], size=(a.get('viewBox') if a['format'] == 'svg' else f"{a['width']}x{a['height']}"),
             colours=col,
             ink=[i['hex'] for i in a.get('ink', []) if i['share'] >= 0.05] or a.get('fills', []),
             shape=None, vector=vector_plan(a, k, col),
-            note=f, svg=t['svg'] if t else None, check=(f"soft IoU {t['soft_iou']}" + (f", glyph {t['glyph_iou']}" if 'glyph_iou' in t else '')) if t else None,
+            note=f,
             origin='Washington Post PostKit (in TroncKit)' if WAPO.match(a['file']) else None,
             sha256=a['sha256'])
         rows.append(row)
@@ -288,18 +283,17 @@ def main():
         for r in rows:
             c[r[key]] += 1
         summary[f'by_{key}'] = dict(sorted(c.items(), key=lambda x: -x[1]))
-    trace_shapes = sorted({r['shape'] for r in rows if r['vector'] == 'trace'})
-    summary['shapes_to_trace'] = len(trace_shapes)
-    summary['shapes_to_trace_by_kind'] = {k: len({r['shape'] for r in rows if r['vector'] == 'trace' and r['kind'] == k})
-                                         for k in ('icon', 'market-icon', 'logo', 'image')}
+    summary['shapes_to_redraw'] = len({r['shape'] for r in rows if r['vector'] == 'redraw'})
+    summary['shapes_to_redraw_by_kind'] = {k: len({r['shape'] for r in rows if r['vector'] == 'redraw' and r['kind'] == k})
+                                          for k in ('market-icon', 'logo', 'image')}
+    summary['icon_shapes'] = len({r['shape'] for r in rows if r['vector'] == 'symbol'})
     summary['shipped_svgs'] = sum(1 for r in rows if r['vector'] == 'shipped-svg')
     summary['names_covered'] = sorted({r['name'] for r in rows if r['name']})
     summary['names_without_style_guide_file'] = sorted(NAME_SET - set(summary['names_covered']))
     summary['notes'] = sum(1 for r in rows if r['note'])
-    summary['traced'] = sum(1 for r in rows if r['vector'] in ('traced', 'traced-check-failed'))
 
     out = OrderedDict(generated_by='scripts/build_icon_sources.py', source=SRC['source'],
-                      decision='DEC-26 (vectors only, traced from what ships), DEC-17 (names)',
+                      decision='DEC-26 (vectors only), DEC-29 (platform symbols, no traces), DEC-17 (names)',
                       summary=summary, assets=rows)
     json.dump(out, open(os.path.join(ROOT, 'data', 'icon-sources.json'), 'w'), indent=1)
     write_md(out, by_shape)
@@ -310,12 +304,11 @@ KIND_TEXT = {
     'button-image': 'Picture of a button', 'image': 'Photo, illustration or placeholder'}
 VECTOR_TEXT = {
     'shipped-svg': 'Already a vector (shipped SVG): use as is',
-    'trace': 'Trace from the largest shipped PNG, check against it at shipped size',
+    'symbol': 'UI icon: replaced by the closest Material Symbol / SF Symbol (docs/ICON-REPLACEMENTS.md)',
+    'redraw': 'No stock symbol (market marks, logos, simple artwork): redraw cleanly in vector, using the PNG only as a guide',
     'review': 'Photo-like or many colours: tracing will not match; Karl decides (keep raster or redraw)',
     'keep-raster': 'Photo: stays a raster image (not an icon)',
     'component': 'Rebuild as the Button component (text + icon), not an image',
-    'traced': 'Traced to SVG and matches the PNG at shipped size (scripts/trace_icons.py)',
-    'traced-check-failed': 'Traced, but the trace does not match the PNG: Karl decides',
     'drop': 'Not carried into the DS (never shown, or to be deleted from the app)'}
 
 def write_md(out, by_shape):
@@ -325,11 +318,12 @@ def write_md(out, by_shape):
          'style guides, downloaded 2026-11-25) and `data/icon-names.json` (DEC-17). Do not edit by hand.', '',
          '**What this is:** every image the apps ship, as exported in the style guides, with the icon name it belongs to, '
          'whether it is the same drawing as another file in a different colour, and how the design system gets a vector for it '
-         '(DEC-26: every icon and graphic is a vector, traced from what ships and checked against it).', '',
+         '(DEC-26: every icon and graphic is a vector; DEC-29: from the platform symbol sets or a clean redraw, never a trace).', '',
          f"**Count:** {s['files']} files (Android {s['by_platform'].get('android', 0)}, iOS {s['by_platform'].get('ios', 0)}). "
-         f"{s['shipped_svgs']} are already SVG. {s['shapes_to_trace']} distinct drawings need tracing "
-         f"({s['shapes_to_trace_by_kind']['icon']} icons, {s['shapes_to_trace_by_kind']['market-icon']} market icons, "
-         f"{s['shapes_to_trace_by_kind']['logo']} logos, {s['shapes_to_trace_by_kind']['image']} simple illustrations).", '',
+         f"{s['shipped_svgs']} are already SVG. {s['icon_shapes']} distinct UI icon drawings are replaced by platform symbols "
+         f"(docs/ICON-REPLACEMENTS.md, DEC-29); {s['shapes_to_redraw']} drawings with no stock symbol need a clean redraw "
+         f"({s['shapes_to_redraw_by_kind']['market-icon']} market icons, {s['shapes_to_redraw_by_kind']['logo']} logos, "
+         f"{s['shapes_to_redraw_by_kind']['image']} simple illustrations). Nothing is traced (DEC-29).", '',
          '## Summary', '', '| Kind | Files |', '|---|---|']
     for k, v in s['by_kind'].items():
         L.append(f'| {KIND_TEXT[k]} | {v} |')
@@ -338,7 +332,7 @@ def write_md(out, by_shape):
         L.append(f'| {VECTOR_TEXT[k]} | {v} |')
     L += ['', '## Icon names with no file in the style guides', '',
           'These are drawn by the system at runtime (SF Symbols on iOS, Material / Media3 on Android), so no image ships. '
-          'Each still gets an SVG in the design system, in the platform that uses it (DEC-28).', '',
+          'Each still gets a vector in the design system, in the platform that uses it (DEC-28).', '',
           '| Name | Platform | What ships | SVG |', '|---|---|---|---|']
     for n in s['names_without_style_guide_file']:
         plat, ships, svg = NO_FILE_SVG.get(n, ('?', '?', 'unknown'))
@@ -347,8 +341,7 @@ def write_md(out, by_shape):
     L += ['', '## Notes on single files', '', 'Files whose name misleads, or that need a decision. Decisions: DEC-28 (2026-11-25).', '',
           '| Platform | File | Name | Note | Vector |', '|---|---|---|---|---|']
     for r in [r for r in rows if r['note']]:
-        L.append(f"| {r['platform']} | `{r['file']}` | {('`'+r['name']+'`') if r['name'] else '—'} | {r['note']} | {r['vector']}"
-                 + (f" ({r['check']})" if r['check'] else '') + ' |')
+        L.append(f"| {r['platform']} | `{r['file']}` | {('`'+r['name']+'`') if r['name'] else '—'} | {r['note']} | {r['vector']} |")
     # same drawing, many colours
     L += ['', '## Same drawing, different colours', '',
           'Each line is one vector plus a colour per file: the colours become tokens, the files go away.', '',

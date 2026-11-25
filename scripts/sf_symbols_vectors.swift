@@ -18,7 +18,9 @@ import CoreText
 
 let names = ["magnifyingglass", "gearshape", "square.and.arrow.up", "bookmark", "bookmark.fill", "house", "line.3.horizontal", "bell", "newspaper", "gamecontroller.fill", "chevron.up", "chevron.down", "chevron.left", "chevron.right", "xmark", "xmark.circle.fill", "person.circle.fill", "exclamationmark.triangle.fill", "envelope.fill", "arrow.clockwise", "line.3.horizontal.decrease", "textformat.size.smaller", "textformat.size.larger", "plus.circle", "minus.circle", "checkmark.circle.fill", "circle", "arrow.right.circle.fill", "arrow.up.left.and.arrow.down.right", "arrow.down.right.and.arrow.up.left", "arrow.left", "arrow.right", "play.fill", "pause.fill", "gobackward.15", "goforward.15", "backward.fill", "forward.fill", "cube", "star", "star.leadinghalf.filled", "star.fill", "heart", "arrow.2.squarepath", "checkmark.seal.fill", "apple.logo",
              // DEC-26: filled candidates for the Font Awesome replacements, and the tournament-loading symbols iOS ships
-             "house.fill", "bell.fill", "soccerball.inverse", "american.football.fill", "baseball.fill", "basketball.fill", "hockey.puck.fill", "sportscourt.fill"]
+             "house.fill", "bell.fill", "soccerball.inverse", "american.football.fill", "baseball.fill", "basketball.fill", "hockey.puck.fill", "sportscourt.fill",
+             // DEC-29: every SF Symbol docs/ICON-REPLACEMENTS.md picks (data/icon-replacements.json sf_symbols_needed)
+             "book", "checkmark", "checkmark.circle", "exclamationmark.circle.fill", "heart.fill", "pause.circle.fill", "play.circle.fill", "puzzlepiece", "slider.horizontal.3", "smallcircle.filled.circle", "text.badge.minus", "text.badge.plus", "textformat.size"]
 
 // The 7 Font Awesome replacements (DEC-26): also exported at heavier weights, because Font Awesome is solid and heavy.
 let weighted = ["magnifyingglass", "bookmark", "bookmark.fill", "house", "house.fill", "line.3.horizontal", "bell", "bell.fill", "chevron.up", "chevron.down"]

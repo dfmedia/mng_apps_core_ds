@@ -1,0 +1,2459 @@
+{
+ "generated_by": "scripts/build_icon_replacements.py",
+ "decision": "DEC-29",
+ "material": "@material-symbols/svg-400@0.49.0",
+ "summary": {
+  "names": 52,
+  "by_status": {
+   "symbol": 40,
+   "weak": 10,
+   "redraw": 1,
+   "ask": 1
+  },
+  "material_svgs": {
+   "core": 33,
+   "android": 3
+  },
+  "sf_symbols": 58,
+  "shipped_files": 188
+ },
+ "sf_symbols_needed": [
+  "american.football.fill",
+  "arrow.2.squarepath",
+  "arrow.clockwise",
+  "arrow.down.right.and.arrow.up.left",
+  "arrow.right.circle.fill",
+  "arrow.up.left.and.arrow.down.right",
+  "baseball.fill",
+  "basketball.fill",
+  "bell",
+  "bell.fill",
+  "book",
+  "bookmark",
+  "bookmark.fill",
+  "checkmark",
+  "checkmark.circle",
+  "checkmark.circle.fill",
+  "checkmark.seal.fill",
+  "chevron.down",
+  "chevron.left",
+  "chevron.right",
+  "chevron.up",
+  "circle",
+  "cube",
+  "envelope.fill",
+  "exclamationmark.circle.fill",
+  "exclamationmark.triangle.fill",
+  "gearshape",
+  "gobackward.15",
+  "goforward.15",
+  "heart.fill",
+  "hockey.puck.fill",
+  "house",
+  "line.3.horizontal",
+  "magnifyingglass",
+  "minus.circle",
+  "newspaper",
+  "pause.circle.fill",
+  "pause.fill",
+  "person.circle.fill",
+  "play.circle.fill",
+  "play.fill",
+  "plus.circle",
+  "puzzlepiece",
+  "slider.horizontal.3",
+  "smallcircle.filled.circle",
+  "soccerball.inverse",
+  "sportscourt.fill",
+  "square.and.arrow.up",
+  "star",
+  "star.fill",
+  "star.leadinghalf.filled",
+  "text.badge.minus",
+  "text.badge.plus",
+  "textformat.size",
+  "textformat.size.larger",
+  "textformat.size.smaller",
+  "xmark",
+  "xmark.circle.fill"
+ ],
+ "names": [
+  {
+   "name": "account",
+   "bucket": "iOS only",
+   "material": [
+    "account_circle"
+   ],
+   "sf": [
+    "person.circle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 0
+  },
+  {
+   "name": "back",
+   "bucket": "Core",
+   "material": [
+    "chevron_left"
+   ],
+   "sf": [
+    "chevron.left"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "checked",
+   "bucket": "Core",
+   "material": [
+    "check",
+    "check_circle",
+    "check_circle-fill",
+    "radio_button_checked"
+   ],
+   "sf": [
+    "checkmark",
+    "checkmark.circle",
+    "checkmark.circle.fill",
+    "smallcircle.filled.circle"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 13
+  },
+  {
+   "name": "close",
+   "bucket": "Core",
+   "material": [
+    "cancel-fill",
+    "close"
+   ],
+   "sf": [
+    "xmark",
+    "xmark.circle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 8
+  },
+  {
+   "name": "close-circle",
+   "bucket": "Core",
+   "material": [
+    "cancel-fill"
+   ],
+   "sf": [
+    "xmark.circle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 3
+  },
+  {
+   "name": "collapse",
+   "bucket": "Core",
+   "material": [
+    "keyboard_arrow_down"
+   ],
+   "sf": [
+    "chevron.down"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 4
+  },
+  {
+   "name": "continue",
+   "bucket": "Core",
+   "material": [
+    "arrow_circle_right-fill"
+   ],
+   "sf": [
+    "arrow.right.circle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "email",
+   "bucket": "Core",
+   "material": [
+    "mail-fill"
+   ],
+   "sf": [
+    "envelope.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "embed-3d",
+   "bucket": "iOS only",
+   "material": [
+    "deployed_code"
+   ],
+   "sf": [
+    "cube"
+   ],
+   "status": "weak",
+   "note": "Shipped: a wireframe cube with \"VIEW IN 3D\" under it; deployed_code is the cube alone.",
+   "shipped_files": 1
+  },
+  {
+   "name": "enews-coach-arrow",
+   "bucket": "iOS only",
+   "material": [],
+   "sf": [],
+   "status": "redraw",
+   "note": "No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2).",
+   "shipped_files": 0
+  },
+  {
+   "name": "enews-expand-page",
+   "bucket": "iOS only",
+   "material": [
+    "open_in_full"
+   ],
+   "sf": [
+    "arrow.up.left.and.arrow.down.right"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "enews-fit-to-screen",
+   "bucket": "iOS only",
+   "material": [
+    "close_fullscreen"
+   ],
+   "sf": [
+    "arrow.down.right.and.arrow.up.left"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "enews-next-page",
+   "bucket": "iOS only",
+   "material": [
+    "arrow_forward_ios"
+   ],
+   "sf": [
+    "chevron.right"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "enews-previous-page",
+   "bucket": "iOS only",
+   "material": [
+    "arrow_back_ios_new"
+   ],
+   "sf": [
+    "chevron.left"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "exit-full-screen",
+   "bucket": "iOS only",
+   "material": [
+    "close_fullscreen"
+   ],
+   "sf": [
+    "arrow.down.right.and.arrow.up.left"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "expand",
+   "bucket": "Core",
+   "material": [
+    "keyboard_arrow_up"
+   ],
+   "sf": [
+    "chevron.up"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 3
+  },
+  {
+   "name": "filter",
+   "bucket": "Core",
+   "material": [
+    "page_info"
+   ],
+   "sf": [
+    "slider.horizontal.3"
+   ],
+   "status": "weak",
+   "note": "Shipped: three sliders with round knobs. page_info has two; tune is the usual filter symbol.",
+   "shipped_files": 2
+  },
+  {
+   "name": "follow-topic",
+   "bucket": "iOS only",
+   "material": [
+    "add_circle",
+    "format_list_bulleted_add"
+   ],
+   "sf": [
+    "plus.circle",
+    "text.badge.plus"
+   ],
+   "status": "weak",
+   "note": "Shipped: plus in a circle beside a bulleted list. Material: bulleted list with a plus; SF text.badge.plus.",
+   "shipped_files": 4
+  },
+  {
+   "name": "forward",
+   "bucket": "Core",
+   "material": [
+    "arrow_circle_right-fill",
+    "chevron_right"
+   ],
+   "sf": [
+    "arrow.right.circle.fill",
+    "chevron.right"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 4
+  },
+  {
+   "name": "like",
+   "bucket": "iOS only",
+   "material": [
+    "favorite-fill"
+   ],
+   "sf": [
+    "heart.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "menu",
+   "bucket": "Core",
+   "material": [
+    "menu"
+   ],
+   "sf": [
+    "line.3.horizontal"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 4
+  },
+  {
+   "name": "notification",
+   "bucket": "Android only",
+   "material": [],
+   "sf": [],
+   "status": "ask",
+   "note": "Per-market notification icons: asked of the Apps team (MISSING-ASSETS 1.3).",
+   "shipped_files": 0
+  },
+  {
+   "name": "pause",
+   "bucket": "Core",
+   "material": [
+    "pause-fill",
+    "pause_circle-fill"
+   ],
+   "sf": [
+    "pause.circle.fill",
+    "pause.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 8
+  },
+  {
+   "name": "play",
+   "bucket": "Core",
+   "material": [
+    "play_arrow-fill",
+    "play_circle-fill"
+   ],
+   "sf": [
+    "play.circle.fill",
+    "play.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 12
+  },
+  {
+   "name": "player-error",
+   "bucket": "iOS only",
+   "material": [
+    "error-fill"
+   ],
+   "sf": [
+    "exclamationmark.circle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "rating-star-empty",
+   "bucket": "iOS only",
+   "material": [
+    "star"
+   ],
+   "sf": [
+    "star"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "rating-star-full",
+   "bucket": "iOS only",
+   "material": [
+    "star-fill"
+   ],
+   "sf": [
+    "star.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "rating-star-half",
+   "bucket": "iOS only",
+   "material": [
+    "star_half-fill"
+   ],
+   "sf": [
+    "star.leadinghalf.filled"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "refresh",
+   "bucket": "Core",
+   "material": [
+    "refresh"
+   ],
+   "sf": [
+    "arrow.clockwise"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "repost",
+   "bucket": "iOS only",
+   "material": [
+    "repeat"
+   ],
+   "sf": [
+    "arrow.2.squarepath"
+   ],
+   "status": "weak",
+   "note": "Shipped: the Twitter retweet arrows; repeat is the nearest stock loop.",
+   "shipped_files": 1
+  },
+  {
+   "name": "save",
+   "bucket": "Core",
+   "material": [
+    "bookmark"
+   ],
+   "sf": [
+    "bookmark"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 13
+  },
+  {
+   "name": "saved",
+   "bucket": "Core",
+   "material": [
+    "bookmark-fill",
+    "star",
+    "star-fill"
+   ],
+   "sf": [
+    "bookmark.fill",
+    "star",
+    "star.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 28
+  },
+  {
+   "name": "search",
+   "bucket": "Core",
+   "material": [
+    "search"
+   ],
+   "sf": [
+    "magnifyingglass"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 6
+  },
+  {
+   "name": "settings",
+   "bucket": "Core",
+   "material": [
+    "settings"
+   ],
+   "sf": [
+    "gearshape"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 4
+  },
+  {
+   "name": "share",
+   "bucket": "Core",
+   "material": [
+    "ios_share",
+    "share"
+   ],
+   "sf": [
+    "square.and.arrow.up"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 2
+  },
+  {
+   "name": "skip-back-10",
+   "bucket": "Android only",
+   "material": [
+    "replay_10"
+   ],
+   "sf": [],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 0
+  },
+  {
+   "name": "skip-back-15",
+   "bucket": "iOS only",
+   "material": [],
+   "sf": [
+    "gobackward.15"
+   ],
+   "status": "symbol",
+   "note": "iOS only: SF gobackward.15 (Material has 5, 10 and 30 only).",
+   "shipped_files": 1
+  },
+  {
+   "name": "skip-forward-10",
+   "bucket": "Android only",
+   "material": [
+    "forward_10"
+   ],
+   "sf": [],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 0
+  },
+  {
+   "name": "skip-forward-15",
+   "bucket": "iOS only",
+   "material": [],
+   "sf": [
+    "goforward.15"
+   ],
+   "status": "symbol",
+   "note": "iOS only: SF goforward.15 (Material has 5, 10 and 30 only).",
+   "shipped_files": 1
+  },
+  {
+   "name": "tab-alerts",
+   "bucket": "Core",
+   "material": [
+    "notifications",
+    "notifications-fill"
+   ],
+   "sf": [
+    "bell",
+    "bell.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 4
+  },
+  {
+   "name": "tab-enewspaper",
+   "bucket": "Core",
+   "material": [
+    "menu_book",
+    "newsmode"
+   ],
+   "sf": [
+    "book",
+    "newspaper"
+   ],
+   "status": "weak",
+   "note": "Android: a newspaper with a picture; newsmode is the nearest. iOS tab-newspaper (an open paper) maps to menu_book / book.",
+   "shipped_files": 4
+  },
+  {
+   "name": "tab-for-you",
+   "bucket": "Core",
+   "material": [
+    "patient_list-fill"
+   ],
+   "sf": [],
+   "status": "weak",
+   "note": "Closest stock shape (person + list lines); the symbol is named patient_list. No SF Symbol: iOS needs a redraw or Karl picks one.",
+   "shipped_files": 15
+  },
+  {
+   "name": "tab-games",
+   "bucket": "Core",
+   "material": [
+    "extension"
+   ],
+   "sf": [
+    "puzzlepiece"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 3
+  },
+  {
+   "name": "tab-home",
+   "bucket": "Core",
+   "material": [
+    "home"
+   ],
+   "sf": [
+    "house"
+   ],
+   "status": "symbol",
+   "note": "Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.",
+   "shipped_files": 1
+  },
+  {
+   "name": "text-size",
+   "bucket": "Android only",
+   "material": [
+    "format_size"
+   ],
+   "sf": [
+    "textformat.size"
+   ],
+   "status": "weak",
+   "note": "Shipped: serif A A (small, large). format_size is T T.",
+   "shipped_files": 2
+  },
+  {
+   "name": "text-size-larger",
+   "bucket": "iOS only",
+   "material": [
+    "text_increase"
+   ],
+   "sf": [
+    "textformat.size.larger"
+   ],
+   "status": "weak",
+   "note": "Shipped: a plain large A. text_increase adds a plus.",
+   "shipped_files": 1
+  },
+  {
+   "name": "text-size-smaller",
+   "bucket": "iOS only",
+   "material": [
+    "text_decrease"
+   ],
+   "sf": [
+    "textformat.size.smaller"
+   ],
+   "status": "weak",
+   "note": "Shipped: a plain small A. text_decrease adds a minus.",
+   "shipped_files": 1
+  },
+  {
+   "name": "tournament-sport",
+   "bucket": "iOS only",
+   "material": [],
+   "sf": [
+    "soccerball.inverse \u00b7 american.football.fill \u00b7 baseball.fill \u00b7 basketball.fill \u00b7 hockey.puck.fill \u00b7 sportscourt.fill"
+   ],
+   "status": "symbol",
+   "note": "iOS only: SF Symbols as shipped.",
+   "shipped_files": 0
+  },
+  {
+   "name": "unchecked",
+   "bucket": "Core",
+   "material": [
+    "radio_button_unchecked"
+   ],
+   "sf": [
+    "circle"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 10
+  },
+  {
+   "name": "unfollow-topic",
+   "bucket": "iOS only",
+   "material": [
+    "do_not_disturb_on",
+    "playlist_remove"
+   ],
+   "sf": [
+    "minus.circle",
+    "text.badge.minus"
+   ],
+   "status": "weak",
+   "note": "Shipped: minus in a circle beside a bulleted list. Material has no bulleted-list-minus; playlist_remove is lines with an x.",
+   "shipped_files": 4
+  },
+  {
+   "name": "verified",
+   "bucket": "iOS only",
+   "material": [
+    "verified-fill"
+   ],
+   "sf": [
+    "checkmark.seal.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  },
+  {
+   "name": "warning",
+   "bucket": "Core",
+   "material": [
+    "warning-fill"
+   ],
+   "sf": [
+    "exclamationmark.triangle.fill"
+   ],
+   "status": "symbol",
+   "note": "",
+   "shipped_files": 1
+  }
+ ],
+ "files": [
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_alert_bell.png",
+   "name": "tab-alerts",
+   "material": "notifications",
+   "sf": "bell",
+   "shape_rank": 0.38
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_alerts.png",
+   "name": "tab-alerts",
+   "material": "notifications-fill",
+   "sf": "bell.fill",
+   "shape_rank": 0.93
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_for_you.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_games.png",
+   "name": "tab-games",
+   "material": "extension",
+   "sf": "puzzlepiece",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_latestnews.png",
+   "name": "tab-home",
+   "material": null,
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_newspaper.png",
+   "name": "tab-enewspaper",
+   "material": "newsmode",
+   "sf": "newspaper",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_saved.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": 0.878
+  },
+  {
+   "platform": "android",
+   "folder": "Bottom nav",
+   "file": "mc_tab_icon_sections.png",
+   "name": "menu",
+   "material": "menu",
+   "sf": "line.3.horizontal",
+   "shape_rank": 0.427
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_bookmark.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": 0.995
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_bookmark_outline.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.759
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_clear_search.svg",
+   "name": "close-circle",
+   "material": "cancel-fill",
+   "sf": "xmark.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_filter.png",
+   "name": "filter",
+   "material": "page_info",
+   "sf": "slider.horizontal.3",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_font_size.png",
+   "name": "text-size",
+   "material": "format_size",
+   "sf": "textformat.size",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_share.png",
+   "name": "share",
+   "material": "share",
+   "sf": "square.and.arrow.up",
+   "shape_rank": 0.801
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_textsize_change.png",
+   "name": "text-size",
+   "material": "format_size",
+   "sf": "textformat.size",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "ic_wc_refresh.svg",
+   "name": "refresh",
+   "material": "refresh",
+   "sf": "arrow.clockwise",
+   "shape_rank": 0.73
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "mc_ic_search.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.403
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "mc_ic_settings.png",
+   "name": "settings",
+   "material": "settings",
+   "sf": "gearshape",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "web_view_navigation_back.svg",
+   "name": "back",
+   "material": "chevron_left",
+   "sf": "chevron.left",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Toolbar",
+   "file": "web_view_navigation_forward.svg",
+   "name": "forward",
+   "material": "chevron_right",
+   "sf": "chevron.right",
+   "shape_rank": 0.937
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "btn_play_large.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "close_player_button.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.667
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "ic_persistent_player_close.svg",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.775
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "ic_persistent_player_pause.svg",
+   "name": "pause",
+   "material": "pause-fill",
+   "sf": "pause.fill",
+   "shape_rank": 0.899
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "ic_persistent_player_play.svg",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.973
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "ic_play_btn.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "pause_player_button.png",
+   "name": "pause",
+   "material": "pause-fill",
+   "sf": "pause.fill",
+   "shape_rank": 0.892
+  },
+  {
+   "platform": "android",
+   "folder": "Media",
+   "file": "play_player_button.png",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.864
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "arrow_circle_right.png",
+   "name": "continue",
+   "material": "arrow_circle_right-fill",
+   "sf": "arrow.right.circle.fill",
+   "shape_rank": 0.756
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "game_open_arrow.svg",
+   "name": "forward",
+   "material": "chevron_right",
+   "sf": "chevron.right",
+   "shape_rank": 0.941
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "ic_ad_close.png",
+   "name": "close",
+   "material": "cancel-fill",
+   "sf": "xmark.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "ic_arrow.png",
+   "name": "forward",
+   "material": "chevron_right",
+   "sf": "chevron.right",
+   "shape_rank": 0.866
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "ic_close_white_36dp.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.772
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "icon_downarrow.png",
+   "name": "collapse",
+   "material": "keyboard_arrow_down",
+   "sf": "chevron.down",
+   "shape_rank": 0.796
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "icon_uparrow.png",
+   "name": "expand",
+   "material": "keyboard_arrow_up",
+   "sf": "chevron.up",
+   "shape_rank": 0.788
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "liveblog_arrow.png",
+   "name": "forward",
+   "material": "arrow_circle_right-fill",
+   "sf": "arrow.right.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Close and arrows",
+   "file": "xbutton.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.376
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "card_star_default.png",
+   "name": "saved",
+   "material": "star",
+   "sf": "star",
+   "shape_rank": 0.76
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_btn_save.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_btn_unsave.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.349
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_check.png",
+   "name": "checked",
+   "material": "check_circle",
+   "sf": "checkmark.circle",
+   "shape_rank": 0.787
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_follow_topic.png",
+   "name": "follow-topic",
+   "material": "format_list_bulleted_add",
+   "sf": "text.badge.plus",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_topic_selected.png",
+   "name": "checked",
+   "material": "check",
+   "sf": "checkmark",
+   "shape_rank": 0.381
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "ic_unfollow_topic.png",
+   "name": "unfollow-topic",
+   "material": "playlist_remove",
+   "sf": "text.badge.minus",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "radio_button_off.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.727
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "radio_button_on.png",
+   "name": "checked",
+   "material": "radio_button_checked",
+   "sf": "smallcircle.filled.circle",
+   "shape_rank": 0.805
+  },
+  {
+   "platform": "android",
+   "folder": "Save and select",
+   "file": "star_on_card_saved_state.png",
+   "name": "saved",
+   "material": "star-fill",
+   "sf": "star.fill",
+   "shape_rank": 0.9
+  },
+  {
+   "platform": "android",
+   "folder": "Social",
+   "file": "ic_email.png",
+   "name": "email",
+   "material": "mail-fill",
+   "sf": "envelope.fill",
+   "shape_rank": 0.773
+  },
+  {
+   "platform": "android",
+   "folder": "Other",
+   "file": "ic_games.png",
+   "name": "tab-games",
+   "material": "extension",
+   "sf": "puzzlepiece",
+   "shape_rank": null
+  },
+  {
+   "platform": "android",
+   "folder": "Other",
+   "file": "ic_newspaper.png",
+   "name": "tab-enewspaper",
+   "material": "newsmode",
+   "sf": "newspaper",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Alert",
+   "file": "bell.png",
+   "name": "tab-alerts",
+   "material": "notifications",
+   "sf": "bell",
+   "shape_rank": 0.415
+  },
+  {
+   "platform": "ios",
+   "folder": "Alert",
+   "file": "exclamation-icon.png",
+   "name": "warning",
+   "material": "warning-fill",
+   "sf": "exclamationmark.triangle.fill",
+   "shape_rank": 0.716
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checked.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-BS.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-Hart.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-MC.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-NYDN.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-OS.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-SS.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "Checkmark-selected",
+   "file": "Checkmark-VP.png",
+   "name": "checked",
+   "material": "check_circle-fill",
+   "sf": "checkmark.circle.fill",
+   "shape_rank": 0.943
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_expand-paper.png",
+   "name": "enews-expand-page",
+   "material": "open_in_full",
+   "sf": "arrow.up.left.and.arrow.down.right",
+   "shape_rank": 0.625
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_fit-to-screen.png",
+   "name": "enews-fit-to-screen",
+   "material": "close_fullscreen",
+   "sf": "arrow.down.right.and.arrow.up.left",
+   "shape_rank": 0.691
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_left-arrow.png",
+   "name": "enews-previous-page",
+   "material": "arrow_back_ios_new",
+   "sf": "chevron.left",
+   "shape_rank": 0.789
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_menu.png",
+   "name": "menu",
+   "material": "menu",
+   "sf": "line.3.horizontal",
+   "shape_rank": 0.452
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_right-arrow.png",
+   "name": "enews-next-page",
+   "material": "arrow_forward_ios",
+   "sf": "chevron.right",
+   "shape_rank": 0.789
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "black_search.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.385
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "expand-paper.png",
+   "name": "enews-expand-page",
+   "material": "open_in_full",
+   "sf": "arrow.up.left.and.arrow.down.right",
+   "shape_rank": 0.625
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "fit-to-screen.png",
+   "name": "enews-fit-to-screen",
+   "material": "close_fullscreen",
+   "sf": "arrow.down.right.and.arrow.up.left",
+   "shape_rank": 0.691
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "left-arrow.png",
+   "name": "enews-previous-page",
+   "material": "arrow_back_ios_new",
+   "sf": "chevron.left",
+   "shape_rank": 0.789
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "menu.png",
+   "name": "menu",
+   "material": "menu",
+   "sf": "line.3.horizontal",
+   "shape_rank": 0.452
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "overlay-close.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.044
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "right-arrow.png",
+   "name": "enews-next-page",
+   "material": "arrow_forward_ios",
+   "sf": "chevron.right",
+   "shape_rank": 0.789
+  },
+  {
+   "platform": "ios",
+   "folder": "ENewspaper",
+   "file": "search.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.385
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "BannerCloseLight.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.565
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "BTN_FollowTopic.png",
+   "name": "follow-topic",
+   "material": "format_list_bulleted_add",
+   "sf": "text.badge.plus",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "BTN_UnFollowTopic.png",
+   "name": "unfollow-topic",
+   "material": "playlist_remove",
+   "sf": "text.badge.minus",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "Chevron---Down.png",
+   "name": "collapse",
+   "material": "keyboard_arrow_down",
+   "sf": "chevron.down",
+   "shape_rank": 0.733
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "Chevron---Up.png",
+   "name": "expand",
+   "material": "keyboard_arrow_up",
+   "sf": "chevron.up",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "CloseButton.png",
+   "name": "close",
+   "material": "close",
+   "sf": "xmark",
+   "shape_rank": 0.376
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "FollowTopic.png",
+   "name": "follow-topic",
+   "material": "format_list_bulleted_add",
+   "sf": "text.badge.plus",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "GreyCheckmark.png",
+   "name": "checked",
+   "material": "check",
+   "sf": "checkmark",
+   "shape_rank": 0.39
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "icon_filter.png",
+   "name": "filter",
+   "material": "page_info",
+   "sf": "slider.horizontal.3",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "Minus-CT.png",
+   "name": "unfollow-topic",
+   "material": "do_not_disturb_on",
+   "sf": "minus.circle",
+   "shape_rank": 0.849
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "Plus-CT.png",
+   "name": "follow-topic",
+   "material": "add_circle",
+   "sf": "plus.circle",
+   "shape_rank": 0.842
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "textsizelarge.png",
+   "name": "text-size-larger",
+   "material": "text_increase",
+   "sf": "textformat.size.larger",
+   "shape_rank": 0.154
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "textsizesmall.png",
+   "name": "text-size-smaller",
+   "material": "text_decrease",
+   "sf": "textformat.size.smaller",
+   "shape_rank": 0.147
+  },
+  {
+   "platform": "ios",
+   "folder": "General",
+   "file": "UnFollowTopic.png",
+   "name": "unfollow-topic",
+   "material": "playlist_remove",
+   "sf": "text.badge.minus",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-save-filled.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-save-unfilled.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.253
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-search.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.404
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-search---black.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.447
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-search---white.png",
+   "name": "search",
+   "material": "search",
+   "sf": "magnifyingglass",
+   "shape_rank": 0.447
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-settings.png",
+   "name": "settings",
+   "material": "settings",
+   "sf": "gearshape",
+   "shape_rank": 0.36
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-settings---black.png",
+   "name": "settings",
+   "material": "settings",
+   "sf": "gearshape",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-settings---white.png",
+   "name": "settings",
+   "material": "settings",
+   "sf": "gearshape",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "nav-share.png",
+   "name": "share",
+   "material": "ios_share",
+   "sf": "square.and.arrow.up",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "Saved-Article.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Navigation Bar",
+   "file": "Unsaved-Article.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.388
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-downarrow.png",
+   "name": "collapse",
+   "material": "keyboard_arrow_down",
+   "sf": "chevron.down",
+   "shape_rank": 0.868
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-fastforward.png",
+   "name": "skip-forward-15",
+   "material": null,
+   "sf": "goforward.15",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-close.png",
+   "name": "close-circle",
+   "material": "cancel-fill",
+   "sf": "xmark.circle.fill",
+   "shape_rank": 0.073
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-close-dark.png",
+   "name": "close-circle",
+   "material": "cancel-fill",
+   "sf": "xmark.circle.fill",
+   "shape_rank": 0.073
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-pause.png",
+   "name": "pause",
+   "material": "pause-fill",
+   "sf": "pause.fill",
+   "shape_rank": 0.082
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-pause-dark.png",
+   "name": "pause",
+   "material": "pause-fill",
+   "sf": "pause.fill",
+   "shape_rank": 0.082
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-play.png",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.262
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-miniplayer-play-dark.png",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.262
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-pause.png",
+   "name": "pause",
+   "material": "pause_circle-fill",
+   "sf": "pause.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-pause-dark.png",
+   "name": "pause",
+   "material": "pause-fill",
+   "sf": "pause.fill",
+   "shape_rank": 0.532
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-pause-medium.png",
+   "name": "pause",
+   "material": "pause_circle-fill",
+   "sf": "pause.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-pause-small.png",
+   "name": "pause",
+   "material": "pause_circle-fill",
+   "sf": "pause.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-play.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-play-dark.png",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.473
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-play-medium.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-play-small.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-play-small-dark.png",
+   "name": "play",
+   "material": "play_arrow-fill",
+   "sf": "play.fill",
+   "shape_rank": 0.473
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "button-rewind.png",
+   "name": "skip-back-15",
+   "material": null,
+   "sf": "gobackward.15",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "embed-3d.png",
+   "name": "embed-3d",
+   "material": "deployed_code",
+   "sf": "cube",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "embed-play.png",
+   "name": "play",
+   "material": "play_circle-fill",
+   "sf": "play.circle.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "player-error-image.png",
+   "name": "player-error",
+   "material": "error-fill",
+   "sf": "exclamationmark.circle.fill",
+   "shape_rank": 0.961
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "player-offline-image.png",
+   "name": "player-error",
+   "material": "error-fill",
+   "sf": "exclamationmark.circle.fill",
+   "shape_rank": 0.961
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "rating-star-empty.png",
+   "name": "rating-star-empty",
+   "material": "star",
+   "sf": "star",
+   "shape_rank": 0.884
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "rating-star-full.png",
+   "name": "rating-star-full",
+   "material": "star-fill",
+   "sf": "star.fill",
+   "shape_rank": 0.944
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "rating-star-half.png",
+   "name": "rating-star-half",
+   "material": "star_half-fill",
+   "sf": "star.leadinghalf.filled",
+   "shape_rank": 0.921
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "tweet-favorite.png",
+   "name": "like",
+   "material": "favorite-fill",
+   "sf": "heart.fill",
+   "shape_rank": 0.908
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "tweet-retweet.png",
+   "name": "repost",
+   "material": "repeat",
+   "sf": "arrow.2.squarepath",
+   "shape_rank": 0.223
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "tweet-verified.png",
+   "name": "verified",
+   "material": "verified-fill",
+   "sf": "checkmark.seal.fill",
+   "shape_rank": 0.795
+  },
+  {
+   "platform": "ios",
+   "folder": "PostKit",
+   "file": "video-fullscreen-close.png",
+   "name": "exit-full-screen",
+   "material": "close_fullscreen",
+   "sf": "arrow.down.right.and.arrow.up.left",
+   "shape_rank": 0.011
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-BS.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-CT.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-DP.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-Hartford.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-MC.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-NYDN.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-Orlando.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-SS.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Filled-VP.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-BS.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-CT.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-DP.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-Hartford.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-MC.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-NYDN.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-Orlando.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-SS.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "SaveIcon",
+   "file": "Saved-Unfilled-VP.png",
+   "name": "save",
+   "material": "bookmark",
+   "sf": "bookmark",
+   "shape_rank": 0.346
+  },
+  {
+   "platform": "ios",
+   "folder": "Sections",
+   "file": "chevron_down.png",
+   "name": "collapse",
+   "material": "keyboard_arrow_down",
+   "sf": "chevron.down",
+   "shape_rank": 0.78
+  },
+  {
+   "platform": "ios",
+   "folder": "Sections",
+   "file": "chevron_up.png",
+   "name": "expand",
+   "material": "keyboard_arrow_up",
+   "sf": "chevron.up",
+   "shape_rank": 0.829
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "For-You-2.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "For-You.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-alerts.png",
+   "name": "tab-alerts",
+   "material": "notifications",
+   "sf": "bell",
+   "shape_rank": 0.546
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-enews.png",
+   "name": "tab-enewspaper",
+   "material": "newsmode",
+   "sf": "newspaper",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-foryou.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-games.png",
+   "name": "tab-games",
+   "material": "extension",
+   "sf": "puzzlepiece",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-newspaper.png",
+   "name": "tab-enewspaper",
+   "material": "menu_book",
+   "sf": "book",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-saved.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab Bar",
+   "file": "tab-sections.png",
+   "name": "menu",
+   "material": "menu",
+   "sf": "line.3.horizontal",
+   "shape_rank": 0.547
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-Black.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-BS.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-CT-Selected.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-DP.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-Hart.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-MC.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-NYDN.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-OS.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-SS.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-VP.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar Your_news icons",
+   "file": "YourNews-White.png",
+   "name": "tab-for-you",
+   "material": "patient_list-fill",
+   "sf": null,
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved---BS.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved---Hart.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved---MC.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved---SS.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved---White.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved--Black.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved--OS.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved--VP.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved-CT---Selected.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved--DP.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Tab bar save icons",
+   "file": "Saved--NYDN.png",
+   "name": "saved",
+   "material": "bookmark-fill",
+   "sf": "bookmark.fill",
+   "shape_rank": null
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-BS.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-Grey.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-Hart.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-MC.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-NYDN.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-OS.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-SS.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Uncheck-VP.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "Uncheck",
+   "file": "Unchecked.png",
+   "name": "unchecked",
+   "material": "radio_button_unchecked",
+   "sf": "circle",
+   "shape_rank": 0.898
+  },
+  {
+   "platform": "ios",
+   "folder": "yournews",
+   "file": "WhiteCheckmark.png",
+   "name": "checked",
+   "material": "check_circle",
+   "sf": "checkmark.circle",
+   "shape_rank": 0.781
+  }
+ ]
+}

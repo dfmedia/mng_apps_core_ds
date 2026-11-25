@@ -631,7 +631,7 @@
    "bucket": "iOS only",
    "ios": "button-rewind",
    "android": null,
-   "note": "PostKit player: button-rewind PNG (counter-clockwise arrow with 15), traced to SVG; iOS only (DEC-28).",
+   "note": "PostKit player: button-rewind PNG (counter-clockwise arrow with 15); iOS only (DEC-28); vector SF gobackward.15 (DEC-29).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "backward.fill",
@@ -647,7 +647,7 @@
    "bucket": "iOS only",
    "ios": "button-fastforward",
    "android": null,
-   "note": "PostKit player: button-fastforward PNG (clockwise arrow with 15), traced to SVG; iOS only (DEC-28).",
+   "note": "PostKit player: button-fastforward PNG (clockwise arrow with 15); iOS only (DEC-28); vector SF goforward.15 (DEC-29).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "forward.fill",
@@ -951,7 +951,7 @@
    "bucket": "iOS only",
    "ios": "video-fullscreen-close (PostKit)",
    "android": null,
-   "note": "PostKit video player; traced to SVG (DEC-28).",
+   "note": "PostKit video player (DEC-28); vector Material close_fullscreen / SF arrow.down.right.and.arrow.up.left (DEC-29).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "arrow.down.right.and.arrow.up.left",
@@ -967,7 +967,7 @@
    "bucket": "iOS only",
    "ios": "player-error-image · player-offline-image (PostKit, same drawing)",
    "android": null,
-   "note": "One SVG for the error and the offline state (DEC-28).",
+   "note": "One icon for the error and the offline state (DEC-28); vector Material error-fill / SF exclamationmark.circle.fill (DEC-29).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "exclamationmark.circle.fill",
@@ -983,7 +983,7 @@
    "bucket": "iOS only",
    "ios": "menu-line",
    "android": null,
-   "note": "Use the traced SVG. Where and how it is applied: asked of the Apps team (DEC-28).",
+   "note": "No stock symbol: redraw cleanly (DEC-29). Where and how it is applied: asked of the Apps team (DEC-28).",
    "apps_team": "1.2: where does menu-line show, and how is it placed?",
    "reference": {
     "sf_symbol": null,
