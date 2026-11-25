@@ -9,8 +9,9 @@
 // Run from anywhere: output paths are taken from this script's location (2026-11-25: a run from another folder wrote nothing to the repo).
 // Two methods, both run every time:
 //   A. glyph outlines from a font that carries the symbol glyphs (system font, SF Pro, or any font inside SF Symbols.app);
-//   B. each symbol drawn into a PDF (NSImage symbols draw as vectors): assets/sf-symbols/pdf/<name>.pdf, converted to SVG later
-//      (pdftocairo -svg). B works even when no font carries the glyphs.
+//   (2026-11-25: drawing NSImage symbols into a PDF gives bitmaps, not vectors, so that route is gone.)
+//   Each symbol is first looked up by glyph name in that font (exact); only if the font has no glyph of that name is it
+//   matched by shape against every symbol glyph.
 // Everything printed is also written to assets/sf-symbols/vector/_log.txt.
 // Output: assets/sf-symbols/vector/<name>.svg   (Regular weight, 40 pt, black fill)
 //         assets/sf-symbols/vector/<name>@<weight>.svg   (Medium … Heavy, for the WEIGHTED symbols only)
@@ -35,9 +36,7 @@ let weights: [(String, NSFont.Weight)] = [("medium", .medium), ("semibold", .sem
 let scriptURL = URL(fileURLWithPath: CommandLine.arguments[0], relativeTo: URL(fileURLWithPath: FileManager.default.currentDirectoryPath)).standardizedFileURL
 let repoRoot = scriptURL.deletingLastPathComponent().deletingLastPathComponent()
 let outDir = repoRoot.appendingPathComponent("assets/sf-symbols/vector")
-let pdfDir = repoRoot.appendingPathComponent("assets/sf-symbols/pdf")
 try! FileManager.default.createDirectory(at: outDir, withIntermediateDirectories: true)
-try! FileManager.default.createDirectory(at: pdfDir, withIntermediateDirectories: true)
 var logText = ""
 func say(_ s: String) { print(s); logText += s + "\n"; try? logText.write(to: outDir.appendingPathComponent("_log.txt"), atomically: true, encoding: .utf8) }
 say("Repo: \(repoRoot.path)  macOS \(ProcessInfo.processInfo.operatingSystemVersionString)")
@@ -71,26 +70,8 @@ if !glyphFontFound {   // any font file inside the SF Symbols app
         if glyphFontFound { break }
     }
 }
-if !glyphFontFound { say("No font with symbol glyphs found: method A skipped, method B (PDF) only.") }
+if !glyphFontFound { say("No font with symbol glyphs found. Install SF Pro (developer.apple.com/fonts) or the SF Symbols app and run again."); exit(1) }
 
-// Method B: draw each symbol into its own PDF page (vector), for conversion to SVG.
-func writePDF(_ name: String) -> Bool {
-    guard let base = NSImage(systemSymbolName: name, accessibilityDescription: nil),
-          let img = base.withSymbolConfiguration(NSImage.SymbolConfiguration(pointSize: fontSize, weight: .regular)) else { return false }
-    var box = CGRect(origin: .zero, size: img.size)
-    guard let ctx = CGContext(pdfDir.appendingPathComponent("\(name).pdf") as CFURL, mediaBox: &box, nil) else { return false }
-    ctx.beginPDFPage(nil)
-    NSGraphicsContext.saveGraphicsState()
-    NSGraphicsContext.current = NSGraphicsContext(cgContext: ctx, flipped: false)
-    img.draw(in: box)
-    NSGraphicsContext.restoreGraphicsState()
-    ctx.endPDFPage(); ctx.closePDF()
-    return true
-}
-var pdfOK = 0
-for name in Set(names) where !writePDF(name) { say("PDF MISSING \(name) (not an SF Symbol on this macOS?)") }
-pdfOK = (try? FileManager.default.contentsOfDirectory(atPath: pdfDir.path).filter { $0.hasSuffix(".pdf") }.count) ?? 0
-say("Method B: \(pdfOK) PDFs in assets/sf-symbols/pdf/")
 
 struct Sig { var v: [Float]; var aspect: Float }
 
@@ -169,7 +150,7 @@ if glyphFontFound {
     }
     say("  \(candidates.count) glyphs")
 }
-if candidates.isEmpty { say("Method A: no glyphs, done after method B."); exit(0) }
+if candidates.isEmpty { say("No symbol glyphs in the font: stopping."); exit(1) }
 
 func svg(_ path: CGPath) -> String {
     let b = path.boundingBoxOfPath
@@ -193,13 +174,36 @@ func svg(_ path: CGPath) -> String {
 
 var report: [String: Any] = [:]
 var weak: [String] = []
+func glyphByName(_ name: String, in f: CTFont? = nil) -> CGPath? {
+    let f = f ?? font
+    let g = CTFontGetGlyphWithName(f, name as CFString)
+    return g == 0 ? nil : CTFontCreatePathForGlyph(f, g, nil)
+}
 for name in names {
-    guard let s = symbolSig(name) else { say("MISSING \(name)"); continue }
+    say("… \(name)")
+    if let p = glyphByName(name) {   // exact: the font names the glyph after the symbol
+        try! svg(p).write(to: outDir.appendingPathComponent("\(name).svg"), atomically: true, encoding: .utf8)
+        var done: [String] = []
+        if weighted.contains(name) {
+            for (wn, w) in weights {
+                let wf = NSFont.systemFont(ofSize: fontSize, weight: w) as CTFont
+                if let wp = glyphByName(name, in: wf) {
+                    try! svg(wp).write(to: outDir.appendingPathComponent("\(name)@\(wn).svg"), atomically: true, encoding: .utf8); done.append(wn)
+                }
+            }
+        }
+        report[name] = ["method": "glyph name", "weights": done] as [String: Any]
+        say("    by glyph name\(done.isEmpty ? "" : " (+ " + done.joined(separator: ", ") + ")")")
+        continue
+    }
+    guard let s = symbolSig(name) else { say("    MISSING (not an SF Symbol on this macOS?)"); continue }
     var best: (Float, Int) = (.infinity, -1), second: Float = .infinity
     for (i, c) in candidates.enumerated() {
-        let sc = score(s, c.sig)
+        var sc = score(s, c.sig)
+        if sc.isNaN { sc = .infinity }
         if sc < best.0 { second = best.0; best = (sc, i) } else if sc < second { second = sc }
     }
+    guard best.1 >= 0 else { say("    NO MATCH"); continue }
     let c = candidates[best.1]
     try! svg(c.path).write(to: outDir.appendingPathComponent("\(name).svg"), atomically: true, encoding: .utf8)
     let cpHex = String(format: "U+%06X", c.cp)
@@ -213,7 +217,7 @@ for name in names {
         }
         if done.isEmpty { say("  (no weights for \(name): the system font has no symbol glyphs)") }
     }
-    report[name] = ["codepoint": cpHex, "score": best.0, "runnerUp": second, "weights": done] as [String: Any]
+    report[name] = ["method": "shape match", "codepoint": cpHex, "score": best.0, "runnerUp": second, "weights": done] as [String: Any]
     let flag = best.0 > 0.08 || second - best.0 < 0.01 ? "  <-- CHECK" : ""
     if !flag.isEmpty { weak.append(name) }
     say(String(format: "%@  %@  score %.3f  next %.3f%@", cpHex, name, best.0, second, flag))
