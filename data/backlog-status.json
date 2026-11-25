@@ -23,7 +23,7 @@
    "figma": "todo",
    "tokens": "na",
    "code": "todo",
-   "note": "Neither app has vector masters (iOS 2026-11-18, Android 2026-11-23): Core glyphs are drawn to the DEC-17 names; then the Icon component (PROGRESS 1.8)."
+   "note": "DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8)."
   },
   "component": {
    "figma": "todo",

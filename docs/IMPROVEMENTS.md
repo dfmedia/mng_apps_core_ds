@@ -9,7 +9,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
 
 | ID | Area | Improvement | Impact | Status |
 |----|------|-------------|--------|--------|
-| ICON-01 | Icons | Consolidate three icon systems (Font Awesome, TroncKit PNGs, SF Symbols) into one semantic icon set | All 77 apps, ~250 icon files | PROPOSED |
+| ICON-01 | Icons | Consolidate three icon systems (Font Awesome, TroncKit PNGs, SF Symbols) into one semantic icon set | All 77 apps, ~250 icon files | PROPOSED (step 4, retire Font Awesome: APPROVED, DEC-26) |
 | ICON-02 | Icons | Replace per-market recolored icon copies with one tinted icon | ~60 duplicate PNGs | PROPOSED |
 | ICON-03 | Icons | Remove dead `"saved"` SF Symbol reference | 1 call site | PROPOSED |
 | ICON-04 | Icons | iOS Manage Subscription modal: the 100 pt logo (`ManageSubscriptionIcon`) has no image, so the area ships blank | All iOS markets | PROPOSED |
@@ -52,7 +52,7 @@ Source: iOS TroncKit @ `e30ad2585` (via the App iOS Design System artifact). Dat
    - iOS → SF Symbols wherever one exists (search → `magnifyingglass`, share → `square.and.arrow.up`, settings → `gearshape`, bookmark → `bookmark` / `bookmark.fill`, home → `house`, sections → `line.3.horizontal`, alerts → `bell`, close → `xmark`, play/pause, `gobackward.15` / `goforward.15`, rating → `star` / `star.fill` / `star.leadinghalf.filled`, text size → `textformat.size`, checkbox → `checkmark.circle.fill` / `circle`).
    - Android → Material Symbols for the same names.
 3. **A small custom vector set in Core only for what neither platform provides**: social/brand marks (Facebook, Google, Apple, X, Bluesky, Instagram, YouTube, Vimeo — use each brand's official asset), eNewspaper-specific controls, Your News, follow/unfollow topic.
-4. **Retire Font Awesome** from the iOS app (7 glyphs; all have SF Symbol equivalents).
+4. **Retire Font Awesome** from the iOS app (7 glyphs; all have SF Symbol equivalents). **Approved (Karl, 2026-11-25, DEC-26):** the design system uses SF Symbols for these 7; Karl picks each symbol, fill and weight.
 
 Result: one icon list to design and review, native look on each platform, no raster icons.
 

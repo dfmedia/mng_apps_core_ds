@@ -36,7 +36,6 @@
    "reference": {
     "sf_symbol": "magnifyingglass",
     "material": "search",
-    "font_awesome": "search",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -53,7 +52,6 @@
    "reference": {
     "sf_symbol": "gearshape",
     "material": "settings",
-    "font_awesome": "cog",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -70,7 +68,6 @@
    "reference": {
     "sf_symbol": "square.and.arrow.up",
     "material": "share",
-    "font_awesome": "share-alt",
     "recommendation": "Native on both platforms",
     "ownership_note": "Glyph differs by platform convention; one semantic name."
    }
@@ -87,7 +84,6 @@
    "reference": {
     "sf_symbol": "bookmark",
     "material": "bookmark",
-    "font_awesome": "bookmark",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -104,7 +100,6 @@
    "reference": {
     "sf_symbol": "bookmark.fill",
     "material": "bookmark",
-    "font_awesome": "bookmark",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android special-section star (card_star_default) also means saved: kept as Android's glyph, same icon name (DEC-17, PLAT-09 rejected). iOS has no Saved tab: Saved is a segment of the YOU tab (Apps team, 2026-11-19)."
    }
@@ -121,7 +116,6 @@
    "reference": {
     "sf_symbol": "house",
     "material": "home",
-    "font_awesome": "home",
     "recommendation": "Native on both platforms",
     "ownership_note": "Both apps ship per-market Home icons; one Core glyph removes ~86 files. Android: only the Home tab icon is per market (Apps team, 2026-11-19)."
    }
@@ -138,7 +132,6 @@
    "reference": {
     "sf_symbol": "line.3.horizontal",
     "material": "menu",
-    "font_awesome": "bars",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -155,7 +148,6 @@
    "reference": {
     "sf_symbol": "bell",
     "material": "notifications",
-    "font_awesome": "bell",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -172,7 +164,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": "Custom vector needed — see Missing Assets",
     "ownership_note": "Gap on both: one custom Core vector."
    }
@@ -189,7 +180,6 @@
    "reference": {
     "sf_symbol": "newspaper",
     "material": "newspaper",
-    "font_awesome": "newspaper",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -206,7 +196,6 @@
    "reference": {
     "sf_symbol": "gamecontroller.fill",
     "material": "sports_esports",
-    "font_awesome": "gamepad",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -223,7 +212,6 @@
    "reference": {
     "sf_symbol": "chevron.up",
     "material": "expand_less",
-    "font_awesome": "chevron-up",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -240,7 +228,6 @@
    "reference": {
     "sf_symbol": "chevron.down",
     "material": "expand_more",
-    "font_awesome": "chevron-down",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -257,7 +244,6 @@
    "reference": {
     "sf_symbol": "chevron.left",
     "material": "arrow_back",
-    "font_awesome": "chevron-left",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -274,7 +260,6 @@
    "reference": {
     "sf_symbol": "chevron.right",
     "material": "chevron_right",
-    "font_awesome": "chevron-right",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android has 4 arrows for this; consolidate."
    }
@@ -291,7 +276,6 @@
    "reference": {
     "sf_symbol": "xmark",
     "material": "close",
-    "font_awesome": "times",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -308,7 +292,6 @@
    "reference": {
     "sf_symbol": "xmark.circle.fill",
     "material": "cancel",
-    "font_awesome": "times-circle",
     "recommendation": "Native on both platforms",
     "ownership_note": "Confirm the Android glyph is a circled X."
    }
@@ -325,7 +308,6 @@
    "reference": {
     "sf_symbol": "person.circle.fill",
     "material": "account_circle",
-    "font_awesome": "user-circle",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none (login is the Auth0 web page; no account icon)."
    }
@@ -342,7 +324,6 @@
    "reference": {
     "sf_symbol": "exclamationmark.triangle.fill",
     "material": "warning",
-    "font_awesome": "exclamation-triangle",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android uses it only in notifications."
    }
@@ -359,7 +340,6 @@
    "reference": {
     "sf_symbol": "envelope.fill",
     "material": "mail",
-    "font_awesome": "envelope",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -376,7 +356,6 @@
    "reference": {
     "sf_symbol": "arrow.clockwise",
     "material": "refresh",
-    "font_awesome": "redo",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -393,7 +372,6 @@
    "reference": {
     "sf_symbol": "line.3.horizontal.decrease",
     "material": "filter_list",
-    "font_awesome": "filter",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -410,7 +388,6 @@
    "reference": {
     "sf_symbol": "textformat.size.smaller",
     "material": "text_decrease",
-    "font_awesome": null,
     "recommendation": "Native on both platforms",
     "ownership_note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only)."
    }
@@ -427,7 +404,6 @@
    "reference": {
     "sf_symbol": "textformat.size.larger",
     "material": "text_increase",
-    "font_awesome": null,
     "recommendation": "Native on both platforms",
     "ownership_note": "iOS only (Karl, 2026-11-19, DEC-21). Android equivalent: one text-size icon (text-size, Android only)."
    }
@@ -444,7 +420,6 @@
    "reference": {
     "sf_symbol": "plus.circle",
     "material": "add_circle",
-    "font_awesome": "plus-circle",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes)."
    }
@@ -461,7 +436,6 @@
    "reference": {
     "sf_symbol": "minus.circle",
     "material": "do_not_disturb_on",
-    "font_awesome": "minus-circle",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none shipped (file unused; topics are picked with Your News checkboxes)."
    }
@@ -478,7 +452,6 @@
    "reference": {
     "sf_symbol": "checkmark.circle.fill",
     "material": "check_circle",
-    "font_awesome": "check-circle",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -495,7 +468,6 @@
    "reference": {
     "sf_symbol": "circle",
     "material": "radio_button_unchecked",
-    "font_awesome": "circle",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -512,7 +484,6 @@
    "reference": {
     "sf_symbol": "arrow.right.circle.fill",
     "material": "arrow_circle_right",
-    "font_awesome": "arrow-circle-right",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -529,7 +500,6 @@
    "reference": {
     "sf_symbol": "arrow.up.left.and.arrow.down.right",
     "material": "open_in_full",
-    "font_awesome": "expand",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: the PageSuite eEdition SDK draws its own controls (not our icons)."
    }
@@ -546,7 +516,6 @@
    "reference": {
     "sf_symbol": "arrow.down.right.and.arrow.up.left",
     "material": "close_fullscreen",
-    "font_awesome": "compress",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: inside the PageSuite SDK (not our icons)."
    }
@@ -563,7 +532,6 @@
    "reference": {
     "sf_symbol": "arrow.left",
     "material": "arrow_back",
-    "font_awesome": "arrow-left",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: inside the PageSuite SDK (not our icons)."
    }
@@ -580,7 +548,6 @@
    "reference": {
     "sf_symbol": "arrow.right",
     "material": "arrow_forward",
-    "font_awesome": "arrow-right",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: inside the PageSuite SDK (not our icons)."
    }
@@ -597,7 +564,6 @@
    "reference": {
     "sf_symbol": "play.fill",
     "material": "play_arrow",
-    "font_awesome": "play",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -614,7 +580,6 @@
    "reference": {
     "sf_symbol": "pause.fill",
     "material": "pause",
-    "font_awesome": "pause",
     "recommendation": "Native on both platforms",
     "ownership_note": null
    }
@@ -631,7 +596,6 @@
    "reference": {
     "sf_symbol": "gobackward.15",
     "material": null,
-    "font_awesome": null,
     "recommendation": "iOS native; Android needs custom vector",
     "ownership_note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-back-10 (Android only)."
    }
@@ -648,7 +612,6 @@
    "reference": {
     "sf_symbol": "goforward.15",
     "material": null,
-    "font_awesome": null,
     "recommendation": "iOS native; Android needs custom vector",
     "ownership_note": "iOS only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). Android equivalent: skip-forward-10 (Android only)."
    }
@@ -665,7 +628,6 @@
    "reference": {
     "sf_symbol": "backward.fill",
     "material": "fast_rewind",
-    "font_awesome": "backward",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only)."
    }
@@ -682,7 +644,6 @@
    "reference": {
     "sf_symbol": "forward.fill",
     "material": "fast_forward",
-    "font_awesome": "forward",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only)."
    }
@@ -699,7 +660,6 @@
    "reference": {
     "sf_symbol": "cube",
     "material": "view_in_ar",
-    "font_awesome": "cube",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none in the Android guide."
    }
@@ -716,7 +676,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": "Custom vector needed — see Missing Assets",
     "ownership_note": "Android equivalent: none; World Cup tabs use text (Barlow Condensed)."
    }
@@ -733,7 +692,6 @@
    "reference": {
     "sf_symbol": "star",
     "material": "star",
-    "font_awesome": "star",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none; its stars mean saved (special sections), not ratings."
    }
@@ -750,7 +708,6 @@
    "reference": {
     "sf_symbol": "star.leadinghalf.filled",
     "material": "star_half",
-    "font_awesome": "star-half-alt",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none (see Rating star (empty))."
    }
@@ -767,7 +724,6 @@
    "reference": {
     "sf_symbol": "star.fill",
     "material": "star",
-    "font_awesome": "star",
     "recommendation": "Native on both platforms",
     "ownership_note": "Android equivalent: none (see Rating star (empty))."
    }
@@ -784,7 +740,6 @@
    "reference": {
     "sf_symbol": "heart",
     "material": "favorite",
-    "font_awesome": "heart",
     "recommendation": "Native on both platforms",
     "ownership_note": "iOS native tweet embeds only. Android equivalent: none in the Android guide."
    }
@@ -801,7 +756,6 @@
    "reference": {
     "sf_symbol": "arrow.2.squarepath",
     "material": "repeat",
-    "font_awesome": "retweet",
     "recommendation": "Native on both platforms",
     "ownership_note": "iOS native tweet embeds only. Android equivalent: none in the Android guide."
    }
@@ -818,7 +772,6 @@
    "reference": {
     "sf_symbol": "checkmark.seal.fill",
     "material": "verified",
-    "font_awesome": null,
     "recommendation": "Native on both platforms",
     "ownership_note": "iOS native tweet embeds only. Android equivalent: none in the Android guide."
    }
@@ -835,7 +788,6 @@
    "reference": {
     "sf_symbol": "apple.logo",
     "material": null,
-    "font_awesome": "apple",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Sign in with Apple is iOS only. Android equivalent: none shipped (file unused)."
    }
@@ -852,7 +804,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "google",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Dormant on Android."
    }
@@ -869,7 +820,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "facebook",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": null
    }
@@ -886,7 +836,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "twitter (old bird)",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": null
    }
@@ -903,7 +852,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": null
    }
@@ -920,7 +868,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "instagram",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": null
    }
@@ -937,7 +884,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "youtube",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Android equivalent: none in the Android guide."
    }
@@ -954,7 +900,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": "vimeo-v",
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Android equivalent: none in the Android guide."
    }
@@ -971,7 +916,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "iOS paywall password autofill. Android equivalent: none in the Android guide."
    }
@@ -988,7 +932,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide)."
    }
@@ -1005,7 +948,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": null,
     "ownership_note": "Android only (Karl, 2026-11-19, DEC-21). iOS equivalent: text-size-smaller and text-size-larger (iOS only)."
    }
@@ -1022,7 +964,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": null,
     "ownership_note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-back-15 (iOS only). Interval difference: DSC-35."
    }
@@ -1039,7 +980,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": null,
     "ownership_note": "Android only (Karl, 2026-11-19, DEC-21: the apps do different things, so one icon per platform). iOS equivalent: skip-forward-15 (iOS only). Interval difference: DSC-35."
    }
@@ -1056,7 +996,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": null,
     "ownership_note": "Android requires a monochrome status-bar icon. iOS equivalent: none needed (iOS notifications show the app icon)."
    }
@@ -1073,7 +1012,6 @@
    "reference": {
     "sf_symbol": null,
     "material": null,
-    "font_awesome": null,
     "recommendation": null,
     "ownership_note": "Same meaning as Saved. iOS equivalent: the Saved bookmark (shared name saved, DEC-17, PLAT-09 rejected)."
    }
