@@ -78,9 +78,8 @@ REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG i
     'tab-enewspaper': "Karl redraws (Illustrator): Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. "
                       'iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS.',
     'tab-for-you': 'Karl redraws (Illustrator): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).',
-    'unfollow-topic': 'iOS only. List version: Karl redraws (Illustrator), as the pair of Material format_list_bulleted_add; '
-                      'on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). '
-                      'Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).',
+    'unfollow-topic': 'iOS only. List version: SF text.badge.minus (exported 2026-11-25) is the shipped drawing (minus in a circle beside the list), '
+                      'so iOS may need no redraw: Karl to confirm. Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).',
     'enews-coach-arrow': 'Redrawn: a clean dotted curve with an arrowhead (approved by Karl, 2026-11-25; where it is used: MISSING-ASSETS 1.2).',
     'tab-home': 'Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.',
 }
@@ -97,6 +96,8 @@ OTHER = {
     'skip-forward-15': 'iOS only: SF goforward.15 (Material has 5, 10 and 30 only).',
     'tournament-sport': 'iOS only: SF Symbols as shipped.',
 }
+
+SF_DIR = os.path.join(ROOT, 'assets', 'sf-symbols', 'vector')   # git-ignored; Karl's export (scripts/sf_symbols_vectors.swift)
 
 def material_pkg(t):
     subprocess.run(['npm', 'pack', f'@material-symbols/svg-400@{VERSION}', '-q'], cwd=t, check=True, capture_output=True)
@@ -169,7 +170,9 @@ def main():
                       material=f'@material-symbols/svg-400@{VERSION}',
                       summary=OrderedDict(names=len(rows), by_status={s: sum(r['status'] == s for r in rows) for s in STATUS},
                                           material_svgs={k: len(v) for k, v in want.items()}, sf_symbols=len(sf_all), shipped_files=len(files)),
-                      sf_symbols_needed=sf_all, names=rows, files=files)
+                      sf_symbols_needed=sf_all,
+                      sf_symbols_exported=sorted(x for x in sf_all if os.path.exists(os.path.join(SF_DIR, x + '.svg'))) if os.path.isdir(SF_DIR) else None,
+                      names=rows, files=files)
     json.dump(out, open(os.path.join(ROOT, 'data', 'icon-replacements.json'), 'w'), indent=1)
     write_md(out)
     print(json.dumps(out['summary']))
@@ -198,7 +201,12 @@ def write_md(out):
     for f in sorted(out['files'], key=lambda f: (f['name'], f['platform'], f['file'])):
         L.append(f"| {f['platform']} | `{f['file']}` | `{f['name']}` | {('`'+f['material']+'`') if f['material'] else '—'} | "
                  f"{('`'+f['sf']+'`') if f['sf'] else '—'} | {f['shape_rank'] if f['shape_rank'] is not None else ''} |")
-    L += ['', '## SF Symbols to export', '', ', '.join(f'`{x}`' for x in out['sf_symbols_needed']), '']
+    ex = out['sf_symbols_exported']
+    L += ['', '## SF Symbols', '', f"{len(out['sf_symbols_needed'])} needed: " + ', '.join(f'`{x}`' for x in out['sf_symbols_needed']) + '.', '',
+          ('All exported as true vectors by scripts/sf_symbols_vectors.swift on Karl\'s Mac (2026-11-25, macOS 15.5, from the SF Pro font), '
+           'checked by eye against Apple\'s rendering. They are in assets/sf-symbols/vector/ (git-ignored while the repos are public).'
+           if ex is not None and len(ex) == len(out['sf_symbols_needed']) else
+           f"Exported: {len(ex) if ex is not None else 'unknown (folder not here)'}; missing: " + ', '.join(sorted(set(out['sf_symbols_needed']) - set(ex or [])))), '']
     open(os.path.join(ROOT, 'docs', 'ICON-REPLACEMENTS.md'), 'w').write('\n'.join(L))
 
 if __name__ == '__main__':
