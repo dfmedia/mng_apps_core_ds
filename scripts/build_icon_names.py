@@ -31,7 +31,8 @@ NAME = {
     'Continue': ('continue', ''),
     'Expand page': ('enews-expand-page', ''), 'Fit to screen': ('enews-fit-to-screen', ''), 'Previous page': ('enews-previous-page', ''), 'Next page': ('enews-next-page', ''),
     'Play': ('play', ''), 'Pause': ('pause', ''), 'Skip back 15 s': ('skip-back-15', "iOS only (Karl, 2026-11-19, DEC-21): SF gobackward.15, skips 15 s. No separate design (Apps team, 2026-11-18). Android: skip-back-10."), 'Skip forward 15 s': ('skip-forward-15', "iOS only (Karl, 2026-11-19, DEC-21): SF goforward.15, skips 15 s. No separate design (Apps team, 2026-11-18). Android: skip-forward-10."),
-    'Rewind': ('rewind', ''), 'Fast forward': ('fast-forward', ''), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).'),
+    'Rewind': ('skip-back-15', 'PostKit player: button-rewind PNG (counter-clockwise arrow with 15), traced to SVG; iOS only (DEC-28).'), 'Fast forward': ('skip-forward-15', 'PostKit player: button-fastforward PNG (clockwise arrow with 15), traced to SVG; iOS only (DEC-28).'),
+    'Exit full screen': ('exit-full-screen', 'PostKit video player; traced to SVG (DEC-28).'), 'Player error': ('player-error', 'One SVG for the error and the offline state (DEC-28).'), 'Coach-mark arrow': ('enews-coach-arrow', 'Use the traced SVG. Where and how it is applied: asked of the Apps team (DEC-28).'), '3D embed': ('embed-3d', ''), 'Tournament sport symbols (6)': ('tournament-sport', 'SF soccerball.inverse, american.football.fill, baseball.fill, basketball.fill, hockey.puck.fill; fallback sportscourt.fill; 72 pt (Apps team, 2026-11-18).'),
     'Rating star (empty)': ('rating-star-empty', ''), 'Rating star (half)': ('rating-star-half', ''), 'Rating star (full)': ('rating-star-full', ''),
     'Like / favorite': ('like', 'Tweet embeds.'), 'Repost': ('repost', 'Tweet embeds.'), 'Verified': ('verified', 'Tweet embeds.'),
     'Apple': ('brand-apple', ''), 'Google': ('brand-google', ''), 'Facebook': ('brand-facebook', ''), 'X (Twitter)': ('brand-x', ''),
@@ -41,7 +42,7 @@ NAME = {
     'Save star (special sections)': ('saved', "Android's glyph for saved in special sections; iOS shows the bookmark. Both kept (DEC-17, PLAT-09 rejected)."),
 }
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
-ASK = {}   # none open (2026-11-23)
+ASK = {'Coach-mark arrow': '1.2: where does menu-line show, and how is it placed?'}   # DEC-28 (2026-11-25)
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
 BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}

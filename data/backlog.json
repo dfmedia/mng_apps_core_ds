@@ -1016,6 +1016,45 @@
    "overall": "todo"
   },
   {
+   "id": "icon/exit-full-screen",
+   "area": "Icons",
+   "group": "Icons · Navigation & UI",
+   "name": "Exit full screen",
+   "owner": "ios",
+   "figma": "todo",
+   "tokens": "na",
+   "code": "todo",
+   "blocked_by": "",
+   "note": "DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
+  },
+  {
+   "id": "icon/player-error",
+   "area": "Icons",
+   "group": "Icons · Media",
+   "name": "Player error",
+   "owner": "ios",
+   "figma": "todo",
+   "tokens": "na",
+   "code": "todo",
+   "blocked_by": "",
+   "note": "DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
+  },
+  {
+   "id": "icon/coach-mark-arrow",
+   "area": "Icons",
+   "group": "Icons · eNewspaper",
+   "name": "Coach-mark arrow",
+   "owner": "ios",
+   "figma": "todo",
+   "tokens": "na",
+   "code": "todo",
+   "blocked_by": "",
+   "note": "DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8).",
+   "overall": "todo"
+  },
+  {
    "id": "icon/text-size",
    "area": "Icons",
    "group": "Icons · Navigation & UI",

@@ -16,8 +16,8 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Color roles | 12 | 0 | 12 | 0 | 0 | 0 |
 | Components | 25 | 0 | 10 | 15 | 0 | 0 |
 | Layout | 12 | 3 | 8 | 1 | 0 | 0 |
-| Icons | 62 | 0 | 0 | 0 | 62 | 0 |
-| **Total** | **119** | **4** | **37** | **16** | **62** | **0** |
+| Icons | 65 | 0 | 0 | 0 | 65 | 0 |
+| **Total** | **122** | **4** | **37** | **16** | **65** | **0** |
 
 ## Suggested order
 
@@ -163,6 +163,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Filter | Core | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Text size smaller | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Text size larger | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
+| Exit full screen | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Text size | Android | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Notification small icon | Android | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 
@@ -184,6 +185,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Fit to screen | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Previous page | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Next page | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
+| Coach-mark arrow | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 
 ### Icons · Media
 
@@ -197,6 +199,7 @@ Built = done everywhere except the code is not used in an app yet. Generated cod
 | Fast forward | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | 3D embed | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Tournament sport symbols (6) | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
+| Player error | iOS | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Skip back 10 s | Android | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 | Skip forward 10 s | Android | ⬜ to do | — n/a | ⬜ to do | DEC-26 (2026-11-25): every icon a vector; no Font Awesome (the 7 iOS FA glyphs become SF Symbols, Karl picks); shipped PNGs traced and checked against the PNG; one set where both apps agree. Neither app has vector masters. Then the Icon component (PROGRESS 1.8). |
 

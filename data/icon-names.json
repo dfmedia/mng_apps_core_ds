@@ -8,18 +8,26 @@
  "rule": "One name per icon purpose, glyphs as each app ships them. Lowercase, hyphens, named for the job. Prefixes tab-, enews-, brand-.",
  "status": "names approved by Karl 2026-11-11 (DEC-17); glyphs documented as shipped",
  "summary": {
-  "purposes": 62,
-  "names": 61,
+  "purposes": 65,
+  "names": 62,
   "shared_names": {
    "saved": [
     "Saved",
     "Save star (special sections)"
+   ],
+   "skip-back-15": [
+    "Skip back 15 s",
+    "Rewind"
+   ],
+   "skip-forward-15": [
+    "Skip forward 15 s",
+    "Fast forward"
    ]
   },
   "by_bucket": {
    "Core": 31,
    "Core, per-platform value": 0,
-   "iOS only": 26,
+   "iOS only": 29,
    "Android only": 5
   }
  },
@@ -125,7 +133,7 @@
    "purpose": "Sections / menu",
    "group": "Navigation & UI",
    "bucket": "Core",
-   "ios": "FA bars · tab-sections · eNewspaper menu, menu-line",
+   "ios": "FA bars · tab-sections · eNewspaper menu",
    "android": "mc_tab_icon_sections",
    "note": "Sections tab and the eNewspaper menu.",
    "apps_team": "",
@@ -269,7 +277,7 @@
    "purpose": "Close",
    "group": "Navigation & UI",
    "bucket": "Core",
-   "ios": "CloseButton · overlay-close · BannerCloseLight · video-fullscreen-close · SF xmark",
+   "ios": "CloseButton · overlay-close · BannerCloseLight · SF xmark",
    "android": "ic_close_white_36dp · xbutton · ic_ad_close · close_player_button · ic_persistent_player_close",
    "note": "",
    "apps_team": "",
@@ -557,7 +565,7 @@
    "purpose": "Play",
    "group": "Media",
    "bucket": "Core",
-   "ios": "button-play* (6) · embed-play · gif-play · button-miniplayer-play (2) · SF play.fill",
+   "ios": "button-play* (6) · embed-play · button-miniplayer-play (2) · SF play.fill",
    "android": "play_player_button · ic_persistent_player_play · ic_play_btn · btn_play_large",
    "note": "",
    "apps_team": "",
@@ -617,35 +625,35 @@
    }
   },
   {
-   "name": "rewind",
+   "name": "skip-back-15",
    "purpose": "Rewind",
    "group": "Media",
    "bucket": "iOS only",
    "ios": "button-rewind",
    "android": null,
-   "note": "",
+   "note": "PostKit player: button-rewind PNG (counter-clockwise arrow with 15), traced to SVG; iOS only (DEC-28).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "backward.fill",
     "material": "fast_rewind",
     "recommendation": "Native on both platforms",
-    "ownership_note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only)."
+    "ownership_note": "The PostKit player (Washington Post SDK in TroncKit) draws a counter-clockwise arrow with 15: same job as skip-back-15 (DEC-28). Android equivalent: skip-back-10."
    }
   },
   {
-   "name": "fast-forward",
+   "name": "skip-forward-15",
    "purpose": "Fast forward",
    "group": "Media",
    "bucket": "iOS only",
    "ios": "button-fastforward",
    "android": null,
-   "note": "",
+   "note": "PostKit player: button-fastforward PNG (clockwise arrow with 15), traced to SVG; iOS only (DEC-28).",
    "apps_team": "",
    "reference": {
     "sf_symbol": "forward.fill",
     "material": "fast_forward",
     "recommendation": "Native on both platforms",
-    "ownership_note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only)."
+    "ownership_note": "The PostKit player draws a clockwise arrow with 15: same job as skip-forward-15 (DEC-28). Android equivalent: skip-forward-10."
    }
   },
   {
@@ -934,6 +942,54 @@
     "material": null,
     "recommendation": "Use official brand asset (custom Core vector)",
     "ownership_note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide)."
+   }
+  },
+  {
+   "name": "exit-full-screen",
+   "purpose": "Exit full screen",
+   "group": "Navigation & UI",
+   "bucket": "iOS only",
+   "ios": "video-fullscreen-close (PostKit)",
+   "android": null,
+   "note": "PostKit video player; traced to SVG (DEC-28).",
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "arrow.down.right.and.arrow.up.left",
+    "material": "close_fullscreen",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "PostKit video player (DEC-28; was filed under Close). Android equivalent: none in the Android guide."
+   }
+  },
+  {
+   "name": "player-error",
+   "purpose": "Player error",
+   "group": "Media",
+   "bucket": "iOS only",
+   "ios": "player-error-image · player-offline-image (PostKit, same drawing)",
+   "android": null,
+   "note": "One SVG for the error and the offline state (DEC-28).",
+   "apps_team": "",
+   "reference": {
+    "sf_symbol": "exclamationmark.circle.fill",
+    "material": "error",
+    "recommendation": "Native on both platforms",
+    "ownership_note": "PostKit player error and offline states: one drawing for both (DEC-28). Android equivalent: none in the Android guide."
+   }
+  },
+  {
+   "name": "enews-coach-arrow",
+   "purpose": "Coach-mark arrow",
+   "group": "eNewspaper",
+   "bucket": "iOS only",
+   "ios": "menu-line",
+   "android": null,
+   "note": "Use the traced SVG. Where and how it is applied: asked of the Apps team (DEC-28).",
+   "apps_team": "1.2: where does menu-line show, and how is it placed?",
+   "reference": {
+    "sf_symbol": null,
+    "material": null,
+    "recommendation": "Custom vector needed — see Missing Assets",
+    "ownership_note": "eNewspaper (DEC-28; was filed under Sections / menu). Where it shows is asked of the Apps team (MISSING-ASSETS 1.2). Android equivalent: the PageSuite SDK draws its own."
    }
   },
   {

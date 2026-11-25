@@ -58,6 +58,8 @@ BUGS = {'iOS': [
    'Export vs Android and the migration sheet.', 'Set the right brand color in those three markets.', 'DSC-02, DSC-03, DSC-04'),
   (L_, 'Brand colors off by one in a color channel', 'TroncKit stores each channel as a 2-decimal fraction, so many colors come back 1 off (for example #22 becomes #21). Invisible, but the values no longer match the brand.',
    'Export vs Android and the migration sheet (36 markets).', 'Store colors as hex.', 'DSC-01'),
+  (L_, 'GIF badge image named as a play button', 'PostKit ships gif-play.png, a "GIF" label on a blue square, though its name says play. The design system does not carry it.',
+   'iOS style guide (PostKit image set).', 'Delete the image. If a screen still uses it, tell us where (question 1.1); a GIF label can be drawn as text.', 'DEC-28'),
   (L_, 'Unused code and assets', 'UIImage(systemName: "saved") in updateTabBasedOnIsPagesuite() (never called; "saved" is not an SF Symbol) and the tab-newspaper image set (only referenced by an unused property).',
    'Apps team answers.', 'Remove them.', ''),
 ], 'Android': [

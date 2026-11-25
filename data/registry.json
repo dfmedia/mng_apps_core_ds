@@ -8,7 +8,7 @@
   },
   "icon": {
    "core": 31,
-   "ios": 26,
+   "ios": 29,
    "android": 5
   },
   "component": {
@@ -368,7 +368,7 @@
    "name": "Sections / menu",
    "owner": "core",
    "ios": {
-    "source": "FA bars \u00b7 tab-sections \u00b7 eNewspaper menu, menu-line",
+    "source": "FA bars \u00b7 tab-sections \u00b7 eNewspaper menu",
     "native": "line.3.horizontal"
    },
    "android": {
@@ -548,7 +548,7 @@
    "name": "Close",
    "owner": "core",
    "ios": {
-    "source": "CloseButton \u00b7 overlay-close \u00b7 BannerCloseLight \u00b7 video-fullscreen-close \u00b7 SF xmark",
+    "source": "CloseButton \u00b7 overlay-close \u00b7 BannerCloseLight \u00b7 SF xmark",
     "native": "xmark"
    },
    "android": {
@@ -908,7 +908,7 @@
    "name": "Play",
    "owner": "core",
    "ios": {
-    "source": "button-play* (6) \u00b7 embed-play \u00b7 gif-play \u00b7 button-miniplayer-play (2) \u00b7 SF play.fill",
+    "source": "button-play* (6) \u00b7 embed-play \u00b7 button-miniplayer-play (2) \u00b7 SF play.fill",
     "native": "play.fill"
    },
    "android": {
@@ -995,7 +995,7 @@
     "source": null,
     "native": "fast_rewind"
    },
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
+   "note": "The PostKit player (Washington Post SDK in TroncKit) draws a counter-clockwise arrow with 15: same job as skip-back-15 (DEC-28). Android equivalent: skip-back-10.",
    "core": {
     "figma": null,
     "spec": null
@@ -1015,7 +1015,7 @@
     "source": null,
     "native": "fast_forward"
    },
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
+   "note": "The PostKit player draws a clockwise arrow with 15: same job as skip-forward-15 (DEC-28). Android equivalent: skip-forward-10.",
    "core": {
     "figma": null,
     "spec": null
@@ -1376,6 +1376,66 @@
     "native": null
    },
    "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/exit-full-screen",
+   "type": "icon",
+   "group": "Icons \u00b7 Navigation & UI",
+   "name": "Exit full screen",
+   "owner": "ios",
+   "ios": {
+    "source": "video-fullscreen-close (PostKit)",
+    "native": "arrow.down.right.and.arrow.up.left"
+   },
+   "android": {
+    "source": null,
+    "native": "close_fullscreen"
+   },
+   "note": "PostKit video player (DEC-28; was filed under Close). Android equivalent: none in the Android guide.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/player-error",
+   "type": "icon",
+   "group": "Icons \u00b7 Media",
+   "name": "Player error",
+   "owner": "ios",
+   "ios": {
+    "source": "player-error-image \u00b7 player-offline-image (PostKit, same drawing)",
+    "native": "exclamationmark.circle.fill"
+   },
+   "android": {
+    "source": null,
+    "native": "error"
+   },
+   "note": "PostKit player error and offline states: one drawing for both (DEC-28). Android equivalent: none in the Android guide.",
+   "core": {
+    "figma": null,
+    "spec": null
+   }
+  },
+  {
+   "id": "icon/coach-mark-arrow",
+   "type": "icon",
+   "group": "Icons \u00b7 eNewspaper",
+   "name": "Coach-mark arrow",
+   "owner": "ios",
+   "ios": {
+    "source": "menu-line",
+    "native": null
+   },
+   "android": {
+    "source": null,
+    "native": null
+   },
+   "note": "eNewspaper (DEC-28; was filed under Sections / menu). Where it shows is asked of the Apps team (MISSING-ASSETS 1.2). Android equivalent: the PageSuite SDK draws its own.",
    "core": {
     "figma": null,
     "spec": null

@@ -5,7 +5,7 @@
  },
  "summary": {
   "core": 31,
-  "ios-only": 26,
+  "ios-only": 29,
   "android-only": 5
  },
  "purposes": [
@@ -78,7 +78,7 @@
   {
    "group": "Navigation & UI",
    "purpose": "Sections / menu",
-   "ios_today": "FA bars \u00b7 tab-sections \u00b7 eNewspaper menu, menu-line",
+   "ios_today": "FA bars \u00b7 tab-sections \u00b7 eNewspaper menu",
    "android_today": "mc_tab_icon_sections",
    "sf_symbol": "line.3.horizontal",
    "material": "menu",
@@ -177,7 +177,7 @@
   {
    "group": "Navigation & UI",
    "purpose": "Close",
-   "ios_today": "CloseButton \u00b7 overlay-close \u00b7 BannerCloseLight \u00b7 video-fullscreen-close \u00b7 SF xmark",
+   "ios_today": "CloseButton \u00b7 overlay-close \u00b7 BannerCloseLight \u00b7 SF xmark",
    "android_today": "ic_close_white_36dp \u00b7 xbutton \u00b7 ic_ad_close \u00b7 close_player_button \u00b7 ic_persistent_player_close",
    "sf_symbol": "xmark",
    "material": "close",
@@ -375,7 +375,7 @@
   {
    "group": "Media",
    "purpose": "Play",
-   "ios_today": "button-play* (6) \u00b7 embed-play \u00b7 gif-play \u00b7 button-miniplayer-play (2) \u00b7 SF play.fill",
+   "ios_today": "button-play* (6) \u00b7 embed-play \u00b7 button-miniplayer-play (2) \u00b7 SF play.fill",
    "android_today": "play_player_button \u00b7 ic_persistent_player_play \u00b7 ic_play_btn \u00b7 btn_play_large",
    "sf_symbol": "play.fill",
    "material": "play_arrow",
@@ -424,7 +424,7 @@
    "sf_symbol": "backward.fill",
    "material": "fast_rewind",
    "bucket": "ios-only",
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
+   "note": "The PostKit player (Washington Post SDK in TroncKit) draws a counter-clockwise arrow with 15: same job as skip-back-15 (DEC-28). Android equivalent: skip-back-10.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -435,7 +435,7 @@
    "sf_symbol": "forward.fill",
    "material": "fast_forward",
    "bucket": "ios-only",
-   "note": "Android equivalent: none in the Android guide (its audio player has 10 s skip only).",
+   "note": "The PostKit player draws a clockwise arrow with 15: same job as skip-forward-15 (DEC-28). Android equivalent: skip-forward-10.",
    "ios_recommendation": "Native on both platforms"
   },
   {
@@ -635,6 +635,39 @@
    "bucket": "ios-only",
    "note": "Android equivalent: none in the Android drawables (whether the Outbrain widget shows a logo there is not in the guide).",
    "ios_recommendation": "Use official brand asset (custom Core vector)"
+  },
+  {
+   "group": "Navigation & UI",
+   "purpose": "Exit full screen",
+   "ios_today": "video-fullscreen-close (PostKit)",
+   "android_today": null,
+   "sf_symbol": "arrow.down.right.and.arrow.up.left",
+   "material": "close_fullscreen",
+   "bucket": "ios-only",
+   "note": "PostKit video player (DEC-28; was filed under Close). Android equivalent: none in the Android guide.",
+   "ios_recommendation": "Native on both platforms"
+  },
+  {
+   "group": "Media",
+   "purpose": "Player error",
+   "ios_today": "player-error-image \u00b7 player-offline-image (PostKit, same drawing)",
+   "android_today": null,
+   "sf_symbol": "exclamationmark.circle.fill",
+   "material": "error",
+   "bucket": "ios-only",
+   "note": "PostKit player error and offline states: one drawing for both (DEC-28). Android equivalent: none in the Android guide.",
+   "ios_recommendation": "Native on both platforms"
+  },
+  {
+   "group": "eNewspaper",
+   "purpose": "Coach-mark arrow",
+   "ios_today": "menu-line",
+   "android_today": null,
+   "sf_symbol": null,
+   "material": null,
+   "bucket": "ios-only",
+   "note": "eNewspaper (DEC-28; was filed under Sections / menu). Where it shows is asked of the Apps team (MISSING-ASSETS 1.2). Android equivalent: the PageSuite SDK draws its own.",
+   "ios_recommendation": "Custom vector needed \u2014 see Missing Assets"
   },
   {
    "group": "Navigation & UI",
