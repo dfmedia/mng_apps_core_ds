@@ -25,12 +25,12 @@ MATERIAL = {
     'continue': 'arrow_circle_right-fill', 'email': 'mail-fill', 'embed-3d': 'deployed_code',
     'enews-expand-page': 'open_in_full', 'enews-fit-to-screen': 'close_fullscreen',
     'enews-next-page': 'arrow_forward_ios', 'enews-previous-page': 'arrow_back_ios_new', 'exit-full-screen': 'close_fullscreen',
-    'filter': 'page_info', 'follow-topic': 'format_list_bulleted_add', 'unfollow-topic': 'playlist_remove',
+    'filter': None, 'follow-topic': 'format_list_bulleted_add', 'unfollow-topic': None,
     'like': 'favorite-fill', 'menu': 'menu', 'pause': 'pause-fill', 'play': 'play_arrow-fill', 'player-error': 'error-fill',
     'rating-star-empty': 'star', 'rating-star-full': 'star-fill', 'rating-star-half': 'star_half-fill',
     'refresh': 'refresh', 'repost': 'repeat', 'save': 'bookmark', 'saved': 'bookmark-fill', 'search': 'search',
-    'settings': 'settings', 'share': 'share', 'tab-alerts': 'notifications', 'tab-enewspaper': 'newsmode',
-    'tab-for-you': 'patient_list-fill', 'tab-games': 'extension', 'tab-home': 'home', 'text-size': 'format_size',
+    'settings': 'settings', 'share': 'share', 'tab-alerts': 'notifications', 'tab-enewspaper': None,
+    'tab-for-you': None, 'tab-games': 'extension', 'tab-home': 'home', 'text-size': None,
     'text-size-larger': 'text_increase', 'text-size-smaller': 'text_decrease', 'verified': 'verified-fill',
     'warning': 'warning-fill', 'account': 'account_circle', 'skip-back-10': 'replay_10', 'skip-forward-10': 'forward_10',
     'skip-back-15': None, 'skip-forward-15': None, 'tournament-sport': None, 'enews-coach-arrow': None, 'notification': None,
@@ -44,7 +44,7 @@ BY_FILE = {
     'button-play.png': 'play_circle-fill', 'button-play-medium.png': 'play_circle-fill', 'button-play-small.png': 'play_circle-fill',
     'button-pause.png': 'pause_circle-fill', 'button-pause-medium.png': 'pause_circle-fill', 'button-pause-small.png': 'pause_circle-fill',
     'mc_tab_icon_alerts.png': 'notifications-fill', 'card_star_default.png': 'star', 'star_on_card_saved_state.png': 'star-fill',
-    'nav-share.png': 'ios_share', 'tab-newspaper.png': 'menu_book', 'mc_tab_icon_latestnews.png': None,
+    'nav-share.png': 'ios_share', 'tab-newspaper.png': None, 'mc_tab_icon_latestnews.png': None,
 }
 # Material Symbol -> SF Symbol (the iOS vector for the same drawing)
 SF = {
@@ -65,28 +65,37 @@ SF = {
     'text_increase': 'textformat.size.larger', 'text_decrease': 'textformat.size.smaller', 'verified-fill': 'checkmark.seal.fill',
     'warning-fill': 'exclamationmark.triangle.fill', 'account_circle': 'person.circle.fill',
 }
+SF_BY_FILE = {'UnFollowTopic.png': 'text.badge.minus', 'BTN_UnFollowTopic.png': 'text.badge.minus'}   # iOS pair of text.badge.plus
 SF_BY_NAME = {'skip-back-15': 'gobackward.15', 'skip-forward-15': 'goforward.15',
               'tournament-sport': 'soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill · sportscourt.fill'}
-# Picks that are only roughly like the shipped glyph: Karl to confirm (or redraw)
-WEAK = {
-    'tab-for-you': 'Closest stock shape (person + list lines); the symbol is named patient_list. No SF Symbol: iOS needs a redraw or Karl picks one.',
-    'follow-topic': 'Shipped: plus in a circle beside a bulleted list. Material: bulleted list with a plus; SF text.badge.plus.',
-    'unfollow-topic': 'Shipped: minus in a circle beside a bulleted list. Material has no bulleted-list-minus; playlist_remove is lines with an x.',
-    'filter': 'Shipped: three sliders with round knobs. page_info has two; tune is the usual filter symbol.',
-    'text-size': 'Shipped: serif A A (small, large). format_size is T T.',
-    'text-size-larger': 'Shipped: a plain large A. text_increase adds a plus.',
-    'text-size-smaller': 'Shipped: a plain small A. text_decrease adds a minus.',
-    'tab-enewspaper': 'Android: a newspaper with a picture; newsmode is the nearest. iOS tab-newspaper (an open paper) maps to menu_book / book.',
-    'embed-3d': 'Shipped: a wireframe cube with "VIEW IN 3D" under it; deployed_code is the cube alone.',
-    'repost': 'Shipped: the Twitter retweet arrows; repeat is the nearest stock loop.',
+# Karl's review of the picks (2026-11-25)
+OPEN = {   # still to decide
+    'embed-3d': 'Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is not known. '
+                'Material deployed_code / SF cube is the cube alone.',
 }
-REDRAW = {
+REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG is only a guide)
+    'filter': 'Redraw (Karl): three sliders with round knobs; no stock symbol matches.',
+    'tab-enewspaper': "Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. "
+                      'iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS.',
+    'tab-for-you': 'Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).',
+    'text-size': 'Android only. Redraw (Karl): serif A A, small and large; format_size (T T) does not match.',
+    'unfollow-topic': 'iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; '
+                      'on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). '
+                      'Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).',
     'enews-coach-arrow': 'No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2).',
+    'tab-home': 'Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.',
+}
+CONFIRMED = {   # Karl: good
+    'follow-topic': 'Karl: good (list: format_list_bulleted_add / SF text.badge.plus; circle: add_circle / SF plus.circle).',
+    'repost': 'Karl: good (repeat / SF arrow.2.squarepath).',
+    'text-size-larger': 'iOS only (DEC-21): SF textformat.size.larger (Karl: good). Android has no such icon: it uses text-size.',
+    'text-size-smaller': 'iOS only (DEC-21): SF textformat.size.smaller (Karl: good). Android has no such icon: it uses text-size.',
+}
+OTHER = {
     'notification': 'Per-market notification icons: asked of the Apps team (MISSING-ASSETS 1.3).',
     'skip-back-15': 'iOS only: SF gobackward.15 (Material has 5, 10 and 30 only).',
     'skip-forward-15': 'iOS only: SF goforward.15 (Material has 5, 10 and 30 only).',
     'tournament-sport': 'iOS only: SF Symbols as shipped.',
-    'tab-home': 'Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.',
 }
 
 def material_pkg(t):
@@ -115,7 +124,7 @@ def main():
         if m and mat:
             score = next((t['score'] for t in m['top'] if t['symbol'] == mat), m['reference_score'] if m['reference'] == mat else None)
         files.append(OrderedDict(platform=r['platform'], folder=r['folder'], file=r['file'], name=r['name'],
-                                 material=mat, sf=SF.get(mat) if mat else SF_BY_NAME.get(r['name']),
+                                 material=mat, sf=SF.get(mat) if mat else SF_BY_FILE.get(r['file']) or SF_BY_NAME.get(r['name']),
                                  shape_rank=score))
     # per name
     rows = []
@@ -123,9 +132,10 @@ def main():
         fs = [f for f in files if f['name'] == n]
         mats = sorted({f['material'] for f in fs if f['material']} | ({MATERIAL[n]} if MATERIAL[n] else set()))
         sfs = sorted({f['sf'] for f in fs if f['sf']} | ({SF.get(MATERIAL[n]) or SF_BY_NAME.get(n)} - {None}))
-        status = 'redraw' if n in ('enews-coach-arrow',) else 'ask' if n == 'notification' else 'weak' if n in WEAK else 'symbol'
+        status = 'open' if n in OPEN else 'partly-redraw' if n in REDRAW and (MATERIAL[n] or any(f['material'] for f in fs)) else 'redraw' if n in REDRAW \
+            else 'ask' if n == 'notification' else 'symbol'
         rows.append(OrderedDict(name=n, bucket=bucket.get(n), material=mats, sf=sfs, status=status,
-                                note=WEAK.get(n) or REDRAW.get(n) or '', shipped_files=len(fs)))
+                                note=OPEN.get(n) or REDRAW.get(n) or CONFIRMED.get(n) or OTHER.get(n) or '', shipped_files=len(fs)))
     # copy Material SVGs: Core and core-variant names -> this repo; Android only -> Android repo; iOS only -> none (SF on iOS)
     dest = {'core': os.path.join(ROOT, 'icons', 'material'), 'android': os.path.join(ROOT, '..', 'mng_apps_android_ds', 'icons', 'material')}
     want = defaultdict(set)
@@ -153,14 +163,14 @@ def main():
     sf_all = sorted({s for r in rows for x in r['sf'] for s in x.split(' · ')})
     out = OrderedDict(generated_by='scripts/build_icon_replacements.py', decision='DEC-29',
                       material=f'@material-symbols/svg-400@{VERSION}',
-                      summary=OrderedDict(names=len(rows), by_status={s: sum(r['status'] == s for r in rows) for s in ('symbol', 'weak', 'redraw', 'ask')},
+                      summary=OrderedDict(names=len(rows), by_status={s: sum(r['status'] == s for r in rows) for s in STATUS},
                                           material_svgs={k: len(v) for k, v in want.items()}, sf_symbols=len(sf_all), shipped_files=len(files)),
                       sf_symbols_needed=sf_all, names=rows, files=files)
     json.dump(out, open(os.path.join(ROOT, 'data', 'icon-replacements.json'), 'w'), indent=1)
     write_md(out)
     print(json.dumps(out['summary']))
 
-STATUS = {'symbol': 'Stock symbol matches', 'weak': 'Stock symbol only roughly matches: Karl to confirm', 'redraw': 'No stock symbol: redraw', 'ask': 'Asked of the Apps team'}
+STATUS = {'symbol': 'Stock symbol', 'partly-redraw': 'Stock symbol for some files, redraw for others', 'redraw': 'Redraw', 'open': 'Open: Karl to decide', 'ask': 'Asked of the Apps team'}
 
 def write_md(out):
     s = out['summary']

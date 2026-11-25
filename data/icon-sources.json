@@ -107,7 +107,7 @@
    "skip-forward-10",
    "tournament-sport"
   ],
-  "notes": 11
+  "notes": 12
  },
  "assets": [
   {
@@ -6330,7 +6330,7 @@
    ],
    "shape": "s274",
    "vector": "symbol",
-   "note": null,
+   "note": "An open newspaper; never shown (Apps team, 2026-11-19: only an unused property refers to it). Not carried into the DS (Karl, 2026-11-25).",
    "origin": null,
    "sha256": "7bc2015377510809a33af5905d8b300636ca3fc88ad41d7b3cee81622bb32318",
    "master": "ios/Tab Bar/tab-newspaper.png",

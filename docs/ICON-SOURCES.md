@@ -55,6 +55,7 @@ Files whose name misleads, or that need a decision. Decisions: DEC-28 (2026-11-2
 | ios | `video-fullscreen-close.png` | `exit-full-screen` | Two arrows pointing inward (exit full screen), not an X. Own name exit-full-screen; vector Material close_fullscreen / SF arrow.down.right.and.arrow.up.left (DEC-29). | symbol |
 | ios | `tab-digital.png` | — | A phone outline; not listed in ICON-NAMES (no tab uses it per the Apps team tab list). | symbol |
 | ios | `tab-home.png` | — | The Chicago Tribune "C" (white): CT's market home icon, not the generic home. | redraw |
+| ios | `tab-newspaper.png` | `tab-enewspaper` | An open newspaper; never shown (Apps team, 2026-11-19: only an unused property refers to it). Not carried into the DS (Karl, 2026-11-25). | symbol |
 
 ## Same drawing, different colours
 

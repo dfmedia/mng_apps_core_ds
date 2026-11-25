@@ -127,8 +127,9 @@ NOTES = {
     'tab-digital.png': 'A phone outline; not listed in ICON-NAMES (no tab uses it per the Apps team tab list).',
     'tab-home.png': 'The Chicago Tribune "C" (white): CT\'s market home icon, not the generic home.',
     'ic_amazon.png': 'Never shown on either app (Apps team, 2026-11-23): not carried into the DS.',
+    'tab-newspaper.png': 'An open newspaper; never shown (Apps team, 2026-11-19: only an unused property refers to it). Not carried into the DS (Karl, 2026-11-25).',
 }
-DROP = {'ic_amazon.png', 'gif-play.png'}
+DROP = {'ic_amazon.png', 'gif-play.png', 'tab-newspaper.png'}
 # Names with no style-guide file: where their SVG comes from (DEC-28). SF Symbol SVGs come from Karl's Mac
 # (scripts/sf_symbols_vectors.swift → assets/sf-symbols/vector/, git-ignored while the repos are public: Apple licence).
 SF = 'SF Symbol SVG from scripts/sf_symbols_vectors.swift (Karl\'s Mac; git-ignored while the repos are public)'

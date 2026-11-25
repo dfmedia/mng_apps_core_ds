@@ -5,16 +5,17 @@
  "summary": {
   "names": 52,
   "by_status": {
-   "symbol": 40,
-   "weak": 10,
-   "redraw": 1,
+   "symbol": 43,
+   "partly-redraw": 2,
+   "redraw": 5,
+   "open": 1,
    "ask": 1
   },
   "material_svgs": {
-   "core": 33,
-   "android": 3
+   "core": 30,
+   "android": 2
   },
-  "sf_symbols": 58,
+  "sf_symbols": 54,
   "shipped_files": 188
  },
  "sf_symbols_needed": [
@@ -28,7 +29,6 @@
   "basketball.fill",
   "bell",
   "bell.fill",
-  "book",
   "bookmark",
   "bookmark.fill",
   "checkmark",
@@ -53,7 +53,6 @@
   "line.3.horizontal",
   "magnifyingglass",
   "minus.circle",
-  "newspaper",
   "pause.circle.fill",
   "pause.fill",
   "person.circle.fill",
@@ -61,7 +60,6 @@
   "play.fill",
   "plus.circle",
   "puzzlepiece",
-  "slider.horizontal.3",
   "smallcircle.filled.circle",
   "soccerball.inverse",
   "sportscourt.fill",
@@ -71,7 +69,6 @@
   "star.leadinghalf.filled",
   "text.badge.minus",
   "text.badge.plus",
-  "textformat.size",
   "textformat.size.larger",
   "textformat.size.smaller",
   "xmark",
@@ -199,8 +196,8 @@
    "sf": [
     "cube"
    ],
-   "status": "weak",
-   "note": "Shipped: a wireframe cube with \"VIEW IN 3D\" under it; deployed_code is the cube alone.",
+   "status": "open",
+   "note": "Shipped: a wireframe cube with \"VIEW IN 3D\" under it, in the PostKit (Washington Post SDK) image set; where it shows is not known. Material deployed_code / SF cube is the cube alone.",
    "shipped_files": 1
   },
   {
@@ -293,14 +290,10 @@
   {
    "name": "filter",
    "bucket": "Core",
-   "material": [
-    "page_info"
-   ],
-   "sf": [
-    "slider.horizontal.3"
-   ],
-   "status": "weak",
-   "note": "Shipped: three sliders with round knobs. page_info has two; tune is the usual filter symbol.",
+   "material": [],
+   "sf": [],
+   "status": "redraw",
+   "note": "Redraw (Karl): three sliders with round knobs; no stock symbol matches.",
    "shipped_files": 2
   },
   {
@@ -314,8 +307,8 @@
     "plus.circle",
     "text.badge.plus"
    ],
-   "status": "weak",
-   "note": "Shipped: plus in a circle beside a bulleted list. Material: bulleted list with a plus; SF text.badge.plus.",
+   "status": "symbol",
+   "note": "Karl: good (list: format_list_bulleted_add / SF text.badge.plus; circle: add_circle / SF plus.circle).",
    "shipped_files": 4
   },
   {
@@ -472,8 +465,8 @@
    "sf": [
     "arrow.2.squarepath"
    ],
-   "status": "weak",
-   "note": "Shipped: the Twitter retweet arrows; repeat is the nearest stock loop.",
+   "status": "symbol",
+   "note": "Karl: good (repeat / SF arrow.2.squarepath).",
    "shipped_files": 1
   },
   {
@@ -608,27 +601,19 @@
   {
    "name": "tab-enewspaper",
    "bucket": "Core",
-   "material": [
-    "menu_book",
-    "newsmode"
-   ],
-   "sf": [
-    "book",
-    "newspaper"
-   ],
-   "status": "weak",
-   "note": "Android: a newspaper with a picture; newsmode is the nearest. iOS tab-newspaper (an open paper) maps to menu_book / book.",
+   "material": [],
+   "sf": [],
+   "status": "redraw",
+   "note": "Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS.",
    "shipped_files": 4
   },
   {
    "name": "tab-for-you",
    "bucket": "Core",
-   "material": [
-    "patient_list-fill"
-   ],
+   "material": [],
    "sf": [],
-   "status": "weak",
-   "note": "Closest stock shape (person + list lines); the symbol is named patient_list. No SF Symbol: iOS needs a redraw or Karl picks one.",
+   "status": "redraw",
+   "note": "Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).",
    "shipped_files": 15
   },
   {
@@ -653,21 +638,17 @@
    "sf": [
     "house"
    ],
-   "status": "symbol",
+   "status": "partly-redraw",
    "note": "Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.",
    "shipped_files": 1
   },
   {
    "name": "text-size",
    "bucket": "Android only",
-   "material": [
-    "format_size"
-   ],
-   "sf": [
-    "textformat.size"
-   ],
-   "status": "weak",
-   "note": "Shipped: serif A A (small, large). format_size is T T.",
+   "material": [],
+   "sf": [],
+   "status": "redraw",
+   "note": "Android only. Redraw (Karl): serif A A, small and large; format_size (T T) does not match.",
    "shipped_files": 2
   },
   {
@@ -679,8 +660,8 @@
    "sf": [
     "textformat.size.larger"
    ],
-   "status": "weak",
-   "note": "Shipped: a plain large A. text_increase adds a plus.",
+   "status": "symbol",
+   "note": "iOS only (DEC-21): SF textformat.size.larger (Karl: good). Android has no such icon: it uses text-size.",
    "shipped_files": 1
   },
   {
@@ -692,8 +673,8 @@
    "sf": [
     "textformat.size.smaller"
    ],
-   "status": "weak",
-   "note": "Shipped: a plain small A. text_decrease adds a minus.",
+   "status": "symbol",
+   "note": "iOS only (DEC-21): SF textformat.size.smaller (Karl: good). Android has no such icon: it uses text-size.",
    "shipped_files": 1
   },
   {
@@ -724,15 +705,14 @@
    "name": "unfollow-topic",
    "bucket": "iOS only",
    "material": [
-    "do_not_disturb_on",
-    "playlist_remove"
+    "do_not_disturb_on"
    ],
    "sf": [
     "minus.circle",
     "text.badge.minus"
    ],
-   "status": "weak",
-   "note": "Shipped: minus in a circle beside a bulleted list. Material has no bulleted-list-minus; playlist_remove is lines with an x.",
+   "status": "partly-redraw",
+   "note": "iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).",
    "shipped_files": 4
   },
   {
@@ -786,7 +766,7 @@
    "folder": "Bottom nav",
    "file": "mc_tab_icon_for_you.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -813,8 +793,8 @@
    "folder": "Bottom nav",
    "file": "mc_tab_icon_newspaper.png",
    "name": "tab-enewspaper",
-   "material": "newsmode",
-   "sf": "newspaper",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -867,8 +847,8 @@
    "folder": "Toolbar",
    "file": "ic_filter.png",
    "name": "filter",
-   "material": "page_info",
-   "sf": "slider.horizontal.3",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -876,8 +856,8 @@
    "folder": "Toolbar",
    "file": "ic_font_size.png",
    "name": "text-size",
-   "material": "format_size",
-   "sf": "textformat.size",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -894,8 +874,8 @@
    "folder": "Toolbar",
    "file": "ic_textsize_change.png",
    "name": "text-size",
-   "material": "format_size",
-   "sf": "textformat.size",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -1155,8 +1135,8 @@
    "folder": "Save and select",
    "file": "ic_unfollow_topic.png",
    "name": "unfollow-topic",
-   "material": "playlist_remove",
-   "sf": "text.badge.minus",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -1209,8 +1189,8 @@
    "folder": "Other",
    "file": "ic_newspaper.png",
    "name": "tab-enewspaper",
-   "material": "newsmode",
-   "sf": "newspaper",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -1443,7 +1423,7 @@
    "folder": "General",
    "file": "BTN_UnFollowTopic.png",
    "name": "unfollow-topic",
-   "material": "playlist_remove",
+   "material": null,
    "sf": "text.badge.minus",
    "shape_rank": null
   },
@@ -1497,8 +1477,8 @@
    "folder": "General",
    "file": "icon_filter.png",
    "name": "filter",
-   "material": "page_info",
-   "sf": "slider.horizontal.3",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -1542,7 +1522,7 @@
    "folder": "General",
    "file": "UnFollowTopic.png",
    "name": "unfollow-topic",
-   "material": "playlist_remove",
+   "material": null,
    "sf": "text.badge.minus",
    "shape_rank": null
   },
@@ -2091,7 +2071,7 @@
    "folder": "Tab Bar",
    "file": "For-You-2.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2100,7 +2080,7 @@
    "folder": "Tab Bar",
    "file": "For-You.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2118,8 +2098,8 @@
    "folder": "Tab Bar",
    "file": "tab-enews.png",
    "name": "tab-enewspaper",
-   "material": "newsmode",
-   "sf": "newspaper",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -2127,7 +2107,7 @@
    "folder": "Tab Bar",
    "file": "tab-foryou.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2145,8 +2125,8 @@
    "folder": "Tab Bar",
    "file": "tab-newspaper.png",
    "name": "tab-enewspaper",
-   "material": "menu_book",
-   "sf": "book",
+   "material": null,
+   "sf": null,
    "shape_rank": null
   },
   {
@@ -2172,7 +2152,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-Black.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2181,7 +2161,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-BS.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2190,7 +2170,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-CT-Selected.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2199,7 +2179,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-DP.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2208,7 +2188,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-Hart.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2217,7 +2197,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-MC.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2226,7 +2206,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-NYDN.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2235,7 +2215,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-OS.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2244,7 +2224,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-SS.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2253,7 +2233,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-VP.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
@@ -2262,7 +2242,7 @@
    "folder": "Tab bar Your_news icons",
    "file": "YourNews-White.png",
    "name": "tab-for-you",
-   "material": "patient_list-fill",
+   "material": null,
    "sf": null,
    "shape_rank": null
   },
