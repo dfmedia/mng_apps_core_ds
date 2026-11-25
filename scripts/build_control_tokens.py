@@ -86,7 +86,8 @@ sav_text = {c: h6(A[c][SAV['text_color']['key']]) for c in A}
 sav_buy = {c: h6(A[c]['Paywall_BuyButton_Background']) for c in A}
 SAV_EXC = {c: sav_text[c] for c in sorted(A) if sav_text[c] != sav_buy[c]}
 ANDROID_FOLLOWS = {'savings-label-text': ('buy', f"Savings label text on the subscription screen: btn_blue, which equals the buy color in {len(A) - len(SAV_EXC)} of {len(A)} markets; {', '.join(SAV_EXC)} differ and set their own in the flavor (DEC-25, Apps team, DREAMT-4719, 2026-11-24)"),
-                   'savings-label-border': ('buy', 'Savings label 2dp outline: the market buy color in every market (DEC-25, Apps team, DREAMT-4719, 2026-11-24)')}
+                   'savings-label-border': ('buy', 'Savings label 2dp outline: the market buy color in every market (DEC-25, Apps team, DREAMT-4719, 2026-11-24)'),
+                   'alerts-enable-fill': ('action', 'Alerts Enable (CUSTOMIZE) fill, Alerts_Enable_Button_Background: the market action color in 58 of 77 markets; #DAA520 in 15, DP #4FA8D1, TPD #000000, OS and TSAR #FF6859 are exceptions, documented only (DEC-14; Apps team, DREAMT-4719, 2026-11-23)')}
 grp = andr.setdefault('color', {}).setdefault('android-control', {})
 grp['$extensions'] = {'mng': {'follows': {k: {'role': r, '$description': d} for k, (r, d) in ANDROID_FOLLOWS.items()}}}
 for k, (h, d) in IOS_SYSTEM.items(): put(ios, f'color.ios-control.{k}', ctok(h, d + ' (DEC-14)', source='system'))

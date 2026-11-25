@@ -1216,11 +1216,11 @@
    "group": "Buttons",
    "name": "Notification prompt buttons",
    "owner": "core+variant",
-   "figma": "todo",
+   "figma": "in progress",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
-   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23).",
+   "note": "Colors and radius 5 are tokens (DEC-14). iOS 40 pt, Yes Open Sans Bold 14, No Open Sans Regular 14 underlined (DREAMT-4718). Android CUSTOMIZE Roboto Medium 14sp caps, about 40dp, full width (Apps team, DREAMT-4719, 2026-11-19). Android fill is Alerts_Enable_Button_Background per market (action in 58 of 77; Apps team, 2026-11-23). Android Figma: Alerts enable/Customize and /No thanks in Components · Controls › 03 (2026-11-25); fill token color.android-control.alerts-enable-fill (follows action, DEC-14).",
    "overall": "in progress"
   },
   {
@@ -1242,11 +1242,11 @@
    "group": "Buttons",
    "name": "Account bottom-sheet buttons (Android)",
    "owner": "android",
-   "figma": "todo",
-   "tokens": "partial",
+   "figma": "done",
+   "tokens": "done",
    "code": "partial",
    "blocked_by": "",
-   "note": "Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23).",
+   "note": "Radius 10 (Open Play Store) is a token (DEC-12). Device default button style, not Material: Roboto Medium 14sp on stock Android, sentence case; Open Play Store filled App_Primary; Cancel and Delete account outlined 1dp black, radius 6; Delete account 52dp, Manage subscription at least 48dp (Apps team, 2026-11-23). Figma: Android Components · Controls › 03 (2026-11-25): Open Play Store, Outlined, Outlined/Cancel for Delete account; tokens account-button.height-delete / min-height.",
    "overall": "in progress"
   },
   {

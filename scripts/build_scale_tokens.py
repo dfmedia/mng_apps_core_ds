@@ -123,6 +123,13 @@ put(ios, 'component.ios.continue.height', {'$value': '55px', '$type': 'dimension
 put(andr, 'component.android.continue.width', {'$value': '152px', '$type': 'dimension', '$description': 'Your News Continue button width (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
 put(andr, 'component.android.continue.height', {'$value': '54px', '$type': 'dimension', '$description': 'Your News Continue button height (bg_continue.xml, 152 x 54 dp)', **SRC('bg_continue.xml', 'px', 'android')})
 SAVP = json.load(open('data/source/apps-team-answers/2026-11-24-DREAMT-4719-android.json'))['savings_label']   # DEC-25
+# Alerts Enable and the account bottom sheets (Apps team, DREAMT-4719, 2026-11-19 and 2026-11-23)
+AEN = json.load(open('data/source/apps-team-answers/2026-11-19-DREAMT-4719-android.json'))['alerts_enable']
+ABS = json.load(open('data/source/apps-team-answers/2026-11-23-DREAMT-4719-android.json'))['account_bottom_sheets']
+for path, v, d in [('component.android.alerts-enable.padding', AEN['padding'], f"Alerts Enable (CUSTOMIZE) padding, about {AEN['height_approx']}dp tall, full width, square corners (Apps team, 2026-11-19)"),
+                   ('component.android.account-button.height-delete', ABS['height']['delete_account'], 'Delete account bottom-sheet buttons height (Apps team, 2026-11-23)'),
+                   ('component.android.account-button.min-height', ABS['height']['manage_subscription_min'], 'Manage subscription bottom-sheet buttons minimum height (Apps team, 2026-11-23)')]:
+    put(andr, path, {'$value': f'{v}px', '$type': 'dimension', '$description': d, '$extensions': {'mng': {'source': 'Apps team answer', 'platform': 'android', 'unit': 'px'}}})
 for k, v, d in [('padding-horizontal', SAVP['pill']['padding_horizontal'], 'Savings label left and right padding (the pill wraps its text)'),
                 ('padding-vertical', SAVP['pill']['padding_vertical'], 'Savings label top and bottom padding (about 29dp tall)'),
                 ('border-width', SAVP['pill']['border_width'], 'Savings label outline width (buy color)'),

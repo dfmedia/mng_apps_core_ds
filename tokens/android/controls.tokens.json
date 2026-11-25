@@ -91,6 +91,10 @@
       "savings-label-border": {
        "role": "buy",
        "$description": "Savings label 2dp outline: the market buy color in every market (DEC-25, Apps team, DREAMT-4719, 2026-11-24)"
+      },
+      "alerts-enable-fill": {
+       "role": "action",
+       "$description": "Alerts Enable (CUSTOMIZE) fill, Alerts_Enable_Button_Background: the market action color in 58 of 77 markets; #DAA520 in 15, DP #4FA8D1, TPD #000000, OS and TSAR #FF6859 are exceptions, documented only (DEC-14; Apps team, DREAMT-4719, 2026-11-23)"
       }
      }
     }

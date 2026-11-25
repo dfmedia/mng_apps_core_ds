@@ -217,6 +217,30 @@
        "unit": "px"
       }
      }
+    },
+    "height-delete": {
+     "$value": "52px",
+     "$type": "dimension",
+     "$description": "Delete account bottom-sheet buttons height (Apps team, 2026-11-23)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    },
+    "min-height": {
+     "$value": "48px",
+     "$type": "dimension",
+     "$description": "Manage subscription bottom-sheet buttons minimum height (Apps team, 2026-11-23)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
     }
    },
    "savings-label": {
@@ -489,6 +513,20 @@
       "mng": {
        "source": "elevation-card",
        "usage": "Cards (cardview_elevation, World Cup cards). Special-section cards use 4dp.",
+       "platform": "android",
+       "unit": "px"
+      }
+     }
+    }
+   },
+   "alerts-enable": {
+    "padding": {
+     "$value": "10px",
+     "$type": "dimension",
+     "$description": "Alerts Enable (CUSTOMIZE) padding, about 40dp tall, full width, square corners (Apps team, 2026-11-19)",
+     "$extensions": {
+      "mng": {
+       "source": "Apps team answer",
        "platform": "android",
        "unit": "px"
       }
