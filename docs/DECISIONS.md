@@ -459,3 +459,9 @@ All 77 markets differ (Android `#cf000e` everywhere). By DEC-03 the Core value i
 - **Approves:** IMPROVEMENTS ICON-01 step 4 (retire Font Awesome on iOS).
 - **SF Symbols:** the earlier export (assets/sf-symbols) is raster only; true vectors come from scripts/sf_symbols_vectors.swift, run by Karl on his Mac. Apple's licence allows SF Symbols in mockups of Apple-platform apps; they stay out of the repos while the repos are public (all three were public on 2026-11-25; Karl wants them private or org-only).
 - **Changed:** scripts/build_icon_names.py, scripts/figma_icon_names.py (Font Awesome reference removed), docs/ICON-NAMES.md, data/icon-names.json, Figma Core Icons › 05 (column removed), IMPROVEMENTS ICON-01.
+
+## DEC-27 · Behavior specs are written as Gherkin
+
+- **Rule (Karl, 2026-11-24 pilot, 2026-11-25 rollout):** component behavior (states, platform differences, per-market rules, contrast targets) is written as Gherkin scenarios, generated from the same data as the specs (rule 6). Anatomy, tokens and per-market value tables stay as tables. Markets that miss a target today are tagged `@known-issue` with their IMPROVEMENTS or DSC ID, beside the target, never instead of it (rule 1).
+- **Files:** docs/components/button.feature (scripts/gherkin_button.py, embedded in BUTTON.md › Behavior), docs/components/app-shell.feature and controls.feature (scripts/gherkin_specs.py, embedded in SHIPPED-SPECS.md › Behavior). All parse with the official Gherkin parser (gherkin-official): 120 + 13 + 60 test cases.
+- **Next specs to convert as they are built:** checkbox (iOS), What's New, icons (once the Icon component exists).

@@ -88,5 +88,12 @@ L += ['', '## Motion', '', '| iOS (where) | Duration |', '|---|---|'] + [f"| {m[
 L += ['', '| Android (where) | Duration |', '|---|---|'] + [f"| {m['where']} | {m['duration']} |" for m in A['motion']]
 L += ['', '## Other controls', '', '| Control | Owner | iOS | Android |', '|---|---|---|---|']
 L += [f"| {r['what']} | {r['bucket']} | {r['ios']} | {r['android']} |" for r in controls]
+import gherkin_specs   # Gherkin rollout (Karl, 2026-11-25): behavior as scenarios, also in docs/components/*.feature
+G = gherkin_specs.build()
+L += ['', '## Behavior (Gherkin)', '',
+      'The same specs as scenarios, generated from the tokens and the Apps team answers. The files are `docs/components/app-shell.feature` and '
+      '`docs/components/controls.feature` (scripts/gherkin_specs.py). `@known-issue` marks markets that miss a target today; the fix is proposed in docs/IMPROVEMENTS.md.', '']
+for name, txt in G.items():
+    L += [f'### {name}', '', '```gherkin', txt.rstrip('\n'), '```', '']
 open('docs/SHIPPED-SPECS.md', 'w').write('\n'.join(L) + '\n')
 print(f"shell {len(shell)}, shadows {len(I['shadows'])}/{len(A['elevation'])}, motion {len(I['motion'])}/{len(A['motion'])}, controls {len(controls)}")

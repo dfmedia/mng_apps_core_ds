@@ -109,7 +109,7 @@ docs/MISSING-ASSETS.md            open questions for the Apps team, written for 
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
 docs/SHIPPED-SPECS.md             generated: app shell sizes, elevation, motion and other controls, iOS vs Android as shipped
 docs/GUIDE-EXTRAS.md              generated: style-guide items documented as shipped (ad slots, What's New button, widget, eEdition colors, images)
-docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md)
+docs/components/                  component specs (generated, e.g. BUTTON.md, CHECKBOX-IOS.md) and behavior as Gherkin (*.feature)
 docs/ORIENTATION.md               generated: phone / tablet / foldable orientation as shipped
 docs/LEGACY-TEMPLATE.md           generated: iOS legacy-template values, acknowledged only (DEC-10)
 tokens/                           DTCG design tokens (generated; the source for Swift, Kotlin and Figma)
@@ -140,7 +140,7 @@ python3 scripts/build_tokens.py     # tokens/*.tokens.json + docs/BRAND-COLORS.m
 python3 scripts/build_shell_colors.py   # DEC-13/15: app shell colors (tokens/*/shell.tokens.json, data/shell-colors.json incl. header/statusbar exceptions)
 python3 scripts/figma_role_exceptions.py ios|android   # DEC-15 Figma samples (Components · App shell › 01) from data/shell-colors.json; prints JS for figma_execute
 python3 scripts/build_control_tokens.py   # DEC-14: control colors, majority values (tokens/*/controls.tokens.json, docs/CONTROL-EXCEPTIONS.md)
-python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json, docs/components/BUTTON.md, IMPROVEMENTS CLR-04 (DEC-07)
+python3 scripts/build_button_tokens.py   # button tokens, data/button-spec.json, docs/components/BUTTON.md + button.feature (scripts/gherkin_button.py), IMPROVEMENTS CLR-04 (DEC-07)
 python3 scripts/select_theme_modes.py   # the 20 Figma Brand theme modes (DEC-06)
 npm install && npm run build        # Style Dictionary → ../mng_apps_ios_ds/Tokens, ../mng_apps_android_ds/tokens
 python3 scripts/compare_type.py     # typography step 1: data/type-comparison.json + docs/TYPE-COMPARISON.md
@@ -158,7 +158,7 @@ python3 scripts/compare_scales.py   # spacing/radius/size/breakpoints comparison
 python3 scripts/build_scale_tokens.py   # DEC-11: tokens/*/scale.tokens.json (before npm run build)
 python3 scripts/compare_system_colors.py   # system colors step 1: data/system-color-comparison.json + docs/SYSTEM-COLORS.md (pairs: data/system-color-pairs.json)
 python3 scripts/build_system_tokens.py     # DEC-16: tokens/*/system.tokens.json, data/system-tokens.json, docs/SYSTEM-TOKENS.md (before npm run build)
-python3 scripts/build_shipped_specs.py   # app shell sizes, elevation, motion, other controls as shipped (data/shipped-specs.json, docs/SHIPPED-SPECS.md)
+python3 scripts/build_shipped_specs.py   # app shell sizes, elevation, motion, other controls as shipped (data/shipped-specs.json, docs/SHIPPED-SPECS.md); also writes docs/components/app-shell.feature + controls.feature (scripts/gherkin_specs.py)
 python3 scripts/figma_shipped_specs.py shell|motion|controls   # prints JS for Core Layout · iOS vs Android › 03 / 04 and Components · Controls › 01
 python3 scripts/figma_component_ownership.py   # prints JS for Core Components · Platform Ownership › 02 · Component ownership (generated) from data/component-platform-map.json
 python3 scripts/build_bug_report.py   # docs/BUG-REPORT.md for the Apps team (production bugs found, per app)
