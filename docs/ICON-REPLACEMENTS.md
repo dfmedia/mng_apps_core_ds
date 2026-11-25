@@ -20,7 +20,7 @@ Brand marks (`brand-*`) are not here: they stay the brands' own artwork (DEC-26)
 | `collapse` | Core | `keyboard_arrow_down` | `chevron.down` | Stock symbol | — |
 | `continue` | Core | `arrow_circle_right-fill` | `arrow.right.circle.fill` | Stock symbol | — |
 | `email` | Core | `mail-fill` | `envelope.fill` | Stock symbol | — |
-| `embed-3d` | iOS only | `deployed_code` | `cube` | Open: Karl to decide | Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is not known. Material deployed_code / SF cube is the cube alone. |
+| `embed-3d` | iOS only | `deployed_code` | `cube` | Open: Karl to decide | Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is asked (MISSING-ASSETS 1.4). Material deployed_code / SF cube is the cube alone. |
 | `enews-coach-arrow` | iOS only | — | — | Redraw | No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2). |
 | `enews-expand-page` | iOS only | `open_in_full` | `arrow.up.left.and.arrow.down.right` | Stock symbol | — |
 | `enews-fit-to-screen` | iOS only | `close_fullscreen` | `arrow.down.right.and.arrow.up.left` | Stock symbol | — |

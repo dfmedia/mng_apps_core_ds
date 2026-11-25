@@ -54,7 +54,7 @@ ANDROID = {
  'Exit full screen': (None, 'ios-only', 'PostKit video player (DEC-28; was filed under Close). Android equivalent: none in the Android guide.'),
  'Player error': (None, 'ios-only', 'PostKit player error and offline states: one drawing for both (DEC-28). Android equivalent: none in the Android guide.'),
  'Coach-mark arrow': (None, 'ios-only', 'eNewspaper (DEC-28; was filed under Sections / menu). Where it shows is asked of the Apps team (MISSING-ASSETS 1.2). Android equivalent: the PageSuite SDK draws its own.'),
- '3D embed': (None, 'ios-only', 'Android equivalent: none in the Android guide.'),
+ '3D embed': (None, 'ios-only', 'PostKit image set; where it shows is asked (MISSING-ASSETS 1.4). Android equivalent: none in the Android guide.'),
  'Tournament sport symbols (6)': (None, 'ios-only', 'Android equivalent: none; World Cup tabs use text (Barlow Condensed).'),
  'Rating star (empty)': (None, 'ios-only', 'Android equivalent: none; its stars mean saved (special sections), not ratings.'),
  'Rating star (half)': (None, 'ios-only', 'Android equivalent: none (see Rating star (empty)).'),

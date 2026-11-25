@@ -3,5 +3,6 @@
 __pycache__/
 downloads/
 node_modules/
-# SF Symbols vectors (Apple licence): kept out while the repos are public (DEC-26)
+# SF Symbols vectors and PDFs (Apple licence): kept out while the repos are public (DEC-26)
 assets/sf-symbols/vector/
+assets/sf-symbols/pdf/

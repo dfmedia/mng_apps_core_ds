@@ -6,6 +6,12 @@
 // name (NSImage systemSymbolName) and finds the system-font glyph that looks identical,
 // then writes that glyph's outline as an SVG path.
 //
+// Run from anywhere: output paths are taken from this script's location (2026-11-25: a run from another folder wrote nothing to the repo).
+// Two methods, both run every time:
+//   A. glyph outlines from a font that carries the symbol glyphs (system font, SF Pro, or any font inside SF Symbols.app);
+//   B. each symbol drawn into a PDF (NSImage symbols draw as vectors): assets/sf-symbols/pdf/<name>.pdf, converted to SVG later
+//      (pdftocairo -svg). B works even when no font carries the glyphs.
+// Everything printed is also written to assets/sf-symbols/vector/_log.txt.
 // Output: assets/sf-symbols/vector/<name>.svg   (Regular weight, 40 pt, black fill)
 //         assets/sf-symbols/vector/<name>@<weight>.svg   (Medium … Heavy, for the WEIGHTED symbols only)
 //         assets/sf-symbols/vector/_codepoints.json  (name → code point + match score)
@@ -26,8 +32,15 @@ let names = ["magnifyingglass", "gearshape", "square.and.arrow.up", "bookmark", 
 let weighted = ["magnifyingglass", "bookmark", "bookmark.fill", "house", "house.fill", "line.3.horizontal", "bell", "bell.fill", "chevron.up", "chevron.down"]
 let weights: [(String, NSFont.Weight)] = [("medium", .medium), ("semibold", .semibold), ("bold", .bold), ("heavy", .heavy)]
 
-let outDir = URL(fileURLWithPath: "assets/sf-symbols/vector")
+let scriptURL = URL(fileURLWithPath: CommandLine.arguments[0], relativeTo: URL(fileURLWithPath: FileManager.default.currentDirectoryPath)).standardizedFileURL
+let repoRoot = scriptURL.deletingLastPathComponent().deletingLastPathComponent()
+let outDir = repoRoot.appendingPathComponent("assets/sf-symbols/vector")
+let pdfDir = repoRoot.appendingPathComponent("assets/sf-symbols/pdf")
 try! FileManager.default.createDirectory(at: outDir, withIntermediateDirectories: true)
+try! FileManager.default.createDirectory(at: pdfDir, withIntermediateDirectories: true)
+var logText = ""
+func say(_ s: String) { print(s); logText += s + "\n"; try? logText.write(to: outDir.appendingPathComponent("_log.txt"), atomically: true, encoding: .utf8) }
+say("Repo: \(repoRoot.path)  macOS \(ProcessInfo.processInfo.operatingSystemVersionString)")
 
 let S = 112          // render canvas (px)
 let N = 28           // signature grid
@@ -38,13 +51,46 @@ func hasSymbolGlyph(_ f: CTFont) -> Bool {
     var u = Array(String(UnicodeScalar(UInt32(0x100000))!).utf16); var g = [CGGlyph](repeating: 0, count: u.count)
     return CTFontGetGlyphsForCharacters(f, &u, &g, u.count) && g[0] != 0
 }
-if !hasSymbolGlyph(font) {
-    let url = URL(fileURLWithPath: "/Applications/SF Symbols.app/Contents/Resources/Fonts/SFSymbolsFallback.otf") as CFURL
-    if let descs = CTFontManagerCreateFontDescriptorsFromURL(url) as? [CTFontDescriptor], let d = descs.first {
-        font = CTFontCreateWithFontDescriptor(d, fontSize, nil)
-        print("Using SF Symbols app font (system font has no symbol glyphs).")
+var glyphFontFound = hasSymbolGlyph(font)
+if glyphFontFound { say("Symbol glyphs: system font") }
+if !glyphFontFound {   // SF Pro installed as a font
+    for n in ["SF Pro", "SF Pro Text", "SF Pro Display", "SFPro-Regular", "SFProText-Regular"] {
+        if let f = NSFont(name: n, size: fontSize), hasSymbolGlyph(f as CTFont) { font = f as CTFont; glyphFontFound = true; say("Symbol glyphs: font \(n)"); break }
     }
 }
+if !glyphFontFound {   // any font file inside the SF Symbols app
+    let res = "/Applications/SF Symbols.app/Contents/Resources"
+    let files = (FileManager.default.enumerator(atPath: res)?.allObjects as? [String] ?? []).filter { $0.hasSuffix(".otf") || $0.hasSuffix(".ttf") }
+    say("SF Symbols.app font files: \(files.isEmpty ? "none found" : files.joined(separator: ", "))")
+    for rel in files {
+        let url = URL(fileURLWithPath: res + "/" + rel) as CFURL
+        for d in (CTFontManagerCreateFontDescriptorsFromURL(url) as? [CTFontDescriptor] ?? []) {
+            let f = CTFontCreateWithFontDescriptor(d, fontSize, nil)
+            if hasSymbolGlyph(f) { font = f; glyphFontFound = true; say("Symbol glyphs: \(rel)"); break }
+        }
+        if glyphFontFound { break }
+    }
+}
+if !glyphFontFound { say("No font with symbol glyphs found: method A skipped, method B (PDF) only.") }
+
+// Method B: draw each symbol into its own PDF page (vector), for conversion to SVG.
+func writePDF(_ name: String) -> Bool {
+    guard let base = NSImage(systemSymbolName: name, accessibilityDescription: nil),
+          let img = base.withSymbolConfiguration(NSImage.SymbolConfiguration(pointSize: fontSize, weight: .regular)) else { return false }
+    var box = CGRect(origin: .zero, size: img.size)
+    guard let ctx = CGContext(pdfDir.appendingPathComponent("\(name).pdf") as CFURL, mediaBox: &box, nil) else { return false }
+    ctx.beginPDFPage(nil)
+    NSGraphicsContext.saveGraphicsState()
+    NSGraphicsContext.current = NSGraphicsContext(cgContext: ctx, flipped: false)
+    img.draw(in: box)
+    NSGraphicsContext.restoreGraphicsState()
+    ctx.endPDFPage(); ctx.closePDF()
+    return true
+}
+var pdfOK = 0
+for name in Set(names) where !writePDF(name) { say("PDF MISSING \(name) (not an SF Symbol on this macOS?)") }
+pdfOK = (try? FileManager.default.contentsOfDirectory(atPath: pdfDir.path).filter { $0.hasSuffix(".pdf") }.count) ?? 0
+say("Method B: \(pdfOK) PDFs in assets/sf-symbols/pdf/")
 
 struct Sig { var v: [Float]; var aspect: Float }
 
@@ -115,13 +161,15 @@ func score(_ a: Sig, _ b: Sig) -> Float {
 }
 
 // Index every private-use glyph in the system font.
-print("Indexing system-font symbol glyphs…")
 var candidates: [(cp: UInt32, path: CGPath, sig: Sig)] = []
-for cp in UInt32(0x100000)..<UInt32(0x104000) {
-    if let p = glyphPath(cp), let s = glyphSig(p) { candidates.append((cp, p, s)) }
+if glyphFontFound {
+    say("Method A: indexing symbol glyphs…")
+    for cp in UInt32(0x100000)..<UInt32(0x104000) {
+        if let p = glyphPath(cp), let s = glyphSig(p) { candidates.append((cp, p, s)) }
+    }
+    say("  \(candidates.count) glyphs")
 }
-print("  \(candidates.count) glyphs")
-if candidates.isEmpty { print("No symbol glyphs found in the system font — stopping."); exit(1) }
+if candidates.isEmpty { say("Method A: no glyphs, done after method B."); exit(0) }
 
 func svg(_ path: CGPath) -> String {
     let b = path.boundingBoxOfPath
@@ -146,7 +194,7 @@ func svg(_ path: CGPath) -> String {
 var report: [String: Any] = [:]
 var weak: [String] = []
 for name in names {
-    guard let s = symbolSig(name) else { print("MISSING \(name)"); continue }
+    guard let s = symbolSig(name) else { say("MISSING \(name)"); continue }
     var best: (Float, Int) = (.infinity, -1), second: Float = .infinity
     for (i, c) in candidates.enumerated() {
         let sc = score(s, c.sig)
@@ -163,13 +211,13 @@ for name in names {
                 try! svg(p).write(to: outDir.appendingPathComponent("\(name)@\(wn).svg"), atomically: true, encoding: .utf8); done.append(wn)
             }
         }
-        if done.isEmpty { print("  (no weights for \(name): the system font has no symbol glyphs)") }
+        if done.isEmpty { say("  (no weights for \(name): the system font has no symbol glyphs)") }
     }
     report[name] = ["codepoint": cpHex, "score": best.0, "runnerUp": second, "weights": done] as [String: Any]
     let flag = best.0 > 0.08 || second - best.0 < 0.01 ? "  <-- CHECK" : ""
     if !flag.isEmpty { weak.append(name) }
-    print(String(format: "%@  %@  score %.3f  next %.3f%@", cpHex, name, best.0, second, flag))
+    say(String(format: "%@  %@  score %.3f  next %.3f%@", cpHex, name, best.0, second, flag))
 }
 try! JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys])
     .write(to: outDir.appendingPathComponent("_codepoints.json"))
-print("Done: \(report.count) SVGs in assets/sf-symbols/vector/. Weak matches to eyeball: \(weak.isEmpty ? "none" : weak.joined(separator: ", "))")
+say("Done: \(report.count) SVGs in assets/sf-symbols/vector/. Weak matches to eyeball: \(weak.isEmpty ? "none" : weak.joined(separator: ", "))")

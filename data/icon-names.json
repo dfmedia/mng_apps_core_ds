@@ -664,12 +664,12 @@
    "ios": "embed-3d",
    "android": null,
    "note": "",
-   "apps_team": "",
+   "apps_team": "1.4: where does embed-3d show, if anywhere?",
    "reference": {
     "sf_symbol": "cube",
     "material": "view_in_ar",
     "recommendation": "Native on both platforms",
-    "ownership_note": "Android equivalent: none in the Android guide."
+    "ownership_note": "PostKit image set; where it shows is asked (MISSING-ASSETS 1.4). Android equivalent: none in the Android guide."
    }
   },
   {

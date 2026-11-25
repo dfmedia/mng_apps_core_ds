@@ -198,7 +198,7 @@
     "cube"
    ],
    "status": "open",
-   "note": "Shipped: a wireframe cube with \"VIEW IN 3D\" under it, in the PostKit (Washington Post SDK) image set; where it shows is not known. Material deployed_code / SF cube is the cube alone.",
+   "note": "Shipped: a wireframe cube with \"VIEW IN 3D\" under it, in the PostKit (Washington Post SDK) image set; where it shows is asked (MISSING-ASSETS 1.4). Material deployed_code / SF cube is the cube alone.",
    "shipped_files": 1
   },
   {

@@ -42,7 +42,7 @@ NAME = {
     'Save star (special sections)': ('saved', "Android's glyph for saved in special sections; iOS shows the bookmark. Both kept (DEC-17, PLAT-09 rejected)."),
 }
 # open Apps team questions per purpose (docs/MISSING-ASSETS.md §1)
-ASK = {'Coach-mark arrow': '1.2: where does menu-line show, and how is it placed?'}   # DEC-28 (2026-11-25)
+ASK = {'Coach-mark arrow': '1.2: where does menu-line show, and how is it placed?', '3D embed': '1.4: where does embed-3d show, if anywhere?'}   # DEC-28 (2026-11-25)
 # Apps team (DREAMT-4718, 2026-11-18): every brand mark is PNG except the 4 iOS Author Profile SVGs
 BRAND_SVG_IOS = {'Bluesky', 'Facebook', 'Instagram', 'X (Twitter)'}
 BUCKET = {'core': 'Core', 'core-variant': 'Core, per-platform value', 'ios-only': 'iOS only', 'android-only': 'Android only'}

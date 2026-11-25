@@ -446,7 +446,7 @@
    "sf_symbol": "cube",
    "material": "view_in_ar",
    "bucket": "ios-only",
-   "note": "Android equivalent: none in the Android guide.",
+   "note": "PostKit image set; where it shows is asked (MISSING-ASSETS 1.4). Android equivalent: none in the Android guide.",
    "ios_recommendation": "Native on both platforms"
   },
   {

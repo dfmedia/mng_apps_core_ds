@@ -70,7 +70,7 @@ SF_BY_NAME = {'skip-back-15': 'gobackward.15', 'skip-forward-15': 'goforward.15'
               'tournament-sport': 'soccerball.inverse · american.football.fill · baseball.fill · basketball.fill · hockey.puck.fill · sportscourt.fill'}
 # Karl's review of the picks (2026-11-25)
 OPEN = {   # still to decide
-    'embed-3d': 'Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is not known. '
+    'embed-3d': 'Shipped: a wireframe cube with "VIEW IN 3D" under it, in the PostKit (Washington Post SDK) image set; where it shows is asked (MISSING-ASSETS 1.4). '
                 'Material deployed_code / SF cube is the cube alone.',
 }
 REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG is only a guide)
