@@ -1216,7 +1216,7 @@
    "group": "Buttons",
    "name": "Notification prompt buttons",
    "owner": "core+variant",
-   "figma": "in progress",
+   "figma": "partial",
    "tokens": "partial",
    "code": "partial",
    "blocked_by": "",
