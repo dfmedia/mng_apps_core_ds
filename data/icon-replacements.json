@@ -5,17 +5,17 @@
  "summary": {
   "names": 52,
   "by_status": {
-   "symbol": 43,
+   "symbol": 44,
    "partly-redraw": 2,
-   "redraw": 5,
+   "redraw": 4,
    "open": 1,
    "ask": 1
   },
   "material_svgs": {
    "core": 30,
-   "android": 2
+   "android": 3
   },
-  "sf_symbols": 54,
+  "sf_symbols": 55,
   "shipped_files": 188
  },
  "sf_symbols_needed": [
@@ -69,6 +69,7 @@
   "star.leadinghalf.filled",
   "text.badge.minus",
   "text.badge.plus",
+  "textformat.size",
   "textformat.size.larger",
   "textformat.size.smaller",
   "xmark",
@@ -645,10 +646,14 @@
   {
    "name": "text-size",
    "bucket": "Android only",
-   "material": [],
-   "sf": [],
-   "status": "redraw",
-   "note": "Android only. Redraw (Karl): serif A A, small and large; format_size (T T) does not match.",
+   "material": [
+    "format_size"
+   ],
+   "sf": [
+    "textformat.size"
+   ],
+   "status": "symbol",
+   "note": "Android only. Material format_size (T T) replaces the shipped serif A A (Karl, 2026-11-25).",
    "shipped_files": 2
   },
   {
@@ -856,8 +861,8 @@
    "folder": "Toolbar",
    "file": "ic_font_size.png",
    "name": "text-size",
-   "material": null,
-   "sf": null,
+   "material": "format_size",
+   "sf": "textformat.size",
    "shape_rank": null
   },
   {
@@ -874,8 +879,8 @@
    "folder": "Toolbar",
    "file": "ic_textsize_change.png",
    "name": "text-size",
-   "material": null,
-   "sf": null,
+   "material": "format_size",
+   "sf": "textformat.size",
    "shape_rank": null
   },
   {

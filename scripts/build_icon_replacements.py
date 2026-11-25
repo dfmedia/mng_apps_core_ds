@@ -30,7 +30,7 @@ MATERIAL = {
     'rating-star-empty': 'star', 'rating-star-full': 'star-fill', 'rating-star-half': 'star_half-fill',
     'refresh': 'refresh', 'repost': 'repeat', 'save': 'bookmark', 'saved': 'bookmark-fill', 'search': 'search',
     'settings': 'settings', 'share': 'share', 'tab-alerts': 'notifications', 'tab-enewspaper': None,
-    'tab-for-you': None, 'tab-games': 'extension', 'tab-home': 'home', 'text-size': None,
+    'tab-for-you': None, 'tab-games': 'extension', 'tab-home': 'home', 'text-size': 'format_size',
     'text-size-larger': 'text_increase', 'text-size-smaller': 'text_decrease', 'verified': 'verified-fill',
     'warning': 'warning-fill', 'account': 'account_circle', 'skip-back-10': 'replay_10', 'skip-forward-10': 'forward_10',
     'skip-back-15': None, 'skip-forward-15': None, 'tournament-sport': None, 'enews-coach-arrow': None, 'notification': None,
@@ -78,7 +78,6 @@ REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG i
     'tab-enewspaper': "Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. "
                       'iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS.',
     'tab-for-you': 'Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).',
-    'text-size': 'Android only. Redraw (Karl): serif A A, small and large; format_size (T T) does not match.',
     'unfollow-topic': 'iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; '
                       'on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). '
                       'Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).',
@@ -88,6 +87,7 @@ REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG i
 CONFIRMED = {   # Karl: good
     'follow-topic': 'Karl: good (list: format_list_bulleted_add / SF text.badge.plus; circle: add_circle / SF plus.circle).',
     'repost': 'Karl: good (repeat / SF arrow.2.squarepath).',
+    'text-size': 'Android only. Material format_size (T T) replaces the shipped serif A A (Karl, 2026-11-25).',
     'text-size-larger': 'iOS only (DEC-21): SF textformat.size.larger (Karl: good). Android has no such icon: it uses text-size.',
     'text-size-smaller': 'iOS only (DEC-21): SF textformat.size.smaller (Karl: good). Android has no such icon: it uses text-size.',
 }
