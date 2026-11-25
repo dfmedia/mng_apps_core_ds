@@ -105,6 +105,7 @@ docs/REGISTRY.md                  generated: every item and its owner (from data
 docs/BACKLOG.md                   generated: what is left to build in Figma and export to GitHub (status in data/backlog-status.json)
 docs/IMPROVEMENTS.md              proposed app changes (contrast, merges…)
 docs/ICON-NAMES.md                generated: one icon name per purpose, with what each app ships (DEC-17)
+docs/ICON-SOURCES.md              generated: every style-guide image, its icon name and how we get its vector (DEC-26)
 docs/MISSING-ASSETS.md            open questions for the Apps team, written for them (numbered with no gaps)
 docs/STYLE-GUIDE-INVENTORY.md     what the Apps team style guides contain vs what we have built (2026-11-10)
 docs/SHIPPED-SPECS.md             generated: app shell sizes, elevation, motion and other controls, iOS vs Android as shipped
@@ -128,6 +129,8 @@ Regenerate:
 python3 scripts/analyze_palettes.py data/source/markets.json data/palette-analysis.json
 python3 scripts/compare_platform_colors.py data/source/markets.json data/source/android-markets.json data/color-platform-comparison.json
 python3 scripts/icon_platform_map.py data/icon-comparison.json data/icon-platform-map.json
+python3 scripts/extract_style_guide_assets.py   # DEC-26: measures every style-guide image in downloads/style-guides/ (git-ignored) → data/source/style-guide-assets.json
+python3 scripts/build_icon_sources.py   # DEC-26: icon and graphic inventory (kind, DEC-17 name, same-drawing groups, vector plan): data/icon-sources.json, docs/ICON-SOURCES.md; after build_icon_names.py
 python3 scripts/build_icon_names.py   # DEC-17: combined icon name list as shipped (data/icon-names.json, docs/ICON-NAMES.md); after icon_platform_map.py
 python3 scripts/figma_icon_names.py    # prints JS for Core Icons · System Comparison › 05 · Icon list (combined: names, what ships, reference glyphs copied from 02)
 python3 scripts/component_platform_map.py data/component-platform-map.json
