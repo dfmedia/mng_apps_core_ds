@@ -7,12 +7,22 @@
 // then writes that glyph's outline as an SVG path.
 //
 // Output: assets/sf-symbols/vector/<name>.svg   (Regular weight, 40 pt, black fill)
+//         assets/sf-symbols/vector/<name>@<weight>.svg   (Medium … Heavy, for the WEIGHTED symbols only)
 //         assets/sf-symbols/vector/_codepoints.json  (name → code point + match score)
+// DEC-26 (2026-11-25): the list covers every SF Symbol iOS ships plus the candidates that replace the 7 Font Awesome
+// glyphs (with filled versions and heavier weights, so Karl can pick the closest). The output folder is git-ignored
+// while the repos are public (Apple licence); it moves into the repo once they are private.
 // SF Symbols licence: use only in mockups of apps for Apple platforms.
 import AppKit
 import CoreText
 
-let names = ["magnifyingglass", "gearshape", "square.and.arrow.up", "bookmark", "bookmark.fill", "house", "line.3.horizontal", "bell", "newspaper", "gamecontroller.fill", "chevron.up", "chevron.down", "chevron.left", "chevron.right", "xmark", "xmark.circle.fill", "person.circle.fill", "exclamationmark.triangle.fill", "envelope.fill", "arrow.clockwise", "line.3.horizontal.decrease", "textformat.size.smaller", "textformat.size.larger", "plus.circle", "minus.circle", "checkmark.circle.fill", "circle", "arrow.right.circle.fill", "arrow.up.left.and.arrow.down.right", "arrow.down.right.and.arrow.up.left", "arrow.left", "arrow.right", "play.fill", "pause.fill", "gobackward.15", "goforward.15", "backward.fill", "forward.fill", "cube", "star", "star.leadinghalf.filled", "star.fill", "heart", "arrow.2.squarepath", "checkmark.seal.fill", "apple.logo"]
+let names = ["magnifyingglass", "gearshape", "square.and.arrow.up", "bookmark", "bookmark.fill", "house", "line.3.horizontal", "bell", "newspaper", "gamecontroller.fill", "chevron.up", "chevron.down", "chevron.left", "chevron.right", "xmark", "xmark.circle.fill", "person.circle.fill", "exclamationmark.triangle.fill", "envelope.fill", "arrow.clockwise", "line.3.horizontal.decrease", "textformat.size.smaller", "textformat.size.larger", "plus.circle", "minus.circle", "checkmark.circle.fill", "circle", "arrow.right.circle.fill", "arrow.up.left.and.arrow.down.right", "arrow.down.right.and.arrow.up.left", "arrow.left", "arrow.right", "play.fill", "pause.fill", "gobackward.15", "goforward.15", "backward.fill", "forward.fill", "cube", "star", "star.leadinghalf.filled", "star.fill", "heart", "arrow.2.squarepath", "checkmark.seal.fill", "apple.logo",
+             // DEC-26: filled candidates for the Font Awesome replacements, and the tournament-loading symbols iOS ships
+             "house.fill", "bell.fill", "soccerball.inverse", "american.football.fill", "baseball.fill", "basketball.fill", "hockey.puck.fill", "sportscourt.fill"]
+
+// The 7 Font Awesome replacements (DEC-26): also exported at heavier weights, because Font Awesome is solid and heavy.
+let weighted = ["magnifyingglass", "bookmark", "bookmark.fill", "house", "house.fill", "line.3.horizontal", "bell", "bell.fill", "chevron.up", "chevron.down"]
+let weights: [(String, NSFont.Weight)] = [("medium", .medium), ("semibold", .semibold), ("bold", .bold), ("heavy", .heavy)]
 
 let outDir = URL(fileURLWithPath: "assets/sf-symbols/vector")
 try! FileManager.default.createDirectory(at: outDir, withIntermediateDirectories: true)
@@ -79,11 +89,12 @@ func symbolSig(_ name: String) -> Sig? {
     }
 }
 
-func glyphPath(_ cp: UInt32) -> CGPath? {
+func glyphPath(_ cp: UInt32, in f: CTFont? = nil) -> CGPath? {
+    let f = f ?? font
     var units = Array(String(UnicodeScalar(cp)!).utf16)
     var glyphs = [CGGlyph](repeating: 0, count: units.count)
-    guard CTFontGetGlyphsForCharacters(font, &units, &glyphs, units.count), glyphs[0] != 0 else { return nil }
-    return CTFontCreatePathForGlyph(font, glyphs[0], nil)
+    guard CTFontGetGlyphsForCharacters(f, &units, &glyphs, units.count), glyphs[0] != 0 else { return nil }
+    return CTFontCreatePathForGlyph(f, glyphs[0], nil)
 }
 
 func glyphSig(_ path: CGPath) -> Sig? {
@@ -142,7 +153,17 @@ for name in names {
     let c = candidates[best.1]
     try! svg(c.path).write(to: outDir.appendingPathComponent("\(name).svg"), atomically: true, encoding: .utf8)
     let cpHex = String(format: "U+%06X", c.cp)
-    report[name] = ["codepoint": cpHex, "score": best.0, "runnerUp": second]
+    var done: [String] = []
+    if weighted.contains(name) {   // same code point, heavier system-font weights (the SF Symbols app font has one weight only)
+        for (wn, w) in weights {
+            let wf = NSFont.systemFont(ofSize: fontSize, weight: w) as CTFont
+            if hasSymbolGlyph(wf), let p = glyphPath(c.cp, in: wf) {
+                try! svg(p).write(to: outDir.appendingPathComponent("\(name)@\(wn).svg"), atomically: true, encoding: .utf8); done.append(wn)
+            }
+        }
+        if done.isEmpty { print("  (no weights for \(name): the system font has no symbol glyphs)") }
+    }
+    report[name] = ["codepoint": cpHex, "score": best.0, "runnerUp": second, "weights": done] as [String: Any]
     let flag = best.0 > 0.08 || second - best.0 < 0.01 ? "  <-- CHECK" : ""
     if !flag.isEmpty { weak.append(name) }
     print(String(format: "%@  %@  score %.3f  next %.3f%@", cpHex, name, best.0, second, flag))
