@@ -74,14 +74,14 @@ OPEN = {   # still to decide
                 'Material deployed_code / SF cube is the cube alone.',
 }
 REDRAW = {   # no good stock symbol: redraw cleanly in vector (the shipped PNG is only a guide)
-    'filter': 'Redraw (Karl): three sliders with round knobs; no stock symbol matches.',
-    'tab-enewspaper': "Redraw Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. "
+    'filter': 'Redrawn: three sliders with round knobs (approved by Karl, 2026-11-25).',
+    'tab-enewspaper': "Karl redraws (Illustrator): Patrick Carr's newspaper icon (NewspaperFinal.png = shipped iOS tab-enews and Android mc_tab_icon_newspaper, same drawing); no vector exists. "
                       'iOS tab-newspaper is never shown (Apps team, 2026-11-19): not carried into the DS.',
-    'tab-for-you': 'Redraw (Karl): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).',
-    'unfollow-topic': 'iOS only. List version: Material has no pair for format_list_bulleted_add, so it is redrawn as that symbol with a minus; '
+    'tab-for-you': 'Karl redraws (Illustrator): person beside a list; no stock symbol matches and no master exists (Apps team, 2026-11-18).',
+    'unfollow-topic': 'iOS only. List version: Karl redraws (Illustrator), as the pair of Material format_list_bulleted_add; '
                       'on iOS the SF pair text.badge.plus / text.badge.minus may make the redraw unnecessary (Karl to check once the SF export runs). '
                       'Circle version (Minus-CT): do_not_disturb_on / SF minus.circle (Karl: good).',
-    'enews-coach-arrow': 'No stock symbol: redraw as a clean dotted curve with an arrowhead (where it is used: MISSING-ASSETS 1.2).',
+    'enews-coach-arrow': 'Redrawn: a clean dotted curve with an arrowhead (approved by Karl, 2026-11-25; where it is used: MISSING-ASSETS 1.2).',
     'tab-home': 'Market home icons (mastheads) are marks, not symbols: redraw per market. home is the generic icon.',
 }
 CONFIRMED = {   # Karl: good

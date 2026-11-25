@@ -80,15 +80,14 @@ def coach_arrow():
     return (f'<path d="{curve}" fill="none" stroke="#004E87" stroke-width="6" stroke-dasharray="7 6"/>'
             f'<path d="{head}" fill="#004E87"/>')
 
+# Karl, 2026-11-25: filter and enews-coach-arrow approved. tab-for-you, tab-enewspaper and the list unfollow-topic are
+# redrawn by Karl in Illustrator (their functions stay below as reference, not written out).
 ICONS = [
     # name, owner, file, body, filled-outline?, viewBox, size, shipped PNG for the preview
     ('filter', 'core', 'filter.svg', filter_icon, True, VB, (24, 24), 'android/Toolbar/ic_filter.png'),
-    ('tab-for-you', 'core', 'tab-for-you-fill.svg', lambda: for_you(True), True, VB, (24, 24), 'android/Bottom nav/mc_tab_icon_for_you.png'),
-    ('tab-for-you', 'core', 'tab-for-you.svg', lambda: for_you(False), True, VB, (24, 24), 'ios/Tab Bar/tab-foryou.png'),
-    ('tab-enewspaper', 'core', 'tab-enewspaper.svg', newspaper, False, VB, (24, 24), 'android/Bottom nav/mc_tab_icon_newspaper.png'),
-    ('unfollow-topic', 'ios', 'unfollow-topic.svg', unfollow_list, False, VB, (24, 24), 'android/Save and select/ic_unfollow_topic.png'),
     ('enews-coach-arrow', 'ios', 'enews-coach-arrow.svg', coach_arrow, False, 'viewBox="0 0 294 333"', (294, 333), 'ios/ENewspaper/menu-line.png'),
 ]
+KARL_DRAWS = ['tab-for-you', 'tab-enewspaper', 'unfollow-topic (list version)']
 
 def main():
     rows = []
@@ -102,7 +101,7 @@ def main():
         rows.append(OrderedDict(name=name, owner=owner, svg=os.path.relpath(os.path.join(d, fname), os.path.join(ROOT, '..')),
                                 guide=shipped, note='derived from Material format_list_bulleted_add (Apache-2.0)' if name == 'unfollow-topic' else ''))
     json.dump({'generated_by': 'scripts/redraw_icons.py', 'decision': 'DEC-29', 'grid': 'Material Symbols 960 grid, 60-unit strokes',
-               'redraws': rows}, open(os.path.join(ROOT, 'data', 'icon-redraws.json'), 'w'), indent=1)
+               'redraws': rows, 'karl_draws': KARL_DRAWS}, open(os.path.join(ROOT, 'data', 'icon-redraws.json'), 'w'), indent=1)
     print(len(rows), 'redraws')
     if '--preview' in sys.argv:
         preview(rows, sys.argv[sys.argv.index('--preview') + 1])
